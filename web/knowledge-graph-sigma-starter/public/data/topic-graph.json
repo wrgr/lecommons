@@ -1,0 +1,138 @@
+{
+  "nodes": [
+    {
+      "id": "topic-kg",
+      "label": "Knowledge Graphs",
+      "type": "topic",
+      "x": -0.78,
+      "y": 0.12,
+      "size": 13,
+      "color": "#2563eb",
+      "linkedPapers": ["paper-graphrag", "paper-kg-rag", "paper-entity-linking"]
+    },
+    {
+      "id": "topic-rag",
+      "label": "RAG Systems",
+      "type": "topic",
+      "x": -0.2,
+      "y": 0.55,
+      "size": 12,
+      "color": "#0ea5e9",
+      "linkedPapers": ["paper-graphrag", "paper-agentic-rag", "paper-hybrid-retrieval"]
+    },
+    {
+      "id": "topic-citations",
+      "label": "Citation Networks",
+      "type": "topic",
+      "x": 0.7,
+      "y": 0.28,
+      "size": 11,
+      "color": "#4f46e5",
+      "linkedPapers": ["paper-citation-recs", "paper-temporal-citations"]
+    },
+    {
+      "id": "topic-evaluation",
+      "label": "Evaluation",
+      "type": "topic",
+      "x": 0.18,
+      "y": -0.55,
+      "size": 10,
+      "color": "#0284c7",
+      "linkedPapers": ["paper-rag-bench", "paper-agentic-rag"]
+    },
+    {
+      "id": "paper-graphrag",
+      "label": "GraphRAG Overview",
+      "type": "paper",
+      "x": -0.5,
+      "y": 0.08,
+      "size": 8,
+      "color": "#22c55e",
+      "topicIds": ["topic-kg", "topic-rag"]
+    },
+    {
+      "id": "paper-kg-rag",
+      "label": "KG-Augmented RAG",
+      "type": "paper",
+      "x": -0.65,
+      "y": -0.28,
+      "size": 8,
+      "color": "#22c55e",
+      "topicIds": ["topic-kg", "topic-rag"]
+    },
+    {
+      "id": "paper-entity-linking",
+      "label": "Entity Linking for LLMs",
+      "type": "paper",
+      "x": -0.96,
+      "y": -0.2,
+      "size": 7,
+      "color": "#22c55e",
+      "topicIds": ["topic-kg"]
+    },
+    {
+      "id": "paper-agentic-rag",
+      "label": "Agentic RAG Pipelines",
+      "type": "paper",
+      "x": -0.03,
+      "y": 0.22,
+      "size": 8,
+      "color": "#22c55e",
+      "topicIds": ["topic-rag", "topic-evaluation"]
+    },
+    {
+      "id": "paper-hybrid-retrieval",
+      "label": "Hybrid Retrieval at Scale",
+      "type": "paper",
+      "x": -0.1,
+      "y": 0.82,
+      "size": 7,
+      "color": "#22c55e",
+      "topicIds": ["topic-rag"]
+    },
+    {
+      "id": "paper-rag-bench",
+      "label": "RAG Evaluation Benchmarks",
+      "type": "paper",
+      "x": 0.2,
+      "y": -0.2,
+      "size": 8,
+      "color": "#22c55e",
+      "topicIds": ["topic-evaluation"]
+    },
+    {
+      "id": "paper-citation-recs",
+      "label": "Citation Recommendation Models",
+      "type": "paper",
+      "x": 0.86,
+      "y": 0.58,
+      "size": 8,
+      "color": "#22c55e",
+      "topicIds": ["topic-citations"]
+    },
+    {
+      "id": "paper-temporal-citations",
+      "label": "Temporal Citation Dynamics",
+      "type": "paper",
+      "x": 0.95,
+      "y": 0.02,
+      "size": 8,
+      "color": "#22c55e",
+      "topicIds": ["topic-citations"]
+    }
+  ],
+  "edges": [
+    {"id": "t1", "source": "topic-kg", "target": "topic-rag", "label": "supports", "relation": "supports", "weight": 2},
+    {"id": "t2", "source": "topic-rag", "target": "topic-evaluation", "label": "evaluated_by", "relation": "evaluated_by", "weight": 2},
+    {"id": "t3", "source": "topic-kg", "target": "topic-citations", "label": "links_to", "relation": "links_to", "weight": 1},
+
+    {"id": "tp1", "source": "topic-kg", "target": "paper-graphrag", "label": "represents", "relation": "represents", "weight": 1},
+    {"id": "tp2", "source": "topic-kg", "target": "paper-kg-rag", "label": "represents", "relation": "represents", "weight": 1},
+    {"id": "tp3", "source": "topic-kg", "target": "paper-entity-linking", "label": "represents", "relation": "represents", "weight": 1},
+    {"id": "tp4", "source": "topic-rag", "target": "paper-agentic-rag", "label": "represents", "relation": "represents", "weight": 1},
+    {"id": "tp5", "source": "topic-rag", "target": "paper-hybrid-retrieval", "label": "represents", "relation": "represents", "weight": 1},
+    {"id": "tp6", "source": "topic-evaluation", "target": "paper-rag-bench", "label": "represents", "relation": "represents", "weight": 1},
+    {"id": "tp7", "source": "topic-citations", "target": "paper-citation-recs", "label": "represents", "relation": "represents", "weight": 1},
+    {"id": "tp8", "source": "topic-citations", "target": "paper-temporal-citations", "label": "represents", "relation": "represents", "weight": 1}
+  ]
+}

@@ -1,0 +1,119 @@
+{
+  "count": 19,
+  "chapters": [
+    {
+      "number": 1,
+      "title": "Learning Engineering is a Process",
+      "section": "Foundations",
+      "start_page": 29
+    },
+    {
+      "number": 2,
+      "title": "Learning Engineering Applies the Learning Sciences",
+      "section": "Foundations",
+      "start_page": 47
+    },
+    {
+      "number": 3,
+      "title": "Learning Engineering is Human-Centered",
+      "section": "Foundations",
+      "start_page": 83
+    },
+    {
+      "number": 4,
+      "title": "Learning Engineering is Engineering",
+      "section": "Foundations",
+      "start_page": 125
+    },
+    {
+      "number": 5,
+      "title": "Learning Engineering Uses Data (Part 1): Instrumentation",
+      "section": "Foundations",
+      "start_page": 153
+    },
+    {
+      "number": 6,
+      "title": "Learning Engineering Uses Data (Part 2): Analytics",
+      "section": "Foundations",
+      "start_page": 175
+    },
+    {
+      "number": 7,
+      "title": "Learning Engineering is Ethical",
+      "section": "Foundations",
+      "start_page": 201
+    },
+    {
+      "number": 8,
+      "title": "Tools for Understanding the Challenge",
+      "section": "Tools",
+      "start_page": 231
+    },
+    {
+      "number": 9,
+      "title": "Tools from the Learning Sciences",
+      "section": "Tools",
+      "start_page": 243
+    },
+    {
+      "number": 10,
+      "title": "Tools for Teaming",
+      "section": "Tools",
+      "start_page": 255
+    },
+    {
+      "number": 11,
+      "title": "Lean-Agile Development Tools",
+      "section": "Tools",
+      "start_page": 269
+    },
+    {
+      "number": 12,
+      "title": "Human-Centered Design Tools",
+      "section": "Tools",
+      "start_page": 279
+    },
+    {
+      "number": 13,
+      "title": "Data Instrumentation Tools",
+      "section": "Tools",
+      "start_page": 303
+    },
+    {
+      "number": 14,
+      "title": "Software and Technology Standards as Tools",
+      "section": "Tools",
+      "start_page": 311
+    },
+    {
+      "number": 15,
+      "title": "Tools for Learner Motivation",
+      "section": "Tools",
+      "start_page": 333
+    },
+    {
+      "number": 16,
+      "title": "Implementation Tools",
+      "section": "Tools",
+      "start_page": 347
+    },
+    {
+      "number": 17,
+      "title": "Ethical Decision-Making Tools",
+      "section": "Tools",
+      "start_page": 361
+    },
+    {
+      "number": 18,
+      "title": "Data Analysis Tools",
+      "section": "Tools",
+      "start_page": 365
+    },
+    {
+      "number": 19,
+      "title": "The Future World with Learning Engineering: A Story",
+      "section": "Vision And Commentary",
+      "start_page": 381
+    }
+  ]
+}

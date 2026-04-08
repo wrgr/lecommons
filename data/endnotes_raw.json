@@ -1,0 +1,3399 @@
+{
+  "count": 296,
+  "notes": [
+    {
+      "id": "ch02-n001",
+      "chapter": 2,
+      "note_number": 1,
+      "title_guess": "Job of a College President.",
+      "doi": null,
+      "urls": [],
+      "artifact_type": "article_report_or_web",
+      "raw_text": "Simon, Herbert A. “Job of a College President.” Educational Record 48, no. 1 (1967): 68–78."
+    },
+    {
+      "id": "ch02-n002",
+      "chapter": 2,
+      "note_number": 2,
+      "title_guess": "Taking Science to School: Learning and Teaching Science in Grades K-8",
+      "doi": "10.17226/11625",
+      "urls": [
+        "https://doi.org/10.17226/11625"
+      ],
+      "artifact_type": "paper_or_article",
+      "raw_text": "Duschl, Richard A. Taking Science to School: Learning and Teaching Science in Grades K-8. Washington, DC: The National Academies Press, 2007. https://doi.org/10.17226/11625"
+    },
+    {
+      "id": "ch02-n003",
+      "chapter": 2,
+      "note_number": 3,
+      "title_guess": "Cognitive Dissonance.",
+      "doi": null,
+      "urls": [
+        "https://www.simplypsychology.org/cognitive-dissonance.html"
+      ],
+      "artifact_type": "article_report_or_web",
+      "raw_text": "McLeod, Saul. “Cognitive Dissonance.” Simply Psychology. February 05, 2018. www.simplypsychology.org/cognitive-dissonance.html"
+    },
+    {
+      "id": "ch02-n004",
+      "chapter": 2,
+      "note_number": 4,
+      "title_guess": "Misconceptions Are ‘So Yesterday!’",
+      "doi": null,
+      "urls": [
+        "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3763002"
+      ],
+      "artifact_type": "article_report_or_web",
+      "raw_text": "Maskiewicz, April Cordero and Jennifer Evarts Lineback. “Misconceptions Are ‘So Yesterday!’” CBE Life Sciences Education, 2013. www.ncbi.nlm.nih.gov/pmc/articles/PMC3763002"
+    },
+    {
+      "id": "ch02-n005",
+      "chapter": 2,
+      "note_number": 5,
+      "title_guess": "The History of Mental Models.",
+      "doi": "10.4324/9780203506936",
+      "urls": [
+        "https://doi.org/10.4324/9780203506936"
+      ],
+      "artifact_type": "paper_or_article",
+      "raw_text": "Johnson-Laird, PN. “The History of Mental Models.” In Psychology of Reasoning: Theoretical and Historical Perspectives, edited by Ken Manktelow and Man Cheung Chung, 179–212. London: Psychology Press, 2004. https://doi.org/10.4324/9780203506936"
+    },
+    {
+      "id": "ch02-n006",
+      "chapter": 2,
+      "note_number": 6,
+      "title_guess": "Misconceptions Reconceived: A Constructivist Analysis of Knowledge in Transition.",
+      "doi": null,
+      "urls": [],
+      "artifact_type": "article_report_or_web",
+      "raw_text": "Smith, John P., Andrea A. diSessa, and Jeremy Roschelle. “Misconceptions Reconceived: A Constructivist Analysis of Knowledge in Transition.” The Journal of the Learning Sciences 3, no."
+    },
+    {
+      "id": "ch02-n007",
+      "chapter": 2,
+      "note_number": 7,
+      "title_guess": "The Knowledge-Learning- Instruction Framework: Bridging the Science-Practice Chasm to Enhance Robust Student Learning.",
+      "doi": "10.1111/j.1551-6709.2012.01245.x",
+      "urls": [
+        "https://doi.org/10.1111/j.1551-6709.2012.01245.x"
+      ],
+      "artifact_type": "paper_or_article",
+      "raw_text": "Koedinger, Kenneth R., Albert T. Corbett, and Charles Perfetti. “The Knowledge-Learning- Instruction Framework: Bridging the Science-Practice Chasm to Enhance Robust Student Learning.” Cognitive Science 36 (2012) 757–798. https://doi.org/10.1111/j.1551-6709.2012.01245.x"
+    },
+    {
+      "id": "ch02-n008",
+      "chapter": 2,
+      "note_number": 8,
+      "title_guess": "How People Learn: Brain, Mind, Experience, and School",
+      "doi": "10.17226/9853",
+      "urls": [
+        "https://doi.org/10.17226/9853"
+      ],
+      "artifact_type": "paper_or_article",
+      "raw_text": "Bransford, John D., Ann L. Brown, M. Suzanne Donovan, and James W. Pellegrino, eds. How People Learn: Brain, Mind, Experience, and School. Washington, DC: National Academy Press, 2003, 32. https://doi.org/10.17226/9853"
+    },
+    {
+      "id": "ch02-n009",
+      "chapter": 2,
+      "note_number": 9,
+      "title_guess": "Complexity and the Ten-Thousand-Hour Rule.",
+      "doi": null,
+      "urls": [
+        "https://www.newyorker.com/sports/sporting-scene/complexity-and-the-ten-thousand-hour-rule"
+      ],
+      "artifact_type": "article_report_or_web",
+      "raw_text": "Gladwell, Malcolm. “Complexity and the Ten-Thousand-Hour Rule.” The New Yorker, August 21, 2013. www.newyorker.com/sports/sporting-scene/complexity-and-the-ten-thousand-hour-rule"
+    },
+    {
+      "id": "ch02-n010",
+      "chapter": 2,
+      "note_number": 10,
+      "title_guess": "Practicing Connections: A Framework to Guide Instructional Design for Developing Understanding in Complex Domains.",
+      "doi": "10.1007/s10648-020-09561-x",
+      "urls": [
+        "https://doi.org/10.1007/s10648-020-09561-x"
+      ],
+      "artifact_type": "paper_or_article",
+      "raw_text": "Fries, Laura, Ji Y. Son, Karen B. Givvin, and James W. Stigler. “Practicing Connections: A Framework to Guide Instructional Design for Developing Understanding in Complex Domains.” Educational Psychology Review 33, no. 2 (2020): 739–762. https://doi.org/10.1007/s10648-020-09561-x"
+    },
+    {
+      "id": "ch02-n011",
+      "chapter": 2,
+      "note_number": 11,
+      "title_guess": "Bransford et al., How People Learn, 115.",
+      "doi": null,
+      "urls": [],
+      "artifact_type": "article_report_or_web",
+      "raw_text": "Bransford et al., How People Learn, 115."
+    },
+    {
+      "id": "ch02-n012",
+      "chapter": 2,
+      "note_number": 12,
+      "title_guess": "Neuron,",
+      "doi": null,
+      "urls": [
+        "https://commons.wikimedia",
+        "https://training.seer.cancer.gov/anatomy/nervous/tissue.html"
+      ],
+      "artifact_type": "article_report_or_web",
+      "raw_text": "Adapted from Wikipedia, “Neuron,” last modified August 7, 2011, https://commons.wikimedia. org/wiki/File:Neuron.jpg, and from US National Institutes of Health, “Nerve Tissue,” https://training.seer.cancer.gov/anatomy/nervous/tissue.html."
+    },
+    {
+      "id": "ch02-n013",
+      "chapter": 2,
+      "note_number": 13,
+      "title_guess": "The Science of Learning and Development and Its Implications for Transforming K-12 Education.",
+      "doi": null,
+      "urls": [
+        "https://www.inacol.org/wp-content/uploads/2018/05/iNACOL-Leadership-"
+      ],
+      "artifact_type": "webinar",
+      "raw_text": "Cook-Harvey, Channa. “The Science of Learning and Development and Its Implications for Transforming K-12 Education.” International Association for K-12 Online Learning. Aurora Institute. May 2018. www.inacol.org/wp-content/uploads/2018/05/iNACOL-Leadership- Webinar-May-2018.pdf"
+    },
+    {
+      "id": "ch02-n014",
+      "chapter": 2,
+      "note_number": 14,
+      "title_guess": "the distance between the actual development level as determined by independent problem solving and the level of potential development as determined through problem solving under adult guidance or in collaboration with more capable peer",
+      "doi": null,
+      "urls": [
+        "https://files.eric.ed.gov/fulltext/EJ1081990.pdf"
+      ],
+      "artifact_type": "article_report_or_web",
+      "raw_text": "In Mind in Society, Vygotsky defined the Zone of Proximal Development as “the distance between the actual development level as determined by independent problem solving and the level of potential development as determined through problem solving under adult guidance or in collaboration with more capable peer” (p. 86). Vygotsky, Lev Semenovich, and Michael Cole. Mind in Society: Development of Higher Psychological Processes. Cambridge, MA: Harvard University Press, 1978. As quoted from Shabani, Karim, Mohamad Khatib, and Saman Ebadi. “Vygotsky’s Zone of Proximal Development: Instructional Implications and Teachers’ Professional Development.” English Language Teaching 3, no. 4 (2010): 237–248. https://files.eric.ed.gov/fulltext/EJ1081990.pdf Learning Engineering Applies the Learning Sciences | 79"
+    },
+    {
+      "id": "ch02-n015",
+      "chapter": 2,
+      "note_number": 15,
+      "title_guess": "Flow (Csíkszentmihályi).",
+      "doi": null,
+      "urls": [
+        "https://www.learning-theories.com/flow-csikszentmihalyi.html"
+      ],
+      "artifact_type": "article_report_or_web",
+      "raw_text": "“Flow (Csíkszentmihályi).” Learning Theories. February 4, 2017. www.learning-theories.com/flow-csikszentmihalyi.html"
+    },
+    {
+      "id": "ch02-n016",
+      "chapter": 2,
+      "note_number": 16,
+      "title_guess": "Bransford et al., How People Learn, 104.",
+      "doi": null,
+      "urls": [],
+      "artifact_type": "article_report_or_web",
+      "raw_text": "Bransford et al., How People Learn, 104."
+    },
+    {
+      "id": "ch02-n017",
+      "chapter": 2,
+      "note_number": 17,
+      "title_guess": "Part 1: What Do You Mean When You Say ‘Student Agency?’",
+      "doi": null,
+      "urls": [
+        "https://education-reimagined.org/what-do-you-mean-when-you-say-student-agency"
+      ],
+      "artifact_type": "article_report_or_web",
+      "raw_text": "Poon, Jennifer Davis. “Part 1: What Do You Mean When You Say ‘Student Agency?’” Education Reimagined, September 11, 2018. https://education-reimagined.org/what-do-you-mean-when-you-say-student-agency"
+    },
+    {
+      "id": "ch02-n018",
+      "chapter": 2,
+      "note_number": 18,
+      "title_guess": "Executive Function.",
+      "doi": null,
+      "urls": [
+        "https://www.merriam-webster.com/dictionary/executive%20function"
+      ],
+      "artifact_type": "article_report_or_web",
+      "raw_text": "Merriam-Webster. “Executive Function.” Accessed November 27, 2021. www.merriam-webster.com/dictionary/executive%20function"
+    },
+    {
+      "id": "ch02-n019",
+      "chapter": 2,
+      "note_number": 19,
+      "title_guess": "New York: Farrar, Straus and Giroux, 2011, 20.",
+      "doi": null,
+      "urls": [],
+      "artifact_type": "article_report_or_web",
+      "raw_text": "Kahneman, Daniel. Thinking, Fast and Slow. New York: Farrar, Straus and Giroux, 2011, 20."
+    },
+    {
+      "id": "ch02-n020",
+      "chapter": 2,
+      "note_number": 20,
+      "title_guess": "Multi-Store Model of Memory.",
+      "doi": null,
+      "urls": [
+        "https://www.simplypsychology.org/multi-store.html"
+      ],
+      "artifact_type": "article_report_or_web",
+      "raw_text": "McLeod, Saul. “Multi-Store Model of Memory.” Simply Psychology. January 1, 1970. www.simplypsychology.org/multi-store.html"
+    },
+    {
+      "id": "ch02-n021",
+      "chapter": 2,
+      "note_number": 21,
+      "title_guess": "The Situation with Respect to the Spacing of Repetitions and Memory.",
+      "doi": null,
+      "urls": [],
+      "artifact_type": "article_report_or_web",
+      "raw_text": "Melton, Arthur W. “The Situation with Respect to the Spacing of Repetitions and Memory.” Journal of Verbal Learning and Verbal Behavior 9, no. 5 (1970): 596–606."
+    },
+    {
+      "id": "ch02-n022",
+      "chapter": 2,
+      "note_number": 22,
+      "title_guess": "A Trainable Spaced Repetition Model for Language Learning.",
+      "doi": null,
+      "urls": [
+        "https://aclanthology.org/P16-1174.pdf"
+      ],
+      "artifact_type": "conference_artifact",
+      "raw_text": "Settles, Burr, and Brendan Meeder. 2016. “A Trainable Spaced Repetition Model for Language Learning.” In Proceedings of the 54th Annual Meeting of the Association for Computational Linguistics, Berlin, Germany, August 7 12, 2016, 1848–1858. Stroudsburg, PA: Association for Computational Linguistics. https://aclanthology.org/P16-1174.pdf"
+    },
+    {
+      "id": "ch02-n023",
+      "chapter": 2,
+      "note_number": 23,
+      "title_guess": "What is Conditional Knowledge.",
+      "doi": null,
+      "urls": [
+        "https://www.igi-global.com/dictionary/conditional-knowledge/5277"
+      ],
+      "artifact_type": "article_report_or_web",
+      "raw_text": "IGI Global. “What is Conditional Knowledge.” Accessed December 29, 2017. www.igi-global.com/dictionary/conditional-knowledge/5277"
+    },
+    {
+      "id": "ch02-n024",
+      "chapter": 2,
+      "note_number": 24,
+      "title_guess": "Bransford et al., How People Learn, 44–49.",
+      "doi": null,
+      "urls": [],
+      "artifact_type": "article_report_or_web",
+      "raw_text": "Bransford et al., How People Learn, 44–49."
+    },
+    {
+      "id": "ch02-n025",
+      "chapter": 2,
+      "note_number": 25,
+      "title_guess": "Kahneman, Thinking, Fast and Slow, 238.",
+      "doi": null,
+      "urls": [],
+      "artifact_type": "article_report_or_web",
+      "raw_text": "Kahneman, Thinking, Fast and Slow, 238."
+    },
+    {
+      "id": "ch02-n026",
+      "chapter": 2,
+      "note_number": 26,
+      "title_guess": "Timeline of Cognitive Tutor History.",
+      "doi": null,
+      "urls": [
+        "http://ctat.pact.cs.cmu.edu/index.php?id=timeline"
+      ],
+      "artifact_type": "article_report_or_web",
+      "raw_text": "“Timeline of Cognitive Tutor History.” Cognitive Tutor Authoring Tools: Timeline of Cognitive Tutor History. Carnegie Mellon University. Last modified 2015. http://ctat.pact.cs.cmu.edu/index.php?id=timeline"
+    },
+    {
+      "id": "ch02-n027",
+      "chapter": 2,
+      "note_number": 27,
+      "title_guess": "The Knowledge-Learning-Instruction Framework.",
+      "doi": null,
+      "urls": [],
+      "artifact_type": "article_report_or_web",
+      "raw_text": "Koedinger, Corbett, and Perfetti, “The Knowledge-Learning-Instruction Framework.”"
+    },
+    {
+      "id": "ch02-n028",
+      "chapter": 2,
+      "note_number": 28,
+      "title_guess": "Exploring How Teachers Support Students’ Mathematical Learning in Computer-Directed Learning Environments.",
+      "doi": "10.1108/ILS-07-2019-0075",
+      "urls": [
+        "https://doi.org/10.1108/ILS-07-2019-0075"
+      ],
+      "artifact_type": "paper_or_article",
+      "raw_text": "Kessler, Aaron, Melissa Boston, and Mary Kay Stein. “Exploring How Teachers Support Students’ Mathematical Learning in Computer-Directed Learning Environments.” Information and Learning Sciences 121, no. 1/2 (2019): 52–78. https://doi.org/10.1108/ILS-07-2019-0075"
+    },
+    {
+      "id": "ch02-n029",
+      "chapter": 2,
+      "note_number": 29,
+      "title_guess": "15-1132.00 - Software Developers, Applications.",
+      "doi": null,
+      "urls": [
+        "https://www.onetonline.org/link/summary/15-1132.00"
+      ],
+      "artifact_type": "article_report_or_web",
+      "raw_text": "“15-1132.00 - Software Developers, Applications.” O*NET OnLine. US Department of Labor. www.onetonline.org/link/summary/15-1132.00"
+    },
+    {
+      "id": "ch02-n030",
+      "chapter": 2,
+      "note_number": 30,
+      "title_guess": "Learning Sciences: Concepts for Learning Engineering.",
+      "doi": null,
+      "urls": [
+        "https://drive.google.com/file/d/13XqSu3BMMHWd0_pRut7cuoijG6vK1pHC/view",
+        "http://sagroups.ieee.org/icicle/wp-content/uploads/sites/148/2020/07/ICICLE_Proceedings_"
+      ],
+      "artifact_type": "conference_artifact",
+      "raw_text": "Goodell, Jim and Janet Kolodner. “Learning Sciences: Concepts for Learning Engineering.” Prototype Card Deck Prepared for the IEEE ICICLE 2019 Conference on Learning Engineering. https://drive.google.com/file/d/13XqSu3BMMHWd0_pRut7cuoijG6vK1pHC/view See also: Goodell, Jim and Janet Kolodner. “Learning Science Cards.” In Proceedings of the 2019 Conference on Learning Engineering,Washington, DC, May 20–23, 2019. http://sagroups.ieee.org/icicle/wp-content/uploads/sites/148/2020/07/ICICLE_Proceedings_ Learning-Engineering.pdf"
+    },
+    {
+      "id": "ch02-n031",
+      "chapter": 2,
+      "note_number": 31,
+      "title_guess": "Synaptic Plasticity.",
+      "doi": null,
+      "urls": [
+        "https://en.wikipedia.org/wiki/Synaptic_plasticity"
+      ],
+      "artifact_type": "article_report_or_web",
+      "raw_text": "Wikipedia. “Synaptic Plasticity.” Last modified September 21, 2021. https://en.wikipedia.org/wiki/Synaptic_plasticity"
+    },
+    {
+      "id": "ch02-n032",
+      "chapter": 2,
+      "note_number": 32,
+      "title_guess": "Non-Synaptic Plasticity.",
+      "doi": null,
+      "urls": [
+        "https://en.wikipedia.org/wiki/Non-synaptic_plasticity"
+      ],
+      "artifact_type": "article_report_or_web",
+      "raw_text": "Wikipedia. “Non-Synaptic Plasticity.” Last modified November 16, 2011. https://en.wikipedia.org/wiki/Non-synaptic_plasticity"
+    },
+    {
+      "id": "ch02-n033",
+      "chapter": 2,
+      "note_number": 33,
+      "title_guess": "Neuroplasticity.",
+      "doi": null,
+      "urls": [
+        "https://en.wikipedia.org/wiki/Neuroplasticity"
+      ],
+      "artifact_type": "article_report_or_web",
+      "raw_text": "Wikipedia. “Neuroplasticity.” Last modified December 8, 2021. https://en.wikipedia.org/wiki/Neuroplasticity"
+    },
+    {
+      "id": "ch02-n034",
+      "chapter": 2,
+      "note_number": 34,
+      "title_guess": "How People Learn II: Learners, Contexts, and Cultures",
+      "doi": "10.17226/24783",
+      "urls": [
+        "https://doi.org/10.17226/24783"
+      ],
+      "artifact_type": "paper_or_article",
+      "raw_text": "National Academies of Sciences, Engineering, and Medicine. How People Learn II: Learners, Contexts, and Cultures. Washington, DC: National Academies Press, 2018. https://doi.org/10.17226/24783"
+    },
+    {
+      "id": "ch02-n035",
+      "chapter": 2,
+      "note_number": 35,
+      "title_guess": "Teaching Adolescents to Become Learners: The Role of Noncognitive Factors in Shaping School Performance: A Critical Literature Review",
+      "doi": null,
+      "urls": [
+        "https://files.eric.ed.gov/fulltext/ED542543.pdf"
+      ],
+      "artifact_type": "article_report_or_web",
+      "raw_text": "Farrington, Camille A., Melissa Roderick, Elaine Allensworth, Jenny Nagaoka, Tasha Seneca Keyes, David W. Johnson, and Nicole O. Beechum. 2012. Teaching Adolescents to Become Learners: The Role of Noncognitive Factors in Shaping School Performance: A Critical Literature Review. Consortium on Chicago School Research. Chicago, IL: The Chicago University Consortium on Chicago School Research. https://files.eric.ed.gov/fulltext/ED542543.pdf"
+    },
+    {
+      "id": "ch02-n036",
+      "chapter": 2,
+      "note_number": 36,
+      "title_guess": "Bransford et al., How People Learn, 97.",
+      "doi": null,
+      "urls": [],
+      "artifact_type": "article_report_or_web",
+      "raw_text": "Bransford et al., How People Learn, 97."
+    },
+    {
+      "id": "ch02-n037",
+      "chapter": 2,
+      "note_number": 37,
+      "title_guess": "Bransford et al., How People Learn, 21.",
+      "doi": null,
+      "urls": [],
+      "artifact_type": "article_report_or_web",
+      "raw_text": "Bransford et al., How People Learn, 21."
+    },
+    {
+      "id": "ch02-n038",
+      "chapter": 2,
+      "note_number": 38,
+      "title_guess": "Culture.",
+      "doi": null,
+      "urls": [
+        "https://www.merriam-webster.com/dictionary/culture"
+      ],
+      "artifact_type": "article_report_or_web",
+      "raw_text": "“Culture.” Merriam-Webster. Accessed November 18, 2021. www.merriam-webster.com/dictionary/culture"
+    },
+    {
+      "id": "ch02-n039",
+      "chapter": 2,
+      "note_number": 39,
+      "title_guess": "National Academies, How People Learn II, 22.",
+      "doi": null,
+      "urls": [],
+      "artifact_type": "article_report_or_web",
+      "raw_text": "National Academies, How People Learn II, 22."
+    },
+    {
+      "id": "ch02-n040",
+      "chapter": 2,
+      "note_number": 40,
+      "title_guess": "National Academies, How People Learn II, 21.",
+      "doi": null,
+      "urls": [],
+      "artifact_type": "article_report_or_web",
+      "raw_text": "National Academies, How People Learn II, 21."
+    },
+    {
+      "id": "ch02-n041",
+      "chapter": 2,
+      "note_number": 41,
+      "title_guess": "The Science.",
+      "doi": null,
+      "urls": [
+        "https://turnaroundusa.org/what-we-do/the-science"
+      ],
+      "artifact_type": "article_report_or_web",
+      "raw_text": "“The Science.” Turnaround for Children. May 3, 2018. https://turnaroundusa.org/what-we-do/the-science"
+    },
+    {
+      "id": "ch02-n042",
+      "chapter": 2,
+      "note_number": 42,
+      "title_guess": "Data-Driven Learner Modeling to Understand and Improve Online Learning: MOOCs and Technology to Advance Learning and Learning Research.",
+      "doi": "10.1145/2591682",
+      "urls": [
+        "https://doi.org/10.1145/2591682"
+      ],
+      "artifact_type": "paper_or_article",
+      "raw_text": "Koedinger, Kenneth R., Elizabeth A. McLaughlin, and John C. Stamper. “Data-Driven Learner Modeling to Understand and Improve Online Learning: MOOCs and Technology to Advance Learning and Learning Research.” Ubiquity, May (2014): 1–13. https://doi.org/10.1145/2591682"
+    },
+    {
+      "id": "ch02-n043",
+      "chapter": 2,
+      "note_number": 43,
+      "title_guess": "Understanding Misconceptions: Teaching and Learning in Middle School Physical Science.",
+      "doi": null,
+      "urls": [
+        "https://www.aft.org/ae/spring2016/sadler-and-sonnert"
+      ],
+      "artifact_type": "article_report_or_web",
+      "raw_text": "Sadler, Philip M., and Gerhard Sonnert. “Understanding Misconceptions: Teaching and Learning in Middle School Physical Science.” American Educator. September 27, 2016. www.aft.org/ae/spring2016/sadler-and-sonnert"
+    },
+    {
+      "id": "ch02-n044",
+      "chapter": 2,
+      "note_number": 44,
+      "title_guess": "The Cambridge Handbook of the Learning Sciences",
+      "doi": "10.1017/CBO9781139519526",
+      "urls": [
+        "https://doi.org/10.1017/CBO9781139519526"
+      ],
+      "artifact_type": "book_or_chapter",
+      "raw_text": "Sawyer, R. Keith, ed. 2014. The Cambridge Handbook of the Learning Sciences. Cambridge University Press, 23. https://doi.org/10.1017/CBO9781139519526"
+    },
+    {
+      "id": "ch02-n045",
+      "chapter": 2,
+      "note_number": 45,
+      "title_guess": "Breakthrough Leadership in the Digital Age: Using Learning Science to Reboot Schooling",
+      "doi": null,
+      "urls": [],
+      "artifact_type": "article_report_or_web",
+      "raw_text": "Closing quotation from Hess, Frederick M. and Bror Saxberg. Breakthrough Leadership in the Digital Age: Using Learning Science to Reboot Schooling. Thousand Oaks, CA: Corwin Press, 2013, 32. Learning Engineering Applies the Learning Sciences | 81 Trying to reengineer learning without being versed in the basics of learning is like trying to improve brain surgery without knowing much about the brain. – Breakthrough Leadership in the Digital Age 45"
+    },
+    {
+      "id": "ch03-n001",
+      "chapter": 3,
+      "note_number": 1,
+      "title_guess": "Unifying Human Centered Design and Systems Engineering for Human Systems Integration.",
+      "doi": "10.1007/978-3-319-02812-5_12",
+      "urls": [],
+      "artifact_type": "conference_artifact",
+      "raw_text": "Boy, Guy A., and Jennifer McGovern Narkevicius. “Unifying Human Centered Design and Systems Engineering for Human Systems Integration.” In Proceedings of the Fourth International Conference on Complex Systems Design and Management, Paris, December 4–6, 2013, 151–162. doi:10.1007/978-3-319-02812-5_12"
+    },
+    {
+      "id": "ch03-n002",
+      "chapter": 3,
+      "note_number": 2,
+      "title_guess": "The Field Guide to Human-Centered Design: Design Kit",
+      "doi": null,
+      "urls": [
+        "https://www.designkit.org/resources/1"
+      ],
+      "artifact_type": "article_report_or_web",
+      "raw_text": "IDEO. The Field Guide to Human-Centered Design: Design Kit. Palo Alto, CA: IDEO, 2015. www.designkit.org/resources/1"
+    },
+    {
+      "id": "ch03-n003",
+      "chapter": 3,
+      "note_number": 3,
+      "title_guess": "Design Thinking.",
+      "doi": null,
+      "urls": [
+        "https://hbr.org/2008/06/design-thinking"
+      ],
+      "artifact_type": "article_report_or_web",
+      "raw_text": "Brown, Tim. “Design Thinking.” Harvard Business Review 86, no. 6 (2008): 1–10. https://hbr.org/2008/06/design-thinking"
+    },
+    {
+      "id": "ch03-n004",
+      "chapter": 3,
+      "note_number": 4,
+      "title_guess": "A Practical Reader in Universal Design for Learning",
+      "doi": null,
+      "urls": [
+        "https://eric.ed.gov/?id=ED515447"
+      ],
+      "artifact_type": "article_report_or_web",
+      "raw_text": "Rose, David H., and Anne Meyer. A Practical Reader in Universal Design for Learning. Cambridge, MA: Harvard Education Press, 2006. https://eric.ed.gov/?id=ED515447"
+    },
+    {
+      "id": "ch03-n005",
+      "chapter": 3,
+      "note_number": 5,
+      "title_guess": "Modernizing Learning: Building the Future Learning Ecosystem",
+      "doi": null,
+      "urls": [
+        "https://adlnet.gov/assets/uploads/Modernizing%20Learning.pdf"
+      ],
+      "artifact_type": "article_report_or_web",
+      "raw_text": "Walcutt, JJ and Sae Schatz. Modernizing Learning: Building the Future Learning Ecosystem. Washginton, DC: Government Publishing Office, 2019. https://adlnet.gov/assets/uploads/Modernizing%20Learning.pdf"
+    },
+    {
+      "id": "ch03-n006",
+      "chapter": 3,
+      "note_number": 6,
+      "title_guess": "Design-Based Research: A Decade of Progress in Education Research?",
+      "doi": "10.3102/0013189X11428813",
+      "urls": [
+        "https://doi.org/10.3102/0013189X11428813"
+      ],
+      "artifact_type": "paper_or_article",
+      "raw_text": "Anderson, Terry and Julie Shattuck. “Design-Based Research: A Decade of Progress in Education Research?” Educational Researcher 41, no. 1 (2012): 16–25. https://doi.org/10.3102/0013189X11428813"
+    },
+    {
+      "id": "ch03-n007",
+      "chapter": 3,
+      "note_number": 7,
+      "title_guess": "Engineering Design a Project-based Introduction, 2nd ed",
+      "doi": null,
+      "urls": [],
+      "artifact_type": "article_report_or_web",
+      "raw_text": "Dym, Clive L. and Patrick Little. Engineering Design a Project-based Introduction, 2nd ed. Hoboken, NJ: Wiley, 2004."
+    },
+    {
+      "id": "ch03-n008",
+      "chapter": 3,
+      "note_number": 8,
+      "title_guess": "IDEO, The Field Guide to Human-Centered Design.",
+      "doi": null,
+      "urls": [],
+      "artifact_type": "article_report_or_web",
+      "raw_text": "IDEO, The Field Guide to Human-Centered Design."
+    },
+    {
+      "id": "ch03-n009",
+      "chapter": 3,
+      "note_number": 9,
+      "title_guess": "Teaching User Interface Design Based on Usability Engineering.",
+      "doi": "10.1145/67880.67885",
+      "urls": [
+        "https://doi.org/10.1145/67880.67885"
+      ],
+      "artifact_type": "paper_or_article",
+      "raw_text": "Nielsen, Jakob and Rolf Molich. “Teaching User Interface Design Based on Usability Engineering.” ACM SIGCHI Bulletin 21, no. 1 (July 1989): 45–48. https://doi.org/10.1145/67880.67885"
+    },
+    {
+      "id": "ch03-n010",
+      "chapter": 3,
+      "note_number": 10,
+      "title_guess": "Things That Make Us Smart: Defending Human Attributes in the Age of the Machine",
+      "doi": null,
+      "urls": [],
+      "artifact_type": "book_or_chapter",
+      "raw_text": "Dreyfuss, Henry. Designing for People. New York: Simon and Schuster, 1955. Norman, Donald A. Things That Make Us Smart: Defending Human Attributes in the Age of the Machine. New York: A William Patrick Book, 1993."
+    },
+    {
+      "id": "ch03-n011",
+      "chapter": 3,
+      "note_number": 11,
+      "title_guess": "Learning by Design: Good Video Games as Learning Machines.",
+      "doi": "10.2304/elea.2005.2.1.5",
+      "urls": [
+        "https://doi.org/10.2304/elea.2005.2.1.5"
+      ],
+      "artifact_type": "video",
+      "raw_text": "Gee, James Paul. “Learning by Design: Good Video Games as Learning Machines.” E-Learning and Digital Media 2, no. 1 (2005): 5–16. https://doi.org/10.2304/elea.2005.2.1.5"
+    },
+    {
+      "id": "ch03-n012",
+      "chapter": 3,
+      "note_number": 12,
+      "title_guess": "Unifying Human Centered Design and Systems Engineering . . .",
+      "doi": null,
+      "urls": [],
+      "artifact_type": "article_report_or_web",
+      "raw_text": "Boy and Narkevicius, “Unifying Human Centered Design and Systems Engineering . . . ”"
+    },
+    {
+      "id": "ch03-n013",
+      "chapter": 3,
+      "note_number": 13,
+      "title_guess": "Human–Systems Integration: From Virtual to Tangible",
+      "doi": null,
+      "urls": [],
+      "artifact_type": "article_report_or_web",
+      "raw_text": "Boy, Guy André. Human–Systems Integration: From Virtual to Tangible. Boca Raton, FL: CRC Press, 2020."
+    },
+    {
+      "id": "ch03-n014",
+      "chapter": 3,
+      "note_number": 14,
+      "title_guess": "Learning Experience Design.",
+      "doi": null,
+      "urls": [
+        "https://adlnet.gov/assets/uploads/Modernizing%20Learning.pdf"
+      ],
+      "artifact_type": "article_report_or_web",
+      "raw_text": "Schatz, Sae. “Learning Experience Design.” In Modernizing Learning: Building the Future Learning Ecosystem, edited by JJ Walcutt and Sae Schatz, 63–106. Washington, DC: Government Publishing Office, 2019. https://adlnet.gov/assets/uploads/Modernizing%20Learning.pdf"
+    },
+    {
+      "id": "ch03-n015",
+      "chapter": 3,
+      "note_number": 15,
+      "title_guess": "Connected Worlds.",
+      "doi": null,
+      "urls": [
+        "https://classic.nysci.org/experiencenysci/exhibits/connected-worlds"
+      ],
+      "artifact_type": "article_report_or_web",
+      "raw_text": "“Connected Worlds.” New York Hall of Science. Accessed December 29, 2001. https://classic.nysci.org/experiencenysci/exhibits/connected-worlds"
+    },
+    {
+      "id": "ch03-n016",
+      "chapter": 3,
+      "note_number": 16,
+      "title_guess": "Emotional Design: Why We Love (or Hate) Everyday Things",
+      "doi": null,
+      "urls": [],
+      "artifact_type": "book_or_chapter",
+      "raw_text": "Norman, Donald A. Emotional Design: Why We Love (or Hate) Everyday Things. New York: Basic Books, 2005."
+    },
+    {
+      "id": "ch03-n017",
+      "chapter": 3,
+      "note_number": 17,
+      "title_guess": "design thinking",
+      "doi": "10.1596/1020-797X_12_1_29",
+      "urls": [
+        "https://doi.org/10.1596/1020-797X_12_1_29",
+        "https://doi.org/10.1145/2802679"
+      ],
+      "artifact_type": "paper_or_article",
+      "raw_text": "The phrase “design thinking” grew out of a merger between two design firms, David Kelly Design and ID Two (see in Brown and Wyatt, 2010, page 33). The design processes these firms were using were quite different from standard product design, focusing primarily on designing experiences for consumers in addition to products themselves. Brown, Tim and Jocelyn Wyatt. “Design Thinking for Social Innovation.” Development Outreach 12, no. 1 (2010): 29–43. https://doi.org/10.1596/1020-797X_12_1_29 Learning Engineering is Human-Centered | 121 Knemeyer (2015) maintains that user experience and design thinking have shared roots, though the concept of UX precedes design thinking by a decade. Knemeyer even calls them “two sides of the same coin” (page 66). Knemeyer, Dirk. “Design Thinking and UX: Two Sides of the Same Coin.” Interactions 22, no. 5 (2015): 66–68. https://doi.org/10.1145/2802679"
+    },
+    {
+      "id": "ch03-n018",
+      "chapter": 3,
+      "note_number": 18,
+      "title_guess": "UX Design Process Best Practices: Documentation to Move Design Forward",
+      "doi": null,
+      "urls": [],
+      "artifact_type": "article_report_or_web",
+      "raw_text": "Cao, Jerry, Ben Gremillion, Kamil Ziebak, and Matt Ellis. UX Design Process Best Practices: Documentation to Move Design Forward. Mountain View, CA and Gdansk, Poland: UXPin, 2015."
+    },
+    {
+      "id": "ch03-n019",
+      "chapter": 3,
+      "note_number": 19,
+      "title_guess": "Design Thinking Methods and Tools for Innovation.",
+      "doi": "10.1007/978-3-319-20886-2_2",
+      "urls": [
+        "https://doi.org/10.1007/978-3-319-20886-2_2"
+      ],
+      "artifact_type": "conference_artifact",
+      "raw_text": "Chasanidou, Dimitra, Andrea Alessandro Gasparini, and Eunji Lee. “Design Thinking Methods and Tools for Innovation.” In Proceedings of the Fourth International Conference on Design, User Experience, and Usability: Design Discourse, Los Angeles, August 2–7, 2015, 12–23. https://doi.org/10.1007/978-3-319-20886-2_2"
+    },
+    {
+      "id": "ch03-n020",
+      "chapter": 3,
+      "note_number": 20,
+      "title_guess": "The Value of Codesign: The Effect of Customer Involvement in Service Design Teams.",
+      "doi": "10.1177/1094670517714060",
+      "urls": [
+        "https://doi.org/10.1177/1094670517714060"
+      ],
+      "artifact_type": "paper_or_article",
+      "raw_text": "Trischler, Jakob, Simon J. Pervan, Stephen J. Kelly, and Don R. Scott. “The Value of Codesign: The Effect of Customer Involvement in Service Design Teams.” Journal of Service Research 21, no. 1 (2018): 75–100. https://doi.org/10.1177/1094670517714060"
+    },
+    {
+      "id": "ch03-n021",
+      "chapter": 3,
+      "note_number": 21,
+      "title_guess": "Trischler et al., The Value of Codesign.",
+      "doi": null,
+      "urls": [],
+      "artifact_type": "article_report_or_web",
+      "raw_text": "Trischler et al., The Value of Codesign."
+    },
+    {
+      "id": "ch03-n022",
+      "chapter": 3,
+      "note_number": 22,
+      "title_guess": "Hillsdale, NJ: Lawrence Erlbaum Associates, 1993.",
+      "doi": null,
+      "urls": [],
+      "artifact_type": "article_report_or_web",
+      "raw_text": "Schuler, Douglas, and Aki Namioka, eds. Participatory Design: Principles and Practices. Hillsdale, NJ: Lawrence Erlbaum Associates, 1993."
+    },
+    {
+      "id": "ch03-n023",
+      "chapter": 3,
+      "note_number": 23,
+      "title_guess": "DiSalvo, Betsy, Jason Yip, Elizabeth Bonsignore, and Carl DiSalvo, eds",
+      "doi": null,
+      "urls": [],
+      "artifact_type": "article_report_or_web",
+      "raw_text": "DiSalvo, Betsy, Jason Yip, Elizabeth Bonsignore, and Carl DiSalvo, eds. Participatory Design for Learning. New York and London: Routledge, 2017."
+    },
+    {
+      "id": "ch03-n024",
+      "chapter": 3,
+      "note_number": 24,
+      "title_guess": "The Methodology of Participatory Design.",
+      "doi": null,
+      "urls": [],
+      "artifact_type": "article_report_or_web",
+      "raw_text": "Spinuzzi, Clay. “The Methodology of Participatory Design.” Technical Communication 52, no. 2 (2005): 163–174."
+    },
+    {
+      "id": "ch03-n025",
+      "chapter": 3,
+      "note_number": 25,
+      "title_guess": "Design Justice: Community-Led Practices to Build the Worlds We Need",
+      "doi": null,
+      "urls": [],
+      "artifact_type": "article_report_or_web",
+      "raw_text": "Costanza-Chock, Sasha. Design Justice: Community-Led Practices to Build the Worlds We Need. Cambridge, MA: MIT Press, 2020."
+    },
+    {
+      "id": "ch03-n026",
+      "chapter": 3,
+      "note_number": 26,
+      "title_guess": "Symphony: A Case Study in Extending Learner-Centered Design Through Process Space Analysis.",
+      "doi": "10.1145/302979.303136",
+      "urls": [
+        "https://doi.org/10.1145/302979.303136",
+        "https://doi"
+      ],
+      "artifact_type": "conference_artifact",
+      "raw_text": "Quintana, Chris, Jim Eng, Andrew Carra, Hsin-Kai Wu, and Elliot Soloway. “Symphony: A Case Study in Extending Learner-Centered Design Through Process Space Analysis.” In Proceedings of the SIGCHI conference on Human Factors in Computing Systems, Pittsburgh, PA, May 15–20, 1999, 473–480. https://doi.org/10.1145/302979.303136 Soloway, Elliot, Mark Guzdial, and Kenneth E. Hay. “Learner-Centered Design: The Challenge for HCI in the 21st century.” Interactions 1, no. 2 (1994): 36–48. Soloway, Elliot, Shari L. Jackson, Jonathan Klein, Chris Quintana, James Reed, Jeff Spitulnik, Steven J. Stratford, Scott Studer, Jim Eng, and Nancy Scala. “Learning Theory in Practice: Case Studies of Learner-Centered Design.” In Proceedings of the SIGCHI Conference on Human Factors in Computing Systems, Vancouver, April 1999, 189–196. https://doi. org/10.1145/238386.238476"
+    },
+    {
+      "id": "ch03-n027",
+      "chapter": 3,
+      "note_number": 27,
+      "title_guess": "Learner-Centered Design.",
+      "doi": null,
+      "urls": [],
+      "artifact_type": "article_report_or_web",
+      "raw_text": "Soloway, Guzdial, and Hay, “Learner-Centered Design.”"
+    },
+    {
+      "id": "ch03-n028",
+      "chapter": 3,
+      "note_number": 28,
+      "title_guess": "Rose and Meyer, A Practical Reader in Universal Design for Learning.",
+      "doi": null,
+      "urls": [],
+      "artifact_type": "article_report_or_web",
+      "raw_text": "Rose and Meyer, A Practical Reader in Universal Design for Learning."
+    },
+    {
+      "id": "ch03-n029",
+      "chapter": 3,
+      "note_number": 29,
+      "title_guess": "Inclusive E-Learning: Towards an Integrated System Design.",
+      "doi": null,
+      "urls": [
+        "https://pubmed.ncbi.nlm.nih.gov/28873900"
+      ],
+      "artifact_type": "article_report_or_web",
+      "raw_text": "Patzer, Yasmin and Niels Pinkwart. “Inclusive E-Learning: Towards an Integrated System Design.” Studies in Health Technology and Informatics 242 (2017), 878–885. https://pubmed.ncbi.nlm.nih.gov/28873900"
+    },
+    {
+      "id": "ch03-n030",
+      "chapter": 3,
+      "note_number": 30,
+      "title_guess": "Adaptive Learning Pedagogy of Universal Design for Learning (UDL) for Multimodal Training.",
+      "doi": "10.15394/jaaer.2018.1752",
+      "urls": [
+        "https://doi.org/10.15394/jaaer.2018.1752"
+      ],
+      "artifact_type": "paper_or_article",
+      "raw_text": "Kang, Ziho, Mattlyn R. Dragoo, Lauren Yeagle, Randa L. Shehab, Han Yuan, Lei Ding, and Stephen G. West. “Adaptive Learning Pedagogy of Universal Design for Learning (UDL) for Multimodal Training.” Journal of Aviation/Aerospace Education and Research 27, no. 1 (2018): 23–48. https://doi.org/10.15394/jaaer.2018.1752"
+    },
+    {
+      "id": "ch03-n031",
+      "chapter": 3,
+      "note_number": 31,
+      "title_guess": "Putting Learning Experience Design into Workplace Learning.",
+      "doi": null,
+      "urls": [],
+      "artifact_type": "article_report_or_web",
+      "raw_text": "Hudson, Jane. “Putting Learning Experience Design into Workplace Learning.” Training and Development 44, no. 5 (2017): 7."
+    },
+    {
+      "id": "ch03-n032",
+      "chapter": 3,
+      "note_number": 32,
+      "title_guess": "MindTheGapp™ Between Standards and Practice of Mobile Learning Experience Design.",
+      "doi": null,
+      "urls": [],
+      "artifact_type": "standard_or_spec",
+      "raw_text": "Benedek, András. “MindTheGapp™ Between Standards and Practice of Mobile Learning Experience Design.” International Journal on Advances in Education Research 2, no. 1 (2015): 14–36."
+    },
+    {
+      "id": "ch03-n033",
+      "chapter": 3,
+      "note_number": 33,
+      "title_guess": "Lifelong Learning.",
+      "doi": null,
+      "urls": [
+        "https://adlnet.gov/assets/uploads/Modernizing%20Learning.pdf"
+      ],
+      "artifact_type": "article_report_or_web",
+      "raw_text": "Walcutt, JJ and Naomi Malone. “Lifelong Learning.” In Modernizing Learning: Building the Future Learning Ecosystem, edited by JJ Walcutt and Sae Schatz, 61–82. Washington, DC: Government Publishing Office, 2019. https://adlnet.gov/assets/uploads/Modernizing%20Learning.pdf"
+    },
+    {
+      "id": "ch03-n034",
+      "chapter": 3,
+      "note_number": 34,
+      "title_guess": "Learning Experience Design.",
+      "doi": null,
+      "urls": [],
+      "artifact_type": "article_report_or_web",
+      "raw_text": "Schatz, “Learning Experience Design.”"
+    },
+    {
+      "id": "ch03-n035",
+      "chapter": 3,
+      "note_number": 35,
+      "title_guess": "Design- Based Implementation Research: An Emerging Model for Transforming the Relationship of Research and Practice.",
+      "doi": null,
+      "urls": [
+        "https://eric.ed.gov/?id=EJ1018453"
+      ],
+      "artifact_type": "article_report_or_web",
+      "raw_text": "Fishman, Barry, William Penuel, Anna-Ruth Allen, Britte Cheng, and Nora Sabelli. “Design- Based Implementation Research: An Emerging Model for Transforming the Relationship of Research and Practice.” Teachers College Record 115, no. 14 (2013): 136–156. https://eric.ed.gov/?id=EJ1018453"
+    },
+    {
+      "id": "ch03-n036",
+      "chapter": 3,
+      "note_number": 36,
+      "title_guess": "Conjecture Mapping: An Approach to Systematic Educational Design Research.",
+      "doi": "10.1080/10508406.2013.778204",
+      "urls": [
+        "https://doi.org/10.1080/10508406.2013.778204"
+      ],
+      "artifact_type": "paper_or_article",
+      "raw_text": "Sandoval, William. “Conjecture Mapping: An Approach to Systematic Educational Design Research.” Journal of the Learning Sciences 23, no. 1 (2014): 18–36. https://doi.org/10.1080/10508406.2013.778204"
+    },
+    {
+      "id": "ch03-n037",
+      "chapter": 3,
+      "note_number": 37,
+      "title_guess": "Killer UX Design: Create User Experiences to Wow Your Visitors",
+      "doi": null,
+      "urls": [],
+      "artifact_type": "article_report_or_web",
+      "raw_text": "Moule, Jodie. Killer UX Design: Create User Experiences to Wow Your Visitors. Victoria, Australia: SitePoint, 2012."
+    },
+    {
+      "id": "ch03-n038",
+      "chapter": 3,
+      "note_number": 38,
+      "title_guess": "Moule, Killer UX Design.",
+      "doi": null,
+      "urls": [],
+      "artifact_type": "article_report_or_web",
+      "raw_text": "Moule, Killer UX Design."
+    },
+    {
+      "id": "ch03-n039",
+      "chapter": 3,
+      "note_number": 39,
+      "title_guess": "Human Systems Engineering and Educational Technology.",
+      "doi": null,
+      "urls": [],
+      "artifact_type": "article_report_or_web",
+      "raw_text": "Roscoe, Rod D., Russell J. Branaghan, Nancy J. Cooke, and Scotty D. Craig. “Human Systems Engineering and Educational Technology.” In End-User Considerations in Educational Technology Design, edited by Rod D. Roscoe, Scotty D. Craig, and Ian Douglas, 1–34. Hershey, PA: IGI Global, 2018."
+    },
+    {
+      "id": "ch03-n040",
+      "chapter": 3,
+      "note_number": 40,
+      "title_guess": "UX Design Process Best Practices.",
+      "doi": null,
+      "urls": [],
+      "artifact_type": "article_report_or_web",
+      "raw_text": "Cao, Gremillion, Ziebak, and Ellis. UX Design Process Best Practices."
+    },
+    {
+      "id": "ch03-n041",
+      "chapter": 3,
+      "note_number": 41,
+      "title_guess": "Accelerating Early Math Learning with Research-Based Personalized Learning Games: A Cluster Randomized Controlled Trial.",
+      "doi": "10.1080/19345747.2021.196",
+      "urls": [
+        "https://doi.org/10.1080/19345747.2021.196"
+      ],
+      "artifact_type": "paper_or_article",
+      "raw_text": "Thai, Khanh-Phuong, Hee Jin Bang, and Linlin Li. “Accelerating Early Math Learning with Research-Based Personalized Learning Games: A Cluster Randomized Controlled Trial.” Journal of Research on Educational Effectiveness (2021): 1–24. https://doi.org/10.1080/19345747.2021.196 9710"
+    },
+    {
+      "id": "ch03-n042",
+      "chapter": 3,
+      "note_number": 42,
+      "title_guess": "Math Readiness: Early Identification of Preschool Children Least Ready to Benefit from Formal Math Instruction in School.",
+      "doi": "10.22492/issn.2189-1036.2020.40",
+      "urls": [
+        "https://doi.org/10.22492/issn.2189-1036.2020.40"
+      ],
+      "artifact_type": "conference_artifact",
+      "raw_text": "Betts, Anastasia, Khanh-Phuong Thai, Daniel Jacobs, and Linlin Li. “Math Readiness: Early Identification of Preschool Children Least Ready to Benefit from Formal Math Instruction in School.” In Proceedings of the International Academic Forum International Conference on Education, Hawaii, January 2020. https://doi.org/10.22492/issn.2189-1036.2020.40"
+    },
+    {
+      "id": "ch03-n043",
+      "chapter": 3,
+      "note_number": 43,
+      "title_guess": "Roughly equivalent to investigation, ideation, and testing in the learning design process diagram presented in Chapter 1.",
+      "doi": null,
+      "urls": [],
+      "artifact_type": "book_or_chapter",
+      "raw_text": "Roughly equivalent to investigation, ideation, and testing in the learning design process diagram presented in Chapter 1."
+    },
+    {
+      "id": "ch03-n044",
+      "chapter": 3,
+      "note_number": 44,
+      "title_guess": "Design for Kids: Digital Products for Playing and Learning",
+      "doi": null,
+      "urls": [],
+      "artifact_type": "article_report_or_web",
+      "raw_text": "Gelman, Debra Levin. Design for Kids: Digital Products for Playing and Learning. New York: Rosenfeld Media, 2014."
+    },
+    {
+      "id": "ch03-n045",
+      "chapter": 3,
+      "note_number": 45,
+      "title_guess": "Designing Games for Children: Developmental, Usability, and Design Considerations for Making Games for Kids",
+      "doi": null,
+      "urls": [],
+      "artifact_type": "article_report_or_web",
+      "raw_text": "Fisher, Carla. Designing Games for Children: Developmental, Usability, and Design Considerations for Making Games for Kids. Burlington, MA: Focal Point, 2015."
+    },
+    {
+      "id": "ch03-n046",
+      "chapter": 3,
+      "note_number": 46,
+      "title_guess": "A play-test session is a session in which play is used to explore or test a set of ideas.",
+      "doi": null,
+      "urls": [],
+      "artifact_type": "article_report_or_web",
+      "raw_text": "A play-test session is a session in which play is used to explore or test a set of ideas."
+    },
+    {
+      "id": "ch03-n047",
+      "chapter": 3,
+      "note_number": 47,
+      "title_guess": "Toca Boca",
+      "doi": null,
+      "urls": [
+        "https://tocaboca.com"
+      ],
+      "artifact_type": "article_report_or_web",
+      "raw_text": "Toca Boca. Toca Life: World. Toca Boca. IoS/Android/Kindle Fire. 2020. https://tocaboca.com"
+    },
+    {
+      "id": "ch03-n048",
+      "chapter": 3,
+      "note_number": 48,
+      "title_guess": "Cake or Broccoli? Recency Biases Children’s Verbal Responses.",
+      "doi": "10.1371/journal.pone.0217207",
+      "urls": [
+        "https://doi.org/10.1371/journal.pone.0217207"
+      ],
+      "artifact_type": "paper_or_article",
+      "raw_text": "Sumner, Emily, Erika DeAngelis, Mara Hyatt, Noah Goodman, and Celeste Kidd. “Cake or Broccoli? Recency Biases Children’s Verbal Responses.” PLOS ONE 14, no. 6 (2019): 1–9. https://doi.org/10.1371/journal.pone.0217207"
+    },
+    {
+      "id": "ch03-n049",
+      "chapter": 3,
+      "note_number": 49,
+      "title_guess": "Gelman, Design for Kids.",
+      "doi": null,
+      "urls": [],
+      "artifact_type": "article_report_or_web",
+      "raw_text": "Gelman, Design for Kids."
+    },
+    {
+      "id": "ch03-n050",
+      "chapter": 3,
+      "note_number": 50,
+      "title_guess": "Learning Engineering is Human-Centered | 123",
+      "doi": null,
+      "urls": [],
+      "artifact_type": "article_report_or_web",
+      "raw_text": "Gelman, Design for Kids. Learning Engineering is Human-Centered | 123"
+    },
+    {
+      "id": "ch03-n051",
+      "chapter": 3,
+      "note_number": 51,
+      "title_guess": "Toca Boca - Emil Ovemar (20th May 2014).",
+      "doi": null,
+      "urls": [
+        "https://youtu.be/ONPG7n5AQXQ"
+      ],
+      "artifact_type": "video",
+      "raw_text": "Tech.eu. “Toca Boca - Emil Ovemar (20th May 2014).” Video, 4:52. August 10, 2015. https://youtu.be/ONPG7n5AQXQ cf. Gelman, Design for Kids."
+    },
+    {
+      "id": "ch03-n052",
+      "chapter": 3,
+      "note_number": 52,
+      "title_guess": "Gelman, Design for Kids.",
+      "doi": null,
+      "urls": [],
+      "artifact_type": "article_report_or_web",
+      "raw_text": "Gelman, Design for Kids."
+    },
+    {
+      "id": "ch03-n053",
+      "chapter": 3,
+      "note_number": 53,
+      "title_guess": "Gelman, Design for Kids.",
+      "doi": null,
+      "urls": [],
+      "artifact_type": "article_report_or_web",
+      "raw_text": "Gelman, Design for Kids."
+    },
+    {
+      "id": "ch03-n054",
+      "chapter": 3,
+      "note_number": 54,
+      "title_guess": "Gelman, Design for Kids.",
+      "doi": null,
+      "urls": [],
+      "artifact_type": "article_report_or_web",
+      "raw_text": "Gelman, Design for Kids."
+    },
+    {
+      "id": "ch03-n055",
+      "chapter": 3,
+      "note_number": 55,
+      "title_guess": "Gelman, Design for Kids.",
+      "doi": null,
+      "urls": [],
+      "artifact_type": "article_report_or_web",
+      "raw_text": "Gelman, Design for Kids."
+    },
+    {
+      "id": "ch03-n056",
+      "chapter": 3,
+      "note_number": 56,
+      "title_guess": "Gelman, Design for Kids.",
+      "doi": null,
+      "urls": [],
+      "artifact_type": "article_report_or_web",
+      "raw_text": "Gelman, Design for Kids."
+    },
+    {
+      "id": "ch03-n057",
+      "chapter": 3,
+      "note_number": 57,
+      "title_guess": "Gelman, Design for Kids.",
+      "doi": null,
+      "urls": [],
+      "artifact_type": "article_report_or_web",
+      "raw_text": "Gelman, Design for Kids."
+    },
+    {
+      "id": "ch03-n058",
+      "chapter": 3,
+      "note_number": 58,
+      "title_guess": "Fisher, Designing Games for Children.",
+      "doi": null,
+      "urls": [],
+      "artifact_type": "article_report_or_web",
+      "raw_text": "Fisher, Designing Games for Children."
+    },
+    {
+      "id": "ch03-n059",
+      "chapter": 3,
+      "note_number": 59,
+      "title_guess": "Fisher, Designing Games for Children.",
+      "doi": null,
+      "urls": [],
+      "artifact_type": "article_report_or_web",
+      "raw_text": "Fisher, Designing Games for Children."
+    },
+    {
+      "id": "ch03-n060",
+      "chapter": 3,
+      "note_number": 60,
+      "title_guess": "Fisher, Designing Games for Children.",
+      "doi": null,
+      "urls": [],
+      "artifact_type": "article_report_or_web",
+      "raw_text": "Fisher, Designing Games for Children."
+    },
+    {
+      "id": "ch03-n061",
+      "chapter": 3,
+      "note_number": 61,
+      "title_guess": "Do Explicit Number Names Accelerate Pre- Kindergarteners’ Numeracy and Place Value Acquisition?",
+      "doi": "10.1007/s10649-016-9682-y",
+      "urls": [
+        "https://doi.org/10.1007/s10649-016-9682-y"
+      ],
+      "artifact_type": "paper_or_article",
+      "raw_text": "Magargee, Suzanne D. and Judith E. Beauford. “Do Explicit Number Names Accelerate Pre- Kindergarteners’ Numeracy and Place Value Acquisition?” Educational Studies in Mathematics 92, no. 2 (2016): 179–192. https://doi.org/10.1007/s10649-016-9682-y"
+    },
+    {
+      "id": "ch03-n062",
+      "chapter": 3,
+      "note_number": 62,
+      "title_guess": "While the literature on personas suggests developing several personas, each focusing on a different subset of the user population, this single persona included what was needed to design toward variations across this popu",
+      "doi": null,
+      "urls": [],
+      "artifact_type": "article_report_or_web",
+      "raw_text": "While the literature on personas suggests developing several personas, each focusing on a different subset of the user population, this single persona included what was needed to design toward variations across this population in development, use of technology, and interaction with caregivers."
+    },
+    {
+      "id": "ch03-n063",
+      "chapter": 3,
+      "note_number": 63,
+      "title_guess": "Ghana: HIV Country Profile 2019.",
+      "doi": null,
+      "urls": [
+        "https://cfs.hivci.org/country-factsheet.html"
+      ],
+      "artifact_type": "article_report_or_web",
+      "raw_text": "World Health Organization. “Ghana: HIV Country Profile 2019.” Accessed December 29, 2021. Interactive Demographic and Socioeconomic Data. https://cfs.hivci.org/country-factsheet.html"
+    },
+    {
+      "id": "ch03-n064",
+      "chapter": 3,
+      "note_number": 64,
+      "title_guess": "Hidden No More: Innovative Approaches for Reaching Key Populations for HIV Care and Treatment in Ghana",
+      "doi": null,
+      "urls": [
+        "https://www.fhi360.org/sites/default/files/media/"
+      ],
+      "artifact_type": "article_report_or_web",
+      "raw_text": "FHI 360. Hidden No More: Innovative Approaches for Reaching Key Populations for HIV Care and Treatment in Ghana. Durham, NC: FHI 360. www.fhi360.org/sites/default/files/media/ documents/resource-linkages-ghana-approaches-2016.pdf"
+    },
+    {
+      "id": "ch03-n065",
+      "chapter": 3,
+      "note_number": 65,
+      "title_guess": "Human-Centered Design for Global Health Equity.",
+      "doi": "10.1080/02681102.2019.1667289",
+      "urls": [
+        "https://doi.org/10.1080/02681102.2019.1667289"
+      ],
+      "artifact_type": "paper_or_article",
+      "raw_text": "Holeman, Isaac, and Dianna Kane. “Human-Centered Design for Global Health Equity.” Information Technology for Development 26, no. 3 (2020): 477–505. https://doi.org/10.1080/02681102.2019.1667289"
+    },
+    {
+      "id": "ch04-n001",
+      "chapter": 4,
+      "note_number": 1,
+      "title_guess": "Bud Saxberg’s Half-Century: Business Prof Celebrates 50 Years at the UW— and Counting.",
+      "doi": null,
+      "urls": [
+        "https://www.washington.edu/"
+      ],
+      "artifact_type": "article_report_or_web",
+      "raw_text": "Gardner, Nancy. “Bud Saxberg’s Half-Century: Business Prof Celebrates 50 Years at the UW— and Counting.” UW News. University of Washington, April 5, 2007. www.washington.edu/ news/2007/04/05/bud-saxbergs-half-century-business-prof-celebrates-50-years-at-the-uw-and- counting"
+    },
+    {
+      "id": "ch04-n002",
+      "chapter": 4,
+      "note_number": 2,
+      "title_guess": "Bror Saxberg.",
+      "doi": null,
+      "urls": [
+        "https://vannevar.ece.uw.edu/people/alumni/profiles/bror_saxberg.html"
+      ],
+      "artifact_type": "article_report_or_web",
+      "raw_text": "University of Washington. “Bror Saxberg.” Alumni Profiles. UW Electrical Engineering. Accessed September 29, 2020. https://vannevar.ece.uw.edu/people/alumni/profiles/bror_saxberg.html"
+    },
+    {
+      "id": "ch04-n003",
+      "chapter": 4,
+      "note_number": 3,
+      "title_guess": "Interview with Bror Saxberg.",
+      "doi": null,
+      "urls": [
+        "https://www.jstor.org/stable/44430307"
+      ],
+      "artifact_type": "article_report_or_web",
+      "raw_text": "Shaughnessy, Michael F. and Bror Saxberg. “Interview with Bror Saxberg.” Educational Technology 54, no. 5 (2014): 50–53. www.jstor.org/stable/44430307"
+    },
+    {
+      "id": "ch04-n004",
+      "chapter": 4,
+      "note_number": 4,
+      "title_guess": "Bror Saxberg.",
+      "doi": null,
+      "urls": [],
+      "artifact_type": "article_report_or_web",
+      "raw_text": "University of Washington, “Bror Saxberg.”"
+    },
+    {
+      "id": "ch04-n005",
+      "chapter": 4,
+      "note_number": 5,
+      "title_guess": "Bror Saxberg.",
+      "doi": null,
+      "urls": [],
+      "artifact_type": "article_report_or_web",
+      "raw_text": "University of Washington, “Bror Saxberg.”"
+    },
+    {
+      "id": "ch04-n006",
+      "chapter": 4,
+      "note_number": 6,
+      "title_guess": "Engineering Principles.",
+      "doi": null,
+      "urls": [
+        "http://wiki.c2.com/?EngineeringPrinciples"
+      ],
+      "artifact_type": "article_report_or_web",
+      "raw_text": "Twelves, Tim. “Engineering Principles.” Last modified July 22, 2013. http://wiki.c2.com/?EngineeringPrinciples"
+    },
+    {
+      "id": "ch04-n007",
+      "chapter": 4,
+      "note_number": 7,
+      "title_guess": "3.003 Principles of Engineering Practice.",
+      "doi": null,
+      "urls": [
+        "https://ocw.mit.edu/courses/materials-science-and-engineering/3-003-"
+      ],
+      "artifact_type": "article_report_or_web",
+      "raw_text": "Kimerling, Lionel C. “3.003 Principles of Engineering Practice.” MIT OpenCourseWare, Slideshow. Spring 2010. https://ocw.mit.edu/courses/materials-science-and-engineering/3-003- principles-of-engineering-practice-spring-2010/lecture-notes/MIT3_003S10_lec01.pdf"
+    },
+    {
+      "id": "ch04-n008",
+      "chapter": 4,
+      "note_number": 8,
+      "title_guess": "Model.",
+      "doi": null,
+      "urls": [
+        "https://www.sebokwiki.org/wiki/Model_(glossary"
+      ],
+      "artifact_type": "article_report_or_web",
+      "raw_text": "“Model.” In Guide to the Systems Engineering Body of Knowledge (SEBoK). Version 2.5. Hoboken, NJ: Trustees of the Stevens Institute of Technology. Accessed October 15, 2021. www.sebokwiki.org/wiki/Model_(glossary)"
+    },
+    {
+      "id": "ch04-n009",
+      "chapter": 4,
+      "note_number": 9,
+      "title_guess": "What Is Systems Thinking?",
+      "doi": null,
+      "urls": [],
+      "artifact_type": "article_report_or_web",
+      "raw_text": "McNamara, Carter. “What Is Systems Thinking?” In Field Guide to Consulting and Organizational Development: A Collaborative and Systems Approach to Performance, Change and Learning, 405. Minneapolis, MN: Authenticity Consulting, 2006."
+    },
+    {
+      "id": "ch04-n010",
+      "chapter": 4,
+      "note_number": 10,
+      "title_guess": "Smith, Brent, Jerry Gordon, Trey Hayden, and Andrew Johnson",
+      "doi": null,
+      "urls": [
+        "https://www.adlnet.gov/assets/uploads/2019%20"
+      ],
+      "artifact_type": "article_report_or_web",
+      "raw_text": "Smith, Brent, Jerry Gordon, Trey Hayden, and Andrew Johnson. 2019 Total Learning Architecture Report. Washington, DC: ADL Initiative, 2020. www.adlnet.gov/assets/uploads/2019%20 Total%20Learning%20Architecture%20Report.pdf"
+    },
+    {
+      "id": "ch04-n011",
+      "chapter": 4,
+      "note_number": 11,
+      "title_guess": "The Role of Immediacy of Feedback in Student Learning.",
+      "doi": null,
+      "urls": [
+        "https://davidwees.com/content/role-immediacy-feedback-student-learning"
+      ],
+      "artifact_type": "article_report_or_web",
+      "raw_text": "Wees, David. “The Role of Immediacy of Feedback in Student Learning.” The Reflective Educator, March 31, 2010. https://davidwees.com/content/role-immediacy-feedback-student-learning"
+    },
+    {
+      "id": "ch04-n012",
+      "chapter": 4,
+      "note_number": 12,
+      "title_guess": "Improving Math Performance: What Do You Think Is the Single Most Important Factor in Dramatically Improving Students’ Math Performance in Your School?",
+      "doi": null,
+      "urls": [
+        "https://files.eric.ed.gov/fulltext/ED528388.pdf",
+        "https://www.readingrockets.org/article/teach-test-just-say-no",
+        "https://consortium.uchicago.edu/sites/default/files/2018-10/p0a02.pdf"
+      ],
+      "artifact_type": "standard_or_spec",
+      "raw_text": "Learning about Teaching: Initial Findings from the Measures of Effective Teaching Project. Policy Brief. Met Project. Washington, DC: Bill & Melinda Gates Foundation, 2010. https://files.eric.ed.gov/fulltext/ED528388.pdf “Improving Math Performance: What Do You Think Is the Single Most Important Factor in Dramatically Improving Students’ Math Performance in Your School?” No Child Left Behind: Blue Ribbon Schools. US Department of Education. www2.ed.gov/programs/nclbbrs/math.pdf Jerald, Craig. “Teach to the Test? Just Say No.” Reading Rockets, November 7, 2013. www.readingrockets.org/article/teach-test-just-say-no Newmann, Fred M., Anthony S. Bryk, and Jenny K. Nagaoka. Authentic Intellectual Work and Standardized Tests: Conflict or Coexistence? Improving Chicago’s Schools, 10. Chicago, IL: Chicago Consortium on School Research, 2001. https://consortium.uchicago.edu/sites/default/files/2018-10/p0a02.pdf Newmann, Byrk, and Nagaoka, “Authentic Intellectual Work and Standardized Tests,” 29."
+    },
+    {
+      "id": "ch04-n013",
+      "chapter": 4,
+      "note_number": 13,
+      "title_guess": "Constructivism as a Theory for Teaching and Learning.",
+      "doi": null,
+      "urls": [
+        "https://www.simplypsychology.org/constructivism.html"
+      ],
+      "artifact_type": "article_report_or_web",
+      "raw_text": "McLeod, Saul. “Constructivism as a Theory for Teaching and Learning.” Simply Psychology, July 19, 2019. www.simplypsychology.org/constructivism.html Learning Engineering is Engineering | 151"
+    },
+    {
+      "id": "ch04-n014",
+      "chapter": 4,
+      "note_number": 14,
+      "title_guess": "Gaithersburg, MD: National Institute of Standards and Technology, US Department of Commerce, 1993",
+      "doi": null,
+      "urls": [
+        "https://nvlpubs.nist.gov/nistpubs/Legacy/IR/nistir5170.pdf"
+      ],
+      "artifact_type": "standard_or_spec",
+      "raw_text": "Phillips, Steven D., Bruce Borchardt, and G. Caskey. Measurement Uncertainty Considerations for Coordinate Measuring Machines. Gaithersburg, MD: National Institute of Standards and Technology, US Department of Commerce, 1993. https://nvlpubs.nist.gov/nistpubs/Legacy/IR/nistir5170.pdf"
+    },
+    {
+      "id": "ch04-n015",
+      "chapter": 4,
+      "note_number": 15,
+      "title_guess": "Closing quotation sourced from Christensen, Steen Hyldgaard, Christelle Didier, Andrew Jamison, Martin Meganck, Carl Mitcham, and Byron Newberry, eds",
+      "doi": null,
+      "urls": [],
+      "artifact_type": "article_report_or_web",
+      "raw_text": "Closing quotation sourced from Christensen, Steen Hyldgaard, Christelle Didier, Andrew Jamison, Martin Meganck, Carl Mitcham, and Byron Newberry, eds. Engineering Identities, Epistemologies and Values: Engineering Education and Practice in Context, Volume 2. Dordrecht: Springer, 2015, 170."
+    },
+    {
+      "id": "ch05-n001",
+      "chapter": 5,
+      "note_number": 1,
+      "title_guess": "Kitto, Kirsty, John Whitmer, Aaron Silvers, and Michael Webb",
+      "doi": null,
+      "urls": [
+        "https://www.solaresearch.org/wp-content/uploads/2020/09/SoLAR_Position-Paper_2020_09.pdf"
+      ],
+      "artifact_type": "article_report_or_web",
+      "raw_text": "Kitto, Kirsty, John Whitmer, Aaron Silvers, and Michael Webb. Creating data for learning analytics ecosystems. Beaumont, Alberta: Society for Learning Analytics Research (SoLAR), 2020. www.solaresearch.org/wp-content/uploads/2020/09/SoLAR_Position-Paper_2020_09.pdf"
+    },
+    {
+      "id": "ch05-n002",
+      "chapter": 5,
+      "note_number": 2,
+      "title_guess": "Fight Science: Ultimate Soldiers: A Well-Trained Sniper Uses Mind Over Matter to Control His Own Physiology.",
+      "doi": null,
+      "urls": [
+        "https://youtu.be/yX2bVJm94b0"
+      ],
+      "artifact_type": "video",
+      "raw_text": "“Fight Science: Ultimate Soldiers: A Well-Trained Sniper Uses Mind Over Matter to Control His Own Physiology.” Video, 4:45. National Geographic. January 25, 2010. https://youtu.be/yX2bVJm94b0"
+    },
+    {
+      "id": "ch05-n003",
+      "chapter": 5,
+      "note_number": 3,
+      "title_guess": "After Action Review (AAR) Process: Nano Tools for Leaders.",
+      "doi": null,
+      "urls": [
+        "https://executiveeducation.wharton.upenn.edu/"
+      ],
+      "artifact_type": "article_report_or_web",
+      "raw_text": "Henshaw, Todd. “After Action Review (AAR) Process: Nano Tools for Leaders.” Wharton@ Work. Wharton Executive Education. April 2012. https://executiveeducation.wharton.upenn.edu/ thought-leadership/wharton-at-work/2012/04/after-action-reviews"
+    },
+    {
+      "id": "ch05-n004",
+      "chapter": 5,
+      "note_number": 4,
+      "title_guess": "Getting Started with xAPI: Four Lines of Code.",
+      "doi": null,
+      "urls": [
+        "https://learningsolutionsmag.com/articles/2322/getting-started-with-xapi-four-"
+      ],
+      "artifact_type": "article_report_or_web",
+      "raw_text": "Altieri, Anthony. “Getting Started with xAPI: Four Lines of Code.” Learning Solutions Magazine. May 17, 2017. https://learningsolutionsmag.com/articles/2322/getting-started-with-xapi-four- lines-of-code"
+    },
+    {
+      "id": "ch05-n005",
+      "chapter": 5,
+      "note_number": 5,
+      "title_guess": "Zoran Popović.",
+      "doi": null,
+      "urls": [
+        "https://homes.cs.washington.edu/~zoran"
+      ],
+      "artifact_type": "article_report_or_web",
+      "raw_text": "“Zoran Popović.” University of Washington, Paul G. Allen School of Computer Science & Engineering. https://homes.cs.washington.edu/~zoran"
+    },
+    {
+      "id": "ch05-n006",
+      "chapter": 5,
+      "note_number": 6,
+      "title_guess": "Wids-eria/ADAGE: Assessment Data Aggregator for Gaming Environments.",
+      "doi": null,
+      "urls": [
+        "https://github.com/wids-eria/ADAGE"
+      ],
+      "artifact_type": "software_or_repository",
+      "raw_text": "“Wids-eria/ADAGE: Assessment Data Aggregator for Gaming Environments.” GitHub. Games + Learning + Society / Learning Games Network / Wisconsin Institute for Discovery UW Madison. Last modified September 23, 2015. https://github.com/wids-eria/ADAGE"
+    },
+    {
+      "id": "ch05-n007",
+      "chapter": 5,
+      "note_number": 7,
+      "title_guess": "Game-Based Assessment: An Integrated Model for Capturing Evidence of Learning in Play.",
+      "doi": "10.1504/IJLT.2014.064489",
+      "urls": [
+        "https://doi.org/10.1504/IJLT.2014.064489"
+      ],
+      "artifact_type": "paper_or_article",
+      "raw_text": "Halverson, Richard, and V. Elizabeth Owen. “Game-Based Assessment: An Integrated Model for Capturing Evidence of Learning in Play.” International Journal of Learning Technology 9, no. 2 (2014): 111–138. https://doi.org/10.1504/IJLT.2014.064489"
+    },
+    {
+      "id": "ch05-n008",
+      "chapter": 5,
+      "note_number": 8,
+      "title_guess": "xAPI Profile Server to Launch in 2021.",
+      "doi": null,
+      "urls": [
+        "https://adlnet.gov/news/2020/12/02/xAPI-Profile-Server-to-Launch-in-2021"
+      ],
+      "artifact_type": "article_report_or_web",
+      "raw_text": "“xAPI Profile Server to Launch in 2021.” ADL Initiative, US Department of Defense. December 2, 2020. https://adlnet.gov/news/2020/12/02/xAPI-Profile-Server-to-Launch-in-2021"
+    },
+    {
+      "id": "ch05-n009",
+      "chapter": 5,
+      "note_number": 9,
+      "title_guess": "Caliper Analytics.",
+      "doi": null,
+      "urls": [
+        "https://www.imsglobal.org/activity/caliper"
+      ],
+      "artifact_type": "article_report_or_web",
+      "raw_text": "“Caliper Analytics.” IMS Global Learning Consortium. Updated August 2021. www.imsglobal.org/activity/caliper"
+    },
+    {
+      "id": "ch06-n001",
+      "chapter": 6,
+      "note_number": 1,
+      "title_guess": "Engineering Learning at Kaplan University.",
+      "doi": "10.18665/sr.284711",
+      "urls": [
+        "https://doi.org/10.18665/sr.284711"
+      ],
+      "artifact_type": "paper_or_article",
+      "raw_text": "Brown, Jessie and Martin Kurzweil. “Engineering Learning at Kaplan University.” Ithaka S+R. Last modified October 6, 2016. https://doi.org/10.18665/sr.284711"
+    },
+    {
+      "id": "ch06-n002",
+      "chapter": 6,
+      "note_number": 2,
+      "title_guess": "Executing the Change to Learning Engineering at Scale.",
+      "doi": "10.4324/9781351186193",
+      "urls": [
+        "https://doi.org/10.4324/9781351186193"
+      ],
+      "artifact_type": "paper_or_article",
+      "raw_text": "Saxberg, Bror. “Executing the Change to Learning Engineering at Scale.” In Chris Dede, John Richards, Bror Saxberg (eds.). Learning Engineering for Online Education: Theoretical Contexts and Design-Based Examples, 1st ed. New York: Routledge, 2018, 166–193. https://doi.org/10.4324/9781351186193"
+    },
+    {
+      "id": "ch06-n003",
+      "chapter": 6,
+      "note_number": 3,
+      "title_guess": "Executing the Change to Learning Engineering at Scale.",
+      "doi": null,
+      "urls": [],
+      "artifact_type": "article_report_or_web",
+      "raw_text": "Saxberg, “Executing the Change to Learning Engineering at Scale.”"
+    },
+    {
+      "id": "ch06-n004",
+      "chapter": 6,
+      "note_number": 4,
+      "title_guess": "Executing the Change to Learning Engineering at Scale.",
+      "doi": null,
+      "urls": [],
+      "artifact_type": "article_report_or_web",
+      "raw_text": "Saxberg, “Executing the Change to Learning Engineering at Scale.”"
+    },
+    {
+      "id": "ch06-n005",
+      "chapter": 6,
+      "note_number": 5,
+      "title_guess": "Using Cognitive Load Theory to Improve Logical Reasoning for the LSAT.",
+      "doi": null,
+      "urls": [],
+      "artifact_type": "conference_artifact",
+      "raw_text": "Rudman, Larry, John Sweller, and David Niemi. “Using Cognitive Load Theory to Improve Logical Reasoning for the LSAT.” In Proceedings of 2013 Annual Meeting of the American Educational Research Association, San Francisco, CA, April 29, 2013"
+    },
+    {
+      "id": "ch06-n006",
+      "chapter": 6,
+      "note_number": 6,
+      "title_guess": "The Friendly Orange Glow: The Untold Story of the PLATO System and the Dawn of Cyberculture.",
+      "doi": "10.1177/1461444818784306",
+      "urls": [
+        "https://doi"
+      ],
+      "artifact_type": "paper_or_article",
+      "raw_text": "Jones, Steve. “The Friendly Orange Glow: The Untold Story of the PLATO System and the Dawn of Cyberculture.” New Media & Society 20, no. 11 (2018): 405–408. https://doi. org/10.1177/1461444818784306"
+    },
+    {
+      "id": "ch06-n007",
+      "chapter": 6,
+      "note_number": 7,
+      "title_guess": "Designing intelligent tutors that adapt to when students game the system.",
+      "doi": null,
+      "urls": [
+        "http://reports-archive.adm.cs.cmu.edu/anon/hcii/CMU-",
+        "https://u1lib.org/book/774357/133d6d"
+      ],
+      "artifact_type": "conference_artifact",
+      "raw_text": "Baker, Ryan S. “Designing intelligent tutors that adapt to when students game the system.” PhD diss. Carnegie Mellon University, 2005. http://reports-archive.adm.cs.cmu.edu/anon/hcii/CMU- HCII-05-104.pdf Baker, Ryan S., Albert T. Corbett, Kenneth R. Koedinger, Shelley Evenson, Ido Roll, Angela Z. Wagner, Meghan Naim, Jay Raspat, Daniel J. Baker, and Joseph E. Beck. “Adapting to When Students Game an Intelligent Tutoring System.” In Proceedings of the International Conference on Intelligent Tutoring Systems, Jhongli, Taiwan, June 26–30, 2006. Berlin, Heidelberg: Springer. https://u1lib.org/book/774357/133d6d"
+    },
+    {
+      "id": "ch06-n008",
+      "chapter": 6,
+      "note_number": 8,
+      "title_guess": "Data Standards.",
+      "doi": null,
+      "urls": [
+        "https://www.usgs.gov/products/data-and-tools/data-management/data-standards"
+      ],
+      "artifact_type": "standard_or_spec",
+      "raw_text": "Data Management. “Data Standards.” US Geological Survey. Last modified May 3, 2021. www.usgs.gov/products/data-and-tools/data-management/data-standards"
+    },
+    {
+      "id": "ch06-n009",
+      "chapter": 6,
+      "note_number": 9,
+      "title_guess": "Cognitive Models of Learning.",
+      "doi": "10.1007/978-1-4419-1428-6_241",
+      "urls": [
+        "https://doi.org/10.1007/978-1-4419-1428-6_241"
+      ],
+      "artifact_type": "paper_or_article",
+      "raw_text": "Lane, H. Chad. “Cognitive Models of Learning.” In Encyclopedia of the Sciences of Learning, edited by Norbert M. Seel. Boston: Springer, 2012. https://doi.org/10.1007/978-1-4419-1428-6_241"
+    },
+    {
+      "id": "ch06-n010",
+      "chapter": 6,
+      "note_number": 10,
+      "title_guess": "A Community Data Infrastructure to Support Learning Improvement Online.",
+      "doi": null,
+      "urls": [
+        "http://learnsphere.org"
+      ],
+      "artifact_type": "article_report_or_web",
+      "raw_text": "“A Community Data Infrastructure to Support Learning Improvement Online.” LearnSphere. Carnegie Mellon University, 2018. http://learnsphere.org"
+    },
+    {
+      "id": "ch06-n011",
+      "chapter": 6,
+      "note_number": 11,
+      "title_guess": "DataShop @CMU: A Data Analysis Service for the Learning Science Community.",
+      "doi": null,
+      "urls": [
+        "https://pslcdatashop.web.cmu.edu"
+      ],
+      "artifact_type": "article_report_or_web",
+      "raw_text": "“DataShop @CMU: A Data Analysis Service for the Learning Science Community.” Carnegie Mellon University. Last modified October 31, 2021. https://pslcdatashop.web.cmu.edu"
+    },
+    {
+      "id": "ch06-n012",
+      "chapter": 6,
+      "note_number": 12,
+      "title_guess": "Jim Gray on eScience: A Transformed Scientific Method.",
+      "doi": null,
+      "urls": [],
+      "artifact_type": "article_report_or_web",
+      "raw_text": "Closing quotation sourced from Hey, Tony, Stewart Tansley, and Kristin Tolle, eds. “Jim Gray on eScience: A Transformed Scientific Method.” In The Fourth Paradigm: Data-Intensive Scientific Discovery. Redmond, VA: Microsoft Research, 2009, xix. Learning Engineering Uses Data (Part 2): Analytics | 199 People now do not actually look through telescopes. Instead, they are “looking” through large-scale, complex instruments that relay data to data centers, and only then do they look at the information on their computers. – Jim Gray 12"
+    },
+    {
+      "id": "ch07-n001",
+      "chapter": 7,
+      "note_number": 1,
+      "title_guess": "Here, values is used to refer to non-ethical values (for example, preferences, social norms and conventions) whereas ethics is used to refer to individual morality and values defined in formal ethical systems.",
+      "doi": null,
+      "urls": [],
+      "artifact_type": "article_report_or_web",
+      "raw_text": "Here, values is used to refer to non-ethical values (for example, preferences, social norms and conventions) whereas ethics is used to refer to individual morality and values defined in formal ethical systems."
+    },
+    {
+      "id": "ch07-n002",
+      "chapter": 7,
+      "note_number": 2,
+      "title_guess": "Ethics of Educational Technology.",
+      "doi": "10.1007/978-1-4614-3185-5_10",
+      "urls": [
+        "https://doi.org/10.1007/978-1-4614-3185-5_10"
+      ],
+      "artifact_type": "book_or_chapter",
+      "raw_text": "Moore, Stephanie L. and James B. Ellsworth. “Ethics of Educational Technology.” In Handbook of Research on Educational Communications and Technology, 113–127. New York: Springer, 2014. https://doi.org/10.1007/978-1-4614-3185-5_10"
+    },
+    {
+      "id": "ch07-n003",
+      "chapter": 7,
+      "note_number": 3,
+      "title_guess": "Lessons from Adult Education: Identifying and Exploring Emerging Ethical Issues in Technologically Enhanced Performance.",
+      "doi": "10.1111/j.1937-8327.2003.tb00296.x",
+      "urls": [
+        "https://doi.org/10.1111/j.1937-8327.2003.tb00296.x"
+      ],
+      "artifact_type": "paper_or_article",
+      "raw_text": "Mabry, Christie Knittel and Tony O’Driscoll. “Lessons from Adult Education: Identifying and Exploring Emerging Ethical Issues in Technologically Enhanced Performance.” Performance Improvement Quarterly 16, no. 4, (2003): 78–93. https://doi.org/10.1111/j.1937-8327.2003.tb00296.x"
+    },
+    {
+      "id": "ch07-n004",
+      "chapter": 7,
+      "note_number": 4,
+      "title_guess": "Through the Interface: A Human Activity Approach to User Interface Design",
+      "doi": null,
+      "urls": [],
+      "artifact_type": "article_report_or_web",
+      "raw_text": "Bødker, Susanne. Through the Interface: A Human Activity Approach to User Interface Design. Boca Raton, FL: CRC Press, 1990"
+    },
+    {
+      "id": "ch07-n005",
+      "chapter": 7,
+      "note_number": 5,
+      "title_guess": "Designing Ethical Agency for Adaptive Instructional Systems: The FATE of Learning and Assessment.",
+      "doi": "10.1007/978-3-030-77857-6_18",
+      "urls": [
+        "https://doi.org/10.1007/978-3-030-77857-6_18"
+      ],
+      "artifact_type": "paper_or_article",
+      "raw_text": "Schoenherr, Jordan Richard. “Designing Ethical Agency for Adaptive Instructional Systems: The FATE of Learning and Assessment.” Adaptive Instructional Systems: Design and Evaluation, HCII 2021, Lecture Notes in Computer Science, vol. 12792, edited by Robert A. Sottilare and J. Schwarz, 265–283. Cham: Springer, 2021. https://doi.org/10.1007/978-3-030-77857-6_18"
+    },
+    {
+      "id": "ch07-n006",
+      "chapter": 7,
+      "note_number": 6,
+      "title_guess": "AECT Code of Professional Ethics 2018.",
+      "doi": null,
+      "urls": [
+        "https://www.aect.org/docs/AECT_Code_of_Ethic-Current.pdf"
+      ],
+      "artifact_type": "article_report_or_web",
+      "raw_text": "“AECT Code of Professional Ethics 2018.” Association for Educational Communications and Technology, 2018. www.aect.org/docs/AECT_Code_of_Ethic-Current.pdf"
+    },
+    {
+      "id": "ch07-n007",
+      "chapter": 7,
+      "note_number": 7,
+      "title_guess": "Code of Ethics for Educators.",
+      "doi": null,
+      "urls": [
+        "https://www.nea.org/resource-library/code-ethics-educators"
+      ],
+      "artifact_type": "article_report_or_web",
+      "raw_text": "“Code of Ethics for Educators.” National Education Association, September 14, 2020. www.nea.org/resource-library/code-ethics-educators"
+    },
+    {
+      "id": "ch07-n008",
+      "chapter": 7,
+      "note_number": 8,
+      "title_guess": "Code of Ethics.",
+      "doi": null,
+      "urls": [
+        "https://ispi.org/general/custom.asp?page=CodeofEthics"
+      ],
+      "artifact_type": "article_report_or_web",
+      "raw_text": "“Code of Ethics.” International Society for Performance Improvement, 2002. https://ispi.org/general/custom.asp?page=CodeofEthics"
+    },
+    {
+      "id": "ch07-n009",
+      "chapter": 7,
+      "note_number": 9,
+      "title_guess": "The Code of Ethics.",
+      "doi": null,
+      "urls": [
+        "https://www.tmi.org/about-talent-management-institute/tmi-code-of-ethics"
+      ],
+      "artifact_type": "article_report_or_web",
+      "raw_text": "“The Code of Ethics.” Talent Management Institute, 2021. www.tmi.org/about-talent-management-institute/tmi-code-of-ethics"
+    },
+    {
+      "id": "ch07-n010",
+      "chapter": 7,
+      "note_number": 10,
+      "title_guess": "Jones, Campbell, René Ten Bos, and Martin Parker",
+      "doi": "10.4324/9780203458457",
+      "urls": [
+        "https://doi.org/10.4324/9780203458457"
+      ],
+      "artifact_type": "paper_or_article",
+      "raw_text": "Jones, Campbell, René Ten Bos, and Martin Parker. For Business Ethics, 1st ed. New York, London: Routledge, 2005. https://doi.org/10.4324/9780203458457"
+    },
+    {
+      "id": "ch07-n011",
+      "chapter": 7,
+      "note_number": 11,
+      "title_guess": "Ethically Aligned Design: A Vision for Prioritizing Human Well-being with Autonomous and Intelligent Systems—Version II Request for Input.",
+      "doi": null,
+      "urls": [
+        "https://standards.ieee.org/content/dam/ieee-"
+      ],
+      "artifact_type": "standard_or_spec",
+      "raw_text": "“Ethically Aligned Design: A Vision for Prioritizing Human Well-being with Autonomous and Intelligent Systems—Version II Request for Input.” IEEE Global Initiative on Ethics of Autonomous and Intelligent Systems, 2018. https://standards.ieee.org/content/dam/ieee- standards/standards/web/documents/other/ead_v2.pdf"
+    },
+    {
+      "id": "ch07-n012",
+      "chapter": 7,
+      "note_number": 12,
+      "title_guess": "Moral Economies and Codes of Conduct: The Social Organization of Canadian Experimental Psychology.",
+      "doi": "10.7202/1065958ar",
+      "urls": [
+        "https://doi.org/10.7202/1065958ar"
+      ],
+      "artifact_type": "paper_or_article",
+      "raw_text": "Schoenherr, Jordan. “Moral Economies and Codes of Conduct: The Social Organization of Canadian Experimental Psychology.” Scientia Canadensis: Canadian Journal of the History of Science, Technology and Medicine 41, no. 1 (2019): 31–54. https://doi.org/10.7202/1065958ar"
+    },
+    {
+      "id": "ch07-n013",
+      "chapter": 7,
+      "note_number": 13,
+      "title_guess": "Code of Ethics for the Health Education Profession.",
+      "doi": null,
+      "urls": [
+        "http://cnheo.org/code-of-ethics.html"
+      ],
+      "artifact_type": "article_report_or_web",
+      "raw_text": "“Code of Ethics for the Health Education Profession.” Coalition for National Health Education Organizations (CNHEO), 2020. http://cnheo.org/code-of-ethics.html"
+    },
+    {
+      "id": "ch07-n014",
+      "chapter": 7,
+      "note_number": 14,
+      "title_guess": "Outcome Document: First Draft of the Recommendation on the Ethics of Artificial Intelligence.",
+      "doi": null,
+      "urls": [
+        "https://unesdoc.unesco.org/ark:/48223/pf0000373434"
+      ],
+      "artifact_type": "article_report_or_web",
+      "raw_text": "Ad Hoc Expert Group for the Preparation of a Draft Text of a Recommendation the Ethics of Artificial Intelligence. “Outcome Document: First Draft of the Recommendation on the Ethics of Artificial Intelligence.” Paris: United Nations Educational Scientific and Cultural Organization (UNESCO), 2020. https://unesdoc.unesco.org/ark:/48223/pf0000373434"
+    },
+    {
+      "id": "ch07-n015",
+      "chapter": 7,
+      "note_number": 15,
+      "title_guess": "Proposal for a Regulation of the European Parliament and of the Council on the Protection of Individuals with Regard to the Processing of Personal Data and on the Free Movement of Such Data (General Data Protection Regul",
+      "doi": null,
+      "urls": [
+        "https://data.consilium.europa.eu/doc/document/"
+      ],
+      "artifact_type": "article_report_or_web",
+      "raw_text": "Council of the European Union. Proposal for a Regulation of the European Parliament and of the Council on the Protection of Individuals with Regard to the Processing of Personal Data and on the Free Movement of Such Data (General Data Protection Regulation). Brussels: Council of the European Union, 2015. See especially page 68. https://data.consilium.europa.eu/doc/document/ ST-9565-2015-INIT/en/pdf"
+    },
+    {
+      "id": "ch07-n016",
+      "chapter": 7,
+      "note_number": 16,
+      "title_guess": "Guidance: Government Design Principles.",
+      "doi": null,
+      "urls": [
+        "https://www.gov.uk/guidance/government-design-principles"
+      ],
+      "artifact_type": "article_report_or_web",
+      "raw_text": "Central Digital and Data Office. “Guidance: Government Design Principles.” United Kingdom Government. Last modified September 10, 2019. www.gov.uk/guidance/government-design-principles"
+    },
+    {
+      "id": "ch07-n017",
+      "chapter": 7,
+      "note_number": 17,
+      "title_guess": "Principles for Digital Development.",
+      "doi": null,
+      "urls": [
+        "https://digitalprinciples.org"
+      ],
+      "artifact_type": "article_report_or_web",
+      "raw_text": "“Principles for Digital Development.” Accessed December 29, 2021. https://digitalprinciples.org"
+    },
+    {
+      "id": "ch07-n018",
+      "chapter": 7,
+      "note_number": 18,
+      "title_guess": "The IoE Guiding Principles.",
+      "doi": null,
+      "urls": [
+        "https://www.internetofeducation.org/#Guiding-Principles"
+      ],
+      "artifact_type": "article_report_or_web",
+      "raw_text": "“The IoE Guiding Principles.” Internet of Education. Accessed December 29, 2021. www.internetofeducation.org/#Guiding-Principles"
+    },
+    {
+      "id": "ch07-n019",
+      "chapter": 7,
+      "note_number": 19,
+      "title_guess": "Formally, this is referred to as the Principle of Nonmaleficence.",
+      "doi": null,
+      "urls": [],
+      "artifact_type": "article_report_or_web",
+      "raw_text": "Formally, this is referred to as the Principle of Nonmaleficence."
+    },
+    {
+      "id": "ch07-n020",
+      "chapter": 7,
+      "note_number": 20,
+      "title_guess": "Boundary Conditions: What They Are, How to Explore Them, Why We Need Them, and When to Consider Them.",
+      "doi": "10.1177/1094428116641191",
+      "urls": [
+        "https://doi.org/10.1177/1094428116641191"
+      ],
+      "artifact_type": "paper_or_article",
+      "raw_text": "Busse, Christian, Andrew P. Kach, and Stephan M. Wagner. “Boundary Conditions: What They Are, How to Explore Them, Why We Need Them, and When to Consider Them.” Organizational Research Methods 20, no. 4 (2017): 574–609. https://doi.org/10.1177/1094428116641191"
+    },
+    {
+      "id": "ch07-n021",
+      "chapter": 7,
+      "note_number": 21,
+      "title_guess": "A Proposal for a Policy on the Ethical Care and Use of Cadavers and Their Tissues.",
+      "doi": "10.1002/ase.199",
+      "urls": [
+        "https://doi.org/10.1002/ase.199",
+        "https://doi.org/10.1002/ase.1618"
+      ],
+      "artifact_type": "paper_or_article",
+      "raw_text": "Champney, Thomas H. “A Proposal for a Policy on the Ethical Care and Use of Cadavers and Their Tissues.” Anatomical Sciences Education 4, no. 1 (2011): 49–52. https://doi.org/10.1002/ase.199 Jones, D. Gareth and Mike R. King. “Maintaining the Anonymity of Cadavers in Medical Education: Historic Relic or Educational and Ethical Necessity?” Anatomical Sciences Education 10, no. 1 (2017): 87–97. https://doi.org/10.1002/ase.1618"
+    },
+    {
+      "id": "ch07-n022",
+      "chapter": 7,
+      "note_number": 22,
+      "title_guess": "Body Bequeathal Program.",
+      "doi": null,
+      "urls": [
+        "https://med.uottawa.ca/department-innovation/"
+      ],
+      "artifact_type": "article_report_or_web",
+      "raw_text": "“Body Bequeathal Program.” Department of Innovation in Medical Education, University of Ottawa. Last modified December 22, 2021. https://med.uottawa.ca/department-innovation/ division-clinical-and-functional-anatomy/body-bequeathal-program/memorial-service"
+    },
+    {
+      "id": "ch07-n023",
+      "chapter": 7,
+      "note_number": 23,
+      "title_guess": "Medal of Recognition.",
+      "doi": null,
+      "urls": [],
+      "artifact_type": "article_report_or_web",
+      "raw_text": "“Medal of Recognition.” The Ottawa Hospital. Last modified December 30, 2016. www. ottawahospital.on.ca/en/clinical-services/deptpgrmcs/programs/organ-and-tissue-donation- program/donor-awareness/medal-of-recognition"
+    },
+    {
+      "id": "ch07-n024",
+      "chapter": 7,
+      "note_number": 24,
+      "title_guess": "Social-Cognitive Barriers to Ethical Authorship.",
+      "doi": "10.3389/fpsyg.2015.00877",
+      "urls": [
+        "http://dx.doi.org/10.3389/fpsyg.2015.00877"
+      ],
+      "artifact_type": "paper_or_article",
+      "raw_text": "Schoenherr, Jordan Richard. “Social-Cognitive Barriers to Ethical Authorship.” Frontiers in Psychology 6 (2015): 877. http://dx.doi.org/10.3389/fpsyg.2015.00877"
+    },
+    {
+      "id": "ch07-n025",
+      "chapter": 7,
+      "note_number": 25,
+      "title_guess": "The Moral Dimensions of Instructional Design.",
+      "doi": null,
+      "urls": [
+        "https://www.jstor.org/stable/44428816"
+      ],
+      "artifact_type": "article_report_or_web",
+      "raw_text": "Osguthorpe, Russell T., Richard D. Osguthorpe, W. James Jacob, and Randy Davies. “The Moral Dimensions of Instructional Design.” Educational Technology 43, no. 2 (2003): 19–23. www.jstor.org/stable/44428816"
+    },
+    {
+      "id": "ch07-n026",
+      "chapter": 7,
+      "note_number": 26,
+      "title_guess": "When Morality Opposes Justice: Conservatives Have Moral Intuitions that Liberals may not Recognize.",
+      "doi": "10.1007/s11211-007-0034-z",
+      "urls": [
+        "https://doi.org/10.1007/s11211-007-0034-z"
+      ],
+      "artifact_type": "paper_or_article",
+      "raw_text": "Haidt, Jonathan, and Jesse Graham. “When Morality Opposes Justice: Conservatives Have Moral Intuitions that Liberals may not Recognize.” Social Justice Research 20 (2007): 98–116. https://doi.org/10.1007/s11211-007-0034-z"
+    },
+    {
+      "id": "ch07-n027",
+      "chapter": 7,
+      "note_number": 27,
+      "title_guess": "Ethical Sensemaking and Autonomous and Intelligent Systems: Identifying the Ethical Affordances of A/IS.",
+      "doi": null,
+      "urls": [],
+      "artifact_type": "article_report_or_web",
+      "raw_text": "Schoenherr, Jordan Richard. “Ethical Sensemaking and Autonomous and Intelligent Systems: Identifying the Ethical Affordances of A/IS.” Frontlines in AI Ethics, edited by Andrew Hampton and Jeanine DeFalco. London: Routledge, forthcoming."
+    },
+    {
+      "id": "ch07-n028",
+      "chapter": 7,
+      "note_number": 28,
+      "title_guess": "Kohlberg, Lawrence",
+      "doi": null,
+      "urls": [],
+      "artifact_type": "article_report_or_web",
+      "raw_text": "Kohlberg, Lawrence. Moral Development. McGraw-Hill, 1973."
+    },
+    {
+      "id": "ch07-n029",
+      "chapter": 7,
+      "note_number": 29,
+      "title_guess": "‘From Jerusalem to Jericho’: A Study of Situational and Dispositional Variables in Helping Behavior.",
+      "doi": "10.1037/h0034449",
+      "urls": [
+        "https://doi.org/10.1037/h0034449"
+      ],
+      "artifact_type": "paper_or_article",
+      "raw_text": "Darley, John M., and C. Daniel Batson. “‘From Jerusalem to Jericho’: A Study of Situational and Dispositional Variables in Helping Behavior.” Journal of Personality and Social Psychology 27, no. 1 (1973): 100–108. https://doi.org/10.1037/h0034449"
+    },
+    {
+      "id": "ch07-n030",
+      "chapter": 7,
+      "note_number": 30,
+      "title_guess": "The Dishonesty of Honest People: A Theory of Self- Concept Maintenance.",
+      "doi": "10.1509/jmkr.45.6.633",
+      "urls": [
+        "https://doi.org/10.1509/jmkr.45.6.633"
+      ],
+      "artifact_type": "paper_or_article",
+      "raw_text": "Mazar, Nina, On Amir, and Dan Ariely. “The Dishonesty of Honest People: A Theory of Self- Concept Maintenance.” Journal of Marketing Research 45, no. 6 (2008): 633–644. https://doi.org/10.1509/jmkr.45.6.633"
+    },
+    {
+      "id": "ch07-n031",
+      "chapter": 7,
+      "note_number": 31,
+      "title_guess": "God is Watching You: Priming God Concepts Increases Prosocial Behavior in an Anonymous Economic Game.",
+      "doi": "10.1111/j.1467-9280.2007.01983.x",
+      "urls": [
+        "https://doi.org/10.1111/j.1467-9280.2007.01983.x"
+      ],
+      "artifact_type": "paper_or_article",
+      "raw_text": "Shariff, Azim F. and Ara Norenzayan. “God is Watching You: Priming God Concepts Increases Prosocial Behavior in an Anonymous Economic Game.” Psychological Science 18, no. 9 (2007): 803–809. https://doi.org/10.1111/j.1467-9280.2007.01983.x Learning Engineering is Ethical | 227"
+    },
+    {
+      "id": "ch07-n032",
+      "chapter": 7,
+      "note_number": 32,
+      "title_guess": "Effects of Deindividuation Variables on Stealing Among Halloween Trick-or-Treaters.",
+      "doi": "10.1037/0022-3514.33.2.178",
+      "urls": [
+        "https://doi.org/10.1037/0022-3514.33.2.178"
+      ],
+      "artifact_type": "paper_or_article",
+      "raw_text": "Diener, Edward, Scott C. Fraser, Arthur L. Beaman, and Roger T. Kelem. “Effects of Deindividuation Variables on Stealing Among Halloween Trick-or-Treaters.” Journal of Personality and Social Psychology 33, no. 2 (1976): 178. https://doi.org/10.1037/0022-3514.33.2.178"
+    },
+    {
+      "id": "ch07-n033",
+      "chapter": 7,
+      "note_number": 33,
+      "title_guess": "When Morality Opposes Justice: Conservatives Have Moral Intuitions that Liberals May Not Recognize.",
+      "doi": "10.1007/s11211-007-0034-z",
+      "urls": [
+        "https://doi.org/10.1007/s11211-007-0034-z"
+      ],
+      "artifact_type": "paper_or_article",
+      "raw_text": "Haidt, Jonathan and Jesse Graham. “When Morality Opposes Justice: Conservatives Have Moral Intuitions that Liberals May Not Recognize.” Social Justice Research 20, no. 1 (2007): 98–116. https://doi.org/10.1007/s11211-007-0034-z"
+    },
+    {
+      "id": "ch07-n034",
+      "chapter": 7,
+      "note_number": 34,
+      "title_guess": "A Social–Cognitive Approach to the Moral Personality.",
+      "doi": null,
+      "urls": [],
+      "artifact_type": "article_report_or_web",
+      "raw_text": "Lapsley, Daniel K. and Darcia Narvaez. “A Social–Cognitive Approach to the Moral Personality.” In Moral Development, Self, and Identity, edited by Daniel K. Lapsley and Darcia Narvaez, 189–212. Mahwah, NJ: Lawrence Erlbaum Associates Publishers, 2004."
+    },
+    {
+      "id": "ch07-n035",
+      "chapter": 7,
+      "note_number": 35,
+      "title_guess": "On the Wrong Side of the Trolley Track: Neural Correlates of Relative Social Valuation.",
+      "doi": "10.1093/scan/nsq011",
+      "urls": [
+        "https://doi.org/10.1093/scan/nsq011"
+      ],
+      "artifact_type": "paper_or_article",
+      "raw_text": "Cikara, Mina, Rachel A. Farnsworth, Lasana T. Harris, and Susan T. Fiske. “On the Wrong Side of the Trolley Track: Neural Correlates of Relative Social Valuation.” Social Cognitive and Affective Neuroscience 5, no. 4 (2010): 404–413. https://doi.org/10.1093/scan/nsq011"
+    },
+    {
+      "id": "ch07-n036",
+      "chapter": 7,
+      "note_number": 36,
+      "title_guess": "Testing Stereotype Threat: Does Anxiety Explain Race and Sex Differences in Achievement?",
+      "doi": "10.1006/ceps.2000.1052",
+      "urls": [
+        "https://doi.org/10.1006/ceps.2000.1052",
+        "https://doi.org/10.1006/jesp.1998.1373",
+        "https://doi.org/10.1037/0022-3514.69.5.797"
+      ],
+      "artifact_type": "paper_or_article",
+      "raw_text": "Osborne, Jason W. “Testing Stereotype Threat: Does Anxiety Explain Race and Sex Differences in Achievement?” Contemporary Educational Psychology 26, no. 3 (2001): 291–310. https://doi.org/10.1006/ceps.2000.1052 Spencer, Steven J., Claude M. Steele, and Diane M. Quinn. “Stereotype Threat and Women’s Math Performance.” Journal of Experimental Social Psychology 35, no. 1 (1999): 4–28. https://doi.org/10.1006/jesp.1998.1373 Steele, Claude M. and Joshua Aronson. “Stereotype Threat and the Intellectual Test Performance of African Americans.” Journal of Personality and Social Psychology 69, no. 5 (1995): 797–811. https://doi.org/10.1037/0022-3514.69.5.797"
+    },
+    {
+      "id": "ch07-n037",
+      "chapter": 7,
+      "note_number": 37,
+      "title_guess": "Moral Rationalization Contributes More Strongly to Escalation of Unethical Behavior Among Low Moral Identifiers than Among High Moral Identifiers.",
+      "doi": "10.3389/fpsyg.2019.02912",
+      "urls": [
+        "https://doi.org/10.3389/fpsyg.2019.02912"
+      ],
+      "artifact_type": "paper_or_article",
+      "raw_text": "Mulder, Laetitia B. and Eric van Dijk. “Moral Rationalization Contributes More Strongly to Escalation of Unethical Behavior Among Low Moral Identifiers than Among High Moral Identifiers.” Frontiers in Psychology 10 (2020): 2912. https://doi.org/10.3389/fpsyg.2019.02912 Fiske, Alan Page and Tage Shakti Rai. Virtuous Violence: Hurting and Killing to Create, Sustain, End, and Honor Social Relationships. Cambridge: Cambridge University Press, 2014."
+    },
+    {
+      "id": "ch07-n038",
+      "chapter": 7,
+      "note_number": 38,
+      "title_guess": "Empathy and Moral Development: Implications for Caring and Justice",
+      "doi": null,
+      "urls": [],
+      "artifact_type": "article_report_or_web",
+      "raw_text": "Hoffman, Martin L. Empathy and Moral Development: Implications for Caring and Justice. Cambridge: Cambridge University Press, 2001."
+    },
+    {
+      "id": "ch07-n039",
+      "chapter": 7,
+      "note_number": 39,
+      "title_guess": "Money Priming Can Change People’s Thoughts, Feelings, Motivations, and Behaviors: An Update on 10 Years of Experiments.",
+      "doi": "10.1037/xge0000091",
+      "urls": [
+        "https://doi.org/10.1037/xge0000091"
+      ],
+      "artifact_type": "paper_or_article",
+      "raw_text": "Vohs, Kathleen D. “Money Priming Can Change People’s Thoughts, Feelings, Motivations, and Behaviors: An Update on 10 Years of Experiments.” Journal of Experimental Psychology: General 144, no. 4 (2015): e86. https://doi.org/10.1037/xge0000091"
+    },
+    {
+      "id": "ch07-n040",
+      "chapter": 7,
+      "note_number": 40,
+      "title_guess": "The Name of the Game: Predictive Power of Reputations Versus Situational Labels in Determining Prisoner’s Dilemma Game Moves.",
+      "doi": "10.1177/0146167204264004",
+      "urls": [
+        "https://doi.org/10.1177/0146167204264004"
+      ],
+      "artifact_type": "paper_or_article",
+      "raw_text": "Liberman, Varda, Steven M. Samuels, and Lee Ross. “The Name of the Game: Predictive Power of Reputations Versus Situational Labels in Determining Prisoner’s Dilemma Game Moves.” Personality and Social Psychology Bulletin 30, no. 9 (2004): 1175–1185. https://doi.org/10.1177/0146167204264004"
+    },
+    {
+      "id": "ch07-n041",
+      "chapter": 7,
+      "note_number": 41,
+      "title_guess": "Principles of Anti-Discriminatory Design.",
+      "doi": "10.1109/ETHICS.2016.7560055",
+      "urls": [
+        "https://doi.org/10.1109/ETHICS.2016.7560055"
+      ],
+      "artifact_type": "conference_artifact",
+      "raw_text": "Wittkower, Dylan E. “Principles of Anti-Discriminatory Design.” In Proceedings of the 2016 IEEE International Symposium on Ethics in Engineering, Science and Technology (ETHICS), Vancouver, May 13–14, 2016, 1–7. https://doi.org/10.1109/ETHICS.2016.7560055"
+    },
+    {
+      "id": "ch07-n042",
+      "chapter": 7,
+      "note_number": 42,
+      "title_guess": "Validity of Psychological Assessment: Validation of Inferences from Persons’ Responses and Performances as Scientific Inquiry into Score Meaning.",
+      "doi": "10.1037/0003-066X.50.9.741",
+      "urls": [
+        "https://doi.org/10.1037/0003-066X.50.9.741"
+      ],
+      "artifact_type": "paper_or_article",
+      "raw_text": "Messick, Samuel. “Validity of Psychological Assessment: Validation of Inferences from Persons’ Responses and Performances as Scientific Inquiry into Score Meaning.” American Psychologist 50, no. 9 (1995): 741–749. https://doi.org/10.1037/0003-066X.50.9.741"
+    },
+    {
+      "id": "ch07-n043",
+      "chapter": 7,
+      "note_number": 43,
+      "title_guess": "Value Sensitive Design and Information Systems.",
+      "doi": "10.1007/978-94-007-7844-3_4",
+      "urls": [
+        "https://doi.org/10.1007/978-94-007-7844-3_4"
+      ],
+      "artifact_type": "paper_or_article",
+      "raw_text": "Friedman, Batya, Peter H. Kahn, Alan Borning, and Alina Huldtgren. “Value Sensitive Design and Information Systems.” In Early Engagement and New Technologies: Opening Up the Laboratory, edited by Neelke Doorn, Daan Schuurbiers, Ibo van de Poel, and Michael E. Gorman, 69–101. Dordrecht: Springer, 2013. https://doi.org/10.1007/978-94-007-7844-3_4"
+    },
+    {
+      "id": "ch07-n044",
+      "chapter": 7,
+      "note_number": 44,
+      "title_guess": "Tales from the Dark Side: Privacy Dark Strategies and Privacy Dark Patterns.",
+      "doi": "10.1515/popets-2016-0038",
+      "urls": [
+        "https://doi.org/10.1515/popets-2016-0038",
+        "https://doi.org/10.1145/3173574.3174108"
+      ],
+      "artifact_type": "conference_artifact",
+      "raw_text": "Bösch, Christoph, Benjamin Erb, Frank Kargl, Henning Kopp, and Stefan Pfattheicher. “Tales from the Dark Side: Privacy Dark Strategies and Privacy Dark Patterns.” Proceedings on Privacy Enhancing Technologies, no. 4 (2016): 237–254. https://doi.org/10.1515/popets-2016-0038 Gray, Colin M., Yubo Kou, Bryan Battles, Joseph Hoggatt, and Austin L. Toombs. “The Dark (Patterns) Side of UX Design.” In Proceedings of the 2018 CHI Conference on Human Factors in Computing Systems, 1–14. New York: Association for Computing Machinery, 2018. https://doi.org/10.1145/3173574.3174108"
+    },
+    {
+      "id": "ch07-n045",
+      "chapter": 7,
+      "note_number": 45,
+      "title_guess": "Reflective Design.",
+      "doi": "10.1145/1094562.1094569",
+      "urls": [
+        "https://doi.org/10.1145/1094562.1094569"
+      ],
+      "artifact_type": "conference_artifact",
+      "raw_text": "Sengers, Phoebe, Kirsten Boehner, Shay David, and Joseph Kaye. “Reflective Design.” In Proceedings of the 4th Decennial Conference on Critical Computing: Between Sense and Sensibility, 49–58. New York: Association for Computing Machinery, 2005. https://doi.org/10.1145/1094562.1094569"
+    },
+    {
+      "id": "ch07-n046",
+      "chapter": 7,
+      "note_number": 46,
+      "title_guess": "Design Justice: Towards an Intersectional Feminist Framework for Design Theory and Practice.",
+      "doi": null,
+      "urls": [
+        "https://ssrn.com/abstract=3189696"
+      ],
+      "artifact_type": "conference_artifact",
+      "raw_text": "Costanza-Chock, Sasha. “Design Justice: Towards an Intersectional Feminist Framework for Design Theory and Practice.” In Proceedings of the Design Research Society, Limerick, Ireland, June 25–28, 2018. https://ssrn.com/abstract=3189696"
+    },
+    {
+      "id": "ch07-n047",
+      "chapter": 7,
+      "note_number": 47,
+      "title_guess": "Was the Gender Identity Disorder of Childhood Diagnosis Introduced into DSM-III as a Backdoor Maneuver to Replace Homosexuality? A Historical Note.",
+      "doi": "10.1080/00926230590475251",
+      "urls": [
+        "https://doi.org/10.1080/00926230590475251"
+      ],
+      "artifact_type": "paper_or_article",
+      "raw_text": "Zucker, Kenneth J., and Robert L. Spitzer. “Was the Gender Identity Disorder of Childhood Diagnosis Introduced into DSM-III as a Backdoor Maneuver to Replace Homosexuality? A Historical Note.” Journal of Sex and Marital Therapy 31, no. 1 (2005): 31–42. https://doi.org/10.1080/00926230590475251"
+    },
+    {
+      "id": "ch07-n048",
+      "chapter": 7,
+      "note_number": 48,
+      "title_guess": "Disaffordances and Dysaffordances in Code.",
+      "doi": null,
+      "urls": [
+        "https://journals.uic.edu/ojs/index.php/spir/article/view/10174"
+      ],
+      "artifact_type": "conference_artifact",
+      "raw_text": "Wittkower, DE. “Disaffordances and Dysaffordances in Code.” In Selected Papers of #AoIR2017: The 18th Annual Conference of the Association of Internet Researchers, Tartu, Estonia, October 18–21, 2017. https://journals.uic.edu/ojs/index.php/spir/article/view/10174"
+    },
+    {
+      "id": "ch07-n049",
+      "chapter": 7,
+      "note_number": 49,
+      "title_guess": "Disaffordances and Dysaffordances in Code.",
+      "doi": null,
+      "urls": [],
+      "artifact_type": "book_or_chapter",
+      "raw_text": "Wittkower, “Disaffordances and Dysaffordances in Code.” TOOLS SHORT PRACTICAL CHAPTERS WITH EASY-REFERENCE CHECKLISTS, GUIDES, + TEMPLATES"
+    },
+    {
+      "id": "ch08-n001",
+      "chapter": 8,
+      "note_number": 1,
+      "title_guess": "Beyond the Podium: Delivering Training and Performance to a Digital World",
+      "doi": null,
+      "urls": [],
+      "artifact_type": "article_report_or_web",
+      "raw_text": "Rossett, Allison, and Kendra Sheldon. Beyond the Podium: Delivering Training and Performance to a Digital World. 1st ed. San Fancisco: Jossey-Bass / Pfeiffer, 2001."
+    },
+    {
+      "id": "ch08-n002",
+      "chapter": 8,
+      "note_number": 2,
+      "title_guess": "Task Analysis in Instructional Design.",
+      "doi": null,
+      "urls": [
+        "http://knowledgejump.com/hrd/isd/tasks.html",
+        "http://knowledgejump.com/hrd/needsalt.html"
+      ],
+      "artifact_type": "book_or_chapter",
+      "raw_text": "Clark, Donald. “Task Analysis in Instructional Design.” Instructional System Design: The ADDIE Model: A Handbook for Learning Designers. Last modified September 21, 2015. http://knowledgejump.com/hrd/isd/tasks.html Clark, Donald. “Task Analysis Tools.” Knowledge Jump. Last modified October 18, 2011. http://knowledgejump.com/hrd/needsalt.html"
+    },
+    {
+      "id": "ch08-n003",
+      "chapter": 8,
+      "note_number": 3,
+      "title_guess": "5 Whys: Getting to the Root of a Problem Quickly.",
+      "doi": null,
+      "urls": [
+        "https://www.mindtools.com/pages/article/newTMC_5W.htm"
+      ],
+      "artifact_type": "article_report_or_web",
+      "raw_text": "Mind Tools Team. “5 Whys: Getting to the Root of a Problem Quickly.” Mind Tools. Last modified December 12, 2021. www.mindtools.com/pages/article/newTMC_5W.htm"
+    },
+    {
+      "id": "ch08-n004",
+      "chapter": 8,
+      "note_number": 4,
+      "title_guess": "Introduction to Quality Control",
+      "doi": null,
+      "urls": [],
+      "artifact_type": "article_report_or_web",
+      "raw_text": "Ishikawa, Kaoru. Introduction to Quality Control. Japan: Taylor & Francis, 1990."
+    },
+    {
+      "id": "ch08-n005",
+      "chapter": 8,
+      "note_number": 5,
+      "title_guess": "Cause and Effect Analysis: Identifying the Likely Causes of Problems.",
+      "doi": null,
+      "urls": [
+        "https://www.mindtools.com/pages/article/newTMC_03.htm"
+      ],
+      "artifact_type": "article_report_or_web",
+      "raw_text": "See also: Mind Tools Team. “Cause and Effect Analysis: Identifying the Likely Causes of Problems.” Mind Tools. www.mindtools.com/pages/article/newTMC_03.htm"
+    },
+    {
+      "id": "ch08-n006",
+      "chapter": 8,
+      "note_number": 6,
+      "title_guess": "Failure Mode and Effects Analysis (FMEA): Spotting Problems Before a Solution Is Implemented.",
+      "doi": null,
+      "urls": [
+        "https://www.mindtools.com/"
+      ],
+      "artifact_type": "article_report_or_web",
+      "raw_text": "Mind Tools Team. “Failure Mode and Effects Analysis (FMEA): Spotting Problems Before a Solution Is Implemented.” Mind Tools. Last modified December 12, 2021. www.mindtools.com/ pages/article/newTMC_82.htm"
+    },
+    {
+      "id": "ch08-n007",
+      "chapter": 8,
+      "note_number": 7,
+      "title_guess": "Failure Modes and Effects Analysis (FMEA).",
+      "doi": null,
+      "urls": [
+        "https://www.osti.gov/servlets/purl/1097206",
+        "https://fmea-training.com/10-steps-process-failure-mode-and-effects-",
+        "https://www.cms.gov/Medicare/Provider-Enrollment-and-Certification/QAPI/downloads/"
+      ],
+      "artifact_type": "conference_artifact",
+      "raw_text": "Venuk, Cecelia Marie. “Failure Modes and Effects Analysis (FMEA).” Presentation at the Albuquerque Quality Network Conference, Albuquerque, NM, February 23, 2012. www.osti.gov/servlets/purl/1097206 “10 Steps to do a Process FMEA.” FMEA Training from QualityTrainingPortal. Accessed December 12, 2021. https://fmea-training.com/10-steps-process-failure-mode-and-effects- analysis Kane, Robert and Rosalie Kane. “Guidance for Performing Failure Mode and Effects Analysis with Performance Improvement Projects.” The Centers for Medicare and Medicaid Services, United States Department of Health and Human Services. Last modified February 18, 2014. www.cms.gov/Medicare/Provider-Enrollment-and-Certification/QAPI/downloads/ GuidanceForFMEA.pdf"
+    },
+    {
+      "id": "ch08-n008",
+      "chapter": 8,
+      "note_number": 8,
+      "title_guess": "A Case of FMEA Implementation in the Educational Sector and Integration with CRM and QFD Concepts.",
+      "doi": null,
+      "urls": [
+        "https://ieeexplore.ieee.org/abstract/document/4618036"
+      ],
+      "artifact_type": "conference_artifact",
+      "raw_text": "Sinthavalai, Runchana and Napisporn Memongkol. “A Case of FMEA Implementation in the Educational Sector and Integration with CRM and QFD Concepts.” Paper presented at IEEE International Engineering Management Conference, Estoril, Portugal, June, 28–30, 2008. New York: IEEE. https://ieeexplore.ieee.org/abstract/document/4618036"
+    },
+    {
+      "id": "ch10-n001",
+      "chapter": 10,
+      "note_number": 1,
+      "title_guess": "The Discipline of Teams.",
+      "doi": null,
+      "urls": [
+        "https://hbr.org/1993/03/the-discipline-of-teams-2"
+      ],
+      "artifact_type": "article_report_or_web",
+      "raw_text": "Katzenbach, John R., and Dennis K. Smith. “The Discipline of Teams.” Harvard Business Review, March–April (1993), https://hbr.org/1993/03/the-discipline-of-teams-2"
+    },
+    {
+      "id": "ch10-n002",
+      "chapter": 10,
+      "note_number": 2,
+      "title_guess": "Leadership and Followership in Military Interprofessional Health Care Teams.",
+      "doi": null,
+      "urls": [],
+      "artifact_type": "article_report_or_web",
+      "raw_text": "Barry, Erin S., Karlen S. Bader-Larsen, Holly S. Meyer, Steven J. Durning, and Lara Varpio. “Leadership and Followership in Military Interprofessional Health Care Teams.” Military Medicine 186, no. Supplement_3 (2021): 7–15."
+    },
+    {
+      "id": "ch10-n003",
+      "chapter": 10,
+      "note_number": 3,
+      "title_guess": "Leading Teams: Setting the Stage for Great Performances",
+      "doi": null,
+      "urls": [],
+      "artifact_type": "article_report_or_web",
+      "raw_text": "Barry et al., Military Medicine, 7–15. Hackman, J. Richard. Leading Teams: Setting the Stage for Great Performances. Harvard Business Press, 2002."
+    },
+    {
+      "id": "ch11-n001",
+      "chapter": 11,
+      "note_number": 1,
+      "title_guess": "Manifesto for Agile Software Development.",
+      "doi": null,
+      "urls": [
+        "https://agilemanifesto.org"
+      ],
+      "artifact_type": "article_report_or_web",
+      "raw_text": "Cunningham, Ward. “Manifesto for Agile Software Development.” Agile Manifesto Website, 2001. https://agilemanifesto.org"
+    },
+    {
+      "id": "ch11-n002",
+      "chapter": 11,
+      "note_number": 2,
+      "title_guess": "The Machine that Changed the World: The Story of Lean Production—Toyota’s Secret Weapon in the Global Car Wars that is Now Revolutionizing World Industry",
+      "doi": null,
+      "urls": [],
+      "artifact_type": "article_report_or_web",
+      "raw_text": "Womack, James P., Daniel T. Jones, and Daniel Roos. The Machine that Changed the World: The Story of Lean Production—Toyota’s Secret Weapon in the Global Car Wars that is Now Revolutionizing World Industry. Simon and Schuster, 2007."
+    },
+    {
+      "id": "ch11-n003",
+      "chapter": 11,
+      "note_number": 3,
+      "title_guess": "The New New Product Development Game.",
+      "doi": null,
+      "urls": [],
+      "artifact_type": "article_report_or_web",
+      "raw_text": "Takeuchi, Hirotaka and Ikujiro Nonaka. “The New New Product Development Game.” Harvard Business Review 64, no. 1 (1986): 137–146. (See page 137.)"
+    },
+    {
+      "id": "ch12-n001",
+      "chapter": 12,
+      "note_number": 1,
+      "title_guess": "Rockville, MD: Agency for Healthcare Research and Quality, US Department of Health and Human Services, 2008",
+      "doi": null,
+      "urls": [
+        "http://research.policyarchive.org/21365.pdf"
+      ],
+      "artifact_type": "book_or_chapter",
+      "raw_text": "Figure 12.1 is adapted from Hughes, Ronda, ed. Patient Safety and Quality: An Evidence- Based Handbook for Nurses. Rockville, MD: Agency for Healthcare Research and Quality, US Department of Health and Human Services, 2008. http://research.policyarchive.org/21365.pdf"
+    },
+    {
+      "id": "ch12-n002",
+      "chapter": 12,
+      "note_number": 2,
+      "title_guess": "The User-Centered Design Process (UCD) - EXPLAINED FAST!!",
+      "doi": null,
+      "urls": [
+        "https://www.interaction-design.org",
+        "https://www.usability.gov",
+        "https://youtu.be/4xeK9L7WmMM"
+      ],
+      "artifact_type": "video",
+      "raw_text": "USER-CENTERED DESIGN RESOURCES • The Interaction Design Foundation provides various design resources on topics such as user research, usability, UX design, and design thinking. These resources include tutorials, videos, and bootcamps with advice from experienced designers. See: www.interaction-design.org • The US General Services Administration provides overviews and how-to guides for designing good user experiences with software. See: www.usability.gov • Conboy, Antony. “The User-Centered Design Process (UCD) - EXPLAINED FAST!!” Video, 4:46. December 12, 2019. https://youtu.be/4xeK9L7WmMM"
+    },
+    {
+      "id": "ch12-n003",
+      "chapter": 12,
+      "note_number": 3,
+      "title_guess": "User Experience Basics.",
+      "doi": null,
+      "urls": [
+        "https://www.interaction-design.org",
+        "https://www.usability.gov/what-and-why/user-experience.html",
+        "https://youtu.be/ziQEqGZB8GE"
+      ],
+      "artifact_type": "video",
+      "raw_text": "USER-EXPERIENCE DESIGN RESOURCES • As described in the User-Centered Design Resources, see www.interaction-design.org • US General Services Administration. “User Experience Basics.” Usability.gov. Accessed January 8, 2022. www.usability.gov/what-and-why/user-experience.html • CareerFoundry. “What Is UX Design? - An Introduction (Full Guide).” Video, 8:23. March 4, 2021. https://youtu.be/ziQEqGZB8GE"
+    },
+    {
+      "id": "ch12-n004",
+      "chapter": 12,
+      "note_number": 4,
+      "title_guess": "Why Design Thinking Works: It Addresses the Biases and Behaviors that Hamper Innovation.",
+      "doi": null,
+      "urls": [
+        "https://www.interaction-design.org",
+        "https://www.ideou.com",
+        "https://hbr.org/2018/09/why-design-thinking-works"
+      ],
+      "artifact_type": "article_report_or_web",
+      "raw_text": "DESIGN THINKING RESOURCES • As described in the User-Centered Design Resources, see www.interaction-design.org • IDEO U offers online courses and certificate programs in design thinking as well as other design-centric tools and processes. See: www.ideou.com • Liedtka, Jeanne. “Why Design Thinking Works: It Addresses the Biases and Behaviors that Hamper Innovation.” Harvard Business Review September–October (2018): 72–79. https://hbr.org/2018/09/why-design-thinking-works"
+    },
+    {
+      "id": "ch12-n005",
+      "chapter": 12,
+      "note_number": 5,
+      "title_guess": "Human-Systems Integration.",
+      "doi": "10.17226/11893",
+      "urls": [
+        "https://doi.org/10.17226/11893",
+        "https://www.dau.edu/tools/se-brainbook/",
+        "https://vimeo.com/258880061"
+      ],
+      "artifact_type": "video",
+      "raw_text": "HUMAN-SYSTEMS INTEGRATION RESOURCES • Pew, Richard W. and Anne S. Mavor, eds. Human-System Integration in the System Development Process. Washington, DC: The National Academies Press, 2007. https://doi.org/10.17226/11893 • The US Department of Defense also offers courses in human-systems integration. Refer to the Defense Acquisition University’s listing of resources. See: www.dau.edu/tools/se-brainbook/ Pages/Design%20Considerations/Human-Systems-Integration.aspx • The National Academies. “Human-Systems Integration.” Video, 23:04. 2018. https://vimeo.com/258880061"
+    },
+    {
+      "id": "ch12-n006",
+      "chapter": 12,
+      "note_number": 6,
+      "title_guess": "Design Justice: Community-Led Practices to Build the Worlds We Need",
+      "doi": "10.7551/mitpress/12255.001.0001",
+      "urls": [
+        "https://designjustice.org",
+        "https://doi.org/10.7551/mitpress/12255.001.0001"
+      ],
+      "artifact_type": "book_or_chapter",
+      "raw_text": "DESIGN JUSTICE RESOURCES • The Design Justice Network offers resources and conducts events for those practicing the design justice principles. See: https://designjustice.org • Design Justice adopts an activist approach to design, focusing on traditionally underserved communities. It challenges the extent to which universal principles are valid in understanding the diverse needs of users. Sasha Costanza-Chock’s book provides a comprehensive review of theories and issues in design. Human-Centered Design Tools | 299 – Costanza-Chock, Sasha. Design Justice: Community-Led Practices to Build the Worlds We Need. Cambridge, MA: MIT Press, 2020. https://doi.org/10.7551/mitpress/12255.001.0001"
+    },
+    {
+      "id": "ch12-n007",
+      "chapter": 12,
+      "note_number": 7,
+      "title_guess": "Readings on Participatory Design.",
+      "doi": null,
+      "urls": [
+        "https://medium"
+      ],
+      "artifact_type": "article_report_or_web",
+      "raw_text": "PARTICIPATORY DESIGN (ALSO CALLED CO-DESIGN) RESOURCES • For a list of readings on participatory design, See: – Lampe, Cliff. “Readings on Participatory Design.” Medium (2019). https://medium. com/@clifflampe/readings-on-participatory-design-e006ed21a91c • DiSalvo, Betsy, Carl DiSalvo, Elizabeth Bonsignore, and Jason Yip, eds. Participatory Design for Learning: Perspectives from Practice and Research. New York: Routledge, 2017."
+    },
+    {
+      "id": "ch12-n008",
+      "chapter": 12,
+      "note_number": 8,
+      "title_guess": "Learner-Centered Design: The Secret of Creating Engaging eLearning Experiences.",
+      "doi": "10.1017/CBO9780511816833.020",
+      "urls": [
+        "https://www.shiftelearning.com/blog/bid/345394/4-steps-to-becoming-a-learner-",
+        "https://doi.org/10.1017/CBO9780511816833.020"
+      ],
+      "artifact_type": "book_or_chapter",
+      "raw_text": "LEARNER-CENTERED DESIGN RESOURCES • “Learner-Centered Design: The Secret of Creating Engaging eLearning Experiences.” SH!FT. Last modified 2014. www.shiftelearning.com/blog/bid/345394/4-steps-to-becoming-a-learner- centered-elearning-professional • Quintana, Chris, Namsoo Shin, Cathleen Norris, and Elliot Soloway. “Learner-Centered Design: Reflections on the Past and Directions for the Future.” In The Cambridge Handbook of the Learning Sciences, edited by R. Keith Sawyer, 119–134. 2nd ed. Cambridge: Cambridge University Press, 2014. https://doi.org/10.1017/CBO9780511816833.020"
+    },
+    {
+      "id": "ch12-n009",
+      "chapter": 12,
+      "note_number": 9,
+      "title_guess": "Learning Experience Design: An Overview and 11 of the Best Resources.",
+      "doi": null,
+      "urls": [
+        "https://lxd.org",
+        "https://www.shiftelearning.com/blog/learning-experience-design-best-resources"
+      ],
+      "artifact_type": "article_report_or_web",
+      "raw_text": "LEARNING-EXPERIENCE DESIGN RESOURCES • LXD.org is a community hub for learning experience designers. See: https://lxd.org • Gutierrez, Karla. “Learning Experience Design: An Overview and 11 of the Best Resources.” SH!FT. www.shiftelearning.com/blog/learning-experience-design-best-resources"
+    },
+    {
+      "id": "ch12-n010",
+      "chapter": 12,
+      "note_number": 10,
+      "title_guess": "UNIVERSAL DESIGN FOR LEARNING (UDL) RESOURCES • CAST (which once stood for Center for Applied Special Technology) is a nonprofit education research and development organization that created the Universal Design for Learn",
+      "doi": null,
+      "urls": [
+        "https://www.cast.org",
+        "http://castpublishing.org/books-media/udl-theory-and-practice"
+      ],
+      "artifact_type": "book_or_chapter",
+      "raw_text": "UNIVERSAL DESIGN FOR LEARNING (UDL) RESOURCES • CAST (which once stood for Center for Applied Special Technology) is a nonprofit education research and development organization that created the Universal Design for Learning framework and UDL Guidelines. CAST provides tutorials and resources for inclusive and accessible design for learning. See: www.cast.org • Meyer, Anne, David H. Rose, and David Gordon. Universal Design for Learning: Theory and Practice. Wakefield, MA: CAST, 2014. http://castpublishing.org/books-media/udl-theory-and-practice"
+    },
+    {
+      "id": "ch12-n011",
+      "chapter": 12,
+      "note_number": 11,
+      "title_guess": "Design-Based Research: A Methodological Toolkit for Engineering Change.",
+      "doi": "10.1017/CBO9781139519526.011",
+      "urls": [
+        "https://doi.org/10.1017/CBO9781139519526.011",
+        "https://www.education.uw.edu/slmi/research-practice-",
+        "https://www.colorado.edu/research/learn-dbir"
+      ],
+      "artifact_type": "book_or_chapter",
+      "raw_text": "DESIGN-BASED RESEARCH • Barab, Sasha. “Design-Based Research: A Methodological Toolkit for Engineering Change.” In The Cambridge Handbook of the Learning Sciences, edited by R. Keith Sawyer, 153–170. 2nd ed. Cambridge: Cambridge University Press, 2014. https://doi.org/10.1017/CBO9781139519526.011 • Research–practice partnerships often use design-based implementation research to adapt, mix, and merge curricula and resources for use in particular venues. For more information on these practices, including other readings and case studies, see: – College of Education. “Research-Practice Partnerships and DBIR.” University of Washington. Accessed January 8, 2022. www.education.uw.edu/slmi/research-practice- partnerships-and-dbir – School of Education. “Design Based Implementation Research.” University of Colorado Boulder. Accessed January 8, 2022. www.colorado.edu/research/learn-dbir"
+    },
+    {
+      "id": "ch12-n012",
+      "chapter": 12,
+      "note_number": 12,
+      "title_guess": "Design-Based Research,",
+      "doi": null,
+      "urls": [],
+      "artifact_type": "article_report_or_web",
+      "raw_text": "Refer to the design-based research resources cited above: • Barab, “Design-Based Research,” 153–170. • Quintana, Shin, Norris, and Soloway. “Learner-Centered Design,” 119–134."
+    },
+    {
+      "id": "ch12-n013",
+      "chapter": 12,
+      "note_number": 13,
+      "title_guess": "Transcend Store: Designing for Learning Resources.",
+      "doi": null,
+      "urls": [
+        "https://www.transcendeducation.org/store"
+      ],
+      "artifact_type": "article_report_or_web",
+      "raw_text": "“Transcend Store: Designing for Learning Resources.” Transcend. Accessed January 8, 2022. www.transcendeducation.org/store"
+    },
+    {
+      "id": "ch12-n014",
+      "chapter": 12,
+      "note_number": 14,
+      "title_guess": "Design Mindset CARDS.",
+      "doi": null,
+      "urls": [],
+      "artifact_type": "article_report_or_web",
+      "raw_text": "“Design Mindset CARDS.” InGlobal Learning Design. Accessed January 8, 2022. inglobal.org/design-mindset-cards"
+    },
+    {
+      "id": "ch12-n015",
+      "chapter": 12,
+      "note_number": 15,
+      "title_guess": "Tools for Change.",
+      "doi": null,
+      "urls": [
+        "https://www.codesigningschools.com/toolkit-appendix"
+      ],
+      "artifact_type": "article_report_or_web",
+      "raw_text": "“Tools for Change.” Co-Designing Schools Toolkit. Accessed January 8, 2022. www.codesigningschools.com/toolkit-appendix"
+    },
+    {
+      "id": "ch12-n016",
+      "chapter": 12,
+      "note_number": 16,
+      "title_guess": "Basic Tools for Process Improvement, Module 4: Affinity Diagram.",
+      "doi": null,
+      "urls": [
+        "https://balancedscorecard.org/bsc-"
+      ],
+      "artifact_type": "video",
+      "raw_text": "Balanced Scorecard Institute. “Basic Tools for Process Improvement, Module 4: Affinity Diagram.” In Handbook for Basic Process Improvement. https://balancedscorecard.org/bsc- basics/articles-videos/process-improvement-tools"
+    },
+    {
+      "id": "ch12-n017",
+      "chapter": 12,
+      "note_number": 17,
+      "title_guess": "The User as a Personality.",
+      "doi": null,
+      "urls": [
+        "https://www.csc.kth.se/~tessy/Blomkvist.pdf"
+      ],
+      "artifact_type": "article_report_or_web",
+      "raw_text": "Blomkvist, Stefan. “The User as a Personality.” In Using Personas as a Tool for Design. Position paper for the course workshop “Theoretical Perspectives in Human-Computer Interaction” at IPLab, KTH. 2002. www.csc.kth.se/~tessy/Blomkvist.pdf"
+    },
+    {
+      "id": "ch12-n018",
+      "chapter": 12,
+      "note_number": 18,
+      "title_guess": "Personas.",
+      "doi": null,
+      "urls": [
+        "https://www.usability.gov/how-to-and-tools/methods/personas.html",
+        "https://digital.gov/2015/04/06/using-personas-to-",
+        "https://digital.gov/2015/01/09/personas-101"
+      ],
+      "artifact_type": "article_report_or_web",
+      "raw_text": "PERSONAS RESOURCES • US General Services Administration. “Personas.” Usability.gov. Accessed January 8, 2022. www.usability.gov/how-to-and-tools/methods/personas.html • Chronister, Michelle. “Using Personas to Better Understand Customers: USA.gov Case Study.” Digital.gov. Last updated April 6, 2015. https://digital.gov/2015/04/06/using-personas-to- better-understand-customers-usa-gov-case-study • For examples of some personas see: – Daniel, Kendrick. “Personas 101.” Digital.gov. Last updated January 9, 2015. https://digital.gov/2015/01/09/personas-101"
+    },
+    {
+      "id": "ch12-n019",
+      "chapter": 12,
+      "note_number": 19,
+      "title_guess": "Use Cases.",
+      "doi": null,
+      "urls": [
+        "https://www.usability.gov/how-to-and-tools/methods/use-cases.html"
+      ],
+      "artifact_type": "article_report_or_web",
+      "raw_text": "US General Services Administration. “Use Cases.” Usability.gov. Accessed January 8, 2022. www.usability.gov/how-to-and-tools/methods/use-cases.html"
+    },
+    {
+      "id": "ch12-n020",
+      "chapter": 12,
+      "note_number": 20,
+      "title_guess": "Pew and Mavor, Human-System Integration in the System Development Process, 191.",
+      "doi": null,
+      "urls": [],
+      "artifact_type": "article_report_or_web",
+      "raw_text": "Pew and Mavor, Human-System Integration in the System Development Process, 191."
+    },
+    {
+      "id": "ch12-n021",
+      "chapter": 12,
+      "note_number": 21,
+      "title_guess": "London: Atlantic Systems Guild Limited, 2012.",
+      "doi": null,
+      "urls": [],
+      "artifact_type": "article_report_or_web",
+      "raw_text": "Robertson, Suzanne, and James Robertson. Volere Requirements Specification Template. 16th ed. London: Atlantic Systems Guild Limited, 2012."
+    },
+    {
+      "id": "ch12-n022",
+      "chapter": 12,
+      "note_number": 22,
+      "title_guess": "Department of Education, Institute of Education Sciences, National Center for Education Evaluation and Regional Assistance, Regional Educational Laboratory Northeast & Islands, 2015",
+      "doi": null,
+      "urls": [
+        "http://ies.ed.gov/ncee/edlabs"
+      ],
+      "artifact_type": "article_report_or_web",
+      "raw_text": "Shakman, Karen and Sheila M. Rodriguez. Logic Models for Program Design, Implementation, and Evaluation: Workshop Toolkit, 9. Washington, DC: U.S. Department of Education, Institute of Education Sciences, National Center for Education Evaluation and Regional Assistance, Regional Educational Laboratory Northeast & Islands, 2015. http://ies.ed.gov/ncee/edlabs"
+    },
+    {
+      "id": "ch12-n023",
+      "chapter": 12,
+      "note_number": 23,
+      "title_guess": "Shakman and Rodriguez, Logic Models for Program Design, Implementation, and Evaluation.",
+      "doi": null,
+      "urls": [],
+      "artifact_type": "article_report_or_web",
+      "raw_text": "Shakman and Rodriguez, Logic Models for Program Design, Implementation, and Evaluation."
+    },
+    {
+      "id": "ch12-n024",
+      "chapter": 12,
+      "note_number": 24,
+      "title_guess": "Shakman and Rodriguez, Logic Models for Program Design, Implementation, and Evaluation, B-1.",
+      "doi": null,
+      "urls": [],
+      "artifact_type": "article_report_or_web",
+      "raw_text": "Shakman and Rodriguez, Logic Models for Program Design, Implementation, and Evaluation, B-1."
+    },
+    {
+      "id": "ch12-n025",
+      "chapter": 12,
+      "note_number": 25,
+      "title_guess": "Conjecture Mapping: An Approach to Systematic Educational Design Research.",
+      "doi": "10.1080/10508406.2013.778204",
+      "urls": [
+        "https://doi.org/10.1080/10508406.2013.778204",
+        "http://edutechwiki.unige.ch/",
+        "https://www.isls.org/icls/2018/icls2018.com/index.html"
+      ],
+      "artifact_type": "conference_artifact",
+      "raw_text": "CONJECTURE MAPPING RESOURCES • Sandoval, William. “Conjecture Mapping: An Approach to Systematic Educational Design Research.” Journal of the Learning Sciences 23, no. 1 (2014): 18–36. https://doi.org/10.1080/10508406.2013.778204 • “Conjecture Map.” EduTechWiki. Last modified October 30, 2019. http://edutechwiki.unige.ch/ en/Conjecture_map Human-Centered Design Tools | 301 • Lee, Victor R., Mimi Recker, and Abigail L. Phillips. “Conjecture Mapping the Library: Iterative Refinements Toward Supporting Maker Learning Activities in Small Community Spaces.” In Rethinking Learning in the Digital Age: Making the Learning Sciences Count, 13th International Conference of the Learning Sciences, London, June 23–27, 2018, edited by Judy Kay and Rosemary Luckin. www.isls.org/icls/2018/icls2018.com/index.html"
+    },
+    {
+      "id": "ch12-n026",
+      "chapter": 12,
+      "note_number": 26,
+      "title_guess": "Explore Your Theory of Change.",
+      "doi": null,
+      "urls": [],
+      "artifact_type": "article_report_or_web",
+      "raw_text": "Ideo.org. “Explore Your Theory of Change.” Design Kit. Accessed January 8, 2022. www. designkit.org/methods/explore-your-theory-of-change"
+    },
+    {
+      "id": "ch12-n027",
+      "chapter": 12,
+      "note_number": 27,
+      "title_guess": "Design Thinking: Get Started with Prototyping.",
+      "doi": null,
+      "urls": [
+        "https://www.interaction-design.org/literature/article/design-"
+      ],
+      "artifact_type": "article_report_or_web",
+      "raw_text": "Friis Dam, Rikke and Teo Yu Siang. “Design Thinking: Get Started with Prototyping.” Interaction Design Foundation. Last modified 2021. www.interaction-design.org/literature/article/design- thinking-get-started-with-prototyping"
+    },
+    {
+      "id": "ch12-n028",
+      "chapter": 12,
+      "note_number": 28,
+      "title_guess": "Design Sketching: The Easiest Prototype Method Ever.",
+      "doi": null,
+      "urls": [
+        "https://digital.gov/2014/08/08/design-sketching-the-easiest-prototype-method-ever"
+      ],
+      "artifact_type": "article_report_or_web",
+      "raw_text": "Rubin, Jonathan. “Design Sketching: The Easiest Prototype Method Ever.” Digital.gov. Last modified August 8, 2014. https://digital.gov/2014/08/08/design-sketching-the-easiest-prototype-method-ever"
+    },
+    {
+      "id": "ch12-n029",
+      "chapter": 12,
+      "note_number": 29,
+      "title_guess": "Making Prototypes with Tools You Already Have.",
+      "doi": null,
+      "urls": [
+        "https://digital.gov/2014/12/19/making-prototypes-with-tools-you-already-have"
+      ],
+      "artifact_type": "article_report_or_web",
+      "raw_text": "Kopp, Brandon. “Making Prototypes with Tools You Already Have.” Digital.gov. Last modified December 19, 2014. https://digital.gov/2014/12/19/making-prototypes-with-tools-you-already-have"
+    },
+    {
+      "id": "ch12-n030",
+      "chapter": 12,
+      "note_number": 30,
+      "title_guess": "Prototyping.",
+      "doi": null,
+      "urls": [
+        "https://www.usability.gov/how-to-and-tools/methods/prototyping.html"
+      ],
+      "artifact_type": "article_report_or_web",
+      "raw_text": "US General Services Administration. “Prototyping.” Usability.gov. Accessed January 8, 2022. www.usability.gov/how-to-and-tools/methods/prototyping.html"
+    },
+    {
+      "id": "ch12-n031",
+      "chapter": 12,
+      "note_number": 31,
+      "title_guess": "Rapid Prototyping.",
+      "doi": null,
+      "urls": [
+        "https://www.designkit.org/methods/rapid-prototyping"
+      ],
+      "artifact_type": "article_report_or_web",
+      "raw_text": "Ideo.org. “Rapid Prototyping.” Design Kit. Accessed January 8, 2022. www.designkit.org/methods/rapid-prototyping"
+    },
+    {
+      "id": "ch12-n032",
+      "chapter": 12,
+      "note_number": 32,
+      "title_guess": "Why You Only Need to Test with 5 Users.",
+      "doi": null,
+      "urls": [
+        "https://www.nngroup.com/articles/why-you-only-need-to-test-with-5-users"
+      ],
+      "artifact_type": "article_report_or_web",
+      "raw_text": "Nielsen, Jakob. “Why You Only Need to Test with 5 Users.” Nielsen Norman Group. Last modified March 18, 2000. www.nngroup.com/articles/why-you-only-need-to-test-with-5-users"
+    },
+    {
+      "id": "ch12-n033",
+      "chapter": 12,
+      "note_number": 33,
+      "title_guess": "San Francisco: Berrett-Koehler Publishers, 2006.",
+      "doi": null,
+      "urls": [],
+      "artifact_type": "article_report_or_web",
+      "raw_text": "Kirkpatrick, Donald L. and James D. Kirkpatrick. Evaluating Training Programs. 3rd ed. San Francisco: Berrett-Koehler Publishers, 2006."
+    },
+    {
+      "id": "ch12-n034",
+      "chapter": 12,
+      "note_number": 34,
+      "title_guess": "Usability Testing 101.",
+      "doi": null,
+      "urls": [
+        "https://www.nngroup.com/articles/usability-testing-101"
+      ],
+      "artifact_type": "article_report_or_web",
+      "raw_text": "Moran, Kate. “Usability Testing 101.” Nielsen Norman Group. Last modified December 1, 2019. www.nngroup.com/articles/usability-testing-101"
+    },
+    {
+      "id": "ch12-n035",
+      "chapter": 12,
+      "note_number": 35,
+      "title_guess": "Digital.gov from the US General Services Administration has open-access tips and training videos for conducting usability testing",
+      "doi": null,
+      "urls": [
+        "https://digital.gov/topics/usability-testing"
+      ],
+      "artifact_type": "video",
+      "raw_text": "Digital.gov from the US General Services Administration has open-access tips and training videos for conducting usability testing. See: https://digital.gov/topics/usability-testing"
+    },
+    {
+      "id": "ch12-n036",
+      "chapter": 12,
+      "note_number": 36,
+      "title_guess": "Usability.gov offers additional methods, templates, and examples",
+      "doi": null,
+      "urls": [
+        "https://www.usability.gov"
+      ],
+      "artifact_type": "article_report_or_web",
+      "raw_text": "Usability.gov offers additional methods, templates, and examples. See: www.usability.gov"
+    },
+    {
+      "id": "ch12-n037",
+      "chapter": 12,
+      "note_number": 37,
+      "title_guess": "System Usability Scale (SUS).",
+      "doi": null,
+      "urls": [
+        "https://www.usability.gov/how-to-and-tools/methods/system-usability-scale.html"
+      ],
+      "artifact_type": "article_report_or_web",
+      "raw_text": "US General Services Administration. “System Usability Scale (SUS).” Usability.gov. Accessed January 8, 2022. www.usability.gov/how-to-and-tools/methods/system-usability-scale.html"
+    },
+    {
+      "id": "ch12-n038",
+      "chapter": 12,
+      "note_number": 38,
+      "title_guess": "Measuring Usability with the System Usability Scale (SUS).",
+      "doi": null,
+      "urls": [
+        "https://measuringu.com/sus"
+      ],
+      "artifact_type": "article_report_or_web",
+      "raw_text": "Sauro, Jeff. “Measuring Usability with the System Usability Scale (SUS).” MeasuringU. Last modified February 3, 2011. https://measuringu.com/sus"
+    },
+    {
+      "id": "ch13-n001",
+      "chapter": 13,
+      "note_number": 1,
+      "title_guess": "Google Classroom Connector.",
+      "doi": null,
+      "urls": [
+        "https://www.landingzone.org/google-connector"
+      ],
+      "artifact_type": "article_report_or_web",
+      "raw_text": "InnovateEDU. “Google Classroom Connector.” Landing Zone. Accessed April 21, 2021. www.landingzone.org/google-connector"
+    },
+    {
+      "id": "ch13-n002",
+      "chapter": 13,
+      "note_number": 2,
+      "title_guess": "Washington, DC: US Department of Education, Institute of Education Sciences, National Center for Education Evaluation and Regional Assistance, What Works Clearinghouse",
+      "doi": null,
+      "urls": [
+        "https://eric.ed.gov/?id=ED610886"
+      ],
+      "artifact_type": "article_report_or_web",
+      "raw_text": "Sahni, SD, JR Polanin, Q. Zhang, LE Michaelson, S. Caverly, ML Polese, and J. Yang. A What Works Clearinghouse Rapid Evidence Review of Distance Learning Programs (WWC 2021- 005REV). Washington, DC: US Department of Education, Institute of Education Sciences, National Center for Education Evaluation and Regional Assistance, What Works Clearinghouse. https://eric.ed.gov/?id=ED610886"
+    },
+    {
+      "id": "ch13-n003",
+      "chapter": 13,
+      "note_number": 3,
+      "title_guess": "Promoting Innovation, Competition, and Economic Growth: Principles for Effective Domestic and International Standards Development.",
+      "doi": null,
+      "urls": [
+        "https://www.nist.gov/speech-testimony/"
+      ],
+      "artifact_type": "standard_or_spec",
+      "raw_text": "“Promoting Innovation, Competition, and Economic Growth: Principles for Effective Domestic and International Standards Development.” National Institute of Standards and Technology (NIST), US Department of Commerce, February 9, 2012. www.nist.gov/speech-testimony/ promoting-innovation-competition-and-economic-growth-principles-effective-domestic"
+    },
+    {
+      "id": "ch13-n004",
+      "chapter": 13,
+      "note_number": 4,
+      "title_guess": "What metrics should I use?",
+      "doi": null,
+      "urls": [
+        "https://resources.sei.cmu.edu/asset_files/"
+      ],
+      "artifact_type": "book_or_chapter",
+      "raw_text": "Closing quotation from Park, Robert E., Wolfhart B. Goethert, and William A. Florac. Goal-Driven Software Measurement. A Guidebook. Pittsburgh: Software Engineering Institute, Carnegie Mellon University, 1996. https://resources.sei.cmu.edu/asset_files/ Handbook/1996_002_001_16436.pdf In goal-driven measurement, the primary question is not “What metrics should I use?” but “What do I want to know or learn?” – Goal-Driven Software Measurement 4"
+    },
+    {
+      "id": "ch14-n001",
+      "chapter": 14,
+      "note_number": 1,
+      "title_guess": "Difference Between Programming, Scripting, and Markup Languages.",
+      "doi": null,
+      "urls": [
+        "https://www.geeksforgeeks.org/difference-between-"
+      ],
+      "artifact_type": "article_report_or_web",
+      "raw_text": "Upadhyay, Anu. “Difference Between Programming, Scripting, and Markup Languages.” Geeksforgeeks.org. Last modified January 6, 2020. www.geeksforgeeks.org/difference-between- programming-scripting-and-markup-languages"
+    },
+    {
+      "id": "ch14-n002",
+      "chapter": 14,
+      "note_number": 2,
+      "title_guess": "UML Class Example.",
+      "doi": null,
+      "urls": [
+        "https://en.wikipedia.org/wiki/Object-oriented_programming#/media/File:Oop-uml-class-"
+      ],
+      "artifact_type": "article_report_or_web",
+      "raw_text": "Adapted from Pulkkinen, Esa. “UML Class Example.” Wikimedia. Last modified July 31, 2004. https://en.wikipedia.org/wiki/Object-oriented_programming#/media/File:Oop-uml-class- example.png"
+    },
+    {
+      "id": "ch14-n003",
+      "chapter": 14,
+      "note_number": 3,
+      "title_guess": "IEEE SA OPEN.",
+      "doi": null,
+      "urls": [
+        "https://saopen.ieee.org",
+        "https://adlnet.gov"
+      ],
+      "artifact_type": "article_report_or_web",
+      "raw_text": "“IEEE SA OPEN.” IEEE. Accessed January 8, 2022. https://saopen.ieee.org Advanced Distributed Learning Initiative. ADL Initiative, US Department of Defense. Accessed January 8, 2022. https://adlnet.gov"
+    },
+    {
+      "id": "ch14-n004",
+      "chapter": 14,
+      "note_number": 4,
+      "title_guess": "Open Source ‘is Free Like a Puppy is Free’, Says Sun Boss.",
+      "doi": null,
+      "urls": [
+        "https://www.zdnet.com/article/open-source-is-free-like-a-puppy-is-free-says-"
+      ],
+      "artifact_type": "article_report_or_web",
+      "raw_text": "Donoghue, Andrew. “Open Source ‘is Free Like a Puppy is Free’, Says Sun Boss.” ZDNet. Last modified June 8, 2005. www.zdnet.com/article/open-source-is-free-like-a-puppy-is-free-says- sun-boss"
+    },
+    {
+      "id": "ch14-n005",
+      "chapter": 14,
+      "note_number": 5,
+      "title_guess": "What Are Linked Data and Linked Open Data?",
+      "doi": null,
+      "urls": [
+        "https://www.ontotext.com/"
+      ],
+      "artifact_type": "article_report_or_web",
+      "raw_text": "“What Are Linked Data and Linked Open Data?” Ontotext, 2021. www.ontotext.com/ knowledgehub/fundamentals/linked-data-linked-open-data"
+    },
+    {
+      "id": "ch14-n006",
+      "chapter": 14,
+      "note_number": 6,
+      "title_guess": "O*NET Resource Center.",
+      "doi": null,
+      "urls": [
+        "https://www.onetcenter.org",
+        "https://www.onetonline.org/link/summary/15-1251.00"
+      ],
+      "artifact_type": "article_report_or_web",
+      "raw_text": "“O*NET Resource Center.” US Department of Labor. Last modified November 16, 2021. www.onetcenter.org Also refer to the O*NET Computer Programmers competency framework: www.onetonline.org/link/summary/15-1251.00"
+    },
+    {
+      "id": "ch14-n007",
+      "chapter": 14,
+      "note_number": 7,
+      "title_guess": "What is Linked Data?",
+      "doi": null,
+      "urls": [
+        "https://www.w3.org/standards/semanticweb/data"
+      ],
+      "artifact_type": "standard_or_spec",
+      "raw_text": "“What is Linked Data?” W3C. 2015. www.w3.org/standards/semanticweb/data"
+    },
+    {
+      "id": "ch14-n008",
+      "chapter": 14,
+      "note_number": 8,
+      "title_guess": "Create Real-Time Clickstream Sessions and Run Analytics with Amazon Kinesis Data Analytics, AWS Glue, and Amazon Athena.",
+      "doi": null,
+      "urls": [
+        "https://aws.amazon.com/blogs/big-data/create-real-time-clickstream-sessions-and-run-"
+      ],
+      "artifact_type": "article_report_or_web",
+      "raw_text": "Rozestraten, Hugo. “Create Real-Time Clickstream Sessions and Run Analytics with Amazon Kinesis Data Analytics, AWS Glue, and Amazon Athena.” AWS Big Data Blog, February 17, 2019. https://aws.amazon.com/blogs/big-data/create-real-time-clickstream-sessions-and-run- analytics-with-amazon-kinesis-data-analytics-aws-glue-and-amazon-athena"
+    },
+    {
+      "id": "ch14-n009",
+      "chapter": 14,
+      "note_number": 9,
+      "title_guess": "Streaming Architecture: New Designs Using Apache Kafka and MapR Streams",
+      "doi": null,
+      "urls": [],
+      "artifact_type": "article_report_or_web",
+      "raw_text": "Dunning, Ted, and Ellen Friedman. Streaming Architecture: New Designs Using Apache Kafka and MapR Streams. Sebastopol, CA: O’Reilly Media, Inc., 2016."
+    },
+    {
+      "id": "ch14-n010",
+      "chapter": 14,
+      "note_number": 10,
+      "title_guess": "What is a Data Platform?",
+      "doi": null,
+      "urls": [
+        "https://www.mongodb.com/what-is-a-data-platform"
+      ],
+      "artifact_type": "article_report_or_web",
+      "raw_text": "“What is a Data Platform?” MongoDB. 2021. www.mongodb.com/what-is-a-data-platform"
+    },
+    {
+      "id": "ch14-n011",
+      "chapter": 14,
+      "note_number": 11,
+      "title_guess": "Differences Between SQL & NoSQL Databases—MySQL & MongoDB Comparison.",
+      "doi": null,
+      "urls": [
+        "https://medium.com/edureka/sql-vs-nosql-db-5d9b69ace6ac"
+      ],
+      "artifact_type": "article_report_or_web",
+      "raw_text": "Keshari, Kislay. “Differences Between SQL & NoSQL Databases—MySQL & MongoDB Comparison.” Edureka, April 16, 2019. https://medium.com/edureka/sql-vs-nosql-db-5d9b69ace6ac"
+    },
+    {
+      "id": "ch14-n012",
+      "chapter": 14,
+      "note_number": 12,
+      "title_guess": "What is a Data Lake?",
+      "doi": null,
+      "urls": [
+        "https://cloud.google.com/learn/what-is-a-data-lake"
+      ],
+      "artifact_type": "article_report_or_web",
+      "raw_text": "“What is a Data Lake?” Google Cloud. https://cloud.google.com/learn/what-is-a-data-lake"
+    },
+    {
+      "id": "ch14-n013",
+      "chapter": 14,
+      "note_number": 13,
+      "title_guess": "Data Wrangling: What it is & Why it’s Important.",
+      "doi": null,
+      "urls": [
+        "https://online.hbs.edu/blog/post/data-wrangling"
+      ],
+      "artifact_type": "article_report_or_web",
+      "raw_text": "Stobierski, Tim. “Data Wrangling: What it is & Why it’s Important.” Harvard Business School Online, January 19, 2021. https://online.hbs.edu/blog/post/data-wrangling"
+    },
+    {
+      "id": "ch14-n014",
+      "chapter": 14,
+      "note_number": 14,
+      "title_guess": "Data Standards.",
+      "doi": null,
+      "urls": [
+        "https://resources.data.gov/standards/concepts"
+      ],
+      "artifact_type": "standard_or_spec",
+      "raw_text": "“Data Standards.” US Government Federal Enterprise Data Resources. Accessed January 8, 2022. https://resources.data.gov/standards/concepts"
+    },
+    {
+      "id": "ch14-n015",
+      "chapter": 14,
+      "note_number": 15,
+      "title_guess": "The contributors to EdMatrix advocate for open-stand.org principles, and the standards matrix in this chapter is licensed under a Creative Commons Attribution 4.0 International License",
+      "doi": null,
+      "urls": [],
+      "artifact_type": "book_or_chapter",
+      "raw_text": "The contributors to EdMatrix advocate for open-stand.org principles, and the standards matrix in this chapter is licensed under a Creative Commons Attribution 4.0 International License. It was originally developed by Brandt Redd with a lot of help from friends."
+    },
+    {
+      "id": "ch14-n016",
+      "chapter": 14,
+      "note_number": 16,
+      "title_guess": "Adventures in the xAPI: The Ann Arbor Hands-on Museum Project.",
+      "doi": null,
+      "urls": [
+        "https://learningsolutionsmag.com/articles/1665/adventures-in-the-xapi-"
+      ],
+      "artifact_type": "standard_or_spec",
+      "raw_text": "Torrance, Megan. “Adventures in the xAPI: The Ann Arbor Hands-on Museum Project.” Learning Solutions, April 2, 2015. https://learningsolutionsmag.com/articles/1665/adventures-in-the-xapi- the-ann-arbor-hands-on-museum-project Software and Technology Standards as Tools | 331"
+    },
+    {
+      "id": "ch14-n017",
+      "chapter": 14,
+      "note_number": 17,
+      "title_guess": "Human-Computer Interaction: Your Constantly-Updated Definition of Human-Computer Interaction and Collection of Topical Content and Literature.",
+      "doi": null,
+      "urls": [
+        "https://www.interaction-design.org/literature/topics/human-computer-interaction"
+      ],
+      "artifact_type": "article_report_or_web",
+      "raw_text": "“Human-Computer Interaction: Your Constantly-Updated Definition of Human-Computer Interaction and Collection of Topical Content and Literature.” Accessed January 8, 2022. Interaction Design Foundation. www.interaction-design.org/literature/topics/human-computer-interaction"
+    },
+    {
+      "id": "ch14-n018",
+      "chapter": 14,
+      "note_number": 18,
+      "title_guess": "Decentralized Identifiers (DIDs) v1.0: Core Architecture, Data Model, and Representations.",
+      "doi": null,
+      "urls": [
+        "https://www.w3.org/TR/did-core"
+      ],
+      "artifact_type": "article_report_or_web",
+      "raw_text": "“Decentralized Identifiers (DIDs) v1.0: Core Architecture, Data Model, and Representations.” W3C. Last modified August 3, 2021. www.w3.org/TR/did-core"
+    },
+    {
+      "id": "ch14-n019",
+      "chapter": 14,
+      "note_number": 19,
+      "title_guess": "Society for Learning Analytics Research (SoLAR), edited by Charles Lang, George Siemens, Alyssa Wise, and Dragan Gašević, no page numbers, introduction page 9",
+      "doi": null,
+      "urls": [
+        "https://solaresearch.org/wp-"
+      ],
+      "artifact_type": "book_or_chapter",
+      "raw_text": "Pechenizkiy, Mykola. Introduction to The Handbook of Learning Analytics. Society for Learning Analytics Research (SoLAR), edited by Charles Lang, George Siemens, Alyssa Wise, and Dragan Gašević, no page numbers, introduction page 9. 1st ed. SoLaR, 2017. https://solaresearch.org/wp- content/uploads/2017/05/hla17.pdf"
+    },
+    {
+      "id": "ch14-n020",
+      "chapter": 14,
+      "note_number": 20,
+      "title_guess": "Lang, Charles, George Siemens, Alyssa Wise, and Dragan Gašević, eds",
+      "doi": null,
+      "urls": [
+        "https://solaresearch.org/wp-content/uploads/2017/05/hla17.pdf"
+      ],
+      "artifact_type": "book_or_chapter",
+      "raw_text": "Lang, Charles, George Siemens, Alyssa Wise, and Dragan Gašević, eds. The Handbook of Learning Analytics. Society for Learning Analytics Research (SoLAR). 1st ed. SoLaR, 2017. https://solaresearch.org/wp-content/uploads/2017/05/hla17.pdf"
+    },
+    {
+      "id": "ch14-n021",
+      "chapter": 14,
+      "note_number": 21,
+      "title_guess": "Artificial Intelligence Definitions.",
+      "doi": null,
+      "urls": [
+        "https://hai.stanford.edu/sites/default/files/2020-09/AI-Definitions-HAI.pdf"
+      ],
+      "artifact_type": "article_report_or_web",
+      "raw_text": "Manning, Christopher. “Artificial Intelligence Definitions.” Stanford University. Last modified September 2020. https://hai.stanford.edu/sites/default/files/2020-09/AI-Definitions-HAI.pdf"
+    },
+    {
+      "id": "ch14-n022",
+      "chapter": 14,
+      "note_number": 22,
+      "title_guess": "Machine Learning.",
+      "doi": null,
+      "urls": [
+        "https://www.coursera.org/learn/machine-learning"
+      ],
+      "artifact_type": "article_report_or_web",
+      "raw_text": "Ng, Andrew. “Machine Learning.” Coursera. www.coursera.org/learn/machine-learning"
+    },
+    {
+      "id": "ch14-n023",
+      "chapter": 14,
+      "note_number": 23,
+      "title_guess": "Adaptive and Intelligent Web-based Educational Systems.",
+      "doi": null,
+      "urls": [],
+      "artifact_type": "article_report_or_web",
+      "raw_text": "Brusilovsky, Peter, and Christoph Peylo. “Adaptive and Intelligent Web-based Educational Systems.” International Journal of Artificial Intelligence in Education 13 (2003), 156–169. Schatz, Sae, Cynthia Oakes, Jeremiah T. Folsom-Kovarik, and Rhianon Dolletski-Lazar. “ITS+ SBT: A Review of Operational Situated Tutors.” Military Psychology 24, no. 2 (2012): 166–193."
+    },
+    {
+      "id": "ch14-n024",
+      "chapter": 14,
+      "note_number": 24,
+      "title_guess": "Adaptive Instructional Systems Consortium.",
+      "doi": null,
+      "urls": [
+        "https://aisconsortium.com"
+      ],
+      "artifact_type": "article_report_or_web",
+      "raw_text": "Sottilare, Robert. “Adaptive Instructional Systems Consortium.” AIS Consortium. Accessed January 8, 2022. https://aisconsortium.com"
+    },
+    {
+      "id": "ch14-n025",
+      "chapter": 14,
+      "note_number": 25,
+      "title_guess": "Innovative Adaptive Instructional Solutions",
+      "doi": null,
+      "urls": [
+        "https://youtu.be/7D-89ybPHUI"
+      ],
+      "artifact_type": "video",
+      "raw_text": "Sottilare, Robert. “Innovative Adaptive Instructional Solutions” Video, 55:17. AIS Consortium. https://youtu.be/7D-89ybPHUI"
+    },
+    {
+      "id": "ch14-n026",
+      "chapter": 14,
+      "note_number": 26,
+      "title_guess": "Effectiveness of Intelligent Tutoring Systems: A Meta- Analytic Review",
+      "doi": null,
+      "urls": [
+        "https://www.ida.org/-/media/feature/publications/w/we/"
+      ],
+      "artifact_type": "article_report_or_web",
+      "raw_text": "Fletcher, J.D. and James A. Kulik. Effectiveness of Intelligent Tutoring Systems: A Meta- Analytic Review. IDA Research Notes, 2017. www.ida.org/-/media/feature/publications/w/we/ welch-award-2017---effectiveness-of-intelligent-tutoring-systems-a-meta-analytic-review/1- effectivenessits.ashx"
+    },
+    {
+      "id": "ch15-n001",
+      "chapter": 15,
+      "note_number": 1,
+      "title_guess": "Motivating Operations.",
+      "doi": null,
+      "urls": [],
+      "artifact_type": "article_report_or_web",
+      "raw_text": "Michael, Jack and Caio Miguel. “Motivating Operations.” In Applied Behavior Analysis, edited by John O. Cooper, Timothy E. Heron, William L. Heward, 374–391. 2nd ed. NJ: Merrill Prentice Hall, 2007."
+    },
+    {
+      "id": "ch15-n002",
+      "chapter": 15,
+      "note_number": 2,
+      "title_guess": "Learning by Playing: Video Games in the Classroom.",
+      "doi": null,
+      "urls": [
+        "https://www.nytimes.com/2010/09/19/magazine/19video-t.html"
+      ],
+      "artifact_type": "video",
+      "raw_text": "Corbett, Sara. “Learning by Playing: Video Games in the Classroom.” The New York Times Magazine, September 19, 2010. www.nytimes.com/2010/09/19/magazine/19video-t.html"
+    },
+    {
+      "id": "ch15-n003",
+      "chapter": 15,
+      "note_number": 3,
+      "title_guess": "Gamification: The Intersection Between Behavior Analysis and Game Design Technologies.",
+      "doi": "10.1007/s40614-014-0006-1",
+      "urls": [
+        "https://doi.org/10.1007/s40614-014-0006-1"
+      ],
+      "artifact_type": "paper_or_article",
+      "raw_text": "Morford, Zachary H., Benjamin N. Witts, Kenneth J. Killingsworth & Mark P. Alavosius. “Gamification: The Intersection Between Behavior Analysis and Game Design Technologies.” The Behavior Analyst 37, no. 1 (2014): 25–40. https://doi.org/10.1007/s40614-014-0006-1"
+    },
+    {
+      "id": "ch15-n004",
+      "chapter": 15,
+      "note_number": 4,
+      "title_guess": "Cooper, John O., Timothy E",
+      "doi": null,
+      "urls": [],
+      "artifact_type": "article_report_or_web",
+      "raw_text": "Cooper, John O., Timothy E. Heron, and William L. Heward. Applied Behavior Analysis. 3rd ed. Hoboken, NJ: Pearson Education, 2019."
+    },
+    {
+      "id": "ch15-n005",
+      "chapter": 15,
+      "note_number": 5,
+      "title_guess": "A Behavioral Perspective on College Teaching.",
+      "doi": "10.1007/BF03392578",
+      "urls": [
+        "https://doi.org/10.1007/BF03392578"
+      ],
+      "artifact_type": "paper_or_article",
+      "raw_text": "Michael, Jack. “A Behavioral Perspective on College Teaching.” The Behavior Analyst 14, no. 2 (1991): 229–239. https://doi.org/10.1007/BF03392578"
+    },
+    {
+      "id": "ch15-n006",
+      "chapter": 15,
+      "note_number": 6,
+      "title_guess": "Learning by Playing.",
+      "doi": null,
+      "urls": [],
+      "artifact_type": "article_report_or_web",
+      "raw_text": "Corbett, “Learning by Playing.”"
+    },
+    {
+      "id": "ch15-n007",
+      "chapter": 15,
+      "note_number": 7,
+      "title_guess": "The Puzzle of Motivation.",
+      "doi": null,
+      "urls": [
+        "https://www.ted.com/talks/dan_pink_the_puzzle_of_motivation"
+      ],
+      "artifact_type": "video",
+      "raw_text": "Pink, Dan. “The Puzzle of Motivation.” TEDGlobal 2009. Video, 18:23. July 2009. www.ted.com/talks/dan_pink_the_puzzle_of_motivation"
+    },
+    {
+      "id": "ch15-n008",
+      "chapter": 15,
+      "note_number": 8,
+      "title_guess": "Three Critical Elements Sustain Motivation: When It Comes To Cultivating Genius, Talent Matters, But Motivation May Matter More.",
+      "doi": null,
+      "urls": [
+        "https://www.scientificamerican.com/article/three-critical-elements-sustain-motivation"
+      ],
+      "artifact_type": "article_report_or_web",
+      "raw_text": "Yuhas, Daisy. “Three Critical Elements Sustain Motivation: When It Comes To Cultivating Genius, Talent Matters, But Motivation May Matter More.” Scientific American, November 1, 2012. www.scientificamerican.com/article/three-critical-elements-sustain-motivation"
+    },
+    {
+      "id": "ch15-n009",
+      "chapter": 15,
+      "note_number": 9,
+      "title_guess": "Metaphysical Sources of Reinforcement.",
+      "doi": null,
+      "urls": [],
+      "artifact_type": "article_report_or_web",
+      "raw_text": "Friman, Patrick. 2020. “Metaphysical Sources of Reinforcement.” Presentation at the Behavior Analysis Association of Mississippi Convention, Mississippi, November 2–5, 2020."
+    },
+    {
+      "id": "ch15-n010",
+      "chapter": 15,
+      "note_number": 10,
+      "title_guess": "Actionable Gamification: Beyond Points, Badges and Leaderboards",
+      "doi": null,
+      "urls": [],
+      "artifact_type": "article_report_or_web",
+      "raw_text": "Chou, Yu-kai. Actionable Gamification: Beyond Points, Badges and Leaderboards. Createspace Independent Publishing Platform, 2015."
+    },
+    {
+      "id": "ch15-n011",
+      "chapter": 15,
+      "note_number": 11,
+      "title_guess": "Metaphysical Sources of Reinforcement.",
+      "doi": null,
+      "urls": [],
+      "artifact_type": "article_report_or_web",
+      "raw_text": "Friman, “Metaphysical Sources of Reinforcement.”"
+    },
+    {
+      "id": "ch15-n012",
+      "chapter": 15,
+      "note_number": 12,
+      "title_guess": "Chou, Actionable Gamification.",
+      "doi": null,
+      "urls": [],
+      "artifact_type": "article_report_or_web",
+      "raw_text": "Chou, Actionable Gamification."
+    },
+    {
+      "id": "ch15-n013",
+      "chapter": 15,
+      "note_number": 13,
+      "title_guess": "The Puzzle of Motivation.",
+      "doi": null,
+      "urls": [],
+      "artifact_type": "article_report_or_web",
+      "raw_text": "Pink, “The Puzzle of Motivation.”"
+    },
+    {
+      "id": "ch15-n014",
+      "chapter": 15,
+      "note_number": 14,
+      "title_guess": "Three Critical Elements Sustain Motivation.",
+      "doi": null,
+      "urls": [],
+      "artifact_type": "article_report_or_web",
+      "raw_text": "Yuhas, “Three Critical Elements Sustain Motivation.”"
+    },
+    {
+      "id": "ch18-n001",
+      "chapter": 18,
+      "note_number": 1,
+      "title_guess": "Inference vs Prediction in One Picture.",
+      "doi": null,
+      "urls": [
+        "https://www.datasciencecentral.com/profiles/blogs/inference-vs-prediction-in-one-picture",
+        "https://www.upenn.edu/learninganalytics/MOOT/bigdataeducation.html",
+        "https://doi.org/10.1609/"
+      ],
+      "artifact_type": "article_report_or_web",
+      "raw_text": "CC-BY Jim Goodell and Steve Ritter. Informed by: • Glen, Stephanie. “Inference vs Prediction in One Picture.” Datasciencecentral, May 10, 2020. www.datasciencecentral.com/profiles/blogs/inference-vs-prediction-in-one-picture • Baker, Ryan S. Big Data and Education. 6th ed. Philadelphia, PA: University of Pennsylvania, 2020. www.upenn.edu/learninganalytics/MOOT/bigdataeducation.html • Fayyad, Usama, Gregory Piatetsky-Shapiro, and Padhraic Smyth. 1996. “From Data Mining to Knowledge Discovery in Databases.”AI Magazine 17, no. 3: 37–54. https://doi.org/10.1609/ aimag.v17i3.1230"
+    },
+    {
+      "id": "ch18-n002",
+      "chapter": 18,
+      "note_number": 2,
+      "title_guess": "Baker, Big Data and Education.",
+      "doi": null,
+      "urls": [],
+      "artifact_type": "article_report_or_web",
+      "raw_text": "Baker, Big Data and Education."
+    },
+    {
+      "id": "ch18-n003",
+      "chapter": 18,
+      "note_number": 3,
+      "title_guess": "How to Measure Anything: Finding the Value of Intangibles in Business",
+      "doi": null,
+      "urls": [],
+      "artifact_type": "article_report_or_web",
+      "raw_text": "Hubbard, Douglas W. How to Measure Anything: Finding the Value of Intangibles in Business. Hoboken, NJ: John Wiley & Sons, 2014."
+    },
+    {
+      "id": "ch18-n004",
+      "chapter": 18,
+      "note_number": 4,
+      "title_guess": "Welcome to DataShop, the World’s Largest Repository of Learning Interaction Data.",
+      "doi": null,
+      "urls": [
+        "https://pslcdatashop"
+      ],
+      "artifact_type": "article_report_or_web",
+      "raw_text": "“Welcome to DataShop, the World’s Largest Repository of Learning Interaction Data.” LearnLab, the Pittsburgh Science of Learning Center. Last modified October 31, 2021. https://pslcdatashop. web.cmu.edu"
+    },
+    {
+      "id": "ch18-n005",
+      "chapter": 18,
+      "note_number": 5,
+      "title_guess": "LearnSphere: A Community Data Infrastructure to Support Learning Improvement Online.",
+      "doi": null,
+      "urls": [
+        "http://learnsphere.org"
+      ],
+      "artifact_type": "article_report_or_web",
+      "raw_text": "“LearnSphere: A Community Data Infrastructure to Support Learning Improvement Online.” Carnegie Mellon University, Last modified 2018. http://learnsphere.org VISION AND COMMENTARY A SHORT STORY ABOUT LEARNING ENGINEERS IN THE FUTURE"
+    }
+  ]
+}

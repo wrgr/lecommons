@@ -1,0 +1,2058 @@
+﻿✍️ Agenda & Meeting Notes
+ICICLE Students & Grads SIG
+Co-Chairs: Mei Mei (siyuanl1@asu.edu) & Abby Bergman (abbybergman1011@gmail.com)
+This document tab: ✍️ Agenda & Meeting Notes
+* See other tabs: 📑Resources + 🏫LE Programs + 📣Job Postings
+	Zoom link for meetings: https://asu.zoom.us/j/86800853878?pwd=aWbpooDRR2194p6k7bICsHIHPgxwkJ.1 
+Password: 1234
+	April 1, 2026
+In attendance: Bedriye Akson, Jordi Rosquillas, Renée Richter, Punya Mishra
+Agenda:
+* New member introductions (add your info below!)
+   * * Updates from ICICLE:
+   * * Updates from members:
+   * Questions for Punya Mishra - March 2026 Students & Grads SIG
+   * What is one major 'blind spot' you see in today’s doctoral training for learning scientists and learning engineers?
+      * The narrow view of what learning are, limiting to the cognitive side of learning, but learning is a multifaceted experience, the 
+March 11, 2026 (Cancel due to unexpected scheduling conflict with our guest speaker)
+In attendance: 
+Agenda:
+* New member introductions (add your info below!)
+   * * Updates from ICICLE:
+   * * Updates from members:
+   * February 11, 2026
+In attendance: Abby, Li, Jodi, Jordi, Tennerick
+Agenda:
+* New member introductions (add your info below!)
+   * * Updates from ICICLE:
+   * Next Monthly Community call with Jeremy Roschelle (Digital Promise) next Wed. Feb 18th at 12pm ET
+   * Invitation to Learning Engineering webinar at the end of the month hosted by the Global SIG Wed. Feb 25, 12pm ET with Carolina Ali
+* Updates from members:
+   * Jordi’s starting his doctorate in education in Monterey, Mexico, interested in use of AI tutors for teaching and learning, designing an AI tutor for middle school math students
+* Journal club: Henriksen, D. & Mishra, Punya. (2020). "Move slow and nurture things: Wise creativity and human-centred values in a world that idolizes disruption", In P. Formica & J. Edmondson (Eds.), Innovation and the arts: The value of humanities studies for business. doi.org/10.1108/978-1-78973-885-820201006 (PDF)
+   * Punya Mishra will be joining us next month. Check out his website as we will have the opportunity to ask him questions!
+   * Discussion Students & Grads SIG Feb 2026
+   * Add your qs for Punya to answer next month here: Questions for Punya Mishra - March 2026 Students & Grads SIG
+January 14, 2026
+In attendance: Mei Mei, Abby, Michael, Jodi, Mac Love, Keith (John), Scott
+Agenda:
+* New member introductions (add your info below!). Add your email if you’d like to be included on the distro list going forward!
+   * * Updates from ICICLE:
+   * * Updates from members:
+   * What do people want to learn/focus on this year
+      * Mei Mei - building agentic AI into the research pipeline
+      * Mac - comparing Swiss and Canadian material engineering labs at universities
+      * Jodi - learning analytics and data, collaborating with Erin at CMU for a project in Africa
+      * Michael - Continuing to improve MatchMaker, specifically the palette statements in a way that integrates AI-human collaborative approach, hoping to release in 6-8 weeks, getting people to pay more attention to and value paradata (data re: data collection itself, context of learning experience, learner profiles)
+      * John - data collection and data processing to transition from pilot to build year, DS4EDU project on predicting capstone project topics to help with planning efforts, transitioning from DS to LE
+* Discussion Questions
+   * What questions do you have about the LE student-to-practitioner pipeline?
+      * Communicating and translating across teams/to client-facing perspective
+      * Getting real needs from client
+      * Being a career changer and not coming from an L&D background, building skills and marketability without having to come back to school
+         * Reviewing LE job postings like this one as a group
+      * Portfolios vs credentials
+      * Skills for LE outside of being in education, career pathways across industries 
+         * Inviting members of the Workforce and Gov/Mil MIGs to present
+         * Bring up at next steering committee!
+   * How does LE fit into your professional/academic goals for the year?
+   * What do you wish other people knew about LE?
+   * What do you expect to be a trend this coming year in learning engineering?
+      * How much will experience with LLMs be expected?
+* 2026 SIG Programming Questions
+   * What kinds of expertise would you like to learn from in this space?
+   * What collaborative opportunities could you imagine this SIG having with other ICICLE SIG/MIGs?
+   * What would you need to land your dream LE job?
+   * What support do you want from the SIG/ICICLE this year?
+December 10, 2025
+In attendance: Mei Mei Li, Li Liang, Abby Bergman, Jodi Lis, Tennerick Adesunloye
+
+
+Agenda:
+* New member introductions (add your info below!). Add your email if you’d like to be included on the distro list going forward!
+   * Tennerick Adesunloye
+* Updates from ICICLE:
+   * * Updates from members:
+   * Tennerick presentation to Global SIG: Globalisation SIG_05September2025_Adesunloye.mp4
+* Planning for the next 5 months:
+   * Jan.14 - Abby facilitates an activity that invites us to reflect on the past year and use those insights to imagine what we want to build toward in 2026 Grad SIG Dec 2025.
+   * Feb.11 - Abby facilitates journal discussion.
+      * Possible reading
+   * Mar.11 - Invite a speaker to give a talk on the student assessment in the AI era. (Mei Mei will reach out).
+   * April.8 - Mei Mei facilitates a journal discussion.
+   * May - TBD
+   * June - Early career/student flashtalks.
+
+
+November 12, 2025
+In attendance: Mei Mei Li, Bedriye Akson, Jodi Lis, Jordi Rosquillas, Joy Wan, Li Liang, Renner Clements, Aaron Pass, Akin, Scott H., Aziman Abdullah
+
+
+Agenda:
+* New member introductions (add your info below!). Add your email if you’d like to be included on the distro list going forward!
+   * Jordi Rosquillas (rosquillas@gmail.com) ✅ 
+   * Joy Wan (joywan03@gmail.com) ✅ 
+
+   * Updates from ICICLE:
+   * 
+
+   * Updates from members:
+   * Mei Mei facilitates a discussion about Student perspectives on teachers’ professional integrity.
+October 8, 2025
+In attendance: Ratna Suthar, Mei Mei, Jessica Tan, Pamela Yusuf, Renee Richter, Abby Bergman, Lee, Fio Putri
+
+
+Agenda:
+   * New member introductions (add your info below!). Add your email if you’d like to be included on the distro list going forward!
+   * Mansi Chaudhary chaudhm4@miamioh.edu , a second-year PhD student in the Psychology Department at Miami University, Ohio. (https://www.linkedin.com/in/mindfulmansi/)
+   * Fiodesy 'Fio' Putri (fputri@asu.edu), 1st year PhD student in Human Systems Engineering, Arizona State University, focus on Learning Engineering (https://www.linkedin.com/in/fiodesygp/)
+
+      * Updates from ICICLE:
+      * 
+
+      * Updates from members:
+      * Mei Mei: introduce new leadership team (co-chairs: Abby Bergman & Li Liang)
+      * Abby’s introduction
+      * Li’s introduction
+      * Applied linguistics in language education→social-cultural psychology —>educational assessment (psychometrics school of Georg Rasch)
+      * Mei Mei's reintroduction
+      * Ratna Suthar, PhD, looking for data related opportunities in ed tech, former Content Manager, Openstax -linkedin
+      * Renee is recruiting for her dissertation Delphi panel:
+      * This dissertation develops a validated Learning Engineering Competency Framework through AI-assisted analysis of published research in learning engineering and adjacent fields. It aligns with IEEE 1484.20.2 (Recommended Practice for Defining Competencies) and IEEE 1484.20.3, a data model for describing and sharing frameworks of shareable competency definitions (SCDs) across learning, workforce, and employment systems. I’ll be recruiting Delphi panelists in the coming weeks from varied industries to review and refine the framework through structured consensus rounds.
+
+
+      * Event: 
+      * https://asuevents.asu.edu/sites/g/files/litvpz3506/files/2025-09/2026%20LERN%20Call%20For%20Proposals.pdf
+      * Date: February 3rd and 4th, 2026, 
+      * Location: Tempe, Arizona
+
+
+September 10, 2025
+In attendance: Mei Mei, Lauren, Michael Jay, Aaron Pass, Ratna Suthar, Jessica Tan, Jordi Rosquillas, Val Melikhova, Anil Sapkota, Renée Richter, Bedriye Akson, Adesunloye Adeola, Keith John Ellis, Abby Bergman
+
+
+Agenda:
+      * New member introductions (add your info below!). Add your email if you’d like to be included on the distro list going forward!
+      * Jessica Tan (jttan1@asu.edu) Currently Human Systems Engineering MS and Learning Engineering student
+      * Jordi Rosquillas rosquillas@gmail.com:https://www.linkedin.com/in/jordirosquillas/        Starting a PhD in Education in Monterrey, Mexico
+      * Ratna Suthar, Content Manager, Openstax - looking for job opportunities in AI/Data Science in Edtech linkedin
+      * Val Melikhova (vmelikho@asu.edu) (https://www.linkedin.com/in/valentina-melikhova/) , Human Systems Engineering PhD w/focus on Learning Engineering. Sr Research Analyst at ASU
+
+
+
+
+      * Updates from ICICLE:
+      * From the Learning Agency - Tools Competition Launch Event Monday Sept 8
+      * FYI new Learning Design and Technology Master’s programs launching this fall (listed under Programs tab too):ç
+      * Boston College Lynch School of Education and Human Development -  M.A. in Learning, Design, and Technology - full time or part time, on campus
+      * Johns Hopkins University School of Education - Master of Education (MEd) in Learning Design and Technology - full time or part time, online
+      * LE internship opportunity (passed along by Janet (Kolodner)) - Curriculum Development & Digital Course Support intern for Blue Bridge Career Coaching; 5-10 hours a week, flexible & remote - “Blue Bridge Career Coaching is seeking a motivated intern with a background in Learning Engineering, Instructional Design, Curriculum & Instruction, or related fields. This role offers the chance to apply learning science and curriculum design skills in a small business setting by shaping the structure, flow, and effectiveness of digital learning programs that support career development.” Reach out to Janet if interested/questions (kolodnej@bc.edu)
+      * Next Monthly Community call next Wed, Sept 17th at 12pm ET
+      * Lauren’s update
+      * Lauren stepped down as co-chair. 
+
+
+      * Updates from members:
+      * Mei Mei - working on manuscript about Human-AI agency
+      * Devan - presented at ISLS, worked on papers
+      * Ratna - wrapping up at Openstax soon; new contract gig at marketing company, helping building out their AI team, use AI agents for portfolio/dropbox. Currently working on making custom GPTs
+      * Michael - “I am happy to make MatchMaker available for graduate students who would be interested in using it as part of or to support their  research. MatchMaker is a human-in-the-loop AI tool that relates curriculum, resources, certificates, competencies, and much more to one another. It can used for lots of things including recommendation engines, personalization tools, workforce recommendations, and more. Let me know if you want a demo.” 
+      * Anil - joined LE networking session and found out about this group; has the LE Toolkit to read, as well as Ryan Baker’s data science MOOC. Wants to learn more about domains in LE. Going for Master’s in ID but wants to learn about the other sides. Open to work, interested in ed tech 
+
+
+      * Topic: Learning technology standards! Why do we talk about them in LE/ICICLE, and what questions do you have?
+      * Slides
+      * An introduction to the topics of LTSC, which is different from curriculum standards
+      * The goal of standards is to make the data interoperable.
+      * How are people implementing these standards? put forward the case studies is practical and helpful.
+August 13, 2025
+In attendance: Mei Mei, Janet K, Aaron Pass, Renée Richter, Hayden, Lauren, Xi Zhao, Amanda, Adesunloya Adeola, Michael Jay, John Ellis
+
+
+Agenda:
+      * New member introductions (add your info below!). **Add your email if you’d like to be included on the distro list going forward!**
+      * amandaga@andrew.cmu.edu : linkedin.com/in/amanda-gracia 
+      * zhao.xi6@northeastern.edu: https://www.linkedin.com/in/xi-zhao-767b6432b/ 
+      * hstec@andrew.cmu.edu : https://www.linkedin.com/in/hayden-stec
+      * aaron.pass@us.af.mil :
+      * 
+
+      * Updates from ICICLE:
+      * Next Monthly Community call next Wed, Aug 20th at 12pm ET
+      * Follow the Learning Engineering Toolkit page on LinkedIn for LE tips and insights from the book! (run by Toolkit co-editor Jim Goodell)
+      * 3rd installation of the “Invitation to Learning Engineering” webinar series: Government and Military Case Study (July 18, 2025) - recording and slides (also added to Resources section of this doc)
+      * Next one: October tentatively; around Workforce
+
+
+      * Updates from members:
+      * What has everyone been working on this summer? Research, internships, projects, summer courses, etc.
+      * CMU LearnLab Summer School experiences?
+      * Renee - PhD proposal accepted! Work on LE competencies. Synthesis of existing frameworks; using IEEE standards to align. Will be seeking participants to help validate competency framework that gets developed - about 18 people to participate across all sectors. Not trying to come up with every LE competency but hoping to push other projects along by having this instrumentation outlined & validated - enable more work to happen. 
+      * Hoping to finish by December, so participants by Sept-Oct - reach out rjohnson33@islander.tamucc.edu 
+      * Participants need to be able to complete all of the rounds; also need experience with LE and grasp of LE (~5 years experience)
+      * Janet - two updates
+      * 1) Book with Cathy LaChappelle about rationale/scaffolding templates they created for Boston College LE Master’s students, to enable them to be designers of engaging and impactful learning experiences. Writing and making progress! 
+      * Preparing a student to be a good LE/designer - just enough about the learning sciences and working with contexts and technology, and iterating with feedback from testers/learners. Including designing with learners. To scaffold this, created design journal pages for key steps in the process - prompts to get them thinking about the right stuff, things to reflect on. Set of 40 templated pages including gathering info, critique, testing, conjecture maps, etc. 
+      * Students took these with them on the job and taught them to their teams - so we know about their use
+      * 2) Was involved in project with an environmental group called Mothers Out Front working on education about plastics - taught the group about iteration, invitations to engage.
+      * Adesunloye - using LE to guide design of experience on platform (Studomia). Using it to inform a framework. Using AI to go through the workflow. Has gone through a full cycle of LE 
+      * John - LearnLab Summer School @ CMU
+      *  Other related opportunities through OLI: LE Fellowship Program and LE Catalyst
+
+
+– Hi  from Arun! Sorry I have been missing these meetings, trying to wrap some things up and start new chapters.
+June-July, 2025
+Note: The SIG will go on summer hiatus (no meetings in June or July) and will resume for the August 13th meeting. Thanks, and looking forward to seeing you then!
+
+
+In the meantime, you can check back here for updates that we’ll add asynchronously:
+      * Next Monthly Community call next Wed, July 16th at 12pm ET
+      * CMU OLI holding monthly “Learning Engineering Catalyst” events - a forum dedicated to addressing the critical gap between contemporary research in learning sciences and practical online course design. Each session will feature a discussion on a learning sciences research finding, followed by an exploration of its practical implications for course design. Register here.
+      * Recently announced: Winners of Tools Competition “Enhancing Post-Secondary Learning” track
+      * Including David Porcaro (ICICLE member) & the Learning Design Alliance for Lazuli  
+      * Follow the Learning Engineering Toolkit page on LinkedIn for LE tips and insights from the book! (run by Toolkit co-editor Jim Goodell)
+      * 3rd installation of the “Invitation to Learning Engineering” webinar series: Government and Military Case Study (July 18, 2025) - recording and slides (also added to Resources section of this doc)
+May 14th, 2025
+In attendance: John Ellis, Bedriye Akson, Renée Johnson-Richter, Li (Lee) Liang, Mei Mei, Megan Imundo, Michael Jay, Ella Cutler
+
+
+Agenda:
+      * New member introductions (add your info below!)
+      * Ella Cutler- Northwestern CS + HCI Senior, working at an edtech startup currently with some research experience in learning sciences! I interned at the Learning Engineering Virtual Institute last fall. 
+
+
+      * Updates from ICICLE:
+      * Survey from Jeanine DeFalco - conducting some preliminary research on learning engineering design challenges, would like to share thoughts via survey
+      * Via the Learning Agency - Rapid Response Bridge Funding Program - new Spencer grant RFP for researchers who've had their grants canceled
+      * Last call for applications for CMU’s LearnLab Summer School (July 28-Aug 1)
+      * Deadline has been extended to May 20, click here to apply
+      * Next Monthly Community call next Wed. May 21st at 12pm ET
+      * Prep for session: https://qbl.sys.kth.se/sections/questionbased_learning_2209/enroll 
+
+
+      * Updates from members:
+      * New publication by Totino & Kessler in Tech Trends journal: 
+Exploring Learning Engineering Design Decision Tracking: Emergent Themes from Practitioners’ Work
+         * Part of a special issue on Decision-Making Applications in Learning, Design, and Technology. Check out other articles in this issue including ones about applied ethics, collaborative decision-making, the role of precedent knowledge in decision-making, data-driven decision-making, and investigating designer decision-making for pre-service teachers
+         * Renee - can share more about her dissertation proposal next meeting!
+
+
+         * Recap/share-out of AERA conference and the LE poster session (Lauren & Megan Imundo)
+         * Overview of session
+         * Recap of Megan’s poster & engagement/feedback
+         * Recap of Lauren’s poster & engagement/feedback
+         * Other experiences at AERA
+         * Practitioner & researcher perspectives on sharing LE at an academic conference
+         * Share/discuss: Your experiences, questions, thoughts about presenting about and talking about LE at conferences and other professional spaces
+
+
+Discussion notes:
+         * Megan - did a lot of work to always bring it back to LE and the LEP, and how that guided how the project went - centering the challenge, working in cycles of implementation and investigation
+         * Attendees were using their own research schemas to understand and comprehend the research findings, but not connecting to the LE pieces - so she tried to be intentional about calling out these pieces. When she shifted to be more intentional about pulling out the LE language, it helped folks make the connections - not just doing research for research sake, but part of a larger undertaking to make impact and implementation improvements 
+         * Audience was really receptive and engaged - poster format helped with this! Lots of 1:1 time. People lingered for 20-25 mins, deeper conversations, more back and forth
+         * Challenges working LE into much larger/overwhelming/“intense” AERA context?
+         * A lot of disciplinary traditions and methods - what counts as knowledge, evidence, and data. If you’re early career and doing LE work, having such a wide mix of people was quite helpful. Mix of technology side and research side - ex. Faculty could relate to systems in Megan’s poster. Variety served us well, lots of intersections and spaces
+April 9th, 2025
+In attendance: Bedriye Akson, Michael Jay, Mac Love, Mei Mei Li, Adesunloye Tennerick Adeola, Troy, Sarah, Renee Johnson, John Ellis
+
+
+Agenda:
+         * New member introductions (add your info below!)
+         * 
+
+         * Updates from ICICLE:
+         * FYI Learning Agency announced finalists for 2025 LE Tools Competition 
+         * Next Monthly Community call next Wed. April 16th at 12pm ET
+         * Invitation to LE webinar (ft. Higher Ed MIG) from Wed. March 26th
+         * Recording and slides
+
+
+         * Updates from members:
+         * 
+
+         * Journal club: Facilitated discussion around
+
+Ibrahim, L., Huang, S., Ahmad, L., & Anderljung, M. (2024). Beyond static AI evaluations: advancing human interaction evaluations for LLM harms and risks. ArXiv, https://arxiv.org/abs/2405.10632 
+
+
+March 12th, 2025
+In attendance: Jason Bock, Anne Fensie, Renner Clements, Mei Mei, Bedriye Akson, John Ellis, Adesunloye Adeola, Michael Jay, Renée Johnson
+
+
+Agenda:
+            * New member introductions (add your info below!)
+            * 
+
+            * Updates from ICICLE:
+            * Next Monthly Community call next Wed. March 19th at 12pm ET
+            * Invitation to LE webinar (ft. Higher Ed MIG) on Wed. March 26th at 1pm ET
+
+
+            * Updates from members:
+            * Jason Bock - new job as Director of Online Education at West Virginia University!
+
+
+            * Up next (April 9th meeting) - suggestions for article/paper to read & discuss. Leave your ideas here 👇 (can be any topic related to LE and/or that this group would find valuable!) 
+            * 
+
+            * Welcome, Kristin Torrence! 
+            * New publication: Leveraging Learning Engineering to Advance Authentic Learning in Virtual Reality in the Journal of Applied Instructional Design
+            * Recording here
+
+
+LE career journey:
+            * Advocating/”evangelizing” LE among team - takes time/long journey - through modeling
+            * Calling out what they were already doing that was LE
+            * Solidify terminology to reflect what they were doing 
+            * Led to CEO changing her title to Head of Learning Engineering - advanced buy-in even further
+            * Now “Principal Innovation Learning Engineer” at Cornerstone
+            * “Side quests” - some were really fruitful. Ex) Data Science certificate course - adjacent to learning experience design
+            * With data science background, now knows about new approaches to better analyze interactions with open conversation tool. Tangential skills can really help inform direction
+            * LE as a “menu” - what domains can I draw inspiration from to help me with my problem today?
+            * Renner - where do you find data to obtain buy-in from key stakeholders for immersive learning solutions?
+            * Theoretically & empirically - benefits, retention, skill ability
+            * Studies about learning vs. about cost-saving/time-saving
+            * Cite papers to debunk or lean in to specific point of view
+            * Adeola - thoughts on LE given last year of AI boom, and outlook on VR?
+            * Lot of hype that was originally for XR, shifted to AI - been turbulent
+            * But AI in turn will be able to expand the VR field more. Ex - creation o        f environments, of virtual humans. Connected a LLM to virtual human for conversations - this will evolve more and more, especially moving toward agentic/autonomous
+            * XR may scale more when/if it becomes more affordable
+            * Have any reactions to/feedback on introducing LE to others (outside of own org, i.e. at conferences) changed your thinking or how you talk about it?
+            * Mostly about “What is the different between LE and ID/LXD?”
+            * Thinking about your designs as “unfinished business” until proven otherwise. Need to continue to collect data to ensure it’s still working given changes 
+            * Our design decisions as hypotheses (like LEED)
+            * Mindset shift - “constant experimenters” 
+            * Informed, high-quality decisions + scaling outcomes & optimization  + efficiency  = value of LE
+            *  Working on a cross-functional team - finding common language between everyone - concepts like “user-centered” means something different to a UI/UX designer vs. learning designer - we all kind of talk around the same conceptual topics, but often have different nomenclature
+            * Communicating with the client re: what they say they need vs. understanding what they actually need - challenges?
+            * Discovery process involved - sometimes have to advocate; if they still don’t budge, at least you did your due diligence
+            * Referencing learning sciences literature - her starting point for diving into stealth assessment and measurement. Asking, what have other people done that’s similar?
+            * Ex. Skill demonstration in open-ended conversation - where to look for insights on this? Yes, LLMs, but how are practitioners analyzing discussion data from LMS to determine how students are learning? The common ground: text to analyze - find the parallels. 
+            * Ex. How do design an adaptive learning platform - looking at literature about AIS, cognitive tutors. 
+            * ^a concrete example of bridging research and practice and getting into the literature as a practitioner
+            * What about closer collaborations between the researchers and those applying it? Research getting updated/new insights based on implementation results?
+
+
+
+
+
+
+February 12th, 2025
+In attendance:
+Renée Johnson, Mark Reith, Hassaan Bukhari, Sabrina Rearden, Jason Bock, John Ellis, Breanna Lee, Devan Walton, Mac Love, Patty Chiang, Adesunloye Adeola, Jodi Lis, Maddie, Michael Jay, Bedriye Akson, Sree S, Mei Mei
+
+
+Agenda:
+            * New member introductions (add your info below!)
+            * Breanna Lee: Northwestern BA Philosophy, Human-Computer Interaction
+            * Mac Love
+
+
+            * Updates from ICICLE:
+            * New in-press paper by ICICLE’s Kristin Torrence: Leveraging Learning Engineering to Advance Authentic Learning in Virtual Reality in the Journal of Applied Instructional Design *will be coming to speak in March*
+            * Apply now: Carnegie Mellon University’s LearnLab Summer School July 28-Aug 1, 2025. One-week summer school on advanced learning technologies and technology-enhanced learning experiments, with 6 tracks. Applications due May 1, 2025.
+
+
+            * Updates from members:
+            * Jodi - Invitation to LE webinar (ft. Higher Ed MIG) tentatively planned for March 26th 
+            * John - in conversation with Lauren about using LEED and Nested LEPs as tools for use case in current role
+
+
+            * Recent job openings
+
+
+            * Renée Johnson will talk about & elicit feedback for her upcoming SXSW EDU presentation! Check out her Session info and proposal submission 
+            * The Navigating Needs LE Case Guide in Figma (FigJam)
+            * And her LE Case Guide Figma template 
+            * Our Educating Sage website
+            * Recording of the SIG presentation
+            * Contact info for sending more feedback/questions: Renée Johnson
+
+
+
+
+Q&A/Discussion - 
+            * How can it be inclusive without being overwhelming?
+            * Challenge: Volume/length of workbook given workshop time - will be more guided based on case study they choose. Workbook is more of a takeaway to use in their contexts
+            * Jason - maybe pare down to 3 things you want to get across rather than workshopping everything. A small step of the whole process
+            * Mac - Have you had the opportunity to test what you designed with industry partners? Does it work in X industry?
+            * SXSW will be first true launch, though Maddie works in workforce dev and will give to others on staff who have current projects
+            * When presenting to SXSW audience, will there be caveat that it’s pilot/first test? Yes! 
+            * Will follow up with people who attend conference to see how it went if they used it. Will continue to take advantage of conferences to get practice use experience - will still be a couple years. 
+            * Note that testing may be prioritized to group who’s already interested
+            * Breanna (in chat) - I have a class soon, but it was so nice meeting everyone, and thanks, Renée, for the wonderful presentation! Some questions I had:
+            * After identifying the “needs,” curious about a more coherent implementation plan
+            * Strategies for the learner need identification beyond the ethnographic surface level (assuming learner needs identification is harder than the org’s)
+            * Really appreciate the LEED tracker and diagram you had for the contextualization!
+            * Will report back on the feedback they get!
+
+
+January 8th, 2025
+In attendance: Renner Clements, Jason Bock, Janet, Michael Jay, Mark Reith, Sree Sanakam, Jodi Lis, John Garrison, Jowens, Adesunloye Adeola, Bedriye Akson, Hassaan Bukhari
+
+
+Regrets: Mei Mei
+
+
+Agenda:
+            * New member introductions (add your info below!)
+            * Jason Bock jasonbock801@gmail.com
+            * John Garrison john.garrison@betaflixinc.com
+            * Sree Sanakam Sree.sanakam@betaflixinc.com 
+            * Hassaan Bukhari 
+            * Email: hassaan.bukhari@betaflixinc.com 
+            * LinkedIn: https://www.linkedin.com/in/hassaan-bukhari/
+
+
+            * Updates from ICICLE:
+            * 2024 Conference - reminder to submit proceedings peer reviews by Jan 10th
+            * Next monthly community call on Wed. Jan 15th, 12pm ET
+
+
+            * Updates from members:
+            * Any new folks from “Invitation to LE” webinar? Thoughts, reflections?
+            * Jason - used slides for presentation to introduce LE!
+
+
+            * Recent job openings
+
+
+            * Discussion:
+            * Problem with grad student groups - fixed time periods, grow up and go to other MIGs/SIGs. This group has grads still be “eligible”
+            * Opportunity for members to share split with expert voices
+            * Newbie stuff - basic stuff to cover outside of larger group. Application level of how to put together a project and say it’s LE, how to get started (can ask experts about this) - getting newbies to not just “lurk” and be part of conversation
+            * Recommendations on how to do this? “Regular jam sessions” (SIGs/MIGs) helps - comparison to AECT, doesn’t always happens with the divisions
+            * Having pre-planned programming and promoting it in advance - valuable. Programming is what would draw them in, but still have some time for open discussion to feel like you’re making a connection. Draw them in this way
+            * Inviting people, roundtable discussion
+            * Highlight conversations that happen in other groups and topics across multiple SIGs - like LE Case Guide 1.0
+            * This is a multidisciplinary group - i.e., Mark comes from CS background but lack learning sciences & learning theories background. Hope that students in this boat will show up!
+            * Fill in the gaps and build bridges to propel conversations forward
+            * Relates to competencies framework - Jodi will want to talk to those from specific fields represented in the competency framework
+December 11th, 2024
+In attendance:  Mei Mei, Adesunloye Adeola, Michael Jay, Sabrina Rearden, Devan Walton, John Ellis, Vipin Verma
+
+
+Regrets: Lauren
+
+
+Agenda:
+            * New member introductions (add your info below!)
+            * Sabrina Rearden - sabrina.rearden@absury.com, sarearden@yahoo.com 
+            * Updates from ICICLE:
+            * Updated doc structure for this SIG - check out (and return to!) the new tabs - pop out the left sidebar when you’re in this doc
+
+
+            * Updates from members:
+            * Congratulations to Dr. Anne Fensie on passing her dissertation defense on Wednesday 12/4!! 🎉
+            * Anyone attend the “Invitation to Learning Engineering” webinar today?
+
+
+            * Recent job openings
+
+
+            * 2024 wrap-up / looking forward to 2025
+
+
+Kick-Off the last meeting of this year with a quick opener: What emoji best represents your learning engineering journey this year? 
+
+
+Reflection: 
+1. People in this meeting have been in the learning engineering field for a while now, I want to have us reflect on: What’s the most unexpected thing you learned about learning engineering this year?” 
+For folks who are relatively new to the field, don't worry, I got you covered with this question: What’s a question about learning engineering that you couldn’t answer at the beginning of the year, but now you can?”
+2. Next prompt I would like to focus on people:
+What’s one thing someone in the LE community did this year that inspired or helped you?” OR “What’s a skill or quality you admire in someone else in this group?”
+
+
+3. Next prompt is about "wish for next year": “What’s one wish you have for yourself, your work, or the learning engineering community in 2025? (Wishes can be practical, visionary, or even whimsical (e.g., “I hope to have a robot dog!”).
+
+
+
+
+November 13th, 2024
+In attendance: Brittany Robinson, John Ellis, Kristine Recktenwald, Michael Jay, Mei Mei, Devan Walton, Renner Clements, Jowens Merone, Joy Wan, Jodi Lis, Traca, Kari Word, Frances DeMarcos, Macy
+
+
+Agenda:
+            * New member introductions (add your info below!)
+            * Jowens Méroné  jowens.merone@gmail.com or jowens.merone@asbury.edu 
+            * Renner Clements - rennerclements@gmail.com or william.clements@asbury.edu        
+
+
+            * Updates from ICICLE:
+            * Aaron Kessler, Jeanine DeFalco and Erin Czerwinski are putting together a conference session “Learning Engineering: Stories from the Field”. This hybrid session will be part of AIS 2025 (which is an affiliated conference of HCII 2025). 800 word abstract is due November 8th!
+            * Wed. Nov 6th + Wed. Dec 4th at 1pm ET - Michael Jay leading discussions on “What is Learning Engineering?” at the Learning Agency’s Learning Engineering virtual networking sessions. Register here.
+            * December 11 at 10amPT/1pm ET - “Invitation to Learning Engineering” - intro to LE, going through a case study (Jodi and Zarka) with Carnegie Learning - registration to come!
+            * Update: Members of the IEEE Learning Engineering community (ICICLE) are facilitating an event on how you can get engaged with Learning Engineering (LE) to take place via Zoom on Wednesday 11 December at 1pmET/10amPT. This session will provide an overview of Learning Engineering, share a use case on the application of Learning Engineering, discuss that use case from a variety of perspectives, and open the floor to participants to pose questions and, if time permits, discuss all things LE. Participants will be invited to continue their exploration of LE as part of the ICICLE Special Interest Groups (SIGs) and Market Interest Groups (MIGs). You can find more info about those ICICLE groups here: https://sagroups.ieee.org/icicle/. This session will highlight a use case from Carnegie Learning and will feature Steve Ritter, Carnegie Learning’s Founder and Chief Scientist. You can register here: https://us02web.zoom.us/meeting/register/tZAvdeCrqToiE9w0k3-uWbBsm7OjZSF1258E
+            * Learning Engineering Toolkit Chapter 2 (Learning Sciences) is now open access!
+            * Reminder: Learning Engineering Newsletter on LinkedIn as a resource; LE Case Guide: Learning Engineering Case Guide 1.0
+
+
+            * Updates from members:
+            * https://nebigdatahub.org/opends4all/ The NSF backed NEBDInnovation Hub out of Columbia is looking for contributors for their opends4all curriculum to build engagement and stay up to date. If interested, feel free to check it out or reach out if you have any questions. I checked with Emily they hope to get a kickoff meeting shortly but still accepting people interested but will update here if I find out a date -john ellis (10/15)
+            * From Nolan Lovett (10/24) - the European Association of Work and Organizational Psychology (EAWOP) and has an upcoming 2025 Congress, looking for research on workplace learning, human resource development, and organizational behavior, Abstract submission information here.
+            * AECT conference recap (Lauren, Anne, others?)
+            * Recent job openings:
+            * Curriculum Designer (hybrid) - Tufts University 
+            * Learning Scientist, Efficacy Research - Duolingo (Pittsburgh, PA)
+
+
+            * Welcome, Brittany Robinson! (recording here)
+
+
+Discussion:
+            * Mei Mei - How to decide when to use tools, especially when it comes to down to needing to buy them?
+            * Michael - In the pK-12 MIG we also discussed ICICLE compiling and making available some of the more general learnings related to architecting, UX and UI design, and implementation of technical standards in the development of tools and learning environments… particularly those that emerge from a robust LE process. Thoughts?
+            * Michael will mention this tool conversation to Erin Czerwinski who heads the Tools and Instrumentation SIG. They may want to explore those.
+October 9th, 2024 (2 year anniversary! 🎉)
+In attendance: Mei Mei Li, Jodi Lis, Lauren Totino, Michael Jay, Amy Parent, Devan Walton, John Ellis, Arun
+
+
+Agenda:
+            * New member introductions (add your info below!)
+            * 
+
+            * Updates from ICICLE:
+            * Deadline extended! If you attended and/or presented at the ICICLE 2024 conference: Proceedings & Reflections are now due October 15
+            * Propose ideas for Learning Engineering Newsletter on LinkedIn (organized by Jim Paradiso)
+            * Join the Design SIG for deeper conversations about Gen AI and learning sciences/learning design. Last Tuesday of the month at 2pm ET, reach out to co-chairs Aaron Kessler (kesslera@mit.edu) and Amy Parent (aparent@saliencelearning.com) if you’re not already signed up to get comms
+
+
+            * Updates from members:
+            * John Ellis - Principal for a Day experience
+            * Shadow a principal and understand what they go through on a given day - followed a principal for a special education center. Lots of “this doesn’t make sense” / “why are we doing this?” - the same standards for a typical NC student are applied to special education (i.e., standardized testing). Teachers doing additional work. No specialization/ alternatives /individualization. Saw lots of challenges, including lack of transition from being a student to being a graduate - no support. 
+            * “it was interesting also to realize that teachers are just facilitators following a standard curriculum, so why are they needing teaching credentials?”
+            * Resonates with Amy’s experience, with IEPs
+            * We talk about this in our ICICLE community - designing for the “typical”/average misses out on all of the outliers who are still learners whose needs need to be addressed. Challenging to do this at scale, but keep learner at the center
+            * pK-12 MIG direction and opportunities
+            * Here are the questions we discussed in the pK-12 MIG this morning:
+            1. How much do we expect educators to adapt or even generate curriculum versus learning strategies as part of their practice?
+            2. How can we help practitioners use learning engineering and design thinking to inform daily practices?
+            3. What sorts of data should educators collect to inform their practice. What data is available and what else can they use?
+            4. How can ICICLE support this process and even invite practicing educators to work with us to own the integration of learning engineering into their practices?
+            5. What role can AI play in helping improve learning and teaching? (I’m throwing that one in specifically for you!) 
+            * Does speed actually get us to the right end? 
+            * It’s about the community conversation not the end results
+            * Devan - talk about adaptive inclusion with AI at Opened: https://docs.google.com/presentation/d/1y2NS55rCGjTwU-reWgRhPZfuji_93lOn/edit#slide=id.p1 
+            * At OpenEd - Big question was how do we design open resources for instructors to remix and adapt existing resources out there to their specific learner population needs? 
+            * Sparked conversation about how a lot of AI tool developers have a cognitivist view on how to support learners, but now turning to: What about social factors in learning? Not just about being the most efficient, performative learning. 
+            * Mei Mei - Working with constraints like standardization and being limited - how to utilize it to personalize the experience? Within-course pathways, course-level, and multi-course level. Analytics dashboard? Other tools?
+            * Working on chapter about this at LEI
+            * With Rod Roscoe - thinking about ielevate framework, v is for variation, looking beyond the average and spotting variability
+            * Michael - also this: https://digitalpromise.org/initiative/learner-variability-project/ 
+            * John - nasa open apis -> using to train AI then build different level of curriculums was the general concept of the project: https://www.spaceappschallenge.org/nasa-space-apps-2024/find-a-team/the-piedmont-puddle-jumpers/?tab=project 
+            * Amy - specialized foundation models and specializing outputs with well-documented evidence - may help with IEPs, variation on lesson plans
+            * Anne Fensie - HE MIG talk; AECT presentation
+            * Anyone else presenting/attending AECT, virtual or in person?
+
+
+            * Recent job openings:
+            * Learning Engineer Specialist for the Air Force - Air Force Institute of Technology (Wright-Patterson AFB, OH)
+            * Learning Experience Designer (hybrid) - Harvard Division of Continuing Education (DCE)
+            * Digital Learning and AI Specialist (hybrid) - Center for New Designs in Learning and Scholarship at Georgetown University
+            * Educational Technologist (hybrid) - MIT Open Learning, xPRO team
+            * Instructional Designer (remote) - Southern New Hampshire University
+            * Director, Center for Innovative Teaching & Learning - High Point University (NC)
+
+
+            * Welcome, Brittany Robinson! - **Rescheduled to Nov 13th**
+            * And if you haven’t already, feel free to submit your input on what you want to hear during Brittany’s session, here
+
+
+
+
+September 11th, 2024
+In attendance: John Ellis, Mei Mei, Lauren, Michael, Jodi
+
+
+Agenda:
+            * New member introductions (add your info below!)
+            * John Ellis., MEng Computer Engineering, Greensboro, NC
+
+
+            * Updates from ICICLE:
+            * If you attended and/or presented at the ICICLE 2024 conference: Proceedings & Reflections due September 30
+            * From Design SIG for all of ICICLE/learning engineers - LE Case Guide 1.0         https://docs.google.com/presentation/d/1zswPfXQxV1_aRHzwQCaGRV5ZehABFUCVTYNR6jF2xS4/edit?usp=sharing 
+            * If you have work/research to be spotlighted in a brief newsletter format (like this first one), let me know and I’ll connect you with Jim Paradiso
+            * From the Learning Agency: 2025 Tools Competition Launch Event - tomorrow, Sept. 12 1-2pm ET
+
+
+            * Updates from members:
+            * Anne Fensie - just published a chapter in the Introduction to AI and Ethics in Higher Education textbook called “How to Use AI to Help, Not Hinder, Your Learning.” It has several worked examples of using an AI chatbot to help a student learn. Here’s the link. 
+
+
+            * Recent job openings:
+            * Boston Scientific - 
+            * Principal Experiential Learning Program Manager
+            * Professional Education Curriculum Specialist II 
+            * ^ Courtesy of Anahit Vardanyan (Boston College LE Master’s grad- anahitvardanyan97@gmail.com), who works at Boston Scientific and says “they seem to like the practice of learning engineering and asked if any Learning Engineering graduate would be interested in. if they are interested, they could send their CV and will refer them to the opening directly”
+            * Posted on the New England Learning Sciences network, with the Maine Math & Science Alliance (MMSA) - with hybrid/remote options 
+            * Programs Assistant 
+            * Research Assistant 
+            * STEM Education Specialist - Computer Science / Data Science / Computational Thinking
+            * STEM Education Specialist - Place-Based Education Research 
+            * STEM Education Specialist - Computer Science Research 
+            * Ruth Kermish-Allen, who posted about the positions, says the Research Assistant and STEM Specialist in CS/Data Science would be appropriate for someone without a Phd.
+
+
+            * October 9 meeting - Brittany Robinson, recent Graduate with MA in Instructional Design from Asbury University, will share about her thesis work on an experimental instructional design framework leveraging the learning engineering process and integrating AI tools for learning design/dev at scale. 
+            * Poll: What specifically, if anything, would you be most interested in hearing about?
+            * Share your ideas here
+  
+               * Welcome Mei Mei! Our SIG’s new co-chair
+               * Future vision of this group, challenges
+               * Opportunities that increase student involvement
+               * Updates to directory - keep bios, skills, interests, updated
+               * Then, how can we use this data? Connections, etc.
+               * Have certain members who show up a lot be a point of contact for recruiting others at their orgs/institutes to come; try to attract students from different schools
+               * Conversations at conference - From IEEE structure, have “Student Branch” (https://students.ieee.org/student-branches/) - localized
+               * LEI student affiliate program (Scotty Craig)
+               * https://students.ieee.org/ 
+               * Lack of continued participation is a challenge
+               * Would like: Student-initiated projects - across programs, find each other, find a team
+               * Think about how this SIG can help in facilitating student collaboration across programs, universities on LE projects. 
+
+
+
+
+August 14th, 2024
+In attendance: Zarka Ali, Katerina Christhilf, Mei Mei Li, Stefan Chirica, Micahel Jay, Renee Johnson
+
+
+Agenda:
+               * New member introductions (add your info below!)
+               * Name, institution, role, etc.
+               * Katerina Christhilf, Arizona State University, graduate research assistant
+               * Stefan - incoming 2nd year student in CS at UCLA; interested in designing software for teachers to do their jobs better 
+
+
+               * Updates from members
+               * Support Renee’s SXSW Edu proposal - public voting component https://panelpicker.sxsw.com/vote/146856 
+
+
+               * ICICLE conference recap, reflections, takeaways, favorite sessions, etc.
+               * Zarka and Pk-12 MIG’s Active Learning session on LE teams - Our Student scenario: https://sites.google.com/view/icicle-conference2023-pk-12mig/icicle-2024-conference/icicle-2024-conference-active-learning-scenarios/student-sig 
+               * Mei Mei - got to know more about military learning this year (had panel, talked to them after), previously conceptions about military training changed, cool to learn about learning in that context, comparing with HE context - lots of insights; student panel - still interested in helping with student initiatives in our community, wants to help
+               * Side note - interesting to see how context-bound military/govt is - everything is high-stakes. But what about other industries that also face high-stakes matters? They aren’t seen the same - how to get people to care about educational change
+               * Renee - big takeaway was a call for more research and more papers and more things being published; glad there will be proceedings; did a presentation, so great to have feedback from people who were interested in the work she was doing, very affirmational 
+               * Shared understanding of LE at orgs a persisting challenge - affects all industries
+               * Katerina - expanded knowledge of things she’s researching, like Gen AI and LE which she wants to incorporate more, using xAPI to better structure her data, human-centered design. And generally to see different perspectives on LE; at LEI, very much about process, so learned about LE as a person
+               * Renee - had this experience too, saw a lot of different perspectives, not just an echo chamber. Talking about call for more case studies - seeing LE in action in different contexts
+               * Design SIG working on annotated LEP diagram template/guide - way to collect cases and scaffold this process
+               * Wished for some of the active learning sessions to be half-day workshops 
+
+
+               * Next steps/future planning - calls to action from panel “Exploring Learning Engineering Through a Student’s Lens” (slides and panelist info here)
+               * Note: panel was recorded, info about this video forthcoming
+
+
+Big buckets:
+1. Community of inspiration & support
+               * Mentorship - when to reach out (and to whom?)
+               * Showcase work on real-world challenges and get feedback
+               * More nuanced, mutually-informed job descriptions
+2. Student-to-practice pipeline clarity & experience 
+               * How to get started with LE and build skills (which ones?)
+               * Opportunities to work with practitioners/teams (who also need student support)
+               * Advocating the LE mindset
+
+
+        Katerina - very interrelated! 
+
+
+[Link to Lucid board for diagram - brainstorm other ideas, supports, connections]
+https://lucid.app/lucidspark/2d75ddec-edb6-4f66-a5f2-a0c72959e680/edit?invitationId=inv_45dbf2c9-1e9a-4f44-86af-60eff91bb7d2&page=0_0# 
+
+
+               * Mei Mei - liaison between student and student-initiated projects. Students come to us, we give resources, connect them - 
+               * Leaders/liaisons between these nodes, running back and forth and making connections - where the action happens
+               * Open challenges - funders, partners - concrete plan for proposals - drive engagement with students
+               * Starting with something easier, for example, having a form shared with other SIGs participants about seeking student involvement (volunteers, interns, helpers,etc.) in their products/projects, we (Grad SIG) can compile that information and send out emails to our students. Or vice versa, having a form for students to fill out about their skills, majors, interests, etc. and compile that information and share with other SIGs participants, so that they know who (students) are open for opportunities. Then, we have a running list of companies who are looking for students, and students who are interested in participating. 
+               * Renee - opps for collaboration - current student and recent grads with the CCC SIG - see where there is alignment in what the competencies you needed for the job you got/wanted - tracking what’s successful, where are programs lacking? Formalized apprenticeship program 
+
+
+
+
+July 10th, 2024 meeting - No Meeting today! Will resume in August.
+
+
+June 12th, 2024 meeting 
+In attendance: Zarka, Jodi, Anne
+
+
+Agenda:
+               * New member introductions (add your info below!)
+               *                * Updates - from ICICLE, jobs postings, etc.
+               * Early ICICLE conference registration ends June 15th, and discounted hotel rate of $109 for ICICLE attendees is until June 21st.
+               * Learning Engineering Hub from the Learning Agency
+               * Of note: new Job Opportunities page
+               * Updates from members
+               *                * Let’s decide on a scenario (below) to submit. Some things to discuss as we draft:
+               * What aspects of your experience as a student/grad do you want represented? 
+               * What can we learn through drafting a scenario about teaming? 
+               * What can we do about the challenges we face (or will face) re: teams/collaboration in our current positions? 
+               * What can we learn or take from LE to guide us?
+               * Next: Summer hiatus in July (no meeting 7/10) and will regroup in August (8/14) to debrief about the conference. In the meantime, hope to see you at ASU!
+ICICLE Conference: Our SIG’s scenario for “LE is a Team Sport” active learning session (Zarka and pK12 MIG)
+
+
+Our task:
+               * Contribute a written scenario from our students & grads context to an active learning session (breakout room) from 11:30am-12:30pm on Day 2 (July 23rd) 
+               * Zarka et al looking for one scenario from our SIG:
+               * Keep the scenario explanations short and provide more structure around the LE process with the main focus on "team building/assembling" based on different contexts and constraints
+Scenario ideas/brainstorming:
+               1. Scenario (going with a modified version of this one): A team of students in a Master’s program aimed at training future learning design & technology professionals is tasked with working on a semester-long design project together. The instructor of this course presented each team with a list of design challenges to choose from. Although the team collectively chose their challenge based on shared interest - designing an informal learning experience for elementary schoolers to learn block-based coding - each team member came to the Master’s program with different backgrounds and skill sets. The students are familiar with the Learning Engineering process and have read the Toolkit in their other courses, but this project is their first real-world application of it. 
+               * Context: Higher ed
+               * Teaming challenge: While the students are all equally novices at learning engineering, they all come from very different academic and professional backgrounds with different skill sets. This is their first time working together with each other on a project. 
+               * Learning challenge: The Master’s program has a partnership with a local elementary school who is interested in the students’ input on how to design an after-school program for kids to learn block-based coding.
+               * Constraints: Despite the real-world topic, the design project is ultimately for a course and students are not expected to develop a “real” product/experience by the end of the semester. Nonetheless students must figure out how to test their design with the learner population in order to experience the iterative LE process (a goal of the Master’s program).
+               2. Scenario: The Learning & Development department of a company just acquired a new platform for hosting in-house trainings and other PD courses for employees. The platform is much more technologically robust than the legacy system and will require a team to design and implement both old and new courses on the platform. A recent graduate from a Master’s program that exposed students to learning engineering was just hired to be on the team working with the platform. The other team members are existing employees who had slightly different roles prior to being shifted to this new team. 
+               * Context: Workforce
+               * Teaming challenge: The team leading the rollout of the new platform must work together to handle the change management aspect of a new platform on top of designing courses to be hosted on the platform. The recent grad is eager to introduce the LE process and practices to help guide this work, and is aware that certain silos must be bridged among the other team members (who are not familiar with LE but all come from some sort of background in ed tech, L&D, instructional design, etc.).
+               * Learning challenge: Employees at the company who seek out training/PD courses have to learn the new platform, but it also means that they may get to interact with new kinds of learning experiences since the new platform comes with more features and affordances for learning. 
+               * Constraints: Each member of the new team has learned how to use the new platform, but have different ideas about how best to design with it. Additionally, the data pipelines from the new platform are unclear. There is a separate IT team that previously handled data from the legacy platform, though not much was ever done with it.
+May 8th, 2024 meeting 
+In attendance: Renee Johnson, Jodi Lis, Janet Kolodner, Uhjin Sim, Caitlin Lim, Devan Walton, Aileen Tang, Arun, Zarka, Anne, Michael 
+
+
+Agenda:
+               * New member introductions (add your info below!)
+               *                * Updates - from ICICLE, jobs postings, etc.
+               * Applications are open for the LearnLab Summer School July 29-Aug 2 at Carnegie Mellon in-person in Pittsburgh, PA. Applications are due May 12th (*deadline extended*) at 12pm EDT. Admissions decisions will be made by June 12. Applications and info here.
+               * ICICLE 2024 conference:
+               * Registration is OPEN with early bird rate of $450 until 6/15/24; Student tickets are available at the discounted rate of $175
+               * Call for Student Volunteers for ICICLE conference[a] discussions online monitoring. – link to conf channel https://discord.gg/gsruwv6C 
+               * Recently sent out session acceptances (congrats!) - who is presenting?
+               * In June: submit Student/Grad scenario from our SIG for Zarka’s conference session (we started brainstorming at Feb 14th meeting)
+               * Will send out email and Google Doc, each SIG and MIG will have short scenario, will share out plan in June, and in July, google site updates
+               * Lightning round updates from members
+               * Lauren[b][c] & Aaron - New open access pub on LEED tracking (AECT 2023 proceedings paper published in the Journal of Applied Instructional Design).
+               * Anne[d] has collected her data and is working on analysis and writing chapter 4 of her dissertation!
+               * Devan and Arun’s show and share proposal was accepted; Renee’s proposal! 
+               * Aileen Matchmaker presentation + lightning talk + math anxiety
+               * Mei Mei’s panel – Aileen, Arun
+               * Janet’s lab Gallery Walk:
+When: Thursday, May 9, 1:00 to 3:15 (or later) Eastern Time
+Where: Academic Prototyping Lab, 3rd floor of the 245 Beacon Building at Boston College AND online.
+Zoom link: https://bccte.zoom.us/j/5140574607
+Meeting ID: 514 057 4607
+Format: from 1 to 2 (Eastern), short presentations of the projects; from 2 to 3:15 (or later; Eastern), visiting the projects (both in person and in break-out rooms)
+
+
+               * Welcome Uhjin Sim as our speaker (Boston College MA in Learning Engineering ‘22)! She will be sharing how she brings learning engineering practices and process into her current work as an Instructional Designer at the University of Maryland. 
+               * My proposal was accepted :) For those who are attending the ICICLE conference in July, I will see you all there! I will be presenting a showcase session: “Pratt Adventure & Beyond: Designing the Digital Literacy Ecosystem in Baltimore with Enoch Pratt Free Library”
+Recording of Uhjin’s presentation here, notes below
+
+
+Presentation:
+                  * Digital Literacy project funded by the MD state govt 
+                  * Example of public libraries leveraging resources from institutions to generate impact for society 
+                  * Digital navigators in the digital world - train the trainer experience for librarians. Understanding 2 sets of learners:
+                  * Librarians/staff: Emphasis on understanding what they already bring and addressing their needs - human-centered design and participatory emphasis
+                  * MD residents: Understanding their needs and their level of digital literacy, so librarians can interact with the community at the right level
+                  * Tech incorporation - Articulate, Figma, and Canvas to create the hybrid learning experience 
+                  * 1) self-paced online modules on digital lit topics; pre- and post-assessments which dictated…
+                  * 2) …in person workshop attendance, facilitated by a UMD tech educator. Hands-on, modeling, practice opportunities of supporting patrons
+                  * LE in this project - 
+                  * Design journaling template - guiding tool for first hashing out ideas, defining the challenge, learner needs assessment, weigh alternatives
+                  * Participatory design, establishing partnerships
+                  * Conjecture mapping and logic modeling - helps figure out what the ideal learning outcomes should look like, and what then the mediating processes should look like from a learner’s perspective. What embodiment is needed? What observable interactions? Participant artifacts?
+                  * Iterated through CMs
+                  * Lots of prototype testing 
+                  * Collecting feedback for next iteration
+Q&A:
+                  * How else did you bring LE to your ID role and to your team who maybe wasn’t familiar with it?
+                  * One team is tech educators - faculty who go to community and deliver in-person classes; not from education backgrounds, mostly tech, but don’t always know how to teach well. Design onboarding/upskilling packet where she rebranded design journal into “educator journal” that guided them through designing a class and how to think about the design process before just jumping into teaching. 
+                  * Ex) Previously did not think about how to incorporate personas and variations of senior citizen patrons into designing the class. Got to see the theory behind what they were incorporating into class
+                  * Many loved learning terms from ID and LE
+                  * Speaks to the power of implementation and supporting the implementer to make a learning experience successful. 
+                  * They learn how to do it and learn what all goes into it/behind it. So then can do it themselves (teach to fish vs give fish). Renee: “Not only did she create it, but she taught them how to create it themselves.”
+                  * How to make scalable?
+                  * Will expand to other libraries beyond Pratt after next iteration
+                  * Renee: “When we create these systematic processes, that makes it scalable”
+                  * How do we make sure that systematic doesn’t become dogmatic? I’ve seen so many program that were initially flexible turned into a step by step process under the guise of fidelity to implementation and lose their real power to facilitate learning.
+                  * True, and a good reminder! I was more thinking about practices that help you/teams be systematic, that you can adapt to different contexts (like LEED), rather than just following a strict model.
+                  * For participants accessing the online course, do they have to access it from the library or other places? What method to host? Do you have access to pull data from users?
+                  * Can see learner progress, retention rate, etc. (valuable for their next iteration) in Articulate which is where the modules were built. These modules could be taken anywhere, but need to be on a library account
+                  * Conjecture maps for design itself and not just for research (Sandoval’s original intent). Can serve different purposes - i.e., something to talk around
+
+
+
+
+April 10th, 2024 meeting 
+In attendance: Janet, Abbie Scullard, Renee Johnson, Michael j, Aryaman Yaggi, Anne, Aileen Tang, Joel Walsh, Brittany, Joseph Olson, Devan, Nicole Pochinki, Robert Siegle
+
+
+Regrets: Lauren, Arun
+
+
+Agenda:
+                  * Updates - from ICICLE, jobs postings, etc.
+                  * Opportunity for part-time work for graduate students with Data Science for Everyone: Data Science for Everyone is looking for current graduate students with experience conducting education research to contribute in a remote, part-time capacity. This is a temporary, paid position. Full details available here. Interested candidates should apply via this form by April 30, and applications will be reviewed on a rolling basis. [shoutout to the New England Learning Sciences community for passing along this opportunity!]
+                  * From Brittany Robinson +Dr.  Lisa Jones (Asbury University):
+                  * April 2024 Asbury University Learner Analytics Speaker Series - guest speakers will present to undergrads, grad students, K-12 teachers, and aspiring instructional designers via Zoom in April. Several ICICLE Students & Grads SIG members are speaking! Email brittany.robinson@asbury.edu for details.
+  
+
+                  * Opportunity - Summer 2024 internship - Are you a student looking for real-world industry experience on a learning engineering project? Asbury seeks interns to assist with a software simulation program for a Fortune 500 client this summer. Open to all students/universities, even if you don't attend Asbury. Interns will collaborate with Dr. Lisa Jones, Brittany Robinson, 2-3 instructional designers, and the client's Subject Matter Experts. A few ICICLE Students & Grads SIG members are participating! Commitment: ~10hrs/week for 10wks.
+                  * Looking for a contractor/collaborator to work with MatchMaker Education Labs on using AI to develop a “nontology” employing a variant of a large language model. If interested, contact Michael Jay, michael@matchmakeredlabs.net
+
+
+                     * New Member Introductions
+                     * Aryaman Jaggi: interning at Bobolink, tutors computer science
+                     * Joseph Olson: with Nicole, started Bobolink as students at Teachers College; Bobolink aspires to organize online educational content because it’s hard to navigate and find content at the right level, focusing first on employee upskilling, want to organize and deliver the content just in time at work
+                     * Nicole Pochinki: 
+                     * Robert Siegle: 4th year phd student at ASU working with Scotty Craig, designing immersive learning environments
+                
+                     * Lightning round updates from members
+                     * Devon and Arun are trying to make interactive experiences that allow learners to dip their toes into data science. Sort of like CoDap but easier to get into.
+                     * Anne is collecting data for her dissertation. Examining faculty beliefs about adult learner memory and how learning happens in the adult mind; how are professional and institutional beliefs different from each other?
+                     * Devan has a paper in Computer and Higher Ed on student large language model use; how are students actually using it? Are they thinking about the Ai as a collaborator or just using it?
+                     * Anne Fensie has been doing a spectacular job on the program for the upcoming conference.
+                     * ICICLE Learning Engineering Conference at ASU (Tempe, AZ) end of July.
+                     * Joel Walsh is working on extracting descriptive data from video with a student and wants to find someone to collaborate with him on how to actually organize and use all that data. Thinking about evolutionary algorithms. Looking for interaction analysis collaborators.
+                     * Happening in the grad community: Grad student event happening this week: GradFUTURES Forum, hosted by Princeton. Many sessions are online. https://gradfutures.princeton.edu/Forum
+
+
+                     * Welcome Abbie Scullard as our speaker (Boston College MA in Learning Engineering ‘23). She will share about her current role at the New England Aquarium and what she brings to it from LE[e][f].
+
+
+                     * AERA starts tomorrow thru Sunday (program), please share your insights if you are attending[g][h][i]! (also, If Joel / Devan / Brittany attend the call – shout-out from Arun[j])
+
+
+March 13th, 2024 meeting 
+In attendance: Renee Johnson, Arun Lekshmi Narayanan, Mei Mei Li, Zarka Ali, Aileen Tang, Michael Jay, Aleks Ambroziak, Anne Fensie, Devan Walton, Jodi Lis, Emmanuel Mayssat, 
+
+
+Welcome new member(s) - add your name below and we’ll have you give a brief intro: 
+                     * Aleks Ambroziak -  learning engineer at OLI; had first been a student worker, worked way up into knowledge/field. Does ID and LE for CMU. Caitlin Lim referred to this group. Finished Master’s in Psychology. 
+                     * Aileen Tang - Grad student in educational therapy; finishing bachelor’s in computer science as well. Passionate about intersection of technical problems + learning problems. Developer at MatchMaker. Hoping to get a PhD down the road. I Want to contribute to field research-wise. Industry experience. 
+                     * Emmanuel Mayssat - newish to ICICLE, seeing where to fit in. Engineer at JP Morgan/Chase, cloud and AI experience. Trying to be more involved in LE re: school districts in SF Bay area, looking for collaboration. LE aligns with skills. 
+
+
+
+
+Agenda:
+                     * Updates
+                     * Reminder: ICICLE Conference proposals due March 15th!
+                     * Lightning Talks + Poster Sessions great for students!
+                     * Recent job postings - 
+                     * Learning Designer for Languages position at Duolingo
+                     * Learning Designer for Math at Duolingo 
+                     * Instructional Designer and Program Manager at MIT Open Learning, xPRO team
+                     * Lauren not be able to attend next month’s meeting (April 10th); Janet to cover?
+                     * 
+
+                     * Lightning round updates from members
+                     * Anyone go to SXSW EDU?
+
+
+                     * “Tech talk” updates - emerging tech, keeping up with Gen AI, etc.
+
+
+                     * Mei Mei to give updates on her LE work/experiences at ASU
+                     * ASU Learning at scale platform - https://learningatscale.asu.edu/ (Learning Engineering Institute)
+                     * Data for researchers
+                     * Intake process for data access – not a complicated process
+                     * 13,000-14,000 students, so diverse learners
+                     * Contextual factors - course profile, student profiles - mediating factors that contribute to relationships in data, run analyses 
+                     * Still in process of doing analysis but plans to present at conference
+                     * Recently interested in implementation of metacognition in AI education
+                     * Looking for collab! Aileen, Arun, Anne interested
+                     * Aileen - interested in metacognition on math (math anxiety)
+                     * Handbook she’s been referring to 
+                     * New Discord channel for metacognition collab (thanks, Arun!) - https://discord.com/channels/944378388930519060/1217569787509735464 
+                     * Anne - interested in Discussion board dataset
+                     * Depth and length of post
+                     * But not quite social network analysis 
+                     * Will request click string data next - what kind of learner? Proxies for looking into “lurking” behavior, and pedagogical implications of this
+                     * Not that “lurking” is necessarily bad across the board but it’s about how you design the instruction - still learning while lurking?
+                     *  Has an instrument for defining lurking as used in her thesis
+                     * Theoretical vs. operational definition - a challenge
+                     * ICAP Framework
+                     * Learning@Scale data dictionary
+                     * “LE Ambassador” - student committee for those about to head into job market - still a challenge
+                     * Student panel for ICICLE conference - has brought idea to Tracy
+                     * https://discord.com/channels/944378388930519060/1217573890294026373
+                     * 1 hour discussion where students are the panelists, with a facilitator/moderator. Then 15 mins for audience Qs to panelists
+                     * Interested: Renee Johnson, 
+                     * Lauren will ping SIG distro with call to action
+                     * **Interested panelists, fill this out by March 17th! 
+                     * Looking for representation of what “student” means – Masters, PhD, actively working on research/theses, actively looking for jobs, looking to apply to grad school, to do research etc.
+                     * Broader call to have “ambassadors” for new students looking to get involved in ICICLE (start our own Ambassador program?)
+                     * Networking at conference - MIG and SIG breakout rooms, then after 30 mins go see another one/move around 
+February 14th, 2024 meeting 💗
+In attendance: Janet, Joel, Renee, Michael, Zarka, Devan, Anne, Lauren, Arun, Mina
+
+
+Welcome new member(s) - add your name below and we’ll have you give a brief intro: 
+                     * Joel Walsh joelawalsh@gmail.com - going back to academia after being in industry (USC) - interested in multimodal knowledge representations and probabilistic programming; applying this to the learning sciences
+                     * Renee Johnson - rjohnson33@islander.tamucc.edu - PhD (~2025) in Instructional Design and Educational Technology, Texas A&M Corpus Christi; current research interest: enhancing UAS pilot training by evaluating the effects of adaptive learning, usage data analysis, and personalized training strategies on engagement and effectiveness.
+                     * Mina Ekramnia - mnekramnia@gmail.com background in physics and computational neuroscience; worked on Montessori curriculum and executive function; works at MGH as researcher in brain imaging but also as educator and facilitator for learners in Iran; also has Masters in Education Policy
+
+
+Agenda:
+                     * Updates
+                     * ICICLE has a new acronym definition! International Consortium for Innovation and Collaboration in Learning Engineering
+                     * Survey from CMU, looking for responses from folks in the community - The purpose of the study is to better understand how instructors, learning engineers, instructional designers, and teaching assistants currently develop questions, such as multiple-choice ones.
+                     * DARPA Tools Competition - Building an Adaptive & Competitive Workforce track (abstracts due Feb. 26th) 
+                     * Learning Engineer role at SNHU (online/remote)
+                     * Call to continue filling out & giving feedback on Directory (esp. 2 new tabs)
+
+
+                     * Lightning round updates from members
+                     * Anne got IRB approval for her research!
+                     * Devan - finishing up textbook culturally responsive computing (part of DEI effort)
+
+
+                     * “Tech talk” updates - emerging tech, keeping up with Gen AI, etc.
+                     * Anne is working on a new textbook about AI and ethics in higher ed - chapter on how AI can help, not hinder, learning. When to use AI for a certain aspect of learning and when not to (publishing on Ed Tech Books - open source); draft in summer and release sometime fall 
+                     * Meant to be very practical - contains vignettes; problem frames the chapter 
+                     * Zarka - AI in ed tech course, interested in this content and would be interested in introducing it
+                     * Devan - also been working at UAlbany on tools for AI for teachers and students that don’t have a lot of experience with AI (i.e., not just jumping into prompting). Has worked with Arun on some of this. 
+                     * Michael - “AI as a member of a Learning Engineering team” 
+                     * “This encompasses how we integrate AI as part of MatchMaker. We call the human + AI combo Bionic and there are significant implications for the role of AI being leveraged by human knowledge.”
+
+
+                     * Today’s topic: ICICLE 2024 Learning Engineering Conference Call for Proposals (due Feb. 29th)
+                     * Review session types and proposal info (incl. updates from last community call)
+                     * Discuss ideas you have for submissions, what you want to present or see presented, what you want to get out of the conference, run ideas by each other, collab/help each other with proposals, etc.
+                     * Priorities for this SIGs/representation from this SIG at the conference?
+
+
+Conference proposal ideas - 
+                     * Zarka and pK12 MIG - Active Learning session, with contribution from MIGs & SIGs. So each industry/group has their own relevant scenarios. They will submit proposal, but if you want to submit scenario/vignette as part of challenge/action exercise around teams. Groups at conference working on activity will likely have facilitator
+                     * Michael - Maybe a student and grads scenario could be a team working on a class assignment to design and develop something.
+                     * You don’t always get to choose your team who you’re working with
+                     * Testing and critiquing with each other on a design
+                     * Very much connects to the idea of students preparing to do LE work out in the world (important to this SIG)
+                     * LE team work - engineering learners to team. Professional development learning AND engineering the teamwork of learners learning together (ex. In BC LE program, Devan as the person who worked on VR/tech for different groups)
+                     * Renee - Collaboration as a skill, especially when it's in an interdisciplinary context is a learned process
+                     * Devan - Iteration is so important to the process - hard to do it in 60min
+                     * Devan - Might a good workshop to have people just think about constraints and affordances of a hypothetical environment. People will naturally come up with different angles based on their expertise
+                     * Next step: Lauren will draft something for a scenario for this SIG and get input from group; then send to Zarka (after proposal submission)
+                     * Janet - Conjecture mapping idea? Not sure where it fits or how to make activity 
+                     * Devan & Arun - https://assessment-day-reloaded.bubbleapps.io/ 
+                     * Showcase the affordances of GPTs in a learning context; pick a dataset and use GPTs to run inference on the basic nature of the data set; pick our relevant ways of categorizing that data, and fill in that data into dropdowns, users would play around with options, run simulations, etc. - and then, what are outcomes? 
+                     * Probably Show and Share or Active Learning - want to get people thinking about this
+                     * Grew out of conversation on LE Google Group
+                     * Joel - Nvidia edge computing; for accelerated deep learning - for education, places that don’t have consistent access to internet. Trying to deliver deep learning based solutions to low-resources areas, edge computing way to do it. But not seeing a lot of it in ed tech world
+                     * Michael - would resonate with PlugFest attendees
+
+
+
+
+January 10th, 2024 meeting
+In attendance: Anne, Kristine, Michael, Lauren, Arun
+
+
+Welcome new member(s) - add your name below and we’ll have you give a brief intro: 
+                     * Someone to add to your mail list: Joel Walsh joelawalsh@gmail.com
+
+
+Agenda:
+                     * Catching up - updates on projects, research, classes, work, interesting resources, etc.
+                     * ‘Data Scientist - Learning Analytics’ role is back open on the MIT Open Learning Residential Education team. Information here.
+                     * Michael - First meeting of ICICLE Government and Military MIG on 1/9
+                     * Resource from Anne about Gen AI chatbots - https://docs.google.com/presentation/d/1evYD-YdbjFLW6Paeg_DpkbOhLOsTSHWJ/edit#slide=id.p1
+
+
+                     * New Directory
+                     * Feedback from those who have had a chance to look
+                     * Other ideas for improvements/better functionality
+                     * Call to have members fill in their info!
+
+
+Feedback:
+                     * Conference deadlines as a tab/area
+                     * Could include whole “lifecycle” - when events are announced, CFP due dates, and info about what members presented
+                     * Tab with projects/research initiatives - for Master’s/doctoral work, short description of what you’re working on; or if practitioner, what your org is working on
+                     * Arun made separate tab for this, though will have some overlap with what folks write about their Role/Bios on Members tab
+                     * Ex) Kristine - field of emerging tech as what she is is working on
+                     * Maybe eventually move from Excel to a more relational database? 
+                     * Mostly looking for free tools but maybe small $ amount from ICICLE that would make it easier? Worthwhile investment?  
+                     * Ex) Free version of Airtable - see how many contributors there could be to edit; also 1000 record limit
+                     * Arun - Can also/alternatively look notekeeping tools too - similar to Google Docs but can embed tables in page and add other content; different ways to organize (notion.so or coda.io or obsidian or slite.com)
+                     * Ideas for speakers, topics, or offers to present for next meeting(s)
+                     * To help you brainstorm…As Master’s students, PhD students, and recent grads navigating this emerging field of LE that you have interest and related experience in, how do you want to be supported by the group and how do you want to engage with this group? For example:
+                     * Career topics (job search, interviews, etc.)
+                     * Expert panels/led discussions (incl. Cross-collabs with other SIGs/MIGs)
+                     * Share work and get feedback
+                     * Collaborate on stuff
+                     * Discuss topics/share understanding
+
+
+                     * Topic (Kristine) - Emerging tech and implementation in lower and higher ed. What are they implementing now, what they are looking at implementing, and what they are trying to do. Not just what’s new, but what is new that is actually being used? And ideas for the future? 
+                     * Crossover to retail platform in future - training. Across landscapes
+                     * Kristine could present herself! And get feedback from group
+                     * From Michael - https://www.schrockguide.net/artificialintelligence.html
+                     * Devan (Arun’s suggestion) - emerging tech talk/area of expertise
+                     * Could talk on the state of AI in education 
+                     * Arun - VR we had in the NELS group Eric Tao from go megaminds
+                     * Tech corner/tech talk/what’s new column - keeping up with news 
+                     * Some resources shared in the LE mailing list
+                     * https://learningengineering.com/#/learn
+
+
+
+
+
+
+December 13th, 2023 meeting - **No meeting this day; next meeting is January 10th, 2024
+
+
+Feel free to leave comments/feedback about the new Directory here in the meantime:
+                     * Conference deadlines
+
+
+
+November 8th, 2023 meeting
+
+In attendance: Dina Kurzweil, Janet, Lauren, Devan, Jodi, Anne Fensie, Kristine Recktenwald, Robert Siegle, Michael Jay, Leah Moore, Mimi Gemech, Nolan Lovett, Mei Mei, Dale, Arun
+
+
+Welcome new member: Leah Moore, Instructional Design & Leadership program
+
+
+Agenda:
+                        * Lightning round - share updates on projects, research, classes, other work, etc.
+                        * Arun: Internship opportunities from the group, for summer, feel free to send it my way!
+                        * Anne - Learning and the Brain: The Science of Teaching and Learning in Boston, Nov 17-19
+                        * Arun: Where can we find events like these?Live Webinar: Faculty Lecture - David Williamson Shaffer (ChatGPT and the Future of Learning)
+                        * Jodi - learning sciences competencies meeting tomorrow, reach out to get on listserv
+
+
+                        * Other Updates:
+                        * Data Scientist - Learning Analytics role open at MIT Open Learning on the Residential Education team (Lauren’s team!): 
+                        * NOTE: This is a full-time position with an expectation of being able to work on campus in Cambridge, MA 
+                        * Instructional Designer role at MIT’s Department of Mechanical Engineering, Learning Engineering and Practice (LEAP) Group: 
+                        * NOTE: This is a soft money position with renewal dependent on grant funding
+
+                           * December plans:
+                           * 1) Tentative plan is to make December’s SIG meeting (Wed. Dec. 13th) async (Lauren can’t make it, busy time of year/end of semester for others?). In lieu of meeting live, will plan to send out the new Directory and will have folks start filling it in, give feedback, etc. asynchronously
+                           * 2) Will also solicit ideas for 2024 meetings! If you have any topics, speakers, etc. please add them to this doc and we can start planning ahead.
+                           * Alternatively, could open up to hosts from the participants who may be available to facilitate a session / discussion - Arun
+
+
+                           * Welcome Dina Kurzweil! 
+
+
+→ Related resource connecting last session with Rob and today’s session with Dina: Becoming a Learning and Instructional Design Technology Professional, a recent open book written to guide students and new professionals in developing their careers. Rob and Dina wrote a chapter on Careers in Government and Military. And they were on a panel about this at AECT 2023!
+
+
+Discussion notes & resources/links:
+                           * Becoming an LIDT Professional - linked above
+                           * Supporting the public good - government and military - unique opportunity to provide service, help those in govt understand education and support in learning
+                           * Instructional Systems Series (GS-1750) - fly sheet
+                           * Different types of jobs under this series, but this classification series gives a lot of info on what you might be doing
+                           * Will not see direct references to learning engineering, but the types of work listed relate
+                           * May get subsumed into this bigger title
+                           * Pay & salaries
+                           * Locality pay
+                           * USA Jobs is where all govt jobs are listed
+                           * Sometimes postings have a short turnaround - when you see this, it usually clues you in that they may have someone lined up for the job
+                           * Filter by ‘Open to the public’ 
+                           * Putting together a resume for USA Jobs posting takes more than just putting in your generic resume - need to look at Requirements and KSAs (Knowledge, Skills, and Abilities), and align your resume that you have those skills. People first looking over resume are not Instructional Systems Specialists. Resume should match terminology and ideas in the posting. 
+                           * Handbook of occupational groups and families
+                           * 1750 is Instructional Systems Series
+                           * Benefits:
+                           * National mission
+                           * Consistency/stability in the job - if no term limits, you’re pretty much guaranteed your position
+                           * Benefits - health insurance, small pensions, flexible work schedule, telecommuting
+                           * Network of other federal agencies and military orgs - Dina made connections with Air Force and Army to work on the chapter linked above, for example
+                           * Not a focus on profit or bringing money into an org 
+                           * Challenges:
+                           * Lack of agility and bureaucracy in hiring (can take months to get hired, things take time)
+                           * Software procurement/IT systems can also be a challenge - maybe not using same tools as corporate or higher ed environment, due to concern with safety and security of info
+                           * Prezi not available, for example; and until recently, Articulate 360
+                           * Spending a lot of time talking about learning sciences, instructional design, design, etc. as many aren’t aware of it
+                           * May want to use different terms in your search - learning engineering, learning sciences might not show up
+                           * Different places you can work at in federal govt 
+                           * Dina is working at a military medical university, but many colleges and universities in the system - including Air University (Rob Nyland, from last session)
+                           * So still higher ed opportunities to support 
+                           * Defense education activities - elementary & secondary schools overseas
+                           * Dina gets to work with a lot of different groups - important aspect of working with federal govt - wouldn’t get some international opps otherwise
+                           * International students - most positions are for U.S. Citizens - some flexibility if green card
+                           * How to talk about learning engineering in a job interview?
+                           * Would have to explain the connections between LE and what’s posted 
+                           * Focus on what they need, and work in your perspective from there; not a direct shot
+                           * How you see design, your experience with development, how you work with analytics, how you’re iterative 
+                           * Think outside the box of how to make those connections
+                           * Don’t spend the interview telling them that you’re a LE! But that you have the skills and you’re the best fit and meet the reqs; you’re not going to change their mindset or titles
+                           * Cover letters - also use to make specific to the job
+                           * Portfolios - a little challenging because have to fit their format, outside website might get blocked; but in resume, talk about being able to provide it upon request, so they know you have one but link won’t get blocked
+                           * Resume - length not as important, just need to make sure you hit the reqs 
+                           * USA Jobs has a user-friendly resume builder
+                           * They also want your official transcript, letters of reccs, lots of background info
+                           * Nolan - Pathways recent grad and intern program
+                           * Track to get training and advancement into some of these roles
+                           * Kristine - other sites in addition to USA Jobs?
+                           * Officially USA Jobs is the only one
+                           * Devan - some of the jobs had same title/description, but huge GS level difference. What impact does that have on responsibilities, flexibility, collaboration?
+                           * Up to 5, early career; 10-12 mid career; more responsibilities from there
+                           * A GS-12 Step 10 is the highest pay you’ll make
+
+
+
+
+
+
+
+
+October 11th, 2023 meeting (1 year anniversary! 🎉)
+In attendance: Rob, Michael, Li, Arun, Kristine (welcome!), Jodi, Nolan, Janet
+
+
+Agenda:
+                           * Lightning round - share updates on projects, research, classes, other work, etc.
+
+
+                           * Updates:
+                           * New Directory (which will be in Google Sheets) is in the works - stay tuned. Feel free to contribute ideas re: how you want it to look! 
+                           * Discord - #students channel under IEEE ICICLE (thanks, Jim Goodell!)
+                           * To join server: https://discord.gg/3egfkaXGrx - link shouldn’t expire
+                           * IEEE Learning with MOOCs conference happening at MIT this week - Anne Fensie is presenting a poster on “Toward a Science of Adult Learning”
+                           * AECT 2023 convention is happening week of October 15 - several ICICLE/LE community members presenting on LE
+                           * Learning Engineering Job Board from the Learning Agency - will be in their weekly newsletter, so sign up if you want to see them. We can also talk more about our SIG having its own system of posting jobs, along with the new directory work.
+
+
+                           * Welcome ICICLE Higher Ed MIG co-chair Rob Nyland (Learning Architect & Assistant Professor, Global College of Professional Military Education, Air University) for a discussion about your experiences with learning engineering in the higher ed landscape in which you’re currently (or recently were) situated.
+                           * Brief intro about Higher Ed MIG and its goals
+                           * Some prompts for discussion:
+                           * How is LE talked about?
+                           * How have you or others talked about LE there?
+                           * How do different stakeholders/roles tend to receive LE as a concept, field, etc.?
+
+
+Discussion Notes: (session will be recorded - reach out to Lauren if you want the link)
+Context:
+                           * Rob’s context at Air University - have to go through professional military education as you go through the ranks; deliver online learning to 30,000 active duty throughout the world; Air University is structured as a higher ed institution - working alongside faculty. Military org with education mission
+                           * Higher Ed MIG goals - best ways to bring up LE with others at institutions - sharing resources, “spreading the word” 
+                           * Got feedback from ICICLE 2023 conference about what resources others in HE can use to talk to different stakeholders about LE
+                           * “Workshop in a box” - if you need to give a presentation, talk to faculty, etc. and customize it to that audience
+                           * Always thinking about stakeholders and their different levels of understanding
+
+
+Challenges when talking to stakeholders
+                           * Some can be a bit jaded on this new “revolutionizing” thing coming in
+                           * But less concerned about doing whole LE process, so more concerned about capacity to do pieces of it, like collecting data
+                           * Do we have the resources for this? Hire people? Develop people?
+                           * Components of it are the most important part
+                           * Not everyone loves the term, but it’s about what it expresses - but also want to make sure it doesn’t become a barrier
+                           * Or similarly, introducing it to students who are about to engage with the process/practice (like the BC Master’s students) - Janet frames it around applications of the learning sciences in the real world and being systematic
+
+
+ID student POV (Kristine)
+                           * “This is what you should do” is what students are told; LE is something that ID students tap into. The biggest challenge as a student is when they are asked “what are you looking to do?” they’re not clarifying what you’ve already done; especially older students who are coming in with more knowledge - clarifying what you’ve already done, and knowing how to express that
+
+
+Jobs
+                           * How do you find the job descriptions that have the types of things you want to do and skills you have? Finding the other components of LE you engage in beyond just creating a product one at a time
+                           * Transdisciplinary approach - understanding learning sciences, human-centered design. Might not be able to do it all at an expert level, but can act as a “hub” amongst all those things
+                           * Understand ID, but also thinking broader 
+                           * Innovation work - tends to be general, but you’re trying to push orgs in certain directions
+
+
+Research student POV (Li)
+                           * Multidisciplinary researcher (assessment, tech, learning sciences), but when applying for jobs in conventional disciplines, they say it’s not enough depth/expertise; and then when applying for LE jobs (not a ton yet), for the IT/tech side, they go with computer science backgrounds (even if they don’t have the innovative/design background) - these are challenges for research students right now
+                           * But these students would like to take LE seriously
+                           * LE toolkit/tools available, but not a lot of shared understanding around the learning sciences 
+                           * Think about it as a lens - “and I bring this perspective to it”
+                           * “Informed by the learning sciences” and keeping up but not being an expert
+
+
+Learning Analytics POV (Jodi)
+                           * Was previously in health, and wanted to pivot to education, so went on learning analytics journey to develop that skillset - looking for overlap with LE
+                           * Adding value as an implementer (not researcher) at new ASU job
+                           * i.e., knowing what questions to ask, knowing how to make changes given data and learning goals, etc.
+                           * ASU Model - having a vision and using resources to make it real; takes people (like Jodi!) to bring the vision to life, with substance & sustainment
+
+
+Feedback from the conference about what folks in HE want
+                           * We tend to have very similar conversations - doing the “definition work,” introducing the process - becomes redundant in terms of materials
+                           * Hence workshop in a box to customize 
+                           * One pager, not whole Toolkit!
+                           * Flexible materials that can be shared
+                           * Ideas for videos, FAQs, etc. 
+                           * HE MIG wants to be responsive to the community!
+                           * The power of active learning activities from the conference - those types of ideas
+                           * More hands-on
+
+
+“Selling” the idea of LE - similarities between selling yourself as a LE for a job and having a LE conversation with stakeholders in LE. LE skills are a value-add to an org, skills they don’t even know they need yet - “here’s what you need to make learning more effective, here’s how I can help” 
+                           * Thinking outside the box - a job says what they need, you identify the problems and how your skills can address it - jobs don’t know what they want but they’ll know it when they see it
+
+
+Rob’s LinkedIn and book chapter on careers (pending link)
+
+
+
+
+
+
+
+
+
+
+Rob’s Papers
+A Case Study in Outcomes on Open-Source Textbook Adoption in an Introduction to Art Class
+
+
+
+
+
+
+September 13th, 2023 meeting
+In attendance: Li Liang, Nolan Lovett, Janet, Lauren, Michael Jay, Maritte Tagle, Brittany Robinson, Devan Walton, Arun, Robert Siegle
+
+
+Agenda:
+                           * Lightning round - share updates on projects, research, classes, other work, etc.
+                           * Example prompt for this month: For current students, what are you most looking forward to this academic year? Goals?
+                           * Arun - more papers! Meeting milestones
+                           * Would be looking for collaborators
+                           * Next round go Learning Tools Competition is coming up
+                           * Brittany - new freelance work; educational project with Kenyan nonprofit (Hatua Network) - create consistent curriculum in high school at scale and with limited resources. Brainstorming now, and hardest part is collecting data; want to use xAPI, but tech makes it difficult (Tableau? Data engineers/scientists - would love to connect). Content focused on soft skills. Designing for the mentors/instructors, in a curriculum portal that they can download and use in schools. 
+                           * Maritte’s new job! Strategic content for ed tech company with platforms for schools in Latin America - informing platform use & content for teachers and schools to plan their classes 
+                           * Also Michael was looking for a contractor in setting up xAPI (still open)?
+
+
+                           * Updates:
+                           * Blog post about Lisa Jones & Brittany Robinson’s presentation at the ICICLE conference
+                           * If you’re interested in being on the 2024 ICICLE Conference Committee (at ASU, July 22-24 tentatively), they will meet Thursdays at 5pm ET - next meeting is tomorrow, Sept. 14th. Danielle McNamara (ASU) and Megan Torrance (TorranceLearning) are the conference co-chairs. I can connect you if interested!
+                           * Robert Siegle (rsiegle@asu.edu)
+                           * Maritté Tagle (mbtagle@uc.cl) 
+                           * Upcoming meetings:
+                           * October - open for presentations/critique sessions
+                           * November - Dina Kurzweil rescheduled visit
+
+
+                           * Revisit the 3 ideas for the next year of this SIG (from last meeting)
+                           * Co-design what we want the skills/competencies inventory to look like - what questions to ask, designing a form to fill out, how directory will function, etc. What do you all want the experience to be like? 
+                           * What other things can we design or set up to help this group run more smoothly? i.e., have our own Discord space, jamboards, other collab spaces aside from this Google doc?
+
+
+                           * If time/next time: Higher Ed MIG tie-in - how to talk about LE in a higher ed space. How have you talked about it with others, how have you heard it being talked about, etc. 
+
+
+Discussion/Ideas:
+                           * Topics to keep talking about in this group: ChatGPT/Gen AI for learning
+                           * Li and Arun - interested in furthering the conversation about how integrating ChatGPT in assignments can help students and their higher-order thinking and critical thinking, as well as structuring/organizing their writing. She had talked with an instructor who wasn’t noticing obvious improvements in this aspect; but want to explore how it can help us improve
+                           * No need for separate Discord channel on LE server - not enough people where it would really be used
+                           * Keep directory on Google for easiest access and editing - maybe just move to Google Sheet so can more easily alphabetize, filter, etc. more like a database
+                           * Additional fields to include, beyond our current Directory:
+                           * Brittany - ORCID (https://orcid.org/)
+                           * Papers or resources that you have worked with – like building portfolio
+                           * Keep intro/bio blurb
+                           * Skills - but keep open, not choosing from set list; Devan’s key point that everyone uses different terminology/has different ways of talking around the same thing, so keep it flexible
+                           * Interests/what topics you care about
+                           * For both connecting with others to collab, but also for Lauren to get ideas for articles, speakers, etc. that would appeal to most
+                           * Speakers you’d like to have visit
+                           * Currently open to collab/work?
+                           * Celebrating one year next month!! Try to invite back those who maybe initially attended but then dropped off
+
+
+Resources:
+                           * LE monthly networking (Tools Competition)
+                           * Learning Engineering Google Group: https://groups.google.com/g/learning-engineering - see threads about Gen AI and Chat GPT (syed@the-learning-agency.com runs it) 
+                           * Interesting papers from Rob Siegle https://journals.sagepub.com/doi/abs/10.1177/1071181322661491 and https://www.sciencedirect.com/science/article/pii/S036013152300178
+                           * ​​Everything you’ve ever wanted to know about machine learning | by Cassie Kozyrkov
+August 9th, 2023 meeting
+In attendance: Uhjin Sim, Molly Li, Janet, Michael Jay, Devan Walton, Anne Fensie, Jodi Lis, Arun, Lauren
+
+
+Agenda:
+                           * Lightning round - share updates on projects, research, classes, other work, etc.
+                           * Congrats to Uhjin on her new role with University of Maryland!!
+                           * Anne’s 25th anniversary 🙂
+                           * BC LE Master’s program wrapped up - gallery walk of projects
+                           * Molly’s internship with BSCS - developed materials for elementary science teachers and engaging teachers around training/materials
+                           * Met the founder of this work (Priscilla Cancar, Cornell) – Engram and she’s interested in finding instructors who could help with running studies etc (Arun)
+                           * Devan[k] - professional development for instructors on AI 
+                           * Got into a PhD program in Curriculum and Instruction at UAlbany (with Haesol Bae)!! Part time in addition to teaching 
+
+
+1) Recap of ICICLE conference - have attendees share thoughts, takeaways, etc.
+                           * Overall theme: grounding theory in practice; with each day having its own theme as well:
+                           * Day 1: Process & applications across contexts with varying complexities
+                           * Day 2: Human-centered design and approach; understanding your learners; 2nd half on ethics
+                           * Day 3: Data
+                           * Anne - 
+                           * Liked format - traditional keynotes, some active learning, other sessions snapshots of what people are doing 
+                           * What people shared could be applied so many different contexts; ways of modeling the learning engineering process - not just, here’s a the cookie-cutter LE process
+                           * A lot of things people did was “crowd-sourcing” 
+                           * Janet - 
+                           * Keynotes were all good; focus on the learners
+                           * Day 1, Steve Ritter’s story was about research they realized they needed to do in Carnegie Learning re: Math Tutors - how learners understand and approach math problems, research on what wording of questions work, did A / B testing. Used LE process to improve how tutors were working.
+                           * Day 2, Tammy Berman - she talked about how Socratic Arts uses goal based scenarios, cases similar to what they do in business school (look at a case give advice, what they did well or not) 
+                           * Day 3. Ken Koedinger – looking at the learning curves – in parts to the tutor – putting it back to Carnegie Learning 
+                           * Chris Dede’s session on motivation was fun - activity about designing for teens/young adults about safe driving, thinking about what would keep them motivated
+                           * Conference attendees - about 25% were military (majority Air Force) - different from last year when it was mostly higher ed representation 
+                           * Military’s need for learning is different –  USAF is very pragmatic (engineering component of LE), but also have to consider what is most cost effective. Interested in Toolkit and what it says about what they should be doing
+                           * Day 3 active learning session from ASU about data - had cards with data and participants played around with which were input variables, context variables, output variables - making sense of these variables while thinking about data we have access to
+                           * Jodi - 
+                           * Mei Mei’s presentation was great! More about course projects, the podcast series and identifying themes from doing research on the interviews 
+                           * After the ICICLE conference: TLA Plugfest 2023 | ADL Initiative
+                           * Those who were at both conferences brought up LE a lot at Plugfest and thinking more about how to apply it
+                           * Lauren - remarkable how so many folks in the ICICLE community are using work and ideas that have been shared by others; Kristin Torrence using learning design principles from Katherine McEldoon’s Pearson work; conversations around taking up design decision tracking, data recipes, etc.
+                           * Videos of the conference are almost ready! Stay tuned for how they will be shared. 
+
+
+
+
+2) Next steps & ideas for this SIG - Thank you to Mei Mei, Brittany, and Anahit who were at the meet and greet at the conference and shared the ideas below!
+
+
+1. Skills inventory
+
+
+What: Fill out your LE-related competencies (current, can go back and update) and make it part of our existing Directory. 
+
+
+Based on Jodi’s and the CCC SIG’s development of LE competency framework. Skills categorized into broad categories that could become domains in the framework (with subdomains as well)
+
+
+Application of the LE process
+Data Science/Literacy
+Ethics/Equity/Justice
+Engineering/Systems Thinking
+Human-Centered Design
+Instrumentation
+Intro to LE/Learning about LE
+Learning Sciences
+Project Management
+Research
+Soft Power/21st Century Skills (creativity, critical thinking, communications)
+Technology and Applications
+Others??
+
+
+Purpose: To identify others in the SIG to do “community” projects or other team-based endeavors for those interested and have the bandwidth and are looking to do research, improve their portfolios, etc.. (Mei Mei et al’s survey is a good example of one that already exists!). Also to identify potential mentor/mentee relationships and other peer-to-peer work. 
+
+
+2. Project Share & Critique Sessions
+
+
+What: More formal project presentations (like Ben & Adam and Carolina) and get feedback and critique. Could be for projects that grow out of initiative mentioned above (community projects).
+
+
+Purpose: Get other sets of eyes on work, feedback from a variety of perspectives and disciplines. Continue ideating and iterating based on this feedback. Those listening get practice giving feedback and critique, and learn about new topics in the field.
+
+
+3. Journal Club
+
+
+What: Read and discuss the latest research and papers in the field (i.e., from the learning sciences).
+
+Purpose: To keep up with the latest in the field; not always parts of jobs/once you’re no longer a student, but very valuable and a way to stay informed on topics relevant to LE. Members can propose articles.
+
+
+To continue from last year:
+Guest speakers from LE experts/community members to talk about career and jobs. Next is Dina Kurzweil. Any others you want to invite and hear from? Ex) Hear from someone who is only one at their org to do LE, how they get support and what they do.
+
+
+
+
+
+
+
+
+
+
+
+
+July 12th, 2023 meeting
+In attendance: Dina, Janet, Anne, Lauren
+
+
+
+
+Agenda:
+                           * Lightning round - share updates on projects, research, classes, other work, etc.
+                           * Arun – traveling to India, attending EDM 2023, presenting a demo / poster.
+                           * Jodi & Karen Rege (ICICLE member) - paper accepted to Quality Matters
+                           * Update on ICICLE conference (less than 2 weeks away!) - 
+                           * SIG/MIG meet and greet on Monday July 24th (in schedule as 4:15pm)
+                           * NOTE: Rescheduling Dina’s talk to November 8, 2023.
+
+
+
+
+
+
+June 21st, 2023 meeting
+In attendance: Janet, Lauren, Jodi, Devan, Mei Mei, Brittany, Anahit 
+
+
+Agenda:
+                           * Welcome any new members! Please write name & email below, and feel free to add to Directory: 
+                           * 
+
+                           * Lightning round - share updates on projects, research, classes, other work, etc.
+                           * Mei Mei, Devan, Arun, Brittany et al. - update on survey work?
+                           * Getting ready to talk to Erin and Rachel about incorporation into conference
+                           * Mei Mei/Scotty’s students - podcast examining common themes from LE researcher, practitioner, and student backgrounds
+                           * Brittany will be a guest!!
+                           * Episode going out before conference - will talk about common themes at conference
+                           * Jodi’s capstone - learning analytics competencies; continued work with SOLAR
+                           * Graduating end of summer!
+                           * Arun attending CIX summer school – 7th Summer School on Computational Interaction
+                           * Also LearnLab Summer School happening in the week of ICICLE conference Simon Initiative LearnLab Summer School
+                           * ISLS in Montreal last week - Anne presented, others? Janet’s recap
+                           * Education justice conversations; learners as a whole person
+                           * Janet - update on current student internships this summer? What kinds of orgs are they working with? 
+                           * HMH - “foundational backbone” for social studies textbooks - building on what came earlier
+                           * Socratic Arts - training for shift managers; helping learners with strategic thinking and making tradeoffs, balancing a lot at once
+                           * National Fire Protection Association - addressing the challenge of learners not signing up for additional courses; helping adults imagine what their careers could be
+                           * ImmerseMe - immersive second language learning; learning engineering critique of the immersive software 
+
+
+                           * Updates:
+                           * ICICLE Conference updates (for those not at monthly call earlier)
+                           * Schedule up now 
+                           * “What Does LE Mean to You?” contest
+                           * Those attending? Presenting?
+                           * From Jim Goodell - Frontiers In Education conference (FIE 2023) - special call for student panels (can forward message if interested)
+
+
+                           * Discussion led by Janet: The learning sciences and learning engineering
+                           * And learning science vs. learning sciences
+                           * Cognitive scientists doing “learning science” - focuses on cognition; how we reason; the cognitive processes involved in learning
+                           * In the learning sciences, roots in cognitive science, but also be on the cutting edge of what it means to be studying learning and what it means to be designing learning experiences
+                           * A hallmark of the learning sciences is that we always think in terms of interacting theories and integrating theories.
+                           * Integrate the cognitive with sociocultural theory, with theories about emotion and identity formation (and beyond). 
+                           * And do investigation in ways that help us understand how those theoretical stances interact with each other. Know enough about this to be able to design learning experiences - focus on whole people, beyond just what we want them to learn.
+                           * Where learning engineering can come in - so many people out there who think they know things about learning (policy makers, entrepreneurs, textbook writers, etc.) but they create policies that are missing so much. Results in learners not engaging the way they should engage, and not thinking about the challenges of helping someone learn something. Bridging their prior knowledge to what you want them to know would be far better.
+                           * Think about learning as going from funds of knowledge to more funds of knowledge, not filling from empty/deficit. And think about the circumstances where learners will engage well enough and long enough and excitedly enough to really learn what it’s important to learn - this is why Janet is involved in LE and believes the learning sciences have a lot to offer
+                           * Some in LE come from the angle of making things better with data and technology - need to think about engagement and the design of the experience in the first place. Others in LE focus on the cognitive. Others are focused on being systematic about content and skills, but also about understanding who the learners are and how to help the particular learner audience learn (addressing the population you’re aiming for).
+                           * Learning sciences getting more into designing with not just for - want to see more of this and make its way into LE.
+                           * And being systematic about constraints - a reality of the real world. And, trust the iterative process while keeping an eye on goals.
+                           * Mei Mei currently acting as a “LE ambassador” in summer work at ASU 
+                           * Incorporating student voices in design; not just design but LE project
+                           * Mei Mei to write this up/share later after summer!
+
+
+                           * Next meeting: Dina Kurzweil - Learning Engineering Toolkit co-author; Director of the Education & Technology Innovation (ETI) Support office and an Assistant Professor of Medicine in Health Professions Education at the Uniformed Services University of the Health Sciences - coming to talk about LE teams and share insights from a government sector perspective
+
+
+
+
+
+
+May 10th, 2023 meeting
+In attendance: Mei Mei, Janet, Devan, Corey, Abby, Mimi, Hisyam (Vero), Arun, Jodi, Anahit
+
+
+Agenda:
+                           * Welcome any new members! Please write name & email below, and feel free to add to Directory: 
+                           * 
+
+                           * Lightning round - share updates on projects, research, classes, other work, etc.
+                           * Mimi just graduated! And is on the hunt for ID jobs.
+                           * Abby will be attending the LE program at BC!!
+                           * Ben & Adam - Short Answer bimonthly newsletter 
+                           * Silver Lining for Learning podcast - “Applying Human-Centered Engineering Methods to Learning” episode with Janet, Jim Goodell, and Sae Schatz (5/6/23) - watch here
+                           * Anne - Conceptual Model for Meeting the Needs of Adult Learners[l] in Distance Education and e-Learning that was just published in iJACL: https://online-journals.org/index.php/i-jac/article/view/35729
+                           * Janet’s LE students at BC: final design presentations/gallery walk tomorrow. 
+                           * Info: You’re invited to our project expo tomorrow from 1:15 to 3:30 (4:15 if you are in person): https://bccte.zoom.us/j/5140574607 (Meeting ID: 514 057 4607)
+                           * Maybe give a summary of what some of those projects were about?
+                           * Game to get people to care about the ecosystem
+                           * Late elementary school learners re: boundaries in relationships
+                           * AR for historical site, develop an emotional relationship with history and the way history informs how we live today
+                           * 2 English as a 2nd language projects - one for grad students to be, other for elementary school learners in rural Vietnam 
+                           * Learning geology - kind of AR, kind of place-based (virtual world + rocks)
+                           * For parents to learn from each other on how to answer the hard questions that kids ask them
+                           * Did anyone else submit anything for the ICICLE conference?
+                           * Others??
+
+
+                           * Today’s topic - LE competencies & survey (part of ICICLE conference submission)
+                           * Janet, Jodi, Devan, Mei Mei, Brittany, Robert, Arun - recap of work on a survey about current student perceptions of LE competencies (recording here).
+
+
+
+
+April 12th, 2023 meeting
+In attendance: Arun, Anne Fensie, Brittany, Robert Siegle, Kim Nault, Hisyam Athaya, Mei Mei, Devan, Jodi
+
+
+Agenda:
+                           * Welcome any new members! Please write name & email below, and feel free to add to Directory: 
+                           * Olorunfemi Omotayo (omotayo.o.olorunfemi@gmail.com)
+                           * Kim Nault (nault.kimberley@gmail.com
+                           * Hisyam Athaya (hisyam.athaya@ui.ac.id)
+                           * Mei Mei (siyuanmeimeili@asu.asu)
+
+
+                           * Lightning round - share updates on projects, research, classes, other work, etc.
+                           * Devan - Put[m] out book in March about ways we can use ChatGPT within the classroom; now hot topic of agents within ChatGPT, more focused on making virtual communities of practice (work from Stanford) - lots going on in the agent space[n]
+                           * New episode[o] of Learner Engagement Activated coming next week on ChatGPT and AI with Brent Anders - AI literacy, being able to use AI tools and think critically about output
+                           * Upcoming: AECT[p] doing 3 workshops on ChatGPT in May (Anne will send details)
+                           * Anne Fensie is presenting[q] a paper on LE at ISLS in June in Montreal
+                           * Brittany (& Lisa) - Case study ready (sent to Jim and Aaron); thinking of presenting at ICICLE (more than later). 
+                           * If anyone interested in presenting at our lab meetings in my school related to LE and related topics, you can contact me Arun arl22@pitt.edu  or discord
+                           * Jodi’s work on compiling LE resources - spreadsheet[r] here
+                           * Call to add your schools!
+                           *   
+
+
+                           * ICICLE 2023 Conference (July 26-28, Pittsburgh, PA at CMU) [s]
+                           * Logistics:
+                           * Call for proposals are live! Submissions due May 1: ICICLE 2023 Conference
+                           * If any questions generally about CFP or conference, I can pass them along to the committee[t] 
+                           * Resources/language for sharing with people you know who might be interested + amplifying on social media[u]
+                           * 2 options for flyers to attach to your outreach emails - png and pdf formats
+                           * Discussion:
+                           * Who plans to submit a proposal(s), and what have you worked on or or ideated so far? What session type(s) are you most interested in? 
+                           * Anne - Research in progress for the Show & Share format - can get feedback this way
+                           * Brittany & Lisa - Technology Showcase or Show and Share as a fit for microcredentialing work. 
+                           * Case study || Rise digital badge
+                           * Show and Share - the story around the LE process
+                           * Actually - active learning sessions may be best fit. Include the demo and get participants to play around with it
+                           * Learning Centered Learning Engineering @ Asbury – https://online.asbury.edu
+                           * Arun - maybe Tech Showcase session
+                           * Would you be interested in collaborating?
+                           * I can think of one theme, like future LE professionals/researchers as students~
+                           * Starting a doodle poll[v]
+                           * Student SIG Group meetup during the conference 
+                           * And if not submitting but plan to attend, what do you hope to learn and get out of it? 
+                           * Networking, knowing more about LE
+                           * Jodi, Mei Mei - Tie in this SIG with Competencies SIG; such an interdisciplinary and complex field, so what does it mean to have the “skills” of a LE and where to look and how to develop them during a PhD and Masters programs? Hear from both experts and students?
+                           * Tie-in to networking - Anne - the networking could even be the activity part of an active learning session?
+                           * Brittany - gamify it? Gamify the networking session - ex) networking roulette - talk to someone rapid-fire and get info and then move on (lightning round) - really successful networking for Brittany. Jodi has done networking Bingo. Competencies list - if you don’t have one, go find someone who does and ask how they are upskilled, etc. 
+                           * Mei Mei - send poll to students in this SIG to gather info about competencies[w][x][y][z] 
+                           * Anne - include LE soft skills too
+
+
+
+
+                           * Broadening the conference discussion…What are your experiences sharing work, submitting proposals, presenting, finding places to submit/learning about opportunities, differences between going to a conference as an academic vs. practitioner, networking, etc. (Those who have experience can share their stories, tips, and lessons learned, and those who want to do more of this or are just getting started can ask questions). 
+
+
+                           * Next meeting is Wed. May 10th - tentative plan is for Janet to lead a session on “everything you want to know about the learning sciences.”
+                           * Looking ahead: Dina Kurzweil (Toolkit co-author) to visit July 12th meeting for discussion on LE teams and LE in the government 
+ –
+March 8th, 2023 meeting
+In attendance: Anne Fensie, Arun, Abby Bergman, Devan Walton, Michael Jay, Aaron Kessler, Jim Goodell, Anahit Vardanyan, Ben Thier, Lisa Jones, Brittany Robinson, Mimi Gemech, Jodi Lis
+
+
+Agenda:
+                           * Welcome any new members! Please write name & email below, and feel free to add to Directory: 
+                           * 
+
+                           * Lightning round - share updates on projects, research, classes, other work, etc.
+                           * Recently hosted Bror Saxberg at MIT’s Festival of Learning, watch his keynote & discussion here
+                           * Recap of Ed Tech MBA summit in Boston? (Anahit, others?)
+                           * Anne Fensie - papers accepted!! & new podcast episode
+                           * https://link.springer.com/article/10.1007/s11528-023-00837-x[aa]
+                           * https://learnerengagement.podbean.com/e/episode-12-john-almerode/ [ab]
+                           * Submission @ ISLS accepted
+                           * NELS conjecture mapping presentations (recording available?)[ac]
+                           * Brittany and Lisa - building digital badge and microcredential program as a new student pipeline for Asbury University
+
+
+                           * LE expert panel discussion (recording here) Featuring:
+                           * Aaron Kessler: Assistant Director, Learning Sciences and Teaching for Open Learning at MIT; chairs the ICICLE Design for Learning SIG; co-author of the Learning Engineering Toolkit
+                           * Jim Goodell: Director of Innovation at Quality Information Partners; chairs the ICICLE Competencies Credentialing Curriculum SIG; editor/co-author of the Learning Engineering Toolkit
+                           * Michael Jay: CEO, MatchMaker Education Labs; IEEE ICICLE chair and chairs the ICICLE pK-12 MIG - michael@matchmakeredlabs.net
+                           * Janet Kolodner: Co-director of Boston College MA program in Learning Engineering and Professor of the Practice at Boston College’s Lynch School of Education and Human Development; editor/co-author of the Learning Engineering Toolkit
+
+
+Resources in the chat:
+                           1. Ben Thier – EdTech founders x Learning Engineers: Friday March 24th, 11 AM-12 PM PT (contact: ben@myshortanswer.com)
+                           2. Devan Walton – Welcome | Learn Prompting for AI
+                           3. Anne Fensie – “ saw a piece on CBS that had a professor from Stanford that said that ChatGPT will not replace lawyers, but it will replace lawyers who don't use tools like ChatGPT. I think all of us in the education and training world are going to have to learn to understand these tools and incorporate them into our work.”
+                           4. Lisa Jones – “I just watched a video yesterday by Tom Scott , (web developer channel) who had a great perspective and described ChatGPT and how it helped him code for Gmail. Watch it here: I tried using AI. It scared me.”
+                           5. Jodi – What We Discovered at the Roots of Learning Engineering_13FEB2019_FINAL.pdf
+                           6. Jodi – 2019 Conference Proceedings icicle-proceeding- of-the-2019-conference-on-learning-engineering.pdf
+                           7. Anne – This was a very helpful description of how LLMs like ChatGPT work to understand the uses and limitations: https://www.linkedin.com/feed/update/urn:li:activity:7037082578603909121/
+                           8. Lisa “If Learning Engineering is in a sense active knowledge creation, then ChatGPT is part of that process. Every time we put a prompt into it, and it gives an answer, we are creating knowledge while using it?  And as an LE we are also learning from it depending on the prompt?”
+
+
+
+
+February 8th, 2023 meeting
+In attendance: Anne Fensie, Abby Bergman, Dale Moses, Hayden Stec,Jodi Lis, Ben Thier, Janet K, Lauren T, Anahit V, Arun, Zach G
+
+
+Agenda:
+                           * Welcome any new members! Please write name & email below, and feel free to add to Directory: 
+
+
+                           * Lightning round - share updates on projects, research, classes, other work, etc.
+                           * Ben (& Adam) - accepted as Learning Ambassadors for the Learning Agency - will be hosting events for the community. First event is going to be similar to what they shared with us, getting feedback after a demo, etc. 
+                           * One of Janet’s current students also is an ambassador, for work with teachers in Vietnam
+                           * Zach - pk-12 MIG, volunteered to create “layperson” review of LE
+                           * Anahit - Ed Tech MBA summit in Boston on Feb 15th [ad]
+                           * Ben went to one in SF recently - same group; good panels and breakouts for all stages of venture
+                           * Anne interviewed Michelle Miller (cognitive scientist) for her latest podcast ep: https://learnerengagement.podbean.com/ [ae]
+                           * Abby - “My update is that I applied for masters learning engineering/design programs last month so excited to take this next step and get back to school!” 
+
+
+                           * Upcoming events:
+                           * NELS (New England Learning Scientists) meeting Fri. 2/10 1pm-3pm ET - Conjecture mapping as a tool for learning experience design (Janet can forward invite) - Lauren to send invite to whole group
+                           * Next monthly ICICLE community call on Wed. 2/15 12pm-1pm ET
+                           * Save the date for the ICICLE 2023 conference in Pittsburgh, PA 
+                           * If you’d like to join the conference committee to help plan, please reach out to Erin Czerwinski at eczerwinski@cmu.edu 
+
+
+                           * Discussion & crowdsourcing questions for March meeting with an expert(s):
+                           * What are questions & topics you would like to ask a learning engineering expert/someone who is experienced? Anything from LE practices to career advice to certain use cases or stories you want to hear about?
+                           * A lot of the info/cases out there is about LE around product and project development. What about examples of it being done on a micro level? One classroom, a tutoring situation, etc. Something not so big and formal? Take the systematic approach to designing solutions, in any context
+                           * Marketing our skills in LE - “package” them to do a job in LE - how to better transition to the business world from academia?
+                           * Just “flow” with the conversation - several experts in the room, but no set topics or agenda (focus more on format, not set topics)
+                           * Janet - for program guest speakers, picks people who are doing interesting things in LE. Talk about their work and what advice they’d give the students. Who the person is, why they do it, what kind of education they had? (ex. Rob Nyland)
+                           * Maybe bring in guest experts for Q&A or presentations on topics of interest to the group?
+                           * LE in practice - what does it look like when it works? 
+                           * Having a computer science background, I often skew my outlook on LE towards educational technology development, so it would be nice to hear an expert talk about the various lenses, approaches, and disciplinary sides of practical LE work (like Ken Koedinger, Steve Ritter) – Justin Reich? Cog Scientists – Tim Nokes-Malach
+                           *  Folks from Digital Promise? – Jeremy Roschelle, Pati Ruiz, Judi Fusco
+                           * Low-tech learning engineering would be interesting too
+                           * LE as services or support, not just product
+                           * I.e., supporting faculty as LE
+                           * Teacher education around LE - not stressed enough in preservice programs
+                           * Ongoing nature, iterating - not just something at the beginning
+                           * Would like to hear about LE internationally - any agreement internationally, what LE means, etc.? Or are we just American-centric? What are others doing?
+                           * People are doing it without realizing they’re doing it - same as what we’re experiencing here; similar challenge of coming to a shared understanding
+                           * For people who have “brought” LE to their team, dept, org, etc. (i.e., they introduced it, adopted practices) - how did they do that? How did they come to a shared understanding around the various terms and definitions? What did they learn along the way
+                           * Maybe Rachel Van Campenhout who brought LE to Vital Source?
+                           * Different “parts” of LE that different people could represent
+                           * Working with teams and identifying when using LE processes & practices would be helpful - LE as an intervention, response to the way things are done - Dina Kurzweil 
+                           * Having a group/pair on the same LE team
+                           * Sae Schatz (or someone from CCC) to talk about competencies?
+                           * Michael Jay and Jim Goodell (and Aaron?) for first session in March? To talk about LE definition
+
+
+January 11th, 2023 meeting - https://mit.zoom.us/j/97768988381 
+In attendance: Janet, Carolina, Lauren, Lisa, Dale, Arun, Mimi, Brittany
+
+
+Agenda:
+                           * Welcome any new members! 
+Please write name & email below, and feel free to add to Directory: 
+                              * Dale Moses - ID master’s student at Asbury
+
+
+                              * Lightning round - share updates on projects, research, classes, other work, etc.
+                              * Arun working on papers at AIED (https://iaied.org/), EDM (https://educationaldatamining.org/edm2023/), Learning at Scale (https://learningatscale.acm.org/las2023/) 
+                              * Lisa - classes have started; conversations about AI and ChatGPT (president wrote about this here: https://www.christianitytoday.com/ct/2022/december-web-only/ai-chatgpt-artificial-intelligence-education-university.html) 
+                              * Brittany - collaborating with Lisa on Asbury’s microcredentials program - 2nd pipelines for current & potential students, way to increase enrollment at Asbury. Microcredential certifications - stackable, digital badge courses; complete different levels of training or entire microcredential. Another way to access higher level of education regardless of background. Brittany designed 2 of them herself; adding one about AI and ethics when we as technologists choose to use them. Microcredentials include:
+                              * 6-8 specific to Adobe software/creative suite
+                              * AR, VR, AI - experiences embedded within badges so students can experience firsthand
+                              * Foundations of ID
+                              * Carolina to present & lead discussion on Curiously
+                              * Before: Is everyone okay with this being recorded?
+
+
+Discussion: note: this session was recorded and is available here: https://mit.zoom.us/rec/share/eFTWOx9DCe6QIuzTrUAxQZ5OX0X9xPTVjoZbp_olBQqK_hUrdnoWqXXWBOEWgn2Q.pSB03RMqEyvR502x?startTime=1673472034000 
+                              * Feedback for her project here (includes discussion notes): https://docs.google.com/document/d/1n_4XB7UitgU1kQXLtGxfix97zXzK4vWnZH_Sh1OHLeI/edit 
+                              * Link to project: https://www.carolina-ali.com/projects/curiously
+                              * Video of mockup: https://www.youtube.com/watch?v=98_5bo4Phps 
+
+
+Next meeting Wed. February 8, 2023 - Topic ideas, etc.? 
+                              * Maybe some recent grads on their jobs or less recent grads on their career trajectories
+                              * Anybody else have anything like this to suggest?
+                              * Mentoring series – https://circls.org/emerging-scholar-circls-mentoring-series
+                              * Some other ideas – https://circls.org/emerging-scholar-circls
+—-----------
+December 7th, 2022 meeting - https://mit.zoom.us/j/99756351744
+In attendance: Ben Thier, Anne Fensie, Devan Walton, Abby Bergman, Hayden Stec, Mimi Gemech, Athena Vo, Carolina Ali, Janet Kolodner, Arun,
+
+
+Agenda:
+                              * Welcome any new members! 
+Please write name & email below, and feel free to add to Directory: 
+
+
+                                 * Lightning round - share updates on projects, research, classes, other work, etc.
+
+
+                                 * Adam & Ben present & lead discussion on Short Answer
+                                 * In advance, if possible: Give Short Answer’s Approach a quick read
+
+
+Discussion[af]: note: this session was recorded and is available here: https://mit.zoom.us/rec/share/UAZjOI4yR8nk1V0PhT95zNvoZc32Sj_yg0M_ho7nuqQh4ohekKMnk1B2T_oHbRy4.NYYZuYcER3u7U-hE
+
+
+                                 * Partly based on Adam’s experience as a teacher (time consuming to try to engage unengaged students)
+                                 * Filling in the ed tech tool gap of immediate feedback + deep understanding
+                                 * Focus on both teacher and student outcomes
+                                 * Theory of change mapping research foundations to these ^
+                                 * Adaptive comparative judgment 
+                                 * User experience - working on what to do with the “wait time”
+                                 * Devan - Scaffolding around deciding which response is better at a certain criteria? 
+                                 * Arun - A probable feedback/improvement to the system when the student provides the response it could be indicated so on the interface?
+                                 * How much testing has been happening?
+                                 * 20 users/pilots 
+                                 * What if both answers are good in their own right, but only one “wins”? What if navigating this is unfamiliar to teachers?
+                                 * Working on how to support teachers using this in the classroom - ex) a use case guide based on discipline (i.e., see an example related to an English class)
+                                 * What about being able to drag a criterion to both responses instead of choosing? 
+                                 * Some of us SIG testers felt that while doing the exercise - but students may also just hedge on everything, so asking them to make a choice
+                                 * What does it mean for the tool to be in its “final form” right off the bat? Maybe start students off one way, then pivot, etc.
+                                 * Thinking about use over time
+                                 * Can you enter rich text or images? Could see a lot of educational use for that
+                                 * Ex) For CS class - put in two examples of code and judge based on elegance, simplicity, etc. 
+                                 * Why show the confidence level of the person whose response is being compared?
+                                 * Opens more avenues for self-regulated learning - think, why AM I giving myself a 2 or a 5 etc. 
+                                 * Let’s say there’s fruitful discussion around a topic - key points from discussion, what everyone agreed upon, etc. Basically, knowledge grounded around using the tool brought forward to subsequent classes and uses of the tool?
+                                 * Is there a chance to then iterate on the answer you submitted? What does the student get to do afterward?
+                                 * Ex) Exit ticket is a revised answer; or for homework - keeping it flexible right now on this
+                                 * In future - students will get individualized report on their response, and could then make revisions in the future
+                                 * When is the right time for this?
+                                 * What type of teachers, classrooms would benefit from this?
+                                 * Language learning
+                                 * Science
+                                 * Working in small groups
+                                 * And there are factors about the implementation context that go beyond just the discipline or even who the teacher is. It's also about what the teacher does to introduce the tool, to introduce what peer feedback is and how to give it, etc. So many things about the implementation could change based on these things that go beyond subject
+                                 * Ex) Student had teacher type in their response - that’s a context-specific thing that happened in the implementation context
+                                 * Possibly also feedback for people to go deeper in writing text? (beyond the given options)
+                                 * Considered it; time still a factor, appropriate feedback all considerations
+                                 * “Saving” the community knowledge to keep using over time
+                                 * Meaningfully archive community knowledge and have people interact with it (ex: https://idea-thread.net/)
+                                 * Did kids get discouraged for being behind at all?
+                                 * Students really liked being anonymous
+                                 * Potentially negative effects on learners weaker in writing? Who might benefit from other ways of expressing their knowledge?
+                                 * What is the ongoing design process like? Where you talk about design ideas, iteration?
+                                 * Right now mostly based on user feedback; not so much ideation without some sort of evidence that a teacher would want this
+                                 * Lean approach - build if they ask for it, otherwise don’t build it
+                                 * Up next: everyone sees a different pair, so everyone gets feedback beyond just 2 being compared as it it is now
+                                 * Ex) teachers want a quick report to read reports, so built that before doing more in-depth reports
+
+
+Next meeting Wed. Jan 11, 2023? Topic ideas, etc. 
+                                 * Devan - update to OpenAI’s language model?
+                                 * Carolina Ali (recent grad from BC) about the project she wants to take to product
+                                 * Anybody else have anything like this to suggest?
+                                 * Maybe some recent grads on their jobs or less recent grads on their career trajectories
+
+
+
+
+—-----------
+November 16th, 2022 meeting - https://mit.zoom.us/j/99834343609 
+In attendance: Anne Riitho, Anne Fensie, Maritté Tagle, Mimi Gemech, Janet Kolodner, Parker, Amanda Frey, Brittany Robinson, Devan Walton, Ben Thier, Adam Sparks, Athena Vo
+
+
+Agenda:
+                                 * Welcome any new members! 
+Please write name & email here, and feel free to add to Directory: 
+                                    * Maritté Tagle - taglem@bc.edu
+                                    * Parker Zhang - zhangdqu@bc.edu
+                                    * Ben Thier - benrthier@gmail.com 
+                                    * Lightning round - share updates on projects, research, classes, other work, etc.
+                                    * Confirming shared goals for the group
+                                    * Overview of learning engineering - getting to a shared understanding of the history, definition, LE situated within ICICLE, and more
+                                    * Poll: What type of session do you want for our December meeting? 
+—-------
+
+
+Lightning round updates
+                                    * Great conference to check out: https://www.learningandthebrain.com/
+                                    * Podcast to check out: https://www.podbean.com/site/podcatcher/index/blog/aVwV59fLPHj2
+                                    * Carolina Ali from BC (21-22) won an award: world usabiity day (https://worldusabilityday.org/design-challenge/) 
+
+
+SIG Goals 
+                                    * Career development, exploration & imagination
+                                    * Including talking about career options - roles, titles that might do this work; skills and dispositions; applying the LE mindset to various types of roles
+                                    * Networking and other logistics of “getting in” the industry (e.g., using LinkedIn and Twitter to connect with folks in the field; options for conferences that could be interesting)
+                                    * Mentorship between grads and current or prospective students
+                                    * Enhancement of learning engineering practices and capabilities 
+
+
+About LE - discussion, questions, etc.
+                                    * Slides here
+
+
+
+
+—-----------
+October 12th, 2022 meeting - https://mit.zoom.us/j/95941817112 
+In attendance: Janet Kolodner, Lauren Totino, Austin England, Abby Bergman, Kenza Filali, Anne Fensie, Damji Stratton, Aastha Patel, Anne Riitho, Amanda Frey, Hayden Stec, Yann Hicke, Lisa Jones, Brandon Calhoun, Brittany Robinson, Mimi Gemech, Qinglin Feng, Safiyyah Scott, Fiona Huang, Yi Lu, Robin Schmucker, Arun Lekshmi Narayanan, Adam Sparks, Athena Vo, John Schell, Aaron Goldstein, Dollaya Hirunyasiri, Peng Warweg, Meng Li
+
+
+Agenda:
+                                    * Welcome to our 1st meeting!
+                                    * Introductions
+                                    * Name
+                                    * Student status - prospective, current, grad
+                                    * Program (if current or grad) & year graduated/will graduate
+                                    * What you hope to get out of this group/why you wanted to join
+                                    * If you are involved elsewhere in ICICLE (i.e., been to a monthly community call, went to the conference in July, etc.)
+                                    * Goals of this group
+                                    * Ideas for future topics and sessions
+                                    * Discuss ways to stay connected outside of these monthly meetings
+                                    * Next meeting - Wed. 11/16? Same time good?
+—-------
+
+
+
+
+Goals - discuss, edit, add
+                                    * Career development - or, career exploration & imagination, vocational journey
+                                    * Including talking about career options - roles, titles that might do this work; skills and dispositions
+                                    * Networking and other logistics of “getting in” the industry (e.g., using LinkedIn and Twitter to connect with folks in the field; options for conferences that could be interesting)
+                                    * Mentorship between grads and current or prospective students
+                                    * Enhancement of learning engineering practices and capabilities 
+
+
+Ideas for topics/sessions - discuss, edit, add 
+                                    * Formal vs. informal sessions
+                                    * Formal - project presentations and discussions; guest speakers
+                                    * Informal - sharing of ideas & approaches; informal co-design and/or critique
+                                    * 1-2 people share “journey lines” of their background leading up to grad program, what they’re doing now, future goals
+                                    * Discussions about Learning Engineering Toolkit (also on Amazon)
+                                    * Using the toolkit to center sessions, applications of concepts, examples, relevant projects, etc.
+                                    * Connect current students across programs with each other (share current experiences, challenges, etc.) and current students with grads (mentorship, ask career questions)
+                                    * Spotlight on projects people are working on
+                                    * Maybe have “Ask the grads” where current/prospective students ask Qs and “Ask the students” where grads/others find out more about the current landscape of programs, so grads can help connect them with resources that they may not be getting in their specific program
+                                    * Coworking sessions, group/side projects and coordinating for programming or other competitions (i.e., LE tools competition)
+                                    * Method discussions? ( Qualitative/ quantitative research)
+                                    * Discussions on learning curve analysis/learning engineering?
+                                    * In ICICLE monthly newsletters (or our own?) include spotlight on work members are doing
+                                    * Student/grad involvement in ICICLE 2023 conference - discuss as we get closer to this
+
+
+
+
+Staying connected as a group - discuss options, preferences, other ideas
+                                    * Have some sort of “directory” with name, contact info, program/field/title, so it’s easy to contact folks outside of meetings?
+                                    * Ways to connect outside of monthly sessions (other than email) - 
+                                    * Create our own space/channel in the LE Discord?For the networking element of this group, there are already 2 channels in the Discord that are specifically about jobs and might be of use to this SIG (#jobs and #job-candidates)
+                                    * Lauren will reach out to Jim Goodell (server admin) about creating a private channel
+                                    * Google Group, Slack, etc.?
+                                    * Other SIGs/MIGs, plus monthly community calls (get on ICICLE mailing list here)
+
+
+
+
+Intros & Brief Bios - Moved here, to Directory of Members. Thanks to all who wrote entries!
+
+
+
+
+📑 Resources
+ICICLE Students & Grads SIG
+This document tab: Resources List
+                                    * See other tabs: ✍️Agenda & Meeting Notes + 📣 Job Postings + 🏫LE Programs
+	
+
+Learn about Learning Engineering
+	                                    * What is Learning Engineering? Poster
+                                    * Learning Engineering Process
+                                    * The Learning Engineering Toolkit + three open access chapters:
+                                    * Introduction - What is Learning Engineering?
+                                    * Chapter 1 - LE is a Process
+                                    * Chapter 2 - LE Applies the Learning Sciences
+                                    * Plus: Follow the Learning Engineering Toolkit page on LinkedIn for LE tips and insights from the book! (run by Toolkit co-editor Jim Goodell)
+                                    * “An Invitation to Learning Engineering” webinar series
+                                    * From Dec 11, 2024 - “Unlock the Learning Engineer in You: Your Invitation to Learning Engineering Awaits” ft. pK-12 MIG
+                                    * From March 26, 2025 - “Discover the World of Learning Engineering in Postsecondary Contexts” ft. Higher Ed MIG
+                                    * From July 18, 2025 - “Applying Learning Engineering in Mission-Critical Environments” ft. Govt/Military MIG
+                                    * Applying and adapting Learning Engineering tools to different scenarios - January 15, 2025 Community Call ft. Aaron Kessler and Shelly Blake-Plock
+	
+
+Engage & network with the ICICLE community
+	                                    * Join the ICICLE mailing list
+                                    * Join the Discord server
+                                    * Join the LinkedIn Group
+                                    * Attend ICICLE conferences and review past conference materials:
+                                    * 2022 conference *includes materials*
+                                    * 2023 conference
+                                    * 2024 conference
+                                    * Get involved with the other ICICLE Special Interest Groups (SIGs) and Market Interest Groups (MIGs)
+                                    * Attend ICICLE Monthly Community Call meetings - calendar & Agenda doc
+                                    * Check out the Resources section of the ICICLE website to see more contributions from the community
+	
+
+Share & advance your Learning Engineering work
+	                                    * Learning Engineering Case Guide 1.0
+                                    * Learning Engineering Newsletter on LinkedIn (reach out to Jim Paradiso with ideas)
+                                    * Directory of Students & Grads SIG members - find collaborators!
+                                    * Calendar of Ed Tech events/conferences maintained by Reach Capital
+	
+
+Engage with the broader LE community
+	                                    * Join the Learning Engineering Google Group (run by the Learning Agency)
+                                    * Subscribe to The Learning Agency Weekly Newsletter, which includes job openings at the end (to subscribe, scroll to the very bottom of this page)
+                                    * Attend The Learning Agency’s LE Community Monthly Virtual Networking events on the first Wednesday of every month
+                                    * Carnegie Mellon Open Learning Initiative’s Learning Engineering Catalyst - read & discuss learning sciences research papers 
+	
+
+Additional resources to check out
+	                                    * Pearson Learning Design Principles (developed by ICICLE member Katherine McEldoon)
+                                    * LEED tracking:
+                                    * “Why did we do that?” A Systematic Approach to Tracking Decisions in the Design and Iteration of Learning Experiences by Lauren Totino & Aaron Kessler
+                                    * LEED materials (including template & examples) from ICICLE 2024 conference session
+                                    * Bror Saxberg's Keynote on Learning Engineering at MIT's Festival of Learning 2023
+                                    * Learner Engagement Activated Podcast (hosted by ICICLE member Anne Fensie)
+                                    * Silver Lining for Learning podcast, specifically the episode "Applying Human-Centered Engineering Methods to Learning" with Janet Kolodner, Jim Goodell, and Sae Schatz
+	
+
+🏫 LE-adjacent programs
+ICICLE Students & Grads SIG
+This document tab: LE-adjacent programs
+                                    * See other tabs: ✍️Agenda & Meeting Notes + 📑 Resources +  📣 Job Postings
+	Although not “Learning Engineering” by name, ICICLE is aware of several graduate programs where the instructors and/or students integrate LE practices and resources into their experience 
+
+
+                                    * Boston College - M.A. in Learning, Design, and Technology
+                                    * (Replaces the  M.A. in Learning Engineering)
+                                    * Carnegie Mellon University - Master of Educational Technology and Applied Learning Sciences (METALS)
+                                    * Stanford - M.S. in Learning, Design, and Technology
+                                    * Asbury University - M.A. in Instructional Design, Innovation & Leadership
+                                    * Arizona State University - Graduate Certificate in Learning Engineering and M.Ed. in Learning Design and Technologies
+                                    * Harvard - Ed.M. in Learning Design, Innovation, and Technology
+                                    * University of Pennsylvania - M.S.Ed. in Learning Sciences and Technologies
+                                    * University of Pennsylvania - M.S.Ed in Learning Analytics and Artificial Intelligence
+                                    * Northwestern University - joint PhD program in Computer Science and Learning Sciences
+                                    * Stanford Graduate School of Education - Education Data Science (EDS) MS
+                                    * Johns Hopkins University School of Education - Master of Education (MEd) in Learning Design and Technology
+Non-degree learning opportunities
+
+
+                                    * “Introduction to Learning Engineering” online course from Carnegie Mellon University’s LearnLab. Receive a verified digital certificate of completion from CMU’s Open Learning Initiative
+                                    * Carnegie Mellon University - LearnLab summer school courses/workshop and the Learning Engineering Fellowship Program with the Open Learning Initiative (OLI)
+
+
+
+
+See more programs listed here, from the Learning Agency
+📣 Job postings (archived)
+ICICLE Students & Grads SIG
+This document tab: Job Postings List
+                                    * See other tabs: ✍️Agenda & Meeting Notes + 📑 Resources + 🏫LE Programs
+	
+
+Note: This section also serves as an archive of past (and now closed) roles so you can get an idea of what types of job titles/descriptions to keep an eye out for if you are job searching!
+
+
+
+
+August 2025:
+                                    * Learning Developer and Coordinator (in-person) - Boston Dynamics, Waltham, MA
+                                    * Educational Technologist (in-person) - Massachusetts Institute of Technology, Mechanical Engineering department (LEAP group) **One-year term appointment**
+
+
+
+
+July 2025:
+                                    * Global Instructional Design Consultant (in-person) - Northeastern University, Boston, MA
+                                    * Learning Support Analyst (contract, remote) - CapeTalent
+                                    * Posted by ICICLE’s Brittany Robinson
+
+
+May 2025:
+                                    * Learning Experience Designer (in-person) - Merrimack College, North Andover, MA
+                                    * Learning Designer (hybrid) - Boston College, Chestnut Hill, MA
+                                    * Postdoctoral Scholar - Data Science Education - UC Berkeley School of Education, Berkeley, CA
+                                    * Posted to the New England Learning Sciences group: “I'm reaching out because we have open postdoctoral positions for emerging scholars who would like to apprentice into Data Science Education research. We seek applicants from both data science/stats/computing-focused and/or education-focused backgrounds. The postdoc will involve rotating apprenticeships with Berkeley faculty who run multiple data science education projects across different levels (precollege, intro uni, and workshops for non-specialists) and units (the College of Computing, Data Science, and Society; the School of Ed; and the Social Sciences D-Lab). They will also have structured support to learn more about data science education tools, curricula, and research. Please share with anyone you know who may be interested! For full disclosure this is an NSF-funded project, and we recognize it is an uncertain time.”
+                                    * Senior Program Manager, MIT Educational Initiative (hybrid) - Massachusetts Institute of Technology, MIT Open Learning, Cambridge, MA *note: 3-year term appointment*
+                                    * Research Scientist (50% FTE) - The Scheller Teacher Education Program (STEP), MIT but for a team based in Washington, D.C.  
+
+
+April 2025:
+                                    * Learning Design Specialist - Talent Development (hybrid) - Boston Scientific 
+
+
+February 2025:
+                                    * Learning Engineer (remote) - Edmentum *application deadline 3/3/2025
+
+
+January 2025:
+                                    * Partner, Research & Evidence (remote/flexible) - Transcend
+                                    * Posted in LE Google Group - “If you are passionate about using quantitative and qualitative research skills to build the evidence base around innovative new learning models, we'd love to meet you!”
+                                    * Instructional Designer, Learning and Development (remote) - Kaplan (business unit: Kaplan Higher Ed)
+                                    * Program Associate (remote) - The Learning Agency
+                                    * Learning Designer, Math (New York City) - Duolingo
+
+
+December 2024:
+                                    * Educational Technologist (hybrid) - MIT Open Learning, xPRO team
+                                    * Learning Technologist (hybrid) - Harvard Graduate School of Education, Teaching & Learning Lab
+
+
+November 2024:
+                                    * Learning Consultant (remote) - Instructure 
+                                    * Curriculum Designer (hybrid) - Tufts University 
+                                    * Learning Scientist, Efficacy Research - Duolingo (Pittsburgh, PA)
+                                    * Post-doc researcher position at UPenn - Philadelphia, PA
+
+
+October 2024:
+                                    * Learning Engineer Specialist for the Air Force - Air Force Institute of Technology (Wright-Patterson AFB, OH)
+                                    * Learning Experience Designer (hybrid) - Harvard Division of Continuing Education (DCE)
+                                    * Digital Learning and AI Specialist (hybrid) - Center for New Designs in Learning and Scholarship at Georgetown University
+                                    * Educational Technologist (hybrid) - MIT Open Learning, xPRO team
+                                    * Instructional Designer (remote) - Southern New Hampshire University
+                                    * Director, Center for Innovative Teaching & Learning - High Point University (NC)
+
+
+September 2024:
+                                    * Boston Scientific - 
+                                    * Principal Experiential Learning Program Manager
+                                    * Professional Education Curriculum Specialist II 
+                                    * ^ Courtesy of Anahit Vardanyan (Boston College LE Master’s grad- anahitvardanyan97@gmail.com), who works at Boston Scientific and says “they seem to like the practice of learning engineering and asked if any Learning Engineering graduate would be interested in. if they are interested, they could send their CV and will refer them to the opening directly”
+                                    * Posted on the New England Learning Sciences network, with the Maine Math & Science Alliance (MMSA) - with hybrid/remote options 
+                                    * Programs Assistant 
+                                    * Research Assistant 
+                                    * STEM Education Specialist - Computer Science / Data Science / Computational Thinking
+                                    * STEM Education Specialist - Place-Based Education Research 
+                                    * STEM Education Specialist - Computer Science Research 
+                                    * Ruth Kermish-Allen, who posted about the positions, says the Research Assistant and STEM Specialist in CS/Data Science would be appropriate for someone without a Phd.
+[a]feel free to contact me @arl122@pitt.edu
+[b]Woohoo! Proud of you Lauren!! I'm gonna read this today
+2 total reactions
+Arun Lekshmi Narayanan reacted with 🥳 at 2024-05-08 20:31 PM
+Lauren Totino King reacted with 🥳 at 2024-05-08 20:51 PM
+[c]Lauren the LE
+1 total reaction
+Lauren Totino King reacted with 😁 at 2024-05-08 20:51 PM
+[d]Woohooo! 🎊
+2 total reactions
+Arun Lekshmi Narayanan reacted with 🥳 at 2024-05-08 20:31 PM
+Lauren Totino King reacted with 🥳 at 2024-05-08 20:52 PM
+[e]If possible please share link to slides if you're presenting with slides or a link to the material such as project website etc.. I am missing this session today
+[f]No slides, Arun, and I tried to record, but zoom wasn't set up in a way that allowed me to do that; we needed someone from MIT for that to happen. So sorry.
+1 total reaction
+Arun Lekshmi Narayanan reacted with 🙏🏾 at 2024-04-10 23:39 PM
+[g]with me or on discord! https://discord.gg/De7UnsNke7 in the students SIG channel
+[h]_Marked as resolved_
+[i]_Re-opened_
+[j]Thanks, Arun!! Right back at you
+[k]"lifelong learner"
+[l]we were discussing on this topic in our lab!
+[m]1 total reaction
+Arun Lekshmi Narayanan reacted with ♥️ at 2023-04-12 20:13 PM
+[n]2 total reactions
+Siyuan “Mei Mei” Li reacted with 👍 at 2023-04-12 20:13 PM
+Arun Lekshmi Narayanan reacted with 👍🏾 at 2023-04-13 04:10 AM
+[o]2 total reactions
+Arun Lekshmi Narayanan reacted with ♥️ at 2023-04-12 20:07 PM
+Brittany Robinson reacted with ♥️ at 2023-04-12 20:11 PM
+[p]1 total reaction
+Arun Lekshmi Narayanan reacted with 👍🏾 at 2023-04-12 20:24 PM
+[q]1 total reaction
+Arun Lekshmi Narayanan reacted with 🎉 at 2023-04-12 20:13 PM
+[r]1 total reaction
+Arun Lekshmi Narayanan reacted with 🥳 at 2023-04-12 20:22 PM
+[s]1 total reaction
+Arun Lekshmi Narayanan reacted with 🥳 at 2023-04-12 20:13 PM
+[t]great work by the team!
+[u]1 total reaction
+Arun Lekshmi Narayanan reacted with 👍🏾 at 2023-04-12 20:25 PM
+[v]https://doodle.com/meeting/organize/id/ax2oy5Jd
+[w]tentative Draft @siyuanmeimeili@asu.edu -- https://forms.gle/sNxChoziu6Wy6e9U8
+_Assigned to siyuanl1@asu.edu_
+[x]Thanks for sharing, Arun~  but I can't open it, it said "This form can only be viewed by users in the owner's organization."
+[y]just shared with you!
+[z]got it! thanks!
+[aa]1 total reaction
+Arun Lekshmi Narayanan reacted with ❤️ at 2023-03-09 01:03 AM
+[ab]1 total reaction
+Arun Lekshmi Narayanan reacted with ❤️ at 2023-03-09 01:03 AM
+[ac]1 total reaction
+Arun Lekshmi Narayanan reacted with ❓ at 2023-03-09 01:04 AM
+[ad]1 total reaction
+Arun Lekshmi Narayanan reacted with ♥️ at 2023-02-08 21:55 PM
+[ae]1 total reaction
+Arun Lekshmi Narayanan reacted with ♥️ at 2023-02-08 21:55 PM
+[af]@ltotino@mit.edu, THANK YOU for these incredibly detailed notes! Very much appreciated.

@@ -1,0 +1,892 @@
+{
+  "source_url": "https://sagroups.ieee.org/icicle/resources/",
+  "section_count": 6,
+  "item_count": 171,
+  "sections": [
+    {
+      "section": "Books",
+      "items": [
+        {
+          "title": "Learning Engineering Toolkit",
+          "url": "https://www.routledge.com/Learning-Engineering-Toolkit-Evidence-Based-Practices-from-the-Learning/Goodell-Kolodner/p/book/9781032232829",
+          "context": "The Learning Engineering Toolkit has several open access chapters, Introduction , Learning Engineering is a Process , and Learning Engineering Applies the Learning Sciences ."
+        },
+        {
+          "title": "Introduction",
+          "url": "https://www.taylorfrancis.com/chapters/oa-edit/10.4324/9781003276579-3/introduction-jim-goodell?context=ubx&refId=25863016-bba2-490e-9221-51ba8a1aa977",
+          "context": "The Learning Engineering Toolkit has several open access chapters, Introduction , Learning Engineering is a Process , and Learning Engineering Applies the Learning Sciences ."
+        },
+        {
+          "title": "Learning Engineering is a Process",
+          "url": "https://www.taylorfrancis.com/chapters/oa-edit/10.4324/9781003276579-5/learning-engineering-process-aaron-kessler-scotty-craig-jim-goodell-dina-kurzweil-scott-greenwald?context=ubx",
+          "context": "The Learning Engineering Toolkit has several open access chapters, Introduction , Learning Engineering is a Process , and Learning Engineering Applies the Learning Sciences ."
+        },
+        {
+          "title": "Learning Engineering Applies the Learning Sciences",
+          "url": "https://www.taylorfrancis.com/chapters/oa-edit/10.4324/9781003276579-6/learning-engineering-applies-learning-sciences-jim-goodell-janet-kolodner-aaron-kessler?context=ubx",
+          "context": "The Learning Engineering Toolkit has several open access chapters, Introduction , Learning Engineering is a Process , and Learning Engineering Applies the Learning Sciences ."
+        },
+        {
+          "title": "Learning Engineering for Online Education",
+          "url": "https://www.routledge.com/Learning-Engineering-for-Online-Education-Theoretical-Contexts-and-Design-Based/Dede-Richards-Saxberg/p/book/9780815394426",
+          "context": "Learning Engineering for Online Education"
+        }
+      ]
+    },
+    {
+      "section": "Examples of Practices and Tools",
+      "items": [
+        {
+          "title": "Learning Engineering Process Description and Diagram",
+          "url": "https://sagroups.ieee.org/icicle/learning-engineering-process/",
+          "context": "Learning Engineering Process: Learning Engineering Process Description and Diagram from Learning Engineering Toolkit"
+        },
+        {
+          "title": "Generalizable Learning Engineering Adoption Maturity Model",
+          "url": "https://s3.amazonaws.com/amz.xcdsystem.com/44ECEE4F-033C-295C-BAE73278B7F9CA1D_abstract_File18333/StageTwoPaper_24154_0705035638.pdf",
+          "context": "Organization Maturity Model: Generalizable Learning Engineering Adoption Maturity Model"
+        },
+        {
+          "title": "Learning Engineering Case Guide 1.0",
+          "url": "https://docs.google.com/presentation/d/1zswPfXQxV1_aRHzwQCaGRV5ZehABFUCVTYNR6jF2xS4/edit?usp=sharing",
+          "context": "Developing a Learning Engineering Case Guide : Learning Engineering Case Guide 1.0"
+        },
+        {
+          "title": "Learning Engineering at a Glance",
+          "url": "https://www.armyupress.army.mil/Journals/Journal-of-Military-Learning/Journal-of-Military-Learning-Archives/Conference-Edition-2023-Journal-of-Military-Learning/Engineering-at-a-Glance/",
+          "context": "Learning Engineering at a Glance (Based on the iFEST Poster, Winner of Best Poster Design), Sae Schatz, Jim Goodell and Aaron Kessler (2023)"
+        },
+        {
+          "title": "Learning Engineering: What We Know, What We Can Do",
+          "url": "https://www.youtube.com/watch?v=VSrsOzzjV8I&list=PLI5g5RWpdCgdfwFpqpY9sQpnxKtatHoX4&index=4",
+          "context": "Learning Engineering: What We Know, What We Can Do , Bror Saxberg, Keynote at MIT’s Festival of Learning about innovation in teaching and learning (2023)"
+        },
+        {
+          "title": "QIP Learning Engineering Videos",
+          "url": "https://www.youtube.com/playlist?list=PLhrOETQQiHyqsizqcBLG4SD1U44-dVCaQ",
+          "context": "QIP Learning Engineering Videos"
+        },
+        {
+          "title": "Invitation to Learning Engineering",
+          "url": "https://sagroups.ieee.org/icicle/invitation-to-learning-engineering-webinar-series/",
+          "context": "The “ Invitation to Learning Engineering ” webinar series provide an overview of learning engineering by members of our community, explore how learning engineering is shaping the future of learning, and highlighted use cases: Advancing Workforce Learning through Learning Engineering with the Workforce Market Interest Group"
+        },
+        {
+          "title": "Advancing Workforce Learning through Learning Engineering",
+          "url": "https://www.youtube.com/watch?v=CIMkm7YqJnE&list=PLvo-6pkJJTqc-Rsox731SmD4mmZeLmNRf&index=5",
+          "context": "The “ Invitation to Learning Engineering ” webinar series provide an overview of learning engineering by members of our community, explore how learning engineering is shaping the future of learning, and highlighted use cases: Advancing Workforce Learning through Learning Engineering with the Workforce Market Interest Group"
+        },
+        {
+          "title": "Applying Learning Engineering in Mission-Critical Environments",
+          "url": "https://www.youtube.com/watch?v=k-miyqOhHsg",
+          "context": "Applying Learning Engineering in Mission-Critical Environments with the Government and Military Market Interest Group"
+        },
+        {
+          "title": "Discover the World of Learning Engineering in Post-Secondary Contexts",
+          "url": "https://youtu.be/GlHn8SoyXwM",
+          "context": "Discover the World of Learning Engineering in Post-Secondary Contexts with the Higher Education Market Interest Group"
+        },
+        {
+          "title": "Unlock the Learning Engineer in You on the application of learning engineering in a pK-12 context",
+          "url": "https://www.youtube.com/watch?v=jXbvdqtARw0",
+          "context": "Unlock the Learning Engineer in You on the application of learning engineering in a pK-12 context with the pk-12 Market Interest Group"
+        },
+        {
+          "title": "Generalizable Learning Engineering Adoption Maturity Model",
+          "url": "https://ieee-ltsc.us10.list-manage.com/track/click?u=948d4b5b4607a1ed56c930766&id=639cf20afa&e=6a6ec61b64",
+          "context": "Learning Engineering Maturity model: For appraising an organization’s or enterprise’s maturity in adoption of learning engineering practices, review the criteria in the Generalizable Learning Engineering Adoption Maturity Model ."
+        },
+        {
+          "title": "Five Whys",
+          "url": "https://docs.google.com/document/d/1SrcGr_h6u6hx9nhWIO82xPnvSKflgAP0pmTRVfXIoJs/edit?tab=t.0#heading=h.u445depieqex",
+          "context": "Challenge Example approaches to determine the challenge and do a needs assessment include Five Whys , Cause and Affect (Fishbone) Analysis , Performance Task Analysis"
+        },
+        {
+          "title": "Cause and Affect (Fishbone) Analysis",
+          "url": "https://docs.google.com/document/d/1D3u4mH46W94wYyXht1FDfZ4XrfIqmTLm3Vwn1nT7VWE/edit?tab=t.0#heading=h.u445depieqex",
+          "context": "Challenge Example approaches to determine the challenge and do a needs assessment include Five Whys , Cause and Affect (Fishbone) Analysis , Performance Task Analysis"
+        },
+        {
+          "title": "Performance Task Analysis",
+          "url": "https://docs.google.com/document/d/1Nhgfved1gjBCoth44J5a7W3OWZy_Sx3i1qcB16qcH2Y/edit?usp=sharing",
+          "context": "Challenge Example approaches to determine the challenge and do a needs assessment include Five Whys , Cause and Affect (Fishbone) Analysis , Performance Task Analysis"
+        },
+        {
+          "title": "Learning Engineering is a Team Sport Presentation",
+          "url": "https://drive.google.com/file/d/1xBo8tF8eccEmOaEZWg3ts2KUA14Edyyu/view",
+          "context": "Teams ICICLE 2024 Conference Learning Engineering is a Team Sport Presentation and Activity on establishing a Learning Engineering Team"
+        },
+        {
+          "title": "Activity",
+          "url": "https://sites.google.com/view/icicle-conference2023-pk-12mig/icicle-2024-conference/icicle-2024-conference-al-instructions?authuser=0",
+          "context": "Teams ICICLE 2024 Conference Learning Engineering is a Team Sport Presentation and Activity on establishing a Learning Engineering Team"
+        },
+        {
+          "title": "Examples of Roles and Areas of Expertise on a Learning Engineering Team",
+          "url": "https://docs.google.com/document/d/1TR0OdxNbcAdMpZB_jyOHFYvRoTB7Jh55q5q8A8HGiFY/edit?tab=t.0",
+          "context": "Examples of Roles and Areas of Expertise on a Learning Engineering Team"
+        },
+        {
+          "title": "Teaming up to Improve Medical/Healthcare Education: Instructional Design & Learning Engineering",
+          "url": "https://253f0a53-bb62-46af-b495-b4548f4d5d90.filesusr.com/ugd/c9b0ce_5251ffb6173c4c9a968a76832aa36778.pdf",
+          "context": "Teaming up to Improve Medical/Healthcare Education: Instructional Design & Learning Engineering , Dina Kurzweil and Karen E. (Beth) Marcellas"
+        },
+        {
+          "title": "Build a Learning Data Dream Team",
+          "url": "https://www.td.org/content/td-magazine/build-a-learning-data-dream-team",
+          "context": "Build a Learning Data Dream Team , Megan Torrance, Eddie Lin and Jim Goodell in Association for Talent Development (2024)"
+        },
+        {
+          "title": "https://blogs.cisco.com/csr/how-cisco-networking-academys-learning-engineering-team-creates-a-pathway",
+          "url": "https://blogs.cisco.com/csr/how-cisco-networking-academys-learning-engineering-team-creates-a-pathway",
+          "context": "How Cisco Networking Academy’s Learning Engineering team creates a pathway to new skills., S. Faucett https://blogs.cisco.com/csr/how-cisco-networking-academys-learning-engineering-team-creates-a-pathway ( 2021)"
+        },
+        {
+          "title": "Silver Lining for Learning",
+          "url": "https://silverliningforlearning.org/",
+          "context": "Human Centered Design Silver Lining for Learning podcast episode “Applying Human-Centered Engineering Methods to Learning” with Janet Kolodner, Jim Goodell, and Sae Schatz"
+        },
+        {
+          "title": "“Applying Human-Centered Engineering Methods to Learning”",
+          "url": "https://silverliningforlearning.org/episode-149-applying-human-centered-engineering-methods-to-learning/",
+          "context": "Human Centered Design Silver Lining for Learning podcast episode “Applying Human-Centered Engineering Methods to Learning” with Janet Kolodner, Jim Goodell, and Sae Schatz"
+        },
+        {
+          "title": "IDEO Design Thinking Process",
+          "url": "https://www.ideou.com/pages/design-thinking",
+          "context": "IDEO Design Thinking Process"
+        },
+        {
+          "title": "Learning Engineering is Informed by the Learning Sciences presentation",
+          "url": "https://drive.google.com/file/d/1m7DRKBdUxaD7prKZ6hamx9AA72JbNPxr/view?usp=share_link",
+          "context": "Learning Sciences Learning Engineering is Informed by the Learning Sciences presentation , ICICLE 2022 Conference and pages 10-13, ICICLE 2022 Conference Workbook"
+        },
+        {
+          "title": "ICICLE 2022 Conference Workbook",
+          "url": "https://drive.google.com/file/d/11ddr_ZohIZ5s0AxWD8PNV1-mC1r3yfq3/view?usp=share_link",
+          "context": "Learning Sciences Learning Engineering is Informed by the Learning Sciences presentation , ICICLE 2022 Conference and pages 10-13, ICICLE 2022 Conference Workbook"
+        },
+        {
+          "title": "Learning Design Principles: A Toolkit for Design for Evidence-Based Principles",
+          "url": "https://drive.google.com/drive/u/1/folders/1GIo0a_3INuh8jaJbwD3cQqqwIMfPwqU7",
+          "context": "Learning Design Learning Design Principles: A Toolkit for Design for Evidence-Based Principles , edited by Kathleen McEldoon"
+        },
+        {
+          "title": "Implementation Checklist, Learning Engineering Toolkit",
+          "url": "https://docs.google.com/document/d/1nXPlJsu9Jo0ox8pRXS0RVVo7fAZXVHxuLdC8gi4eFEs/edit?tab=t.0",
+          "context": "Implementation Implementation Checklist, Learning Engineering Toolkit"
+        },
+        {
+          "title": "Learning Engineering Evidence Decision Tracker template and materials",
+          "url": "https://drive.google.com/drive/folders/1NsmMCWm7QfWAS_HbXf_jNCIcXUgjYE_h",
+          "context": "Tracking Decisions Learning Engineering Evidence Decision Tracker template and materials from ICICLE 2024 conference"
+        },
+        {
+          "title": "“Why did we do that?” A Systematic Approach to Tracking Decisions in the Design and Iteration of Learning Experiences",
+          "url": "https://edtechbooks.org/jaid_13_2/why_did_we_do_that_a_systematic_approach_to_tracking_decisions_in_the_design_and_iteration_of_learning_experiences",
+          "context": "“Why did we do that?” A Systematic Approach to Tracking Decisions in the Design and Iteration of Learning Experiences , Lauren Totino and Aaron Kessler"
+        },
+        {
+          "title": "Data Use and Application throughout the Learning Engineering Process",
+          "url": "https://drive.google.com/file/d/1PVw-xsbxNwqx5bq3HTrtcjkrlPQ_H0w9/view?usp=drive_link",
+          "context": "Data Data Use and Application throughout the Learning Engineering Process graphic"
+        },
+        {
+          "title": "IEEE Learning Technology Standards Committee",
+          "url": "https://sagroups.ieee.org/ltsc/",
+          "context": "Technology Standards and Tools IEEE Learning Technology Standards Committee (LTSC) ICICLE 2024 Lightning Talk: IEEE Learning Technology Standards Committee"
+        },
+        {
+          "title": "ICICLE 2024 Lightning Talk: IEEE Learning Technology Standards Committee",
+          "url": "https://docs.google.com/presentation/d/1Fo98apjdxfip2RGuZ_6vRuJMX7aDNYif/edit#slide=id.p5",
+          "context": "Technology Standards and Tools IEEE Learning Technology Standards Committee (LTSC) ICICLE 2024 Lightning Talk: IEEE Learning Technology Standards Committee"
+        },
+        {
+          "title": "Learning Engineering Virtual Training Systems with Learning Science, Data Standards and a Capabilities Maturity Mode",
+          "url": "https://s3.amazonaws.com/amz.xcdsystem.com/44ECEE4F-033C-295C-BAE73278B7F9CA1D_abstract_File17275/FinalPaper_23399_0827102231.pdf",
+          "context": "Learning Engineering Virtual Training Systems with Learning Science, Data Standards and a Capabilities Maturity Mode , Kevin Owens, Shelly Blake-Plock and Jim Goodell"
+        },
+        {
+          "title": "Tools for Learning Engineering: from Data Design to Instrumentation to Evaluation",
+          "url": "https://www.yetanalytics.com/learningengineering",
+          "context": "Tools for Learning Engineering: from Data Design to Instrumentation to Evaluation , Yet Analytics"
+        }
+      ]
+    },
+    {
+      "section": "Background Resources",
+      "items": [
+        {
+          "title": "The Job of A College President",
+          "url": "https://drive.google.com/file/d/1LgvXnaxWmioz3q36umdk5FUdXRfE7hxR/view?usp=drive_link",
+          "context": "The Job of A College President President Herb Simon, 1967"
+        },
+        {
+          "title": "The Need For Learning Engineers (and Learning Engineering)",
+          "url": "http://mfeldstein.com/learning-engineers/",
+          "context": "The Need For Learning Engineers (and Learning Engineering) Bill Jerome, April 2013"
+        },
+        {
+          "title": "Why We Need Learning Engineers",
+          "url": "https://www.chronicle.com/article/Why-We-Need-Learning-Engineers/229391",
+          "context": "Why We Need Learning Engineers Bror Saxburg, April 2015"
+        },
+        {
+          "title": "Learning Engineering: Leveraging Science and Technology for Effective Instruction",
+          "url": "https://ieee-ltsc.us10.list-manage.com/track/click?u=948d4b5b4607a1ed56c930766&id=8e0d4db3e7&e=6a6ec61b64",
+          "context": "Learning Engineering: Leveraging Science and Technology for Effective Instruction , Norman Bier, 2015 (page 28)"
+        },
+        {
+          "title": "Online Education: A Catalyst for Higher Education Reforms",
+          "url": "https://oepi.mit.edu/files/2016/09/MIT-Online-Education-Policy-Initiative-April-2016.pdf",
+          "context": "Online Education: A Catalyst for Higher Education Reforms MIT, April 2016"
+        },
+        {
+          "title": "Bridging learning research and teaching practice for the public good: The learning engineer",
+          "url": "https://www.tiaa.org/content/dam/tiaa/institute/pdf/full-report/2017-02/bridging-learning-research-and-teaching-practice.pdf",
+          "context": "Bridging learning research and teaching practice for the public good: The learning engineer Candace Thille, November 2016"
+        },
+        {
+          "title": "Carnegie Mellon University Open Learning Institute",
+          "url": "https://ieee-ltsc.us10.list-manage.com/track/click?u=948d4b5b4607a1ed56c930766&id=a6a66d7193&e=6a6ec61b64",
+          "context": "Carnegie Mellon University Open Learning Institute ‘s Simon Approach to Learning Engineering"
+        },
+        {
+          "title": "Simon Approach to Learning Engineering",
+          "url": "https://ieee-ltsc.us10.list-manage.com/track/click?u=948d4b5b4607a1ed56c930766&id=cb8b21fded&e=6a6ec61b64",
+          "context": "Carnegie Mellon University Open Learning Institute ‘s Simon Approach to Learning Engineering"
+        },
+        {
+          "title": "Yet Analytics Learning Engineering Tools, Practices and Implementation",
+          "url": "https://www.yetanalytics.com/learningengineering",
+          "context": "Yet Analytics Learning Engineering Tools, Practices and Implementation"
+        }
+      ]
+    },
+    {
+      "section": "Conference Proceedings",
+      "items": [
+        {
+          "title": "Proceedings of the 2019 ICICLE conference",
+          "url": "https://sagroups.ieee.org/icicle/proceedings/",
+          "context": "Proceedings of the 2019 ICICLE conference features the work of conference participants and highlights the work accomplished by the SIGs."
+        },
+        {
+          "title": "2022 conference page",
+          "url": "https://sagroups.ieee.org/icicle/2022-icicle-conference-on-learning-engineering/",
+          "context": "Presentations and descriptions for 2022 ICICLE conference on the 2022 conference page ."
+        }
+      ]
+    },
+    {
+      "section": "Learning about Learning Engineering: Articles, Papers, Interviews, Podcasts, Videos and more (Chronological Order)",
+      "items": [
+        {
+          "title": "Designing for Transfer: Developing a Skill-Based Simulation Using Learning Engineering Design Frameworks",
+          "url": "https://www.modsimworld.org/papers/2025/MODSIM_2025_paper_25.pdf",
+          "context": "Designing for Transfer: Developing a Skill-Based Simulation Using Learning Engineering Design Frameworks by Jessica M. Johnson, Austin Connolly, John Shull and Hector Garcia presents a use case in which a skill-based simulation game was developed for novice, pre-hire pipefitters using a learning engineering framework grounded in cognitive task analysis and game design methodologies. (2025)"
+        },
+        {
+          "title": "Crazy Idea: What If We Use Engineering to Develop and Deliver Engineering Education?",
+          "url": "https://www.ifees.net/library/crazy-idea-what-if-we-use-engineering-to-develop-and-deliver-engineering-education/",
+          "context": "In the webinar, Crazy Idea: What If We Use Engineering to Develop and Deliver Engineering Education? , organized by International Federation of Engineering Education Societies, Global Engineering Deans Council and Indo Universal Collaboration for Engineering Education, Abul Azad and Jim Goodell explore how learning engineering can be used to enhance the educational process and how engineering educators can adopt these approaches to solve common challenges in the classroom and improve student outcomes. (2025)"
+        },
+        {
+          "title": "SchoolSims",
+          "url": "https://schoolsims.com/",
+          "context": "SchoolSims applies learning engineering principles , cognitive task analysis (CTA), and naturalistic decision-making (NDM) to transform teacher preparation through simulation-based experiential learning. (2025)"
+        },
+        {
+          "title": "learning engineering principles",
+          "url": "https://content.schoolsims.com/ai-teacher-training",
+          "context": "SchoolSims applies learning engineering principles , cognitive task analysis (CTA), and naturalistic decision-making (NDM) to transform teacher preparation through simulation-based experiential learning. (2025)"
+        },
+        {
+          "title": "Learning Engineering: New Profession or Transformational Process?",
+          "url": "https://campustechnology.com/Articles/2024/07/08/Learning-Engineering-New-Profession-or-Transformational-Process.aspx",
+          "context": "Learning Engineering: New Profession or Transformational Process? Interview with Ellen Wagner (2024)"
+        },
+        {
+          "title": "Learning Engineering Enlightenment: Think Like an Engineer",
+          "url": "https://newlearningfrontier.com/learning-engineering-enlightenment-think-like-an-engineer/",
+          "context": "Learning Engineering Enlightenment: Think Like an Engineer , Ellen Wager (2024)"
+        },
+        {
+          "title": "Learning Engineering Perspectives for Supporting Educational Systems",
+          "url": "https://journals.sagepub.com/doi/full/10.1177/21695067231192886",
+          "context": "Learning Engineering Perspectives for Supporting Educational Systems , Scotty Craig, Jim Goodell, Rod Roscoe, Erin Czerwinski and Jodi Lis (2023)"
+        },
+        {
+          "title": "Data-Informed Course Improvement: The Application of Learning Engineering in the Classroom",
+          "url": "https://repository.isls.org/bitstream/1/10244/1/ICLS2023_2267-2270.pdf",
+          "context": "Data-Informed Course Improvement: The Application of Learning Engineering in the Classroom , Anne Fensie (2023)"
+        },
+        {
+          "title": "Learning Engineering Virtual Training Systems with Learning Science, Data Standards and a Capabilities Maturity Model,",
+          "url": "https://s3.amazonaws.com/amz.xcdsystem.com/44ECEE4F-033C-295C-BAE73278B7F9CA1D_abstract_File17275/FinalPaper_23399_0827102231.pdf",
+          "context": "Learning Engineering Virtual Training Systems with Learning Science, Data Standards and a Capabilities Maturity Model, Shelly Blake-Plock, Kevin Owens and Jim Goodell (2023)"
+        },
+        {
+          "title": "The Value Proposition of e Generalized Intelligent Framework for Tutoring (GIFT) for the Field of Learning Engineering",
+          "url": "https://gifttutoring.org/attachments/download/4787/GIFTSym11_Proceedings_Final_063023.pdf",
+          "context": "The Value Proposition of e Generalized Intelligent Framework for Tutoring (GIFT) for the Field of Learning Engineering (page 87), Shelly Blake-Plock, Kevin Owens and Jim Goodell (2023)"
+        },
+        {
+          "title": "Engaging in Student-Centered Educational Data Science Through Learning Engineering",
+          "url": "https://link.springer.com/chapter/10.1007/978-981-99-0026-8_1",
+          "context": "Engaging in Student-Centered Educational Data Science Through Learning Engineering , Rachel Van Campenhout, Bill Jerome, and Benny G. Johnson (2023)"
+        },
+        {
+          "title": "Designing a Student Progress Panel for Formative Practice: A Learning Engineering Process",
+          "url": "https://repository.isls.org/bitstream/1/10225/1/ICLS2023_2193-2196.pdf",
+          "context": "Designing a Student Progress Panel for Formative Practice: A Learning Engineering Process , Rachel Van Campenhout, Michelle Selinger, Bill Jerome"
+        },
+        {
+          "title": "The Art and Science of Learning Engineering",
+          "url": "https://silverliningforlearning.org/episode-162-the-art-science-of-learning-engineering/",
+          "context": "The Art and Science of Learning Engineering , Silver Lining for Learning Episode, Danielle McNamara, Scotty Craig, and Rod Roscoe (2023)"
+        },
+        {
+          "title": "Applying Human-Centered Learning Engineering Methods to Learning",
+          "url": "https://silverliningforlearning.org/episode-149-applying-human-centered-engineering-methods-to-learning/",
+          "context": "Applying Human-Centered Learning Engineering Methods to Learning , Silver Lining for Learning Episode, Sae Schatz, Janet Koloder and Jim Goodell (2023)"
+        },
+        {
+          "title": "Bringing Learning Engineering Into Online Education",
+          "url": "https://www.youtube.com/watch?v=zlEo9mEHKuw",
+          "context": "Bringing Learning Engineering Into Online Education (Webinar, Maryland Online), Karen Rege and Jodi Lis"
+        },
+        {
+          "title": "Learning Engineering at a Glance",
+          "url": "https://www.armyupress.army.mil/Journals/Journal-of-Military-Learning/Journal-of-Military-Learning-Archives/Conference-Edition-2023-Journal-of-Military-Learning/Engineering-at-a-Glance/",
+          "context": "Learning Engineering at a Glance (Based on the iFEST Poster, Winner of Best Poster Design), Sae Schatz, Jim Goodell and Aaron Kessler (2023)"
+        },
+        {
+          "title": "Interactive Peer Instruction Method Applied to Classroom Environments Considering a Learning Engineering Approach to Innovate the Teaching–Learning Process",
+          "url": "https://www.mdpi.com/2227-7102/13/3/301",
+          "context": "Interactive Peer Instruction Method Applied to Classroom Environments Considering a Learning Engineering Approach to Innovate the Teaching–Learning Process , Jessica Rivadeneira and Esteban Inga (2023)"
+        },
+        {
+          "title": "Learning Engineering: #WorkingOutLoud on Learning Science",
+          "url": "https://www.linkedin.com/pulse/learning-engineering-workingoutloud-science-julian-stodd",
+          "context": "Learning Engineering: #WorkingOutLoud on Learning Science , Julian Stodd (2023)"
+        },
+        {
+          "title": "How Video Games Can Train You for a Job: Lessons from Learning Engineering Research and Duolingo’s Success",
+          "url": "https://www.linkedin.com/pulse/how-video-games-can-train-you-job-lessons-from-learning-eric-basu?trk=public_profile_article_view",
+          "context": "How Video Games Can Train You for a Job: Lessons from Learning Engineering Research and Duolingo’s Success , Eric Basu"
+        },
+        {
+          "title": "Learning Engineering: What We Know, What We Can Do,",
+          "url": "https://www.youtube.com/watch?v=VSrsOzzjV8I&list=PLI5g5RWpdCgdfwFpqpY9sQpnxKtatHoX4&index=4",
+          "context": "Learning Engineering: What We Know, What We Can Do, Bror Saxberg, Keynote at MIT’s Festival of Learning about innovation in teaching and learning (2023)"
+        },
+        {
+          "title": "Learning sciences and learning engineering: A natural or artificial distinction?",
+          "url": "https://www.tandfonline.com/doi/full/10.1080/10508406.2022.2100705#abstract",
+          "context": "Learning sciences and learning engineering: A natural or artificial distinction? , Victor Lee and Report and Reflection, Learning engineering: What it is, why I’m involved, and why I think more of you should be , Janet Kolodner (2023)"
+        },
+        {
+          "title": "Learning engineering: What it is, why I’m involved, and why I think more of you should be",
+          "url": "https://www.tandfonline.com/doi/full/10.1080/10508406.2023.2190717?src=recsys",
+          "context": "Learning sciences and learning engineering: A natural or artificial distinction? , Victor Lee and Report and Reflection, Learning engineering: What it is, why I’m involved, and why I think more of you should be , Janet Kolodner (2023)"
+        },
+        {
+          "title": "Learning Engineering: What Is It and How Can the Government Benefit?",
+          "url": "https://www.td.org/content/atd-blog/learning-engineering-what-is-it-and-how-can-the-government-benefit",
+          "context": "Learning Engineering: What Is It and How Can the Government Benefit? , JJ Walcutt (2022)"
+        },
+        {
+          "title": "IEEE Learning Engineering Podcast",
+          "url": "https://www.podserve.fm/w/IEEE_ICICLE",
+          "context": "IEEE Learning Engineering Podcast The first episode explored What is Learning Engineering? Listen to it on your favorite podcast platform: Spotify , Apple , Sticher or tell “Alexa, play the Learning Engineering Podcast.”"
+        },
+        {
+          "title": "What is Learning Engineering?",
+          "url": "https://www.podserve.fm/w/IEEE_ICICLE/23888",
+          "context": "IEEE Learning Engineering Podcast The first episode explored What is Learning Engineering? Listen to it on your favorite podcast platform: Spotify , Apple , Sticher or tell “Alexa, play the Learning Engineering Podcast.”"
+        },
+        {
+          "title": "Spotify",
+          "url": "https://open.spotify.com/show/6I0YYNGO7SqrqDz1pLAAbj",
+          "context": "IEEE Learning Engineering Podcast The first episode explored What is Learning Engineering? Listen to it on your favorite podcast platform: Spotify , Apple , Sticher or tell “Alexa, play the Learning Engineering Podcast.”"
+        },
+        {
+          "title": "Apple",
+          "url": "https://podcasts.apple.com/us/podcast/the-ieee-learning-engineering-podcast/id1552509425?ign-mpt=uo%3D4&mt=2",
+          "context": "IEEE Learning Engineering Podcast The first episode explored What is Learning Engineering? Listen to it on your favorite podcast platform: Spotify , Apple , Sticher or tell “Alexa, play the Learning Engineering Podcast.”"
+        },
+        {
+          "title": "Sticher",
+          "url": "https://www.pandora.com/browse/podcasts?source=stitcher-sunset",
+          "context": "IEEE Learning Engineering Podcast The first episode explored What is Learning Engineering? Listen to it on your favorite podcast platform: Spotify , Apple , Sticher or tell “Alexa, play the Learning Engineering Podcast.”"
+        },
+        {
+          "title": "Empowering Learners for the Age of AI conference",
+          "url": "https://empoweringlearners.ai/",
+          "context": "At the Empowering Learners for the Age of AI conference , there were two keynotes related to learning engineering and an ICICLE panel. The videos for all the sessions on the Global Research Alliance for AI in Learning Education’s (GRAILE) YouTube channel . (2022)"
+        },
+        {
+          "title": "videos",
+          "url": "https://www.youtube.com/@graileai/videos",
+          "context": "At the Empowering Learners for the Age of AI conference , there were two keynotes related to learning engineering and an ICICLE panel. The videos for all the sessions on the Global Research Alliance for AI in Learning Education’s (GRAILE) YouTube channel . (2022)"
+        },
+        {
+          "title": "Global Research Alliance for AI in Learning Education’s (GRAILE) YouTube channel",
+          "url": "https://www.youtube.com/@graileai/videos",
+          "context": "At the Empowering Learners for the Age of AI conference , there were two keynotes related to learning engineering and an ICICLE panel. The videos for all the sessions on the Global Research Alliance for AI in Learning Education’s (GRAILE) YouTube channel . (2022)"
+        },
+        {
+          "title": "Leveraging AI and Learning Engineering in Large Scale Learning Sciences",
+          "url": "https://www.youtube.com/watch?v=Yn3AIuKJ1RY",
+          "context": "Danielle McNamara, University of Arizona, gave the opening keynote, Leveraging AI and Learning Engineering in Large Scale Learning Sciences ."
+        },
+        {
+          "title": "Learning Engineering: A path to empowering learners in and for the Age of AI",
+          "url": "https://www.youtube.com/watch?v=H-MbNTt2NRc",
+          "context": "A panel of ICICLE folks spoke about Learning Engineering: A path to empowering learners in and for the Age of AI ."
+        },
+        {
+          "title": "Learning Engineering in the Age of AI",
+          "url": "https://www.youtube.com/watch?v=HCDis6ELscA",
+          "context": "Kumar Garg, Schmidt Futures, shared his thoughts in his keynote on Learning Engineering in the Age of AI ."
+        },
+        {
+          "title": "iFEST 2022 conference",
+          "url": "https://www.ntsa.org/events/2022/8/16/ifest-2022",
+          "context": "At Advanced Distributed Learning Initiative iFEST 2022 conference , the “ Learning Engineering at a Glance” poster won the “People’s Choice Award for Best Poster Design.”"
+        },
+        {
+          "title": "Learning Engineering at a Glance” poster",
+          "url": "https://medium.com/open-learning/learning-engineering-at-a-glance-poster-awarded-best-design-at-ifest-2022-1cfdfaf7dda3",
+          "context": "At Advanced Distributed Learning Initiative iFEST 2022 conference , the “ Learning Engineering at a Glance” poster won the “People’s Choice Award for Best Poster Design.”"
+        },
+        {
+          "title": "AECT Learner Engagement Division podcast",
+          "url": "https://learnerengagement.podbean.com/",
+          "context": "In the AECT Learner Engagement Division podcast , Learning Engagement Activated , Anne Fensie speaks with Jim Goodell about how learning engineering is applied in designing learning opportunities to help increase learner engagement. (2022)"
+        },
+        {
+          "title": "Learning Engagement Activated",
+          "url": "https://learnerengagement.podbean.com/e/episode-8-jim-goodell/",
+          "context": "In the AECT Learner Engagement Division podcast , Learning Engagement Activated , Anne Fensie speaks with Jim Goodell about how learning engineering is applied in designing learning opportunities to help increase learner engagement. (2022)"
+        },
+        {
+          "title": "Anne Fensie",
+          "url": "https://www.linkedin.com/in/anne-fensie-522a2025/",
+          "context": "In the AECT Learner Engagement Division podcast , Learning Engagement Activated , Anne Fensie speaks with Jim Goodell about how learning engineering is applied in designing learning opportunities to help increase learner engagement. (2022)"
+        },
+        {
+          "title": "Jim Goodell",
+          "url": "https://www.linkedin.com/in/jimgoodell/",
+          "context": "In the AECT Learner Engagement Division podcast , Learning Engagement Activated , Anne Fensie speaks with Jim Goodell about how learning engineering is applied in designing learning opportunities to help increase learner engagement. (2022)"
+        },
+        {
+          "title": "Learning Engineering and Practice Group",
+          "url": "https://leapgroup.mit.edu/",
+          "context": "The Learning Engineering and Practice Group (LEAP) at MIT is applying design and systems principles to solving challenges in learning and develops learning experiences to better meet the increasing demand for STEM skills in tomorrow’s workforce."
+        },
+        {
+          "title": "Bror Saxberg",
+          "url": "https://www.linkedin.com/in/bror-saxberg-017790/",
+          "context": "Bror Saxberg , founder of the recently launched learning engineering consulting firm LearningForge, LLC, and previously Vice President of Learning Science at the Chan Zuckerberg Initiative, spoke at Next Level Lab at the Harvard Graduate School of Education Distinguished Speaker Series on Learning Engineering: The Art of Applying Learning Science to Real-World Training which explored the impact learning science, motivation, and understanding expertise has on learning and teaching to increase outcomes from professional training and development. (2022)"
+        },
+        {
+          "title": "Next Level Lab",
+          "url": "https://nextlevellab.gse.harvard.edu/",
+          "context": "Bror Saxberg , founder of the recently launched learning engineering consulting firm LearningForge, LLC, and previously Vice President of Learning Science at the Chan Zuckerberg Initiative, spoke at Next Level Lab at the Harvard Graduate School of Education Distinguished Speaker Series on Learning Engineering: The Art of Applying Learning Science to Real-World Training which explored the impact learning science, motivation, and understanding expertise has on learning and teaching to increase outcomes from professional training and development. (2022)"
+        },
+        {
+          "title": "Learning Engineering: The Art of Applying Learning Science to Real-World Training",
+          "url": "https://nextlevellab.gse.harvard.edu/2022/03/09/nll-distinguished-speaker-series-dr-bror-saxberg/",
+          "context": "Bror Saxberg , founder of the recently launched learning engineering consulting firm LearningForge, LLC, and previously Vice President of Learning Science at the Chan Zuckerberg Initiative, spoke at Next Level Lab at the Harvard Graduate School of Education Distinguished Speaker Series on Learning Engineering: The Art of Applying Learning Science to Real-World Training which explored the impact learning science, motivation, and understanding expertise has on learning and teaching to increase outcomes from professional training and development. (2022)"
+        },
+        {
+          "title": "Share Whatcha Learned: Journeys in Instructional Design",
+          "url": "https://anchor.fm/share-whatcha-learned/episodes/25-Learning-Engineering-with-Kristin-Torrence-e1i6bul",
+          "context": "On Share Whatcha Learned: Journeys in Instructional Design , Kristin Torrence , Head of Learning Engineering at Talespin , shares what she’s been learning and practicing about learning engineering. (2022)"
+        },
+        {
+          "title": "Kristin Torrence",
+          "url": "https://www.linkedin.com/in/kristintorrence/",
+          "context": "On Share Whatcha Learned: Journeys in Instructional Design , Kristin Torrence , Head of Learning Engineering at Talespin , shares what she’s been learning and practicing about learning engineering. (2022)"
+        },
+        {
+          "title": "Talespin",
+          "url": "https://www.talespin.com/",
+          "context": "On Share Whatcha Learned: Journeys in Instructional Design , Kristin Torrence , Head of Learning Engineering at Talespin , shares what she’s been learning and practicing about learning engineering. (2022)"
+        },
+        {
+          "title": "Learning Engineering: A View on Where the Field Is at, Where It’s Going, and the Research Needed",
+          "url": "https://tmb.apaopen.org/pub/5ib9cpqa/release/1",
+          "context": "The article, Learning Engineering: A View on Where the Field Is at, Where It’s Going, and the Research Needed , by Ryan S. Baker, Ulrich Boser, and Erica L. Snow looks to identify key areas within the science and engineering of learning that could lead to major improvements in educational outcomes. (2022)"
+        },
+        {
+          "title": "Bring Out the Talent",
+          "url": "https://bringoutthetalent.buzzsprout.com/",
+          "context": "In the podcast, Bring Out the Talent from The Training Associates, Dr. Michael Noble, President (Americas) Area9 Lyceum discusse the role for learning engineers and why it’s not just another trend in From Designer to Engineer, New Roles for Learning Professionals . (2022)"
+        },
+        {
+          "title": "The Training Associates,",
+          "url": "https://thetrainingassociates.com/",
+          "context": "In the podcast, Bring Out the Talent from The Training Associates, Dr. Michael Noble, President (Americas) Area9 Lyceum discusse the role for learning engineers and why it’s not just another trend in From Designer to Engineer, New Roles for Learning Professionals . (2022)"
+        },
+        {
+          "title": "From Designer to Engineer, New Roles for Learning Professionals",
+          "url": "https://bringoutthetalent.buzzsprout.com/1788200/10034609-bring-out-the-talent-episode-20-from-designer-to-engineer-new-roles-for-learning-professionals",
+          "context": "In the podcast, Bring Out the Talent from The Training Associates, Dr. Michael Noble, President (Americas) Area9 Lyceum discusse the role for learning engineers and why it’s not just another trend in From Designer to Engineer, New Roles for Learning Professionals . (2022)"
+        },
+        {
+          "title": "What Parts of Learning Engineering Can Help You Level Up?",
+          "url": "https://www.linkedin.com/pulse/what-parts-learning-engineering-can-help-you-level-up-jim-goodell/?trackingId=5BXlronrRGKAqdusIAnprQ%3D%3D",
+          "context": "What Parts of Learning Engineering Can Help You Level Up? Jim Goodel l (2022)"
+        },
+        {
+          "title": "l",
+          "url": "https://www.linkedin.com/in/jimgoodell/",
+          "context": "What Parts of Learning Engineering Can Help You Level Up? Jim Goodel l (2022)"
+        },
+        {
+          "title": "The Learning Agency",
+          "url": "https://www.the-learning-agency.com/",
+          "context": "The Learning Agency has a video series, Introduction to Learning Engineering , about applying a learning engineering perspective. Videos include the Practice of Learning Engineering, the Challenges of Learning Engineering, an Overview of Learning Engineering, and three case studies. (2022)"
+        },
+        {
+          "title": "Introduction to Learning Engineering",
+          "url": "https://www.the-learning-agency.com/learning-engineering-resources/introduction-to-learning-engineering/",
+          "context": "The Learning Agency has a video series, Introduction to Learning Engineering , about applying a learning engineering perspective. Videos include the Practice of Learning Engineering, the Challenges of Learning Engineering, an Overview of Learning Engineering, and three case studies. (2022)"
+        },
+        {
+          "title": "MIT Integrated Learning Initiative",
+          "url": "https://mitili.mit.edu/",
+          "context": "MIT Integrated Learning Initiative has a Q&A with Lauren Totino, a Learning Engineer in MIT Open Learning, about ‘what exactly is a learning engineer? and ‘how does data analysis drive MIT’s education effectiveness?’ (2022)"
+        },
+        {
+          "title": "Lauren Totino, a Learning Engineer",
+          "url": "https://mitili.mit.edu/news/qa-lauren-totino-learning-engineer-mits-open-learning",
+          "context": "MIT Integrated Learning Initiative has a Q&A with Lauren Totino, a Learning Engineer in MIT Open Learning, about ‘what exactly is a learning engineer? and ‘how does data analysis drive MIT’s education effectiveness?’ (2022)"
+        },
+        {
+          "title": "High-Leverage Opportunities for Learning Engineering",
+          "url": "https://www.the-learning-agency.com/wp-content/uploads/2021/08/Learning-Engineering_UPenn.pdf",
+          "context": "High-Leverage Opportunities for Learning Engineering , Ryan S. Baker and Ulrich Boser (2021)"
+        },
+        {
+          "title": "How Cisco Networking Academy’s Learning Engineering team creates a pathway to new skills",
+          "url": "https://blogs.cisco.com/csr/how-cisco-networking-academys-learning-engineering-team-creates-a-pathway",
+          "context": "How Cisco Networking Academy’s Learning Engineering team creates a pathway to new skills . Jeremy Creech describes the work in Learning Engineering being done within the Cisco Networking Academy to create equitable experiences for people to develop employable skills. (2021)"
+        },
+        {
+          "title": "Jeremy Creech",
+          "url": "https://www.linkedin.com/in/jeremykcreech/",
+          "context": "How Cisco Networking Academy’s Learning Engineering team creates a pathway to new skills . Jeremy Creech describes the work in Learning Engineering being done within the Cisco Networking Academy to create equitable experiences for people to develop employable skills. (2021)"
+        },
+        {
+          "title": "Cisco Networking Academy",
+          "url": "https://www.cisco.com/c/en/us/about/csr/impact/education/networking-academy.html",
+          "context": "How Cisco Networking Academy’s Learning Engineering team creates a pathway to new skills . Jeremy Creech describes the work in Learning Engineering being done within the Cisco Networking Academy to create equitable experiences for people to develop employable skills. (2021)"
+        },
+        {
+          "title": "Learning Engineering Series",
+          "url": "https://www.edsurge.com/news/topics/learning-engineering",
+          "context": "Learning Engineering Series , EdSurge"
+        },
+        {
+          "title": "Immersive Learning Research Network",
+          "url": "https://ieee-ltsc.us10.list-manage.com/track/click?u=948d4b5b4607a1ed56c930766&id=305e9fe208&e=6a6ec61b64",
+          "context": "The Immersive Learning Research Network (iLRN) launched its inaugural State of XR & Immersive Learning Outlook Report 2021 . ICICLE , Learning Guild , EDUCAUSE and CoSN were partners in the publication. The Outlook Report showcases current and emerging trends and innovations on the use of XR and immersive technologies for supporting learning. (2021)"
+        },
+        {
+          "title": "State of XR & Immersive Learning Outlook Report 2021",
+          "url": "https://www.immersivelrn.org/initiatives/state-of-xr-immersive-learning-project/",
+          "context": "The Immersive Learning Research Network (iLRN) launched its inaugural State of XR & Immersive Learning Outlook Report 2021 . ICICLE , Learning Guild , EDUCAUSE and CoSN were partners in the publication. The Outlook Report showcases current and emerging trends and innovations on the use of XR and immersive technologies for supporting learning. (2021)"
+        },
+        {
+          "title": "ICICLE ,",
+          "url": "https://ieee-ltsc.us10.list-manage.com/track/click?u=948d4b5b4607a1ed56c930766&id=c64417a8eb&e=6a6ec61b64",
+          "context": "The Immersive Learning Research Network (iLRN) launched its inaugural State of XR & Immersive Learning Outlook Report 2021 . ICICLE , Learning Guild , EDUCAUSE and CoSN were partners in the publication. The Outlook Report showcases current and emerging trends and innovations on the use of XR and immersive technologies for supporting learning. (2021)"
+        },
+        {
+          "title": "Learning Guild",
+          "url": "https://ieee-ltsc.us10.list-manage.com/track/click?u=948d4b5b4607a1ed56c930766&id=525bf957a2&e=6a6ec61b64",
+          "context": "The Immersive Learning Research Network (iLRN) launched its inaugural State of XR & Immersive Learning Outlook Report 2021 . ICICLE , Learning Guild , EDUCAUSE and CoSN were partners in the publication. The Outlook Report showcases current and emerging trends and innovations on the use of XR and immersive technologies for supporting learning. (2021)"
+        },
+        {
+          "title": "EDUCAUSE",
+          "url": "https://ieee-ltsc.us10.list-manage.com/track/click?u=948d4b5b4607a1ed56c930766&id=65a0f0ac40&e=6a6ec61b64",
+          "context": "The Immersive Learning Research Network (iLRN) launched its inaugural State of XR & Immersive Learning Outlook Report 2021 . ICICLE , Learning Guild , EDUCAUSE and CoSN were partners in the publication. The Outlook Report showcases current and emerging trends and innovations on the use of XR and immersive technologies for supporting learning. (2021)"
+        },
+        {
+          "title": "CoSN",
+          "url": "https://ieee-ltsc.us10.list-manage.com/track/click?u=948d4b5b4607a1ed56c930766&id=78c8151d00&e=6a6ec61b64",
+          "context": "The Immersive Learning Research Network (iLRN) launched its inaugural State of XR & Immersive Learning Outlook Report 2021 . ICICLE , Learning Guild , EDUCAUSE and CoSN were partners in the publication. The Outlook Report showcases current and emerging trends and innovations on the use of XR and immersive technologies for supporting learning. (2021)"
+        },
+        {
+          "title": "Outlook Report",
+          "url": "https://www.immersivelrn.org/initiatives/state-of-xr-immersive-learning-project/",
+          "context": "The Immersive Learning Research Network (iLRN) launched its inaugural State of XR & Immersive Learning Outlook Report 2021 . ICICLE , Learning Guild , EDUCAUSE and CoSN were partners in the publication. The Outlook Report showcases current and emerging trends and innovations on the use of XR and immersive technologies for supporting learning. (2021)"
+        },
+        {
+          "title": "Teaching Online Preparation Toolkit",
+          "url": "https://topkit.org",
+          "context": "The theme for Teaching Online Preparation Toolkit (TOPkit) at University of Central Florida March 2021 Digest was Learning Engineering, curated by James Paradiso from ICICLE Design SIG."
+        },
+        {
+          "title": "March 2021 Digest",
+          "url": "https://digitallearning.ucf.edu/newsroom/newsletter/topkit-digest-learning-engineering/",
+          "context": "The theme for Teaching Online Preparation Toolkit (TOPkit) at University of Central Florida March 2021 Digest was Learning Engineering, curated by James Paradiso from ICICLE Design SIG."
+        },
+        {
+          "title": "Rachel Van Campenhout",
+          "url": "https://ieee-ltsc.us10.list-manage.com/track/click?u=948d4b5b4607a1ed56c930766&id=8230f689a0&e=6a6ec61b64",
+          "context": "Rachel Van Campenhout and Benny Johnson , both with Acrobatiq by VitalSource , did a Q&A on impactful learning , with a shout-out to learning engineering. (2021)"
+        },
+        {
+          "title": "Benny Johnson",
+          "url": "https://ieee-ltsc.us10.list-manage.com/track/click?u=948d4b5b4607a1ed56c930766&id=2af57bc236&e=6a6ec61b64",
+          "context": "Rachel Van Campenhout and Benny Johnson , both with Acrobatiq by VitalSource , did a Q&A on impactful learning , with a shout-out to learning engineering. (2021)"
+        },
+        {
+          "title": "Acrobatiq by VitalSource",
+          "url": "https://ieee-ltsc.us10.list-manage.com/track/click?u=948d4b5b4607a1ed56c930766&id=04026b100f&e=6a6ec61b64",
+          "context": "Rachel Van Campenhout and Benny Johnson , both with Acrobatiq by VitalSource , did a Q&A on impactful learning , with a shout-out to learning engineering. (2021)"
+        },
+        {
+          "title": "Q&A on impactful learning",
+          "url": "https://get.vitalsource.com/blog/impactful-learning-a-q-and-a-with-mike-hale-0",
+          "context": "Rachel Van Campenhout and Benny Johnson , both with Acrobatiq by VitalSource , did a Q&A on impactful learning , with a shout-out to learning engineering. (2021)"
+        },
+        {
+          "title": "Design Recommendations for Intelligent Tutoring Systems, Volume 8",
+          "url": "https://ieee-ltsc.us10.list-manage.com/track/click?u=948d4b5b4607a1ed56c930766&id=c2ae7a8cf3&e=6a6ec61b64",
+          "context": "Design Recommendations for Intelligent Tutoring Systems, Volume 8 , Jim Goodell and Bridget E. Thomas wrote a chapter, A Learning Engineering Approach To Data Visualization , for the intelligent tutoring system context. (2020)"
+        },
+        {
+          "title": "Jim Goodell",
+          "url": "https://ieee-ltsc.us10.list-manage.com/track/click?u=948d4b5b4607a1ed56c930766&id=21aaebdd13&e=6a6ec61b64",
+          "context": "Design Recommendations for Intelligent Tutoring Systems, Volume 8 , Jim Goodell and Bridget E. Thomas wrote a chapter, A Learning Engineering Approach To Data Visualization , for the intelligent tutoring system context. (2020)"
+        },
+        {
+          "title": "Bridget E. Thomas",
+          "url": "https://ieee-ltsc.us10.list-manage.com/track/click?u=948d4b5b4607a1ed56c930766&id=3fc9032679&e=6a6ec61b64",
+          "context": "Design Recommendations for Intelligent Tutoring Systems, Volume 8 , Jim Goodell and Bridget E. Thomas wrote a chapter, A Learning Engineering Approach To Data Visualization , for the intelligent tutoring system context. (2020)"
+        },
+        {
+          "title": "A Learning Engineering Approach To Data Visualization",
+          "url": "https://ieee-ltsc.us10.list-manage.com/track/click?u=948d4b5b4607a1ed56c930766&id=ebdf6945db&e=6a6ec61b64",
+          "context": "Design Recommendations for Intelligent Tutoring Systems, Volume 8 , Jim Goodell and Bridget E. Thomas wrote a chapter, A Learning Engineering Approach To Data Visualization , for the intelligent tutoring system context. (2020)"
+        },
+        {
+          "title": "Insights interview: how to engineer edtech for learning and adoption at scale",
+          "url": "https://ieee-ltsc.us10.list-manage.com/track/click?u=948d4b5b4607a1ed56c930766&id=f0d897a7b5&e=cb2bd1033c",
+          "context": "Insights interview: how to engineer edtech for learning and adoption at scale , Adam Black interviews Professor Chris Dede about learning engineering, edtech that scales and edtech of the future."
+        },
+        {
+          "title": "Adam Black",
+          "url": "https://ieee-ltsc.us10.list-manage.com/track/click?u=948d4b5b4607a1ed56c930766&id=fa8cfd9fcf&e=cb2bd1033c",
+          "context": "Insights interview: how to engineer edtech for learning and adoption at scale , Adam Black interviews Professor Chris Dede about learning engineering, edtech that scales and edtech of the future."
+        },
+        {
+          "title": "Professor Chris Dede",
+          "url": "https://ieee-ltsc.us10.list-manage.com/track/click?u=948d4b5b4607a1ed56c930766&id=4967e9fc4e&e=cb2bd1033c",
+          "context": "Insights interview: how to engineer edtech for learning and adoption at scale , Adam Black interviews Professor Chris Dede about learning engineering, edtech that scales and edtech of the future."
+        },
+        {
+          "title": "Carnegie Mellon University",
+          "url": "https://ieee-ltsc.us10.list-manage.com/track/click?u=948d4b5b4607a1ed56c930766&id=20050165b2&e=cb2bd1033c",
+          "context": "Carnegie Mellon University ‘s Eberly Center for Teaching Excellence and Educational Innovation are designing a set of Signature Courses using CMU’s learning engineering approach . Check out the video on What is Learning Engineering? in the article."
+        },
+        {
+          "title": "Eberly Center for Teaching Excellence and Educational Innovation",
+          "url": "https://ieee-ltsc.us10.list-manage.com/track/click?u=948d4b5b4607a1ed56c930766&id=bad5d70f23&e=cb2bd1033c",
+          "context": "Carnegie Mellon University ‘s Eberly Center for Teaching Excellence and Educational Innovation are designing a set of Signature Courses using CMU’s learning engineering approach . Check out the video on What is Learning Engineering? in the article."
+        },
+        {
+          "title": "learning engineering approach",
+          "url": "https://ieee-ltsc.us10.list-manage.com/track/click?u=948d4b5b4607a1ed56c930766&id=31c260cd31&e=cb2bd1033c",
+          "context": "Carnegie Mellon University ‘s Eberly Center for Teaching Excellence and Educational Innovation are designing a set of Signature Courses using CMU’s learning engineering approach . Check out the video on What is Learning Engineering? in the article."
+        },
+        {
+          "title": "What is Learning Engineering?",
+          "url": "https://ieee-ltsc.us10.list-manage.com/track/click?u=948d4b5b4607a1ed56c930766&id=57b72709d6&e=cb2bd1033c",
+          "context": "Carnegie Mellon University ‘s Eberly Center for Teaching Excellence and Educational Innovation are designing a set of Signature Courses using CMU’s learning engineering approach . Check out the video on What is Learning Engineering? in the article."
+        },
+        {
+          "title": "Learning Engineering: Improving Organizational Learning With Artificial Intelligence",
+          "url": "https://ieee-ltsc.us10.list-manage.com/track/click?u=948d4b5b4607a1ed56c930766&id=f9856e699d&e=cb2bd1033c",
+          "context": "Jessie Chuang, Corporate Group Chair, and Barish Golland published Learning Engineering: Improving Organizational Learning With Artificial Intelligence on how learning engineering can apply to the organizational learning context, Training Industry, July 24, 2020"
+        },
+        {
+          "title": "Learning Engineering Is Learning About Learning. We Need That Now More Than Ever",
+          "url": "https://ieee-ltsc.us10.list-manage.com/track/click?u=948d4b5b4607a1ed56c930766&id=7588a337ea&e=6a6ec61b64",
+          "context": "Learning Engineering Is Learning About Learning. We Need That Now More Than Ever (2020)"
+        },
+        {
+          "title": "2020 EDUCAUSE Horizon Report Teaching and Learning Edition",
+          "url": "https://library.educause.edu/resources/2020/3/2020-educause-horizon-report-teaching-and-learning-edition",
+          "context": "In the 2020 EDUCAUSE Horizon Report Teaching and Learning Edition the “ Elevation of Instructional Design, Learning Engineering, and UX Design in Pedagogy in Practice ” is one of the six Emerging Technologies and Practices ."
+        },
+        {
+          "title": "Elevation of Instructional Design, Learning Engineering, and UX Design in Pedagogy in Practice",
+          "url": "https://library.educause.edu/-/media/files/library/2020/3/2020_horizon_report_pdf.pdf?#page=13&la=en&hash=0C5E0415C9202F58BC1E5577A709A5D673AB27D8",
+          "context": "In the 2020 EDUCAUSE Horizon Report Teaching and Learning Edition the “ Elevation of Instructional Design, Learning Engineering, and UX Design in Pedagogy in Practice ” is one of the six Emerging Technologies and Practices ."
+        },
+        {
+          "title": "Emerging Technologies and Practices",
+          "url": "https://library.educause.edu/-/media/files/library/2020/3/2020_horizon_report_pdf.pdf?#page=13&la=en&hash=0C5E0415C9202F58BC1E5577A709A5D673AB27D8",
+          "context": "In the 2020 EDUCAUSE Horizon Report Teaching and Learning Edition the “ Elevation of Instructional Design, Learning Engineering, and UX Design in Pedagogy in Practice ” is one of the six Emerging Technologies and Practices ."
+        },
+        {
+          "title": "The Science of Remote Learning",
+          "url": "https://openlearning.mit.edu/sites/default/files/inline-files/TheScienceofRemoteLearning.pdf",
+          "context": "The Science of Remote Learning edited by Jim Goodell and Aaron Kessler (2020)"
+        },
+        {
+          "title": "How ‘Learning Engineering’ Hopes to Speed Up Education",
+          "url": "https://medium.com/the-moonshot-catalog/better-faster-learning-2254aec656f9",
+          "context": "How ‘Learning Engineering’ Hopes to Speed Up Education Jeff Young (2020)"
+        },
+        {
+          "title": "Why Education Is a ‘Wicked Problem’ for Learning Engineers to Solve",
+          "url": "https://www.edsurge.com/news/2020-04-02-why-education-is-a-wicked-problem-for-learning-engineers-to-solve",
+          "context": "Why Education Is a ‘Wicked Problem’ for Learning Engineers to Solve Ashok Goel (2020)"
+        },
+        {
+          "title": "Teaming up to Improve Medical/Healthcare Education: Instructional Design & Learning Engineering",
+          "url": "https://253f0a53-bb62-46af-b495-b4548f4d5d90.filesusr.com/ugd/c9b0ce_5251ffb6173c4c9a968a76832aa36778.pdf",
+          "context": "Teaming up to Improve Medical/Healthcare Education: Instructional Design & Learning Engineering in the Journal of Applied Instructional Design Dina Kurzweil and Karen (Beth) Marcellas (2020)"
+        },
+        {
+          "title": "Journal of Applied Instructional Design",
+          "url": "https://www.jaid.pub/vol-9-issue-1-2020",
+          "context": "Teaming up to Improve Medical/Healthcare Education: Instructional Design & Learning Engineering in the Journal of Applied Instructional Design Dina Kurzweil and Karen (Beth) Marcellas (2020)"
+        },
+        {
+          "title": "Medical Researchers Find Cures by Conducting Many Studies and Failing Fast. We Need to Do the Same for Education",
+          "url": "https://www.the74million.org/article/schneider-garg-medical-researchers-find-cures-by-conducting-many-studies-and-failing-fast-we-need-to-do-the-same-for-education/",
+          "context": "Medical Researchers Find Cures by Conducting Many Studies and Failing Fast. We Need to Do the Same for Education Mark Schneider and Kumar Garg (2019)"
+        },
+        {
+          "title": "Are You Doing Learning Engineering—Or Instructional Design?",
+          "url": "https://learningsolutionsmag.com/articles/are-you-doing-learning-engineering-or-instructional-design?utm_campaign=lspub&utm_medium=social&utm_source=twitter",
+          "context": "Are You Doing Learning Engineering—Or Instructional Design? Jim Goddell (2019)"
+        },
+        {
+          "title": "What Does Learning Engineering Mean for Instructional Design and EdTech?",
+          "url": "https://er.educause.edu/blogs/2019/1/what-does-learning-engineering-mean-for-instructional-design-and-edtech",
+          "context": "What Does Learning Engineering Mean for Instructional Design and EdTech? Ellen Wagner (2019)"
+        },
+        {
+          "title": "Learning Engineering? Instructional Design?",
+          "url": "https://www.learningsolutionsmag.com/articles/nuts-and-bolts-learning-engineering-instructional-design/",
+          "context": "Learning Engineering? Instructional Design? Jane Bozwarth (2019)"
+        },
+        {
+          "title": "Learning Engineering: Making Education More “Professional”",
+          "url": "https://campustechnology.com/articles/2019/01/14/learning-engineering-making-education-more-professional.aspx",
+          "context": "Learning Engineering: Making Education More “Professional” Ellen Wagner (2018)"
+        },
+        {
+          "title": "Learning Engineering and the Future of eLearning",
+          "url": "https://www.learningsolutionsmag.com/articles/learning-engineering-and-the-future-of-elearning",
+          "context": "Learning Engineering and the Future of eLearning Ellen Wagner and Olivia Blackmon (2018)"
+        },
+        {
+          "title": "7 Things to Know about Learning Engineering",
+          "url": "https://library.educause.edu/resources/2018/9/7-things-you-should-know-about-learning-engineering",
+          "context": "7 Things to Know about Learning Engineering Ellen Wagner, Shelly Blake-Plock, Robby Robson, Avron Barr (2018)"
+        },
+        {
+          "title": "Learning Engineering: The Next Wave for eLearning",
+          "url": "https://www.learningsolutionsmag.com/articles/learning-engineering-the-next-wave-for-elearning",
+          "context": "Learning Engineering: The Next Wave for eLearning Ellen Wagner and Olivia Blackmon (2018)"
+        },
+        {
+          "title": "Learning Engineers Inch Toward the Spotlight",
+          "url": "https://www.insidehighered.com/digital-learning/article/2018/09/26/learning-engineers-pose-challenges-and-opportunities-improving",
+          "context": "Learning Engineers Inch Toward the Spotlight Mark Lieberman (2018)"
+        },
+        {
+          "title": "The Rise of Learning Engineering",
+          "url": "https://elearnmag.acm.org/featured.cfm?aid=3242101&rss=true",
+          "context": "The Rise of Learning Engineering Ellen Wagner and Jodi Lis (2018)"
+        },
+        {
+          "title": "All Rise the Learning Engineers",
+          "url": "https://theedtechpodcast.com/120-all-rise-the-learning-engineer/",
+          "context": "All Rise the Learning Engineers (podcast) Aaron Barr, Robby Robson (2018)"
+        },
+        {
+          "title": "Get Ready for Learning Engineering",
+          "url": "https://www.learningsolutionsmag.com/articles/quinnsights-get-ready-for-learning-engineering/",
+          "context": "Get Ready for Learning Engineering Clark Quinn (2018)"
+        },
+        {
+          "title": "The Rise of Learning Engineering",
+          "url": "https://oeb.global/oeb-insights/the-rise-of-learning-engineering/",
+          "context": "The Rise of Learning Engineering Ellen Wagner (2018)"
+        },
+        {
+          "title": "ICICLE: A Consortium for Learning Engineering",
+          "url": "https://er.educause.edu/blogs/2018/5/icicle-a-consortium-for-learning-engineering",
+          "context": "ICICLE: A Consortium for Learning Engineering Shelly Blake-Plock (2018)"
+        },
+        {
+          "title": "Learning Engineering: Merging Science and Data to Design Powerful Learning",
+          "url": "http://www.gettingsmart.com/2018/01/learning-engineering-merging-science-and-data-to-design-powerful-learning/",
+          "context": "Learning Engineering: Merging Science and Data to Design Powerful Learning Shelly Blake-Plock (2018)"
+        }
+      ]
+    },
+    {
+      "section": "Communities",
+      "items": [
+        {
+          "title": "OpenSimon",
+          "url": "https://www.cmu.edu/simon/open-simon/index.html",
+          "context": "OpenSimon is a learning engineering community at the Simon Initiative , Carnegie Mellon University to improve learning outcomes and advance understanding of human learning"
+        },
+        {
+          "title": "Simon Initiative",
+          "url": "https://www.cmu.edu/simon/index.html",
+          "context": "OpenSimon is a learning engineering community at the Simon Initiative , Carnegie Mellon University to improve learning outcomes and advance understanding of human learning"
+        },
+        {
+          "title": "Carnegie Mellon University",
+          "url": "https://www.cmu.edu/",
+          "context": "OpenSimon is a learning engineering community at the Simon Initiative , Carnegie Mellon University to improve learning outcomes and advance understanding of human learning"
+        },
+        {
+          "title": "Learning Agency",
+          "url": "https://www.the-learning-agency.com/",
+          "context": "Learning Agency launched a Learning Engineering Google Group ."
+        },
+        {
+          "title": "Learning Engineering Google Group",
+          "url": "https://groups.google.com/forum/?utm_medium=email&utm_source=footer#!forum/learning-engineering",
+          "context": "Learning Agency launched a Learning Engineering Google Group ."
+        },
+        {
+          "title": "Playful Journey Lab",
+          "url": "https://playful.mit.edu/",
+          "context": "The Playful Journey Lab , together with the MIT Integrated Learning Initiative (MITili), has started their Learning Engineering Journey to explore the practice of learning engineering in the Learning Engineering Project Blueprint"
+        },
+        {
+          "title": "MIT Integrated Learning Initiative",
+          "url": "https://openlearning.mit.edu/research/mit-integrated-learning-initiative",
+          "context": "The Playful Journey Lab , together with the MIT Integrated Learning Initiative (MITili), has started their Learning Engineering Journey to explore the practice of learning engineering in the Learning Engineering Project Blueprint"
+        },
+        {
+          "title": "Learning Engineering Journey",
+          "url": "https://openlearning.mit.edu/research/mit-integrated-learning-initiative",
+          "context": "The Playful Journey Lab , together with the MIT Integrated Learning Initiative (MITili), has started their Learning Engineering Journey to explore the practice of learning engineering in the Learning Engineering Project Blueprint"
+        },
+        {
+          "title": "Learning Engineering Project Blueprint",
+          "url": "https://playful.mit.edu/projects/schools-of-tomorrow/",
+          "context": "The Playful Journey Lab , together with the MIT Integrated Learning Initiative (MITili), has started their Learning Engineering Journey to explore the practice of learning engineering in the Learning Engineering Project Blueprint"
+        }
+      ]
+    }
+  ]
+}

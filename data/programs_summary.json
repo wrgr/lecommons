@@ -1,0 +1,84 @@
+{
+  "notes": "Program list intentionally lightweight for MVP; migrate to broader EBKGC ingestion later.",
+  "programs": [
+    {
+      "name": "Carnegie Mellon University (METALS, OLI, OpenSimon)",
+      "category": "academic",
+      "summary": "Program and ecosystem focused on learning sciences, analytics, and learning engineering practice through METALS, OLI, and OpenSimon tools.",
+      "links": [
+        "https://www.cmu.edu/simon/open-simon/index.html",
+        "https://www.cmu.edu/masters-educational-technology-applied-learning-science/",
+        "https://oli.cmu.edu/"
+      ]
+    },
+    {
+      "name": "Arizona State University (Learning Engineering Institute + Grad Pathways)",
+      "category": "academic",
+      "summary": "ASU’s Learning Engineering Institute and associated graduate pathways support research-to-practice learning system design at scale.",
+      "links": [
+        "https://learningatscale.asu.edu/",
+        "https://news.asu.edu/colleges-and-units/learning-engineering-institute",
+        "https://education.asu.edu/degree/graduate-certificate-learning-engineering"
+      ]
+    },
+    {
+      "name": "Johns Hopkins University (LENS: Learning Engineering for Next-Generation Systems)",
+      "category": "academic",
+      "summary": "LENS is positioned as a systems-framing, decision-grade learning engineering pathway for high-consequence domains (defense, healthcare, and large-scale education).",
+      "links": [
+        "https://education.jhu.edu/masters-programs/master-of-education-in-learning-design-and-technology/"
+      ],
+      "evidence_note": "Program description aligned to user-provided draft: /Users/wgray13/Downloads/LENS_Prospective_Students_040726_draft.docx"
+    },
+    {
+      "name": "Boston College (Learning Design and Technology)",
+      "category": "academic",
+      "summary": "Graduate preparation path with strong ties to learning engineering methods and practice-oriented design workflows.",
+      "links": [
+        "https://www.bc.edu/content/bc-web/schools/lynch-school/academics/departments-and-programs/curriculum-and-instruction/ma-learning-design-technology.html"
+      ]
+    },
+    {
+      "name": "ICICLE (IEEE SA Industry Consortium)",
+      "category": "nonprofit",
+      "summary": "Consortium hub for shared resources, SIG/MIG practice communities, webinars, and conference-based field coordination.",
+      "links": [
+        "https://sagroups.ieee.org/icicle/",
+        "https://sagroups.ieee.org/icicle/resources/"
+      ]
+    },
+    {
+      "name": "The Learning Agency Community",
+      "category": "nonprofit",
+      "summary": "Community programming, resources, and networking support for practitioners and researchers applying learning engineering.",
+      "links": [
+        "https://www.the-learning-agency.com/",
+        "https://groups.google.com/g/learning-engineering"
+      ]
+    },
+    {
+      "name": "Yet Analytics",
+      "category": "commercial",
+      "summary": "Commercial tooling and services for data instrumentation and analysis workflows used in learning engineering settings.",
+      "links": [
+        "https://www.yetanalytics.com/learningengineering"
+      ]
+    }
+  ],
+  "adjacent_program_mentions": [
+    "Boston College - M.A. in Learning, Design, and Technology",
+    "(Replaces the M.A. in Learning Engineering)",
+    "Carnegie Mellon University - Master of Educational Technology and Applied Learning Sciences (METALS)",
+    "Stanford - M.S. in Learning, Design, and Technology",
+    "Asbury University - M.A. in Instructional Design, Innovation & Leadership",
+    "Arizona State University - Graduate Certificate in Learning Engineering and M.Ed. in Learning Design and Technologies",
+    "Harvard - Ed.M. in Learning Design, Innovation, and Technology",
+    "University of Pennsylvania - M.S.Ed. in Learning Sciences and Technologies",
+    "University of Pennsylvania - M.S.Ed in Learning Analytics and Artificial Intelligence",
+    "Northwestern University - joint PhD program in Computer Science and Learning Sciences",
+    "Stanford Graduate School of Education - Education Data Science (EDS) MS",
+    "Johns Hopkins University School of Education - Master of Education (MEd) in Learning Design and Technology",
+    "“Introduction to Learning Engineering” online course from Carnegie Mellon University’s LearnLab. Receive a verified digital certificate of completion from CMU’s Open Learning Initiative",
+    "Carnegie Mellon University - LearnLab summer school courses/workshop and the Learning Engineering Fellowship Program with the Open Learning Initiative (OLI)"
+  ]
+}

@@ -1,0 +1,105 @@
+{
+  "nodes": [
+    {
+      "id": "paper-graphrag",
+      "label": "GraphRAG Overview",
+      "type": "paper",
+      "x": -0.8,
+      "y": 0.3,
+      "size": 9,
+      "color": "#22c55e",
+      "topicIds": ["topic-kg", "topic-rag"]
+    },
+    {
+      "id": "paper-kg-rag",
+      "label": "KG-Augmented RAG",
+      "type": "paper",
+      "x": -0.58,
+      "y": 0.05,
+      "size": 8,
+      "color": "#22c55e",
+      "topicIds": ["topic-kg", "topic-rag"]
+    },
+    {
+      "id": "paper-entity-linking",
+      "label": "Entity Linking for LLMs",
+      "type": "paper",
+      "x": -0.58,
+      "y": 0.58,
+      "size": 7,
+      "color": "#22c55e",
+      "topicIds": ["topic-kg"]
+    },
+    {
+      "id": "paper-agentic-rag",
+      "label": "Agentic RAG Pipelines",
+      "type": "paper",
+      "x": -0.14,
+      "y": 0.28,
+      "size": 8,
+      "color": "#22c55e",
+      "topicIds": ["topic-rag", "topic-evaluation"]
+    },
+    {
+      "id": "paper-hybrid-retrieval",
+      "label": "Hybrid Retrieval at Scale",
+      "type": "paper",
+      "x": -0.02,
+      "y": 0.72,
+      "size": 7,
+      "color": "#22c55e",
+      "topicIds": ["topic-rag"]
+    },
+    {
+      "id": "paper-rag-bench",
+      "label": "RAG Evaluation Benchmarks",
+      "type": "paper",
+      "x": 0.28,
+      "y": 0.05,
+      "size": 8,
+      "color": "#22c55e",
+      "topicIds": ["topic-evaluation"]
+    },
+    {
+      "id": "paper-citation-recs",
+      "label": "Citation Recommendation Models",
+      "type": "paper",
+      "x": 0.7,
+      "y": 0.22,
+      "size": 8,
+      "color": "#22c55e",
+      "topicIds": ["topic-citations"]
+    },
+    {
+      "id": "paper-temporal-citations",
+      "label": "Temporal Citation Dynamics",
+      "type": "paper",
+      "x": 0.9,
+      "y": 0.55,
+      "size": 8,
+      "color": "#22c55e",
+      "topicIds": ["topic-citations"]
+    },
+    {
+      "id": "paper-biblio-llm",
+      "label": "LLMs for Bibliometrics",
+      "type": "paper",
+      "x": 0.4,
+      "y": -0.36,
+      "size": 7,
+      "color": "#22c55e",
+      "topicIds": ["topic-citations", "topic-evaluation"]
+    }
+  ],
+  "edges": [
+    {"id": "c1", "source": "paper-graphrag", "target": "paper-kg-rag", "label": "cites", "relation": "cites", "weight": 2},
+    {"id": "c2", "source": "paper-graphrag", "target": "paper-agentic-rag", "label": "cites", "relation": "cites", "weight": 2},
+    {"id": "c3", "source": "paper-agentic-rag", "target": "paper-rag-bench", "label": "cites", "relation": "cites", "weight": 3},
+    {"id": "c4", "source": "paper-hybrid-retrieval", "target": "paper-agentic-rag", "label": "cites", "relation": "cites", "weight": 1},
+    {"id": "c5", "source": "paper-citation-recs", "target": "paper-temporal-citations", "label": "cites", "relation": "cites", "weight": 2},
+    {"id": "c6", "source": "paper-citation-recs", "target": "paper-biblio-llm", "label": "cites", "relation": "cites", "weight": 1},
+    {"id": "c7", "source": "paper-temporal-citations", "target": "paper-biblio-llm", "label": "cites", "relation": "cites", "weight": 1},
+    {"id": "c8", "source": "paper-biblio-llm", "target": "paper-rag-bench", "label": "cites", "relation": "cites", "weight": 1},
+    {"id": "c9", "source": "paper-entity-linking", "target": "paper-graphrag", "label": "cites", "relation": "cites", "weight": 1}
+  ]
+}

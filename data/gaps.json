@@ -1,0 +1,51 @@
+{
+  "gaps": [
+    {
+      "id": "missing_metadata_coverage",
+      "label": "Citation metadata coverage",
+      "status": "flagged",
+      "detail": "Structured metadata still does not resolve all parsed endnotes/artifacts automatically.",
+      "evidence": {
+        "unmatched_processed_notes": 236,
+        "processed_notes": 296
+      },
+      "evidence_links": []
+    },
+    {
+      "id": "role_based_navigation",
+      "label": "Role-based pathways",
+      "status": "resolved",
+      "detail": "Adjacent ICICLE pages include explicit role/market pathways (SIGs/MIGs + meetings).",
+      "evidence": {
+        "matched_role_terms": 6,
+        "target_terms": 6
+      },
+      "evidence_links": [
+        "https://sagroups.ieee.org/icicle/2022-icicle-conference-on-learning-engineering/",
+        "https://sagroups.ieee.org/icicle/2023-icicle-conference-on-learning-engineering/",
+        "https://sagroups.ieee.org/icicle/2024-icicle-conference-on-learning-engineering/",
+        "https://sagroups.ieee.org/icicle/invitation-to-learning-engineering-webinar-series/",
+        "https://sagroups.ieee.org/icicle/learning-engineering-process/",
+        "https://sagroups.ieee.org/icicle/learning-engineering-toolkit/",
+        "https://sagroups.ieee.org/icicle/meetings/",
+        "https://sagroups.ieee.org/icicle/newsletters/"
+      ]
+    },
+    {
+      "id": "reproducible_assets",
+      "label": "Reusable technical assets",
+      "status": "partial",
+      "detail": "Adjacent pages include templates/checklists/case-study assets, but reusable data/API/code assets are still uneven.",
+      "evidence": {
+        "matched_asset_terms": 4,
+        "resource_items": 171
+      },
+      "evidence_links": [
+        "https://sagroups.ieee.org/icicle/2022-icicle-conference-on-learning-engineering/",
+        "https://sagroups.ieee.org/icicle/2023-icicle-conference-on-learning-engineering/",
+        "https://sagroups.ieee.org/icicle/invitation-to-learning-engineering-webinar-series/",
+        "https://sagroups.ieee.org/icicle/learning-engineering-toolkit/"
+      ]
+    }
+  ]
+}

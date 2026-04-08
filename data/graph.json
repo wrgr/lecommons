@@ -1,0 +1,6094 @@
+{
+  "nodes": [
+    {
+      "id": "part:Foundations",
+      "label": "Foundations",
+      "type": "topic_part",
+      "hop": 0,
+      "provenance": {
+        "kind": "derived_topic_part",
+        "source": "Learning Engineering Toolkit contents",
+        "method": "contents_heading_parse"
+      }
+    },
+    {
+      "id": "topic:ch01",
+      "label": "Chapter 1: Learning Engineering is a Process",
+      "type": "topic",
+      "chapter": 1,
+      "hop": 0,
+      "provenance": {
+        "kind": "derived_topic_chapter",
+        "source": "Learning Engineering Toolkit contents",
+        "method": "contents_heading_parse",
+        "chapter_number": 1,
+        "section": "Foundations",
+        "start_page": 29
+      }
+    },
+    {
+      "id": "topic:ch02",
+      "label": "Chapter 2: Learning Engineering Applies the Learning Sciences",
+      "type": "topic",
+      "chapter": 2,
+      "hop": 0,
+      "provenance": {
+        "kind": "derived_topic_chapter",
+        "source": "Learning Engineering Toolkit contents",
+        "method": "contents_heading_parse",
+        "chapter_number": 2,
+        "section": "Foundations",
+        "start_page": 47
+      }
+    },
+    {
+      "id": "topic:ch03",
+      "label": "Chapter 3: Learning Engineering is Human-Centered",
+      "type": "topic",
+      "chapter": 3,
+      "hop": 0,
+      "provenance": {
+        "kind": "derived_topic_chapter",
+        "source": "Learning Engineering Toolkit contents",
+        "method": "contents_heading_parse",
+        "chapter_number": 3,
+        "section": "Foundations",
+        "start_page": 83
+      }
+    },
+    {
+      "id": "topic:ch04",
+      "label": "Chapter 4: Learning Engineering is Engineering",
+      "type": "topic",
+      "chapter": 4,
+      "hop": 0,
+      "provenance": {
+        "kind": "derived_topic_chapter",
+        "source": "Learning Engineering Toolkit contents",
+        "method": "contents_heading_parse",
+        "chapter_number": 4,
+        "section": "Foundations",
+        "start_page": 125
+      }
+    },
+    {
+      "id": "topic:ch05",
+      "label": "Chapter 5: Learning Engineering Uses Data (Part 1): Instrumentation",
+      "type": "topic",
+      "chapter": 5,
+      "hop": 0,
+      "provenance": {
+        "kind": "derived_topic_chapter",
+        "source": "Learning Engineering Toolkit contents",
+        "method": "contents_heading_parse",
+        "chapter_number": 5,
+        "section": "Foundations",
+        "start_page": 153
+      }
+    },
+    {
+      "id": "topic:ch06",
+      "label": "Chapter 6: Learning Engineering Uses Data (Part 2): Analytics",
+      "type": "topic",
+      "chapter": 6,
+      "hop": 0,
+      "provenance": {
+        "kind": "derived_topic_chapter",
+        "source": "Learning Engineering Toolkit contents",
+        "method": "contents_heading_parse",
+        "chapter_number": 6,
+        "section": "Foundations",
+        "start_page": 175
+      }
+    },
+    {
+      "id": "topic:ch07",
+      "label": "Chapter 7: Learning Engineering is Ethical",
+      "type": "topic",
+      "chapter": 7,
+      "hop": 0,
+      "provenance": {
+        "kind": "derived_topic_chapter",
+        "source": "Learning Engineering Toolkit contents",
+        "method": "contents_heading_parse",
+        "chapter_number": 7,
+        "section": "Foundations",
+        "start_page": 201
+      }
+    },
+    {
+      "id": "part:Tools",
+      "label": "Tools",
+      "type": "topic_part",
+      "hop": 0,
+      "provenance": {
+        "kind": "derived_topic_part",
+        "source": "Learning Engineering Toolkit contents",
+        "method": "contents_heading_parse"
+      }
+    },
+    {
+      "id": "topic:ch08",
+      "label": "Chapter 8: Tools for Understanding the Challenge",
+      "type": "topic",
+      "chapter": 8,
+      "hop": 0,
+      "provenance": {
+        "kind": "derived_topic_chapter",
+        "source": "Learning Engineering Toolkit contents",
+        "method": "contents_heading_parse",
+        "chapter_number": 8,
+        "section": "Tools",
+        "start_page": 231
+      }
+    },
+    {
+      "id": "topic:ch09",
+      "label": "Chapter 9: Tools from the Learning Sciences",
+      "type": "topic",
+      "chapter": 9,
+      "hop": 0,
+      "provenance": {
+        "kind": "derived_topic_chapter",
+        "source": "Learning Engineering Toolkit contents",
+        "method": "contents_heading_parse",
+        "chapter_number": 9,
+        "section": "Tools",
+        "start_page": 243
+      }
+    },
+    {
+      "id": "topic:ch10",
+      "label": "Chapter 10: Tools for Teaming",
+      "type": "topic",
+      "chapter": 10,
+      "hop": 0,
+      "provenance": {
+        "kind": "derived_topic_chapter",
+        "source": "Learning Engineering Toolkit contents",
+        "method": "contents_heading_parse",
+        "chapter_number": 10,
+        "section": "Tools",
+        "start_page": 255
+      }
+    },
+    {
+      "id": "topic:ch11",
+      "label": "Chapter 11: Lean-Agile Development Tools",
+      "type": "topic",
+      "chapter": 11,
+      "hop": 0,
+      "provenance": {
+        "kind": "derived_topic_chapter",
+        "source": "Learning Engineering Toolkit contents",
+        "method": "contents_heading_parse",
+        "chapter_number": 11,
+        "section": "Tools",
+        "start_page": 269
+      }
+    },
+    {
+      "id": "topic:ch12",
+      "label": "Chapter 12: Human-Centered Design Tools",
+      "type": "topic",
+      "chapter": 12,
+      "hop": 0,
+      "provenance": {
+        "kind": "derived_topic_chapter",
+        "source": "Learning Engineering Toolkit contents",
+        "method": "contents_heading_parse",
+        "chapter_number": 12,
+        "section": "Tools",
+        "start_page": 279
+      }
+    },
+    {
+      "id": "topic:ch13",
+      "label": "Chapter 13: Data Instrumentation Tools",
+      "type": "topic",
+      "chapter": 13,
+      "hop": 0,
+      "provenance": {
+        "kind": "derived_topic_chapter",
+        "source": "Learning Engineering Toolkit contents",
+        "method": "contents_heading_parse",
+        "chapter_number": 13,
+        "section": "Tools",
+        "start_page": 303
+      }
+    },
+    {
+      "id": "topic:ch14",
+      "label": "Chapter 14: Software and Technology Standards as Tools",
+      "type": "topic",
+      "chapter": 14,
+      "hop": 0,
+      "provenance": {
+        "kind": "derived_topic_chapter",
+        "source": "Learning Engineering Toolkit contents",
+        "method": "contents_heading_parse",
+        "chapter_number": 14,
+        "section": "Tools",
+        "start_page": 311
+      }
+    },
+    {
+      "id": "topic:ch15",
+      "label": "Chapter 15: Tools for Learner Motivation",
+      "type": "topic",
+      "chapter": 15,
+      "hop": 0,
+      "provenance": {
+        "kind": "derived_topic_chapter",
+        "source": "Learning Engineering Toolkit contents",
+        "method": "contents_heading_parse",
+        "chapter_number": 15,
+        "section": "Tools",
+        "start_page": 333
+      }
+    },
+    {
+      "id": "topic:ch16",
+      "label": "Chapter 16: Implementation Tools",
+      "type": "topic",
+      "chapter": 16,
+      "hop": 0,
+      "provenance": {
+        "kind": "derived_topic_chapter",
+        "source": "Learning Engineering Toolkit contents",
+        "method": "contents_heading_parse",
+        "chapter_number": 16,
+        "section": "Tools",
+        "start_page": 347
+      }
+    },
+    {
+      "id": "topic:ch17",
+      "label": "Chapter 17: Ethical Decision-Making Tools",
+      "type": "topic",
+      "chapter": 17,
+      "hop": 0,
+      "provenance": {
+        "kind": "derived_topic_chapter",
+        "source": "Learning Engineering Toolkit contents",
+        "method": "contents_heading_parse",
+        "chapter_number": 17,
+        "section": "Tools",
+        "start_page": 361
+      }
+    },
+    {
+      "id": "topic:ch18",
+      "label": "Chapter 18: Data Analysis Tools",
+      "type": "topic",
+      "chapter": 18,
+      "hop": 0,
+      "provenance": {
+        "kind": "derived_topic_chapter",
+        "source": "Learning Engineering Toolkit contents",
+        "method": "contents_heading_parse",
+        "chapter_number": 18,
+        "section": "Tools",
+        "start_page": 365
+      }
+    },
+    {
+      "id": "part:Vision And Commentary",
+      "label": "Vision And Commentary",
+      "type": "topic_part",
+      "hop": 0,
+      "provenance": {
+        "kind": "derived_topic_part",
+        "source": "Learning Engineering Toolkit contents",
+        "method": "contents_heading_parse"
+      }
+    },
+    {
+      "id": "topic:ch19",
+      "label": "Chapter 19: The Future World with Learning Engineering: A Story",
+      "type": "topic",
+      "chapter": 19,
+      "hop": 0,
+      "provenance": {
+        "kind": "derived_topic_chapter",
+        "source": "Learning Engineering Toolkit contents",
+        "method": "contents_heading_parse",
+        "chapter_number": 19,
+        "section": "Vision And Commentary",
+        "start_page": 381
+      }
+    },
+    {
+      "id": "icicle_section:books",
+      "label": "Books",
+      "type": "topic_surface",
+      "hop": 0,
+      "provenance": {
+        "kind": "icicle_section",
+        "source": "ICICLE resources page",
+        "method": "section_heading_parse",
+        "source_url": "https://sagroups.ieee.org/icicle/resources/",
+        "resource_item_count": 5
+      }
+    },
+    {
+      "id": "icicle_section:examples-of-practices-and-tools",
+      "label": "Examples of Practices and Tools",
+      "type": "topic_surface",
+      "hop": 0,
+      "provenance": {
+        "kind": "icicle_section",
+        "source": "ICICLE resources page",
+        "method": "section_heading_parse",
+        "source_url": "https://sagroups.ieee.org/icicle/resources/",
+        "resource_item_count": 35
+      }
+    },
+    {
+      "id": "icicle_section:background-resources",
+      "label": "Background Resources",
+      "type": "topic_surface",
+      "hop": 0,
+      "provenance": {
+        "kind": "icicle_section",
+        "source": "ICICLE resources page",
+        "method": "section_heading_parse",
+        "source_url": "https://sagroups.ieee.org/icicle/resources/",
+        "resource_item_count": 9
+      }
+    },
+    {
+      "id": "icicle_section:conference-proceedings",
+      "label": "Conference Proceedings",
+      "type": "topic_surface",
+      "hop": 0,
+      "provenance": {
+        "kind": "icicle_section",
+        "source": "ICICLE resources page",
+        "method": "section_heading_parse",
+        "source_url": "https://sagroups.ieee.org/icicle/resources/",
+        "resource_item_count": 2
+      }
+    },
+    {
+      "id": "icicle_section:learning-about-learning-engineering-articles-papers-interviews-podcasts-videos-and-more-chronological-order",
+      "label": "Learning about Learning Engineering: Articles, Papers, Interviews, Podcasts, Videos and more (Chronological Order)",
+      "type": "topic_surface",
+      "hop": 0,
+      "provenance": {
+        "kind": "icicle_section",
+        "source": "ICICLE resources page",
+        "method": "section_heading_parse",
+        "source_url": "https://sagroups.ieee.org/icicle/resources/",
+        "resource_item_count": 111
+      }
+    },
+    {
+      "id": "icicle_section:communities",
+      "label": "Communities",
+      "type": "topic_surface",
+      "hop": 0,
+      "provenance": {
+        "kind": "icicle_section",
+        "source": "ICICLE resources page",
+        "method": "section_heading_parse",
+        "source_url": "https://sagroups.ieee.org/icicle/resources/",
+        "resource_item_count": 9
+      }
+    },
+    {
+      "id": "https://openalex.org/W4237683145",
+      "label": "Taking Science to School",
+      "type": "paper",
+      "hop": 0,
+      "provenance": {
+        "kind": "seed_artifact",
+        "source": "Toolkit endnotes",
+        "method": "endnote_parse + metadata_resolution",
+        "source_url": "https://doi.org/10.17226/11625",
+        "note_ids": [
+          "ch02-n002"
+        ],
+        "chapters": [
+          2
+        ],
+        "artifact_types": [
+          "paper_or_article"
+        ],
+        "matched_note_count": 1
+      }
+    },
+    {
+      "id": "https://openalex.org/W39923390",
+      "label": "Psychology of Reasoning",
+      "type": "paper",
+      "hop": 0,
+      "provenance": {
+        "kind": "seed_artifact",
+        "source": "Toolkit endnotes",
+        "method": "endnote_parse + metadata_resolution",
+        "source_url": "https://doi.org/10.4324/9780203506936",
+        "note_ids": [
+          "ch02-n005"
+        ],
+        "chapters": [
+          2
+        ],
+        "artifact_types": [
+          "paper_or_article"
+        ],
+        "matched_note_count": 1
+      }
+    },
+    {
+      "id": "https://openalex.org/W2106779500",
+      "label": "The Knowledge‐Learning‐Instruction Framework: Bridging the Science‐Practice Chasm to Enhance Robust Student Learning",
+      "type": "paper",
+      "hop": 0,
+      "provenance": {
+        "kind": "seed_artifact",
+        "source": "Toolkit endnotes",
+        "method": "endnote_parse + metadata_resolution",
+        "source_url": "https://doi.org/10.1111/j.1551-6709.2012.01245.x",
+        "note_ids": [
+          "ch02-n007"
+        ],
+        "chapters": [
+          2
+        ],
+        "artifact_types": [
+          "paper_or_article"
+        ],
+        "matched_note_count": 1
+      }
+    },
+    {
+      "id": "https://openalex.org/W4232099363",
+      "label": "How People Learn",
+      "type": "paper",
+      "hop": 0,
+      "provenance": {
+        "kind": "seed_artifact",
+        "source": "Toolkit endnotes",
+        "method": "endnote_parse + metadata_resolution",
+        "source_url": "https://doi.org/10.17226/9853",
+        "note_ids": [
+          "ch02-n008"
+        ],
+        "chapters": [
+          2
+        ],
+        "artifact_types": [
+          "paper_or_article"
+        ],
+        "matched_note_count": 1
+      }
+    },
+    {
+      "id": "https://openalex.org/W3049252626",
+      "label": "Practicing Connections: A Framework to Guide Instructional Design for Developing Understanding in Complex Domains",
+      "type": "paper",
+      "hop": 0,
+      "provenance": {
+        "kind": "seed_artifact",
+        "source": "Toolkit endnotes",
+        "method": "endnote_parse + metadata_resolution",
+        "source_url": "https://doi.org/10.1007/s10648-020-09561-x",
+        "note_ids": [
+          "ch02-n010"
+        ],
+        "chapters": [
+          2
+        ],
+        "artifact_types": [
+          "paper_or_article"
+        ],
+        "matched_note_count": 1
+      }
+    },
+    {
+      "id": "https://openalex.org/W2999700099",
+      "label": "Exploring how teachers support students’ mathematical learning in computer-directed learning environments",
+      "type": "paper",
+      "hop": 0,
+      "provenance": {
+        "kind": "seed_artifact",
+        "source": "Toolkit endnotes",
+        "method": "endnote_parse + metadata_resolution",
+        "source_url": "https://doi.org/10.1108/ils-07-2019-0075",
+        "note_ids": [
+          "ch02-n028"
+        ],
+        "chapters": [
+          2
+        ],
+        "artifact_types": [
+          "paper_or_article"
+        ],
+        "matched_note_count": 1
+      }
+    },
+    {
+      "id": "https://openalex.org/W2895767153",
+      "label": "How People Learn II",
+      "type": "paper",
+      "hop": 0,
+      "provenance": {
+        "kind": "seed_artifact",
+        "source": "Toolkit endnotes",
+        "method": "endnote_parse + metadata_resolution",
+        "source_url": "https://doi.org/10.17226/24783",
+        "note_ids": [
+          "ch02-n034"
+        ],
+        "chapters": [
+          2
+        ],
+        "artifact_types": [
+          "paper_or_article"
+        ],
+        "matched_note_count": 1
+      }
+    },
+    {
+      "id": "https://openalex.org/W2148811928",
+      "label": "Data-driven Learner Modeling to Understand and Improve Online Learning",
+      "type": "paper",
+      "hop": 0,
+      "provenance": {
+        "kind": "seed_artifact",
+        "source": "Toolkit endnotes",
+        "method": "endnote_parse + metadata_resolution",
+        "source_url": "https://doi.org/10.1145/2591682",
+        "note_ids": [
+          "ch02-n042"
+        ],
+        "chapters": [
+          2
+        ],
+        "artifact_types": [
+          "paper_or_article"
+        ],
+        "matched_note_count": 1
+      }
+    },
+    {
+      "id": "https://openalex.org/W1544649311",
+      "label": "The Cambridge Handbook of the Learning Sciences",
+      "type": "paper",
+      "hop": 0,
+      "provenance": {
+        "kind": "seed_artifact",
+        "source": "Toolkit endnotes",
+        "method": "endnote_parse + metadata_resolution",
+        "source_url": "https://doi.org/10.1017/cbo9781139519526",
+        "note_ids": [
+          "ch02-n044"
+        ],
+        "chapters": [
+          2
+        ],
+        "artifact_types": [
+          "book_or_chapter"
+        ],
+        "matched_note_count": 1
+      }
+    },
+    {
+      "id": "https://openalex.org/W1597325177",
+      "label": "Unifying Human Centered Design and Systems Engineering for Human Systems Integration",
+      "type": "paper",
+      "hop": 0,
+      "provenance": {
+        "kind": "seed_artifact",
+        "source": "Toolkit endnotes",
+        "method": "endnote_parse + metadata_resolution",
+        "source_url": "https://doi.org/10.1007/978-3-319-02812-5_12",
+        "note_ids": [
+          "ch03-n001"
+        ],
+        "chapters": [
+          3
+        ],
+        "artifact_types": [
+          "conference_artifact"
+        ],
+        "matched_note_count": 1
+      }
+    },
+    {
+      "id": "https://openalex.org/W2132242306",
+      "label": "Design-Based Research",
+      "type": "paper",
+      "hop": 0,
+      "provenance": {
+        "kind": "seed_artifact",
+        "source": "Toolkit endnotes",
+        "method": "endnote_parse + metadata_resolution",
+        "source_url": "https://doi.org/10.3102/0013189x11428813",
+        "note_ids": [
+          "ch03-n006"
+        ],
+        "chapters": [
+          3
+        ],
+        "artifact_types": [
+          "paper_or_article"
+        ],
+        "matched_note_count": 1
+      }
+    },
+    {
+      "id": "https://openalex.org/W1990158330",
+      "label": "Teaching user interface design based on usability engineering",
+      "type": "paper",
+      "hop": 0,
+      "provenance": {
+        "kind": "seed_artifact",
+        "source": "Toolkit endnotes",
+        "method": "endnote_parse + metadata_resolution",
+        "source_url": "https://doi.org/10.1145/67880.67885",
+        "note_ids": [
+          "ch03-n009"
+        ],
+        "chapters": [
+          3
+        ],
+        "artifact_types": [
+          "paper_or_article"
+        ],
+        "matched_note_count": 1
+      }
+    },
+    {
+      "id": "https://openalex.org/W2159644498",
+      "label": "Learning by Design: Good Video Games as Learning Machines",
+      "type": "paper",
+      "hop": 0,
+      "provenance": {
+        "kind": "seed_artifact",
+        "source": "Toolkit endnotes",
+        "method": "endnote_parse + metadata_resolution",
+        "source_url": "https://doi.org/10.2304/elea.2005.2.1.5",
+        "note_ids": [
+          "ch03-n011"
+        ],
+        "chapters": [
+          3
+        ],
+        "artifact_types": [
+          "video"
+        ],
+        "matched_note_count": 1
+      }
+    },
+    {
+      "id": "https://openalex.org/W2010961314",
+      "label": "Design Thinking for Social Innovation",
+      "type": "paper",
+      "hop": 0,
+      "provenance": {
+        "kind": "seed_artifact",
+        "source": "Toolkit endnotes",
+        "method": "endnote_parse + metadata_resolution",
+        "source_url": "https://doi.org/10.1596/1020-797x_12_1_29",
+        "note_ids": [
+          "ch03-n017"
+        ],
+        "chapters": [
+          3
+        ],
+        "artifact_types": [
+          "paper_or_article"
+        ],
+        "matched_note_count": 1
+      }
+    },
+    {
+      "id": "https://openalex.org/W298147291",
+      "label": "Design Thinking Methods and Tools for Innovation",
+      "type": "paper",
+      "hop": 0,
+      "provenance": {
+        "kind": "seed_artifact",
+        "source": "Toolkit endnotes",
+        "method": "endnote_parse + metadata_resolution",
+        "source_url": "https://doi.org/10.1007/978-3-319-20886-2_2",
+        "note_ids": [
+          "ch03-n019"
+        ],
+        "chapters": [
+          3
+        ],
+        "artifact_types": [
+          "conference_artifact"
+        ],
+        "matched_note_count": 1
+      }
+    },
+    {
+      "id": "https://openalex.org/W2763931615",
+      "label": "The Value of Codesign",
+      "type": "paper",
+      "hop": 0,
+      "provenance": {
+        "kind": "seed_artifact",
+        "source": "Toolkit endnotes",
+        "method": "endnote_parse + metadata_resolution",
+        "source_url": "https://doi.org/10.1177/1094670517714060",
+        "note_ids": [
+          "ch03-n020"
+        ],
+        "chapters": [
+          3
+        ],
+        "artifact_types": [
+          "paper_or_article"
+        ],
+        "matched_note_count": 1
+      }
+    },
+    {
+      "id": "https://openalex.org/W2042309404",
+      "label": "Symphony",
+      "type": "paper",
+      "hop": 0,
+      "provenance": {
+        "kind": "seed_artifact",
+        "source": "Toolkit endnotes",
+        "method": "endnote_parse + metadata_resolution",
+        "source_url": "https://doi.org/10.1145/302979.303136",
+        "note_ids": [
+          "ch03-n026"
+        ],
+        "chapters": [
+          3
+        ],
+        "artifact_types": [
+          "conference_artifact"
+        ],
+        "matched_note_count": 1
+      }
+    },
+    {
+      "id": "https://openalex.org/W2789532139",
+      "label": "Adaptive Learning Pedagogy of Universal Design for Learning (UDL) for Multimodal Training",
+      "type": "paper",
+      "hop": 0,
+      "provenance": {
+        "kind": "seed_artifact",
+        "source": "Toolkit endnotes",
+        "method": "endnote_parse + metadata_resolution",
+        "source_url": "https://doi.org/10.15394/jaaer.2018.1752",
+        "note_ids": [
+          "ch03-n030"
+        ],
+        "chapters": [
+          3
+        ],
+        "artifact_types": [
+          "paper_or_article"
+        ],
+        "matched_note_count": 1
+      }
+    },
+    {
+      "id": "https://openalex.org/W2022041506",
+      "label": "Conjecture Mapping: An Approach to Systematic Educational Design Research",
+      "type": "paper",
+      "hop": 0,
+      "provenance": {
+        "kind": "seed_artifact",
+        "source": "Toolkit endnotes",
+        "method": "endnote_parse + metadata_resolution",
+        "source_url": "https://doi.org/10.1080/10508406.2013.778204",
+        "note_ids": [
+          "ch03-n036",
+          "ch12-n025"
+        ],
+        "chapters": [
+          3,
+          12
+        ],
+        "artifact_types": [
+          "conference_artifact",
+          "paper_or_article"
+        ],
+        "matched_note_count": 2
+      }
+    },
+    {
+      "id": "https://openalex.org/W3010818040",
+      "label": "Math Readiness: Early Identification of Preschool Children Least Ready for Formal Mathematics Instruction in School",
+      "type": "paper",
+      "hop": 0,
+      "provenance": {
+        "kind": "seed_artifact",
+        "source": "Toolkit endnotes",
+        "method": "endnote_parse + metadata_resolution",
+        "source_url": "https://doi.org/10.22492/issn.2189-1036.2020.40",
+        "note_ids": [
+          "ch03-n042"
+        ],
+        "chapters": [
+          3
+        ],
+        "artifact_types": [
+          "conference_artifact"
+        ],
+        "matched_note_count": 1
+      }
+    },
+    {
+      "id": "https://openalex.org/W2951552790",
+      "label": "Cake or broccoli? Recency biases children’s verbal responses",
+      "type": "paper",
+      "hop": 0,
+      "provenance": {
+        "kind": "seed_artifact",
+        "source": "Toolkit endnotes",
+        "method": "endnote_parse + metadata_resolution",
+        "source_url": "https://doi.org/10.1371/journal.pone.0217207",
+        "note_ids": [
+          "ch03-n048"
+        ],
+        "chapters": [
+          3
+        ],
+        "artifact_types": [
+          "paper_or_article"
+        ],
+        "matched_note_count": 1
+      }
+    },
+    {
+      "id": "https://openalex.org/W2270799154",
+      "label": "Do explicit number names accelerate pre-kindergarteners’ numeracy and place value acquisition?",
+      "type": "paper",
+      "hop": 0,
+      "provenance": {
+        "kind": "seed_artifact",
+        "source": "Toolkit endnotes",
+        "method": "endnote_parse + metadata_resolution",
+        "source_url": "https://doi.org/10.1007/s10649-016-9682-y",
+        "note_ids": [
+          "ch03-n061"
+        ],
+        "chapters": [
+          3
+        ],
+        "artifact_types": [
+          "paper_or_article"
+        ],
+        "matched_note_count": 1
+      }
+    },
+    {
+      "id": "https://openalex.org/W2979239620",
+      "label": "Human-centered design for global health equity",
+      "type": "paper",
+      "hop": 0,
+      "provenance": {
+        "kind": "seed_artifact",
+        "source": "Toolkit endnotes",
+        "method": "endnote_parse + metadata_resolution",
+        "source_url": "https://doi.org/10.1080/02681102.2019.1667289",
+        "note_ids": [
+          "ch03-n065"
+        ],
+        "chapters": [
+          3
+        ],
+        "artifact_types": [
+          "paper_or_article"
+        ],
+        "matched_note_count": 1
+      }
+    },
+    {
+      "id": "https://openalex.org/W1972406314",
+      "label": "Game-based assessment: an integrated model for capturing evidence of learning in play",
+      "type": "paper",
+      "hop": 0,
+      "provenance": {
+        "kind": "seed_artifact",
+        "source": "Toolkit endnotes",
+        "method": "endnote_parse + metadata_resolution",
+        "source_url": "https://doi.org/10.1504/ijlt.2014.064489",
+        "note_ids": [
+          "ch05-n007"
+        ],
+        "chapters": [
+          5
+        ],
+        "artifact_types": [
+          "paper_or_article"
+        ],
+        "matched_note_count": 1
+      }
+    },
+    {
+      "id": "https://openalex.org/W4248409219",
+      "label": "Engineering Learning at Kaplan University",
+      "type": "paper",
+      "hop": 0,
+      "provenance": {
+        "kind": "seed_artifact",
+        "source": "Toolkit endnotes",
+        "method": "endnote_parse + metadata_resolution",
+        "source_url": "https://doi.org/10.18665/sr.284711",
+        "note_ids": [
+          "ch06-n001"
+        ],
+        "chapters": [
+          6
+        ],
+        "artifact_types": [
+          "paper_or_article"
+        ],
+        "matched_note_count": 1
+      }
+    },
+    {
+      "id": "https://openalex.org/W3003287323",
+      "label": "Learning Engineering for Online Education",
+      "type": "paper",
+      "hop": 0,
+      "provenance": {
+        "kind": "seed_artifact",
+        "source": "Toolkit endnotes",
+        "method": "endnote_parse + metadata_resolution",
+        "source_url": "https://doi.org/10.4324/9781351186193",
+        "note_ids": [
+          "ch06-n002"
+        ],
+        "chapters": [
+          6
+        ],
+        "artifact_types": [
+          "paper_or_article"
+        ],
+        "matched_note_count": 1
+      }
+    },
+    {
+      "id": "https://openalex.org/W2840996860",
+      "label": "The &gt; friendly orange glow: The untold story of the PLATO system and the dawn of cyberculture",
+      "type": "paper",
+      "hop": 0,
+      "provenance": {
+        "kind": "seed_artifact",
+        "source": "Toolkit endnotes",
+        "method": "endnote_parse + metadata_resolution",
+        "source_url": "https://doi.org/10.1177/1461444818784306",
+        "note_ids": [
+          "ch06-n006"
+        ],
+        "chapters": [
+          6
+        ],
+        "artifact_types": [
+          "paper_or_article"
+        ],
+        "matched_note_count": 1
+      }
+    },
+    {
+      "id": "https://openalex.org/W3045491252",
+      "label": "Cognitive Models of Learning",
+      "type": "paper",
+      "hop": 0,
+      "provenance": {
+        "kind": "seed_artifact",
+        "source": "Toolkit endnotes",
+        "method": "endnote_parse + metadata_resolution",
+        "source_url": "https://doi.org/10.1007/978-1-4419-1428-6_241",
+        "note_ids": [
+          "ch06-n009"
+        ],
+        "chapters": [
+          6
+        ],
+        "artifact_types": [
+          "paper_or_article"
+        ],
+        "matched_note_count": 1
+      }
+    },
+    {
+      "id": "https://openalex.org/W3269667",
+      "label": "Ethics of Educational Technology",
+      "type": "paper",
+      "hop": 0,
+      "provenance": {
+        "kind": "seed_artifact",
+        "source": "Toolkit endnotes",
+        "method": "endnote_parse + metadata_resolution",
+        "source_url": "https://doi.org/10.1007/978-1-4614-3185-5_10",
+        "note_ids": [
+          "ch07-n002"
+        ],
+        "chapters": [
+          7
+        ],
+        "artifact_types": [
+          "book_or_chapter"
+        ],
+        "matched_note_count": 1
+      }
+    },
+    {
+      "id": "https://openalex.org/W1985429175",
+      "label": "Lessons from Adult Education: Identifying and Exploring Emerging Ethical Issues in Technologically Enhanced Performance",
+      "type": "paper",
+      "hop": 0,
+      "provenance": {
+        "kind": "seed_artifact",
+        "source": "Toolkit endnotes",
+        "method": "endnote_parse + metadata_resolution",
+        "source_url": "https://doi.org/10.1111/j.1937-8327.2003.tb00296.x",
+        "note_ids": [
+          "ch07-n003"
+        ],
+        "chapters": [
+          7
+        ],
+        "artifact_types": [
+          "paper_or_article"
+        ],
+        "matched_note_count": 1
+      }
+    },
+    {
+      "id": "https://openalex.org/W3184520631",
+      "label": "Designing Ethical Agency for Adaptive Instructional Systems: The FATE of Learning and Assessment",
+      "type": "paper",
+      "hop": 0,
+      "provenance": {
+        "kind": "seed_artifact",
+        "source": "Toolkit endnotes",
+        "method": "endnote_parse + metadata_resolution",
+        "source_url": "https://doi.org/10.1007/978-3-030-77857-6_18",
+        "note_ids": [
+          "ch07-n005"
+        ],
+        "chapters": [
+          7
+        ],
+        "artifact_types": [
+          "paper_or_article"
+        ],
+        "matched_note_count": 1
+      }
+    },
+    {
+      "id": "https://openalex.org/W2126367552",
+      "label": "For Business Ethics",
+      "type": "paper",
+      "hop": 0,
+      "provenance": {
+        "kind": "seed_artifact",
+        "source": "Toolkit endnotes",
+        "method": "endnote_parse + metadata_resolution",
+        "source_url": "https://doi.org/10.4324/9780203458457",
+        "note_ids": [
+          "ch07-n010"
+        ],
+        "chapters": [
+          7
+        ],
+        "artifact_types": [
+          "paper_or_article"
+        ],
+        "matched_note_count": 1
+      }
+    },
+    {
+      "id": "https://openalex.org/W2994056404",
+      "label": "Moral Economies and Codes of Conduct: the Social Organization of Canadian Experimental Psychology",
+      "type": "paper",
+      "hop": 0,
+      "provenance": {
+        "kind": "seed_artifact",
+        "source": "Toolkit endnotes",
+        "method": "endnote_parse + metadata_resolution",
+        "source_url": "https://doi.org/10.7202/1065958ar",
+        "note_ids": [
+          "ch07-n012"
+        ],
+        "chapters": [
+          7
+        ],
+        "artifact_types": [
+          "paper_or_article"
+        ],
+        "matched_note_count": 1
+      }
+    },
+    {
+      "id": "https://openalex.org/W3123043436",
+      "label": "Boundary Conditions",
+      "type": "paper",
+      "hop": 0,
+      "provenance": {
+        "kind": "seed_artifact",
+        "source": "Toolkit endnotes",
+        "method": "endnote_parse + metadata_resolution",
+        "source_url": "https://doi.org/10.1177/1094428116641191",
+        "note_ids": [
+          "ch07-n020"
+        ],
+        "chapters": [
+          7
+        ],
+        "artifact_types": [
+          "paper_or_article"
+        ],
+        "matched_note_count": 1
+      }
+    },
+    {
+      "id": "https://openalex.org/W2076377009",
+      "label": "A proposal for a policy on the ethical care and use of cadavers and their tissues",
+      "type": "paper",
+      "hop": 0,
+      "provenance": {
+        "kind": "seed_artifact",
+        "source": "Toolkit endnotes",
+        "method": "endnote_parse + metadata_resolution",
+        "source_url": "https://doi.org/10.1002/ase.199",
+        "note_ids": [
+          "ch07-n021"
+        ],
+        "chapters": [
+          7
+        ],
+        "artifact_types": [
+          "paper_or_article"
+        ],
+        "matched_note_count": 1
+      }
+    },
+    {
+      "id": "https://openalex.org/W1488946506",
+      "label": "Social-cognitive barriers to ethical authorship",
+      "type": "paper",
+      "hop": 0,
+      "provenance": {
+        "kind": "seed_artifact",
+        "source": "Toolkit endnotes",
+        "method": "endnote_parse + metadata_resolution",
+        "source_url": "https://doi.org/10.3389/fpsyg.2015.00877",
+        "note_ids": [
+          "ch07-n024"
+        ],
+        "chapters": [
+          7
+        ],
+        "artifact_types": [
+          "paper_or_article"
+        ],
+        "matched_note_count": 1
+      }
+    },
+    {
+      "id": "https://openalex.org/W2167251605",
+      "label": "When Morality Opposes Justice: Conservatives Have Moral Intuitions that Liberals may not Recognize",
+      "type": "paper",
+      "hop": 0,
+      "provenance": {
+        "kind": "seed_artifact",
+        "source": "Toolkit endnotes",
+        "method": "endnote_parse + metadata_resolution",
+        "source_url": "https://doi.org/10.1007/s11211-007-0034-z",
+        "note_ids": [
+          "ch07-n026",
+          "ch07-n033"
+        ],
+        "chapters": [
+          7
+        ],
+        "artifact_types": [
+          "paper_or_article"
+        ],
+        "matched_note_count": 2
+      }
+    },
+    {
+      "id": "https://openalex.org/W2056224157",
+      "label": "\"From Jerusalem to Jericho\": A study of situational and dispositional variables in helping behavior.",
+      "type": "paper",
+      "hop": 0,
+      "provenance": {
+        "kind": "seed_artifact",
+        "source": "Toolkit endnotes",
+        "method": "endnote_parse + metadata_resolution",
+        "source_url": "https://doi.org/10.1037/h0034449",
+        "note_ids": [
+          "ch07-n029"
+        ],
+        "chapters": [
+          7
+        ],
+        "artifact_types": [
+          "paper_or_article"
+        ],
+        "matched_note_count": 1
+      }
+    },
+    {
+      "id": "https://openalex.org/W2136838186",
+      "label": "The Dishonesty of Honest People: A Theory of Self-Concept Maintenance",
+      "type": "paper",
+      "hop": 0,
+      "provenance": {
+        "kind": "seed_artifact",
+        "source": "Toolkit endnotes",
+        "method": "endnote_parse + metadata_resolution",
+        "source_url": "https://doi.org/10.1509/jmkr.45.6.633",
+        "note_ids": [
+          "ch07-n030"
+        ],
+        "chapters": [
+          7
+        ],
+        "artifact_types": [
+          "paper_or_article"
+        ],
+        "matched_note_count": 1
+      }
+    },
+    {
+      "id": "https://openalex.org/W2143135888",
+      "label": "God Is Watching You",
+      "type": "paper",
+      "hop": 0,
+      "provenance": {
+        "kind": "seed_artifact",
+        "source": "Toolkit endnotes",
+        "method": "endnote_parse + metadata_resolution",
+        "source_url": "https://doi.org/10.1111/j.1467-9280.2007.01983.x",
+        "note_ids": [
+          "ch07-n031"
+        ],
+        "chapters": [
+          7
+        ],
+        "artifact_types": [
+          "paper_or_article"
+        ],
+        "matched_note_count": 1
+      }
+    },
+    {
+      "id": "https://openalex.org/W2029404074",
+      "label": "Effects of deindividuation variables on stealing among Halloween trick-or-treaters.",
+      "type": "paper",
+      "hop": 0,
+      "provenance": {
+        "kind": "seed_artifact",
+        "source": "Toolkit endnotes",
+        "method": "endnote_parse + metadata_resolution",
+        "source_url": "https://doi.org/10.1037/0022-3514.33.2.178",
+        "note_ids": [
+          "ch07-n032"
+        ],
+        "chapters": [
+          7
+        ],
+        "artifact_types": [
+          "paper_or_article"
+        ],
+        "matched_note_count": 1
+      }
+    },
+    {
+      "id": "https://openalex.org/W2117185513",
+      "label": "On the wrong side of the trolley track: neural correlates of relative social valuation",
+      "type": "paper",
+      "hop": 0,
+      "provenance": {
+        "kind": "seed_artifact",
+        "source": "Toolkit endnotes",
+        "method": "endnote_parse + metadata_resolution",
+        "source_url": "https://doi.org/10.1093/scan/nsq011",
+        "note_ids": [
+          "ch07-n035"
+        ],
+        "chapters": [
+          7
+        ],
+        "artifact_types": [
+          "paper_or_article"
+        ],
+        "matched_note_count": 1
+      }
+    },
+    {
+      "id": "https://openalex.org/W2064027736",
+      "label": "Testing Stereotype Threat: Does Anxiety Explain Race and Sex Differences in Achievement?",
+      "type": "paper",
+      "hop": 0,
+      "provenance": {
+        "kind": "seed_artifact",
+        "source": "Toolkit endnotes",
+        "method": "endnote_parse + metadata_resolution",
+        "source_url": "https://doi.org/10.1006/ceps.2000.1052",
+        "note_ids": [
+          "ch07-n036"
+        ],
+        "chapters": [
+          7
+        ],
+        "artifact_types": [
+          "paper_or_article"
+        ],
+        "matched_note_count": 1
+      }
+    },
+    {
+      "id": "https://openalex.org/W3000104531",
+      "label": "Moral Rationalization Contributes More Strongly to Escalation of Unethical Behavior Among Low Moral Identifiers Than Among High Moral Identifiers",
+      "type": "paper",
+      "hop": 0,
+      "provenance": {
+        "kind": "seed_artifact",
+        "source": "Toolkit endnotes",
+        "method": "endnote_parse + metadata_resolution",
+        "source_url": "https://doi.org/10.3389/fpsyg.2019.02912",
+        "note_ids": [
+          "ch07-n037"
+        ],
+        "chapters": [
+          7
+        ],
+        "artifact_types": [
+          "paper_or_article"
+        ],
+        "matched_note_count": 1
+      }
+    },
+    {
+      "id": "https://openalex.org/W2253065173",
+      "label": "Money priming can change people’s thoughts, feelings, motivations, and behaviors: An update on 10 years of experiments.",
+      "type": "paper",
+      "hop": 0,
+      "provenance": {
+        "kind": "seed_artifact",
+        "source": "Toolkit endnotes",
+        "method": "endnote_parse + metadata_resolution",
+        "source_url": "https://doi.org/10.1037/xge0000091",
+        "note_ids": [
+          "ch07-n039"
+        ],
+        "chapters": [
+          7
+        ],
+        "artifact_types": [
+          "paper_or_article"
+        ],
+        "matched_note_count": 1
+      }
+    },
+    {
+      "id": "https://openalex.org/W1989891117",
+      "label": "The Name of the Game: Predictive Power of Reputations versus Situational Labels in Determining Prisoner’s Dilemma Game Moves",
+      "type": "paper",
+      "hop": 0,
+      "provenance": {
+        "kind": "seed_artifact",
+        "source": "Toolkit endnotes",
+        "method": "endnote_parse + metadata_resolution",
+        "source_url": "https://doi.org/10.1177/0146167204264004",
+        "note_ids": [
+          "ch07-n040"
+        ],
+        "chapters": [
+          7
+        ],
+        "artifact_types": [
+          "paper_or_article"
+        ],
+        "matched_note_count": 1
+      }
+    },
+    {
+      "id": "https://openalex.org/W2511456490",
+      "label": "Principles of anti-discriminatory design",
+      "type": "paper",
+      "hop": 0,
+      "provenance": {
+        "kind": "seed_artifact",
+        "source": "Toolkit endnotes",
+        "method": "endnote_parse + metadata_resolution",
+        "source_url": "https://doi.org/10.1109/ethics.2016.7560055",
+        "note_ids": [
+          "ch07-n041"
+        ],
+        "chapters": [
+          7
+        ],
+        "artifact_types": [
+          "conference_artifact"
+        ],
+        "matched_note_count": 1
+      }
+    },
+    {
+      "id": "https://openalex.org/W2028829385",
+      "label": "Validity of psychological assessment: Validation of inferences from persons' responses and performances as scientific inquiry into score meaning.",
+      "type": "paper",
+      "hop": 0,
+      "provenance": {
+        "kind": "seed_artifact",
+        "source": "Toolkit endnotes",
+        "method": "endnote_parse + metadata_resolution",
+        "source_url": "https://doi.org/10.1037/0003-066x.50.9.741",
+        "note_ids": [
+          "ch07-n042"
+        ],
+        "chapters": [
+          7
+        ],
+        "artifact_types": [
+          "paper_or_article"
+        ],
+        "matched_note_count": 1
+      }
+    },
+    {
+      "id": "https://openalex.org/W4211192987",
+      "label": "Value Sensitive Design and Information Systems",
+      "type": "paper",
+      "hop": 0,
+      "provenance": {
+        "kind": "seed_artifact",
+        "source": "Toolkit endnotes",
+        "method": "endnote_parse + metadata_resolution",
+        "source_url": "https://doi.org/10.1007/978-94-007-7844-3_4",
+        "note_ids": [
+          "ch07-n043"
+        ],
+        "chapters": [
+          7
+        ],
+        "artifact_types": [
+          "paper_or_article"
+        ],
+        "matched_note_count": 1
+      }
+    },
+    {
+      "id": "https://openalex.org/W2497080131",
+      "label": "Tales from the Dark Side: Privacy Dark Strategies and Privacy Dark Patterns",
+      "type": "paper",
+      "hop": 0,
+      "provenance": {
+        "kind": "seed_artifact",
+        "source": "Toolkit endnotes",
+        "method": "endnote_parse + metadata_resolution",
+        "source_url": "https://doi.org/10.1515/popets-2016-0038",
+        "note_ids": [
+          "ch07-n044"
+        ],
+        "chapters": [
+          7
+        ],
+        "artifact_types": [
+          "conference_artifact"
+        ],
+        "matched_note_count": 1
+      }
+    },
+    {
+      "id": "https://openalex.org/W2296463440",
+      "label": "Reflective design",
+      "type": "paper",
+      "hop": 0,
+      "provenance": {
+        "kind": "seed_artifact",
+        "source": "Toolkit endnotes",
+        "method": "endnote_parse + metadata_resolution",
+        "source_url": "https://doi.org/10.1145/1094562.1094569",
+        "note_ids": [
+          "ch07-n045"
+        ],
+        "chapters": [
+          7
+        ],
+        "artifact_types": [
+          "conference_artifact"
+        ],
+        "matched_note_count": 1
+      }
+    },
+    {
+      "id": "https://openalex.org/W1989649725",
+      "label": "Was the Gender Identity Disorder of Childhood Diagnosis Introduced into DSM-III as a Backdoor Maneuver to Replace Homosexuality? A Historical Note",
+      "type": "paper",
+      "hop": 0,
+      "provenance": {
+        "kind": "seed_artifact",
+        "source": "Toolkit endnotes",
+        "method": "endnote_parse + metadata_resolution",
+        "source_url": "https://doi.org/10.1080/00926230590475251",
+        "note_ids": [
+          "ch07-n047"
+        ],
+        "chapters": [
+          7
+        ],
+        "artifact_types": [
+          "paper_or_article"
+        ],
+        "matched_note_count": 1
+      }
+    },
+    {
+      "id": "https://openalex.org/W4253467718",
+      "label": "Human-System Integration in the System Development Process",
+      "type": "paper",
+      "hop": 0,
+      "provenance": {
+        "kind": "seed_artifact",
+        "source": "Toolkit endnotes",
+        "method": "endnote_parse + metadata_resolution",
+        "source_url": "https://doi.org/10.17226/11893",
+        "note_ids": [
+          "ch12-n005"
+        ],
+        "chapters": [
+          12
+        ],
+        "artifact_types": [
+          "video"
+        ],
+        "matched_note_count": 1
+      }
+    },
+    {
+      "id": "https://openalex.org/W4252148582",
+      "label": "Design Justice",
+      "type": "paper",
+      "hop": 0,
+      "provenance": {
+        "kind": "seed_artifact",
+        "source": "Toolkit endnotes",
+        "method": "endnote_parse + metadata_resolution",
+        "source_url": "https://doi.org/10.7551/mitpress/12255.001.0001",
+        "note_ids": [
+          "ch12-n006"
+        ],
+        "chapters": [
+          12
+        ],
+        "artifact_types": [
+          "book_or_chapter"
+        ],
+        "matched_note_count": 1
+      }
+    },
+    {
+      "id": "https://openalex.org/W2990951897",
+      "label": "Project-Based Learning",
+      "type": "paper",
+      "hop": 0,
+      "provenance": {
+        "kind": "seed_artifact",
+        "source": "Toolkit endnotes",
+        "method": "endnote_parse + metadata_resolution",
+        "source_url": "https://doi.org/10.1017/cbo9780511816833.020",
+        "note_ids": [
+          "ch12-n008"
+        ],
+        "chapters": [
+          12
+        ],
+        "artifact_types": [
+          "book_or_chapter"
+        ],
+        "matched_note_count": 1
+      }
+    },
+    {
+      "id": "https://openalex.org/W1596731651",
+      "label": "Design-Based Research",
+      "type": "paper",
+      "hop": 0,
+      "provenance": {
+        "kind": "seed_artifact",
+        "source": "Toolkit endnotes",
+        "method": "endnote_parse + metadata_resolution",
+        "source_url": "https://doi.org/10.1017/cbo9781139519526.011",
+        "note_ids": [
+          "ch12-n011"
+        ],
+        "chapters": [
+          12
+        ],
+        "artifact_types": [
+          "book_or_chapter"
+        ],
+        "matched_note_count": 1
+      }
+    },
+    {
+      "id": "https://openalex.org/W2091780073",
+      "label": "Gamification: The Intersection between Behavior Analysis and Game Design Technologies",
+      "type": "paper",
+      "hop": 0,
+      "provenance": {
+        "kind": "seed_artifact",
+        "source": "Toolkit endnotes",
+        "method": "endnote_parse + metadata_resolution",
+        "source_url": "https://doi.org/10.1007/s40614-014-0006-1",
+        "note_ids": [
+          "ch15-n003"
+        ],
+        "chapters": [
+          15
+        ],
+        "artifact_types": [
+          "paper_or_article"
+        ],
+        "matched_note_count": 1
+      }
+    },
+    {
+      "id": "https://openalex.org/W1756392794",
+      "label": "A Behavioral Perspective on College Teaching",
+      "type": "paper",
+      "hop": 0,
+      "provenance": {
+        "kind": "seed_artifact",
+        "source": "Toolkit endnotes",
+        "method": "endnote_parse + metadata_resolution",
+        "source_url": "https://doi.org/10.1007/bf03392578",
+        "note_ids": [
+          "ch15-n005"
+        ],
+        "chapters": [
+          15
+        ],
+        "artifact_types": [
+          "paper_or_article"
+        ],
+        "matched_note_count": 1
+      }
+    },
+    {
+      "id": "manual:goodell2020-competencies",
+      "label": "Competencies of Learning Engineering Teams and Team Members",
+      "type": "paper",
+      "hop": 0,
+      "provenance": {
+        "kind": "manual_seed",
+        "source": "user_added_seed",
+        "method": "manual_inclusion",
+        "seed_label": "Goodell, J., Kessler, A., Kurzweil, D., Kolodner, J. (2020). Competencies of Learning Engineering Teams and Team Members. In IEEE ICICLE Proceedings of the 2019 Conference on Learning Engineering, Arlington, VA, May 2019.",
+        "source_url": "https://sagroups.ieee.org/icicle/proceedings/"
+      }
+    },
+    {
+      "id": "https://openalex.org/W178016035",
+      "label": "Change by design : how design thinking transforms organizations and inspires innovation",
+      "type": "paper",
+      "hop": 1,
+      "provenance": {
+        "kind": "one_hop_expansion",
+        "source": "OpenAlex referenced_works",
+        "method": "seed_to_reference_expansion",
+        "source_url": "http://bvbr.bib-bvb.de:8991/F?func=service&amp;doc_library=BVB01&amp;local_base=BVB01&amp;doc_number=018626407&amp;sequence=000004&amp;line_number=0001&amp;func_code=DB_RECORDS&amp;service_type=MEDIA",
+        "parent_seed_ids": [
+          "https://openalex.org/W2010961314",
+          "https://openalex.org/W2979239620",
+          "https://openalex.org/W298147291"
+        ],
+        "parent_seed_count": 3
+      }
+    },
+    {
+      "id": "https://openalex.org/W12309149",
+      "label": "Seeing language learning inside the math: Cognitive analysis yields transfer",
+      "type": "paper",
+      "hop": 1,
+      "provenance": {
+        "kind": "one_hop_expansion",
+        "source": "OpenAlex referenced_works",
+        "method": "seed_to_reference_expansion",
+        "source_url": "https://escholarship.org/uc/item/2n8407gq",
+        "parent_seed_ids": [
+          "https://openalex.org/W2106779500",
+          "https://openalex.org/W2148811928"
+        ],
+        "parent_seed_count": 2
+      }
+    },
+    {
+      "id": "https://openalex.org/W52727769",
+      "label": "Teaching every student in the digital age: universal design for learning",
+      "type": "paper",
+      "hop": 1,
+      "provenance": {
+        "kind": "one_hop_expansion",
+        "source": "OpenAlex referenced_works",
+        "method": "seed_to_reference_expansion",
+        "source_url": "https://doi.org/10.5860/choice.40-3555",
+        "parent_seed_ids": [
+          "https://openalex.org/W2789532139",
+          "https://openalex.org/W3269667"
+        ],
+        "parent_seed_count": 2
+      }
+    },
+    {
+      "id": "https://openalex.org/W1523643708",
+      "label": "Individual and Contextual Influences on Academic Dishonesty: A Multicampus Investigation",
+      "type": "paper",
+      "hop": 1,
+      "provenance": {
+        "kind": "one_hop_expansion",
+        "source": "OpenAlex referenced_works",
+        "method": "seed_to_reference_expansion",
+        "source_url": "https://doi.org/10.1023/a:1024954224675",
+        "parent_seed_ids": [
+          "https://openalex.org/W1488946506",
+          "https://openalex.org/W2136838186"
+        ],
+        "parent_seed_count": 2
+      }
+    },
+    {
+      "id": "https://openalex.org/W13581958",
+      "label": "The Design of Self-explanation Prompts: The Fit Hypothesis",
+      "type": "paper",
+      "hop": 1,
+      "provenance": {
+        "kind": "one_hop_expansion",
+        "source": "OpenAlex referenced_works",
+        "method": "seed_to_reference_expansion",
+        "source_url": "https://escholarship.org/content/qt5ws2z6r4/qt5ws2z6r4.pdf?t=op2l3w",
+        "parent_seed_ids": [
+          "https://openalex.org/W2106779500"
+        ],
+        "parent_seed_count": 1
+      }
+    },
+    {
+      "id": "https://openalex.org/W14377909",
+      "label": "Is Self-Explanation Always Better? The Effects of Adding Self-Explanation Prompts to an English Grammar Tutor",
+      "type": "paper",
+      "hop": 1,
+      "provenance": {
+        "kind": "one_hop_expansion",
+        "source": "OpenAlex referenced_works",
+        "method": "seed_to_reference_expansion",
+        "source_url": "https://escholarship.org/content/qt5cj8m667/qt5cj8m667.pdf?t=op2kw2",
+        "parent_seed_ids": [
+          "https://openalex.org/W2106779500"
+        ],
+        "parent_seed_count": 1
+      }
+    },
+    {
+      "id": "https://openalex.org/W22297218",
+      "label": "The Organization of Behavior",
+      "type": "paper",
+      "hop": 1,
+      "provenance": {
+        "kind": "one_hop_expansion",
+        "source": "OpenAlex referenced_works",
+        "method": "seed_to_reference_expansion",
+        "source_url": "https://doi.org/10.4324/9781410612403",
+        "parent_seed_ids": [
+          "https://openalex.org/W2106779500"
+        ],
+        "parent_seed_count": 1
+      }
+    },
+    {
+      "id": "https://openalex.org/W37106624",
+      "label": "Explaining Self-Explaining: A Contrast between Content and Generation",
+      "type": "paper",
+      "hop": 1,
+      "provenance": {
+        "kind": "one_hop_expansion",
+        "source": "OpenAlex referenced_works",
+        "method": "seed_to_reference_expansion",
+        "source_url": "http://einstein.pslc.cs.cmu.edu/uploads/mypslc/publications/hausmannvanlehn2007_final.pdf",
+        "parent_seed_ids": [
+          "https://openalex.org/W2106779500"
+        ],
+        "parent_seed_count": 1
+      }
+    },
+    {
+      "id": "https://openalex.org/W82178697",
+      "label": "Introduction to Multiple Representations: Their Importance in Biology and Biological Education",
+      "type": "paper",
+      "hop": 1,
+      "provenance": {
+        "kind": "one_hop_expansion",
+        "source": "OpenAlex referenced_works",
+        "method": "seed_to_reference_expansion",
+        "source_url": "https://doi.org/10.1007/978-94-007-4192-8_1",
+        "parent_seed_ids": [
+          "https://openalex.org/W3049252626"
+        ],
+        "parent_seed_count": 1
+      }
+    },
+    {
+      "id": "https://openalex.org/W98229544",
+      "label": "An Alternative Reconceptualization of Procedural and Conceptual Knowledge.",
+      "type": "paper",
+      "hop": 1,
+      "provenance": {
+        "kind": "one_hop_expansion",
+        "source": "OpenAlex referenced_works",
+        "method": "seed_to_reference_expansion",
+        "source_url": "https://eric.ed.gov/?id=EJ757032",
+        "parent_seed_ids": [
+          "https://openalex.org/W3049252626"
+        ],
+        "parent_seed_count": 1
+      }
+    },
+    {
+      "id": "https://openalex.org/W131038430",
+      "label": "Should There Be a Three-Strikes Rule Against Pure Discovery Learning?",
+      "type": "paper",
+      "hop": 1,
+      "provenance": {
+        "kind": "one_hop_expansion",
+        "source": "OpenAlex referenced_works",
+        "method": "seed_to_reference_expansion",
+        "source_url": "https://doi.org/10.1037/0003-066x.59.1.14",
+        "parent_seed_ids": [
+          "https://openalex.org/W3049252626"
+        ],
+        "parent_seed_count": 1
+      }
+    },
+    {
+      "id": "https://openalex.org/W140564096",
+      "label": "Introduction: Macro, Submicro and Symbolic Representations and the Relationship Between Them: Key Models in Chemical Education",
+      "type": "paper",
+      "hop": 1,
+      "provenance": {
+        "kind": "one_hop_expansion",
+        "source": "OpenAlex referenced_works",
+        "method": "seed_to_reference_expansion",
+        "source_url": "https://doi.org/10.1007/978-1-4020-8872-8_1",
+        "parent_seed_ids": [
+          "https://openalex.org/W3049252626"
+        ],
+        "parent_seed_count": 1
+      }
+    },
+    {
+      "id": "https://openalex.org/W8865727",
+      "label": "The Impact of Instructional Technology on Student Academic Achievement in Reading and Mathematics.",
+      "type": "paper",
+      "hop": 1,
+      "provenance": {
+        "kind": "one_hop_expansion",
+        "source": "OpenAlex referenced_works",
+        "method": "seed_to_reference_expansion",
+        "source_url": "https://www.eric.ed.gov/?id=EJ584291",
+        "parent_seed_ids": [
+          "https://openalex.org/W2999700099"
+        ],
+        "parent_seed_count": 1
+      }
+    },
+    {
+      "id": "https://openalex.org/W15859922",
+      "label": "Unpacking Pedagogical Content Knowledge: Conceptualizing and Measuring Teachers' Topic-Specific Knowledge of Students",
+      "type": "paper",
+      "hop": 1,
+      "provenance": {
+        "kind": "one_hop_expansion",
+        "source": "OpenAlex referenced_works",
+        "method": "seed_to_reference_expansion",
+        "source_url": "https://doi.org/10.5951/jresematheduc.39.4.0372",
+        "parent_seed_ids": [
+          "https://openalex.org/W2999700099"
+        ],
+        "parent_seed_count": 1
+      }
+    },
+    {
+      "id": "https://openalex.org/W66743196",
+      "label": "Model Specification for Cognitive Assessment of Proportional Reasoning",
+      "type": "paper",
+      "hop": 1,
+      "provenance": {
+        "kind": "one_hop_expansion",
+        "source": "OpenAlex referenced_works",
+        "method": "seed_to_reference_expansion",
+        "source_url": "https://figshare.com/articles/journal_contribution/Model_Specification_for_Cognitive_Assessment_of_Proportional_Reasoning/6586751",
+        "parent_seed_ids": [
+          "https://openalex.org/W2999700099"
+        ],
+        "parent_seed_count": 1
+      }
+    },
+    {
+      "id": "https://openalex.org/W110184136",
+      "label": "Barriers to ITS Adoption: A Systematic Mapping Study",
+      "type": "paper",
+      "hop": 1,
+      "provenance": {
+        "kind": "one_hop_expansion",
+        "source": "OpenAlex referenced_works",
+        "method": "seed_to_reference_expansion",
+        "source_url": "https://doi.org/10.1007/978-3-319-07221-0_74",
+        "parent_seed_ids": [
+          "https://openalex.org/W2999700099"
+        ],
+        "parent_seed_count": 1
+      }
+    },
+    {
+      "id": "https://openalex.org/W113430219",
+      "label": "Improving Mathematics Teaching.",
+      "type": "paper",
+      "hop": 1,
+      "provenance": {
+        "kind": "one_hop_expansion",
+        "source": "OpenAlex referenced_works",
+        "method": "seed_to_reference_expansion",
+        "source_url": "https://www.researchgate.net/profile/James_Stigler/publication/228731157_Improving_mathematics_teaching/links/02e7e529e9b1081f6f000000.pdf",
+        "parent_seed_ids": [
+          "https://openalex.org/W2999700099"
+        ],
+        "parent_seed_count": 1
+      }
+    },
+    {
+      "id": "https://openalex.org/W32828536",
+      "label": "General and Efficient Cognitive Model Discovery Using a Simulated Student",
+      "type": "paper",
+      "hop": 1,
+      "provenance": {
+        "kind": "one_hop_expansion",
+        "source": "OpenAlex referenced_works",
+        "method": "seed_to_reference_expansion",
+        "source_url": "https://escholarship.org/content/qt267572ft/qt267572ft.pdf?t=os600u",
+        "parent_seed_ids": [
+          "https://openalex.org/W2148811928"
+        ],
+        "parent_seed_count": 1
+      }
+    },
+    {
+      "id": "https://openalex.org/W796858236",
+      "label": "MOOCs and Technology to Advance Learning and Learning Research Opening Statement",
+      "type": "paper",
+      "hop": 1,
+      "provenance": {
+        "kind": "one_hop_expansion",
+        "source": "OpenAlex referenced_works",
+        "method": "seed_to_reference_expansion",
+        "source_url": "https://doi.org/10.1145/2601337",
+        "parent_seed_ids": [
+          "https://openalex.org/W2148811928"
+        ],
+        "parent_seed_count": 1
+      }
+    },
+    {
+      "id": "https://openalex.org/W1492802215",
+      "label": "How Learning Works : Seven Research-Based Principles for Smart Teaching",
+      "type": "paper",
+      "hop": 1,
+      "provenance": {
+        "kind": "one_hop_expansion",
+        "source": "OpenAlex referenced_works",
+        "method": "seed_to_reference_expansion",
+        "source_url": "https://bvbr.bib-bvb.de:443/F?func=service&doc_library=BVB01&local_base=BVB01&doc_number=020217167&sequence=000001&line_number=0001&func_code=DB_RECORDS&service_type=MEDIA",
+        "parent_seed_ids": [
+          "https://openalex.org/W2148811928"
+        ],
+        "parent_seed_count": 1
+      }
+    },
+    {
+      "id": "https://openalex.org/W1507470979",
+      "label": "Cognitive Task Analysis in Service of Intelligent Tutoring System Design: A Case Study in Statistics",
+      "type": "paper",
+      "hop": 1,
+      "provenance": {
+        "kind": "one_hop_expansion",
+        "source": "OpenAlex referenced_works",
+        "method": "seed_to_reference_expansion",
+        "source_url": "https://doi.org/10.1007/3-540-68716-5_29",
+        "parent_seed_ids": [
+          "https://openalex.org/W2148811928"
+        ],
+        "parent_seed_count": 1
+      }
+    },
+    {
+      "id": "https://openalex.org/W318310530",
+      "label": "Cognitive Function Analysis",
+      "type": "paper",
+      "hop": 1,
+      "provenance": {
+        "kind": "one_hop_expansion",
+        "source": "OpenAlex referenced_works",
+        "method": "seed_to_reference_expansion",
+        "source_url": "http://ci.nii.ac.jp/ncid/BA50495281",
+        "parent_seed_ids": [
+          "https://openalex.org/W1597325177"
+        ],
+        "parent_seed_count": 1
+      }
+    },
+    {
+      "id": "https://openalex.org/W1569869372",
+      "label": "HUMAN ENGINEERING FOR AN EFFECTIVE AIR-NAVIGATION AND TRAFFIC-CONTROL SYSTEM, AND APPENDIXES 1 THRU 3",
+      "type": "paper",
+      "hop": 1,
+      "provenance": {
+        "kind": "one_hop_expansion",
+        "source": "OpenAlex referenced_works",
+        "method": "seed_to_reference_expansion",
+        "source_url": "http://oai.dtic.mil/oai/oai?&amp;verb=getRecord&amp;metadataPrefix=html&amp;identifier=ADB815893",
+        "parent_seed_ids": [
+          "https://openalex.org/W1597325177"
+        ],
+        "parent_seed_count": 1
+      }
+    },
+    {
+      "id": "https://openalex.org/W1825507529",
+      "label": "Society of mind",
+      "type": "paper",
+      "hop": 1,
+      "provenance": {
+        "kind": "one_hop_expansion",
+        "source": "OpenAlex referenced_works",
+        "method": "seed_to_reference_expansion",
+        "source_url": "https://doi.org/10.1016/0004-3702(91)90036-j",
+        "parent_seed_ids": [
+          "https://openalex.org/W1597325177"
+        ],
+        "parent_seed_count": 1
+      }
+    },
+    {
+      "id": "https://openalex.org/W1964011508",
+      "label": "Boston Studies in the Philosophy of Science",
+      "type": "paper",
+      "hop": 1,
+      "provenance": {
+        "kind": "one_hop_expansion",
+        "source": "OpenAlex referenced_works",
+        "method": "seed_to_reference_expansion",
+        "source_url": "https://doi.org/10.1007/978-94-010-3381-7",
+        "parent_seed_ids": [
+          "https://openalex.org/W1597325177"
+        ],
+        "parent_seed_count": 1
+      }
+    },
+    {
+      "id": "https://openalex.org/W2029927381",
+      "label": "The Cab Technology Integration Lab: A Locomotive Simulator for Human Factors Research",
+      "type": "paper",
+      "hop": 1,
+      "provenance": {
+        "kind": "one_hop_expansion",
+        "source": "OpenAlex referenced_works",
+        "method": "seed_to_reference_expansion",
+        "source_url": "https://doi.org/10.1177/154193121005402419",
+        "parent_seed_ids": [
+          "https://openalex.org/W1597325177"
+        ],
+        "parent_seed_count": 1
+      }
+    },
+    {
+      "id": "https://openalex.org/W166864907",
+      "label": "Unpacking the design process in design-based research",
+      "type": "paper",
+      "hop": 1,
+      "provenance": {
+        "kind": "one_hop_expansion",
+        "source": "OpenAlex referenced_works",
+        "method": "seed_to_reference_expansion",
+        "source_url": "https://dblp.uni-trier.de/db/conf/icls/icls2010-2.html#JanCT10",
+        "parent_seed_ids": [
+          "https://openalex.org/W2132242306"
+        ],
+        "parent_seed_count": 1
+      }
+    },
+    {
+      "id": "https://openalex.org/W349374990",
+      "label": "Publish or Perish",
+      "type": "paper",
+      "hop": 1,
+      "provenance": {
+        "kind": "one_hop_expansion",
+        "source": "OpenAlex referenced_works",
+        "method": "seed_to_reference_expansion",
+        "source_url": "https://www.harzing.com/download/jqandpublish.pdf",
+        "parent_seed_ids": [
+          "https://openalex.org/W2132242306"
+        ],
+        "parent_seed_count": 1
+      }
+    },
+    {
+      "id": "https://openalex.org/W1448329166",
+      "label": "Doing Design as a Part of Doing Research",
+      "type": "paper",
+      "hop": 1,
+      "provenance": {
+        "kind": "one_hop_expansion",
+        "source": "OpenAlex referenced_works",
+        "method": "seed_to_reference_expansion",
+        "source_url": "https://doi.org/10.1007/978-3-7643-8472-2_6",
+        "parent_seed_ids": [
+          "https://openalex.org/W2132242306"
+        ],
+        "parent_seed_count": 1
+      }
+    },
+    {
+      "id": "https://openalex.org/W1553185521",
+      "label": "Proceedings of the 6th international conference on Learning sciences",
+      "type": "paper",
+      "hop": 1,
+      "provenance": {
+        "kind": "one_hop_expansion",
+        "source": "OpenAlex referenced_works",
+        "method": "seed_to_reference_expansion",
+        "source_url": "https://dl.acm.org/citation.cfm?id=1149126",
+        "parent_seed_ids": [
+          "https://openalex.org/W2106779500",
+          "https://openalex.org/W2132242306"
+        ],
+        "parent_seed_count": 2
+      }
+    },
+    {
+      "id": "https://openalex.org/W1575772882",
+      "label": "Design-based research and doctoral students: Guidelines for preparing a dissertation proposal",
+      "type": "paper",
+      "hop": 1,
+      "provenance": {
+        "kind": "one_hop_expansion",
+        "source": "OpenAlex referenced_works",
+        "method": "seed_to_reference_expansion",
+        "source_url": "https://researchrepository.murdoch.edu.au/id/eprint/6762/",
+        "parent_seed_ids": [
+          "https://openalex.org/W2132242306"
+        ],
+        "parent_seed_count": 1
+      }
+    },
+    {
+      "id": "https://openalex.org/W193458285",
+      "label": "The Fate of Progressive Language Policies and Practices.",
+      "type": "paper",
+      "hop": 1,
+      "provenance": {
+        "kind": "one_hop_expansion",
+        "source": "OpenAlex referenced_works",
+        "method": "seed_to_reference_expansion",
+        "source_url": "http://files.eric.ed.gov/fulltext/ED454521.pdf",
+        "parent_seed_ids": [
+          "https://openalex.org/W2159644498"
+        ],
+        "parent_seed_count": 1
+      }
+    },
+    {
+      "id": "https://openalex.org/W257479822",
+      "label": "Basic Writing and Policy Reform: Why We Keep Talking Past Each Other,",
+      "type": "paper",
+      "hop": 1,
+      "provenance": {
+        "kind": "one_hop_expansion",
+        "source": "OpenAlex referenced_works",
+        "method": "seed_to_reference_expansion",
+        "source_url": "https://doi.org/10.37514/jbw-j.2002.21.2.02",
+        "parent_seed_ids": [
+          "https://openalex.org/W2159644498"
+        ],
+        "parent_seed_count": 1
+      }
+    },
+    {
+      "id": "https://openalex.org/W605686753",
+      "label": "The Social Mind: Language, Ideology, and Social Practice",
+      "type": "paper",
+      "hop": 1,
+      "provenance": {
+        "kind": "one_hop_expansion",
+        "source": "OpenAlex referenced_works",
+        "method": "seed_to_reference_expansion",
+        "source_url": "https://doi.org/10.18848/978-1-61229-369-1/cgp",
+        "parent_seed_ids": [
+          "https://openalex.org/W2159644498"
+        ],
+        "parent_seed_count": 1
+      }
+    },
+    {
+      "id": "https://openalex.org/W1498025178",
+      "label": "Situated Language and Learning: A Critique of Traditional Schooling",
+      "type": "paper",
+      "hop": 1,
+      "provenance": {
+        "kind": "one_hop_expansion",
+        "source": "OpenAlex referenced_works",
+        "method": "seed_to_reference_expansion",
+        "source_url": "http://ci.nii.ac.jp/ncid/BA69057268",
+        "parent_seed_ids": [
+          "https://openalex.org/W2159644498"
+        ],
+        "parent_seed_count": 1
+      }
+    },
+    {
+      "id": "https://openalex.org/W1512177921",
+      "label": "Linguistic Cultural Capital and Basic Writers",
+      "type": "paper",
+      "hop": 1,
+      "provenance": {
+        "kind": "one_hop_expansion",
+        "source": "OpenAlex referenced_works",
+        "method": "seed_to_reference_expansion",
+        "source_url": "https://doi.org/10.37514/jbw-j.2002.21.1.03",
+        "parent_seed_ids": [
+          "https://openalex.org/W2159644498"
+        ],
+        "parent_seed_count": 1
+      }
+    },
+    {
+      "id": "https://openalex.org/W1578037146",
+      "label": "The ten faces of innovation : IDEO's strategies for beating the devil's advocate & driving creativity throughout your organization",
+      "type": "paper",
+      "hop": 1,
+      "provenance": {
+        "kind": "one_hop_expansion",
+        "source": "OpenAlex referenced_works",
+        "method": "seed_to_reference_expansion",
+        "source_url": "http://ci.nii.ac.jp/ncid/BA74127817",
+        "parent_seed_ids": [
+          "https://openalex.org/W2010961314"
+        ],
+        "parent_seed_count": 1
+      }
+    },
+    {
+      "id": "https://openalex.org/W2483700334",
+      "label": "Linus Pauling — Selected Scientific Papers",
+      "type": "paper",
+      "hop": 1,
+      "provenance": {
+        "kind": "one_hop_expansion",
+        "source": "OpenAlex referenced_works",
+        "method": "seed_to_reference_expansion",
+        "source_url": "https://doi.org/10.1142/3213-vol1",
+        "parent_seed_ids": [
+          "https://openalex.org/W2010961314"
+        ],
+        "parent_seed_count": 1
+      }
+    },
+    {
+      "id": "https://openalex.org/W2497252072",
+      "label": "Linus Pauling — Selected Scientific Papers",
+      "type": "paper",
+      "hop": 1,
+      "provenance": {
+        "kind": "one_hop_expansion",
+        "source": "OpenAlex referenced_works",
+        "method": "seed_to_reference_expansion",
+        "source_url": "https://doi.org/10.1142/3213-vol2",
+        "parent_seed_ids": [
+          "https://openalex.org/W2010961314"
+        ],
+        "parent_seed_count": 1
+      }
+    },
+    {
+      "id": "https://openalex.org/W5551006",
+      "label": "Towards a Taxonomy of Service Design Methods and Tools",
+      "type": "paper",
+      "hop": 1,
+      "provenance": {
+        "kind": "one_hop_expansion",
+        "source": "OpenAlex referenced_works",
+        "method": "seed_to_reference_expansion",
+        "source_url": "https://doi.org/10.1007/978-3-642-36356-6_16",
+        "parent_seed_ids": [
+          "https://openalex.org/W298147291"
+        ],
+        "parent_seed_count": 1
+      }
+    },
+    {
+      "id": "https://openalex.org/W17805075",
+      "label": "Designing services that deliver",
+      "type": "paper",
+      "hop": 1,
+      "provenance": {
+        "kind": "one_hop_expansion",
+        "source": "OpenAlex referenced_works",
+        "method": "seed_to_reference_expansion",
+        "source_url": "https://strategicdesignthinking.files.wordpress.com/2012/11/hbr-shostackpdf.pdf",
+        "parent_seed_ids": [
+          "https://openalex.org/W298147291"
+        ],
+        "parent_seed_count": 1
+      }
+    },
+    {
+      "id": "https://openalex.org/W100888490",
+      "label": "Find a Book! Unpacking Customer Journeys at Academic Library",
+      "type": "paper",
+      "hop": 1,
+      "provenance": {
+        "kind": "one_hop_expansion",
+        "source": "OpenAlex referenced_works",
+        "method": "seed_to_reference_expansion",
+        "source_url": "http://citeseerx.ist.psu.edu/viewdoc/summary?doi=10.1.1.671.74",
+        "parent_seed_ids": [
+          "https://openalex.org/W298147291"
+        ],
+        "parent_seed_count": 1
+      }
+    },
+    {
+      "id": "https://openalex.org/W389731278",
+      "label": "Studying co-creation in practice",
+      "type": "paper",
+      "hop": 1,
+      "provenance": {
+        "kind": "one_hop_expansion",
+        "source": "OpenAlex referenced_works",
+        "method": "seed_to_reference_expansion",
+        "source_url": "http://ci.nii.ac.jp/ncid/BB08427622",
+        "parent_seed_ids": [
+          "https://openalex.org/W298147291"
+        ],
+        "parent_seed_count": 1
+      }
+    },
+    {
+      "id": "https://openalex.org/W65150484",
+      "label": "Bringing Service Design to Service Sciences, Management and Engineering",
+      "type": "paper",
+      "hop": 1,
+      "provenance": {
+        "kind": "one_hop_expansion",
+        "source": "OpenAlex referenced_works",
+        "method": "seed_to_reference_expansion",
+        "source_url": "https://doi.org/10.1007/978-0-387-76578-5_50",
+        "parent_seed_ids": [
+          "https://openalex.org/W2763931615"
+        ],
+        "parent_seed_count": 1
+      }
+    },
+    {
+      "id": "https://openalex.org/W111285361",
+      "label": "Using the crowd as an innovation partner.",
+      "type": "paper",
+      "hop": 1,
+      "provenance": {
+        "kind": "one_hop_expansion",
+        "source": "OpenAlex referenced_works",
+        "method": "seed_to_reference_expansion",
+        "source_url": "https://pubmed.ncbi.nlm.nih.gov/23593768",
+        "parent_seed_ids": [
+          "https://openalex.org/W2763931615"
+        ],
+        "parent_seed_count": 1
+      }
+    },
+    {
+      "id": "https://openalex.org/W418871515",
+      "label": "Co-creative Practices in Service Innovation",
+      "type": "paper",
+      "hop": 1,
+      "provenance": {
+        "kind": "one_hop_expansion",
+        "source": "OpenAlex referenced_works",
+        "method": "seed_to_reference_expansion",
+        "source_url": "https://doi.org/10.1007/978-1-4471-6590-3_25",
+        "parent_seed_ids": [
+          "https://openalex.org/W2763931615"
+        ],
+        "parent_seed_count": 1
+      }
+    },
+    {
+      "id": "https://openalex.org/W605593526",
+      "label": "Qualitative Research from Start to Finish",
+      "type": "paper",
+      "hop": 1,
+      "provenance": {
+        "kind": "one_hop_expansion",
+        "source": "OpenAlex referenced_works",
+        "method": "seed_to_reference_expansion",
+        "source_url": "http://ci.nii.ac.jp/ncid/BB0525667X",
+        "parent_seed_ids": [
+          "https://openalex.org/W2763931615"
+        ],
+        "parent_seed_count": 1
+      }
+    },
+    {
+      "id": "https://openalex.org/W624248312",
+      "label": "Defining the nonprofit sector: a cross-national analysis",
+      "type": "paper",
+      "hop": 1,
+      "provenance": {
+        "kind": "one_hop_expansion",
+        "source": "OpenAlex referenced_works",
+        "method": "seed_to_reference_expansion",
+        "source_url": "https://doi.org/10.5860/choice.35-0382",
+        "parent_seed_ids": [
+          "https://openalex.org/W2763931615"
+        ],
+        "parent_seed_count": 1
+      }
+    },
+    {
+      "id": "https://openalex.org/W1541539698",
+      "label": "Evolving explanations in high school biology",
+      "type": "paper",
+      "hop": 1,
+      "provenance": {
+        "kind": "one_hop_expansion",
+        "source": "OpenAlex referenced_works",
+        "method": "seed_to_reference_expansion",
+        "source_url": "https://files.eric.ed.gov/fulltext/ED409165.pdf",
+        "parent_seed_ids": [
+          "https://openalex.org/W2042309404"
+        ],
+        "parent_seed_count": 1
+      }
+    },
+    {
+      "id": "https://openalex.org/W1557276260",
+      "label": "Studying Context: A Comparison of Activity Theory, Situated Action Models, and Distributed Cognition",
+      "type": "paper",
+      "hop": 1,
+      "provenance": {
+        "kind": "one_hop_expansion",
+        "source": "OpenAlex referenced_works",
+        "method": "seed_to_reference_expansion",
+        "source_url": "https://doi.org/10.7551/mitpress/2137.003.0008",
+        "parent_seed_ids": [
+          "https://openalex.org/W2042309404"
+        ],
+        "parent_seed_count": 1
+      }
+    },
+    {
+      "id": "https://openalex.org/W1983500742",
+      "label": "Learning theory in practice: case studies of learner-centered design",
+      "type": "paper",
+      "hop": 1,
+      "provenance": {
+        "kind": "one_hop_expansion",
+        "source": "OpenAlex referenced_works",
+        "method": "seed_to_reference_expansion",
+        "source_url": "https://doi.org/10.1145/238386.238476",
+        "parent_seed_ids": [
+          "https://openalex.org/W2042309404"
+        ],
+        "parent_seed_count": 1
+      }
+    },
+    {
+      "id": "https://openalex.org/W2003895144",
+      "label": "The design of guided learner-adaptable scaffolding in interactive learning environments",
+      "type": "paper",
+      "hop": 1,
+      "provenance": {
+        "kind": "one_hop_expansion",
+        "source": "OpenAlex referenced_works",
+        "method": "seed_to_reference_expansion",
+        "source_url": "https://doi.org/10.1145/274644.274672",
+        "parent_seed_ids": [
+          "https://openalex.org/W2042309404"
+        ],
+        "parent_seed_count": 1
+      }
+    },
+    {
+      "id": "https://openalex.org/W2033751659",
+      "label": "Key to the information highway",
+      "type": "paper",
+      "hop": 1,
+      "provenance": {
+        "kind": "one_hop_expansion",
+        "source": "OpenAlex referenced_works",
+        "method": "seed_to_reference_expansion",
+        "source_url": "https://doi.org/10.1145/227210.227219",
+        "parent_seed_ids": [
+          "https://openalex.org/W2042309404"
+        ],
+        "parent_seed_count": 1
+      }
+    },
+    {
+      "id": "https://openalex.org/W73914785",
+      "label": "Universal Design for Learning in Postsecondary Education: Reflections on Principles and their Application",
+      "type": "paper",
+      "hop": 1,
+      "provenance": {
+        "kind": "one_hop_expansion",
+        "source": "OpenAlex referenced_works",
+        "method": "seed_to_reference_expansion",
+        "source_url": "http://files.eric.ed.gov/fulltext/EJ844630.pdf",
+        "parent_seed_ids": [
+          "https://openalex.org/W2789532139"
+        ],
+        "parent_seed_count": 1
+      }
+    },
+    {
+      "id": "https://openalex.org/W186415708",
+      "label": "Student Perceptions of Faculty Implementation of Universal Design for Learning.",
+      "type": "paper",
+      "hop": 1,
+      "provenance": {
+        "kind": "one_hop_expansion",
+        "source": "OpenAlex referenced_works",
+        "method": "seed_to_reference_expansion",
+        "source_url": "http://files.eric.ed.gov/fulltext/EJ941729.pdf",
+        "parent_seed_ids": [
+          "https://openalex.org/W2789532139"
+        ],
+        "parent_seed_count": 1
+      }
+    },
+    {
+      "id": "https://openalex.org/W576996266",
+      "label": "The Universally Designed Classroom: Accessible Curriculum and Digital Technologies.",
+      "type": "paper",
+      "hop": 1,
+      "provenance": {
+        "kind": "one_hop_expansion",
+        "source": "OpenAlex referenced_works",
+        "method": "seed_to_reference_expansion",
+        "source_url": "https://openalex.org/W576996266",
+        "parent_seed_ids": [
+          "https://openalex.org/W2789532139"
+        ],
+        "parent_seed_count": 1
+      }
+    },
+    {
+      "id": "https://openalex.org/W1494819082",
+      "label": "Universal Design for Learning: Application for technology-enhanced learning",
+      "type": "paper",
+      "hop": 1,
+      "provenance": {
+        "kind": "one_hop_expansion",
+        "source": "OpenAlex referenced_works",
+        "method": "seed_to_reference_expansion",
+        "source_url": "https://commons.vccs.edu/inquiry/vol15/iss1/5",
+        "parent_seed_ids": [
+          "https://openalex.org/W2789532139"
+        ],
+        "parent_seed_count": 1
+      }
+    },
+    {
+      "id": "https://openalex.org/W38915525",
+      "label": "Handbook of Design in Educational Technology",
+      "type": "paper",
+      "hop": 1,
+      "provenance": {
+        "kind": "one_hop_expansion",
+        "source": "OpenAlex referenced_works",
+        "method": "seed_to_reference_expansion",
+        "source_url": "https://doi.org/10.4324/9780203075227",
+        "parent_seed_ids": [
+          "https://openalex.org/W2022041506"
+        ],
+        "parent_seed_count": 1
+      }
+    },
+    {
+      "id": "https://openalex.org/W122653949",
+      "label": "Instrumentation and Innovation in Design Experiments: Taking the Turn Towards Efficiency",
+      "type": "paper",
+      "hop": 1,
+      "provenance": {
+        "kind": "one_hop_expansion",
+        "source": "OpenAlex referenced_works",
+        "method": "seed_to_reference_expansion",
+        "source_url": "https://doi.org/10.4324/9781315759593-13",
+        "parent_seed_ids": [
+          "https://openalex.org/W2022041506"
+        ],
+        "parent_seed_count": 1
+      }
+    },
+    {
+      "id": "https://openalex.org/W412355120",
+      "label": "Design Research for Sustained Innovation",
+      "type": "paper",
+      "hop": 1,
+      "provenance": {
+        "kind": "one_hop_expansion",
+        "source": "OpenAlex referenced_works",
+        "method": "seed_to_reference_expansion",
+        "source_url": "https://www.jstage.jst.go.jp/article/jcss/9/3/9_3_321/_pdf",
+        "parent_seed_ids": [
+          "https://openalex.org/W2022041506"
+        ],
+        "parent_seed_count": 1
+      }
+    },
+    {
+      "id": "https://openalex.org/W561727167",
+      "label": "Design Research on Learning and Thinking in Educational Settings",
+      "type": "paper",
+      "hop": 1,
+      "provenance": {
+        "kind": "one_hop_expansion",
+        "source": "OpenAlex referenced_works",
+        "method": "seed_to_reference_expansion",
+        "source_url": "https://doi.org/10.4324/9780203849576",
+        "parent_seed_ids": [
+          "https://openalex.org/W2022041506"
+        ],
+        "parent_seed_count": 1
+      }
+    },
+    {
+      "id": "https://openalex.org/W612243507",
+      "label": "Review of research in education",
+      "type": "paper",
+      "hop": 1,
+      "provenance": {
+        "kind": "one_hop_expansion",
+        "source": "OpenAlex referenced_works",
+        "method": "seed_to_reference_expansion",
+        "source_url": "https://ci.nii.ac.jp/ncid/BA49963247",
+        "parent_seed_ids": [
+          "https://openalex.org/W2022041506",
+          "https://openalex.org/W2106779500"
+        ],
+        "parent_seed_count": 2
+      }
+    },
+    {
+      "id": "https://openalex.org/W316986152",
+      "label": "The Role of Maternal Input in the Acquisition Process: The Communicative Strategies of Adolescent and Older Mothers with the Language Learning Children.",
+      "type": "paper",
+      "hop": 1,
+      "provenance": {
+        "kind": "one_hop_expansion",
+        "source": "OpenAlex referenced_works",
+        "method": "seed_to_reference_expansion",
+        "source_url": "https://files.eric.ed.gov/fulltext/ED291236.pdf",
+        "parent_seed_ids": [
+          "https://openalex.org/W2951552790"
+        ],
+        "parent_seed_count": 1
+      }
+    },
+    {
+      "id": "https://openalex.org/W756842059",
+      "label": "WORKING PARENTS' CONVERSATIONAL RESPONSES TO THEIR TWO-YEAR-OLD SONS (LINGUISTIC INPUT, LANGUAGE ACQUISITION).",
+      "type": "paper",
+      "hop": 1,
+      "provenance": {
+        "kind": "one_hop_expansion",
+        "source": "OpenAlex referenced_works",
+        "method": "seed_to_reference_expansion",
+        "source_url": "http://hdl.handle.net/10150/183947",
+        "parent_seed_ids": [
+          "https://openalex.org/W2951552790"
+        ],
+        "parent_seed_count": 1
+      }
+    },
+    {
+      "id": "https://openalex.org/W1512461342",
+      "label": "Fixing : assimilation in language acquisition",
+      "type": "paper",
+      "hop": 1,
+      "provenance": {
+        "kind": "one_hop_expansion",
+        "source": "OpenAlex referenced_works",
+        "method": "seed_to_reference_expansion",
+        "source_url": "https://ci.nii.ac.jp/ncid/BA45823348",
+        "parent_seed_ids": [
+          "https://openalex.org/W2951552790"
+        ],
+        "parent_seed_count": 1
+      }
+    },
+    {
+      "id": "https://openalex.org/W1523515082",
+      "label": "“Heads or tails?”—A reachability bias in binary choice.",
+      "type": "paper",
+      "hop": 1,
+      "provenance": {
+        "kind": "one_hop_expansion",
+        "source": "OpenAlex referenced_works",
+        "method": "seed_to_reference_expansion",
+        "source_url": "https://doi.org/10.1037/xlm0000005",
+        "parent_seed_ids": [
+          "https://openalex.org/W2951552790"
+        ],
+        "parent_seed_count": 1
+      }
+    },
+    {
+      "id": "https://openalex.org/W1705150430",
+      "label": "MacArthur‐Bates Communicative Development Inventories",
+      "type": "paper",
+      "hop": 1,
+      "provenance": {
+        "kind": "one_hop_expansion",
+        "source": "OpenAlex referenced_works",
+        "method": "seed_to_reference_expansion",
+        "source_url": "https://doi.org/10.1002/9781405198431.wbeal0745",
+        "parent_seed_ids": [
+          "https://openalex.org/W2951552790"
+        ],
+        "parent_seed_count": 1
+      }
+    },
+    {
+      "id": "https://openalex.org/W66069414",
+      "label": "Language and Number Values: The Influence of Number Names on Children’s Understanding of Place Values",
+      "type": "paper",
+      "hop": 1,
+      "provenance": {
+        "kind": "one_hop_expansion",
+        "source": "OpenAlex referenced_works",
+        "method": "seed_to_reference_expansion",
+        "source_url": "https://doi.org/10.1080/24727466.2012.11790310",
+        "parent_seed_ids": [
+          "https://openalex.org/W2270799154"
+        ],
+        "parent_seed_count": 1
+      }
+    },
+    {
+      "id": "https://openalex.org/W189631423",
+      "label": "Achievable Numerical Understandings for All Young Children.",
+      "type": "paper",
+      "hop": 1,
+      "provenance": {
+        "kind": "one_hop_expansion",
+        "source": "OpenAlex referenced_works",
+        "method": "seed_to_reference_expansion",
+        "source_url": "https://eric.ed.gov/?id=EJ670351",
+        "parent_seed_ids": [
+          "https://openalex.org/W2270799154"
+        ],
+        "parent_seed_count": 1
+      }
+    },
+    {
+      "id": "https://openalex.org/W1580723306",
+      "label": "Using Language and Visualization to Teach Place Value",
+      "type": "paper",
+      "hop": 1,
+      "provenance": {
+        "kind": "one_hop_expansion",
+        "source": "OpenAlex referenced_works",
+        "method": "seed_to_reference_expansion",
+        "source_url": "https://doi.org/10.5951/tcm.7.2.0108",
+        "parent_seed_ids": [
+          "https://openalex.org/W2270799154"
+        ],
+        "parent_seed_count": 1
+      }
+    },
+    {
+      "id": "https://openalex.org/W1978948085",
+      "label": "Multiple solution methods and multiple outcomes—is it a task for kindergarten children?",
+      "type": "paper",
+      "hop": 1,
+      "provenance": {
+        "kind": "one_hop_expansion",
+        "source": "OpenAlex referenced_works",
+        "method": "seed_to_reference_expansion",
+        "source_url": "https://doi.org/10.1007/s10649-009-9215-z",
+        "parent_seed_ids": [
+          "https://openalex.org/W2270799154"
+        ],
+        "parent_seed_count": 1
+      }
+    },
+    {
+      "id": "https://openalex.org/W1983115746",
+      "label": "The effectiveness of Korean number naming on insight into numbers in Dutch students with mild intellectual disabilities",
+      "type": "paper",
+      "hop": 1,
+      "provenance": {
+        "kind": "one_hop_expansion",
+        "source": "OpenAlex referenced_works",
+        "method": "seed_to_reference_expansion",
+        "source_url": "https://doi.org/10.1016/j.ridd.2011.03.028",
+        "parent_seed_ids": [
+          "https://openalex.org/W2270799154"
+        ],
+        "parent_seed_count": 1
+      }
+    },
+    {
+      "id": "https://openalex.org/W7897603",
+      "label": "To Repair the World: Paul Farmer Speaks to the NextGeneration",
+      "type": "paper",
+      "hop": 1,
+      "provenance": {
+        "kind": "one_hop_expansion",
+        "source": "OpenAlex referenced_works",
+        "method": "seed_to_reference_expansion",
+        "source_url": "http://europepmc.org/articles/PMC3670447",
+        "parent_seed_ids": [
+          "https://openalex.org/W2979239620"
+        ],
+        "parent_seed_count": 1
+      }
+    },
+    {
+      "id": "https://openalex.org/W89090919",
+      "label": "Proceedings of the Tenth Anniversary Conference on Participatory Design 2008",
+      "type": "paper",
+      "hop": 1,
+      "provenance": {
+        "kind": "one_hop_expansion",
+        "source": "OpenAlex referenced_works",
+        "method": "seed_to_reference_expansion",
+        "source_url": "https://dl.acm.org/action/showBook?doi=10.5555%2F1795234",
+        "parent_seed_ids": [
+          "https://openalex.org/W2979239620"
+        ],
+        "parent_seed_count": 1
+      }
+    },
+    {
+      "id": "https://openalex.org/W159385250",
+      "label": "Human Centered Design",
+      "type": "paper",
+      "hop": 1,
+      "provenance": {
+        "kind": "one_hop_expansion",
+        "source": "OpenAlex referenced_works",
+        "method": "seed_to_reference_expansion",
+        "source_url": "https://doi.org/10.1007/978-3-642-02806-9",
+        "parent_seed_ids": [
+          "https://openalex.org/W2979239620"
+        ],
+        "parent_seed_count": 1
+      }
+    },
+    {
+      "id": "https://openalex.org/W612651853",
+      "label": "The Design of Business: Why Design Thinking is the Next Competitive Advantage",
+      "type": "paper",
+      "hop": 1,
+      "provenance": {
+        "kind": "one_hop_expansion",
+        "source": "OpenAlex referenced_works",
+        "method": "seed_to_reference_expansion",
+        "source_url": "http://bvbr.bib-bvb.de:8991/F?func=service&amp;doc_library=BVB01&amp;local_base=BVB01&amp;doc_number=020715618&amp;sequence=000002&amp;line_number=0001&amp;func_code=DB_RECORDS&amp;service_type=MEDIA",
+        "parent_seed_ids": [
+          "https://openalex.org/W2979239620"
+        ],
+        "parent_seed_count": 1
+      }
+    },
+    {
+      "id": "https://openalex.org/W56541613",
+      "label": "Driving Assessment of Students’ Explanations in Game Dialog Using Computer-Adaptive Testing and Hidden Markov Modeling",
+      "type": "paper",
+      "hop": 1,
+      "provenance": {
+        "kind": "one_hop_expansion",
+        "source": "OpenAlex referenced_works",
+        "method": "seed_to_reference_expansion",
+        "source_url": "https://doi.org/10.1007/978-1-4614-3546-4_10",
+        "parent_seed_ids": [
+          "https://openalex.org/W1972406314"
+        ],
+        "parent_seed_count": 1
+      }
+    },
+    {
+      "id": "https://openalex.org/W69358297",
+      "label": "Profiling Students Who Take Online Courses Using Data Mining Methods.",
+      "type": "paper",
+      "hop": 1,
+      "provenance": {
+        "kind": "one_hop_expansion",
+        "source": "OpenAlex referenced_works",
+        "method": "seed_to_reference_expansion",
+        "source_url": "http://www.westga.edu/~distance/ojdla/summer112/yu112.pdf",
+        "parent_seed_ids": [
+          "https://openalex.org/W1972406314"
+        ],
+        "parent_seed_count": 1
+      }
+    },
+    {
+      "id": "https://openalex.org/W86811335",
+      "label": "Video Games and Learning: Teaching and Participatory Culture in the Digital Age. Technology, Education--Connections (the TEC Series).",
+      "type": "paper",
+      "hop": 1,
+      "provenance": {
+        "kind": "one_hop_expansion",
+        "source": "OpenAlex referenced_works",
+        "method": "seed_to_reference_expansion",
+        "source_url": "https://eric.ed.gov/?id=ED523599",
+        "parent_seed_ids": [
+          "https://openalex.org/W1972406314"
+        ],
+        "parent_seed_count": 1
+      }
+    },
+    {
+      "id": "https://openalex.org/W96364370",
+      "label": "Prediction and Explanation as Design Mechanics in Conceptually Integrated Digital Games to Help Players Articulate the Tacit Understandings They Build through Game Play",
+      "type": "paper",
+      "hop": 1,
+      "provenance": {
+        "kind": "one_hop_expansion",
+        "source": "OpenAlex referenced_works",
+        "method": "seed_to_reference_expansion",
+        "source_url": "https://doi.org/10.1017/cbo9781139031127.023",
+        "parent_seed_ids": [
+          "https://openalex.org/W1972406314"
+        ],
+        "parent_seed_count": 1
+      }
+    },
+    {
+      "id": "https://openalex.org/W99120435",
+      "label": "Labeling Student Behavior Faster and More Precisely with Text Replays.",
+      "type": "paper",
+      "hop": 1,
+      "provenance": {
+        "kind": "one_hop_expansion",
+        "source": "OpenAlex referenced_works",
+        "method": "seed_to_reference_expansion",
+        "source_url": "http://einstein.pslc.cs.cmu.edu/uploads/mypslc/publications/edm2008textreplayalgebrag.pdf",
+        "parent_seed_ids": [
+          "https://openalex.org/W1972406314"
+        ],
+        "parent_seed_count": 1
+      }
+    },
+    {
+      "id": "https://openalex.org/W2612769951",
+      "label": "Out from the PLATO cave: uncovering the pre-Internet history of social computing",
+      "type": "paper",
+      "hop": 1,
+      "provenance": {
+        "kind": "one_hop_expansion",
+        "source": "OpenAlex referenced_works",
+        "method": "seed_to_reference_expansion",
+        "source_url": "https://doi.org/10.1080/24701475.2017.1307544",
+        "parent_seed_ids": [
+          "https://openalex.org/W2840996860"
+        ],
+        "parent_seed_count": 1
+      }
+    },
+    {
+      "id": "https://openalex.org/W1551829466",
+      "label": "Computational Models of Skill Acquisition",
+      "type": "paper",
+      "hop": 1,
+      "provenance": {
+        "kind": "one_hop_expansion",
+        "source": "OpenAlex referenced_works",
+        "method": "seed_to_reference_expansion",
+        "source_url": "https://doi.org/10.1017/cbo9780511816772.017",
+        "parent_seed_ids": [
+          "https://openalex.org/W3045491252"
+        ],
+        "parent_seed_count": 1
+      }
+    },
+    {
+      "id": "https://openalex.org/W1593690745",
+      "label": "Intentional Conceptual Change",
+      "type": "paper",
+      "hop": 1,
+      "provenance": {
+        "kind": "one_hop_expansion",
+        "source": "OpenAlex referenced_works",
+        "method": "seed_to_reference_expansion",
+        "source_url": "https://doi.org/10.4324/9780203839010.ch13",
+        "parent_seed_ids": [
+          "https://openalex.org/W3045491252"
+        ],
+        "parent_seed_count": 1
+      }
+    },
+    {
+      "id": "https://openalex.org/W1939486358",
+      "label": "The Cambridge Handbook of Computational Psychology",
+      "type": "paper",
+      "hop": 1,
+      "provenance": {
+        "kind": "one_hop_expansion",
+        "source": "OpenAlex referenced_works",
+        "method": "seed_to_reference_expansion",
+        "source_url": "https://doi.org/10.1017/cbo9780511816772",
+        "parent_seed_ids": [
+          "https://openalex.org/W3045491252"
+        ],
+        "parent_seed_count": 1
+      }
+    },
+    {
+      "id": "https://openalex.org/W2000052479",
+      "label": "Rule-Learning Events in the Acquisition of a Complex Skill: An Evaluation of Cascade",
+      "type": "paper",
+      "hop": 1,
+      "provenance": {
+        "kind": "one_hop_expansion",
+        "source": "OpenAlex referenced_works",
+        "method": "seed_to_reference_expansion",
+        "source_url": "https://doi.org/10.1207/s15327809jls0801_3",
+        "parent_seed_ids": [
+          "https://openalex.org/W2106779500",
+          "https://openalex.org/W3045491252"
+        ],
+        "parent_seed_count": 2
+      }
+    },
+    {
+      "id": "https://openalex.org/W2113476921",
+      "label": "COGNITIVE SKILL ACQUISITION",
+      "type": "paper",
+      "hop": 1,
+      "provenance": {
+        "kind": "one_hop_expansion",
+        "source": "OpenAlex referenced_works",
+        "method": "seed_to_reference_expansion",
+        "source_url": "https://doi.org/10.1146/annurev.psych.47.1.513",
+        "parent_seed_ids": [
+          "https://openalex.org/W3045491252"
+        ],
+        "parent_seed_count": 1
+      }
+    },
+    {
+      "id": "https://openalex.org/W18735416",
+      "label": "Framing the Cultural Training Landscape: Phase I Findings",
+      "type": "paper",
+      "hop": 1,
+      "provenance": {
+        "kind": "one_hop_expansion",
+        "source": "OpenAlex referenced_works",
+        "method": "seed_to_reference_expansion",
+        "source_url": "https://www.ida.org/~/media/Corporate/Files/Publications/IDA_Documents/IAD/ida-document-d-3709.pdf",
+        "parent_seed_ids": [
+          "https://openalex.org/W3269667"
+        ],
+        "parent_seed_count": 1
+      }
+    },
+    {
+      "id": "https://openalex.org/W109291079",
+      "label": "Failure to Connect: How Computers Affect Our Children's Minds--For Better and Worse",
+      "type": "paper",
+      "hop": 1,
+      "provenance": {
+        "kind": "one_hop_expansion",
+        "source": "OpenAlex referenced_works",
+        "method": "seed_to_reference_expansion",
+        "source_url": "https://ci.nii.ac.jp/ncid/BA44544815",
+        "parent_seed_ids": [
+          "https://openalex.org/W3269667"
+        ],
+        "parent_seed_count": 1
+      }
+    },
+    {
+      "id": "https://openalex.org/W333087971",
+      "label": "The Open Future: Openness as Catalyst for an Educational Reformation",
+      "type": "paper",
+      "hop": 1,
+      "provenance": {
+        "kind": "one_hop_expansion",
+        "source": "OpenAlex referenced_works",
+        "method": "seed_to_reference_expansion",
+        "source_url": "http://data.editlib.org/p/110313/",
+        "parent_seed_ids": [
+          "https://openalex.org/W3269667"
+        ],
+        "parent_seed_count": 1
+      }
+    },
+    {
+      "id": "https://openalex.org/W623031508",
+      "label": "Mega Planning: Practical Tools for Organizational Success",
+      "type": "paper",
+      "hop": 1,
+      "provenance": {
+        "kind": "one_hop_expansion",
+        "source": "OpenAlex referenced_works",
+        "method": "seed_to_reference_expansion",
+        "source_url": "https://doi.org/10.4135/9781452220413",
+        "parent_seed_ids": [
+          "https://openalex.org/W3269667"
+        ],
+        "parent_seed_count": 1
+      }
+    },
+    {
+      "id": "https://openalex.org/W97723547",
+      "label": "A Code of Ethics for all Adult Educators?",
+      "type": "paper",
+      "hop": 1,
+      "provenance": {
+        "kind": "one_hop_expansion",
+        "source": "OpenAlex referenced_works",
+        "method": "seed_to_reference_expansion",
+        "source_url": "https://doi.org/10.1177/104515959600800207",
+        "parent_seed_ids": [
+          "https://openalex.org/W1985429175"
+        ],
+        "parent_seed_count": 1
+      }
+    },
+    {
+      "id": "https://openalex.org/W234309580",
+      "label": "Education as Function of Productivity: An Hermeneutic Study of Standards on Ethics and Integrity in Human Resource Development Texts",
+      "type": "paper",
+      "hop": 1,
+      "provenance": {
+        "kind": "one_hop_expansion",
+        "source": "OpenAlex referenced_works",
+        "method": "seed_to_reference_expansion",
+        "source_url": "https://newprairiepress.org/aerc/2001/papers/17",
+        "parent_seed_ids": [
+          "https://openalex.org/W1985429175"
+        ],
+        "parent_seed_count": 1
+      }
+    },
+    {
+      "id": "https://openalex.org/W246225086",
+      "label": "Performance Takes Training to New Heights.",
+      "type": "paper",
+      "hop": 1,
+      "provenance": {
+        "kind": "one_hop_expansion",
+        "source": "OpenAlex referenced_works",
+        "method": "seed_to_reference_expansion",
+        "source_url": "https://eric.ed.gov/?id=EJ511214",
+        "parent_seed_ids": [
+          "https://openalex.org/W1985429175"
+        ],
+        "parent_seed_count": 1
+      }
+    },
+    {
+      "id": "https://openalex.org/W256816573",
+      "label": "Confronting Professional Values and Ethical Issues: An Innovative Session on Development of a Casebook on Ethics and Integrity. Innovative Session 4. [Concurrent Innovative Session at AHRD Annual Conference, 2000.].",
+      "type": "paper",
+      "hop": 1,
+      "provenance": {
+        "kind": "one_hop_expansion",
+        "source": "OpenAlex referenced_works",
+        "method": "seed_to_reference_expansion",
+        "source_url": "http://files.eric.ed.gov/fulltext/ED441113.pdf",
+        "parent_seed_ids": [
+          "https://openalex.org/W1985429175"
+        ],
+        "parent_seed_count": 1
+      }
+    },
+    {
+      "id": "https://openalex.org/W585531435",
+      "label": "What Really Matters in Adult Education Program Planning : Lessons in Negotiating Power and Interests",
+      "type": "paper",
+      "hop": 1,
+      "provenance": {
+        "kind": "one_hop_expansion",
+        "source": "OpenAlex referenced_works",
+        "method": "seed_to_reference_expansion",
+        "source_url": "http://eduq.info/xmlui/handle/11515/15285",
+        "parent_seed_ids": [
+          "https://openalex.org/W1985429175"
+        ],
+        "parent_seed_count": 1
+      }
+    },
+    {
+      "id": "https://openalex.org/W56293434",
+      "label": "Protecting privacy when disclosing information: k-anonymity and its enforcement through generalization and suppression",
+      "type": "paper",
+      "hop": 1,
+      "provenance": {
+        "kind": "one_hop_expansion",
+        "source": "OpenAlex referenced_works",
+        "method": "seed_to_reference_expansion",
+        "source_url": "http://repository.cmu.edu/isr/244",
+        "parent_seed_ids": [
+          "https://openalex.org/W3184520631"
+        ],
+        "parent_seed_count": 1
+      }
+    },
+    {
+      "id": "https://openalex.org/W187352906",
+      "label": "Multiple Systems of Perceptual Category Learning",
+      "type": "paper",
+      "hop": 1,
+      "provenance": {
+        "kind": "one_hop_expansion",
+        "source": "OpenAlex referenced_works",
+        "method": "seed_to_reference_expansion",
+        "source_url": "https://doi.org/10.1016/b978-0-08-101107-2.00007-5",
+        "parent_seed_ids": [
+          "https://openalex.org/W3184520631"
+        ],
+        "parent_seed_count": 1
+      }
+    },
+    {
+      "id": "https://openalex.org/W595434102",
+      "label": "Contemporary metaethics: an introduction",
+      "type": "paper",
+      "hop": 1,
+      "provenance": {
+        "kind": "one_hop_expansion",
+        "source": "OpenAlex referenced_works",
+        "method": "seed_to_reference_expansion",
+        "source_url": "https://doi.org/10.5860/choice.51-2010",
+        "parent_seed_ids": [
+          "https://openalex.org/W3184520631"
+        ],
+        "parent_seed_count": 1
+      }
+    },
+    {
+      "id": "https://openalex.org/W987183093",
+      "label": "The Kingdom of Ends",
+      "type": "paper",
+      "hop": 1,
+      "provenance": {
+        "kind": "one_hop_expansion",
+        "source": "OpenAlex referenced_works",
+        "method": "seed_to_reference_expansion",
+        "source_url": "https://doi.org/10.1007/978-94-010-3099-1_26",
+        "parent_seed_ids": [
+          "https://openalex.org/W3184520631"
+        ],
+        "parent_seed_count": 1
+      }
+    },
+    {
+      "id": "https://openalex.org/W1221428646",
+      "label": "An Ethical Governor for Constraining Lethal Action in an Autonomous System",
+      "type": "paper",
+      "hop": 1,
+      "provenance": {
+        "kind": "one_hop_expansion",
+        "source": "OpenAlex referenced_works",
+        "method": "seed_to_reference_expansion",
+        "source_url": "https://doi.org/10.21236/ada493563",
+        "parent_seed_ids": [
+          "https://openalex.org/W3184520631"
+        ],
+        "parent_seed_count": 1
+      }
+    },
+    {
+      "id": "https://openalex.org/W89809251",
+      "label": "The American Association of Clinical Psychologists, 1917–1919",
+      "type": "paper",
+      "hop": 1,
+      "provenance": {
+        "kind": "one_hop_expansion",
+        "source": "OpenAlex referenced_works",
+        "method": "seed_to_reference_expansion",
+        "source_url": "https://doi.org/10.1007/978-1-4757-9712-1_2",
+        "parent_seed_ids": [
+          "https://openalex.org/W2994056404"
+        ],
+        "parent_seed_count": 1
+      }
+    },
+    {
+      "id": "https://openalex.org/W175052719",
+      "label": "Wundt and the Two Traditions of Psychology",
+      "type": "paper",
+      "hop": 1,
+      "provenance": {
+        "kind": "one_hop_expansion",
+        "source": "OpenAlex referenced_works",
+        "method": "seed_to_reference_expansion",
+        "source_url": "https://doi.org/10.1007/978-1-4684-8340-6_2",
+        "parent_seed_ids": [
+          "https://openalex.org/W2994056404"
+        ],
+        "parent_seed_count": 1
+      }
+    },
+    {
+      "id": "https://openalex.org/W207527423",
+      "label": "Emergence and Development of the Psychology of Women",
+      "type": "paper",
+      "hop": 1,
+      "provenance": {
+        "kind": "one_hop_expansion",
+        "source": "OpenAlex referenced_works",
+        "method": "seed_to_reference_expansion",
+        "source_url": "https://doi.org/10.1007/978-1-4419-1465-1_2",
+        "parent_seed_ids": [
+          "https://openalex.org/W2994056404"
+        ],
+        "parent_seed_count": 1
+      }
+    },
+    {
+      "id": "https://openalex.org/W652753773",
+      "label": "A History of Psychology: From Antiquity to Modernity",
+      "type": "paper",
+      "hop": 1,
+      "provenance": {
+        "kind": "one_hop_expansion",
+        "source": "OpenAlex referenced_works",
+        "method": "seed_to_reference_expansion",
+        "source_url": "http://bvbr.bib-bvb.de:8991/F?func=service&doc_library=BVB01&local_base=BVB01&doc_number=030132117&sequence=000001&line_number=0001&func_code=DB_RECORDS&service_type=MEDIA",
+        "parent_seed_ids": [
+          "https://openalex.org/W2994056404"
+        ],
+        "parent_seed_count": 1
+      }
+    },
+    {
+      "id": "https://openalex.org/W1491281659",
+      "label": "Divide and Conquer: A Comparative History of Medical Specialization",
+      "type": "paper",
+      "hop": 1,
+      "provenance": {
+        "kind": "one_hop_expansion",
+        "source": "OpenAlex referenced_works",
+        "method": "seed_to_reference_expansion",
+        "source_url": "http://www.loc.gov/catdir/toc/ecip0422/2004019793.html",
+        "parent_seed_ids": [
+          "https://openalex.org/W2994056404"
+        ],
+        "parent_seed_count": 1
+      }
+    },
+    {
+      "id": "https://openalex.org/W82094983",
+      "label": "Environment-strategy-performance relations in small businesses in China: A case of township and village enterprises in Southern China",
+      "type": "paper",
+      "hop": 1,
+      "provenance": {
+        "kind": "one_hop_expansion",
+        "source": "OpenAlex referenced_works",
+        "method": "seed_to_reference_expansion",
+        "source_url": "https://miami.pure.elsevier.com/en/publications/environment-strategy-performance-relations-in-small-businesses-in",
+        "parent_seed_ids": [
+          "https://openalex.org/W3123043436"
+        ],
+        "parent_seed_count": 1
+      }
+    },
+    {
+      "id": "https://openalex.org/W1489019407",
+      "label": "The design of organizations",
+      "type": "paper",
+      "hop": 1,
+      "provenance": {
+        "kind": "one_hop_expansion",
+        "source": "OpenAlex referenced_works",
+        "method": "seed_to_reference_expansion",
+        "source_url": "http://bvbr.bib-bvb.de:8991/F?func=service&doc_library=BVB01&local_base=BVB01&doc_number=002042793&sequence=000001&line_number=0001&func_code=DB_RECORDS&service_type=MEDIA",
+        "parent_seed_ids": [
+          "https://openalex.org/W3123043436"
+        ],
+        "parent_seed_count": 1
+      }
+    },
+    {
+      "id": "https://openalex.org/W1498488428",
+      "label": "The social psychology of organizing",
+      "type": "paper",
+      "hop": 1,
+      "provenance": {
+        "kind": "one_hop_expansion",
+        "source": "OpenAlex referenced_works",
+        "method": "seed_to_reference_expansion",
+        "source_url": "https://bibliotecavirtual.defensa.gob.es/BVMDefensa/es/consulta/registro.do?id=792372",
+        "parent_seed_ids": [
+          "https://openalex.org/W3123043436"
+        ],
+        "parent_seed_count": 1
+      }
+    },
+    {
+      "id": "https://openalex.org/W1511116549",
+      "label": "Strategic experimentation",
+      "type": "paper",
+      "hop": 1,
+      "provenance": {
+        "kind": "one_hop_expansion",
+        "source": "OpenAlex referenced_works",
+        "method": "seed_to_reference_expansion",
+        "source_url": "https://doi.org/10.1016/s0883-9026(98)00018-4",
+        "parent_seed_ids": [
+          "https://openalex.org/W3123043436"
+        ],
+        "parent_seed_count": 1
+      }
+    },
+    {
+      "id": "https://openalex.org/W1545104605",
+      "label": "Great Minds in Management: The Process of Theory Development",
+      "type": "paper",
+      "hop": 1,
+      "provenance": {
+        "kind": "one_hop_expansion",
+        "source": "OpenAlex referenced_works",
+        "method": "seed_to_reference_expansion",
+        "source_url": "https://doi.org/10.1108/17465680610706346",
+        "parent_seed_ids": [
+          "https://openalex.org/W3123043436"
+        ],
+        "parent_seed_count": 1
+      }
+    },
+    {
+      "id": "https://openalex.org/W5120059",
+      "label": "Doctors of Infamy: The Story of the Nazi Medical Crimes",
+      "type": "paper",
+      "hop": 1,
+      "provenance": {
+        "kind": "one_hop_expansion",
+        "source": "OpenAlex referenced_works",
+        "method": "seed_to_reference_expansion",
+        "source_url": "https://doi.org/10.1001/jama.1949.02910160085034",
+        "parent_seed_ids": [
+          "https://openalex.org/W2076377009"
+        ],
+        "parent_seed_count": 1
+      }
+    },
+    {
+      "id": "https://openalex.org/W561421582",
+      "label": "Body Brokers: Inside America's Underground Trade in Human Remains",
+      "type": "paper",
+      "hop": 1,
+      "provenance": {
+        "kind": "one_hop_expansion",
+        "source": "OpenAlex referenced_works",
+        "method": "seed_to_reference_expansion",
+        "source_url": "http://archive.org/details/bodybrokersinsid00chen",
+        "parent_seed_ids": [
+          "https://openalex.org/W2076377009"
+        ],
+        "parent_seed_count": 1
+      }
+    },
+    {
+      "id": "https://openalex.org/W1481559139",
+      "label": "Speaking for the dead: the human body in biology and medicine",
+      "type": "paper",
+      "hop": 1,
+      "provenance": {
+        "kind": "one_hop_expansion",
+        "source": "OpenAlex referenced_works",
+        "method": "seed_to_reference_expansion",
+        "source_url": "https://doi.org/10.5860/choice.47-1457",
+        "parent_seed_ids": [
+          "https://openalex.org/W2076377009"
+        ],
+        "parent_seed_count": 1
+      }
+    },
+    {
+      "id": "https://openalex.org/W1976593794",
+      "label": "Anatomy in the Third Reich: an outline, part 3. The science and ethics of anatomy in National Socialist Germany and postwar consequences",
+      "type": "paper",
+      "hop": 1,
+      "provenance": {
+        "kind": "one_hop_expansion",
+        "source": "OpenAlex referenced_works",
+        "method": "seed_to_reference_expansion",
+        "source_url": "https://doi.org/10.1002/ca.20874",
+        "parent_seed_ids": [
+          "https://openalex.org/W2076377009"
+        ],
+        "parent_seed_count": 1
+      }
+    },
+    {
+      "id": "https://openalex.org/W1978600630",
+      "label": "Engaging with plastination and the Body Worlds phenomenon: A cultural and intellectual challenge for anatomists",
+      "type": "paper",
+      "hop": 1,
+      "provenance": {
+        "kind": "one_hop_expansion",
+        "source": "OpenAlex referenced_works",
+        "method": "seed_to_reference_expansion",
+        "source_url": "https://doi.org/10.1002/ca.20824",
+        "parent_seed_ids": [
+          "https://openalex.org/W2076377009"
+        ],
+        "parent_seed_count": 1
+      }
+    },
+    {
+      "id": "https://openalex.org/W200710641",
+      "label": "Structures of social life: the four elementary forms of human relations",
+      "type": "paper",
+      "hop": 1,
+      "provenance": {
+        "kind": "one_hop_expansion",
+        "source": "OpenAlex referenced_works",
+        "method": "seed_to_reference_expansion",
+        "source_url": "https://doi.org/10.1016/0147-1767(94)90011-6",
+        "parent_seed_ids": [
+          "https://openalex.org/W1488946506"
+        ],
+        "parent_seed_count": 1
+      }
+    },
+    {
+      "id": "https://openalex.org/W1260019659",
+      "label": "Moral Development and Behavior: Theory, Research, and Social Issues",
+      "type": "paper",
+      "hop": 1,
+      "provenance": {
+        "kind": "one_hop_expansion",
+        "source": "OpenAlex referenced_works",
+        "method": "seed_to_reference_expansion",
+        "source_url": "https://doi.org/10.2307/582353",
+        "parent_seed_ids": [
+          "https://openalex.org/W1488946506"
+        ],
+        "parent_seed_count": 1
+      }
+    },
+    {
+      "id": "https://openalex.org/W1496462031",
+      "label": "Reflections on the Decline of Science in England, and on Some of its Causes",
+      "type": "paper",
+      "hop": 1,
+      "provenance": {
+        "kind": "one_hop_expansion",
+        "source": "OpenAlex referenced_works",
+        "method": "seed_to_reference_expansion",
+        "source_url": "https://doi.org/10.1017/cbo9781139381048",
+        "parent_seed_ids": [
+          "https://openalex.org/W1488946506"
+        ],
+        "parent_seed_count": 1
+      }
+    },
+    {
+      "id": "https://openalex.org/W1563676679",
+      "label": "The (honest) truth about dishonesty: how we lie to everyone especially ourselves",
+      "type": "paper",
+      "hop": 1,
+      "provenance": {
+        "kind": "one_hop_expansion",
+        "source": "OpenAlex referenced_works",
+        "method": "seed_to_reference_expansion",
+        "source_url": "https://doi.org/10.5860/choice.50-2953",
+        "parent_seed_ids": [
+          "https://openalex.org/W1488946506"
+        ],
+        "parent_seed_count": 1
+      }
+    },
+    {
+      "id": "https://openalex.org/W136614400",
+      "label": "Social intuitionists answer six questions about morality",
+      "type": "paper",
+      "hop": 1,
+      "provenance": {
+        "kind": "one_hop_expansion",
+        "source": "OpenAlex referenced_works",
+        "method": "seed_to_reference_expansion",
+        "source_url": "https://papers.ssrn.com/sol3/Delivery.cfm/SSRN_ID855164_code552647.pdf?abstractid=855164&mirid=1",
+        "parent_seed_ids": [
+          "https://openalex.org/W2167251605"
+        ],
+        "parent_seed_count": 1
+      }
+    },
+    {
+      "id": "https://openalex.org/W163121798",
+      "label": "The Development of Social Knowledge",
+      "type": "paper",
+      "hop": 1,
+      "provenance": {
+        "kind": "one_hop_expansion",
+        "source": "OpenAlex referenced_works",
+        "method": "seed_to_reference_expansion",
+        "source_url": "https://doi.org/10.1108/979-8-88730-256-0",
+        "parent_seed_ids": [
+          "https://openalex.org/W2167251605",
+          "https://openalex.org/W4211192987"
+        ],
+        "parent_seed_count": 2
+      }
+    },
+    {
+      "id": "https://openalex.org/W618248419",
+      "label": "Culture wars: the struggle to define America",
+      "type": "paper",
+      "hop": 1,
+      "provenance": {
+        "kind": "one_hop_expansion",
+        "source": "OpenAlex referenced_works",
+        "method": "seed_to_reference_expansion",
+        "source_url": "https://doi.org/10.5860/choice.29-5401",
+        "parent_seed_ids": [
+          "https://openalex.org/W2167251605"
+        ],
+        "parent_seed_count": 1
+      }
+    },
+    {
+      "id": "https://openalex.org/W647192251",
+      "label": "An introduction to Christianity",
+      "type": "paper",
+      "hop": 1,
+      "provenance": {
+        "kind": "one_hop_expansion",
+        "source": "OpenAlex referenced_works",
+        "method": "seed_to_reference_expansion",
+        "source_url": "https://doi.org/10.5860/choice.42-5226",
+        "parent_seed_ids": [
+          "https://openalex.org/W2167251605"
+        ],
+        "parent_seed_count": 1
+      }
+    },
+    {
+      "id": "https://openalex.org/W1485378352",
+      "label": "The Origin Of Humankind",
+      "type": "paper",
+      "hop": 1,
+      "provenance": {
+        "kind": "one_hop_expansion",
+        "source": "OpenAlex referenced_works",
+        "method": "seed_to_reference_expansion",
+        "source_url": "https://openalex.org/W1485378352",
+        "parent_seed_ids": [
+          "https://openalex.org/W2167251605"
+        ],
+        "parent_seed_count": 1
+      }
+    },
+    {
+      "id": "https://openalex.org/W1967992372",
+      "label": "On the social psychology of the psychological experiment: With particular reference to demand characteristics and their implications.",
+      "type": "paper",
+      "hop": 1,
+      "provenance": {
+        "kind": "one_hop_expansion",
+        "source": "OpenAlex referenced_works",
+        "method": "seed_to_reference_expansion",
+        "source_url": "https://doi.org/10.1037/h0043424",
+        "parent_seed_ids": [
+          "https://openalex.org/W2056224157"
+        ],
+        "parent_seed_count": 1
+      }
+    },
+    {
+      "id": "https://openalex.org/W1979466162",
+      "label": "The Future of an Illusion",
+      "type": "paper",
+      "hop": 1,
+      "provenance": {
+        "kind": "one_hop_expansion",
+        "source": "OpenAlex referenced_works",
+        "method": "seed_to_reference_expansion",
+        "source_url": "http://archive.org/details/futureofillusion00freu",
+        "parent_seed_ids": [
+          "https://openalex.org/W2056224157"
+        ],
+        "parent_seed_count": 1
+      }
+    },
+    {
+      "id": "https://openalex.org/W2000214310",
+      "label": "Cognitive maps in rats and men.",
+      "type": "paper",
+      "hop": 1,
+      "provenance": {
+        "kind": "one_hop_expansion",
+        "source": "OpenAlex referenced_works",
+        "method": "seed_to_reference_expansion",
+        "source_url": "https://doi.org/10.1037/h0061626",
+        "parent_seed_ids": [
+          "https://openalex.org/W2056224157"
+        ],
+        "parent_seed_count": 1
+      }
+    },
+    {
+      "id": "https://openalex.org/W2043945487",
+      "label": "Multiple regression as a general data-analytic system.",
+      "type": "paper",
+      "hop": 1,
+      "provenance": {
+        "kind": "one_hop_expansion",
+        "source": "OpenAlex referenced_works",
+        "method": "seed_to_reference_expansion",
+        "source_url": "https://doi.org/10.1037/h0026714",
+        "parent_seed_ids": [
+          "https://openalex.org/W2056224157"
+        ],
+        "parent_seed_count": 1
+      }
+    },
+    {
+      "id": "https://openalex.org/W2049082267",
+      "label": "Responsibility, norms, and helping in an emergency.",
+      "type": "paper",
+      "hop": 1,
+      "provenance": {
+        "kind": "one_hop_expansion",
+        "source": "OpenAlex referenced_works",
+        "method": "seed_to_reference_expansion",
+        "source_url": "https://doi.org/10.1037/h0029842",
+        "parent_seed_ids": [
+          "https://openalex.org/W2056224157"
+        ],
+        "parent_seed_count": 1
+      }
+    },
+    {
+      "id": "https://openalex.org/W95067393",
+      "label": "Maturity of Moral Judgment",
+      "type": "paper",
+      "hop": 1,
+      "provenance": {
+        "kind": "one_hop_expansion",
+        "source": "OpenAlex referenced_works",
+        "method": "seed_to_reference_expansion",
+        "source_url": "https://doi.org/10.1080/00221325.1976.10533980",
+        "parent_seed_ids": [
+          "https://openalex.org/W2136838186"
+        ],
+        "parent_seed_count": 1
+      }
+    },
+    {
+      "id": "https://openalex.org/W596459078",
+      "label": "Subjective Construal, Social Inference, and Human Misunderstanding",
+      "type": "paper",
+      "hop": 1,
+      "provenance": {
+        "kind": "one_hop_expansion",
+        "source": "OpenAlex referenced_works",
+        "method": "seed_to_reference_expansion",
+        "source_url": "https://doi.org/10.1016/s0065-2601(08)60333-0",
+        "parent_seed_ids": [
+          "https://openalex.org/W2136838186"
+        ],
+        "parent_seed_count": 1
+      }
+    },
+    {
+      "id": "https://openalex.org/W1539416494",
+      "label": "The Theory of Cognitive Dissonance: A Current Perspective",
+      "type": "paper",
+      "hop": 1,
+      "provenance": {
+        "kind": "one_hop_expansion",
+        "source": "OpenAlex referenced_works",
+        "method": "seed_to_reference_expansion",
+        "source_url": "https://doi.org/10.1016/s0065-2601(08)60075-1",
+        "parent_seed_ids": [
+          "https://openalex.org/W2136838186"
+        ],
+        "parent_seed_count": 1
+      }
+    },
+    {
+      "id": "https://openalex.org/W1544127722",
+      "label": "Minding Matters: The Consequences of Mindlessness–Mindfulness",
+      "type": "paper",
+      "hop": 1,
+      "provenance": {
+        "kind": "one_hop_expansion",
+        "source": "OpenAlex referenced_works",
+        "method": "seed_to_reference_expansion",
+        "source_url": "https://doi.org/10.1016/s0065-2601(08)60307-x",
+        "parent_seed_ids": [
+          "https://openalex.org/W2136838186"
+        ],
+        "parent_seed_count": 1
+      }
+    },
+    {
+      "id": "https://openalex.org/W1511674212",
+      "label": "In Gods We Trust: The Evolutionary Landscape of Religion",
+      "type": "paper",
+      "hop": 1,
+      "provenance": {
+        "kind": "one_hop_expansion",
+        "source": "OpenAlex referenced_works",
+        "method": "seed_to_reference_expansion",
+        "source_url": "http://ci.nii.ac.jp/ncid/BA7091880X",
+        "parent_seed_ids": [
+          "https://openalex.org/W2143135888"
+        ],
+        "parent_seed_count": 1
+      }
+    },
+    {
+      "id": "https://openalex.org/W1552043677",
+      "label": "Darwin's Cathedral",
+      "type": "paper",
+      "hop": 1,
+      "provenance": {
+        "kind": "one_hop_expansion",
+        "source": "OpenAlex referenced_works",
+        "method": "seed_to_reference_expansion",
+        "source_url": "https://doi.org/10.7208/chicago/9780226901374.001.0001",
+        "parent_seed_ids": [
+          "https://openalex.org/W2143135888"
+        ],
+        "parent_seed_count": 1
+      }
+    },
+    {
+      "id": "https://openalex.org/W1617267527",
+      "label": "Religion explained: the evolutionary origins of religious thought",
+      "type": "paper",
+      "hop": 1,
+      "provenance": {
+        "kind": "one_hop_expansion",
+        "source": "OpenAlex referenced_works",
+        "method": "seed_to_reference_expansion",
+        "source_url": "https://doi.org/10.5860/choice.39-2732a",
+        "parent_seed_ids": [
+          "https://openalex.org/W2143135888"
+        ],
+        "parent_seed_count": 1
+      }
+    },
+    {
+      "id": "https://openalex.org/W1980083892",
+      "label": "Measuring individual differences in empathy: Evidence for a multidimensional approach.",
+      "type": "paper",
+      "hop": 1,
+      "provenance": {
+        "kind": "one_hop_expansion",
+        "source": "OpenAlex referenced_works",
+        "method": "seed_to_reference_expansion",
+        "source_url": "https://doi.org/10.1037/0022-3514.44.1.113",
+        "parent_seed_ids": [
+          "https://openalex.org/W2143135888"
+        ],
+        "parent_seed_count": 1
+      }
+    },
+    {
+      "id": "https://openalex.org/W1983908509",
+      "label": "HOW DID MORALITY EVOLVE?",
+      "type": "paper",
+      "hop": 1,
+      "provenance": {
+        "kind": "one_hop_expansion",
+        "source": "OpenAlex referenced_works",
+        "method": "seed_to_reference_expansion",
+        "source_url": "https://doi.org/10.1111/j.1467-9744.1991.tb00803.x",
+        "parent_seed_ids": [
+          "https://openalex.org/W2143135888"
+        ],
+        "parent_seed_count": 1
+      }
+    },
+    {
+      "id": "https://openalex.org/W1997302797",
+      "label": "Social learning and personality development",
+      "type": "paper",
+      "hop": 1,
+      "provenance": {
+        "kind": "one_hop_expansion",
+        "source": "OpenAlex referenced_works",
+        "method": "seed_to_reference_expansion",
+        "source_url": "https://openalex.org/W1997302797",
+        "parent_seed_ids": [
+          "https://openalex.org/W2029404074"
+        ],
+        "parent_seed_count": 1
+      }
+    },
+    {
+      "id": "https://openalex.org/W2019018146",
+      "label": "Some consequences of de-individuation in a group.",
+      "type": "paper",
+      "hop": 1,
+      "provenance": {
+        "kind": "one_hop_expansion",
+        "source": "OpenAlex referenced_works",
+        "method": "seed_to_reference_expansion",
+        "source_url": "https://doi.org/10.1037/h0057906",
+        "parent_seed_ids": [
+          "https://openalex.org/W2029404074"
+        ],
+        "parent_seed_count": 1
+      }
+    },
+    {
+      "id": "https://openalex.org/W2025258510",
+      "label": "Excitation transfer in communication-mediated aggressive behavior",
+      "type": "paper",
+      "hop": 1,
+      "provenance": {
+        "kind": "one_hop_expansion",
+        "source": "OpenAlex referenced_works",
+        "method": "seed_to_reference_expansion",
+        "source_url": "https://doi.org/10.1016/0022-1031(71)90075-8",
+        "parent_seed_ids": [
+          "https://openalex.org/W2029404074"
+        ],
+        "parent_seed_count": 1
+      }
+    },
+    {
+      "id": "https://openalex.org/W2061793210",
+      "label": "Deindividuation in the small group: Further evidence.",
+      "type": "paper",
+      "hop": 1,
+      "provenance": {
+        "kind": "one_hop_expansion",
+        "source": "OpenAlex referenced_works",
+        "method": "seed_to_reference_expansion",
+        "source_url": "https://doi.org/10.1037/h0029837",
+        "parent_seed_ids": [
+          "https://openalex.org/W2029404074"
+        ],
+        "parent_seed_count": 1
+      }
+    },
+    {
+      "id": "https://openalex.org/W7508719",
+      "label": "Co-planar stereotaxic atlas of the human brain : 3-dimensional proportional system : an approach to cerebral imaging",
+      "type": "paper",
+      "hop": 1,
+      "provenance": {
+        "kind": "one_hop_expansion",
+        "source": "OpenAlex referenced_works",
+        "method": "seed_to_reference_expansion",
+        "source_url": "http://catalog.lib.kyushu-u.ac.jp/en/recordID/1000491157",
+        "parent_seed_ids": [
+          "https://openalex.org/W2117185513"
+        ],
+        "parent_seed_count": 1
+      }
+    },
+    {
+      "id": "https://openalex.org/W116240176",
+      "label": "Delegitimization: The Extreme Case of Stereotyping and Prejudice",
+      "type": "paper",
+      "hop": 1,
+      "provenance": {
+        "kind": "one_hop_expansion",
+        "source": "OpenAlex referenced_works",
+        "method": "seed_to_reference_expansion",
+        "source_url": "https://doi.org/10.1007/978-1-4612-3582-8_8",
+        "parent_seed_ids": [
+          "https://openalex.org/W2117185513"
+        ],
+        "parent_seed_count": 1
+      }
+    },
+    {
+      "id": "https://openalex.org/W179914360",
+      "label": "The role of the prefrontal cortex in dynamic filtering",
+      "type": "paper",
+      "hop": 1,
+      "provenance": {
+        "kind": "one_hop_expansion",
+        "source": "OpenAlex referenced_works",
+        "method": "seed_to_reference_expansion",
+        "source_url": "https://doi.org/10.3758/bf03331979",
+        "parent_seed_ids": [
+          "https://openalex.org/W2117185513"
+        ],
+        "parent_seed_count": 1
+      }
+    },
+    {
+      "id": "https://openalex.org/W419552478",
+      "label": "Stereotyping and prejudice: changing conceptions",
+      "type": "paper",
+      "hop": 1,
+      "provenance": {
+        "kind": "one_hop_expansion",
+        "source": "OpenAlex referenced_works",
+        "method": "seed_to_reference_expansion",
+        "source_url": "https://doi.org/10.5860/choice.27-2390",
+        "parent_seed_ids": [
+          "https://openalex.org/W2117185513"
+        ],
+        "parent_seed_count": 1
+      }
+    },
+    {
+      "id": "https://openalex.org/W434251516",
+      "label": "Role of the orbitofrontal cortex in the inhibition of emotion",
+      "type": "paper",
+      "hop": 1,
+      "provenance": {
+        "kind": "one_hop_expansion",
+        "source": "OpenAlex referenced_works",
+        "method": "seed_to_reference_expansion",
+        "source_url": "https://scholar.harvard.edu/chooker/publications/role-orbitofrontal-cortex-inhibition-emotion",
+        "parent_seed_ids": [
+          "https://openalex.org/W2117185513"
+        ],
+        "parent_seed_count": 1
+      }
+    },
+    {
+      "id": "https://openalex.org/W12325997",
+      "label": "Gender and Ethnic Differences in Science Achievement of Nine-, Thirteen-, and Seventeen-Year-Old Students.",
+      "type": "paper",
+      "hop": 1,
+      "provenance": {
+        "kind": "one_hop_expansion",
+        "source": "OpenAlex referenced_works",
+        "method": "seed_to_reference_expansion",
+        "source_url": "http://files.eric.ed.gov/fulltext/ED382751.pdf",
+        "parent_seed_ids": [
+          "https://openalex.org/W2064027736"
+        ],
+        "parent_seed_count": 1
+      }
+    },
+    {
+      "id": "https://openalex.org/W85023353",
+      "label": "The content of our character",
+      "type": "paper",
+      "hop": 1,
+      "provenance": {
+        "kind": "one_hop_expansion",
+        "source": "OpenAlex referenced_works",
+        "method": "seed_to_reference_expansion",
+        "source_url": "https://doi.org/10.1016/0363-8111(91)90058-s",
+        "parent_seed_ids": [
+          "https://openalex.org/W2064027736"
+        ],
+        "parent_seed_count": 1
+      }
+    },
+    {
+      "id": "https://openalex.org/W100604844",
+      "label": "Chicano School Failure and Success: Research and Policy Agendas for the 1990s. The Stanford Series on Education and Public Policy.",
+      "type": "paper",
+      "hop": 1,
+      "provenance": {
+        "kind": "one_hop_expansion",
+        "source": "OpenAlex referenced_works",
+        "method": "seed_to_reference_expansion",
+        "source_url": "http://files.eric.ed.gov/fulltext/ED387279.pdf",
+        "parent_seed_ids": [
+          "https://openalex.org/W2064027736"
+        ],
+        "parent_seed_count": 1
+      }
+    },
+    {
+      "id": "https://openalex.org/W166847688",
+      "label": "The Relationship of Test Anxiety and Answer-Changing Behavior: An Analysis by Race and Sex",
+      "type": "paper",
+      "hop": 1,
+      "provenance": {
+        "kind": "one_hop_expansion",
+        "source": "OpenAlex referenced_works",
+        "method": "seed_to_reference_expansion",
+        "source_url": "https://doi.org/10.1080/00256307.1984.12022358",
+        "parent_seed_ids": [
+          "https://openalex.org/W2064027736"
+        ],
+        "parent_seed_count": 1
+      }
+    },
+    {
+      "id": "https://openalex.org/W565121618",
+      "label": "Anxiety: Current Trends in Theory and Research",
+      "type": "paper",
+      "hop": 1,
+      "provenance": {
+        "kind": "one_hop_expansion",
+        "source": "OpenAlex referenced_works",
+        "method": "seed_to_reference_expansion",
+        "source_url": "http://www.sciencedirect.com/science/book/9780126574029",
+        "parent_seed_ids": [
+          "https://openalex.org/W2064027736"
+        ],
+        "parent_seed_count": 1
+      }
+    },
+    {
+      "id": "https://openalex.org/W1965628176",
+      "label": "Rationalization, Overcompensation and the Escalation of Corruption in Organizations",
+      "type": "paper",
+      "hop": 1,
+      "provenance": {
+        "kind": "one_hop_expansion",
+        "source": "OpenAlex referenced_works",
+        "method": "seed_to_reference_expansion",
+        "source_url": "https://doi.org/10.1007/s10551-008-9685-4",
+        "parent_seed_ids": [
+          "https://openalex.org/W3000104531"
+        ],
+        "parent_seed_count": 1
+      }
+    },
+    {
+      "id": "https://openalex.org/W1967411203",
+      "label": "The Relationships of Empathy, Moral Identity and Cynicism with Consumers’ Ethical Beliefs: The Mediating Role of Moral Disengagement",
+      "type": "paper",
+      "hop": 1,
+      "provenance": {
+        "kind": "one_hop_expansion",
+        "source": "OpenAlex referenced_works",
+        "method": "seed_to_reference_expansion",
+        "source_url": "https://doi.org/10.1007/s10551-013-1896-7",
+        "parent_seed_ids": [
+          "https://openalex.org/W3000104531"
+        ],
+        "parent_seed_count": 1
+      }
+    },
+    {
+      "id": "https://openalex.org/W1983853304",
+      "label": "Being “in Control” May Make You Lose Control: The Role of Self-Regulation in Unethical Leadership Behavior",
+      "type": "paper",
+      "hop": 1,
+      "provenance": {
+        "kind": "one_hop_expansion",
+        "source": "OpenAlex referenced_works",
+        "method": "seed_to_reference_expansion",
+        "source_url": "https://doi.org/10.1007/s10551-013-1686-2",
+        "parent_seed_ids": [
+          "https://openalex.org/W3000104531"
+        ],
+        "parent_seed_count": 1
+      }
+    },
+    {
+      "id": "https://openalex.org/W2009233285",
+      "label": "The effects of moral judgment and moral identity on moral behavior: An empirical examination of the moral individual.",
+      "type": "paper",
+      "hop": 1,
+      "provenance": {
+        "kind": "one_hop_expansion",
+        "source": "OpenAlex referenced_works",
+        "method": "seed_to_reference_expansion",
+        "source_url": "https://doi.org/10.1037/0021-9010.92.6.1610",
+        "parent_seed_ids": [
+          "https://openalex.org/W3000104531"
+        ],
+        "parent_seed_count": 1
+      }
+    },
+    {
+      "id": "https://openalex.org/W2012711999",
+      "label": "Collective guilt: Emotional reactions when one's group has done wrong or been wronged",
+      "type": "paper",
+      "hop": 1,
+      "provenance": {
+        "kind": "one_hop_expansion",
+        "source": "OpenAlex referenced_works",
+        "method": "seed_to_reference_expansion",
+        "source_url": "https://doi.org/10.1080/10463280600574815",
+        "parent_seed_ids": [
+          "https://openalex.org/W3000104531"
+        ],
+        "parent_seed_count": 1
+      }
+    },
+    {
+      "id": "https://openalex.org/W1854990628",
+      "label": "Strengthened to forgive workplace transgressions: priming new money increases interpersonal forgiveness",
+      "type": "paper",
+      "hop": 1,
+      "provenance": {
+        "kind": "one_hop_expansion",
+        "source": "OpenAlex referenced_works",
+        "method": "seed_to_reference_expansion",
+        "source_url": "https://doi.org/10.1111/jasp.12310",
+        "parent_seed_ids": [
+          "https://openalex.org/W2253065173"
+        ],
+        "parent_seed_count": 1
+      }
+    },
+    {
+      "id": "https://openalex.org/W1968764192",
+      "label": "Would you do something for me? The effects of money activation on social preferences and social behavior in young children",
+      "type": "paper",
+      "hop": 1,
+      "provenance": {
+        "kind": "one_hop_expansion",
+        "source": "OpenAlex referenced_works",
+        "method": "seed_to_reference_expansion",
+        "source_url": "https://doi.org/10.1016/j.joep.2011.11.007",
+        "parent_seed_ids": [
+          "https://openalex.org/W2253065173"
+        ],
+        "parent_seed_count": 1
+      }
+    },
+    {
+      "id": "https://openalex.org/W1972860637",
+      "label": "Behavioral consequences of money: When the automated teller machine reduces helping behavior",
+      "type": "paper",
+      "hop": 1,
+      "provenance": {
+        "kind": "one_hop_expansion",
+        "source": "OpenAlex referenced_works",
+        "method": "seed_to_reference_expansion",
+        "source_url": "https://doi.org/10.1016/j.socec.2013.09.004",
+        "parent_seed_ids": [
+          "https://openalex.org/W2253065173"
+        ],
+        "parent_seed_count": 1
+      }
+    },
+    {
+      "id": "https://openalex.org/W1972903509",
+      "label": "Money as tool, money as drug: The biological psychology of a strong incentive",
+      "type": "paper",
+      "hop": 1,
+      "provenance": {
+        "kind": "one_hop_expansion",
+        "source": "OpenAlex referenced_works",
+        "method": "seed_to_reference_expansion",
+        "source_url": "https://doi.org/10.1017/s0140525x06009046",
+        "parent_seed_ids": [
+          "https://openalex.org/W2253065173"
+        ],
+        "parent_seed_count": 1
+      }
+    },
+    {
+      "id": "https://openalex.org/W1975450585",
+      "label": "Nonnaïveté among Amazon Mechanical Turk workers: Consequences and solutions for behavioral researchers",
+      "type": "paper",
+      "hop": 1,
+      "provenance": {
+        "kind": "one_hop_expansion",
+        "source": "OpenAlex referenced_works",
+        "method": "seed_to_reference_expansion",
+        "source_url": "https://doi.org/10.3758/s13428-013-0365-7",
+        "parent_seed_ids": [
+          "https://openalex.org/W2253065173"
+        ],
+        "parent_seed_count": 1
+      }
+    },
+    {
+      "id": "https://openalex.org/W586690351",
+      "label": "The Other Walls: The Arab-Israeli Peace Process in a Global Perspective - Revised Edition",
+      "type": "paper",
+      "hop": 1,
+      "provenance": {
+        "kind": "one_hop_expansion",
+        "source": "OpenAlex referenced_works",
+        "method": "seed_to_reference_expansion",
+        "source_url": "https://muse.jhu.edu/pub/267/monograph/book/38815",
+        "parent_seed_ids": [
+          "https://openalex.org/W1989891117"
+        ],
+        "parent_seed_count": 1
+      }
+    },
+    {
+      "id": "https://openalex.org/W1556348243",
+      "label": "EFFECTS OF GROUP PRESSURE UPON THE MODIFICATION AND DISTORTION OF JUDGMENTS",
+      "type": "paper",
+      "hop": 1,
+      "provenance": {
+        "kind": "one_hop_expansion",
+        "source": "OpenAlex referenced_works",
+        "method": "seed_to_reference_expansion",
+        "source_url": "https://doi.org/10.1525/9780520313514-017",
+        "parent_seed_ids": [
+          "https://openalex.org/W1989891117"
+        ],
+        "parent_seed_count": 1
+      }
+    },
+    {
+      "id": "https://openalex.org/W1799112032",
+      "label": "A DYNAMIC THEORY OF PERSONALITY",
+      "type": "paper",
+      "hop": 1,
+      "provenance": {
+        "kind": "one_hop_expansion",
+        "source": "OpenAlex referenced_works",
+        "method": "seed_to_reference_expansion",
+        "source_url": "https://doi.org/10.1093/oxfordjournals.jhered.a104156",
+        "parent_seed_ids": [
+          "https://openalex.org/W1989891117"
+        ],
+        "parent_seed_count": 1
+      }
+    },
+    {
+      "id": "https://openalex.org/W1968479397",
+      "label": "The perceptual push: The interplay of implicit cues and explicit situational construals on behavioral intentions in the Prisoner’s Dilemma",
+      "type": "paper",
+      "hop": 1,
+      "provenance": {
+        "kind": "one_hop_expansion",
+        "source": "OpenAlex referenced_works",
+        "method": "seed_to_reference_expansion",
+        "source_url": "https://doi.org/10.1016/s0022-1031(03)00057-x",
+        "parent_seed_ids": [
+          "https://openalex.org/W1989891117"
+        ],
+        "parent_seed_count": 1
+      }
+    },
+    {
+      "id": "https://openalex.org/W1969900674",
+      "label": "Behavioral Study of obedience.",
+      "type": "paper",
+      "hop": 1,
+      "provenance": {
+        "kind": "one_hop_expansion",
+        "source": "OpenAlex referenced_works",
+        "method": "seed_to_reference_expansion",
+        "source_url": "https://doi.org/10.1037/h0040525",
+        "parent_seed_ids": [
+          "https://openalex.org/W1989891117"
+        ],
+        "parent_seed_count": 1
+      }
+    },
+    {
+      "id": "https://openalex.org/W1964624836",
+      "label": "The critical theory of technology∗",
+      "type": "paper",
+      "hop": 1,
+      "provenance": {
+        "kind": "one_hop_expansion",
+        "source": "OpenAlex referenced_works",
+        "method": "seed_to_reference_expansion",
+        "source_url": "https://doi.org/10.1080/10455759009358413",
+        "parent_seed_ids": [
+          "https://openalex.org/W2511456490"
+        ],
+        "parent_seed_count": 1
+      }
+    },
+    {
+      "id": "https://openalex.org/W1965715456",
+      "label": "Meta-Analysis of Disability Simulation Research",
+      "type": "paper",
+      "hop": 1,
+      "provenance": {
+        "kind": "one_hop_expansion",
+        "source": "OpenAlex referenced_works",
+        "method": "seed_to_reference_expansion",
+        "source_url": "https://doi.org/10.1177/07419325070280020601",
+        "parent_seed_ids": [
+          "https://openalex.org/W2511456490"
+        ],
+        "parent_seed_count": 1
+      }
+    },
+    {
+      "id": "https://openalex.org/W2031799243",
+      "label": "Pleasure, Learning, Video Games, and Life: The Projective Stance",
+      "type": "paper",
+      "hop": 1,
+      "provenance": {
+        "kind": "one_hop_expansion",
+        "source": "OpenAlex referenced_works",
+        "method": "seed_to_reference_expansion",
+        "source_url": "https://doi.org/10.2304/elea.2005.2.3.2",
+        "parent_seed_ids": [
+          "https://openalex.org/W2511456490"
+        ],
+        "parent_seed_count": 1
+      }
+    },
+    {
+      "id": "https://openalex.org/W2035381099",
+      "label": "Video Games and Embodiment",
+      "type": "paper",
+      "hop": 1,
+      "provenance": {
+        "kind": "one_hop_expansion",
+        "source": "OpenAlex referenced_works",
+        "method": "seed_to_reference_expansion",
+        "source_url": "https://doi.org/10.1177/1555412008317309",
+        "parent_seed_ids": [
+          "https://openalex.org/W2511456490"
+        ],
+        "parent_seed_count": 1
+      }
+    },
+    {
+      "id": "https://openalex.org/W2091909921",
+      "label": "Affordance, conventions, and design",
+      "type": "paper",
+      "hop": 1,
+      "provenance": {
+        "kind": "one_hop_expansion",
+        "source": "OpenAlex referenced_works",
+        "method": "seed_to_reference_expansion",
+        "source_url": "https://doi.org/10.1145/301153.301168",
+        "parent_seed_ids": [
+          "https://openalex.org/W2511456490"
+        ],
+        "parent_seed_count": 1
+      }
+    },
+    {
+      "id": "https://openalex.org/W54663503",
+      "label": "Assessment: Authenticity, Context, and Validity.",
+      "type": "paper",
+      "hop": 1,
+      "provenance": {
+        "kind": "one_hop_expansion",
+        "source": "OpenAlex referenced_works",
+        "method": "seed_to_reference_expansion",
+        "source_url": "https://eric.ed.gov/?id=EJ472587",
+        "parent_seed_ids": [
+          "https://openalex.org/W2028829385"
+        ],
+        "parent_seed_count": 1
+      }
+    },
+    {
+      "id": "https://openalex.org/W1491087240",
+      "label": "Quasi-Experimentation: Design & Analysis Issues for Field Settings",
+      "type": "paper",
+      "hop": 1,
+      "provenance": {
+        "kind": "one_hop_expansion",
+        "source": "OpenAlex referenced_works",
+        "method": "seed_to_reference_expansion",
+        "source_url": "http://ci.nii.ac.jp/ncid/BA21248813",
+        "parent_seed_ids": [
+          "https://openalex.org/W2028829385"
+        ],
+        "parent_seed_count": 1
+      }
+    },
+    {
+      "id": "https://openalex.org/W1560650794",
+      "label": "Test Theory for a New Generation of Tests.",
+      "type": "paper",
+      "hop": 1,
+      "provenance": {
+        "kind": "one_hop_expansion",
+        "source": "OpenAlex referenced_works",
+        "method": "seed_to_reference_expansion",
+        "source_url": "https://doi.org/10.2307/2348147",
+        "parent_seed_ids": [
+          "https://openalex.org/W2028829385"
+        ],
+        "parent_seed_count": 1
+      }
+    },
+    {
+      "id": "https://openalex.org/W1771616203",
+      "label": "Implications of cognitive psychology for educational measurement.",
+      "type": "paper",
+      "hop": 1,
+      "provenance": {
+        "kind": "one_hop_expansion",
+        "source": "OpenAlex referenced_works",
+        "method": "seed_to_reference_expansion",
+        "source_url": "https://psycnet.apa.org/record/1989-97348-007",
+        "parent_seed_ids": [
+          "https://openalex.org/W2028829385"
+        ],
+        "parent_seed_count": 1
+      }
+    },
+    {
+      "id": "https://openalex.org/W1964218847",
+      "label": "Construct validity in psychological tests.",
+      "type": "paper",
+      "hop": 1,
+      "provenance": {
+        "kind": "one_hop_expansion",
+        "source": "OpenAlex referenced_works",
+        "method": "seed_to_reference_expansion",
+        "source_url": "https://doi.org/10.1037/h0040957",
+        "parent_seed_ids": [
+          "https://openalex.org/W2028829385"
+        ],
+        "parent_seed_count": 1
+      }
+    }
+  ],
+  "edges": [
+    {
+      "source": "part:Foundations",
+      "target": "topic:ch01",
+      "type": "contains"
+    },
+    {
+      "source": "part:Foundations",
+      "target": "topic:ch02",
+      "type": "contains"
+    },
+    {
+      "source": "part:Foundations",
+      "target": "topic:ch03",
+      "type": "contains"
+    },
+    {
+      "source": "part:Foundations",
+      "target": "topic:ch04",
+      "type": "contains"
+    },
+    {
+      "source": "part:Foundations",
+      "target": "topic:ch05",
+      "type": "contains"
+    },
+    {
+      "source": "part:Foundations",
+      "target": "topic:ch06",
+      "type": "contains"
+    },
+    {
+      "source": "part:Foundations",
+      "target": "topic:ch07",
+      "type": "contains"
+    },
+    {
+      "source": "part:Tools",
+      "target": "topic:ch08",
+      "type": "contains"
+    },
+    {
+      "source": "part:Tools",
+      "target": "topic:ch09",
+      "type": "contains"
+    },
+    {
+      "source": "part:Tools",
+      "target": "topic:ch10",
+      "type": "contains"
+    },
+    {
+      "source": "part:Tools",
+      "target": "topic:ch11",
+      "type": "contains"
+    },
+    {
+      "source": "part:Tools",
+      "target": "topic:ch12",
+      "type": "contains"
+    },
+    {
+      "source": "part:Tools",
+      "target": "topic:ch13",
+      "type": "contains"
+    },
+    {
+      "source": "part:Tools",
+      "target": "topic:ch14",
+      "type": "contains"
+    },
+    {
+      "source": "part:Tools",
+      "target": "topic:ch15",
+      "type": "contains"
+    },
+    {
+      "source": "part:Tools",
+      "target": "topic:ch16",
+      "type": "contains"
+    },
+    {
+      "source": "part:Tools",
+      "target": "topic:ch17",
+      "type": "contains"
+    },
+    {
+      "source": "part:Tools",
+      "target": "topic:ch18",
+      "type": "contains"
+    },
+    {
+      "source": "part:Vision And Commentary",
+      "target": "topic:ch19",
+      "type": "contains"
+    },
+    {
+      "source": "icicle_section:books",
+      "target": "topic:ch01",
+      "type": "section_to_topic"
+    },
+    {
+      "source": "icicle_section:books",
+      "target": "topic:ch02",
+      "type": "section_to_topic"
+    },
+    {
+      "source": "icicle_section:books",
+      "target": "topic:ch04",
+      "type": "section_to_topic"
+    },
+    {
+      "source": "icicle_section:examples-of-practices-and-tools",
+      "target": "topic:ch01",
+      "type": "section_to_topic"
+    },
+    {
+      "source": "icicle_section:examples-of-practices-and-tools",
+      "target": "topic:ch05",
+      "type": "section_to_topic"
+    },
+    {
+      "source": "icicle_section:examples-of-practices-and-tools",
+      "target": "topic:ch06",
+      "type": "section_to_topic"
+    },
+    {
+      "source": "icicle_section:examples-of-practices-and-tools",
+      "target": "topic:ch08",
+      "type": "section_to_topic"
+    },
+    {
+      "source": "icicle_section:examples-of-practices-and-tools",
+      "target": "topic:ch09",
+      "type": "section_to_topic"
+    },
+    {
+      "source": "icicle_section:examples-of-practices-and-tools",
+      "target": "topic:ch10",
+      "type": "section_to_topic"
+    },
+    {
+      "source": "icicle_section:examples-of-practices-and-tools",
+      "target": "topic:ch11",
+      "type": "section_to_topic"
+    },
+    {
+      "source": "icicle_section:examples-of-practices-and-tools",
+      "target": "topic:ch12",
+      "type": "section_to_topic"
+    },
+    {
+      "source": "icicle_section:examples-of-practices-and-tools",
+      "target": "topic:ch13",
+      "type": "section_to_topic"
+    },
+    {
+      "source": "icicle_section:examples-of-practices-and-tools",
+      "target": "topic:ch14",
+      "type": "section_to_topic"
+    },
+    {
+      "source": "icicle_section:examples-of-practices-and-tools",
+      "target": "topic:ch15",
+      "type": "section_to_topic"
+    },
+    {
+      "source": "icicle_section:examples-of-practices-and-tools",
+      "target": "topic:ch16",
+      "type": "section_to_topic"
+    },
+    {
+      "source": "icicle_section:examples-of-practices-and-tools",
+      "target": "topic:ch17",
+      "type": "section_to_topic"
+    },
+    {
+      "source": "icicle_section:examples-of-practices-and-tools",
+      "target": "topic:ch18",
+      "type": "section_to_topic"
+    },
+    {
+      "source": "icicle_section:background-resources",
+      "target": "topic:ch01",
+      "type": "section_to_topic"
+    },
+    {
+      "source": "icicle_section:background-resources",
+      "target": "topic:ch02",
+      "type": "section_to_topic"
+    },
+    {
+      "source": "icicle_section:background-resources",
+      "target": "topic:ch03",
+      "type": "section_to_topic"
+    },
+    {
+      "source": "icicle_section:background-resources",
+      "target": "topic:ch04",
+      "type": "section_to_topic"
+    },
+    {
+      "source": "icicle_section:background-resources",
+      "target": "topic:ch07",
+      "type": "section_to_topic"
+    },
+    {
+      "source": "icicle_section:conference-proceedings",
+      "target": "topic:ch19",
+      "type": "section_to_topic"
+    },
+    {
+      "source": "icicle_section:learning-about-learning-engineering-articles-papers-interviews-podcasts-videos-and-more-chronological-order",
+      "target": "topic:ch01",
+      "type": "section_to_topic"
+    },
+    {
+      "source": "icicle_section:learning-about-learning-engineering-articles-papers-interviews-podcasts-videos-and-more-chronological-order",
+      "target": "topic:ch02",
+      "type": "section_to_topic"
+    },
+    {
+      "source": "icicle_section:learning-about-learning-engineering-articles-papers-interviews-podcasts-videos-and-more-chronological-order",
+      "target": "topic:ch03",
+      "type": "section_to_topic"
+    },
+    {
+      "source": "icicle_section:learning-about-learning-engineering-articles-papers-interviews-podcasts-videos-and-more-chronological-order",
+      "target": "topic:ch04",
+      "type": "section_to_topic"
+    },
+    {
+      "source": "icicle_section:learning-about-learning-engineering-articles-papers-interviews-podcasts-videos-and-more-chronological-order",
+      "target": "topic:ch19",
+      "type": "section_to_topic"
+    },
+    {
+      "source": "icicle_section:communities",
+      "target": "topic:ch10",
+      "type": "section_to_topic"
+    },
+    {
+      "source": "topic:ch02",
+      "target": "https://openalex.org/W4237683145",
+      "type": "cites_in_endnotes",
+      "note_id": "ch02-n002"
+    },
+    {
+      "source": "topic:ch02",
+      "target": "https://openalex.org/W39923390",
+      "type": "cites_in_endnotes",
+      "note_id": "ch02-n005"
+    },
+    {
+      "source": "topic:ch02",
+      "target": "https://openalex.org/W2106779500",
+      "type": "cites_in_endnotes",
+      "note_id": "ch02-n007"
+    },
+    {
+      "source": "topic:ch02",
+      "target": "https://openalex.org/W4232099363",
+      "type": "cites_in_endnotes",
+      "note_id": "ch02-n008"
+    },
+    {
+      "source": "topic:ch02",
+      "target": "https://openalex.org/W3049252626",
+      "type": "cites_in_endnotes",
+      "note_id": "ch02-n010"
+    },
+    {
+      "source": "topic:ch02",
+      "target": "https://openalex.org/W2999700099",
+      "type": "cites_in_endnotes",
+      "note_id": "ch02-n028"
+    },
+    {
+      "source": "topic:ch02",
+      "target": "https://openalex.org/W2895767153",
+      "type": "cites_in_endnotes",
+      "note_id": "ch02-n034"
+    },
+    {
+      "source": "topic:ch02",
+      "target": "https://openalex.org/W2148811928",
+      "type": "cites_in_endnotes",
+      "note_id": "ch02-n042"
+    },
+    {
+      "source": "topic:ch02",
+      "target": "https://openalex.org/W1544649311",
+      "type": "cites_in_endnotes",
+      "note_id": "ch02-n044"
+    },
+    {
+      "source": "topic:ch03",
+      "target": "https://openalex.org/W1597325177",
+      "type": "cites_in_endnotes",
+      "note_id": "ch03-n001"
+    },
+    {
+      "source": "topic:ch03",
+      "target": "https://openalex.org/W2132242306",
+      "type": "cites_in_endnotes",
+      "note_id": "ch03-n006"
+    },
+    {
+      "source": "topic:ch03",
+      "target": "https://openalex.org/W1990158330",
+      "type": "cites_in_endnotes",
+      "note_id": "ch03-n009"
+    },
+    {
+      "source": "topic:ch03",
+      "target": "https://openalex.org/W2159644498",
+      "type": "cites_in_endnotes",
+      "note_id": "ch03-n011"
+    },
+    {
+      "source": "topic:ch03",
+      "target": "https://openalex.org/W2010961314",
+      "type": "cites_in_endnotes",
+      "note_id": "ch03-n017"
+    },
+    {
+      "source": "topic:ch03",
+      "target": "https://openalex.org/W298147291",
+      "type": "cites_in_endnotes",
+      "note_id": "ch03-n019"
+    },
+    {
+      "source": "topic:ch03",
+      "target": "https://openalex.org/W2763931615",
+      "type": "cites_in_endnotes",
+      "note_id": "ch03-n020"
+    },
+    {
+      "source": "topic:ch03",
+      "target": "https://openalex.org/W2042309404",
+      "type": "cites_in_endnotes",
+      "note_id": "ch03-n026"
+    },
+    {
+      "source": "topic:ch03",
+      "target": "https://openalex.org/W2789532139",
+      "type": "cites_in_endnotes",
+      "note_id": "ch03-n030"
+    },
+    {
+      "source": "topic:ch03",
+      "target": "https://openalex.org/W2022041506",
+      "type": "cites_in_endnotes",
+      "note_id": "ch03-n036"
+    },
+    {
+      "source": "topic:ch03",
+      "target": "https://openalex.org/W3010818040",
+      "type": "cites_in_endnotes",
+      "note_id": "ch03-n042"
+    },
+    {
+      "source": "topic:ch03",
+      "target": "https://openalex.org/W2951552790",
+      "type": "cites_in_endnotes",
+      "note_id": "ch03-n048"
+    },
+    {
+      "source": "topic:ch03",
+      "target": "https://openalex.org/W2270799154",
+      "type": "cites_in_endnotes",
+      "note_id": "ch03-n061"
+    },
+    {
+      "source": "topic:ch03",
+      "target": "https://openalex.org/W2979239620",
+      "type": "cites_in_endnotes",
+      "note_id": "ch03-n065"
+    },
+    {
+      "source": "topic:ch05",
+      "target": "https://openalex.org/W1972406314",
+      "type": "cites_in_endnotes",
+      "note_id": "ch05-n007"
+    },
+    {
+      "source": "topic:ch06",
+      "target": "https://openalex.org/W4248409219",
+      "type": "cites_in_endnotes",
+      "note_id": "ch06-n001"
+    },
+    {
+      "source": "topic:ch06",
+      "target": "https://openalex.org/W3003287323",
+      "type": "cites_in_endnotes",
+      "note_id": "ch06-n002"
+    },
+    {
+      "source": "topic:ch06",
+      "target": "https://openalex.org/W2840996860",
+      "type": "cites_in_endnotes",
+      "note_id": "ch06-n006"
+    },
+    {
+      "source": "topic:ch06",
+      "target": "https://openalex.org/W3045491252",
+      "type": "cites_in_endnotes",
+      "note_id": "ch06-n009"
+    },
+    {
+      "source": "topic:ch07",
+      "target": "https://openalex.org/W3269667",
+      "type": "cites_in_endnotes",
+      "note_id": "ch07-n002"
+    },
+    {
+      "source": "topic:ch07",
+      "target": "https://openalex.org/W1985429175",
+      "type": "cites_in_endnotes",
+      "note_id": "ch07-n003"
+    },
+    {
+      "source": "topic:ch07",
+      "target": "https://openalex.org/W3184520631",
+      "type": "cites_in_endnotes",
+      "note_id": "ch07-n005"
+    },
+    {
+      "source": "topic:ch07",
+      "target": "https://openalex.org/W2126367552",
+      "type": "cites_in_endnotes",
+      "note_id": "ch07-n010"
+    },
+    {
+      "source": "topic:ch07",
+      "target": "https://openalex.org/W2994056404",
+      "type": "cites_in_endnotes",
+      "note_id": "ch07-n012"
+    },
+    {
+      "source": "topic:ch07",
+      "target": "https://openalex.org/W3123043436",
+      "type": "cites_in_endnotes",
+      "note_id": "ch07-n020"
+    },
+    {
+      "source": "topic:ch07",
+      "target": "https://openalex.org/W2076377009",
+      "type": "cites_in_endnotes",
+      "note_id": "ch07-n021"
+    },
+    {
+      "source": "topic:ch07",
+      "target": "https://openalex.org/W1488946506",
+      "type": "cites_in_endnotes",
+      "note_id": "ch07-n024"
+    },
+    {
+      "source": "topic:ch07",
+      "target": "https://openalex.org/W2167251605",
+      "type": "cites_in_endnotes",
+      "note_id": "ch07-n026"
+    },
+    {
+      "source": "topic:ch07",
+      "target": "https://openalex.org/W2056224157",
+      "type": "cites_in_endnotes",
+      "note_id": "ch07-n029"
+    },
+    {
+      "source": "topic:ch07",
+      "target": "https://openalex.org/W2136838186",
+      "type": "cites_in_endnotes",
+      "note_id": "ch07-n030"
+    },
+    {
+      "source": "topic:ch07",
+      "target": "https://openalex.org/W2143135888",
+      "type": "cites_in_endnotes",
+      "note_id": "ch07-n031"
+    },
+    {
+      "source": "topic:ch07",
+      "target": "https://openalex.org/W2029404074",
+      "type": "cites_in_endnotes",
+      "note_id": "ch07-n032"
+    },
+    {
+      "source": "topic:ch07",
+      "target": "https://openalex.org/W2167251605",
+      "type": "cites_in_endnotes",
+      "note_id": "ch07-n033"
+    },
+    {
+      "source": "topic:ch07",
+      "target": "https://openalex.org/W2117185513",
+      "type": "cites_in_endnotes",
+      "note_id": "ch07-n035"
+    },
+    {
+      "source": "topic:ch07",
+      "target": "https://openalex.org/W2064027736",
+      "type": "cites_in_endnotes",
+      "note_id": "ch07-n036"
+    },
+    {
+      "source": "topic:ch07",
+      "target": "https://openalex.org/W3000104531",
+      "type": "cites_in_endnotes",
+      "note_id": "ch07-n037"
+    },
+    {
+      "source": "topic:ch07",
+      "target": "https://openalex.org/W2253065173",
+      "type": "cites_in_endnotes",
+      "note_id": "ch07-n039"
+    },
+    {
+      "source": "topic:ch07",
+      "target": "https://openalex.org/W1989891117",
+      "type": "cites_in_endnotes",
+      "note_id": "ch07-n040"
+    },
+    {
+      "source": "topic:ch07",
+      "target": "https://openalex.org/W2511456490",
+      "type": "cites_in_endnotes",
+      "note_id": "ch07-n041"
+    },
+    {
+      "source": "topic:ch07",
+      "target": "https://openalex.org/W2028829385",
+      "type": "cites_in_endnotes",
+      "note_id": "ch07-n042"
+    },
+    {
+      "source": "topic:ch07",
+      "target": "https://openalex.org/W4211192987",
+      "type": "cites_in_endnotes",
+      "note_id": "ch07-n043"
+    },
+    {
+      "source": "topic:ch07",
+      "target": "https://openalex.org/W2497080131",
+      "type": "cites_in_endnotes",
+      "note_id": "ch07-n044"
+    },
+    {
+      "source": "topic:ch07",
+      "target": "https://openalex.org/W2296463440",
+      "type": "cites_in_endnotes",
+      "note_id": "ch07-n045"
+    },
+    {
+      "source": "topic:ch07",
+      "target": "https://openalex.org/W1989649725",
+      "type": "cites_in_endnotes",
+      "note_id": "ch07-n047"
+    },
+    {
+      "source": "topic:ch12",
+      "target": "https://openalex.org/W4253467718",
+      "type": "cites_in_endnotes",
+      "note_id": "ch12-n005"
+    },
+    {
+      "source": "topic:ch12",
+      "target": "https://openalex.org/W4252148582",
+      "type": "cites_in_endnotes",
+      "note_id": "ch12-n006"
+    },
+    {
+      "source": "topic:ch12",
+      "target": "https://openalex.org/W2990951897",
+      "type": "cites_in_endnotes",
+      "note_id": "ch12-n008"
+    },
+    {
+      "source": "topic:ch12",
+      "target": "https://openalex.org/W1596731651",
+      "type": "cites_in_endnotes",
+      "note_id": "ch12-n011"
+    },
+    {
+      "source": "topic:ch12",
+      "target": "https://openalex.org/W2022041506",
+      "type": "cites_in_endnotes",
+      "note_id": "ch12-n025"
+    },
+    {
+      "source": "topic:ch15",
+      "target": "https://openalex.org/W2091780073",
+      "type": "cites_in_endnotes",
+      "note_id": "ch15-n003"
+    },
+    {
+      "source": "topic:ch15",
+      "target": "https://openalex.org/W1756392794",
+      "type": "cites_in_endnotes",
+      "note_id": "ch15-n005"
+    },
+    {
+      "source": "https://openalex.org/W2106779500",
+      "target": "https://openalex.org/W12309149",
+      "type": "one_hop_reference"
+    },
+    {
+      "source": "https://openalex.org/W2106779500",
+      "target": "https://openalex.org/W13581958",
+      "type": "one_hop_reference"
+    },
+    {
+      "source": "https://openalex.org/W2106779500",
+      "target": "https://openalex.org/W14377909",
+      "type": "one_hop_reference"
+    },
+    {
+      "source": "https://openalex.org/W2106779500",
+      "target": "https://openalex.org/W22297218",
+      "type": "one_hop_reference"
+    },
+    {
+      "source": "https://openalex.org/W2106779500",
+      "target": "https://openalex.org/W37106624",
+      "type": "one_hop_reference"
+    },
+    {
+      "source": "https://openalex.org/W2106779500",
+      "target": "https://openalex.org/W612243507",
+      "type": "one_hop_reference"
+    },
+    {
+      "source": "https://openalex.org/W2106779500",
+      "target": "https://openalex.org/W1553185521",
+      "type": "one_hop_reference"
+    },
+    {
+      "source": "https://openalex.org/W2106779500",
+      "target": "https://openalex.org/W2000052479",
+      "type": "one_hop_reference"
+    },
+    {
+      "source": "https://openalex.org/W3049252626",
+      "target": "https://openalex.org/W82178697",
+      "type": "one_hop_reference"
+    },
+    {
+      "source": "https://openalex.org/W3049252626",
+      "target": "https://openalex.org/W98229544",
+      "type": "one_hop_reference"
+    },
+    {
+      "source": "https://openalex.org/W3049252626",
+      "target": "https://openalex.org/W131038430",
+      "type": "one_hop_reference"
+    },
+    {
+      "source": "https://openalex.org/W3049252626",
+      "target": "https://openalex.org/W140564096",
+      "type": "one_hop_reference"
+    },
+    {
+      "source": "https://openalex.org/W2999700099",
+      "target": "https://openalex.org/W8865727",
+      "type": "one_hop_reference"
+    },
+    {
+      "source": "https://openalex.org/W2999700099",
+      "target": "https://openalex.org/W15859922",
+      "type": "one_hop_reference"
+    },
+    {
+      "source": "https://openalex.org/W2999700099",
+      "target": "https://openalex.org/W66743196",
+      "type": "one_hop_reference"
+    },
+    {
+      "source": "https://openalex.org/W2999700099",
+      "target": "https://openalex.org/W110184136",
+      "type": "one_hop_reference"
+    },
+    {
+      "source": "https://openalex.org/W2999700099",
+      "target": "https://openalex.org/W113430219",
+      "type": "one_hop_reference"
+    },
+    {
+      "source": "https://openalex.org/W2148811928",
+      "target": "https://openalex.org/W12309149",
+      "type": "one_hop_reference"
+    },
+    {
+      "source": "https://openalex.org/W2148811928",
+      "target": "https://openalex.org/W32828536",
+      "type": "one_hop_reference"
+    },
+    {
+      "source": "https://openalex.org/W2148811928",
+      "target": "https://openalex.org/W796858236",
+      "type": "one_hop_reference"
+    },
+    {
+      "source": "https://openalex.org/W2148811928",
+      "target": "https://openalex.org/W1492802215",
+      "type": "one_hop_reference"
+    },
+    {
+      "source": "https://openalex.org/W2148811928",
+      "target": "https://openalex.org/W1507470979",
+      "type": "one_hop_reference"
+    },
+    {
+      "source": "https://openalex.org/W1597325177",
+      "target": "https://openalex.org/W318310530",
+      "type": "one_hop_reference"
+    },
+    {
+      "source": "https://openalex.org/W1597325177",
+      "target": "https://openalex.org/W1569869372",
+      "type": "one_hop_reference"
+    },
+    {
+      "source": "https://openalex.org/W1597325177",
+      "target": "https://openalex.org/W1825507529",
+      "type": "one_hop_reference"
+    },
+    {
+      "source": "https://openalex.org/W1597325177",
+      "target": "https://openalex.org/W1964011508",
+      "type": "one_hop_reference"
+    },
+    {
+      "source": "https://openalex.org/W1597325177",
+      "target": "https://openalex.org/W2029927381",
+      "type": "one_hop_reference"
+    },
+    {
+      "source": "https://openalex.org/W2132242306",
+      "target": "https://openalex.org/W166864907",
+      "type": "one_hop_reference"
+    },
+    {
+      "source": "https://openalex.org/W2132242306",
+      "target": "https://openalex.org/W349374990",
+      "type": "one_hop_reference"
+    },
+    {
+      "source": "https://openalex.org/W2132242306",
+      "target": "https://openalex.org/W1448329166",
+      "type": "one_hop_reference"
+    },
+    {
+      "source": "https://openalex.org/W2132242306",
+      "target": "https://openalex.org/W1553185521",
+      "type": "one_hop_reference"
+    },
+    {
+      "source": "https://openalex.org/W2132242306",
+      "target": "https://openalex.org/W1575772882",
+      "type": "one_hop_reference"
+    },
+    {
+      "source": "https://openalex.org/W2159644498",
+      "target": "https://openalex.org/W193458285",
+      "type": "one_hop_reference"
+    },
+    {
+      "source": "https://openalex.org/W2159644498",
+      "target": "https://openalex.org/W257479822",
+      "type": "one_hop_reference"
+    },
+    {
+      "source": "https://openalex.org/W2159644498",
+      "target": "https://openalex.org/W605686753",
+      "type": "one_hop_reference"
+    },
+    {
+      "source": "https://openalex.org/W2159644498",
+      "target": "https://openalex.org/W1498025178",
+      "type": "one_hop_reference"
+    },
+    {
+      "source": "https://openalex.org/W2159644498",
+      "target": "https://openalex.org/W1512177921",
+      "type": "one_hop_reference"
+    },
+    {
+      "source": "https://openalex.org/W2010961314",
+      "target": "https://openalex.org/W178016035",
+      "type": "one_hop_reference"
+    },
+    {
+      "source": "https://openalex.org/W2010961314",
+      "target": "https://openalex.org/W1578037146",
+      "type": "one_hop_reference"
+    },
+    {
+      "source": "https://openalex.org/W2010961314",
+      "target": "https://openalex.org/W2483700334",
+      "type": "one_hop_reference"
+    },
+    {
+      "source": "https://openalex.org/W2010961314",
+      "target": "https://openalex.org/W2497252072",
+      "type": "one_hop_reference"
+    },
+    {
+      "source": "https://openalex.org/W298147291",
+      "target": "https://openalex.org/W5551006",
+      "type": "one_hop_reference"
+    },
+    {
+      "source": "https://openalex.org/W298147291",
+      "target": "https://openalex.org/W17805075",
+      "type": "one_hop_reference"
+    },
+    {
+      "source": "https://openalex.org/W298147291",
+      "target": "https://openalex.org/W100888490",
+      "type": "one_hop_reference"
+    },
+    {
+      "source": "https://openalex.org/W298147291",
+      "target": "https://openalex.org/W178016035",
+      "type": "one_hop_reference"
+    },
+    {
+      "source": "https://openalex.org/W298147291",
+      "target": "https://openalex.org/W389731278",
+      "type": "one_hop_reference"
+    },
+    {
+      "source": "https://openalex.org/W2763931615",
+      "target": "https://openalex.org/W65150484",
+      "type": "one_hop_reference"
+    },
+    {
+      "source": "https://openalex.org/W2763931615",
+      "target": "https://openalex.org/W111285361",
+      "type": "one_hop_reference"
+    },
+    {
+      "source": "https://openalex.org/W2763931615",
+      "target": "https://openalex.org/W418871515",
+      "type": "one_hop_reference"
+    },
+    {
+      "source": "https://openalex.org/W2763931615",
+      "target": "https://openalex.org/W605593526",
+      "type": "one_hop_reference"
+    },
+    {
+      "source": "https://openalex.org/W2763931615",
+      "target": "https://openalex.org/W624248312",
+      "type": "one_hop_reference"
+    },
+    {
+      "source": "https://openalex.org/W2042309404",
+      "target": "https://openalex.org/W1541539698",
+      "type": "one_hop_reference"
+    },
+    {
+      "source": "https://openalex.org/W2042309404",
+      "target": "https://openalex.org/W1557276260",
+      "type": "one_hop_reference"
+    },
+    {
+      "source": "https://openalex.org/W2042309404",
+      "target": "https://openalex.org/W1983500742",
+      "type": "one_hop_reference"
+    },
+    {
+      "source": "https://openalex.org/W2042309404",
+      "target": "https://openalex.org/W2003895144",
+      "type": "one_hop_reference"
+    },
+    {
+      "source": "https://openalex.org/W2042309404",
+      "target": "https://openalex.org/W2033751659",
+      "type": "one_hop_reference"
+    },
+    {
+      "source": "https://openalex.org/W2789532139",
+      "target": "https://openalex.org/W52727769",
+      "type": "one_hop_reference"
+    },
+    {
+      "source": "https://openalex.org/W2789532139",
+      "target": "https://openalex.org/W73914785",
+      "type": "one_hop_reference"
+    },
+    {
+      "source": "https://openalex.org/W2789532139",
+      "target": "https://openalex.org/W186415708",
+      "type": "one_hop_reference"
+    },
+    {
+      "source": "https://openalex.org/W2789532139",
+      "target": "https://openalex.org/W576996266",
+      "type": "one_hop_reference"
+    },
+    {
+      "source": "https://openalex.org/W2789532139",
+      "target": "https://openalex.org/W1494819082",
+      "type": "one_hop_reference"
+    },
+    {
+      "source": "https://openalex.org/W2022041506",
+      "target": "https://openalex.org/W38915525",
+      "type": "one_hop_reference"
+    },
+    {
+      "source": "https://openalex.org/W2022041506",
+      "target": "https://openalex.org/W122653949",
+      "type": "one_hop_reference"
+    },
+    {
+      "source": "https://openalex.org/W2022041506",
+      "target": "https://openalex.org/W412355120",
+      "type": "one_hop_reference"
+    },
+    {
+      "source": "https://openalex.org/W2022041506",
+      "target": "https://openalex.org/W561727167",
+      "type": "one_hop_reference"
+    },
+    {
+      "source": "https://openalex.org/W2022041506",
+      "target": "https://openalex.org/W612243507",
+      "type": "one_hop_reference"
+    },
+    {
+      "source": "https://openalex.org/W2951552790",
+      "target": "https://openalex.org/W316986152",
+      "type": "one_hop_reference"
+    },
+    {
+      "source": "https://openalex.org/W2951552790",
+      "target": "https://openalex.org/W756842059",
+      "type": "one_hop_reference"
+    },
+    {
+      "source": "https://openalex.org/W2951552790",
+      "target": "https://openalex.org/W1512461342",
+      "type": "one_hop_reference"
+    },
+    {
+      "source": "https://openalex.org/W2951552790",
+      "target": "https://openalex.org/W1523515082",
+      "type": "one_hop_reference"
+    },
+    {
+      "source": "https://openalex.org/W2951552790",
+      "target": "https://openalex.org/W1705150430",
+      "type": "one_hop_reference"
+    },
+    {
+      "source": "https://openalex.org/W2270799154",
+      "target": "https://openalex.org/W66069414",
+      "type": "one_hop_reference"
+    },
+    {
+      "source": "https://openalex.org/W2270799154",
+      "target": "https://openalex.org/W189631423",
+      "type": "one_hop_reference"
+    },
+    {
+      "source": "https://openalex.org/W2270799154",
+      "target": "https://openalex.org/W1580723306",
+      "type": "one_hop_reference"
+    },
+    {
+      "source": "https://openalex.org/W2270799154",
+      "target": "https://openalex.org/W1978948085",
+      "type": "one_hop_reference"
+    },
+    {
+      "source": "https://openalex.org/W2270799154",
+      "target": "https://openalex.org/W1983115746",
+      "type": "one_hop_reference"
+    },
+    {
+      "source": "https://openalex.org/W2979239620",
+      "target": "https://openalex.org/W7897603",
+      "type": "one_hop_reference"
+    },
+    {
+      "source": "https://openalex.org/W2979239620",
+      "target": "https://openalex.org/W89090919",
+      "type": "one_hop_reference"
+    },
+    {
+      "source": "https://openalex.org/W2979239620",
+      "target": "https://openalex.org/W159385250",
+      "type": "one_hop_reference"
+    },
+    {
+      "source": "https://openalex.org/W2979239620",
+      "target": "https://openalex.org/W178016035",
+      "type": "one_hop_reference"
+    },
+    {
+      "source": "https://openalex.org/W2979239620",
+      "target": "https://openalex.org/W612651853",
+      "type": "one_hop_reference"
+    },
+    {
+      "source": "https://openalex.org/W1972406314",
+      "target": "https://openalex.org/W56541613",
+      "type": "one_hop_reference"
+    },
+    {
+      "source": "https://openalex.org/W1972406314",
+      "target": "https://openalex.org/W69358297",
+      "type": "one_hop_reference"
+    },
+    {
+      "source": "https://openalex.org/W1972406314",
+      "target": "https://openalex.org/W86811335",
+      "type": "one_hop_reference"
+    },
+    {
+      "source": "https://openalex.org/W1972406314",
+      "target": "https://openalex.org/W96364370",
+      "type": "one_hop_reference"
+    },
+    {
+      "source": "https://openalex.org/W1972406314",
+      "target": "https://openalex.org/W99120435",
+      "type": "one_hop_reference"
+    },
+    {
+      "source": "https://openalex.org/W2840996860",
+      "target": "https://openalex.org/W2612769951",
+      "type": "one_hop_reference"
+    },
+    {
+      "source": "https://openalex.org/W3045491252",
+      "target": "https://openalex.org/W1551829466",
+      "type": "one_hop_reference"
+    },
+    {
+      "source": "https://openalex.org/W3045491252",
+      "target": "https://openalex.org/W1593690745",
+      "type": "one_hop_reference"
+    },
+    {
+      "source": "https://openalex.org/W3045491252",
+      "target": "https://openalex.org/W1939486358",
+      "type": "one_hop_reference"
+    },
+    {
+      "source": "https://openalex.org/W3045491252",
+      "target": "https://openalex.org/W2000052479",
+      "type": "one_hop_reference"
+    },
+    {
+      "source": "https://openalex.org/W3045491252",
+      "target": "https://openalex.org/W2113476921",
+      "type": "one_hop_reference"
+    },
+    {
+      "source": "https://openalex.org/W3269667",
+      "target": "https://openalex.org/W18735416",
+      "type": "one_hop_reference"
+    },
+    {
+      "source": "https://openalex.org/W3269667",
+      "target": "https://openalex.org/W52727769",
+      "type": "one_hop_reference"
+    },
+    {
+      "source": "https://openalex.org/W3269667",
+      "target": "https://openalex.org/W109291079",
+      "type": "one_hop_reference"
+    },
+    {
+      "source": "https://openalex.org/W3269667",
+      "target": "https://openalex.org/W333087971",
+      "type": "one_hop_reference"
+    },
+    {
+      "source": "https://openalex.org/W3269667",
+      "target": "https://openalex.org/W623031508",
+      "type": "one_hop_reference"
+    },
+    {
+      "source": "https://openalex.org/W1985429175",
+      "target": "https://openalex.org/W97723547",
+      "type": "one_hop_reference"
+    },
+    {
+      "source": "https://openalex.org/W1985429175",
+      "target": "https://openalex.org/W234309580",
+      "type": "one_hop_reference"
+    },
+    {
+      "source": "https://openalex.org/W1985429175",
+      "target": "https://openalex.org/W246225086",
+      "type": "one_hop_reference"
+    },
+    {
+      "source": "https://openalex.org/W1985429175",
+      "target": "https://openalex.org/W256816573",
+      "type": "one_hop_reference"
+    },
+    {
+      "source": "https://openalex.org/W1985429175",
+      "target": "https://openalex.org/W585531435",
+      "type": "one_hop_reference"
+    },
+    {
+      "source": "https://openalex.org/W3184520631",
+      "target": "https://openalex.org/W56293434",
+      "type": "one_hop_reference"
+    },
+    {
+      "source": "https://openalex.org/W3184520631",
+      "target": "https://openalex.org/W187352906",
+      "type": "one_hop_reference"
+    },
+    {
+      "source": "https://openalex.org/W3184520631",
+      "target": "https://openalex.org/W595434102",
+      "type": "one_hop_reference"
+    },
+    {
+      "source": "https://openalex.org/W3184520631",
+      "target": "https://openalex.org/W987183093",
+      "type": "one_hop_reference"
+    },
+    {
+      "source": "https://openalex.org/W3184520631",
+      "target": "https://openalex.org/W1221428646",
+      "type": "one_hop_reference"
+    },
+    {
+      "source": "https://openalex.org/W2994056404",
+      "target": "https://openalex.org/W89809251",
+      "type": "one_hop_reference"
+    },
+    {
+      "source": "https://openalex.org/W2994056404",
+      "target": "https://openalex.org/W175052719",
+      "type": "one_hop_reference"
+    },
+    {
+      "source": "https://openalex.org/W2994056404",
+      "target": "https://openalex.org/W207527423",
+      "type": "one_hop_reference"
+    },
+    {
+      "source": "https://openalex.org/W2994056404",
+      "target": "https://openalex.org/W652753773",
+      "type": "one_hop_reference"
+    },
+    {
+      "source": "https://openalex.org/W2994056404",
+      "target": "https://openalex.org/W1491281659",
+      "type": "one_hop_reference"
+    },
+    {
+      "source": "https://openalex.org/W3123043436",
+      "target": "https://openalex.org/W82094983",
+      "type": "one_hop_reference"
+    },
+    {
+      "source": "https://openalex.org/W3123043436",
+      "target": "https://openalex.org/W1489019407",
+      "type": "one_hop_reference"
+    },
+    {
+      "source": "https://openalex.org/W3123043436",
+      "target": "https://openalex.org/W1498488428",
+      "type": "one_hop_reference"
+    },
+    {
+      "source": "https://openalex.org/W3123043436",
+      "target": "https://openalex.org/W1511116549",
+      "type": "one_hop_reference"
+    },
+    {
+      "source": "https://openalex.org/W3123043436",
+      "target": "https://openalex.org/W1545104605",
+      "type": "one_hop_reference"
+    },
+    {
+      "source": "https://openalex.org/W2076377009",
+      "target": "https://openalex.org/W5120059",
+      "type": "one_hop_reference"
+    },
+    {
+      "source": "https://openalex.org/W2076377009",
+      "target": "https://openalex.org/W561421582",
+      "type": "one_hop_reference"
+    },
+    {
+      "source": "https://openalex.org/W2076377009",
+      "target": "https://openalex.org/W1481559139",
+      "type": "one_hop_reference"
+    },
+    {
+      "source": "https://openalex.org/W2076377009",
+      "target": "https://openalex.org/W1976593794",
+      "type": "one_hop_reference"
+    },
+    {
+      "source": "https://openalex.org/W2076377009",
+      "target": "https://openalex.org/W1978600630",
+      "type": "one_hop_reference"
+    },
+    {
+      "source": "https://openalex.org/W1488946506",
+      "target": "https://openalex.org/W200710641",
+      "type": "one_hop_reference"
+    },
+    {
+      "source": "https://openalex.org/W1488946506",
+      "target": "https://openalex.org/W1260019659",
+      "type": "one_hop_reference"
+    },
+    {
+      "source": "https://openalex.org/W1488946506",
+      "target": "https://openalex.org/W1496462031",
+      "type": "one_hop_reference"
+    },
+    {
+      "source": "https://openalex.org/W1488946506",
+      "target": "https://openalex.org/W1523643708",
+      "type": "one_hop_reference"
+    },
+    {
+      "source": "https://openalex.org/W1488946506",
+      "target": "https://openalex.org/W1563676679",
+      "type": "one_hop_reference"
+    },
+    {
+      "source": "https://openalex.org/W2167251605",
+      "target": "https://openalex.org/W136614400",
+      "type": "one_hop_reference"
+    },
+    {
+      "source": "https://openalex.org/W2167251605",
+      "target": "https://openalex.org/W163121798",
+      "type": "one_hop_reference"
+    },
+    {
+      "source": "https://openalex.org/W2167251605",
+      "target": "https://openalex.org/W618248419",
+      "type": "one_hop_reference"
+    },
+    {
+      "source": "https://openalex.org/W2167251605",
+      "target": "https://openalex.org/W647192251",
+      "type": "one_hop_reference"
+    },
+    {
+      "source": "https://openalex.org/W2167251605",
+      "target": "https://openalex.org/W1485378352",
+      "type": "one_hop_reference"
+    },
+    {
+      "source": "https://openalex.org/W2056224157",
+      "target": "https://openalex.org/W1967992372",
+      "type": "one_hop_reference"
+    },
+    {
+      "source": "https://openalex.org/W2056224157",
+      "target": "https://openalex.org/W1979466162",
+      "type": "one_hop_reference"
+    },
+    {
+      "source": "https://openalex.org/W2056224157",
+      "target": "https://openalex.org/W2000214310",
+      "type": "one_hop_reference"
+    },
+    {
+      "source": "https://openalex.org/W2056224157",
+      "target": "https://openalex.org/W2043945487",
+      "type": "one_hop_reference"
+    },
+    {
+      "source": "https://openalex.org/W2056224157",
+      "target": "https://openalex.org/W2049082267",
+      "type": "one_hop_reference"
+    },
+    {
+      "source": "https://openalex.org/W2136838186",
+      "target": "https://openalex.org/W95067393",
+      "type": "one_hop_reference"
+    },
+    {
+      "source": "https://openalex.org/W2136838186",
+      "target": "https://openalex.org/W596459078",
+      "type": "one_hop_reference"
+    },
+    {
+      "source": "https://openalex.org/W2136838186",
+      "target": "https://openalex.org/W1523643708",
+      "type": "one_hop_reference"
+    },
+    {
+      "source": "https://openalex.org/W2136838186",
+      "target": "https://openalex.org/W1539416494",
+      "type": "one_hop_reference"
+    },
+    {
+      "source": "https://openalex.org/W2136838186",
+      "target": "https://openalex.org/W1544127722",
+      "type": "one_hop_reference"
+    },
+    {
+      "source": "https://openalex.org/W2143135888",
+      "target": "https://openalex.org/W1511674212",
+      "type": "one_hop_reference"
+    },
+    {
+      "source": "https://openalex.org/W2143135888",
+      "target": "https://openalex.org/W1552043677",
+      "type": "one_hop_reference"
+    },
+    {
+      "source": "https://openalex.org/W2143135888",
+      "target": "https://openalex.org/W1617267527",
+      "type": "one_hop_reference"
+    },
+    {
+      "source": "https://openalex.org/W2143135888",
+      "target": "https://openalex.org/W1980083892",
+      "type": "one_hop_reference"
+    },
+    {
+      "source": "https://openalex.org/W2143135888",
+      "target": "https://openalex.org/W1983908509",
+      "type": "one_hop_reference"
+    },
+    {
+      "source": "https://openalex.org/W2029404074",
+      "target": "https://openalex.org/W1997302797",
+      "type": "one_hop_reference"
+    },
+    {
+      "source": "https://openalex.org/W2029404074",
+      "target": "https://openalex.org/W2019018146",
+      "type": "one_hop_reference"
+    },
+    {
+      "source": "https://openalex.org/W2029404074",
+      "target": "https://openalex.org/W2025258510",
+      "type": "one_hop_reference"
+    },
+    {
+      "source": "https://openalex.org/W2029404074",
+      "target": "https://openalex.org/W2061793210",
+      "type": "one_hop_reference"
+    },
+    {
+      "source": "https://openalex.org/W2117185513",
+      "target": "https://openalex.org/W7508719",
+      "type": "one_hop_reference"
+    },
+    {
+      "source": "https://openalex.org/W2117185513",
+      "target": "https://openalex.org/W116240176",
+      "type": "one_hop_reference"
+    },
+    {
+      "source": "https://openalex.org/W2117185513",
+      "target": "https://openalex.org/W179914360",
+      "type": "one_hop_reference"
+    },
+    {
+      "source": "https://openalex.org/W2117185513",
+      "target": "https://openalex.org/W419552478",
+      "type": "one_hop_reference"
+    },
+    {
+      "source": "https://openalex.org/W2117185513",
+      "target": "https://openalex.org/W434251516",
+      "type": "one_hop_reference"
+    },
+    {
+      "source": "https://openalex.org/W2064027736",
+      "target": "https://openalex.org/W12325997",
+      "type": "one_hop_reference"
+    },
+    {
+      "source": "https://openalex.org/W2064027736",
+      "target": "https://openalex.org/W85023353",
+      "type": "one_hop_reference"
+    },
+    {
+      "source": "https://openalex.org/W2064027736",
+      "target": "https://openalex.org/W100604844",
+      "type": "one_hop_reference"
+    },
+    {
+      "source": "https://openalex.org/W2064027736",
+      "target": "https://openalex.org/W166847688",
+      "type": "one_hop_reference"
+    },
+    {
+      "source": "https://openalex.org/W2064027736",
+      "target": "https://openalex.org/W565121618",
+      "type": "one_hop_reference"
+    },
+    {
+      "source": "https://openalex.org/W3000104531",
+      "target": "https://openalex.org/W1965628176",
+      "type": "one_hop_reference"
+    },
+    {
+      "source": "https://openalex.org/W3000104531",
+      "target": "https://openalex.org/W1967411203",
+      "type": "one_hop_reference"
+    },
+    {
+      "source": "https://openalex.org/W3000104531",
+      "target": "https://openalex.org/W1983853304",
+      "type": "one_hop_reference"
+    },
+    {
+      "source": "https://openalex.org/W3000104531",
+      "target": "https://openalex.org/W2009233285",
+      "type": "one_hop_reference"
+    },
+    {
+      "source": "https://openalex.org/W3000104531",
+      "target": "https://openalex.org/W2012711999",
+      "type": "one_hop_reference"
+    },
+    {
+      "source": "https://openalex.org/W2253065173",
+      "target": "https://openalex.org/W1854990628",
+      "type": "one_hop_reference"
+    },
+    {
+      "source": "https://openalex.org/W2253065173",
+      "target": "https://openalex.org/W1968764192",
+      "type": "one_hop_reference"
+    },
+    {
+      "source": "https://openalex.org/W2253065173",
+      "target": "https://openalex.org/W1972860637",
+      "type": "one_hop_reference"
+    },
+    {
+      "source": "https://openalex.org/W2253065173",
+      "target": "https://openalex.org/W1972903509",
+      "type": "one_hop_reference"
+    },
+    {
+      "source": "https://openalex.org/W2253065173",
+      "target": "https://openalex.org/W1975450585",
+      "type": "one_hop_reference"
+    },
+    {
+      "source": "https://openalex.org/W1989891117",
+      "target": "https://openalex.org/W586690351",
+      "type": "one_hop_reference"
+    },
+    {
+      "source": "https://openalex.org/W1989891117",
+      "target": "https://openalex.org/W1556348243",
+      "type": "one_hop_reference"
+    },
+    {
+      "source": "https://openalex.org/W1989891117",
+      "target": "https://openalex.org/W1799112032",
+      "type": "one_hop_reference"
+    },
+    {
+      "source": "https://openalex.org/W1989891117",
+      "target": "https://openalex.org/W1968479397",
+      "type": "one_hop_reference"
+    },
+    {
+      "source": "https://openalex.org/W1989891117",
+      "target": "https://openalex.org/W1969900674",
+      "type": "one_hop_reference"
+    },
+    {
+      "source": "https://openalex.org/W2511456490",
+      "target": "https://openalex.org/W1964624836",
+      "type": "one_hop_reference"
+    },
+    {
+      "source": "https://openalex.org/W2511456490",
+      "target": "https://openalex.org/W1965715456",
+      "type": "one_hop_reference"
+    },
+    {
+      "source": "https://openalex.org/W2511456490",
+      "target": "https://openalex.org/W2031799243",
+      "type": "one_hop_reference"
+    },
+    {
+      "source": "https://openalex.org/W2511456490",
+      "target": "https://openalex.org/W2035381099",
+      "type": "one_hop_reference"
+    },
+    {
+      "source": "https://openalex.org/W2511456490",
+      "target": "https://openalex.org/W2091909921",
+      "type": "one_hop_reference"
+    },
+    {
+      "source": "https://openalex.org/W2028829385",
+      "target": "https://openalex.org/W54663503",
+      "type": "one_hop_reference"
+    },
+    {
+      "source": "https://openalex.org/W2028829385",
+      "target": "https://openalex.org/W1491087240",
+      "type": "one_hop_reference"
+    },
+    {
+      "source": "https://openalex.org/W2028829385",
+      "target": "https://openalex.org/W1560650794",
+      "type": "one_hop_reference"
+    },
+    {
+      "source": "https://openalex.org/W2028829385",
+      "target": "https://openalex.org/W1771616203",
+      "type": "one_hop_reference"
+    },
+    {
+      "source": "https://openalex.org/W2028829385",
+      "target": "https://openalex.org/W1964218847",
+      "type": "one_hop_reference"
+    },
+    {
+      "source": "https://openalex.org/W4211192987",
+      "target": "https://openalex.org/W163121798",
+      "type": "one_hop_reference"
+    }
+  ],
+  "stats": {
+    "node_count": 265,
+    "edge_count": 295,
+    "seed_papers": 59,
+    "hop_papers": 178,
+    "chapters": 19
+  }
+}

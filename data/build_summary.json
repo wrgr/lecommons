@@ -1,0 +1,22 @@
+{
+  "chapters": 19,
+  "icicle_sections": 6,
+  "icicle_resource_items": 171,
+  "parsed_endnotes": 296,
+  "processed_endnotes": 296,
+  "matched_endnotes": 60,
+  "seed_papers": 59,
+  "one_hop_papers": 178,
+  "graph_nodes": 265,
+  "graph_edges": 295,
+  "artifact_type_counts": {
+    "article_report_or_web": 196,
+    "paper_or_article": 46,
+    "webinar": 1,
+    "conference_artifact": 16,
+    "book_or_chapter": 16,
+    "video": 11,
+    "standard_or_spec": 9,
+    "software_or_repository": 1
+  }
+}

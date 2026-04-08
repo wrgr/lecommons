@@ -1,0 +1,30 @@
+{
+  "nodes": [
+    { "id": "research", "label": "Research", "type": "domain", "x": 0, "y": 0, "size": 10, "color": "#4f46e5", "summary": "Central concept" },
+    { "id": "methods", "label": "Methods", "type": "domain", "x": 1.1, "y": 0.5, "size": 8, "color": "#0ea5e9" },
+    { "id": "datasets", "label": "Datasets", "type": "domain", "x": 1.2, "y": -0.8, "size": 8, "color": "#10b981" },
+    { "id": "models", "label": "Models", "type": "domain", "x": -1.0, "y": 0.9, "size": 8, "color": "#f59e0b" },
+    { "id": "evaluation", "label": "Evaluation", "type": "domain", "x": -1.1, "y": -0.8, "size": 8, "color": "#ef4444" },
+    { "id": "paper-1", "label": "Paper 1", "type": "paper", "x": 2.1, "y": 0.7, "size": 6, "color": "#0ea5e9" },
+    { "id": "paper-2", "label": "Paper 2", "type": "paper", "x": 2.0, "y": -0.6, "size": 6, "color": "#10b981" },
+    { "id": "metric-f1", "label": "F1 Score", "type": "metric", "x": -2.0, "y": -0.8, "size": 6, "color": "#ef4444" },
+    { "id": "metric-auprc", "label": "AUPRC", "type": "metric", "x": -2.1, "y": -1.4, "size": 6, "color": "#ef4444" },
+    { "id": "graph-neural-network", "label": "Graph Neural Network", "type": "model", "x": -2.0, "y": 0.9, "size": 6, "color": "#f59e0b" },
+    { "id": "knowledge-graph", "label": "Knowledge Graph", "type": "artifact", "x": 0.2, "y": -1.8, "size": 7, "color": "#4f46e5" },
+    { "id": "node-search", "label": "Node Search", "type": "feature", "x": 0.4, "y": 1.8, "size": 6, "color": "#4f46e5" }
+  ],
+  "edges": [
+    { "id": "research-methods", "source": "research", "target": "methods", "relation": "includes", "label": "includes", "weight": 1 },
+    { "id": "research-datasets", "source": "research", "target": "datasets", "relation": "uses", "label": "uses", "weight": 1 },
+    { "id": "research-models", "source": "research", "target": "models", "relation": "builds", "label": "builds", "weight": 1 },
+    { "id": "research-evaluation", "source": "research", "target": "evaluation", "relation": "measures", "label": "measures", "weight": 1 },
+    { "id": "methods-paper1", "source": "methods", "target": "paper-1", "relation": "described_in", "label": "described_in", "weight": 1 },
+    { "id": "datasets-paper2", "source": "datasets", "target": "paper-2", "relation": "described_in", "label": "described_in", "weight": 1 },
+    { "id": "evaluation-f1", "source": "evaluation", "target": "metric-f1", "relation": "tracks", "label": "tracks", "weight": 1 },
+    { "id": "evaluation-auprc", "source": "evaluation", "target": "metric-auprc", "relation": "tracks", "label": "tracks", "weight": 1 },
+    { "id": "models-gnn", "source": "models", "target": "graph-neural-network", "relation": "example", "label": "example", "weight": 1 },
+    { "id": "research-kg", "source": "research", "target": "knowledge-graph", "relation": "outputs", "label": "outputs", "weight": 1 },
+    { "id": "research-search", "source": "research", "target": "node-search", "relation": "supports", "label": "supports", "weight": 1 },
+    { "id": "kg-search", "source": "knowledge-graph", "target": "node-search", "relation": "queried_by", "label": "queried_by", "weight": 1 }
+  ]
+}
