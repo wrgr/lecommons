@@ -1357,7 +1357,11 @@ def build_hop_papers(topic_by_code: Dict[str, Topic], seed_topic_lookup: Dict[st
 
 
 def build_resources(topic_by_code: Dict[str, Topic]) -> Tuple[Dict, List[Dict]]:
+    """Build the non-paper resource index, merging in ICICLE-harvested entries."""
     rows = load_jsonl(CORPUS_DIR / "non_paper_resources.jsonl")
+    icicle_path = CORPUS_DIR / "tables" / "icicle_resources_registry.json"
+    if icicle_path.exists():
+        rows = rows + load_json(icicle_path)
 
     items_by_topic: Dict[str, List[Dict]] = defaultdict(list)
     flat_rows: List[Dict] = []
@@ -1496,6 +1500,73 @@ def build_topic_payload(topics: List[Topic]) -> Dict:
     }
 
 
+def build_concept_graph(
+    concepts: List[Dict],
+    topic_codes: Set[str],
+    paper_ids: Set[str],
+    resource_ids: Set[str],
+) -> Tuple[List[Dict], List[Dict]]:
+    """Build concept-layer nodes and edges from the concept ontology and concept graph seeds."""
+    nodes: List[Dict] = []
+    edges: List[Dict] = []
+    edge_seen: Set[Tuple[str, str, str]] = set()
+
+    def add_edge(source: str, target: str, edge_type: str) -> None:
+        """Deduplicate and append a concept-layer edge."""
+        if not source or not target or source == target:
+            return
+        key = (source, target, edge_type)
+        if key in edge_seen:
+            return
+        edge_seen.add(key)
+        edges.append({"source": source, "target": target, "type": edge_type})
+
+    concept_ids: Set[str] = set()
+    for concept in concepts:
+        cid = concept.get("concept_id", "").strip()
+        if not cid:
+            continue
+        concept_ids.add(cid)
+        nodes.append({
+            "id": cid,
+            "label": concept.get("name", cid),
+            "type": "concept",
+            "hop": 0,
+            "topic_codes": concept.get("topic_codes", []),
+            "provenance": {
+                "book_chapters": concept.get("book_chapter_anchors", []),
+                "bloom_level": concept.get("bloom_level", ""),
+                "layer": "concept",
+            },
+        })
+        # Topic → concept edges.
+        for code in concept.get("topic_codes", []):
+            if code in topic_codes:
+                add_edge(code, cid, "has_concept")
+        # Concept → paper edges.
+        for pid in concept.get("primary_papers", []):
+            if pid in paper_ids:
+                add_edge(cid, pid, "anchored_by")
+        # Concept → resource edges.
+        for rid in concept.get("primary_resources", []):
+            if rid in resource_ids:
+                add_edge(cid, rid, "learn_via")
+
+    # Concept-to-concept prereq edges from concept_graph_seeds.json.
+    seeds_path = CORPUS_DIR / "tables" / "concept_graph_seeds.json"
+    if seeds_path.exists():
+        for row in load_json(seeds_path):
+            if (row.get("node_type") or "") != "CONCEPT":
+                continue
+            src = (row.get("node_id") or "").strip()
+            dst = (row.get("edge_target") or "").strip()
+            edge_type = (row.get("edge_type") or "").strip()
+            if edge_type == "PREREQ_FOR" and src in concept_ids and dst in concept_ids:
+                add_edge(src, dst, "prereq")
+
+    return nodes, edges
+
+
 def build_graph(
     topics: List[Topic],
     seed_papers: List[Dict],
@@ -1618,6 +1689,21 @@ def build_graph(
                 continue
             seed_paper_id = seed_id.replace("WORKBOOK-", "", 1)
             add_edge(seed_paper_id, paper["id"], "expands_to")
+
+    # Concept layer (Layer 2) nodes and edges.
+    paper_id_set = {p["id"] for p in seed_papers + hop_papers}
+    resource_id_set = {r.get("resource_id", "") for r in resources_flat if r.get("resource_id")}
+    concept_ontology_path = CORPUS_DIR / "tables" / "concept_ontology.json"
+    if concept_ontology_path.exists():
+        concept_nodes, concept_edges = build_concept_graph(
+            load_json(concept_ontology_path),
+            topic_codes,
+            paper_id_set,
+            resource_id_set,
+        )
+        nodes.extend(concept_nodes)
+        for ce in concept_edges:
+            add_edge(ce["source"], ce["target"], ce["type"])
 
     return {"nodes": nodes, "edges": edges}
 

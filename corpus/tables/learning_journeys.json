@@ -6,6 +6,7 @@
     "stage": "0",
     "stage_name": "What is Learning Engineering?",
     "topics": "T00",
+    "concept_ids": "C01, C02",
     "anchor_resources": "Saxberg 2016 Atlantic essay (LE-T1-002); Goodell textbook Ch. 1 (LE-T1-001); ICICLE BoK overview"
   },
   {
@@ -15,6 +16,7 @@
     "stage": "1",
     "stage_name": "Learning Science Foundations",
     "topics": "T01",
+    "concept_ids": "C04, C05, C06, C07",
     "anchor_resources": "Dunlosky 2013 (LE-T1-004); How People Learn (LE-PP-052); Sweller CLT (LE-T1-006)"
   },
   {
@@ -24,6 +26,7 @@
     "stage": "2",
     "stage_name": "LE Process & Measurement",
     "topics": "T03, T04",
+    "concept_ids": "C11, C12, C13, C14, C18",
     "anchor_resources": "KLI Framework (LE-T1-008); LEVI Toolkit (LE-T1-007); Siemens LA (LE-T1-010)"
   },
   {
@@ -33,6 +36,7 @@
     "stage": "3",
     "stage_name": "Adaptive Systems & AI",
     "topics": "T06, T07",
+    "concept_ids": "C20, C21, C23",
     "anchor_resources": "ITS review (LE-T1-013); LLM survey (LE-T1-015); ASSISTments (LE-PP-030)"
   },
   {
@@ -42,6 +46,7 @@
     "stage": "4",
     "stage_name": "Evidence & Community",
     "topics": "T15, T16",
+    "concept_ids": "C17, C30, C32",
     "anchor_resources": "Kirkpatrick (LE-T1-021); IEEE ICICLE BoK (LE-T1-033); IEEE ICICLE community (LE-PP-040)"
   },
   {
@@ -51,6 +56,7 @@
     "stage": "0",
     "stage_name": "Human Factors & HSI Context",
     "topics": "T02, T13",
+    "concept_ids": "C09, C33",
     "anchor_resources": "HSI Handbook (LE-T1-005); Human Error (LE-T1-027); LENS @ JHU overview (LE-PP-001)"
   },
   {
@@ -60,6 +66,7 @@
     "stage": "1",
     "stage_name": "LE Field Overview",
     "topics": "T00",
+    "concept_ids": "C01, C02, C03",
     "anchor_resources": "Saxberg 2016; Goodell textbook overview; ICICLE BoK"
   },
   {
@@ -69,6 +76,7 @@
     "stage": "2",
     "stage_name": "Workforce & Training Systems",
     "topics": "T10",
+    "concept_ids": "C25, C28, C29",
     "anchor_resources": "Sitzmann simulation meta-analysis (LE-T1-017); Kirkpatrick evaluation; CTA guide (LE-T1-019)"
   },
   {
@@ -78,6 +86,7 @@
     "stage": "3",
     "stage_name": "Measurement & Evidence",
     "topics": "T04, T15",
+    "concept_ids": "C14, C15, C17",
     "anchor_resources": "Siemens LA; Kirkpatrick; Baker EDM (LE-PP-011 work)"
   },
   {
@@ -87,6 +96,7 @@
     "stage": "4",
     "stage_name": "Expert Elicitation & Knowledge Capture",
     "topics": "T09",
+    "concept_ids": "C12, C28",
     "anchor_resources": "CTA guide; knowledge representation (T05); PISTA/ExpertTrace approach"
   },
   {
@@ -96,6 +106,7 @@
     "stage": "0",
     "stage_name": "Field Definition & Methods",
     "topics": "T00, T17",
+    "concept_ids": "C01, C31",
     "anchor_resources": "Goodell textbook; Saxberg; Design-Based Research (LE-T1-035)"
   },
   {
@@ -105,6 +116,7 @@
     "stage": "1",
     "stage_name": "Learning Science & Analytics",
     "topics": "T01, T04",
+    "concept_ids": "C04, C13, C14",
     "anchor_resources": "Dunlosky; CLT; EDM review (LE-T1-009); LA field definition (LE-T1-010)"
   },
   {
@@ -114,6 +126,7 @@
     "stage": "2",
     "stage_name": "ITS & AI Systems",
     "topics": "T06, T07",
+    "concept_ids": "C20, C21, C23",
     "anchor_resources": "ITS review; LLM survey; DataShop (LE-PP-031)"
   },
   {
@@ -123,6 +136,7 @@
     "stage": "3",
     "stage_name": "Equity, Ethics & Evidence Standards",
     "topics": "T14, T15",
+    "concept_ids": "C24, C30, C34",
     "anchor_resources": "Algorithmic fairness (LE-T1-029); Kirkpatrick; DBR methodology"
   },
   {
@@ -132,6 +146,7 @@
     "stage": "4",
     "stage_name": "Community & Venues",
     "topics": "T16",
+    "concept_ids": "C32",
     "anchor_resources": "IEEE ICICLE; Learning@Scale (LE-PP-020); EDM (LE-PP-021); AIED (LE-PP-022)"
   },
   {
@@ -141,6 +156,7 @@
     "stage": "0",
     "stage_name": "LE Field & HSI Framing",
     "topics": "T00, T02",
+    "concept_ids": "C01, C09",
     "anchor_resources": "Saxberg 2016; HSI Handbook; LENS program overview; ICICLE BoK"
   },
   {
@@ -150,6 +166,7 @@
     "stage": "1",
     "stage_name": "High-Consequence Domains",
     "topics": "T13",
+    "concept_ids": "C33",
     "anchor_resources": "Reason Human Error; HSI applications; domain-specific literature from student's field"
   },
   {
@@ -159,6 +176,7 @@
     "stage": "2",
     "stage_name": "Measurement & Decision-Grade Evidence",
     "topics": "T04, T15",
+    "concept_ids": "C14, C15, C17",
     "anchor_resources": "Siemens LA; Kirkpatrick; evidence standards for operational domains"
   },
   {
@@ -168,6 +186,7 @@
     "stage": "3",
     "stage_name": "Expert Knowledge & Workforce Systems",
     "topics": "T09, T10",
+    "concept_ids": "C28, C29",
     "anchor_resources": "CTA guide; simulation literature; workforce development research"
   },
   {
@@ -177,6 +196,87 @@
     "stage": "4",
     "stage_name": "Ethics, Equity & Professional Community",
     "topics": "T14, T16",
+    "concept_ids": "C24, C32, C34",
     "anchor_resources": "Algorithmic fairness; IEEE ICICLE credentialing; governance frameworks"
+  },
+  {
+    "journey_id": "J-05",
+    "journey_name": "AI/EdTech Practitioner",
+    "learner_type": "Technologist, product manager, or engineer building AI-powered learning products",
+    "stage": "0",
+    "stage_name": "LE Field Foundation",
+    "topics": "T00",
+    "concept_ids": "C01, C02",
+    "anchor_resources": "Saxberg 2016 Atlantic essay (LE-T1-002); 7 Things about LE (LE-IC-022); Goodell textbook Ch. 1"
+  },
+  {
+    "journey_id": "J-05",
+    "journey_name": "AI/EdTech Practitioner",
+    "learner_type": "Technologist, product manager, or engineer building AI-powered learning products",
+    "stage": "1",
+    "stage_name": "Learning Science for Product Design",
+    "topics": "T01",
+    "concept_ids": "C04, C07",
+    "anchor_resources": "How People Learn (LE-PP-052); Dunlosky 2013 (LE-T1-004); Motivation survey (LE-T1-003)"
+  },
+  {
+    "journey_id": "J-05",
+    "journey_name": "AI/EdTech Practitioner",
+    "learner_type": "Technologist, product manager, or engineer building AI-powered learning products",
+    "stage": "2",
+    "stage_name": "Knowledge Representation & ITS",
+    "topics": "T05, T06",
+    "concept_ids": "C18, C20",
+    "anchor_resources": "KLI Framework (LE-T1-008); Koedinger ITS review (LE-T1-013); OpenSimon (LE-IC-024)"
+  },
+  {
+    "journey_id": "J-05",
+    "journey_name": "AI/EdTech Practitioner",
+    "learner_type": "Technologist, product manager, or engineer building AI-powered learning products",
+    "stage": "3",
+    "stage_name": "AI & Adaptive Systems",
+    "topics": "T06, T07",
+    "concept_ids": "C21, C23",
+    "anchor_resources": "LLM survey (LE-T1-015); Adaptive systems review (LE-T1-013); MIT LEAP (LE-IC-025)"
+  },
+  {
+    "journey_id": "J-05",
+    "journey_name": "AI/EdTech Practitioner",
+    "learner_type": "Technologist, product manager, or engineer building AI-powered learning products",
+    "stage": "4",
+    "stage_name": "Ethics, Analytics & Evidence",
+    "topics": "T07, T04",
+    "concept_ids": "C24, C14",
+    "anchor_resources": "Algorithmic fairness (LE-T1-029); Siemens LA (LE-T1-010); Data Use in LE (LE-IC-033)"
+  },
+  {
+    "journey_id": "J-06",
+    "journey_name": "Getting Up to Speed Fast",
+    "learner_type": "Time-pressed professional needing a rapid LE orientation — 3-stage express path",
+    "stage": "0",
+    "stage_name": "What LE Is and Why It Matters",
+    "topics": "T00",
+    "concept_ids": "C01, C02",
+    "anchor_resources": "Saxberg 2016 Atlantic essay (LE-T1-002); 7 Things about LE (LE-IC-022); Goodell 2019 LE vs ID (LE-IC-029)"
+  },
+  {
+    "journey_id": "J-06",
+    "journey_name": "Getting Up to Speed Fast",
+    "learner_type": "Time-pressed professional needing a rapid LE orientation — 3-stage express path",
+    "stage": "1",
+    "stage_name": "How People Learn",
+    "topics": "T01",
+    "concept_ids": "C04",
+    "anchor_resources": "How People Learn Ch. 1-3 (LE-PP-052); Dunlosky 2013 six-strategy summary (LE-T1-004)"
+  },
+  {
+    "journey_id": "J-06",
+    "journey_name": "Getting Up to Speed Fast",
+    "learner_type": "Time-pressed professional needing a rapid LE orientation — 3-stage express path",
+    "stage": "2",
+    "stage_name": "LE Process & Measuring Impact",
+    "topics": "T03, T15",
+    "concept_ids": "C11, C17",
+    "anchor_resources": "ICICLE LE Process diagram (LE-IC-002); LE Case Guide 1.0 (LE-IC-003); Kirkpatrick model (LE-T1-021)"
   }
 ]
