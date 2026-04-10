@@ -10,8 +10,8 @@
     "field_name": "status",
     "type": "Enum",
     "required": "Yes",
-    "definition": "Current curation status.",
-    "valid_values_or_format": "DRAFT | APPROVED | INGESTED | REJECTED | WATCH"
+    "definition": "Current curation status. RETIRED entries are kept to avoid re-evaluation.",
+    "valid_values_or_format": "DRAFT | APPROVED | INGESTED | REJECTED | WATCH | RETIRED"
   },
   {
     "field_name": "selection_tier",
@@ -19,6 +19,20 @@
     "required": "Yes",
     "definition": "Pipeline tier that selected this document.",
     "valid_values_or_format": "T1 | T2 | T3 | T4"
+  },
+  {
+    "field_name": "seed_role",
+    "type": "Enum",
+    "required": "No",
+    "definition": "Role of this entry in the seed strategy. expansion = active retrieval root (used to drive OpenAlex one-hop); landmark_anchor = foundational item that shapes graph structure but is not an active retrieval root; framing = used for scoring/topic shaping only; bridge = non-LE paper included because it bridges into LE topics.",
+    "valid_values_or_format": "expansion | landmark_anchor | framing | bridge"
+  },
+  {
+    "field_name": "recency_flag",
+    "type": "Enum",
+    "required": "Yes",
+    "definition": "\u2693 foundational anchor | \u2705 current (last 5yr) | \u26a0\ufe0f aging (5\u201315yr)",
+    "valid_values_or_format": "\u2693 | \u2705 | \u26a0\ufe0f"
   },
   {
     "field_name": "title",
@@ -82,13 +96,6 @@
     "required": "Yes",
     "definition": "Resource type from Content Type Taxonomy.",
     "valid_values_or_format": "AP | SG | GL | PC | PP | CE | TP | CO"
-  },
-  {
-    "field_name": "recency_flag",
-    "type": "Enum",
-    "required": "Yes",
-    "definition": "\u2693 foundational anchor | \u2705 current (last 5yr) | \u26a0\ufe0f aging (5\u201315yr)",
-    "valid_values_or_format": "\u2693 | \u2705 | \u26a0\ufe0f"
   },
   {
     "field_name": "geo_scope",
@@ -187,6 +194,13 @@
     "required": "Cond.",
     "definition": "Required if status = REJECTED.",
     "valid_values_or_format": ""
+  },
+  {
+    "field_name": "retired_in_version",
+    "type": "String",
+    "required": "Cond.",
+    "definition": "Required if status = RETIRED. Records the corpus version or date when this entry was retired. Entries are never deleted \u2014 they are retired so the record is preserved for audit.",
+    "valid_values_or_format": "v1.4 | 2026-09"
   },
   {
     "field_name": "date_added",
