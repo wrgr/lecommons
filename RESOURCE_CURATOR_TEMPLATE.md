@@ -28,6 +28,26 @@ Do **not** add resources that are:
 
 ---
 
+## Scoring Rubric
+
+Before committing a resource, rate it on each dimension below (1–5 scale). A score of
+**18/25 or higher** is the inclusion threshold. Record scores in the `qa_notes` field.
+
+| Dimension | 1 (poor) | 3 (acceptable) | 5 (excellent) |
+|-----------|----------|----------------|---------------|
+| **LE Relevance** | Tangential to LE | Relevant to an LE topic | Directly defines or advances LE practice |
+| **Currency** | >10 years old, no update | 5–10 years, still cited | <5 years, or classic with lasting validity |
+| **Practitioner Utility** | Academic only; no practical takeaways | Some guidance for practitioners | Actionable tools, templates, or evidence a practitioner can use today |
+| **Clarity** | Dense jargon, no summary | Accessible with effort | Clear, well-structured, summary or abstract available |
+| **Accessibility** | Paywalled, no alternative | Partially accessible | Freely available (open access, free download, public URL) |
+
+**Scoring note for grey literature:** Currency and Practitioner Utility are the most
+important dimensions for non-academic resources. A practitioner template (LE-IC-*) that
+scores 4+4 on those two dimensions usually clears the threshold even if it scores lower
+on Clarity.
+
+---
+
 ## Resource ID Scheme
 
 | Prefix | Registry file | Usage |
@@ -71,7 +91,7 @@ Every entry must include all of the following fields.
 ### Content Type Codes
 
 | Code | Meaning | Examples |
-|------|---------|---------|
+|------|---------|----------|
 | `AP` | Academic paper | Peer-reviewed journal article, conference paper, preprint |
 | `SG` | Standard / Guideline | IEEE ICICLE BoK, xAPI spec, IMS Global |
 | `PC` | Program / Curriculum | Degree program, MOOC, certificate |
@@ -89,6 +109,7 @@ Every entry must include all of the following fields.
 | `SEED` | Included as a starting point; verify before promotion |
 | `CANDIDATE` | Under review; not yet included in graph builds |
 | `REJECTED` | Evaluated and excluded; keep entry to avoid re-evaluation |
+| `RETIRED` | Was APPROVED but is now superseded, defunct, or no longer relevant. Set `retired_in_version`. Never delete retired entries. |
 
 ### Topic Codes
 
@@ -115,6 +136,23 @@ List up to three additional topics in `secondary_topics` (comma-separated string
 | T15 | Evidence & Evaluation Standards |
 | T16 | Standards, Credentialing & Community |
 | T17 | Research Methods & Field Development |
+
+---
+
+## Seed Role
+
+For resources that function as **seeds** in the citation expansion pipeline (i.e., T1 seeds
+in `corpus/academic_papers.jsonl`), assign a `seed_role` in `metadata_schema.json`:
+
+| Role | Meaning |
+|------|---------|
+| `expansion` | Active retrieval root — used to drive OpenAlex one-hop expansion |
+| `landmark_anchor` | Foundational item that shapes graph structure; not an active retrieval root |
+| `framing` | Used for scoring and topic shaping only; not a retrieval seed |
+| `bridge` | Non-LE resource included because it bridges into LE topics |
+
+Most T1 seeds are `expansion`. The Goodell/Kolodner textbook and Saxberg 2016 Atlantic
+essay are `landmark_anchor` — they define the field but don't drive literature retrieval.
 
 ---
 
@@ -151,16 +189,39 @@ python3 scripts/build_dataset.py
 ```
 
 The pipeline will:
-1. Merge `icicle_resources_registry.json` into the resource index.
+1. Merge `icicle_resources_registry.json` + `programs_people_registry.json` into the resource index (deduplicating by `resource_id`).
 2. Build concept-layer nodes and edges from `concept_ontology.json` and
    `concept_graph_seeds.json`.
-3. Emit updated `data/*.json` artifacts consumed by the website.
+3. Run `audit_resource_diversity()` and print any balance warnings.
+4. Emit updated `data/*.json` artifacts consumed by the website.
 
 If the build fails, check:
 - All resource IDs referenced in `concept_ontology.json` actually exist in one of
-  the registry files (`programs_people_registry.json` or `icicle_resources_registry.json`).
+  the registry files.
 - All topic codes in new entries are valid (T00–T17).
 - JSON is valid (no trailing commas, matched brackets).
+
+---
+
+## Maintenance Schedule
+
+| Cadence | Task | Owner |
+|---------|------|-------|
+| **Quarterly** | Validate all URLs — automated bot pass + manual spot-check of failed URLs | Curator |
+| **Quarterly** | Review `data/diversity_audit.json` warnings — address any topic with >60% single content type | Curator |
+| **Annually** | Freshness review — scan resources added >3 years ago; flag for AGING or RETIRED | Domain lead |
+| **Annually** | Solicit learner/community feedback; add or retire based on usage and feedback | Domain lead |
+| **Per release** | Update `corpus/tables/update_log.json` with summary of changes | Curator |
+
+**Retiring a resource:**
+1. Set `"status": "RETIRED"` in the registry entry.
+2. Set `"retired_in_version": "YYYY-MM"` (e.g. `"2026-09"`).
+3. Remove the resource ID from any `concept_ontology.json → primary_resources` arrays.
+4. Add a note in `corpus/tables/update_log.json` explaining why it was retired.
+5. Run the build to confirm no dangling references.
+
+Never delete a retired entry — keeping it prevents re-evaluation and provides an audit
+trail.
 
 ---
 
@@ -168,6 +229,7 @@ If the build fails, check:
 
 Before committing a new resource:
 
+- [ ] Scoring rubric completed in `qa_notes`; total ≥ 18/25 (or document exception).
 - [ ] Resource ID is unique and follows the correct prefix scheme.
 - [ ] All required fields are present and non-empty.
 - [ ] `content_type` matches one of the eight valid codes.
@@ -177,3 +239,4 @@ Before committing a new resource:
 - [ ] `notes` records the provenance and date.
 - [ ] If relevant, `concept_ontology.json` updated to bind the resource to concepts.
 - [ ] `python3 scripts/build_dataset.py` runs without errors.
+- [ ] No new `diversity_audit.json` warnings introduced (or documented as acceptable).
