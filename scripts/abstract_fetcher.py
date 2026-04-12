@@ -149,7 +149,7 @@ def discover_pdf_urls_from_html(html: str, base_url: str) -> List[str]:
         return urls
 
     meta_match = re.search(
-        r'<meta[^>]+name=["\']citation_pdf_url["\'][^>]+content=["\'](.*?)["\'\]',
+        r"""<meta[^>]+name=["']citation_pdf_url["'][^>]+content=["'](.*?)["']""",
         html,
         flags=re.IGNORECASE | re.DOTALL,
     )

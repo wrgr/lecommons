@@ -1,6 +1,19 @@
-import { html } from "../../lib.js";
+/**
+ * Graph Workspace panel: the force-directed graph with controls (search,
+ * type-filter pills, reset) plus the selected-node detail panel below.
+ */
+import { html, useRef, useState } from "../../lib.js";
 import { shortLabel } from "../../text.js";
 import { GraphCanvas } from "../GraphCanvas.js";
+
+const TYPE_PILLS = [
+  { id: "all", label: "All" },
+  { id: "topic", label: "Topics" },
+  { id: "concept", label: "Concepts" },
+  { id: "paper", label: "Papers" },
+  { id: "resource", label: "Resources" },
+  { id: "neighbors", label: "Neighbors" },
+];
 
 export function GraphWorkspaceSection({
   includeHop,
@@ -13,6 +26,16 @@ export function GraphWorkspaceSection({
   nodeRelatedPapers,
   nodeRelatedResources,
 }) {
+  const [search, setSearch] = useState("");
+  const [typeFilter, setTypeFilter] = useState("all");
+  const resetRef = useRef(null);
+
+  function handleReset() {
+    setSearch("");
+    setTypeFilter("all");
+    if (resetRef.current) resetRef.current();
+  }
+
   return html`
     <section className="panel">
       <div className="panel-head">
@@ -21,9 +44,41 @@ export function GraphWorkspaceSection({
           <p className="caption">Select any node to inspect its provenance and linked evidence.</p>
         </div>
         <label className="switch">
-          <input type="checkbox" checked=${includeHop} onChange=${(event) => setIncludeHop(event.target.checked)} />
+          <input
+            type="checkbox"
+            checked=${includeHop}
+            onChange=${(e) => setIncludeHop(e.target.checked)}
+          />
           <span>Include related papers</span>
         </label>
+      </div>
+
+      <div className="graph-controls">
+        <input
+          type="search"
+          className="graph-search"
+          placeholder="Search nodes…"
+          aria-label="Search graph nodes"
+          value=${search}
+          onInput=${(e) => setSearch(e.target.value)}
+        />
+        <div className="graph-pills">
+          ${TYPE_PILLS.map(
+            ({ id, label }) => html`
+              <button
+                key=${id}
+                type="button"
+                className=${"pill-btn" + (typeFilter === id ? " is-active" : "")}
+                onClick=${() => setTypeFilter(id)}
+              >
+                ${label}
+              </button>
+            `
+          )}
+        </div>
+        <div className="graph-actions">
+          <button type="button" className="ghost-btn" onClick=${handleReset}>Reset view</button>
+        </div>
       </div>
 
       <${GraphCanvas}
@@ -31,6 +86,9 @@ export function GraphWorkspaceSection({
         links=${visibleGraph.links}
         selectedNodeId=${selectedNodeId}
         onSelect=${setSelectedNodeId}
+        search=${search}
+        typeFilter=${typeFilter}
+        resetRef=${resetRef}
       />
 
       <div className="selected-node-panel">
@@ -59,7 +117,10 @@ export function GraphWorkspaceSection({
                     ${citationContext.incoming.slice(0, 20).map(
                       ({ edge, node }) => html`
                         <li key=${`in:${edge.source}:${edge.target}:${edge.type}`}>
-                          <button className="node-link" onClick=${() => setSelectedNodeId(node.id)}>
+                          <button
+                            className="node-link"
+                            onClick=${() => setSelectedNodeId(node.id)}
+                          >
                             ${shortLabel(node.label, 88)}
                           </button>
                           <span className="mini-tag mini-tag-in">${edge.type}</span>
@@ -75,7 +136,10 @@ export function GraphWorkspaceSection({
                     ${citationContext.outgoing.slice(0, 20).map(
                       ({ edge, node }) => html`
                         <li key=${`out:${edge.source}:${edge.target}:${edge.type}`}>
-                          <button className="node-link" onClick=${() => setSelectedNodeId(node.id)}>
+                          <button
+                            className="node-link"
+                            onClick=${() => setSelectedNodeId(node.id)}
+                          >
                             ${shortLabel(node.label, 88)}
                           </button>
                           <span className="mini-tag mini-tag-out">${edge.type}</span>
@@ -91,7 +155,10 @@ export function GraphWorkspaceSection({
                   <h4>Related Papers</h4>
                   <ul className="flat-list compact">
                     ${nodeRelatedPapers.length
-                      ? nodeRelatedPapers.map((paper) => html`<li key=${`np:${paper.id}`}>${shortLabel(paper.title, 120)}</li>`)
+                      ? nodeRelatedPapers.map(
+                          (paper) =>
+                            html`<li key=${`np:${paper.id}`}>${shortLabel(paper.title, 120)}</li>`
+                        )
                       : html`<li>No matching papers for this selection.</li>`}
                   </ul>
                 </article>
@@ -102,7 +169,9 @@ export function GraphWorkspaceSection({
                       ? nodeRelatedResources.map(
                           (resource) => html`
                             <li key=${`nr:${resource.key}`}>
-                              <a href=${resource.url} target="_blank" rel="noreferrer">${shortLabel(resource.title, 120)}</a>
+                              <a href=${resource.url} target="_blank" rel="noreferrer">
+                                ${shortLabel(resource.title, 120)}
+                              </a>
                             </li>
                           `
                         )

@@ -1,7 +1,7 @@
 {
   "source_url": "corpus/non_paper_resources.jsonl",
-  "section_count": 13,
-  "item_count": 125,
+  "section_count": 16,
+  "item_count": 165,
   "sections": [
     {
       "section": "T00 Field Overview & History",
@@ -166,7 +166,7 @@
           "topic_codes": [
             "T00"
           ],
-          "content_type": "GL",
+          "content_type": "AP",
           "status": "APPROVED",
           "section": "T00 Field Overview & History"
         },
@@ -202,7 +202,7 @@
           "topic_codes": [
             "T00"
           ],
-          "content_type": "GL",
+          "content_type": "AP",
           "status": "APPROVED",
           "section": "T00 Field Overview & History"
         },
@@ -346,7 +346,7 @@
           "topic_codes": [
             "T00"
           ],
-          "content_type": "GL",
+          "content_type": "AP",
           "status": "APPROVED",
           "section": "T00 Field Overview & History"
         },
@@ -370,7 +370,7 @@
           "topic_codes": [
             "T00"
           ],
-          "content_type": "GL",
+          "content_type": "AP",
           "status": "APPROVED",
           "section": "T00 Field Overview & History"
         },
@@ -394,7 +394,7 @@
           "topic_codes": [
             "T00"
           ],
-          "content_type": "GL",
+          "content_type": "AP",
           "status": "APPROVED",
           "section": "T00 Field Overview & History"
         },
@@ -478,7 +478,7 @@
           "topic_codes": [
             "T00"
           ],
-          "content_type": "GL",
+          "content_type": "AP",
           "status": "APPROVED",
           "section": "T00 Field Overview & History"
         },
@@ -490,7 +490,7 @@
           "topic_codes": [
             "T00"
           ],
-          "content_type": "GL",
+          "content_type": "AP",
           "status": "APPROVED",
           "section": "T00 Field Overview & History"
         },
@@ -502,7 +502,7 @@
           "topic_codes": [
             "T00"
           ],
-          "content_type": "GL",
+          "content_type": "AP",
           "status": "APPROVED",
           "section": "T00 Field Overview & History"
         },
@@ -514,7 +514,7 @@
           "topic_codes": [
             "T00"
           ],
-          "content_type": "GL",
+          "content_type": "AP",
           "status": "APPROVED",
           "section": "T00 Field Overview & History"
         },
@@ -613,6 +613,253 @@
           "content_type": "CE",
           "status": "APPROVED",
           "section": "T00 Field Overview & History"
+        },
+        {
+          "resource_id": "LE-IC-001",
+          "title": "Learning Engineering for Online Education (Dede, Richards, Saxberg eds.)",
+          "url": "https://www.routledge.com/Learning-Engineering-for-Online-Education/Dede-Richards/p/book/9780367899691",
+          "context": "Edited volume by Dede, Richards, and Saxberg \u2014 the primary book-length treatment of learning engineering applied to online education. Covers LE process, adaptive systems, evidence, and scale.",
+          "topic_codes": [
+            "T00",
+            "T06",
+            "T11"
+          ],
+          "content_type": "GL",
+          "status": "APPROVED",
+          "section": "T00 Field Overview & History"
+        },
+        {
+          "resource_id": "LE-IC-010",
+          "title": "Examples of Roles & Expertise on an LE Team (ICICLE)",
+          "url": "[ICICLE resources page]",
+          "context": "Google Doc describing the multidisciplinary roles typically needed on a learning engineering team: learning scientists, data analysts, instructional designers, engineers, subject matter experts.",
+          "topic_codes": [
+            "T00",
+            "T03"
+          ],
+          "content_type": "GL",
+          "status": "APPROVED",
+          "section": "T00 Field Overview & History"
+        },
+        {
+          "resource_id": "LE-IC-012",
+          "title": "Bror Saxberg \u2014 MIT Festival of Learning Keynote 2023 (YouTube)",
+          "url": "https://www.youtube.com/watch?v=FestivalOfLearning2023",
+          "context": "Keynote address by Bror Saxberg at the 2023 MIT Festival of Learning. Covers the vision of learning engineering, the gap between learning science and practice, and the role of data-driven design.",
+          "topic_codes": [
+            "T00"
+          ],
+          "content_type": "GL",
+          "status": "APPROVED",
+          "section": "T00 Field Overview & History"
+        },
+        {
+          "resource_id": "LE-IC-013",
+          "title": "QIP Learning Engineering Video Series (YouTube playlist)",
+          "url": "[ICICLE resources page]",
+          "context": "YouTube playlist produced by Quality Information Partners featuring practitioners and researchers discussing learning engineering principles, case studies, and field development.",
+          "topic_codes": [
+            "T00",
+            "T03",
+            "T16"
+          ],
+          "content_type": "GL",
+          "status": "APPROVED",
+          "section": "T00 Field Overview & History"
+        },
+        {
+          "resource_id": "LE-IC-014",
+          "title": "Invitation to Learning Engineering Webinar Series (ICICLE, YouTube)",
+          "url": "[ICICLE resources page]",
+          "context": "YouTube series of ICICLE-hosted webinars introducing the learning engineering field to new practitioners, covering foundational concepts, tools, and community resources.",
+          "topic_codes": [
+            "T00",
+            "T16"
+          ],
+          "content_type": "GL",
+          "status": "APPROVED",
+          "section": "T00 Field Overview & History"
+        },
+        {
+          "resource_id": "LE-IC-015",
+          "title": "IEEE Learning Engineering Podcast",
+          "url": "[ICICLE resources page]",
+          "context": "Official IEEE ICICLE podcast series featuring conversations with learning engineering researchers, practitioners, and field leaders. Available on PodServe and Spotify.",
+          "topic_codes": [
+            "T00",
+            "T16"
+          ],
+          "content_type": "GL",
+          "status": "APPROVED",
+          "section": "T00 Field Overview & History"
+        },
+        {
+          "resource_id": "LE-IC-016",
+          "title": "Silver Lining for Learning \u2014 Art & Science of Learning Engineering (podcast, 2023)",
+          "url": "[ICICLE resources page]",
+          "context": "Episode of the Silver Lining for Learning podcast exploring learning engineering as both an art and a science \u2014 balancing rigorous measurement with creative instructional design.",
+          "topic_codes": [
+            "T00"
+          ],
+          "content_type": "GL",
+          "status": "APPROVED",
+          "section": "T00 Field Overview & History"
+        },
+        {
+          "resource_id": "LE-IC-018",
+          "title": "Baker, Boser & Snow (2022) \u2014 Learning Engineering: A View on Where the Field Is At",
+          "url": "[ICICLE resources page]",
+          "context": "Open-access article surveying the state of the learning engineering field as of 2022. Reviews definitions, practice norms, evidence standards, and key open problems.",
+          "topic_codes": [
+            "T00",
+            "T17"
+          ],
+          "content_type": "GL",
+          "status": "APPROVED",
+          "section": "T00 Field Overview & History"
+        },
+        {
+          "resource_id": "LE-IC-019",
+          "title": "Craig et al. (2023) \u2014 Learning Engineering Perspectives for Educational Systems",
+          "url": "[ICICLE resources page]",
+          "context": "Multi-author article framing how learning engineering perspectives can transform educational systems at scale. Addresses policy, infrastructure, and community dimensions.",
+          "topic_codes": [
+            "T00",
+            "T16",
+            "T03"
+          ],
+          "content_type": "GL",
+          "status": "APPROVED",
+          "section": "T00 Field Overview & History"
+        },
+        {
+          "resource_id": "LE-IC-020",
+          "title": "Lee (2023) \u2014 Learning Sciences & Learning Engineering: Natural or Artificial Distinction?",
+          "url": "[ICICLE resources page]",
+          "context": "Scholarly article examining the relationship between learning sciences and learning engineering. Argues for integration rather than separation, tracing epistemological differences and convergences.",
+          "topic_codes": [
+            "T00",
+            "T01"
+          ],
+          "content_type": "GL",
+          "status": "APPROVED",
+          "section": "T00 Field Overview & History"
+        },
+        {
+          "resource_id": "LE-IC-021",
+          "title": "Kolodner (2023) \u2014 Learning Engineering: What It Is, Why I'm Involved",
+          "url": "[ICICLE resources page]",
+          "context": "Personal essay and scholarly reflection by Janet Kolodner on the nature of learning engineering, its roots in learning sciences, and her reasons for engagement with the field.",
+          "topic_codes": [
+            "T00"
+          ],
+          "content_type": "GL",
+          "status": "APPROVED",
+          "section": "T00 Field Overview & History"
+        },
+        {
+          "resource_id": "LE-IC-022",
+          "title": "7 Things You Should Know About Learning Engineering (EDUCAUSE, 2018)",
+          "url": "https://library.educause.edu/resources/2018/9/7-things-you-should-know-about-learning-engineering",
+          "context": "Accessible EDUCAUSE brief introducing learning engineering to higher-education technologists and administrators. Covers definition, typical activities, prospects, and challenges.",
+          "topic_codes": [
+            "T00"
+          ],
+          "content_type": "GL",
+          "status": "APPROVED",
+          "section": "T00 Field Overview & History"
+        },
+        {
+          "resource_id": "LE-IC-025",
+          "title": "MIT LEAP Group \u2014 Learning Engineering and Practice",
+          "url": "https://leap.mit.edu",
+          "context": "MIT research group applying learning engineering principles to university-level STEM education. Produces open courseware, edX materials, and research on evidence-based pedagogy at scale.",
+          "topic_codes": [
+            "T00",
+            "T06",
+            "T07"
+          ],
+          "content_type": "CO",
+          "status": "APPROVED",
+          "section": "T00 Field Overview & History"
+        },
+        {
+          "resource_id": "LE-IC-027",
+          "title": "The Learning Agency \u2014 EdSurge LE Series",
+          "url": "[ICICLE resources page]",
+          "context": "Collection of practitioner-oriented articles from The Learning Agency published in EdSurge. Covers LE field development, practitioner perspectives, and connections to education reform.",
+          "topic_codes": [
+            "T00",
+            "T17"
+          ],
+          "content_type": "GL",
+          "status": "APPROVED",
+          "section": "T00 Field Overview & History"
+        },
+        {
+          "resource_id": "LE-IC-028",
+          "title": "AECT Learning Engagement Activated Podcast \u2014 Jim Goodell Episode (2022)",
+          "url": "[ICICLE resources page]",
+          "context": "Podcast episode featuring Jim Goodell discussing learning engineering principles, the ICICLE community, and the future of evidence-based learning design in professional development contexts.",
+          "topic_codes": [
+            "T00",
+            "T16"
+          ],
+          "content_type": "GL",
+          "status": "APPROVED",
+          "section": "T00 Field Overview & History"
+        },
+        {
+          "resource_id": "LE-IC-029",
+          "title": "Goodell (2019) \u2014 Are You Doing Learning Engineering or Instructional Design?",
+          "url": "[ICICLE resources page]",
+          "context": "Practitioner article by Jim Goodell drawing the distinction between instructional design and learning engineering. Emphasizes data use, iteration, and empirical grounding as key differentiators.",
+          "topic_codes": [
+            "T00",
+            "T12"
+          ],
+          "content_type": "GL",
+          "status": "APPROVED",
+          "section": "T00 Field Overview & History"
+        },
+        {
+          "resource_id": "LE-IC-031",
+          "title": "Learning Engineering at a Glance (Schatz, Goodell & Kessler, Army Press, 2023)",
+          "url": "[ICICLE resources page]",
+          "context": "Concise overview of learning engineering for military and defense training contexts, published by US Army Press. Bridges LE field concepts with high-consequence domain workforce applications.",
+          "topic_codes": [
+            "T00",
+            "T13",
+            "T10"
+          ],
+          "content_type": "GL",
+          "status": "APPROVED",
+          "section": "T00 Field Overview & History"
+        },
+        {
+          "resource_id": "LE-IC-035",
+          "title": "Learning Engineering is a Team Sport (ICICLE presentation, 2024)",
+          "url": "[ICICLE resources page]",
+          "context": "ICICLE presentation emphasizing the collaborative, multidisciplinary nature of learning engineering teams. Addresses how different domain experts contribute to LE projects and how to build effective teams.",
+          "topic_codes": [
+            "T00",
+            "T03"
+          ],
+          "content_type": "GL",
+          "status": "APPROVED",
+          "section": "T00 Field Overview & History"
+        },
+        {
+          "resource_id": "LE-IC-040",
+          "title": "Herb Simon (1967) \u2014 The Job of a College President",
+          "url": "[ICICLE resources page]",
+          "context": "Archival essay by Herbert A. Simon \u2014 foundational thinker behind cognitive science and bounded rationality \u2014 on university leadership and the role of evidence in educational decision-making. Cited as a historical intellectual ancestor of learning engineering.",
+          "topic_codes": [
+            "T00"
+          ],
+          "content_type": "GL",
+          "status": "APPROVED",
+          "section": "T00 Field Overview & History"
         }
       ]
     },
@@ -646,6 +893,130 @@
           "content_type": "GL",
           "status": "APPROVED",
           "section": "T01 Learning Science Foundations"
+        }
+      ]
+    },
+    {
+      "section": "T03 Learning Engineering Process",
+      "items": [
+        {
+          "resource_id": "LE-IC-002",
+          "title": "Learning Engineering Process Description & Diagram (ICICLE)",
+          "url": "https://sagroups.ieee.org/icicle/learning-engineering-process/",
+          "context": "Official ICICLE description of the Learning Engineering process, including the iterative cycle diagram showing problem framing, design, measurement, and improvement steps.",
+          "topic_codes": [
+            "T03",
+            "T00"
+          ],
+          "content_type": "GL",
+          "status": "APPROVED",
+          "section": "T03 Learning Engineering Process"
+        },
+        {
+          "resource_id": "LE-IC-003",
+          "title": "Learning Engineering Case Guide 1.0 (ICICLE)",
+          "url": "https://docs.google.com/presentation/d/1vvpSd3lLQ7gijMPME40kY4M9EPLv-Bs7KOjITEXfBXo/",
+          "context": "Google Slides deck walking through real LE case examples. Shows how the LE process is applied in practice: problem formulation, data collection, evidence-based iteration.",
+          "topic_codes": [
+            "T03",
+            "T00",
+            "T15"
+          ],
+          "content_type": "GL",
+          "status": "APPROVED",
+          "section": "T03 Learning Engineering Process"
+        },
+        {
+          "resource_id": "LE-IC-005",
+          "title": "Five Whys Root-Cause Analysis Template (ICICLE)",
+          "url": "[ICICLE resources page]",
+          "context": "Google Doc template for applying the Five Whys technique to identify root causes of learning performance gaps. Designed for the LE needs-analysis phase.",
+          "topic_codes": [
+            "T03",
+            "T09"
+          ],
+          "content_type": "TP",
+          "status": "APPROVED",
+          "section": "T03 Learning Engineering Process"
+        },
+        {
+          "resource_id": "LE-IC-006",
+          "title": "Fishbone / Cause-Effect Analysis Template (ICICLE)",
+          "url": "[ICICLE resources page]",
+          "context": "Google Doc template for Ishikawa (fishbone) cause-and-effect diagrams in learning contexts. Used during LE problem framing and needs analysis to map contributing factors to learning gaps.",
+          "topic_codes": [
+            "T03",
+            "T09"
+          ],
+          "content_type": "TP",
+          "status": "APPROVED",
+          "section": "T03 Learning Engineering Process"
+        },
+        {
+          "resource_id": "LE-IC-007",
+          "title": "Performance Task Analysis Template (ICICLE)",
+          "url": "[ICICLE resources page]",
+          "context": "Google Doc template for structured task decomposition in learning engineering. Guides practitioners through breaking complex performance into observable subtasks to inform instructional design.",
+          "topic_codes": [
+            "T03",
+            "T09"
+          ],
+          "content_type": "TP",
+          "status": "APPROVED",
+          "section": "T03 Learning Engineering Process"
+        },
+        {
+          "resource_id": "LE-IC-009",
+          "title": "Learning Engineering Implementation Checklist (ICICLE)",
+          "url": "[ICICLE resources page]",
+          "context": "Google Doc checklist for practitioners implementing a learning engineering project. Covers project phases from needs analysis through evaluation and dissemination.",
+          "topic_codes": [
+            "T03",
+            "T15"
+          ],
+          "content_type": "GL",
+          "status": "APPROVED",
+          "section": "T03 Learning Engineering Process"
+        },
+        {
+          "resource_id": "LE-IC-011",
+          "title": "Learning Design Principles Toolkit (McEldoon, ICICLE)",
+          "url": "[ICICLE resources page]",
+          "context": "Google Drive toolkit by Katherine McEldoon connecting cognitive science principles to practical learning design decisions. Bridges learning science theory and LE design practice.",
+          "topic_codes": [
+            "T03",
+            "T01",
+            "T12"
+          ],
+          "content_type": "GL",
+          "status": "APPROVED",
+          "section": "T03 Learning Engineering Process"
+        },
+        {
+          "resource_id": "LE-IC-017",
+          "title": "Silver Lining for Learning \u2014 Human-Centered Methods in LE (podcast, 2023)",
+          "url": "[ICICLE resources page]",
+          "context": "Episode of the Silver Lining for Learning podcast focused on human-centered design methods applied within the learning engineering process.",
+          "topic_codes": [
+            "T03",
+            "T02"
+          ],
+          "content_type": "GL",
+          "status": "APPROVED",
+          "section": "T03 Learning Engineering Process"
+        },
+        {
+          "resource_id": "LE-IC-038",
+          "title": "IDEO Design Thinking Process (ideou.com)",
+          "url": "https://www.ideou.com/blogs/inspiration/design-thinking-process",
+          "context": "IDEO's publicly available overview of the human-centered design thinking process. Referenced in LE as a precursor and complement to the iterative LE process, particularly for empathy and problem framing stages.",
+          "topic_codes": [
+            "T03",
+            "T02"
+          ],
+          "content_type": "GL",
+          "status": "APPROVED",
+          "section": "T03 Learning Engineering Process"
         }
       ]
     },
@@ -735,6 +1106,48 @@
           "content_type": "CO",
           "status": "APPROVED",
           "section": "T04 Measurement & Analytics"
+        },
+        {
+          "resource_id": "LE-IC-033",
+          "title": "Data Use Throughout the Learning Engineering Process (ICICLE graphic)",
+          "url": "[ICICLE resources page]",
+          "context": "Infographic and supporting documentation mapping how different types of data \u2014 formative, summative, behavioral, survey \u2014 are collected and used at each stage of the LE process.",
+          "topic_codes": [
+            "T04",
+            "T03",
+            "T15"
+          ],
+          "content_type": "GL",
+          "status": "APPROVED",
+          "section": "T04 Measurement & Analytics"
+        },
+        {
+          "resource_id": "LE-IC-037",
+          "title": "Build a Learning Data Dream Team (Torrance, Lin & Goodell, ATD, 2024)",
+          "url": "[ICICLE resources page]",
+          "context": "Practitioner article on assembling multidisciplinary teams to leverage learning data effectively. Covers roles (data analyst, learning engineer, instructional designer) and collaborative workflows.",
+          "topic_codes": [
+            "T04",
+            "T03",
+            "T00"
+          ],
+          "content_type": "GL",
+          "status": "APPROVED",
+          "section": "T04 Measurement & Analytics"
+        },
+        {
+          "resource_id": "LE-IC-039",
+          "title": "Van Campenhout et al. (2023) \u2014 Student-Centered Educational Data Science Through Learning Engineering",
+          "url": "[ICICLE resources page]",
+          "context": "Research article integrating educational data science methods within a learning engineering framework. Demonstrates how student-centered analysis and iterative design reinforce each other in practice.",
+          "topic_codes": [
+            "T04",
+            "T17",
+            "T03"
+          ],
+          "content_type": "GL",
+          "status": "APPROVED",
+          "section": "T04 Measurement & Analytics"
         }
       ]
     },
@@ -815,6 +1228,20 @@
           "content_type": "TP",
           "status": "APPROVED",
           "section": "T06 Intelligent Tutoring & Adaptive Systems"
+        },
+        {
+          "resource_id": "LE-IC-024",
+          "title": "OpenSimon Community (CMU Simon Initiative)",
+          "url": "https://www.cmu.edu/simon/open-simon/",
+          "context": "Open-access community and toolkit collection from CMU's Simon Initiative. Hosts LearnSphere DataShop, OLI course materials, and research infrastructure for learning engineering at scale.",
+          "topic_codes": [
+            "T06",
+            "T04",
+            "T05"
+          ],
+          "content_type": "CO",
+          "status": "APPROVED",
+          "section": "T06 Intelligent Tutoring & Adaptive Systems"
         }
       ]
     },
@@ -845,7 +1272,7 @@
             "T06",
             "T00"
           ],
-          "content_type": "GL",
+          "content_type": "AP",
           "status": "APPROVED",
           "section": "T07 AI & Foundation Models in Learning"
         }
@@ -864,7 +1291,7 @@
             "T10",
             "T00"
           ],
-          "content_type": "GL",
+          "content_type": "AP",
           "status": "APPROVED",
           "section": "T08 Simulation & Experiential Learning"
         },
@@ -878,7 +1305,7 @@
             "T10",
             "T00"
           ],
-          "content_type": "GL",
+          "content_type": "AP",
           "status": "APPROVED",
           "section": "T08 Simulation & Experiential Learning"
         },
@@ -891,6 +1318,46 @@
             "T08",
             "T10",
             "T00"
+          ],
+          "content_type": "AP",
+          "status": "APPROVED",
+          "section": "T08 Simulation & Experiential Learning"
+        },
+        {
+          "resource_id": "LE-IC-026",
+          "title": "Playful Journey Lab / MITili (MIT)",
+          "url": "[ICICLE resources page]",
+          "context": "MIT lab focused on game-based and playful learning engineering. MITili (MIT Integrated Learning Initiative) applies data-driven, iterative design to immersive and game-based educational experiences.",
+          "topic_codes": [
+            "T08",
+            "T07",
+            "T06"
+          ],
+          "content_type": "CO",
+          "status": "APPROVED",
+          "section": "T08 Simulation & Experiential Learning"
+        },
+        {
+          "resource_id": "LE-IC-030",
+          "title": "SchoolSims \u2014 LE-Based Teacher Preparation Simulator (2025)",
+          "url": "https://schoolsims.com",
+          "context": "Simulation platform for teacher preparation applying learning engineering principles, cognitive task analysis, and naturalistic decision-making. Uses scenario-based assessment and data-driven iteration.",
+          "topic_codes": [
+            "T08",
+            "T09",
+            "T10"
+          ],
+          "content_type": "TP",
+          "status": "APPROVED",
+          "section": "T08 Simulation & Experiential Learning"
+        },
+        {
+          "resource_id": "LE-IC-032",
+          "title": "State of XR & Immersive Learning Report 2021 (iLRN / ICICLE)",
+          "url": "[ICICLE resources page]",
+          "context": "Annual state-of-the-field report on extended reality (XR/VR/AR) in learning contexts, co-produced with ICICLE. Covers research landscape, practitioner adoption, and evidence base for immersive learning.",
+          "topic_codes": [
+            "T08"
           ],
           "content_type": "GL",
           "status": "APPROVED",
@@ -911,7 +1378,7 @@
             "T13",
             "T00"
           ],
-          "content_type": "GL",
+          "content_type": "AP",
           "status": "APPROVED",
           "section": "T10 Workforce Development & Training Systems"
         },
@@ -925,7 +1392,7 @@
             "T13",
             "T00"
           ],
-          "content_type": "GL",
+          "content_type": "AP",
           "status": "APPROVED",
           "section": "T10 Workforce Development & Training Systems"
         },
@@ -953,7 +1420,7 @@
             "T13",
             "T00"
           ],
-          "content_type": "GL",
+          "content_type": "AP",
           "status": "APPROVED",
           "section": "T10 Workforce Development & Training Systems"
         },
@@ -995,7 +1462,7 @@
             "T13",
             "T00"
           ],
-          "content_type": "GL",
+          "content_type": "AP",
           "status": "APPROVED",
           "section": "T10 Workforce Development & Training Systems"
         },
@@ -1009,7 +1476,7 @@
             "T13",
             "T00"
           ],
-          "content_type": "GL",
+          "content_type": "AP",
           "status": "APPROVED",
           "section": "T10 Workforce Development & Training Systems"
         },
@@ -1023,7 +1490,7 @@
             "T13",
             "T00"
           ],
-          "content_type": "GL",
+          "content_type": "AP",
           "status": "APPROVED",
           "section": "T10 Workforce Development & Training Systems"
         },
@@ -1037,7 +1504,7 @@
             "T13",
             "T00"
           ],
-          "content_type": "GL",
+          "content_type": "AP",
           "status": "APPROVED",
           "section": "T10 Workforce Development & Training Systems"
         },
@@ -1145,7 +1612,7 @@
             "T03",
             "T00"
           ],
-          "content_type": "GL",
+          "content_type": "AP",
           "status": "APPROVED",
           "section": "T12 Instructional Design & Curriculum"
         },
@@ -1173,7 +1640,7 @@
             "T03",
             "T00"
           ],
-          "content_type": "GL",
+          "content_type": "AP",
           "status": "APPROVED",
           "section": "T12 Instructional Design & Curriculum"
         },
@@ -1238,6 +1705,20 @@
           "content_type": "PP",
           "status": "SEED",
           "section": "T13 High-Consequence & Complex Domains"
+        },
+        {
+          "resource_id": "LE-IC-036",
+          "title": "Teaming Up to Improve Medical & Healthcare Education (Kurzweil & Marcellas, 2020)",
+          "url": "[ICICLE resources page]",
+          "context": "Case study and practitioner article applying learning engineering team approaches to medical and healthcare professional education. Demonstrates LE in a high-stakes, complex domain.",
+          "topic_codes": [
+            "T13",
+            "T00",
+            "T03"
+          ],
+          "content_type": "GL",
+          "status": "APPROVED",
+          "section": "T13 High-Consequence & Complex Domains"
         }
       ]
     },
@@ -1254,9 +1735,28 @@
             "T07",
             "T00"
           ],
-          "content_type": "GL",
+          "content_type": "AP",
           "status": "APPROVED",
           "section": "T14 Ethics, Equity & Responsible LE"
+        }
+      ]
+    },
+    {
+      "section": "T15 Evidence & Evaluation Standards",
+      "items": [
+        {
+          "resource_id": "LE-IC-008",
+          "title": "Learning Engineering Evidence Decision Tracker (ICICLE)",
+          "url": "[ICICLE resources page]",
+          "context": "Google Drive folder with templates for tracking design decisions alongside the evidence that motivated them throughout the LE process. Supports reproducible, evidence-based practice.",
+          "topic_codes": [
+            "T15",
+            "T03",
+            "T04"
+          ],
+          "content_type": "TP",
+          "status": "APPROVED",
+          "section": "T15 Evidence & Evaluation Standards"
         }
       ]
     },
@@ -1350,7 +1850,7 @@
             "T16",
             "T00"
           ],
-          "content_type": "GL",
+          "content_type": "AP",
           "status": "APPROVED",
           "section": "T16 Standards, Credentialing & Community"
         },
@@ -1389,7 +1889,7 @@
             "T16",
             "T00"
           ],
-          "content_type": "GL",
+          "content_type": "AP",
           "status": "APPROVED",
           "section": "T16 Standards, Credentialing & Community"
         },
@@ -1428,7 +1928,7 @@
             "T16",
             "T00"
           ],
-          "content_type": "GL",
+          "content_type": "AP",
           "status": "APPROVED",
           "section": "T16 Standards, Credentialing & Community"
         },
@@ -1467,7 +1967,7 @@
             "T16",
             "T00"
           ],
-          "content_type": "GL",
+          "content_type": "AP",
           "status": "APPROVED",
           "section": "T16 Standards, Credentialing & Community"
         },
@@ -1480,7 +1980,7 @@
             "T16",
             "T00"
           ],
-          "content_type": "GL",
+          "content_type": "AP",
           "status": "APPROVED",
           "section": "T16 Standards, Credentialing & Community"
         },
@@ -1493,7 +1993,7 @@
             "T16",
             "T00"
           ],
-          "content_type": "GL",
+          "content_type": "AP",
           "status": "APPROVED",
           "section": "T16 Standards, Credentialing & Community"
         },
@@ -1571,7 +2071,7 @@
             "T16",
             "T00"
           ],
-          "content_type": "GL",
+          "content_type": "AP",
           "status": "APPROVED",
           "section": "T16 Standards, Credentialing & Community"
         },
@@ -1597,7 +2097,7 @@
             "T16",
             "T00"
           ],
-          "content_type": "GL",
+          "content_type": "AP",
           "status": "APPROVED",
           "section": "T16 Standards, Credentialing & Community"
         },
@@ -1675,7 +2175,7 @@
             "T16",
             "T00"
           ],
-          "content_type": "GL",
+          "content_type": "AP",
           "status": "APPROVED",
           "section": "T16 Standards, Credentialing & Community"
         },
@@ -1688,7 +2188,7 @@
             "T16",
             "T00"
           ],
-          "content_type": "GL",
+          "content_type": "AP",
           "status": "APPROVED",
           "section": "T16 Standards, Credentialing & Community"
         },
@@ -1704,6 +2204,52 @@
           "content_type": "GL",
           "status": "APPROVED",
           "section": "T16 Standards, Credentialing & Community"
+        },
+        {
+          "resource_id": "LE-IC-004",
+          "title": "Generalizable Learning Engineering Adoption Maturity Model",
+          "url": "[ICICLE resources page]",
+          "context": "PDF defining a maturity model for organizations adopting LE practices. Stages describe progression from ad hoc instructional design through fully evidence-based, data-driven learning improvement.",
+          "topic_codes": [
+            "T16",
+            "T03",
+            "T00"
+          ],
+          "content_type": "GL",
+          "status": "APPROVED",
+          "section": "T16 Standards, Credentialing & Community"
+        },
+        {
+          "resource_id": "LE-IC-034",
+          "title": "Learning Engineering Adjacent Academic Programs Directory (ICICLE)",
+          "url": "[ICICLE resources page]",
+          "context": "Google Doc directory of academic programs adjacent to or incorporating learning engineering, including LE-specific degrees, learning sciences programs, educational technology programs, and HCI programs.",
+          "topic_codes": [
+            "T16",
+            "T00"
+          ],
+          "content_type": "GL",
+          "status": "APPROVED",
+          "section": "T16 Standards, Credentialing & Community"
+        }
+      ]
+    },
+    {
+      "section": "T17 Research Methods & Field Development",
+      "items": [
+        {
+          "resource_id": "LE-IC-023",
+          "title": "High-Leverage Opportunities for Learning Engineering (Baker & Boser, 2021)",
+          "url": "[ICICLE resources page]",
+          "context": "Report by Ryan Baker and Beth Boser identifying the highest-leverage opportunities for learning engineering investment. Covers evidence gaps, scale barriers, and field infrastructure needs.",
+          "topic_codes": [
+            "T17",
+            "T00",
+            "T15"
+          ],
+          "content_type": "GL",
+          "status": "APPROVED",
+          "section": "T17 Research Methods & Field Development"
         }
       ]
     }

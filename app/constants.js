@@ -35,6 +35,7 @@ export const NODE_COLORS = {
   topic_part: "#0f766e",
   topic_surface: "#f97316",
   topic: "#334155",
+  concept: "#6d28d9",
   paper_seed: "#1d4ed8",
   paper_hop: "#a16207",
   resource: "#0f766e",

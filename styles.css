@@ -255,10 +255,58 @@ select:focus {
   transform: scale(1.08);
 }
 
+.graph-controls {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  align-items: center;
+  padding: 0.6rem 0 0.7rem;
+  border-bottom: 1px solid var(--border);
+  margin-bottom: 0.2rem;
+}
+
+.graph-search {
+  min-width: 190px;
+}
+
+.graph-pills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.32rem;
+  flex: 1;
+}
+
+.pill-btn {
+  border: 1px solid #fdba74;
+  border-radius: 999px;
+  background: #fff7ee;
+  color: #9a3412;
+  padding: 0.2rem 0.62rem;
+  cursor: pointer;
+  font-size: 0.8rem;
+  font-weight: 700;
+  transition: background 0.12s, color 0.12s, border-color 0.12s;
+}
+
+.pill-btn:hover {
+  background: #ffedd5;
+}
+
+.pill-btn.is-active {
+  background: #ea580c;
+  color: #fff;
+  border-color: #c2410c;
+}
+
+.graph-actions {
+  display: flex;
+  gap: 0.35rem;
+}
+
 .graph-canvas {
   width: 100%;
   min-height: 520px;
-  margin-top: 0.72rem;
+  display: block;
   border: 1px solid #fed7aa;
   border-radius: 14px;
   background: radial-gradient(circle at 52% 40%, #fffefa 0%, #fff4e8 63%, #ffecd7 100%);

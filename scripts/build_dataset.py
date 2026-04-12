@@ -185,6 +185,7 @@ def build_resources(topic_by_code: Dict[str, Topic]) -> Tuple[Dict, List[Dict]]:
 
 def build_programs(non_paper_rows: List[Dict]) -> Dict:
     category_map = {
+        "AP": "academic_papers",
         "PC": "academic",
         "PP": "people",
         "CE": "events",
@@ -194,7 +195,7 @@ def build_programs(non_paper_rows: List[Dict]) -> Dict:
     }
     programs = []
     for row in non_paper_rows:
-        if row.get("content_type") not in {"PC", "CO", "TP", "CE", "PP", "GL"}:
+        if row.get("content_type") not in category_map:
             continue
         programs.append(
             {

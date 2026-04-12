@@ -1,0 +1,123 @@
+{
+  "warnings": [
+    "T02 Systems Engineering & Human Factors: content_type 'GL' is 67% of 3 resources",
+    "T03 Learning Engineering Process: content_type 'GL' is 62% of 34 resources",
+    "T00 Field Overview & History: content_type 'GL' is 69% of 138 resources",
+    "T16 Standards, Credentialing & Community: content_type 'GL' is 72% of 46 resources",
+    "T09 Expert Knowledge Elicitation: content_type 'TP' is 67% of 6 resources",
+    "T12 Instructional Design & Curriculum: content_type 'GL' is 75% of 8 resources",
+    "T17 Research Methods & Field Development: content_type 'GL' is 100% of 4 resources",
+    "T17 Research Methods & Field Development: only 1 content_type across 4 resources \u2014 consider diversifying"
+  ],
+  "per_topic_content_types": {
+    "T13": {
+      "PC": 1,
+      "PP": 2,
+      "GL": 10,
+      "AP": 7
+    },
+    "T02": {
+      "PC": 1,
+      "GL": 2
+    },
+    "T10": {
+      "PC": 1,
+      "PP": 1,
+      "AP": 10,
+      "GL": 8,
+      "TP": 1
+    },
+    "T15": {
+      "PC": 2,
+      "PP": 1,
+      "CE": 2,
+      "CO": 3,
+      "GL": 6,
+      "TP": 1
+    },
+    "T06": {
+      "PC": 2,
+      "PP": 2,
+      "CE": 3,
+      "TP": 2,
+      "AP": 1,
+      "GL": 1,
+      "CO": 3
+    },
+    "T01": {
+      "PC": 1,
+      "PP": 1,
+      "CO": 1,
+      "GL": 4
+    },
+    "T03": {
+      "PC": 3,
+      "PP": 2,
+      "TP": 5,
+      "CO": 1,
+      "GL": 21,
+      "AP": 2
+    },
+    "T00": {
+      "PC": 1,
+      "PP": 3,
+      "CE": 2,
+      "TP": 2,
+      "CO": 2,
+      "GL": 95,
+      "AP": 33
+    },
+    "T04": {
+      "PC": 1,
+      "PP": 2,
+      "CE": 3,
+      "TP": 4,
+      "CO": 2,
+      "GL": 5
+    },
+    "T07": {
+      "PP": 1,
+      "CE": 3,
+      "AP": 2,
+      "CO": 2
+    },
+    "T16": {
+      "PP": 1,
+      "CE": 1,
+      "CO": 1,
+      "GL": 33,
+      "AP": 10
+    },
+    "T09": {
+      "PP": 2,
+      "TP": 4
+    },
+    "T08": {
+      "CE": 1,
+      "AP": 3,
+      "CO": 1,
+      "TP": 1,
+      "GL": 1
+    },
+    "T11": {
+      "CE": 1,
+      "TP": 1,
+      "CO": 1,
+      "GL": 1
+    },
+    "T05": {
+      "GL": 1,
+      "CO": 1
+    },
+    "T12": {
+      "GL": 6,
+      "AP": 2
+    },
+    "T14": {
+      "AP": 1
+    },
+    "T17": {
+      "GL": 4
+    }
+  }
+}
