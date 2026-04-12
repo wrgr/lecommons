@@ -69,7 +69,10 @@ merged into `data/graph.json` as part of the standard build.
 1. **Creates concept nodes** — type `"concept"`, carrying `topic_codes`, `bloom_level`,
    and `book_chapters` in the `provenance` block.
 
-2. **Emits topic→concept edges** (`has_concept`) — wires Layer 1 to Layer 2.
+2. **Emits topic→concept edges** (`has_concept`) — anchors each concept to its **primary
+   topic only** (`topic_codes[0]`). Secondary topic codes remain on the node as metadata
+   for filtering and coloring, but do not produce additional structural edges. Each concept
+   has exactly one topic anchor in the graph.
 
 3. **Emits concept→paper edges** (`anchored_by`) — from `primary_papers` in the ontology.
    Only emits the edge if the paper ID exists in the current corpus (avoids dangling refs).
@@ -78,8 +81,12 @@ merged into `data/graph.json` as part of the standard build.
    if the resource ID exists in the merged resource index (icicle + programs_people +
    non_paper_resources).
 
-5. **Emits concept→concept prereq edges** (`prereq`) — from `concept_graph_seeds.json`.
-   Both the source and target concept must exist in the ontology.
+5. **Emits concept→concept prereq edges** (`prereq`) — from `concept_graph_seeds.json`,
+   **intra-topic pairs only**. Both concepts must share the same primary topic code. This
+   keeps the concept layer organized into topic clusters; cross-topic prerequisite ordering
+   is preserved in `concept_ontology.json` (the `prerequisites` field) and in
+   `learning_journeys.json` for sequencing purposes. Cross-cluster structural relationships
+   are expressed at the topic level via topic-to-topic edges in `knowledge_graph_seeds.json`.
 
 ---
 
@@ -117,7 +124,9 @@ between both repos — it was validated in MSKB and applied unchanged here.
 
 - Concept→paper edges are only emitted if the paper ID is in `seed_papers` or `hop_papers`.
 - Concept→resource edges are only emitted if the resource ID is in the merged resource index.
-- Prereq edges are only emitted if both concept IDs exist in `concept_ontology.json`.
+- Prereq edges are only emitted if both concept IDs exist in `concept_ontology.json` **and**
+  share the same primary topic code (`topic_codes[0]`).
+- Each concept produces exactly one `has_concept` edge — from its primary topic only.
 
 These checks prevent dangling references and make the graph safe to render without
 client-side null-checks.
