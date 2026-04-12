@@ -284,7 +284,17 @@ def build_concept_graph(
     paper_ids: Set[str],
     resource_ids: Set[str],
 ) -> Tuple[List[Dict], List[Dict]]:
-    """Build concept-layer nodes and edges from the concept ontology and concept graph seeds."""
+    """Build concept-layer nodes and edges from the concept ontology and concept graph seeds.
+
+    Anchoring rules:
+    - has_concept edges fire only for a concept's primary topic (topic_codes[0]).
+      Secondary topic codes remain as metadata for filtering but do not create
+      additional structural edges, so each concept has exactly one topic anchor.
+    - prereq edges fire only when source and target share the same primary topic.
+      Cross-topic prerequisite ordering is preserved in concept_ontology.json and
+      learning_journeys.json for sequencing purposes; topic-to-topic prereq edges
+      in knowledge_graph_seeds.json carry cross-cluster structural relationships.
+    """
     nodes: List[Dict] = []
     edges: List[Dict] = []
     edge_seen: Set[Tuple[str, str, str]] = set()
@@ -300,26 +310,31 @@ def build_concept_graph(
         edges.append({"source": source, "target": target, "type": edge_type})
 
     concept_ids: Set[str] = set()
+    # Maps concept_id → its primary (first) topic code for intra-topic prereq filtering.
+    concept_primary_topic: Dict[str, str] = {}
     for concept in concepts:
         cid = concept.get("concept_id", "").strip()
         if not cid:
             continue
         concept_ids.add(cid)
+        primary_codes = concept.get("topic_codes", [])
+        if primary_codes:
+            concept_primary_topic[cid] = primary_codes[0]
         nodes.append({
             "id": cid,
             "label": concept.get("name", cid),
             "type": "concept",
             "hop": 0,
-            "topic_codes": concept.get("topic_codes", []),
+            "topic_codes": primary_codes,
             "provenance": {
                 "book_chapters": concept.get("book_chapter_anchors", []),
                 "bloom_level": concept.get("bloom_level", ""),
                 "layer": "concept",
             },
         })
-        for code in concept.get("topic_codes", []):
-            if code in topic_codes:
-                add_edge(code, cid, "has_concept")
+        # Anchor to primary topic only; secondary codes are metadata, not structural edges.
+        if primary_codes and primary_codes[0] in topic_codes:
+            add_edge(primary_codes[0], cid, "has_concept")
         for pid in concept.get("primary_papers", []):
             if pid in paper_ids:
                 add_edge(cid, pid, "anchored_by")
@@ -336,7 +351,10 @@ def build_concept_graph(
             dst = (row.get("edge_target") or "").strip()
             edge_type = (row.get("edge_type") or "").strip()
             if edge_type == "PREREQ_FOR" and src in concept_ids and dst in concept_ids:
-                add_edge(src, dst, "prereq")
+                # Emit only intra-topic prereqs so cross-topic concepts don't become
+                # structural hubs. Cross-topic ordering lives in learning journeys.
+                if concept_primary_topic.get(src) == concept_primary_topic.get(dst):
+                    add_edge(src, dst, "prereq")
 
     return nodes, edges
 
