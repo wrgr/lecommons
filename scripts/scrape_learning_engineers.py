@@ -235,9 +235,9 @@ def parse_github_user(raw: dict, today: str) -> Optional[dict]:
 
 
 def run_github_source(
-    existing_keys: set[str], today: str, limit: int
-) -> list[dict]:
-    """Fetch GitHub users and return new person records not already in the database."""
+    existing_keys: set[str], today: str, limit: int, out_path: Path
+) -> int:
+    """Fetch GitHub users, write qualifying records to out_path immediately, return count."""
     auth = bool(os.environ.get("GITHUB_TOKEN"))
     print(
         f"[github] Searching up to {limit} profiles "
@@ -245,7 +245,7 @@ def run_github_source(
     )
     search_results = fetch_github_users(limit=limit)
     print(f"[github] {len(search_results)} candidates to inspect")
-    records: list[dict] = []
+    found = 0
     for i, item in enumerate(search_results, 1):
         login = item.get("login", "")
         try:
@@ -261,11 +261,13 @@ def run_github_source(
         if key in existing_keys:
             continue
         existing_keys.add(key)
-        records.append(record)
+        record["person_id"] = next_person_id(out_path)
+        append_record(record, out_path)
+        found += 1
         print(f"  [github] + {record['name']} ({record['organization']})")
         if i % PROGRESS_INTERVAL == 0:
-            print(f"  [github] progress: {i}/{len(search_results)} inspected, {len(records)} new found")
-    return records
+            print(f"  [github] progress: {i}/{len(search_results)} inspected, {found} new found")
+    return found
 
 
 # ---------------------------------------------------------------------------
@@ -379,9 +381,9 @@ def parse_snippet_for_person(result: dict, today: str) -> Optional[dict]:
     }
 
 
-def run_web_source(existing_keys: set[str], today: str) -> list[dict]:
-    """Run DDG queries and return new person records extracted from snippets."""
-    records: list[dict] = []
+def run_web_source(existing_keys: set[str], today: str, out_path: Path) -> int:
+    """Run web search queries, write qualifying person records immediately, return count."""
+    found = 0
     for query in DDG_QUERIES:
         print(f"[web] Query: {query}")
         results = fetch_web_results(query)
@@ -394,10 +396,12 @@ def run_web_source(existing_keys: set[str], today: str) -> list[dict]:
             if key in existing_keys:
                 continue
             existing_keys.add(key)
-            records.append(record)
+            record["person_id"] = next_person_id(out_path)
+            append_record(record, out_path)
+            found += 1
             print(f"  [web] + {record['name']} ({record['organization']})")
         time.sleep(WEB_SLEEP_SEC)
-    return records
+    return found
 
 
 # ---------------------------------------------------------------------------
@@ -559,17 +563,13 @@ def main() -> None:
     existing_keys = load_existing_keys(OUTPUT_PATH)
     print(f"Existing records: {len(existing_keys)}  |  Output: {OUTPUT_PATH}")
 
-    all_new: list[dict] = []
+    total_people = 0
 
     if run_github:
-        all_new.extend(run_github_source(existing_keys, today, limit=args.limit))
+        total_people += run_github_source(existing_keys, today, limit=args.limit, out_path=OUTPUT_PATH)
 
     if run_web:
-        all_new.extend(run_web_source(existing_keys, today))
-
-    for record in all_new:
-        record["person_id"] = next_person_id(OUTPUT_PATH)
-        append_record(record, OUTPUT_PATH)
+        total_people += run_web_source(existing_keys, today, out_path=OUTPUT_PATH)
 
     if run_jobs:
         job_leads = run_job_board_source(today)
@@ -577,7 +577,7 @@ def main() -> None:
             append_record(lead, COMPANY_LEADS_PATH)
         print(f"  {len(job_leads)} new company lead(s) written to {COMPANY_LEADS_PATH}")
 
-    print(f"\nDone. {len(all_new)} new person record(s) written to {OUTPUT_PATH}")
+    print(f"\nDone. {total_people} new person record(s) written to {OUTPUT_PATH}")
     print_stats(OUTPUT_PATH, COMPANY_LEADS_PATH)
 
 
