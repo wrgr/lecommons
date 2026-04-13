@@ -111,15 +111,15 @@ export GITHUB_TOKEN=ghp_...
 #   Sign up at: brave.com/search/api/
 export BRAVE_API_KEY=BSA...
 #
-# Option B: Bing Web Search API (free tier: 1,000 req/month)
-#   portal.azure.com → Create resource → "Bing Search v7" → free F0 tier
-export BING_API_KEY=...
+# Option B: Serper.dev — returns Google results (2,500 free queries on signup)
+#   Sign up at: serper.dev
+export SERPER_API_KEY=...
 
 python3 scripts/scrape_learning_engineers.py
 ```
 
-If both Brave and Bing keys are set, Brave is tried first with Bing as fallback.
-Note: Google Custom Search JSON API is closed to new customers.
+If both keys are set, Brave is tried first with Serper as fallback.
+Note: Google Custom Search JSON API and Bing Web Search API are both closed to new customers.
 
 ### Record schema (`data/people.jsonl`)
 

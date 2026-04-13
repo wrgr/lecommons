@@ -26,7 +26,7 @@ COMPANY_LEADS_PATH = DATA_DIR / "company_leads.jsonl"
 
 GITHUB_API_BASE = "https://api.github.com"
 BRAVE_SEARCH_URL = "https://api.search.brave.com/res/v1/web/search"
-BING_SEARCH_URL = "https://api.bing.microsoft.com/v7.0/search"
+SERPER_SEARCH_URL = "https://google.serper.dev/search"
 
 # GitHub Search API returns at most 1000 results across all pages.
 GITHUB_API_MAX_RESULTS = 1000
@@ -289,51 +289,51 @@ def _fetch_brave(query: str) -> list[dict]:
     ]
 
 
-def _fetch_bing(query: str) -> list[dict]:
-    """Search via Bing Web Search API; returns normalised result list.
+def _fetch_serper(query: str) -> list[dict]:
+    """Search via Serper.dev (Google results); returns normalised result list.
 
-    Requires BING_API_KEY env var.
-    Free tier: 1,000 queries/month. Setup: portal.azure.com → Bing Search v7.
+    Requires SERPER_API_KEY env var.
+    Free tier: 2,500 queries on signup. serper.dev
     """
-    params = urllib.parse.urlencode({"q": query, "count": 20, "mkt": "en-US"})
-    url = f"{BING_SEARCH_URL}?{params}"
+    payload = json.dumps({"q": query, "num": 20}).encode()
     headers = {
-        "Ocp-Apim-Subscription-Key": os.environ.get("BING_API_KEY", ""),
-        "Accept": "application/json",
+        "X-API-KEY": os.environ.get("SERPER_API_KEY", ""),
+        "Content-Type": "application/json",
     }
-    body = fetch_url(url, headers=headers)
-    data = json.loads(body)
+    req = urllib.request.Request(SERPER_SEARCH_URL, data=payload, headers=headers, method="POST")
+    with urllib.request.urlopen(req, timeout=20) as resp:
+        data = json.loads(resp.read().decode("utf-8"))
     return [
         {
-            "title": r.get("name", ""),
-            "url": r.get("url", ""),
+            "title": r.get("title", ""),
+            "url": r.get("link", ""),
             "snippet": r.get("snippet", ""),
         }
-        for r in data.get("webPages", {}).get("value", [])
+        for r in data.get("organic", [])
     ]
 
 
 def fetch_web_results(query: str) -> list[dict]:
     """Run a web search using whichever API key is configured.
 
-    Priority: Brave (BRAVE_API_KEY) → Bing (BING_API_KEY).
+    Priority: Brave (BRAVE_API_KEY) → Serper.dev (SERPER_API_KEY).
     Returns a normalised list of {title, url, snippet} dicts.
     """
     if os.environ.get("BRAVE_API_KEY"):
         try:
             return _fetch_brave(query)
         except RuntimeError as exc:
-            print(f"  [web] Brave failed, trying Bing: {exc}")
+            print(f"  [web] Brave failed, trying Serper: {exc}")
 
-    if os.environ.get("BING_API_KEY"):
+    if os.environ.get("SERPER_API_KEY"):
         try:
-            return _fetch_bing(query)
-        except RuntimeError as exc:
-            print(f"  [web] Bing search failed: {exc}")
+            return _fetch_serper(query)
+        except Exception as exc:
+            print(f"  [web] Serper search failed: {exc}")
             return []
 
     print(
-        "  [web] No search API key found. Set BRAVE_API_KEY or BING_API_KEY (see README)."
+        "  [web] No search API key found. Set BRAVE_API_KEY or SERPER_API_KEY (see README)."
     )
     return []
 
