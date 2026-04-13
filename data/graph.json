@@ -5039,21 +5039,6 @@
       }
     },
     {
-      "id": "LE-PP-015",
-      "label": "Will Gray-Roncal",
-      "type": "resource",
-      "hop": 0,
-      "topic_codes": [
-        "T13",
-        "T09",
-        "T10"
-      ],
-      "provenance": {
-        "content_type": "PP",
-        "status": "SEED"
-      }
-    },
-    {
       "id": "LE-PP-020",
       "label": "Learning @ Scale",
       "type": "resource",
@@ -12317,21 +12302,6 @@
       "type": "resource"
     },
     {
-      "source": "T13",
-      "target": "LE-PP-015",
-      "type": "resource"
-    },
-    {
-      "source": "T09",
-      "target": "LE-PP-015",
-      "type": "resource"
-    },
-    {
-      "source": "T10",
-      "target": "LE-PP-015",
-      "type": "resource"
-    },
-    {
       "source": "T06",
       "target": "LE-PP-020",
       "type": "resource"
@@ -15974,11 +15944,6 @@
     {
       "source": "C33",
       "target": "LE-PP-001",
-      "type": "learn_via"
-    },
-    {
-      "source": "C33",
-      "target": "LE-PP-015",
       "type": "learn_via"
     },
     {

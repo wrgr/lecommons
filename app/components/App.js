@@ -3,14 +3,14 @@ import { computeVisibleGraph, buildNodeIndex } from "../graph.js";
 import { html, React, useEffect, useMemo, useState } from "../lib.js";
 import { buildPaperRows } from "../papers.js";
 import { cleanText } from "../text.js";
-import { groupBy, tokenize } from "../utils.js";
+import { tokenize } from "../utils.js";
 import { ExtraDocsSection } from "./sections/ExtraDocsSection.js";
 import { FieldSignalsSection } from "./sections/FieldSignalsSection.js";
 import { GraphWorkspaceSection } from "./sections/GraphWorkspaceSection.js";
 import { HeroSection } from "./sections/HeroSection.js";
 import { PapersSection } from "./sections/PapersSection.js";
-import { ProgramsSection } from "./sections/ProgramsSection.js";
 import { ResourceNavigatorSection } from "./sections/ResourceNavigatorSection.js";
+import { SiteFooter } from "./sections/SiteFooter.js";
 import { UpdateWorkflowSection } from "./sections/UpdateWorkflowSection.js";
 
 export function App() {
@@ -77,22 +77,25 @@ export function App() {
 
   const selectedNode = useMemo(() => nodeIndex.nodeMap.get(selectedNodeId) || null, [nodeIndex, selectedNodeId]);
 
+  /** All seed + expansion papers; graph “Include related papers” only affects the graph, not this list. */
   const filteredPapers = useMemo(() => {
     const query = cleanText(search).toLowerCase();
 
     return paperRows
-      .filter((paper) => includeHop || paper.scope === "seed")
-      .filter((paper) => artifactFilter === "all" || paper.artifactTypes.includes(artifactFilter))
+      .filter((paper) => artifactFilter === "all" || (paper.artifactTypes || []).includes(artifactFilter))
       .filter((paper) => {
         if (!query) return true;
-        const haystack = `${paper.title} ${(paper.authors || []).join(" ")} ${paper.citation_plain}`.toLowerCase();
+        const idBits = [paper.id, paper.openalex_id, paper.doi, paper.source_url].filter(Boolean).join(" ");
+        const haystack = `${paper.title} ${(paper.authors || []).join(" ")} ${paper.citation_plain} ${idBits} ${paper.scope || ""}`
+          .toLowerCase()
+          .replace(/https?:\/\/openalex\.org\//g, "");
         return haystack.includes(query);
       })
       .sort((a, b) => {
         if (a.scope !== b.scope) return a.scope === "seed" ? -1 : 1;
         return (b.cited_by_count || 0) - (a.cited_by_count || 0);
       });
-  }, [artifactFilter, includeHop, paperRows, search]);
+  }, [artifactFilter, paperRows, search]);
 
   const filteredResourceRows = useMemo(() => {
     if (!data) return [];
@@ -311,11 +314,6 @@ export function App() {
       });
   }, [data, filteredPapers]);
 
-  const groupedPrograms = useMemo(() => {
-    if (!data) return {};
-    return groupBy(data.programs, (program) => program.category || "other");
-  }, [data]);
-
   if (error) {
     return html`
       <main className="wrap app-shell">
@@ -354,8 +352,6 @@ export function App() {
           nodeRelatedResources=${nodeRelatedResources}
         />
 
-        <${ProgramsSection} groupedPrograms=${groupedPrograms} />
-
         <${ResourceNavigatorSection}
           filteredResourceRows=${filteredResourceRows}
           resourceQuery=${resourceQuery}
@@ -376,6 +372,7 @@ export function App() {
         <${FieldSignalsSection} signalCards=${signalCards} />
         <${ExtraDocsSection} extraDocs=${data.extraDocs} />
         <${UpdateWorkflowSection} />
+        <${SiteFooter} />
       </main>
     <//>
   `;

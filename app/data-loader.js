@@ -1,5 +1,6 @@
 import { DATA_FILES } from "./constants.js";
 import { buildEntityDirectory, enrichResourceEntities } from "./entities.js";
+import { appendAcademicProgramRowsFromSummary } from "./programResourceBridge.js";
 import { mergePrograms } from "./programs.js";
 import { classifyResource, normalizeResourceSection } from "./resources.js";
 import { cleanText, cleanUrl } from "./text.js";
@@ -37,10 +38,11 @@ function normalizePaper(paper) {
   };
 }
 
-function normalizeResources(rawResources) {
+function normalizeResources(rawResources, programPayload) {
   const sections = (rawResources.sections || []).map(normalizeResourceSection);
   const bareRows = sections.flatMap((section) => section.items || []);
-  const resourceRows = enrichResourceEntities(bareRows).map((row) => ({
+  const mergedBare = appendAcademicProgramRowsFromSummary(programPayload || {}, bareRows);
+  const resourceRows = enrichResourceEntities(mergedBare).map((row) => ({
     ...row,
     group: classifyResource(row),
   }));
@@ -132,7 +134,7 @@ export async function loadAllData() {
     await Promise.all(Object.entries(DATA_FILES).map(async ([key, config]) => [key, await fetchJson(config)]))
   );
 
-  const { resources, resourceRows } = normalizeResources(loaded.resources);
+  const { resources, resourceRows } = normalizeResources(loaded.resources, loaded.programs);
 
   const programs = mergePrograms(loaded.programs || {});
   const entities = buildEntityDirectory(resourceRows, programs);

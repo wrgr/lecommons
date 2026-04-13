@@ -274,7 +274,7 @@ Domain-specific and systemic contexts that shape how LE is applied.
 **C33 — High-Consequence Domain Learning**  
 Defense, healthcare, aviation, nuclear — domains where learning failures cost lives.
 HSI (C09) is the prerequisite framing.  
-Primary resources: `LE-PP-001`, `LE-PP-015`, `LE-IC-031`
+Primary resources: `LE-PP-001`, `LE-IC-031`
 
 **C34 — Ethics & Equity in Learning Engineering**  
 Equity in access to LE benefits; power dynamics in data collection; responsible

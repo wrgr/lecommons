@@ -5,6 +5,7 @@
 import { html, useRef, useState } from "../../lib.js";
 import { shortLabel } from "../../text.js";
 import { GraphCanvas } from "../GraphCanvas.js";
+import { GraphNodeBrowsePanel } from "../GraphNodeBrowsePanel.js";
 
 const TYPE_PILLS = [
   { id: "all", label: "All" },
@@ -28,6 +29,7 @@ export function GraphWorkspaceSection({
 }) {
   const [search, setSearch] = useState("");
   const [typeFilter, setTypeFilter] = useState("all");
+  const [viewMode, setViewMode] = useState("canvas");
   const resetRef = useRef(null);
 
   function handleReset() {
@@ -41,7 +43,31 @@ export function GraphWorkspaceSection({
       <div className="panel-head">
         <div>
           <h2>Graph Workspace</h2>
-          <p className="caption">Select any node to inspect its provenance and linked evidence.</p>
+          <p className="caption">
+            ${viewMode === "canvas"
+              ? "Visualization: pan/zoom the graph and select nodes. Use Browse for a full list like Resource Navigator."
+              : "Browse: every visible graph node in one place — same search and type filters as the canvas."}
+          </p>
+          <div className="graph-workspace-tabs" role="tablist" aria-label="Graph view mode">
+            <button
+              type="button"
+              role="tab"
+              aria-selected=${viewMode === "canvas"}
+              className=${"tab-btn" + (viewMode === "canvas" ? " is-active" : "")}
+              onClick=${() => setViewMode("canvas")}
+            >
+              Visualization
+            </button>
+            <button
+              type="button"
+              role="tab"
+              aria-selected=${viewMode === "browse"}
+              className=${"tab-btn" + (viewMode === "browse" ? " is-active" : "")}
+              onClick=${() => setViewMode("browse")}
+            >
+              Browse nodes
+            </button>
+          </div>
         </div>
         <label className="switch">
           <input
@@ -49,7 +75,7 @@ export function GraphWorkspaceSection({
             checked=${includeHop}
             onChange=${(e) => setIncludeHop(e.target.checked)}
           />
-          <span>Include related papers</span>
+          <span>Include related papers in graph</span>
         </label>
       </div>
 
@@ -81,15 +107,23 @@ export function GraphWorkspaceSection({
         </div>
       </div>
 
-      <${GraphCanvas}
-        nodes=${visibleGraph.nodes}
-        links=${visibleGraph.links}
-        selectedNodeId=${selectedNodeId}
-        onSelect=${setSelectedNodeId}
-        search=${search}
-        typeFilter=${typeFilter}
-        resetRef=${resetRef}
-      />
+      ${viewMode === "canvas"
+        ? html`<${GraphCanvas}
+            nodes=${visibleGraph.nodes}
+            links=${visibleGraph.links}
+            selectedNodeId=${selectedNodeId}
+            onSelect=${setSelectedNodeId}
+            search=${search}
+            typeFilter=${typeFilter}
+            resetRef=${resetRef}
+          />`
+        : html`<${GraphNodeBrowsePanel}
+            visibleGraph=${visibleGraph}
+            search=${search}
+            typeFilter=${typeFilter}
+            selectedNodeId=${selectedNodeId}
+            setSelectedNodeId=${setSelectedNodeId}
+          />`}
 
       <div className="selected-node-panel">
         ${selectedNode
@@ -180,7 +214,7 @@ export function GraphWorkspaceSection({
                 </article>
               </div>
             `
-          : html`<p className="caption">Click a node in the graph above to inspect its details.</p>`}
+          : html`<p className="caption">Select a node in the graph or in Browse nodes to inspect details.</p>`}
       </div>
     </section>
   `;

@@ -1,0 +1,39 @@
+{
+  "title": "Coverage after removing the Programs / Field Landscape panel",
+  "removed_ui": {
+    "panel": "Dedicated academic-program cards between Graph Workspace and Resource Navigator",
+    "last_rendered_scope": "Only `category: academic` rows from `programs_summary.json` were shown there; other categories in that file were already directed to Resource Navigator."
+  },
+  "where_content_lives_now": {
+    "programs_and_curricula": "Resource Navigator → Programs & Curricula (PC). Academic program rows from `programs_summary.json` are merged in at load time when their normalized title is not already present in `icicle_resources.json`.",
+    "people_events_tools_orgs": "Resource Navigator content types PP, CE, TP, CO, GL, etc., plus graph node selection.",
+    "papers": "Papers and Artifacts — seed papers (`papers_seed.json`) and one-hop expansion (`papers_one_hop.json`), clustered by topic."
+  },
+  "not_fully_covered_below": [
+    {
+      "area": "Grey-literature and long-tail entries in `programs_summary.json`",
+      "detail": "Many later rows use categories such as `grey_literature` or `academic_papers` as bibliographic cards. They are not automatically the same set as OpenAlex papers in Papers and Artifacts; duplicates and gaps are possible."
+    },
+    {
+      "area": "Program ↔ paper linkage",
+      "detail": "Explicit edges from a named degree program to every evaluation or case-study paper about that program are not guaranteed. The graph links topics, concepts, papers, and resources, but not a full program→paper bibliography."
+    },
+    {
+      "area": "Narrative blurbs only on merged program rows",
+      "detail": "Navigator rows show title, URL when present, and context text. The old panel showed the same summaries for academics; no unique prose was lost for those that dedupe into existing ICICLE rows."
+    }
+  ],
+  "paper_coverage_priorities": [
+    "For each major academic program (e.g. LENS, HCII/OLI stack, LEVI), ensure seed or hop papers explicitly discuss or evaluate that program where such literature exists.",
+    "When adding hop papers, prefer works that connect implementation (platform/program) to outcomes — bridges Programs & Curricula and Papers and Artifacts.",
+    "Use topic codes on papers (T13 high-consequence domains, T06 ITS, etc.) to align program resources with the same topics for graph navigation.",
+    "Reconcile `programs_summary.json` items tagged `academic_papers` against `papers_seed.json` / `papers_one_hop.json` so bibliography cards do not drift from the live paper list."
+  ],
+  "related_data_files": [
+    "data/programs_summary.json",
+    "data/icicle_resources.json",
+    "data/papers_seed.json",
+    "data/papers_one_hop.json",
+    "data/graph.json"
+  ]
+}

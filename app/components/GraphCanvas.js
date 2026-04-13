@@ -4,6 +4,7 @@
  * so selecting a node or changing filters never restarts the simulation.
  */
 import { NODE_COLORS } from "../constants.js";
+import { buildNeighborIndex, matchesGraphNodeFilters } from "../graph.js";
 import { d3, html, useEffect, useRef } from "../lib.js";
 import { shortLabel } from "../text.js";
 import { clamp } from "../utils.js";
@@ -79,14 +80,7 @@ export function GraphCanvas({ nodes, links, selectedNodeId, onSelect, search, ty
     const simNodes = nodes.map((n) => ({ ...n }));
     const simLinks = links.map((e) => ({ ...e }));
 
-    // Build adjacency index before D3 replaces source/target strings with objects.
-    const neighborSet = new Map(simNodes.map((n) => [n.id, new Set()]));
-    for (const edge of simLinks) {
-      const src = String(edge.source);
-      const tgt = String(edge.target);
-      if (neighborSet.has(src)) neighborSet.get(src).add(tgt);
-      if (neighborSet.has(tgt)) neighborSet.get(tgt).add(src);
-    }
+    const neighborSet = buildNeighborIndex(simLinks);
 
     const linkSelection = zoomGroup
       .append("g")
@@ -249,15 +243,7 @@ export function GraphCanvas({ nodes, links, selectedNodeId, onSelect, search, ty
         : new Set();
 
       function isVisible(node) {
-        const searchOk =
-          !query || `${node.label} ${node.id}`.toLowerCase().includes(query);
-        if (!searchOk) return false;
-        if (filter === "all") return true;
-        if (filter === "neighbors") {
-          if (!focusId) return true;
-          return node.id === focusId || focusNeighbors.has(node.id);
-        }
-        return node.type === filter;
+        return matchesGraphNodeFilters(node, query, filter, sel.neighborSet, focusId);
       }
 
       sel.nodeSelection

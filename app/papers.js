@@ -99,11 +99,16 @@ export function buildPaperRows(seedPapers, hopPapers, endnotesEnriched) {
       paper.artifact_type ||
       (scope === "seed" ? "paper_like" : "derived_one_hop");
 
+    const artifactTypesSet = new Set(meta ? [...meta.artifactTypes] : [artifactType]);
+    if (scope === "hop") {
+      artifactTypesSet.add("derived_one_hop");
+    }
+
     return {
       ...paper,
       scope,
       topic_codes: [...mergedTopics],
-      artifactTypes: meta ? [...meta.artifactTypes] : [artifactType],
+      artifactTypes: [...artifactTypesSet].sort(),
       matchedNoteCount: meta ? meta.notes.size : 0,
       abstractQA: summarizeAbstract(paper.abstract, paper.type, Boolean(paper.abstract_is_proxy)),
     };

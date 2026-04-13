@@ -1,4 +1,5 @@
 import { html } from "../../lib.js";
+import { SITE_DISCLAIMER } from "../../siteCopy.js";
 
 export function HeroSection({ stats }) {
   return html`
@@ -30,6 +31,8 @@ export function HeroSection({ stats }) {
           `
         )}
       </div>
+
+      <p className="hero-disclaimer">${SITE_DISCLAIMER}</p>
     </header>
   `;
 }

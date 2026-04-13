@@ -327,7 +327,7 @@
     "bloom_level": "Apply",
     "prerequisites": ["C09"],
     "primary_papers": ["LE-T1-027"],
-    "primary_resources": ["LE-PP-001", "LE-PP-015", "LE-IC-031"]
+    "primary_resources": ["LE-PP-001", "LE-IC-031"]
   },
   {
     "concept_id": "C34",

@@ -9,7 +9,7 @@
     "primary_topic": "T13",
     "secondary_topics": "T02, T10, T15",
     "description": "Concentration within JHU MEd in Learning Design & Technology. Targets practitioners in complex organizations: defense, healthcare, large-scale education. Grounded in human systems integration and learning engineering expertise. Capstone produces evidence dashboard, reproducible report, and governance/ethics plan. Unique JHU ecosystem: APL + Medicine + IEEE/ICICLE partnership.",
-    "notes": "Key anchor program. Will Gray-Roncal lead. Direct connection to IEEE ICICLE credentialing pathway. Add to seed set for T13, T10."
+    "notes": "Key anchor program. Direct connection to IEEE ICICLE credentialing pathway. Add to seed set for T13, T10."
   },
   {
     "resource_id": "LE-PP-002",
@@ -106,18 +106,6 @@
     "secondary_topics": "T09, T15",
     "description": "Evidence-centered design; learning analytics at scale; psychometrics meets LE. Key bridge between assessment science and learning engineering.",
     "notes": "Key practitioner for T04, T09."
-  },
-  {
-    "resource_id": "LE-PP-015",
-    "status": "SEED",
-    "content_type": "PP",
-    "name": "Will Gray-Roncal",
-    "affiliation_or_venue": "JHU APL / JHU School of Education",
-    "url": "",
-    "primary_topic": "T13",
-    "secondary_topics": "T09, T10",
-    "description": "Principal PI of LENS @ JHU, CIRCUIT, MERIT programs. Connectomics and agentic AI researcher. Visiting Assistant Professor developing Learning Engineering Specialization at JHU.",
-    "notes": "Local anchor. LENS program lead. ExpertTrace (knowledge elicitation) directly targets T09."
   },
   {
     "resource_id": "LE-PP-020",
