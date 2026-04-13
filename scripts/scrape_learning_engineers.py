@@ -39,26 +39,41 @@ PROGRESS_INTERVAL = 10  # print running totals every N profiles inspected
 _ML_EXCLUDE = re.compile(r"\bmachine\s+learning\b", re.IGNORECASE)
 _LE_INCLUDE = re.compile(r"\blearning\s+engineer", re.IGNORECASE)
 
-# Heuristic patterns: "Name — Learning Engineer at Org" or "Name, Learning Engineer"
+# Heuristic patterns to extract name + org from SERP snippets and page titles.
+# Covers: "Name - Learning Engineer at Org | LinkedIn",
+#         "Name, Learning Engineer at Org",
+#         "Name is a Learning Engineer at Org"
 _SNIPPET_NAME_TITLE = [
+    # LinkedIn / resume format: "Name - Learning Engineer at Org"
     re.compile(
-        r"^([A-Z][a-z]+(?:\s+[A-Z][a-z]+)+)\s*[-–|]\s*Learning Engineer"
+        r"^([A-Z][a-z]+(?:[\s\-][A-Z][a-z]+)+)\s*[-–|]\s*(?:Senior |Lead |Principal |Staff )?Learning Engineer"
         r"(?:\s+(?:at|@|,)\s+([^|\-\n]{3,50}))?",
         re.IGNORECASE,
     ),
+    # "Name, Learning Engineer at Org"
     re.compile(
-        r"^([A-Z][a-z]+(?:\s+[A-Z][a-z]+)+),\s*Learning Engineer"
+        r"^([A-Z][a-z]+(?:[\s\-][A-Z][a-z]+)+),\s*(?:Senior |Lead |Principal |Staff )?Learning Engineer"
         r"(?:\s+(?:at|@)\s+([^|\-\n]{3,50}))?",
+        re.IGNORECASE,
+    ),
+    # Narrative: "Name is a Learning Engineer at Org" anywhere in text
+    re.compile(
+        r"([A-Z][a-z]+(?:\s+[A-Z][a-z]+)+)\s+is\s+a\s+(?:Senior |Lead |Principal |Staff )?Learning Engineer"
+        r"(?:\s+(?:at|@)\s+([^|\-\n.,]{3,50}))?",
         re.IGNORECASE,
     ),
 ]
 
 DDG_QUERIES = [
-    '"learning engineer" -"machine learning" conference speaker biography',
-    '"learning engineer" -"machine learning" ieee icicle member',
-    '"learning engineer" -"machine learning" edtech team about',
-    '"learning engineer" -"machine learning" "I am a" OR "I\'m a"',
-    '"senior learning engineer" -"machine learning"',
+    # LinkedIn SERP snippets anchored to ed-tech context (we read the snippet, never visit LinkedIn)
+    '"learning engineer" site:linkedin.com/in/ "learning science"',
+    '"learning engineer" site:linkedin.com/in/ "instructional design"',
+    '"learning engineer" site:linkedin.com/in/ "educational technology"',
+    # Known-community and known-employer pages
+    '"learning engineer" site:sagroups.ieee.org',
+    '"learning engineer" duolingo OR "Khan Academy" OR "Carnegie Learning" OR "Carnegie Mellon"',
+    '"learning engineer" Coursera OR Amplify OR Pearson OR ETS OR "McGraw-Hill"',
+    '"learning engineer" speaker bio 2023 OR 2024 conference',
 ]
 
 
@@ -280,7 +295,6 @@ def _fetch_brave(query: str) -> list[dict]:
     url = f"{BRAVE_SEARCH_URL}?{params}"
     headers = {
         "Accept": "application/json",
-        "Accept-Encoding": "gzip",
         "X-Subscription-Token": os.environ.get("BRAVE_API_KEY", ""),
     }
     body = fetch_url(url, headers=headers)
@@ -409,11 +423,11 @@ def run_web_source(existing_keys: set[str], today: str, out_path: Path) -> int:
 # ---------------------------------------------------------------------------
 
 JOB_BOARD_QUERIES = [
-    '"learning engineer" site:boards.greenhouse.io -"machine learning"',
-    '"learning engineer" site:jobs.lever.co -"machine learning"',
-    '"learning engineer" site:jobs.ashbyhq.com -"machine learning"',
-    '"learning engineer" site:careers.smartrecruiters.com -"machine learning"',
-    '"learning engineer" job -"machine learning" -"ML" edtech OR education',
+    '"learning engineer" instructional site:boards.greenhouse.io',
+    '"learning engineer" "learning experience" site:jobs.lever.co',
+    '"learning engineer" education site:jobs.ashbyhq.com',
+    '"learning engineer" elearning OR "e-learning"',
+    '"learning engineer" lms OR "learning management"',
 ]
 
 # Patterns to extract company name from ATS job posting page titles
