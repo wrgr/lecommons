@@ -15556,11 +15556,6 @@
       "type": "has_concept"
     },
     {
-      "source": "T12",
-      "target": "C02",
-      "type": "has_concept"
-    },
-    {
       "source": "C02",
       "target": "LE-T1-001",
       "type": "anchored_by"
@@ -15587,11 +15582,6 @@
     },
     {
       "source": "T00",
-      "target": "C03",
-      "type": "has_concept"
-    },
-    {
-      "source": "T03",
       "target": "C03",
       "type": "has_concept"
     },
@@ -15736,11 +15726,6 @@
       "type": "has_concept"
     },
     {
-      "source": "T03",
-      "target": "C10",
-      "type": "has_concept"
-    },
-    {
       "source": "C10",
       "target": "LE-T1-005",
       "type": "anchored_by"
@@ -15787,11 +15772,6 @@
     },
     {
       "source": "T03",
-      "target": "C12",
-      "type": "has_concept"
-    },
-    {
-      "source": "T09",
       "target": "C12",
       "type": "has_concept"
     },
@@ -15881,11 +15861,6 @@
       "type": "has_concept"
     },
     {
-      "source": "T15",
-      "target": "C15",
-      "type": "has_concept"
-    },
-    {
       "source": "C15",
       "target": "LE-T1-009",
       "type": "anchored_by"
@@ -15907,11 +15882,6 @@
     },
     {
       "source": "T03",
-      "target": "C16",
-      "type": "has_concept"
-    },
-    {
-      "source": "T15",
       "target": "C16",
       "type": "has_concept"
     },
@@ -15966,11 +15936,6 @@
       "type": "has_concept"
     },
     {
-      "source": "T03",
-      "target": "C18",
-      "type": "has_concept"
-    },
-    {
       "source": "C18",
       "target": "LE-T1-008",
       "type": "anchored_by"
@@ -15992,11 +15957,6 @@
     },
     {
       "source": "T05",
-      "target": "C19",
-      "type": "has_concept"
-    },
-    {
-      "source": "T12",
       "target": "C19",
       "type": "has_concept"
     },
@@ -16117,11 +16077,6 @@
     },
     {
       "source": "T07",
-      "target": "C24",
-      "type": "has_concept"
-    },
-    {
-      "source": "T14",
       "target": "C24",
       "type": "has_concept"
     },
@@ -16341,11 +16296,6 @@
       "type": "has_concept"
     },
     {
-      "source": "T06",
-      "target": "C35",
-      "type": "has_concept"
-    },
-    {
       "source": "C35",
       "target": "LE-T1-015",
       "type": "anchored_by"
@@ -16378,26 +16328,6 @@
     {
       "source": "C01",
       "target": "C03",
-      "type": "prereq"
-    },
-    {
-      "source": "C01",
-      "target": "C04",
-      "type": "prereq"
-    },
-    {
-      "source": "C01",
-      "target": "C09",
-      "type": "prereq"
-    },
-    {
-      "source": "C01",
-      "target": "C11",
-      "type": "prereq"
-    },
-    {
-      "source": "C01",
-      "target": "C32",
       "type": "prereq"
     },
     {

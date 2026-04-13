@@ -37,10 +37,6 @@
 
   { "node_type": "CONCEPT", "node_id": "C01", "node_label": "What is Learning Engineering?", "edge_type": "PREREQ_FOR", "edge_target": "C02", "edge_label": "Must understand LE before distinguishing it from ID" },
   { "node_type": "CONCEPT", "node_id": "C01", "node_label": "What is Learning Engineering?", "edge_type": "PREREQ_FOR", "edge_target": "C03", "edge_label": "Must understand LE before studying LE team roles" },
-  { "node_type": "CONCEPT", "node_id": "C01", "node_label": "What is Learning Engineering?", "edge_type": "PREREQ_FOR", "edge_target": "C04", "edge_label": "LE context motivates study of cognitive foundations" },
-  { "node_type": "CONCEPT", "node_id": "C01", "node_label": "What is Learning Engineering?", "edge_type": "PREREQ_FOR", "edge_target": "C09", "edge_label": "LE field overview precedes HSI specialization" },
-  { "node_type": "CONCEPT", "node_id": "C01", "node_label": "What is Learning Engineering?", "edge_type": "PREREQ_FOR", "edge_target": "C11", "edge_label": "Field definition grounds the LE process" },
-  { "node_type": "CONCEPT", "node_id": "C01", "node_label": "What is Learning Engineering?", "edge_type": "PREREQ_FOR", "edge_target": "C32", "edge_label": "Field identity precedes community and credentialing" },
   { "node_type": "CONCEPT", "node_id": "C04", "node_label": "How People Learn: Cognitive Foundations", "edge_type": "PREREQ_FOR", "edge_target": "C05", "edge_label": "Cognitive foundations precede desirable difficulties" },
   { "node_type": "CONCEPT", "node_id": "C04", "node_label": "How People Learn: Cognitive Foundations", "edge_type": "PREREQ_FOR", "edge_target": "C06", "edge_label": "Cognitive foundations precede cognitive load theory" },
   { "node_type": "CONCEPT", "node_id": "C04", "node_label": "How People Learn: Cognitive Foundations", "edge_type": "PREREQ_FOR", "edge_target": "C07", "edge_label": "Cognitive foundations precede motivation and self-regulation" },

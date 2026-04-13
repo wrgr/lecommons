@@ -290,10 +290,10 @@ def build_concept_graph(
     - has_concept edges fire only for a concept's primary topic (topic_codes[0]).
       Secondary topic codes remain as metadata for filtering but do not create
       additional structural edges, so each concept has exactly one topic anchor.
-    - prereq edges fire only when source and target share the same primary topic.
-      Cross-topic prerequisite ordering is preserved in concept_ontology.json and
-      learning_journeys.json for sequencing purposes; topic-to-topic prereq edges
-      in knowledge_graph_seeds.json carry cross-cluster structural relationships.
+    - prereq edges are emitted for all valid concept pairs in concept_graph_seeds.json,
+      including cross-topic prereqs. Seeds must not create a single root concept that
+      is a prerequisite of everything; that is a data quality concern in the seed file
+      itself, not something filtered here.
     """
     nodes: List[Dict] = []
     edges: List[Dict] = []
@@ -310,16 +310,12 @@ def build_concept_graph(
         edges.append({"source": source, "target": target, "type": edge_type})
 
     concept_ids: Set[str] = set()
-    # Maps concept_id → its primary (first) topic code for intra-topic prereq filtering.
-    concept_primary_topic: Dict[str, str] = {}
     for concept in concepts:
         cid = concept.get("concept_id", "").strip()
         if not cid:
             continue
         concept_ids.add(cid)
         primary_codes = concept.get("topic_codes", [])
-        if primary_codes:
-            concept_primary_topic[cid] = primary_codes[0]
         nodes.append({
             "id": cid,
             "label": concept.get("name", cid),
@@ -351,10 +347,7 @@ def build_concept_graph(
             dst = (row.get("edge_target") or "").strip()
             edge_type = (row.get("edge_type") or "").strip()
             if edge_type == "PREREQ_FOR" and src in concept_ids and dst in concept_ids:
-                # Emit only intra-topic prereqs so cross-topic concepts don't become
-                # structural hubs. Cross-topic ordering lives in learning journeys.
-                if concept_primary_topic.get(src) == concept_primary_topic.get(dst):
-                    add_edge(src, dst, "prereq")
+                add_edge(src, dst, "prereq")
 
     return nodes, edges
 
