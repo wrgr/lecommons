@@ -39,41 +39,54 @@ PROGRESS_INTERVAL = 10  # print running totals every N profiles inspected
 _ML_EXCLUDE = re.compile(r"\bmachine\s+learning\b", re.IGNORECASE)
 _LE_INCLUDE = re.compile(r"\blearning\s+engineer", re.IGNORECASE)
 
-# Heuristic patterns to extract name + org from SERP snippets and page titles.
-# Covers: "Name - Learning Engineer at Org | LinkedIn",
-#         "Name, Learning Engineer at Org",
-#         "Name is a Learning Engineer at Org"
+_SENIORITY = r"(?:Senior |Lead |Principal |Staff |Associate )?"
+# Greedy org match stopping at sentence punctuation; max 4 words to avoid runaway matches.
+_ORG = r"(?:\s+(?:at|with|@|,)\s+([A-Za-z][A-Za-z\s&.]{1,44}?(?=[,.|)\n]|$)))?"
+# Name: exactly 2–4 capitalised words so we don't absorb surrounding context.
+_NAME = r"([A-Z][a-z]+(?:[\s\-][A-Z][a-z]+){1,3})"
+
+# Patterns that match text INTRODUCING a named individual with their LE title.
+# Ordered from most to least specific; first match wins.
 _SNIPPET_NAME_TITLE = [
-    # LinkedIn / resume format: "Name - Learning Engineer at Org"
+    # Article/bio intro: "April Murphy, a learning engineer at Carnegie Learning"
     re.compile(
-        r"^([A-Z][a-z]+(?:[\s\-][A-Z][a-z]+)+)\s*[-–|]\s*(?:Senior |Lead |Principal |Staff )?Learning Engineer"
-        r"(?:\s+(?:at|@|,)\s+([^|\-\n]{3,50}))?",
+        rf"{_NAME},\s+a\s+{_SENIORITY}learning engineer{_ORG}",
         re.IGNORECASE,
     ),
-    # "Name, Learning Engineer at Org"
+    # Conference abstract: "Name (Learning Engineer, Org)"  or  "Name (Sr. Learning Engineer)"
     re.compile(
-        r"^([A-Z][a-z]+(?:[\s\-][A-Z][a-z]+)+),\s*(?:Senior |Lead |Principal |Staff )?Learning Engineer"
-        r"(?:\s+(?:at|@)\s+([^|\-\n]{3,50}))?",
+        rf"{_NAME}\s*\(\s*{_SENIORITY}learning engineer{_ORG}\s*\)",
         re.IGNORECASE,
     ),
-    # Narrative: "Name is a Learning Engineer at Org" anywhere in text
+    # Speaker/author bio: "Name is a learning engineer at Org"
     re.compile(
-        r"([A-Z][a-z]+(?:\s+[A-Z][a-z]+)+)\s+is\s+a\s+(?:Senior |Lead |Principal |Staff )?Learning Engineer"
-        r"(?:\s+(?:at|@)\s+([^|\-\n.,]{3,50}))?",
+        rf"{_NAME}\s+is\s+a\s+{_SENIORITY}learning engineer{_ORG}",
+        re.IGNORECASE,
+    ),
+    # Resume/LinkedIn title: "Name - Learning Engineer at Org | ..."
+    re.compile(
+        rf"^{_NAME}\s*[-–|]\s*{_SENIORITY}learning engineer{_ORG}",
+        re.IGNORECASE,
+    ),
+    # Comma-separated: "Name, Learning Engineer at Org"
+    re.compile(
+        rf"^{_NAME},\s+{_SENIORITY}learning engineer{_ORG}",
         re.IGNORECASE,
     ),
 ]
 
 DDG_QUERIES = [
-    # LinkedIn SERP snippets anchored to ed-tech context (we read the snippet, never visit LinkedIn)
-    '"learning engineer" site:linkedin.com/in/ "learning science"',
-    '"learning engineer" site:linkedin.com/in/ "instructional design"',
-    '"learning engineer" site:linkedin.com/in/ "educational technology"',
-    # Known-community and known-employer pages
-    '"learning engineer" site:sagroups.ieee.org',
-    '"learning engineer" duolingo OR "Khan Academy" OR "Carnegie Learning" OR "Carnegie Mellon"',
-    '"learning engineer" Coursera OR Amplify OR Pearson OR ETS OR "McGraw-Hill"',
-    '"learning engineer" speaker bio 2023 OR 2024 conference',
+    # Exact intro phrases that only appear when naming a specific person with this title
+    '"a learning engineer at"',
+    '", a senior learning engineer" OR ", a lead learning engineer" OR ", a principal learning engineer"',
+    # Conference abstract format: "Name (Learning Engineer, Org)"
+    '"(learning engineer," OR "(senior learning engineer"',
+    # Speaker/author bio pages from known ed-tech publications
+    '"learning engineer" speaker OR author site:gettingsmart.com OR site:edsurge.com OR site:the-learning-agency.com',
+    # Known employer articles/press that name their Learning Engineers
+    '"learning engineer" "carnegie learning" OR "amplify" OR "newsela" OR "ETS" OR "duolingo" bio OR profile OR team',
+    # ICICLE community — members often publish with their title
+    '"learning engineer" site:sagroups.ieee.org OR site:ieeexplore.ieee.org',
 ]
 
 
@@ -81,9 +94,29 @@ DDG_QUERIES = [
 # Title filtering
 # ---------------------------------------------------------------------------
 
+# Words that appear in org names but not human names; used to reject false positives.
+_ORG_WORDS = re.compile(
+    r"\b(learning|university|college|institute|agency|center|centre|school|foundation"
+    r"|academy|association|corporation|consulting|technologies|solutions|labs|inc|llc"
+    r"|ltd|group|network|council|consortium|system|platform)\b",
+    re.IGNORECASE,
+)
+
+
 def is_le_title(text: str) -> bool:
     """Return True if text contains 'learning engineer' but not 'machine learning'."""
     return bool(_LE_INCLUDE.search(text)) and not bool(_ML_EXCLUDE.search(text))
+
+
+def looks_like_person_name(text: str) -> bool:
+    """Return True if text looks like a 2–4 word human name, not an organisation."""
+    words = text.strip().split()
+    if not (2 <= len(words) <= 4):
+        return False
+    if _ORG_WORDS.search(text):
+        return False
+    # Every word should start with a capital and contain only letters/hyphens
+    return all(re.match(r"^[A-Z][a-zA-Z\-']+$", w) for w in words)
 
 
 def extract_title_phrase(text: str) -> str:
@@ -366,16 +399,26 @@ class _DDGParser:
 
 
 def parse_snippet_for_person(result: dict, today: str) -> Optional[dict]:
-    """Attempt to extract a person record from a DDG search result snippet."""
-    combined = f"{result.get('title', '')} {result.get('snippet', '')}".strip()
+    """Attempt to extract a named person record from a web search result snippet."""
+    # Search both snippet and title; title alone often has the clearest structure
+    title = result.get("title", "")
+    snippet = result.get("snippet", "")
+    combined = f"{title} {snippet}".strip()
     if not is_le_title(combined):
         return None
     name, org = "", ""
-    for pattern in _SNIPPET_NAME_TITLE:
-        m = pattern.search(combined)
-        if m:
-            name = m.group(1).strip()
-            org = (m.group(2) or "").strip().rstrip(".,;")
+    # Try title first (most structured), then full combined text
+    for text in (title, combined):
+        for pattern in _SNIPPET_NAME_TITLE:
+            m = pattern.search(text)
+            if m:
+                candidate = m.group(1).strip()
+                if not looks_like_person_name(candidate):
+                    continue
+                name = candidate
+                org = (m.group(2) or "").strip().rstrip(".,;)(")
+                break
+        if name:
             break
     if not name:
         return None

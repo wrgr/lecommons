@@ -14,10 +14,34 @@ from scripts.scrape_learning_engineers import (
     extract_title_phrase,
     is_le_title,
     load_existing_keys,
+    looks_like_person_name,
     next_person_id,
     parse_github_user,
     parse_snippet_for_person,
 )
+
+
+class PersonNameTests(unittest.TestCase):
+    def test_valid_two_word_name(self) -> None:
+        self.assertTrue(looks_like_person_name("Jane Doe"))
+
+    def test_valid_three_word_name(self) -> None:
+        self.assertTrue(looks_like_person_name("Mary Ann Smith"))
+
+    def test_rejects_org_word(self) -> None:
+        self.assertFalse(looks_like_person_name("Carnegie Learning"))
+
+    def test_rejects_single_word(self) -> None:
+        self.assertFalse(looks_like_person_name("Duolingo"))
+
+    def test_rejects_lowercase(self) -> None:
+        self.assertFalse(looks_like_person_name("jane doe"))
+
+    def test_org_false_positive_rejected(self) -> None:
+        """Regression: 'Carnegie Learning' must not be treated as a person name."""
+        result = {"title": "Something about Carnegie Learning", "url": "https://example.com",
+                  "snippet": "Carnegie Learning, a learning engineer at Acme Corp"}
+        self.assertIsNone(parse_snippet_for_person(result, "2026-04-13"))
 
 
 class TitleFilterTests(unittest.TestCase):
