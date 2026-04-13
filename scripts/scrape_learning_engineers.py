@@ -36,10 +36,15 @@ GITHUB_SLEEP_AUTH_SEC = 1.0
 WEB_SLEEP_SEC = 4.0
 PROGRESS_INTERVAL = 10  # print running totals every N profiles inspected
 
-# Reject "machine learning" anywhere in text, and "deep learning engineer" as a title phrase.
-# Note: "deep learning" alone is NOT rejected — a genuine LE might mention it in context.
+# Reject "machine learning" anywhere in text.
+# Reject "[modifier] learning engineer" title phrases where the modifier indicates an ML/AI
+# sub-discipline (deep, reinforcement, robot) — these are AI roles, not ed-tech roles.
+# Note: "deep learning" / "reinforcement learning" alone are NOT rejected — a genuine
+# ed-tech LE might mention those techniques in passing.
 _ML_EXCLUDE = re.compile(
-    r"\bmachine\s+learning\b|\bdeep\s+learning\s+engineer\b", re.IGNORECASE
+    r"\bmachine\s+learning\b"
+    r"|\b(?:deep|reinforcement|robot)\s+learning\s+engineer\b",
+    re.IGNORECASE,
 )
 _LE_INCLUDE = re.compile(r"\blearning\s+engineer", re.IGNORECASE)
 

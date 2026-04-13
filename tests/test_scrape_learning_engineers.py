@@ -56,6 +56,12 @@ class TitleFilterTests(unittest.TestCase):
     def test_rejects_deep_learning_engineer(self) -> None:
         self.assertFalse(is_le_title("Deep Learning Engineer at Intel"))
 
+    def test_rejects_reinforcement_learning_engineer(self) -> None:
+        self.assertFalse(is_le_title("Reinforcement Learning Engineer at Sber Robotics"))
+
+    def test_rejects_robot_learning_engineer(self) -> None:
+        self.assertFalse(is_le_title("Robot Learning Engineer at NeuracoreAI"))
+
     def test_accepts_le_who_mentions_deep_learning(self) -> None:
         """An ed-tech LE whose bio mentions deep learning should not be excluded."""
         self.assertTrue(is_le_title("Learning Engineer at Duolingo, uses deep learning for personalisation"))
