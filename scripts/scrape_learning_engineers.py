@@ -52,7 +52,8 @@ _LE_INCLUDE = re.compile(r"\blearning\s+engineer", re.IGNORECASE)
 
 _SENIORITY = r"(?:Senior |Lead |Principal |Staff |Associate )?"
 # Greedy org match stopping at sentence punctuation; max 4 words to avoid runaway matches.
-_ORG = r"(?:\s+(?:at|with|@|,)\s+([A-Za-z][A-Za-z\s&.]{1,44}?(?=[,.|)\n]|$)))?"
+# Includes "en" so Spanish bios ("Learning Engineer en Platzi") also match.
+_ORG = r"(?:\s+(?:at|with|@|,|en)\s+([A-Za-z][A-Za-z\s&.]{1,44}?(?=[,.|)\n]|$)))?"
 # Name: exactly 2–4 capitalised words so we don't absorb surrounding context.
 _NAME = r"([A-Z][a-z]+(?:[\s\-][A-Z][a-z]+){1,3})"
 
@@ -87,6 +88,16 @@ _SNIPPET_NAME_TITLE = [
     # Byline: "By Name, Learning Engineer at Org" or "By Name — Learning Engineer at Org"
     re.compile(
         rf"[Bb]y\s+{_NAME}[,\s–-]+{_SENIORITY}learning engineer{_ORG}",
+        re.IGNORECASE,
+    ),
+    # Spanish: "Soy Name, un Learning Engineer en Org"
+    re.compile(
+        rf"[Ss]oy\s+{_NAME}[,\s]+un[ao]?\s+{_SENIORITY}learning engineer{_ORG}",
+        re.IGNORECASE,
+    ),
+    # Spanish article without "Soy": "Name, un Learning Engineer en Org"
+    re.compile(
+        rf"{_NAME},\s+un[ao]?\s+{_SENIORITY}learning engineer{_ORG}",
         re.IGNORECASE,
     ),
 ]
@@ -469,11 +480,15 @@ class _DDGParser:
         """No-op: DDG HTML parsing is no longer used."""
 
 
+_HTML_TAGS = re.compile(r"<[^>]+>")
+
+
 def parse_snippet_for_person(result: dict, today: str) -> Optional[dict]:
     """Attempt to extract a named person record from a web search result snippet."""
-    # Search both snippet and title; title alone often has the clearest structure
-    title = result.get("title", "")
-    snippet = result.get("snippet", "")
+    # Search both snippet and title; title alone often has the clearest structure.
+    # Strip HTML tags (Brave highlights matches with <strong>…</strong>).
+    title = _HTML_TAGS.sub("", result.get("title", ""))
+    snippet = _HTML_TAGS.sub("", result.get("snippet", ""))
     combined = f"{title} {snippet}".strip()
     if not is_le_title(combined):
         return None
@@ -533,15 +548,95 @@ def run_web_source(existing_keys: set[str], today: str, out_path: Path) -> int:
 
 
 # ---------------------------------------------------------------------------
+# Seed company leads — known ed-tech employers that regularly hire Learning Engineers
+# ---------------------------------------------------------------------------
+
+# Curated list of organisations known to carry "Learning Engineer" as a job title.
+# Sourced from published job postings, ICICLE community, and academic literature.
+KNOWN_ED_TECH_EMPLOYERS: list[dict] = [
+    {"company": "Carnegie Learning", "notes": "Inventor of the LE title; ITS / MATHia platform"},
+    {"company": "Amplify", "notes": "K-12 curriculum and assessment platform"},
+    {"company": "Curriculum Associates", "notes": "iReady adaptive learning platform"},
+    {"company": "Age of Learning", "notes": "ABCmouse / Adventure Academy"},
+    {"company": "Imagine Learning", "notes": "Adaptive K-12 literacy and math"},
+    {"company": "Renaissance Learning", "notes": "Star assessments, Accelerated Reader"},
+    {"company": "ETS", "notes": "Educational Testing Service; research + assessment"},
+    {"company": "Duolingo", "notes": "Language learning; ICICLE community member"},
+    {"company": "Khan Academy", "notes": "Free K-12 + higher-ed platform; Khanmigo"},
+    {"company": "Newsela", "notes": "News-based literacy platform"},
+    {"company": "Pearson", "notes": "Global ed publisher; large LE function"},
+    {"company": "McGraw-Hill Education", "notes": "ALEKS adaptive platform"},
+    {"company": "Discovery Education", "notes": "K-12 streaming + curriculum"},
+    {"company": "Achieve3000", "notes": "Differentiated literacy platform"},
+    {"company": "Scholastic", "notes": "K-12 books and classroom content"},
+    {"company": "PowerSchool", "notes": "Student information + learning platform"},
+    {"company": "IXL Learning", "notes": "Adaptive practice platform"},
+    {"company": "Nearpod", "notes": "Interactive lesson delivery"},
+    {"company": "Seesaw", "notes": "K-8 learning and portfolio platform"},
+    {"company": "Illustrative Mathematics", "notes": "OER math curriculum"},
+    {"company": "LearnPlatform", "notes": "EdTech evidence and analytics"},
+    {"company": "Turnitin", "notes": "Integrity and writing feedback"},
+    {"company": "Instructure", "notes": "Canvas LMS"},
+    {"company": "D2L", "notes": "Brightspace LMS"},
+    {"company": "Blackboard", "notes": "Now Anthology; enterprise LMS"},
+    {"company": "Platzi", "notes": "Latin American online tech education"},
+    {"company": "Coursera", "notes": "MOOC platform; content engineering team"},
+    {"company": "edX", "notes": "MOOC platform (now 2U)"},
+    {"company": "Chegg", "notes": "Tutoring and study support"},
+    {"company": "Paper", "notes": "24/7 tutoring platform for K-12"},
+]
+
+
+def run_seed_source(today: str) -> int:
+    """Append KNOWN_ED_TECH_EMPLOYERS to company_leads.jsonl; return count of new entries."""
+    existing = _load_existing_leads(COMPANY_LEADS_PATH)
+    added = 0
+    for entry in KNOWN_ED_TECH_EMPLOYERS:
+        company = entry["company"]
+        # Use empty string as url so the key is just company-name based
+        key = f"{company.lower()}|"
+        # Also check against any existing url-based key for this company
+        company_key = company.lower()
+        already = any(k.startswith(company_key + "|") for k in existing)
+        if already:
+            continue
+        existing.add(key)
+        lead = {
+            "company": company,
+            "job_title_found": "Learning Engineer (seeded)",
+            "job_url": "",
+            "source_type": "manual_seed",
+            "date_collected": today,
+            "notes": entry.get("notes", ""),
+        }
+        append_record(lead, COMPANY_LEADS_PATH)
+        added += 1
+        print(f"  [seed] + {company}")
+    return added
+
+
+# ---------------------------------------------------------------------------
 # Job board source (Greenhouse, Lever, Ashby — all public ATS platforms)
 # ---------------------------------------------------------------------------
 
 JOB_BOARD_QUERIES = [
-    '"learning engineer" instructional site:boards.greenhouse.io',
-    '"learning engineer" "learning experience" site:jobs.lever.co',
-    '"learning engineer" education site:jobs.ashbyhq.com',
-    '"learning engineer" elearning OR "e-learning"',
-    '"learning engineer" lms OR "learning management"',
+    # Greenhouse — largest public ATS; exclude ML noise with ed-tech context words
+    '"learning engineer" instructional OR curriculum OR "learning experience" site:boards.greenhouse.io',
+    # Lever ATS
+    '"learning engineer" instructional OR curriculum site:jobs.lever.co',
+    # Ashby ATS
+    '"learning engineer" instructional OR curriculum site:jobs.ashbyhq.com',
+    # SmartRecruiters ATS
+    '"learning engineer" instructional OR curriculum site:jobs.smartrecruiters.com',
+    # Workday ATS (major enterprise ed-tech companies use Workday)
+    '"learning engineer" instructional OR curriculum site:myworkdayjobs.com',
+    # Known ed-tech employers by name — surfaces their job listings on any platform
+    '"learning engineer" "carnegie learning" OR "amplify education" OR "curriculum associates" job OR career OR hiring',
+    '"learning engineer" "age of learning" OR "imagine learning" OR "renaissance learning" job OR career',
+    '"learning engineer" "educational testing" OR "ETS" OR "pearson" OR "mcgraw-hill" job OR career',
+    '"learning engineer" "discovery education" OR "scholastic" OR "achieve3000" OR "newsela" job OR career',
+    # Ed-tech context (catches postings not on major ATS platforms)
+    '"learning engineer" "instructional design" OR "curriculum development" job OR career OR hiring',
 ]
 
 # Per-company query templates for reverse lookup from company leads.
@@ -554,11 +649,17 @@ REVERSE_QUERY_TEMPLATES = [
     'site:linkedin.com/in "learning engineer" "{company}" -"machine learning"',
 ]
 
-# Patterns to extract company name from ATS job posting page titles
-# e.g. "Senior Learning Engineer at Duolingo | Greenhouse"
+# Patterns to extract company name from ATS job posting page titles/snippets.
+# Ordered from most to least specific; first match wins.
 _JOB_TITLE_PATTERNS = [
-    re.compile(r"Learning Engineer[^|@\n]*(?:at|@)\s+([A-Z][^\|,\n]{2,40})", re.IGNORECASE),
-    re.compile(r"([A-Z][a-zA-Z\s&.]{2,35})\s*[|–-]\s*.*Learning Engineer", re.IGNORECASE),
+    # "Learning Engineer [role words] at Company"  /  "Learning Engineer @ Company"
+    re.compile(r"Learning Engineer[^|@\n]{0,40}(?:at|@)\s+([A-Z][A-Za-z0-9\s&.']{1,40}?)(?:\s*[|\-,]|$)", re.IGNORECASE),
+    # "Role @ Company"  (Ashby/Lever format: "Lead Learning Engineer @ Faculty")
+    re.compile(r"Learning Engineer\s+@\s+([A-Z][A-Za-z0-9\s&.']{1,40}?)(?:\s*[|\-,]|$)", re.IGNORECASE),
+    # "Company | ... Learning Engineer"  (reversed title)
+    re.compile(r"^([A-Z][A-Za-z0-9\s&.']{1,35}?)\s*[|–\-]\s*[^|]*Learning Engineer", re.IGNORECASE),
+    # "... - Careers at Company" or "Jobs at Company"
+    re.compile(r"(?:careers?|jobs?)\s+at\s+([A-Z][A-Za-z0-9\s&.']{2,40}?)(?:\s*[|\-,]|$)", re.IGNORECASE),
 ]
 
 
@@ -738,6 +839,11 @@ def main() -> None:
         action="store_true",
         help="Reverse-search company_leads.jsonl to find named individuals (includes LinkedIn SERP)",
     )
+    parser.add_argument(
+        "--seed",
+        action="store_true",
+        help="Populate company_leads.jsonl with curated list of known ed-tech employers",
+    )
     parser.add_argument("--stats", action="store_true", help="Print database stats and exit")
     parser.add_argument(
         "--limit",
@@ -751,18 +857,23 @@ def main() -> None:
         print_stats(OUTPUT_PATH, COMPANY_LEADS_PATH)
         return
 
-    # Default: run all sources when no source flag is given
-    no_source_flags = not args.github and not args.web and not args.jobs and not args.reverse
+    # Default: run all sources when no source flag is given (--seed is always explicit)
+    no_source_flags = not args.github and not args.web and not args.jobs and not args.reverse and not args.seed
     run_github = args.github or no_source_flags
     run_web = args.web or no_source_flags
     run_jobs = args.jobs or no_source_flags
     run_reverse = args.reverse or no_source_flags
+    run_seed = args.seed
 
     today = date.today().isoformat()
     existing_keys = load_existing_keys(OUTPUT_PATH)
     print(f"Existing records: {len(existing_keys)}  |  Output: {OUTPUT_PATH}")
 
     total_people = 0
+
+    if run_seed:
+        added = run_seed_source(today)
+        print(f"  [seed] {added} new company lead(s) written to {COMPANY_LEADS_PATH}")
 
     if run_github:
         total_people += run_github_source(existing_keys, today, limit=args.limit, out_path=OUTPUT_PATH)
