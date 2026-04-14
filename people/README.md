@@ -28,6 +28,8 @@ people/
 | `query_ids` | Pipe-separated query IDs from PROVENANCE.md that surfaced this person |
 | `profile_url` | Primary profile link (LinkedIn URL, GitHub handle, etc.) |
 | `date_collected` | ISO date first seen (YYYY-MM-DD) |
+| `triage` | `yes` = explicit self-ID; `probable` = strong signal but unconfirmed; `no` = surfaced by query but not a self-ID |
+| `triage_reason` | One-line rationale for the triage value |
 | `notes` | Free text: variant title, context, dedup notes |
 
 ## raw/ file format
