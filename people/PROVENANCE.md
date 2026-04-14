@@ -50,7 +50,21 @@ Each entry records one discrete search action. `raw_file` links to the file in `
 - **Raw file:** `people/raw/Q002_RG_google_site_search_p2.jsonl`
 - **Included in CSV:** 13 records (10 explicit self-ID; 3 probable self-ID with truncated snippets)
 - **Skipped:** 3 records (Rod Roscoe — descriptive panel context; Volodymyr Kukharenko — article about concept; Priyavrat Thareja — metaphorical usage); 2 publication-only results (no person profile)
-- **Notes:** Page 1 (start=0) not captured; run separately as Q003. Three ASU people (McCaleb, Oster, Jongewaard) co-author a Jan 2026 chapter and all use "As learning engineer…"; snippets truncated so title confirmation pending. Blakesley formerly at CMU Eberly Center per a separate PDF in the same SERP.
+- **Notes:** URL in paste shows start=10 (page 2) but user confirmed both pages were captured in the same paste; all ~20 results are logged. Three ASU people (McCaleb, Oster, Jongewaard) co-author a Jan 2026 chapter and all use "As learning engineer…"; snippets truncated so title confirmation pending. Blakesley formerly at CMU Eberly Center per a separate PDF in the same SERP.
+
+---
+
+### Q003
+- **Date:** 2026-04-14
+- **Source:** GS (Google Scholar via Google search)
+- **Query type:** Google Scholar keyword search (query string not captured — reconstruct from context)
+- **Scope:** Global
+- **Query string:** Not provided; inferred as `"learning engineer"` on Google Scholar (similar exclusion filters to Q002 likely applied)
+- **URL:** Not captured
+- **Result count:** ~15 results page 1 (per Google's "omitted entries similar to the 15 already displayed" note) + 10 results page 2; both pages captured across two sequential pastes
+- **Raw file:** `people/raw/Q003_GS_google_scholar_both_pages.jsonl`
+- **New people added to CSV:** 4 (Lauren Totino, Tyree Cowell, Kyoung Whan Choe, Yongsung Kim); Gautam Yadav already in CSV as P001
+- **Notes:** GS surfacing mechanism is distinct from RG — query hits co-author panels on other people's profiles, so many results are profile *subjects* who are not learning engineers themselves but have an LE person in their network. Yongsung Kim's title "Machin Learning Engineer" is an apparent typo for "Machine Learning Engineer" — different field, triage=no. Kyoung Whan Choe ("Robot Learning Engineer") is a title variant worth tracking. Page 1 appeared to have ~15 results but only the last 5 were captured in the paste; full page 1 content may be incomplete.
 
 ---
 
