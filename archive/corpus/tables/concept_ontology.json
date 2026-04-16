@@ -37,7 +37,7 @@
     "bloom_level": "Understand",
     "prerequisites": ["C01"],
     "primary_papers": ["LE-T1-003"],
-    "primary_resources": ["LE-PP-052", "LE-IC-012"]
+    "primary_resources": ["LE-PP-052", "LE-IC-012", "LE-PP-091", "LE-PP-092", "LE-PP-093"]
   },
   {
     "concept_id": "C05",
@@ -57,7 +57,7 @@
     "bloom_level": "Apply",
     "prerequisites": ["C04"],
     "primary_papers": ["LE-T1-006"],
-    "primary_resources": ["LE-PP-052"]
+    "primary_resources": ["LE-PP-052", "LE-PP-093"]
   },
   {
     "concept_id": "C07",
@@ -127,7 +127,7 @@
     "bloom_level": "Apply",
     "prerequisites": ["C04"],
     "primary_papers": ["LE-T1-009"],
-    "primary_resources": ["LE-PP-021", "LE-PP-031", "LE-IC-039"]
+    "primary_resources": ["LE-PP-021", "LE-PP-031", "LE-IC-039", "LE-PP-108", "LE-PP-110"]
   },
   {
     "concept_id": "C14",
@@ -137,7 +137,7 @@
     "bloom_level": "Apply",
     "prerequisites": ["C13"],
     "primary_papers": ["LE-T1-010"],
-    "primary_resources": ["LE-PP-023", "LE-PP-041", "LE-PP-031", "LE-IC-037"]
+    "primary_resources": ["LE-PP-023", "LE-PP-041", "LE-PP-031", "LE-IC-037", "LE-PP-112"]
   },
   {
     "concept_id": "C15",
@@ -197,7 +197,7 @@
     "bloom_level": "Apply",
     "prerequisites": ["C04", "C18"],
     "primary_papers": ["LE-T1-013"],
-    "primary_resources": ["LE-PP-030", "LE-PP-002", "LE-PP-020"]
+    "primary_resources": ["LE-PP-030", "LE-PP-002", "LE-PP-020", "LE-PP-091", "LE-PP-099"]
   },
   {
     "concept_id": "C21",
@@ -217,7 +217,7 @@
     "bloom_level": "Understand",
     "prerequisites": ["C19"],
     "primary_papers": ["LE-T1-011"],
-    "primary_resources": ["LE-PP-032", "LE-PP-031", "LE-IC-033"]
+    "primary_resources": ["LE-PP-032", "LE-PP-031", "LE-IC-033", "LE-IC-041", "LE-IC-042", "LE-IC-043", "LE-IC-044", "LE-IC-045"]
   },
   {
     "concept_id": "C23",
@@ -237,7 +237,7 @@
     "bloom_level": "Evaluate",
     "prerequisites": ["C23"],
     "primary_papers": ["LE-T1-015", "LE-T1-029"],
-    "primary_resources": ["LE-PP-022"]
+    "primary_resources": ["LE-PP-022", "LE-PP-103"]
   },
   {
     "concept_id": "C25",
@@ -307,7 +307,7 @@
     "bloom_level": "Apply",
     "prerequisites": ["C11"],
     "primary_papers": ["LE-T1-035"],
-    "primary_resources": ["LE-IC-018", "LE-IC-039"]
+    "primary_resources": ["LE-IC-018", "LE-IC-039", "LE-PP-094", "LE-PP-109"]
   },
   {
     "concept_id": "C32",
@@ -317,7 +317,7 @@
     "bloom_level": "Understand",
     "prerequisites": ["C01"],
     "primary_papers": ["LE-T1-033"],
-    "primary_resources": ["LE-PP-040", "LE-PP-054", "LE-PP-024", "LE-IC-034"]
+    "primary_resources": ["LE-PP-040", "LE-PP-054", "LE-PP-024", "LE-IC-034", "LE-IC-043", "LE-IC-044", "LE-PP-105"]
   },
   {
     "concept_id": "C33",
@@ -337,7 +337,7 @@
     "bloom_level": "Evaluate",
     "prerequisites": [],
     "primary_papers": ["LE-T1-029"],
-    "primary_resources": []
+    "primary_resources": ["LE-PP-103"]
   },
   {
     "concept_id": "C35",
@@ -347,6 +347,6 @@
     "bloom_level": "Analyze",
     "prerequisites": ["C21", "C22"],
     "primary_papers": ["LE-T1-015"],
-    "primary_resources": ["LE-PP-004", "LE-PP-020", "LE-IC-001", "LE-IC-026"]
+    "primary_resources": ["LE-PP-004", "LE-PP-020", "LE-IC-001", "LE-IC-026", "LE-PP-107"]
   }
 ]

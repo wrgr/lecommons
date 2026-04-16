@@ -85,7 +85,7 @@
       "evidence": {
         "topic": "T17",
         "severity": "Low",
-        "status": "Open"
+        "status": "Partially addressed — LS-SEED-001 (Brown 1992) added to expansion seeds Apr 2026; JLS venue query added to icicle_adjacent_conference_queries.json. C31 now binds LE-PP-094 (Brown) and LE-PP-109 (JLS journal). Full one-hop expansion still pending pipeline run."
       }
     },
     {
@@ -96,7 +96,7 @@
       "evidence": {
         "topic": "ALL",
         "severity": "High",
-        "status": "Open \u2014 blocking"
+        "status": "Partially addressed — LE-IC-001 through LE-IC-040 harvested. IEEE standards added as LE-IC-041 to LE-IC-046 (SG type). Venue queries expanded in icicle_adjacent_conference_queries.json to include JoLE, ISLS, learning_engineering keyword sweep. Pipeline expansion run still pending."
       }
     },
     {
@@ -108,6 +108,28 @@
         "topic": "T08",
         "severity": "Medium",
         "status": "Open"
+      }
+    },
+    {
+      "id": "g_011",
+      "label": "T01 and T04 have zero academic papers (APs) in the corpus despite being central to the LE field (cognitive foundations, learning analytics/EDM).",
+      "detail": "Seeds LS-SEED-002 (Baker & Yacef 2009 EDM), LS-SEED-005 (Sweller 1988 CLT), LS-SEED-007 (SOAR 1987) added to expansion_seed_queries.jsonl Apr 2026 to feed one-hop expansion for these topics. Pipeline run required to surface APs.",
+      "evidence_links": [],
+      "evidence": {
+        "topic": "T01, T04",
+        "severity": "High",
+        "status": "Seeds added — pending pipeline run"
+      }
+    },
+    {
+      "id": "g_012",
+      "label": "JoLE (Journal of Learning Engineering) papers are not reachable via standard citation-graph expansion because the journal is young, diamond OA, and weakly connected in OpenAlex citation networks.",
+      "detail": "Venue-based keyword search added to icicle_adjacent_conference_queries.json (id: jole_journal, trust_query: true). Also added le_keyword_title sweep (trust_query: false, max 400) to catch papers using 'learning engineering' label outside ICICLE networks. Author-based discovery via merged_lane_proposal.py is more reliable than citation one-hop for this community.",
+      "evidence_links": [],
+      "evidence": {
+        "topic": "T00",
+        "severity": "Medium",
+        "status": "Venue queries added — pending pipeline run"
       }
     }
   ]

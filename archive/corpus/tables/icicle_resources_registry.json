@@ -478,5 +478,77 @@
     "secondary_topics": "",
     "description": "Archival essay by Herbert A. Simon — foundational thinker behind cognitive science and bounded rationality — on university leadership and the role of evidence in educational decision-making. Cited as a historical intellectual ancestor of learning engineering.",
     "notes": "Harvested from sagroups.ieee.org/icicle/resources/ Dec 2025. Historical provenance document."
+  },
+  {
+    "resource_id": "LE-IC-041",
+    "status": "APPROVED",
+    "content_type": "SG",
+    "name": "IEEE 1484.1-2003: Learning Technology Systems Architecture (LTSA)",
+    "affiliation_or_venue": "IEEE LTSC",
+    "url": "https://standards.ieee.org/ieee/1484.1/1655/",
+    "primary_topic": "T11",
+    "secondary_topics": "T16",
+    "description": "Defines the high-level system components and communication protocols required for interoperable learning technology platforms. Foundational systems architecture standard for the field.",
+    "notes": "IEEE LTSC sponsoring body. Architectural foundation underpinning xAPI, AIS, and LOM interoperability."
+  },
+  {
+    "resource_id": "LE-IC-042",
+    "status": "APPROVED",
+    "content_type": "SG",
+    "name": "IEEE 9274 Family (xAPI / Experience API)",
+    "affiliation_or_venue": "IEEE LTSC / ADL",
+    "url": "https://xapi.com/overview/",
+    "primary_topic": "T11",
+    "secondary_topics": "T04, T16",
+    "description": "Data instrumentation standard governing how learning experiences are tracked, stored in Learning Record Stores (LRS), and analyzed across distributed platforms. Includes JSON-LD application profiles, cybersecurity protocols, and vocabulary registries.",
+    "notes": "The data infrastructure standard underpinning modern LE telemetry pipelines. Supersedes SCORM for granular activity tracking."
+  },
+  {
+    "resource_id": "LE-IC-043",
+    "status": "APPROVED",
+    "content_type": "SG",
+    "name": "IEEE P2247.1 & P2247.2: Adaptive Instructional Systems (AIS)",
+    "affiliation_or_venue": "IEEE LTSC",
+    "url": "https://standards.ieee.org/project/2247_1.html",
+    "primary_topic": "T06",
+    "secondary_topics": "T11, T16",
+    "description": "Classifies components, parameters, and interoperability protocols for adaptive instructional systems — engineering blueprints for building systems that dynamically adjust instruction based on real-time learner state.",
+    "notes": "Most directly LE-relevant IEEE standard family. Defines the AIS reference model used in ICICLE technical guidance."
+  },
+  {
+    "resource_id": "LE-IC-044",
+    "status": "APPROVED",
+    "content_type": "SG",
+    "name": "IEEE 1484.20.2: Recommended Practice for Defining Competencies",
+    "affiliation_or_venue": "IEEE LTSC",
+    "url": "https://standards.ieee.org/ieee/1484.20.2/10435/",
+    "primary_topic": "T05",
+    "secondary_topics": "T16, T11",
+    "description": "Rigorous data schema for defining human competencies. Supports Integrated Learner Records (ILR) spanning K-12, higher education, workforce, and military environments.",
+    "notes": "Critical for competency-based education and credential portability. Underpins the field's move toward skills-based hiring."
+  },
+  {
+    "resource_id": "LE-IC-045",
+    "status": "APPROVED",
+    "content_type": "SG",
+    "name": "IEEE 1484.12.1-2002 & P2881: Learning Object Metadata (LOM)",
+    "affiliation_or_venue": "IEEE LTSC",
+    "url": "https://standards.ieee.org/ieee/1484.12.1/1280/",
+    "primary_topic": "T11",
+    "secondary_topics": "T05, T16",
+    "description": "Essential standards for cataloging, discovery, and semantic structuring of digital learning resources across repositories. P2881 is the modernized successor incorporating linked data and accessibility requirements.",
+    "notes": "Enables automated discoverability and cross-platform content reuse. P2881 extends LOM for modern web architectures."
+  },
+  {
+    "resource_id": "LE-IC-046",
+    "status": "APPROVED",
+    "content_type": "SG",
+    "name": "Open Context Exchange (OCX)",
+    "affiliation_or_venue": "Learning Tapestry / IEEE ICICLE",
+    "url": "https://learningtapestry.github.io/ocx/",
+    "primary_topic": "T11",
+    "secondary_topics": "T05",
+    "description": "OER schema: specification and metadata ontology for publishing Open Educational Resources on the web. Unifies content to a standard vocabulary for discoverability and automated remixing.",
+    "notes": "Developed by Learning Tapestry / ICICLE. Enables interoperable OER ecosystems."
   }
 ]

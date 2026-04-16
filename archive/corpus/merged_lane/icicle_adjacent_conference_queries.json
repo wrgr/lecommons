@@ -145,6 +145,50 @@
       "max_pages": 8,
       "max_works_per_query": 80,
       "trust_query": false
+    },
+    {
+      "id": "isls_annual_meeting",
+      "label": "International Society of the Learning Sciences Annual Meeting",
+      "openalex_search": "International Society Learning Sciences annual conference",
+      "trust_query": true,
+      "note": "ISLS provides the socio-cultural and qualitative counterbalance to EDM/LAK. Important for DBR methodology papers and socio-cognitive learning frameworks cited by LE practitioners."
+    },
+    {
+      "id": "jole_journal",
+      "label": "Journal of Learning Engineering (JoLE)",
+      "openalex_search": "Journal of Learning Engineering",
+      "trust_query": true,
+      "note": "The only journal dedicated to LE as a named field. Diamond OA; ICICLE-produced. Papers often not well-connected in citation networks because the field is young — venue search is necessary to surface them."
+    },
+    {
+      "id": "jls_journal",
+      "label": "Journal of the Learning Sciences foundational papers",
+      "openalex_search": "Journal of the Learning Sciences design experiments",
+      "trust_query": false,
+      "note": "Targeted search for DBR methodology and socio-cognitive frameworks. Brown 1992 and Scardamalia & Bereiter 1994 published here. Cross-seed scoring will filter; trust_query=false to avoid flooding with adjacent LS papers."
+    },
+    {
+      "id": "le_keyword_title",
+      "label": "learning engineering keyword title search",
+      "openalex_search": "learning engineering",
+      "trust_query": false,
+      "max_pages": 20,
+      "max_works_per_query": 400,
+      "note": "Explicit title/abstract search for the named field. Catches papers that use the LE label but are not connected to ICICLE conference networks. trust_query=false because 'learning engineering' appears in tangential contexts; cross-seed scoring will filter."
+    },
+    {
+      "id": "cognitive_tutor_its_cmu",
+      "label": "Cognitive Tutor and CMU ITS foundational work",
+      "openalex_search": "cognitive tutor intelligent tutoring Carnegie Mellon",
+      "trust_query": false,
+      "note": "Author-cluster search for the CMU ITS lineage (Anderson, Koedinger, Corbett). These foundational papers are the empirical basis of the LE field but often predate the 'learning engineering' label. Cross-seed scoring from new LS-SEED-003/004/006 will recover them."
+    },
+    {
+      "id": "design_based_research_le",
+      "label": "Design-based research in learning",
+      "openalex_search": "design-based research learning intervention classroom",
+      "trust_query": false,
+      "note": "Targeted harvest for DBR methodology literature (Brown 1992 lineage). Addresses gap g_008: T17 Research Methods currently has zero academic papers; this search will feed one-hop from LS-SEED-001."
     }
   ]
 }
