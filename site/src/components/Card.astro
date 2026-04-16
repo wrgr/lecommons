@@ -1,5 +1,8 @@
 ---
 // Resource card for section pages.
+// When `embed` is present the card renders a wide "hero" layout with an
+// always-visible video player, a speaker portrait, and the summary above.
+// Otherwise it renders the compact text-only card used elsewhere.
 
 interface Props {
   title: string;
@@ -14,12 +17,15 @@ interface Props {
   missingProvenance?: boolean;
   summary?: string;
   embed?: string;
+  speakerImage?: string;
+  speakerName?: string;
 }
 
 const {
   title, format, url, venue, authors, year,
   cluster, topics = [], tags = [],
   missingProvenance = false, summary, embed,
+  speakerImage, speakerName,
 } = Astro.props;
 
 const formatLabel: Record<string, string> = {
@@ -35,9 +41,41 @@ const formatLabel: Record<string, string> = {
 };
 
 const isExpertConversation = tags.includes("expert-conversation");
+
+// Extract a YouTube video ID from /embed/ID or watch?v=ID URLs so we can
+// build a thumbnail fallback when no speaker portrait was curated.
+function extractYouTubeId(value?: string): string | undefined {
+  if (!value) return undefined;
+  const embedMatch = value.match(/youtube\.com\/embed\/([A-Za-z0-9_-]{6,})/);
+  if (embedMatch) return embedMatch[1];
+  const watchMatch = value.match(/[?&]v=([A-Za-z0-9_-]{6,})/);
+  if (watchMatch) return watchMatch[1];
+  const shortMatch = value.match(/youtu\.be\/([A-Za-z0-9_-]{6,})/);
+  if (shortMatch) return shortMatch[1];
+  return undefined;
+}
+
+const ytId = extractYouTubeId(embed) ?? extractYouTubeId(url);
+// hqdefault is always present (480x360); maxresdefault sometimes 404s.
+const ytThumb = ytId ? `https://i.ytimg.com/vi/${ytId}/hqdefault.jpg` : undefined;
+
+const heroImage = speakerImage ?? ytThumb;
+const heroImageIsPortrait = Boolean(speakerImage); // curated portraits get square crop
+const speakerLabel = speakerName ?? authors;
+
+const isHero = Boolean(embed);
 ---
 
-<article class:list={["card", { "card--missing": missingProvenance, "card--conversation": isExpertConversation }]}>
+<article
+  class:list={[
+    "card",
+    {
+      "card--missing": missingProvenance,
+      "card--conversation": isExpertConversation,
+      "card--hero": isHero,
+    },
+  ]}
+>
   <div class="card-meta">
     <span class="format-chip">{formatLabel[format] ?? format}</span>
     {isExpertConversation && <span class="conversation-chip">Expert conversation</span>}
@@ -45,33 +83,60 @@ const isExpertConversation = tags.includes("expert-conversation");
     {topics.slice(0, 2).map((t) => <span class="topic-chip">{t}</span>)}
     {missingProvenance && <span class="badge-missing">source unknown</span>}
   </div>
-  <h3 class="card-title">
-    {url ? <a href={url} target="_blank" rel="noopener">{title}</a> : title}
-  </h3>
-  {(authors || venue || year) && (
-    <p class="card-byline">
-      {authors && <span>{authors}</span>}
-      {authors && (venue || year) && <span class="sep"> · </span>}
-      {venue && <span>{venue}</span>}
-      {(venue && year) && <span class="sep"> · </span>}
-      {year && <span>{year}</span>}
-    </p>
-  )}
-  {summary && <p class="card-summary">{summary}</p>}
-  {embed && (
-    <details class="card-embed">
-      <summary>▶ Watch / listen inline</summary>
-      <div class="embed-frame">
-        <iframe
-          src={embed}
-          title={title}
-          loading="lazy"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-          allowfullscreen
-        />
+
+  {isHero ? (
+    <div class="hero-header">
+      {heroImage && (
+        <div class:list={["hero-portrait", { "hero-portrait--square": heroImageIsPortrait }]}>
+          <img src={heroImage} alt={speakerLabel ? `Portrait of ${speakerLabel}` : `Thumbnail for ${title}`} loading="lazy" />
+        </div>
+      )}
+      <div class="hero-text">
+        <h3 class="card-title">
+          {url ? <a href={url} target="_blank" rel="noopener">{title}</a> : title}
+        </h3>
+        {(speakerLabel || venue || year) && (
+          <p class="card-byline">
+            {speakerLabel && <span class="byline-speaker">{speakerLabel}</span>}
+            {speakerLabel && (venue || year) && <span class="sep"> · </span>}
+            {venue && <span>{venue}</span>}
+            {(venue && year) && <span class="sep"> · </span>}
+            {year && <span>{year}</span>}
+          </p>
+        )}
+        {summary && <p class="card-summary">{summary}</p>}
       </div>
-    </details>
+    </div>
+  ) : (
+    <>
+      <h3 class="card-title">
+        {url ? <a href={url} target="_blank" rel="noopener">{title}</a> : title}
+      </h3>
+      {(authors || venue || year) && (
+        <p class="card-byline">
+          {authors && <span>{authors}</span>}
+          {authors && (venue || year) && <span class="sep"> · </span>}
+          {venue && <span>{venue}</span>}
+          {(venue && year) && <span class="sep"> · </span>}
+          {year && <span>{year}</span>}
+        </p>
+      )}
+      {summary && <p class="card-summary">{summary}</p>}
+    </>
   )}
+
+  {embed && (
+    <div class="embed-frame">
+      <iframe
+        src={embed}
+        title={title}
+        loading="lazy"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen
+      />
+    </div>
+  )}
+
   <div class="card-body">
     <slot />
   </div>
@@ -91,6 +156,14 @@ const isExpertConversation = tags.includes("expert-conversation");
   .card:hover { border-color: var(--accent); }
   .card--missing { border-left: 3px solid #c97a2c; }
   .card--conversation { border-left: 3px solid var(--accent-2); }
+
+  /* Hero card: spans the full width of its grid row so the video and
+     speaker portrait have room to breathe. */
+  .card--hero {
+    grid-column: 1 / -1;
+    padding: 1.25rem 1.4rem 1.4rem;
+    gap: .85rem;
+  }
 
   .card-meta { display: flex; gap: .35rem; flex-wrap: wrap; align-items: center; }
 
@@ -132,6 +205,7 @@ const isExpertConversation = tags.includes("expert-conversation");
   }
   .card-title a { color: var(--ink); border-bottom: 1px solid transparent; }
   .card-title a:hover { color: var(--accent); border-bottom-color: var(--accent); }
+  .card--hero .card-title { font-size: 1.35rem; }
 
   .card-byline {
     font-family: var(--sans);
@@ -140,6 +214,7 @@ const isExpertConversation = tags.includes("expert-conversation");
     margin: 0;
   }
   .sep { margin: 0 .15rem; }
+  .byline-speaker { color: var(--ink-soft); font-weight: 600; }
 
   .card-summary {
     font-family: var(--serif);
@@ -150,22 +225,35 @@ const isExpertConversation = tags.includes("expert-conversation");
     font-style: italic;
     max-width: 100%;
   }
+  .card--hero .card-summary { font-style: normal; font-size: 1rem; }
 
-  .card-embed {
-    margin-top: .2rem;
+  /* Hero header: portrait left, title/byline/summary right.
+     Stacks on narrow viewports. */
+  .hero-header {
+    display: grid;
+    grid-template-columns: 9rem 1fr;
+    gap: 1.1rem;
+    align-items: start;
   }
-  .card-embed summary {
-    list-style: none;
-    cursor: pointer;
-    font-family: var(--sans);
-    font-size: .82rem;
-    color: var(--accent);
-    padding: .35rem 0;
-    user-select: none;
+  @media (max-width: 640px) {
+    .hero-header { grid-template-columns: 1fr; }
   }
-  .card-embed summary::-webkit-details-marker { display: none; }
-  .card-embed summary:hover { color: var(--accent-2); }
-  .card-embed[open] summary { color: var(--accent-2); font-weight: 600; }
+  .hero-portrait {
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    background: #000;
+    border-radius: 3px;
+    overflow: hidden;
+  }
+  .hero-portrait--square { aspect-ratio: 1 / 1; }
+  .hero-portrait img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+  }
+  .hero-text { display: flex; flex-direction: column; gap: .35rem; }
+
   .embed-frame {
     position: relative;
     padding-top: 56.25%; /* 16:9 */

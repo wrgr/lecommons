@@ -1,7 +1,7 @@
 {
   "source_url": "corpus/non_paper_resources.jsonl",
   "section_count": 16,
-  "item_count": 199,
+  "item_count": 232,
   "sections": [
     {
       "section": "T00 Field Overview & History",
@@ -729,6 +729,119 @@
           "content_type": "GL",
           "status": "APPROVED",
           "section": "T00 Field Overview & History"
+        },
+        {
+          "resource_id": "LE-PP-090",
+          "title": "Herbert A. Simon",
+          "url": "https://www.cmu.edu/simon/",
+          "context": "Nobel laureate (1978) who coined the term 'learning engineer' in the 1967 Educational Record essay 'The Job of a College President.' Argued that teaching effectiveness is a domain of expertise separate from subject-matter knowledge, requiring its own scientific foundation in cognitive science. Co-developed ACT cognitive theory with John Anderson. His work on bounded rationality, human problem solving, and cognitive simulation laid the intellectual foundation for intelligent tutoring systems. The Simon Initiative at CMU is named in his honor.",
+          "topic_codes": [
+            "T00",
+            "T01",
+            "T06"
+          ],
+          "content_type": "PP",
+          "status": "APPROVED",
+          "section": "T00 Field Overview & History"
+        },
+        {
+          "resource_id": "LE-PP-098",
+          "title": "Karen Willcox",
+          "url": "https://willcox.oden.utexas.edu",
+          "context": "Led MIT's Online Education Policy Initiative (OEPI), producing the 2016 report 'Online Education: A Catalyst for Higher Education Reforms' that re-introduced 'learning engineer' to higher education discourse at the moment MOOCs reached 58M+ students. The report recommended universities create dedicated LE roles and directly catalyzed institutional adoption of LE language. Connected learning engineering to computational science methodologies from aerospace engineering, exemplifying the cross-disciplinary engineering approach the field advocates.",
+          "topic_codes": [
+            "T00",
+            "T11",
+            "T03"
+          ],
+          "content_type": "PP",
+          "status": "APPROVED",
+          "section": "T00 Field Overview & History"
+        },
+        {
+          "resource_id": "LE-PP-100",
+          "title": "The Job of a College President",
+          "url": "http://digitalcollections.library.cmu.edu/awweb/awarchive?type=file&item=33692",
+          "context": "The founding document of learning engineering. Published in 1967 by Herbert Simon in the Educational Record, this essay coined the term 'learning engineer' and argued that teaching effectiveness is a domain of expertise distinct from subject-matter knowledge \u2014 requiring its own scientific grounding in cognitive science. Simon proposed that universities employ dedicated learning engineers to collaborate with faculty on evidence-based course design, translating cognitive science into instruction. The philosophical foundation for the field.",
+          "topic_codes": [
+            "T00",
+            "T03",
+            "T12"
+          ],
+          "content_type": "GL",
+          "status": "APPROVED",
+          "section": "T00 Field Overview & History"
+        },
+        {
+          "resource_id": "LE-PP-101",
+          "title": "Online Education: A Catalyst for Higher Education Reforms",
+          "url": "https://oepi.mit.edu/files/2016/09/MIT-Online-Education-Policy-Initiative-September-2016.pdf",
+          "context": "2016 report by Karen Willcox, Sanjay Sarma, and Philip Lippel that re-introduced 'learning engineer' to higher education discourse at the moment MOOCs reached 58M+ global students. Synthesized advances in cognitive science, neuroscience, education research, and edtech; recommended universities create dedicated learning engineering roles. Widely cited as the document that triggered the modern LE movement in higher education institutions and re-legitimized the Simon 1967 vision in the digital era.",
+          "topic_codes": [
+            "T00",
+            "T11",
+            "T03"
+          ],
+          "content_type": "GL",
+          "status": "APPROVED",
+          "section": "T00 Field Overview & History"
+        },
+        {
+          "resource_id": "LE-PP-102",
+          "title": "High-Leverage Opportunities for Learning Engineering",
+          "url": "https://repository.upenn.edu/handle/20.500.14332/6388",
+          "context": "2021 report by Ryan Baker, Ulrich Boser, and Allison Shelley synthesizing a 2020 convening of 100+ academics, policymakers, and practitioners. Defines ten strategic priorities across three domains: Better LE Infrastructure (shared R&D architectures, A/B testing at scale), Supporting Human Processes (teacher dashboards, predictive advising), and Better Learning Technologies (algorithmic equity, complex-skills measurement). The field's most comprehensive contemporary roadmap and the primary policy document cited when framing LE's current agenda.",
+          "topic_codes": [
+            "T00",
+            "T04",
+            "T14",
+            "T07"
+          ],
+          "content_type": "GL",
+          "status": "APPROVED",
+          "section": "T00 Field Overview & History"
+        },
+        {
+          "resource_id": "LE-PP-104",
+          "title": "7 Things You Should Know About Learning Engineering",
+          "url": "https://library.educause.edu/resources/2018/4/7-things-you-should-know-about-learning-engineering",
+          "context": "2018 practitioner-oriented brief in the canonical EDUCAUSE '7 Things' series, which introduced LE to a broad institutional technology audience including CIOs, provosts, and instructional technology directors. Accelerated LE vocabulary adoption in non-research higher education contexts. Widely cited as the accessible entry point for administrators and practitioners encountering the field for the first time.",
+          "topic_codes": [
+            "T00",
+            "T03"
+          ],
+          "content_type": "GL",
+          "status": "APPROVED",
+          "section": "T00 Field Overview & History"
+        },
+        {
+          "resource_id": "LE-PP-107",
+          "title": "The Simon Initiative \u2014 Carnegie Mellon University",
+          "url": "https://www.cmu.edu/simon/",
+          "context": "Cross-disciplinary learning engineering ecosystem at CMU named for Herbert Simon. Encompasses LearnLab (in-vivo research lab), OLI (courseware platform), DataShop/LearnSphere (world's largest educational log data), METALS master's program, and the OpenSimon Toolkit. Hundreds of faculty; the most integrated LE research-to-practice ecosystem globally. Produces both the theoretical advances and the open infrastructure that defines modern learning engineering.",
+          "topic_codes": [
+            "T00",
+            "T06",
+            "T04",
+            "T11"
+          ],
+          "content_type": "CO",
+          "status": "APPROVED",
+          "section": "T00 Field Overview & History"
+        },
+        {
+          "resource_id": "LE-PP-114",
+          "title": "Journal of Learning Engineering",
+          "url": "https://jole.ieee.org",
+          "context": "The only journal specifically dedicated to learning engineering as a named field. Diamond Open Access \u2014 no fees for authors or readers. Community-driven by ICICLE; provides the 'Learning Engineering Primer' to align complex multidisciplinary terminology among authors. Because the field is young and sparsely indexed, JoLE papers often do not appear in citation-network-based discovery \u2014 venue search is required. Added as a venue query in icicle_adjacent_conference_queries.json.",
+          "topic_codes": [
+            "T00",
+            "T03",
+            "T16"
+          ],
+          "content_type": "CO",
+          "status": "APPROVED",
+          "section": "T00 Field Overview & History"
         }
       ]
     },
@@ -774,6 +887,33 @@
             "T06"
           ],
           "content_type": "PC",
+          "status": "APPROVED",
+          "section": "T01 Learning Science Foundations"
+        },
+        {
+          "resource_id": "LE-PP-092",
+          "title": "Allen Newell",
+          "url": "https://en.wikipedia.org/wiki/Allen_Newell",
+          "context": "Pioneer of artificial intelligence and cognitive science. Co-developed SOAR \u2014 a unified theory of cognition modeling problem solving and learning through chunking \u2014 with Laird and Rosenbloom. With Herbert Simon, created the Logic Theorist (1956) and General Problem Solver (1957), the first AI programs, and established the physical symbol system hypothesis. SOAR's chunking mechanism provides a computational model of procedural skill acquisition that directly informs ITS problem-sequence design and mastery criteria.",
+          "topic_codes": [
+            "T01",
+            "T06"
+          ],
+          "content_type": "PP",
+          "status": "APPROVED",
+          "section": "T01 Learning Science Foundations"
+        },
+        {
+          "resource_id": "LE-PP-093",
+          "title": "John Sweller",
+          "url": "https://www.unsw.edu.au/staff/john-sweller",
+          "context": "Educational psychologist who formalized Cognitive Load Theory (CLT), distinguishing intrinsic, extraneous, and germane cognitive load. Established that working memory constraints are a hard design constraint for instruction. CLT-derived principles \u2014 the worked examples effect, split-attention effect, and redundancy effect \u2014 are among the most replicated findings in educational psychology and are now standard learning engineering design rules. The 1988 founding paper has 4,000+ citations; the CLT literature it seeded spans hundreds of empirical studies.",
+          "topic_codes": [
+            "T01",
+            "T12",
+            "T03"
+          ],
+          "content_type": "PP",
           "status": "APPROVED",
           "section": "T01 Learning Science Foundations"
         }
@@ -1100,6 +1240,63 @@
           "content_type": "PC",
           "status": "APPROVED",
           "section": "T04 Measurement & Analytics"
+        },
+        {
+          "resource_id": "LE-PP-106",
+          "title": "OpenSimon Toolkit (CMU Simon Initiative)",
+          "url": "https://www.cmu.edu/simon/open-simon/",
+          "context": "The flagship open infrastructure for learning engineering research globally. Comprises DataShop (world's largest open educational interaction data repository), LearnSphere (open learning analytics infrastructure), CTAT (cognitive tutor authoring tools), OLI (Open Learning Initiative courseware), DiscourseDB (NLP for learning interactions), LightSide (automated text coding), and Bazaar (intelligent collaborative chatbot). Enables researchers worldwide to build, test, and study learning engineering systems without proprietary infrastructure.",
+          "topic_codes": [
+            "T04",
+            "T06",
+            "T11",
+            "T17"
+          ],
+          "content_type": "TP",
+          "status": "APPROVED",
+          "section": "T04 Measurement & Analytics"
+        },
+        {
+          "resource_id": "LE-PP-108",
+          "title": "Penn Center for Learning Analytics",
+          "url": "https://learninganalytics.upenn.edu",
+          "context": "Research center directing educational data mining and learning engineering policy work, led by Ryan Baker. Produced 'High-Leverage Opportunities for Learning Engineering' (2021) and several landmark EDM papers. Baker is editor of the Journal of Educational Data Mining and a primary organizer of the EDM conference. Major hub connecting academic EDM research to policy influence and practitioner adoption.",
+          "topic_codes": [
+            "T04",
+            "T17",
+            "T06"
+          ],
+          "content_type": "CO",
+          "status": "APPROVED",
+          "section": "T04 Measurement & Analytics"
+        },
+        {
+          "resource_id": "LE-PP-110",
+          "title": "Journal of Educational Data Mining",
+          "url": "https://jedm.educationaldatamining.org/",
+          "context": "Open-access journal dedicated to algorithms and methodologies for analyzing educational data: knowledge tracing, automated feature engineering, predictive student modeling, and behavioral analysis. Baker & Yacef's founding codification of EDM (2009) published here. Premier venue for computational LE methods. Diamond open access \u2014 no fees for authors or readers.",
+          "topic_codes": [
+            "T04",
+            "T06",
+            "T17"
+          ],
+          "content_type": "CO",
+          "status": "APPROVED",
+          "section": "T04 Measurement & Analytics"
+        },
+        {
+          "resource_id": "LE-PP-112",
+          "title": "Journal of Learning Analytics",
+          "url": "https://learning-analytics.info/index.php/JLA",
+          "context": "Official publication of SoLAR. Covers socio-technical implications of educational data: dashboard design, algorithmic ethics, data privacy, human-in-the-loop architectures, and equity in analytics deployment. Complements JEDM's algorithmic focus with practice implications and ethical framing \u2014 the two journals represent the LA/EDM distinction that should be preserved in the corpus taxonomy.",
+          "topic_codes": [
+            "T04",
+            "T14",
+            "T17"
+          ],
+          "content_type": "CO",
+          "status": "APPROVED",
+          "section": "T04 Measurement & Analytics"
         }
       ]
     },
@@ -1116,6 +1313,20 @@
             "T04"
           ],
           "content_type": "GL",
+          "status": "APPROVED",
+          "section": "T05 Knowledge Representation"
+        },
+        {
+          "resource_id": "LE-IC-044",
+          "title": "IEEE 1484.20.2: Recommended Practice for Defining Competencies",
+          "url": "https://standards.ieee.org/ieee/1484.20.2/10435/",
+          "context": "Rigorous data schema for defining human competencies. Supports Integrated Learner Records (ILR) spanning K-12, higher education, workforce, and military environments.",
+          "topic_codes": [
+            "T05",
+            "T16",
+            "T11"
+          ],
+          "content_type": "SG",
           "status": "APPROVED",
           "section": "T05 Knowledge Representation"
         }
@@ -1234,6 +1445,20 @@
           "section": "T06 Intelligent Tutoring & Adaptive Systems"
         },
         {
+          "resource_id": "LE-IC-043",
+          "title": "IEEE P2247.1 & P2247.2: Adaptive Instructional Systems (AIS)",
+          "url": "https://standards.ieee.org/project/2247_1.html",
+          "context": "Classifies components, parameters, and interoperability protocols for adaptive instructional systems \u2014 engineering blueprints for building systems that dynamically adjust instruction based on real-time learner state.",
+          "topic_codes": [
+            "T06",
+            "T11",
+            "T16"
+          ],
+          "content_type": "SG",
+          "status": "APPROVED",
+          "section": "T06 Intelligent Tutoring & Adaptive Systems"
+        },
+        {
           "resource_id": "LE-PP-074",
           "title": "METALS / MS in Learning Engineering (Carnegie Mellon)",
           "url": "https://metals.hcii.cmu.edu/",
@@ -1346,6 +1571,104 @@
           "content_type": "CO",
           "status": "APPROVED",
           "section": "T06 Intelligent Tutoring & Adaptive Systems"
+        },
+        {
+          "resource_id": "LE-PP-091",
+          "title": "John R. Anderson",
+          "url": "https://www.cmu.edu/dietrich/psychology/people/core-training-faculty/anderson-john.html",
+          "context": "Cognitive scientist and architect of ACT-R (Adaptive Control of Thought\u2013Rational), the dominant cognitive architecture for modeling skill learning. Created the LISP Tutor (1983) \u2014 the first empirically validated intelligent tutoring system \u2014 and co-developed the Cognitive Tutor for algebra, deployed in 2,600+ schools to over half a million students. Demonstrated that ITS-based tutoring produces learning gains equivalent to one-to-one human tutoring (the '2-sigma effect'), providing the empirical foundation for personalized adaptive learning.",
+          "topic_codes": [
+            "T06",
+            "T01",
+            "T00"
+          ],
+          "content_type": "PP",
+          "status": "APPROVED",
+          "section": "T06 Intelligent Tutoring & Adaptive Systems"
+        },
+        {
+          "resource_id": "LE-PP-095",
+          "title": "Marlene Scardamalia",
+          "url": "https://ikit.org/marlene-scardamalia/",
+          "context": "Pioneer of knowledge-building communities and computer-supported collaborative learning (CSCL). With Carl Bereiter, co-developed Knowledge Forum (formerly CSILE), the first networked collaborative knowledge-building environment. 'Computer Support for Knowledge-Building Communities' (Journal of the Learning Sciences, 1994) has 1,800+ citations and established the socio-cognitive framework for collaborative digital learning platforms \u2014 foundational for modern LMS design, MOOCs, and collaborative LE systems. Distinguished by emphasis on collective knowledge construction over individual optimization.",
+          "topic_codes": [
+            "T06",
+            "T01",
+            "T17"
+          ],
+          "content_type": "PP",
+          "status": "APPROVED",
+          "section": "T06 Intelligent Tutoring & Adaptive Systems"
+        },
+        {
+          "resource_id": "LE-PP-097",
+          "title": "Neil Heffernan",
+          "url": "https://www.wpi.edu/people/faculty/nth",
+          "context": "Director of Learning Sciences and Technologies at WPI and creator of ASSISTments, a free intelligent tutoring platform serving 500,000+ students and 20,000+ teachers. Built E-TRIALS within ASSISTments \u2014 one of the first platforms enabling randomized controlled experiments at scale in live classrooms. Pioneered teacher-authored hint sequences and demonstrated that formative assessment integrated with intelligent hints produces significant learning gains. Research spans educational data mining, learning analytics, and optimization of student learning pathways.",
+          "topic_codes": [
+            "T06",
+            "T04",
+            "T17"
+          ],
+          "content_type": "PP",
+          "status": "APPROVED",
+          "section": "T06 Intelligent Tutoring & Adaptive Systems"
+        },
+        {
+          "resource_id": "LE-PP-099",
+          "title": "Albert T. Corbett",
+          "url": "https://www.hcii.cmu.edu/people/albert-corbett",
+          "context": "Co-developer of Bayesian Knowledge Tracing (BKT) with John Anderson \u2014 the probabilistic model for tracking per-student, per-skill mastery that remains the most widely deployed student model in production ITS worldwide. Co-designed the ACT Programming Tutor and Algebra Cognitive Tutor. Systematic empirical work on learning curves, error analysis, and mastery criteria established the validation standards for ITS student models. 'Knowledge Tracing: Modeling the Acquisition of Procedural Knowledge' (1994) has 2,500+ citations.",
+          "topic_codes": [
+            "T06",
+            "T04",
+            "T01"
+          ],
+          "content_type": "PP",
+          "status": "APPROVED",
+          "section": "T06 Intelligent Tutoring & Adaptive Systems"
+        },
+        {
+          "resource_id": "LE-PP-111",
+          "title": "IEEE Transactions on Learning Technologies",
+          "url": "https://www.computer.org/csdl/journal/lt",
+          "context": "Covers technical design and architecture of learning systems: adaptive algorithms, NLP conversational agents, multimodal telemetry (eye tracking, EEG, galvanic skin response), and large-scale platform engineering. Requires substantive technical innovation in computer science alongside pedagogical validity. Key venue for AI-in-education engineering papers and Transformer-based conversational agent research.",
+          "topic_codes": [
+            "T06",
+            "T07",
+            "T11"
+          ],
+          "content_type": "CO",
+          "status": "APPROVED",
+          "section": "T06 Intelligent Tutoring & Adaptive Systems"
+        },
+        {
+          "resource_id": "LE-PP-115",
+          "title": "International Conference on Intelligent Tutoring Systems",
+          "url": "https://iis-international.org/its/",
+          "context": "The oldest dedicated ITS/LE conference, founded 1988 in Montreal. Biennial; proceedings published by Springer LNCS. Premier venue for cognitive models, student modeling, adaptive instruction, and feedback algorithm research. ITS2026 in Cyprus (June 1\u20135, 2026). ITS and AIED now alternate years, making one or the other the annual flagship AI-in-education conference.",
+          "topic_codes": [
+            "T06",
+            "T04",
+            "T07"
+          ],
+          "content_type": "CE",
+          "status": "APPROVED",
+          "section": "T06 Intelligent Tutoring & Adaptive Systems"
+        },
+        {
+          "resource_id": "LE-PP-116",
+          "title": "HCII \u2014 Human-Computer Interaction Institute, Carnegie Mellon",
+          "url": "https://hcii.cmu.edu",
+          "context": "Academic home of learning sciences and technologies at CMU. Houses Ken Koedinger, Al Corbett, and the PACT Center. Offers PhD and MS programs integrating HCI, learning sciences, and data science. Co-originator of learning engineering as a named field; home of DataShop, CTAT, and the Cognitive Tutor research lineage. One of the two most important institutional anchors for LE research globally (alongside the Simon Initiative).",
+          "topic_codes": [
+            "T06",
+            "T01",
+            "T03"
+          ],
+          "content_type": "CO",
+          "status": "APPROVED",
+          "section": "T06 Intelligent Tutoring & Adaptive Systems"
         }
       ]
     },
@@ -1389,6 +1712,20 @@
             "T00"
           ],
           "content_type": "AP",
+          "status": "APPROVED",
+          "section": "T07 AI & Foundation Models in Learning"
+        },
+        {
+          "resource_id": "LE-PP-113",
+          "title": "International Journal of Artificial Intelligence in Education",
+          "url": "https://link.springer.com/journal/40593",
+          "context": "Premier venue for ITS, generative AI in education, deep cognitive modeling, and evaluation of AI vs. human tutoring. Covers algorithmic accuracy evaluations, human factors studies, and pedagogical agent design. Craig & Schroeder (2018) design principles for virtual humans published here. The home journal for rigorous AIED research between conference cycles.",
+          "topic_codes": [
+            "T07",
+            "T06",
+            "T04"
+          ],
+          "content_type": "CO",
           "status": "APPROVED",
           "section": "T07 AI & Foundation Models in Learning"
         }
@@ -1473,6 +1810,20 @@
             "T08"
           ],
           "content_type": "GL",
+          "status": "APPROVED",
+          "section": "T08 Simulation & Experiential Learning"
+        },
+        {
+          "resource_id": "LE-PP-096",
+          "title": "Chris Dede",
+          "url": "https://www.gse.harvard.edu/directory/faculty/chris-dede",
+          "context": "Pioneer of immersive learning environments and hybrid education. 'Immersive interfaces for engagement and learning' (Science, 2009, 2,000+ citations) established engineering parameters for using VR/AR in STEM education. Co-edited Learning Engineering for Online Education (Routledge, 2019) \u2014 the field's first major book \u2014 framing online architectures as enabling continuous telemetry that makes LE at scale legible. Post-pandemic work positioned hybrid learning as an optimal long-term state rather than an emergency measure.",
+          "topic_codes": [
+            "T08",
+            "T00",
+            "T07"
+          ],
+          "content_type": "PP",
           "status": "APPROVED",
           "section": "T08 Simulation & Experiential Learning"
         }
@@ -1694,6 +2045,60 @@
           "content_type": "TP",
           "status": "APPROVED",
           "section": "T11 Learning Infrastructure & Platforms"
+        },
+        {
+          "resource_id": "LE-IC-041",
+          "title": "IEEE 1484.1-2003: Learning Technology Systems Architecture (LTSA)",
+          "url": "https://standards.ieee.org/ieee/1484.1/1655/",
+          "context": "Defines the high-level system components and communication protocols required for interoperable learning technology platforms. Foundational systems architecture standard for the field.",
+          "topic_codes": [
+            "T11",
+            "T16"
+          ],
+          "content_type": "SG",
+          "status": "APPROVED",
+          "section": "T11 Learning Infrastructure & Platforms"
+        },
+        {
+          "resource_id": "LE-IC-042",
+          "title": "IEEE 9274 Family (xAPI / Experience API)",
+          "url": "https://xapi.com/overview/",
+          "context": "Data instrumentation standard governing how learning experiences are tracked, stored in Learning Record Stores (LRS), and analyzed across distributed platforms. Includes JSON-LD application profiles, cybersecurity protocols, and vocabulary registries.",
+          "topic_codes": [
+            "T11",
+            "T04",
+            "T16"
+          ],
+          "content_type": "SG",
+          "status": "APPROVED",
+          "section": "T11 Learning Infrastructure & Platforms"
+        },
+        {
+          "resource_id": "LE-IC-045",
+          "title": "IEEE 1484.12.1-2002 & P2881: Learning Object Metadata (LOM)",
+          "url": "https://standards.ieee.org/ieee/1484.12.1/1280/",
+          "context": "Essential standards for cataloging, discovery, and semantic structuring of digital learning resources across repositories. P2881 is the modernized successor incorporating linked data and accessibility requirements.",
+          "topic_codes": [
+            "T11",
+            "T05",
+            "T16"
+          ],
+          "content_type": "SG",
+          "status": "APPROVED",
+          "section": "T11 Learning Infrastructure & Platforms"
+        },
+        {
+          "resource_id": "LE-IC-046",
+          "title": "Open Context Exchange (OCX)",
+          "url": "https://learningtapestry.github.io/ocx/",
+          "context": "OER schema: specification and metadata ontology for publishing Open Educational Resources on the web. Unifies content to a standard vocabulary for discoverability and automated remixing.",
+          "topic_codes": [
+            "T11",
+            "T05"
+          ],
+          "content_type": "SG",
+          "status": "APPROVED",
+          "section": "T11 Learning Infrastructure & Platforms"
         }
       ]
     },
@@ -1910,6 +2315,20 @@
             "T07"
           ],
           "content_type": "AP",
+          "status": "APPROVED",
+          "section": "T14 Ethics, Equity & Responsible LE"
+        },
+        {
+          "resource_id": "LE-PP-103",
+          "title": "Artificial Intelligence and the Future of Teaching and Learning: Insights and Recommendations",
+          "url": "https://www2.ed.gov/documents/ai-report/ai-report.pdf",
+          "context": "2023 federal policy document addressing AI in education with explicit civil-rights framing. Documented algorithmic bias in e-proctoring systems \u2014 facial recognition failures for darker-skinned, transgender, and neurodivergent students; misidentification of neurodivergent behaviors as academic dishonesty. Mandated algorithmic fairness and data representation requirements. Directly relevant to learning engineers designing or procuring AI-driven assessment and surveillance systems. Sets the ethical and legal floor for LE practice in the US.",
+          "topic_codes": [
+            "T14",
+            "T07",
+            "T04"
+          ],
+          "content_type": "GL",
           "status": "APPROVED",
           "section": "T14 Ethics, Equity & Responsible LE"
         }
@@ -2661,6 +3080,20 @@
           "content_type": "PP",
           "status": "SEED",
           "section": "T16 Standards, Credentialing & Community"
+        },
+        {
+          "resource_id": "LE-PP-105",
+          "title": "Learning Engineering Adoption Maturity Model (LEAMM)",
+          "url": "https://icicle.ieee.org",
+          "context": "Organizational capability matrix (2024/2025) allowing enterprises to assess and advance their LE practice across human-centered design, learning science integration, and data-driven iteration dimensions. Provides a structured pathway from ad-hoc instructional design toward mature learning engineering practice. The field's primary organizational self-assessment tool, developed by the ICICLE community including Goodell, Craig, Blake-Plock, and colleagues.",
+          "topic_codes": [
+            "T16",
+            "T03",
+            "T15"
+          ],
+          "content_type": "GL",
+          "status": "APPROVED",
+          "section": "T16 Standards, Credentialing & Community"
         }
       ]
     },
@@ -2678,6 +3111,34 @@
             "T15"
           ],
           "content_type": "GL",
+          "status": "APPROVED",
+          "section": "T17 Research Methods & Field Development"
+        },
+        {
+          "resource_id": "LE-PP-094",
+          "title": "Ann L. Brown",
+          "url": "https://en.wikipedia.org/wiki/Ann_Brown_(psychologist)",
+          "context": "Educational psychologist and pioneer of design-based research (DBR) and collaborative learning. 'Design Experiments: Theoretical and Methodological Challenges' (Journal of the Learning Sciences, 1992) is the most-cited paper in the learning sciences (2,800+ citations), establishing DBR as the canonical methodology for testing engineered learning interventions in authentic classrooms. Co-created Fostering Communities of Learners. Her methodological framework defines the epistemological standards learning engineering uses when validating systems in messy real-world contexts.",
+          "topic_codes": [
+            "T17",
+            "T03",
+            "T01"
+          ],
+          "content_type": "PP",
+          "status": "APPROVED",
+          "section": "T17 Research Methods & Field Development"
+        },
+        {
+          "resource_id": "LE-PP-109",
+          "title": "Journal of the Learning Sciences",
+          "url": "https://www.tandfonline.com/journals/hlns20",
+          "context": "Founded 1991; the multidisciplinary anchor journal for theoretical models, epistemology, and design-based research in the learning sciences. Home of Ann Brown's 'Design Experiments' (1992, 2,800+ citations) and Scardamalia & Bereiter's knowledge-building paper (1994, 1,800+ citations). Publishes the socio-cognitive and humanistic tradition within LE \u2014 essential for grounding algorithmic approaches in rich theories of how people learn in context.",
+          "topic_codes": [
+            "T17",
+            "T01",
+            "T03"
+          ],
+          "content_type": "CO",
           "status": "APPROVED",
           "section": "T17 Research Methods & Field Development"
         }

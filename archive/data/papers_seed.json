@@ -685,6 +685,242 @@
         "Learning Engineering Process",
         "Evidence & Evaluation Standards"
       ]
+    },
+    {
+      "id": "LE-LS-AP-001",
+      "openalex_id": "W2135503425",
+      "title": "Design Experiments: Theoretical and Methodological Challenges in Creating Complex Interventions in Classroom Settings",
+      "abstract": "",
+      "abstract_source": "",
+      "abstract_is_proxy": false,
+      "year": 1992,
+      "doi": "10.1207/s15327809jls0202_2",
+      "venue": "Journal of the Learning Sciences",
+      "type": "seed_record",
+      "cited_by_count": 3927,
+      "authors": [
+        "Brown AL"
+      ],
+      "referenced_works": [],
+      "citation_plain": "Brown AL (1992) Design Experiments: Theoretical and Methodological Challenges in Creating Complex Interventions in Classroom Settings. Journal of the Learning Sciences DOI: 10.1207/s15327809jls0202_2",
+      "citation_bibtex": "@misc{LE-LS-AP-001,\n  title = {Design Experiments: Theoretical and Methodological Challenges in Creating Complex Interventions in Classroom Settings},\n  author = {Brown AL},\n  year = {1992},\n  howpublished = {Journal of the Learning Sciences},\n  doi = {10.1207/s15327809jls0202_2},\n}",
+      "source_url": "https://doi.org/10.1207/s15327809jls0202_2",
+      "scope": "seed",
+      "status": "APPROVED",
+      "selection_tier": "T1",
+      "topic_codes": [
+        "T17",
+        "T03",
+        "T15"
+      ],
+      "artifact_type": "AP",
+      "topic_names": [
+        "Research Methods & Field Development",
+        "Learning Engineering Process",
+        "Evidence & Evaluation Standards"
+      ]
+    },
+    {
+      "id": "LE-LS-AP-002",
+      "openalex_id": "W1539947443",
+      "title": "The State of Educational Data Mining in 2009: A Review and Future Visions",
+      "abstract": "",
+      "abstract_source": "",
+      "abstract_is_proxy": false,
+      "year": 2009,
+      "doi": "10.5281/zenodo.3554658",
+      "venue": "Journal of Educational Data Mining",
+      "type": "seed_record",
+      "cited_by_count": 1301,
+      "authors": [
+        "Baker RSJ, Yacef K"
+      ],
+      "referenced_works": [],
+      "citation_plain": "Baker RSJ, Yacef K (2009) The State of Educational Data Mining in 2009: A Review and Future Visions. Journal of Educational Data Mining DOI: 10.5281/zenodo.3554658",
+      "citation_bibtex": "@misc{LE-LS-AP-002,\n  title = {The State of Educational Data Mining in 2009: A Review and Future Visions},\n  author = {Baker RSJ, Yacef K},\n  year = {2009},\n  howpublished = {Journal of Educational Data Mining},\n  doi = {10.5281/zenodo.3554658},\n}",
+      "source_url": "https://doi.org/10.5281/zenodo.3554658",
+      "scope": "seed",
+      "status": "APPROVED",
+      "selection_tier": "T1",
+      "topic_codes": [
+        "T04",
+        "T17",
+        "T06"
+      ],
+      "artifact_type": "AP",
+      "topic_names": [
+        "Measurement & Analytics",
+        "Research Methods & Field Development",
+        "Intelligent Tutoring & Adaptive Systems"
+      ]
+    },
+    {
+      "id": "LE-LS-AP-003",
+      "openalex_id": "W2015040676",
+      "title": "Knowledge Tracing: Modeling the Acquisition of Procedural Knowledge",
+      "abstract": "",
+      "abstract_source": "",
+      "abstract_is_proxy": false,
+      "year": 1994,
+      "doi": "10.1007/BF01099821",
+      "venue": "User Modeling and User-Adapted Interaction",
+      "type": "seed_record",
+      "cited_by_count": 2060,
+      "authors": [
+        "Corbett AT, Anderson JR"
+      ],
+      "referenced_works": [],
+      "citation_plain": "Corbett AT, Anderson JR (1994) Knowledge Tracing: Modeling the Acquisition of Procedural Knowledge. User Modeling and User-Adapted Interaction DOI: 10.1007/BF01099821",
+      "citation_bibtex": "@misc{LE-LS-AP-003,\n  title = {Knowledge Tracing: Modeling the Acquisition of Procedural Knowledge},\n  author = {Corbett AT, Anderson JR},\n  year = {1994},\n  howpublished = {User Modeling and User-Adapted Interaction},\n  doi = {10.1007/BF01099821},\n}",
+      "source_url": "https://doi.org/10.1007/BF01099821",
+      "scope": "seed",
+      "status": "APPROVED",
+      "selection_tier": "T1",
+      "topic_codes": [
+        "T06",
+        "T04",
+        "T01"
+      ],
+      "artifact_type": "AP",
+      "topic_names": [
+        "Intelligent Tutoring & Adaptive Systems",
+        "Measurement & Analytics",
+        "Learning Science Foundations"
+      ]
+    },
+    {
+      "id": "LE-LS-AP-004",
+      "openalex_id": "W2163640453",
+      "title": "Cognitive Tutors: Lessons Learned",
+      "abstract": "",
+      "abstract_source": "",
+      "abstract_is_proxy": false,
+      "year": 1995,
+      "doi": "10.1207/s15327809jls0402_2",
+      "venue": "Journal of the Learning Sciences",
+      "type": "seed_record",
+      "cited_by_count": 1893,
+      "authors": [
+        "Anderson JR, Corbett AT, Koedinger KR, Pelletier R"
+      ],
+      "referenced_works": [],
+      "citation_plain": "Anderson JR, Corbett AT, Koedinger KR, Pelletier R (1995) Cognitive Tutors: Lessons Learned. Journal of the Learning Sciences DOI: 10.1207/s15327809jls0402_2",
+      "citation_bibtex": "@misc{LE-LS-AP-004,\n  title = {Cognitive Tutors: Lessons Learned},\n  author = {Anderson JR, Corbett AT, Koedinger KR, Pelletier R},\n  year = {1995},\n  howpublished = {Journal of the Learning Sciences},\n  doi = {10.1207/s15327809jls0402_2},\n}",
+      "source_url": "https://doi.org/10.1207/s15327809jls0402_2",
+      "scope": "seed",
+      "status": "APPROVED",
+      "selection_tier": "T1",
+      "topic_codes": [
+        "T06",
+        "T01",
+        "T15"
+      ],
+      "artifact_type": "AP",
+      "topic_names": [
+        "Intelligent Tutoring & Adaptive Systems",
+        "Learning Science Foundations",
+        "Evidence & Evaluation Standards"
+      ]
+    },
+    {
+      "id": "LE-LS-AP-005",
+      "openalex_id": "W2130736456",
+      "title": "Cognitive load during problem solving: Effects on learning",
+      "abstract": "",
+      "abstract_source": "",
+      "abstract_is_proxy": false,
+      "year": 1988,
+      "doi": "10.1207/s15516709cog1202_4",
+      "venue": "Cognitive Science",
+      "type": "seed_record",
+      "cited_by_count": 7887,
+      "authors": [
+        "Sweller J"
+      ],
+      "referenced_works": [],
+      "citation_plain": "Sweller J (1988) Cognitive load during problem solving: Effects on learning. Cognitive Science DOI: 10.1207/s15516709cog1202_4",
+      "citation_bibtex": "@misc{LE-LS-AP-005,\n  title = {Cognitive load during problem solving: Effects on learning},\n  author = {Sweller J},\n  year = {1988},\n  howpublished = {Cognitive Science},\n  doi = {10.1207/s15516709cog1202_4},\n}",
+      "source_url": "https://doi.org/10.1207/s15516709cog1202_4",
+      "scope": "seed",
+      "status": "APPROVED",
+      "selection_tier": "T1",
+      "topic_codes": [
+        "T01",
+        "T12",
+        "T03"
+      ],
+      "artifact_type": "AP",
+      "topic_names": [
+        "Learning Science Foundations",
+        "Instructional Design & Curriculum",
+        "Learning Engineering Process"
+      ]
+    },
+    {
+      "id": "LE-LS-AP-006",
+      "openalex_id": "W1982250324",
+      "title": "Abstract planning and perceptual chunks: Elements of expertise in geometry",
+      "abstract": "",
+      "abstract_source": "",
+      "abstract_is_proxy": false,
+      "year": 1990,
+      "doi": "10.1207/s15516709cog1404_2",
+      "venue": "Cognitive Science",
+      "type": "seed_record",
+      "cited_by_count": 370,
+      "authors": [
+        "Koedinger KR, Anderson JR"
+      ],
+      "referenced_works": [],
+      "citation_plain": "Koedinger KR, Anderson JR (1990) Abstract planning and perceptual chunks: Elements of expertise in geometry. Cognitive Science DOI: 10.1207/s15516709cog1404_2",
+      "citation_bibtex": "@misc{LE-LS-AP-006,\n  title = {Abstract planning and perceptual chunks: Elements of expertise in geometry},\n  author = {Koedinger KR, Anderson JR},\n  year = {1990},\n  howpublished = {Cognitive Science},\n  doi = {10.1207/s15516709cog1404_2},\n}",
+      "source_url": "https://doi.org/10.1207/s15516709cog1404_2",
+      "scope": "seed",
+      "status": "APPROVED",
+      "selection_tier": "T1",
+      "topic_codes": [
+        "T06",
+        "T01",
+        "T09"
+      ],
+      "artifact_type": "AP",
+      "topic_names": [
+        "Intelligent Tutoring & Adaptive Systems",
+        "Learning Science Foundations",
+        "Expert Knowledge Elicitation"
+      ]
+    },
+    {
+      "id": "LE-LS-AP-007",
+      "openalex_id": "W2180809782",
+      "title": "SOAR: An Architecture for General Intelligence",
+      "abstract": "",
+      "abstract_source": "",
+      "abstract_is_proxy": false,
+      "year": 1987,
+      "doi": "10.1016/0004-3702(87)90050-6",
+      "venue": "Artificial Intelligence",
+      "type": "seed_record",
+      "cited_by_count": 2389,
+      "authors": [
+        "Laird JE, Newell A, Rosenbloom PS"
+      ],
+      "referenced_works": [],
+      "citation_plain": "Laird JE, Newell A, Rosenbloom PS (1987) SOAR: An Architecture for General Intelligence. Artificial Intelligence DOI: 10.1016/0004-3702(87)90050-6",
+      "citation_bibtex": "@misc{LE-LS-AP-007,\n  title = {SOAR: An Architecture for General Intelligence},\n  author = {Laird JE, Newell A, Rosenbloom PS},\n  year = {1987},\n  howpublished = {Artificial Intelligence},\n  doi = {10.1016/0004-3702(87)90050-6},\n}",
+      "source_url": "https://doi.org/10.1016/0004-3702(87)90050-6",
+      "scope": "seed",
+      "status": "APPROVED",
+      "selection_tier": "T1",
+      "topic_codes": [
+        "T01",
+        "T06"
+      ],
+      "artifact_type": "AP",
+      "topic_names": [
+        "Learning Science Foundations",
+        "Intelligent Tutoring & Adaptive Systems"
+      ]
     }
   ]
 }

@@ -684,13 +684,21 @@ def build_missing_abstracts(seed_papers: List[Dict], hop_papers: List[Dict]) -> 
     }
 
 
-def audit_resource_diversity(resources_flat: List[Dict], topic_by_code: Dict) -> Dict:
+def audit_resource_diversity(
+    resources_flat: List[Dict],
+    topic_by_code: Dict,
+    seed_papers: List[Dict] | None = None,
+) -> Dict:
     """
-    Lightweight bias / diversity audit for the resource registry.
+    Lightweight bias / diversity audit for the resource registry plus curated APs.
 
     Checks:
     - No single content_type accounts for >60% of resources in any topic.
     - Each topic with >=3 resources has at least 2 distinct content_types.
+
+    Includes seed_papers (academic_papers.jsonl) when provided so that curated
+    APs are visible in per-topic content-type counts. Hop papers are excluded
+    because their topic codes are inferred (not curated) and would skew counts.
     """
     from collections import Counter
 
@@ -698,6 +706,10 @@ def audit_resource_diversity(resources_flat: List[Dict], topic_by_code: Dict) ->
     for r in resources_flat:
         for code in r.get("topic_codes", []):
             per_topic[code][r.get("content_type", "?")] += 1
+    for p in seed_papers or []:
+        ct = (p.get("artifact_type") or "AP").strip() or "AP"
+        for code in p.get("topic_codes", []) or []:
+            per_topic[code][ct] += 1
 
     warnings = []
     topic_summaries = {}
@@ -765,7 +777,7 @@ def main() -> None:
     write_json(DATA_DIR / "extra_docs.json", extra_docs_payload)
     write_json(DATA_DIR / "topic_map.json", topic_payload)
     write_json(DATA_DIR / "missing_abstracts.json", missing_abstracts_payload)
-    diversity_audit = audit_resource_diversity(resources_flat, topic_by_code)
+    diversity_audit = audit_resource_diversity(resources_flat, topic_by_code, seed_papers=seed_papers)
     write_json(DATA_DIR / "diversity_audit.json", diversity_audit)
     if diversity_audit["warnings"]:
         print("\n[diversity audit] warnings:")

@@ -1,27 +1,23 @@
 {
-  "warnings": [
-    "T02 Systems Engineering & Human Factors: content_type 'GL' is 67% of 3 resources",
-    "T00 Field Overview & History: content_type 'GL' is 61% of 97 resources",
-    "T09 Expert Knowledge Elicitation: content_type 'TP' is 80% of 5 resources",
-    "T12 Instructional Design & Curriculum: content_type 'GL' is 78% of 9 resources",
-    "T17 Research Methods & Field Development: content_type 'GL' is 100% of 4 resources",
-    "T17 Research Methods & Field Development: only 1 content_type across 4 resources \u2014 consider diversifying"
-  ],
+  "warnings": [],
   "per_topic_content_types": {
     "T13": {
       "PC": 6,
       "PP": 15,
-      "GL": 12,
-      "AP": 7,
-      "CO": 1
+      "GL": 13,
+      "AP": 9,
+      "CO": 1,
+      "SG": 1
     },
     "T02": {
       "PC": 1,
-      "GL": 2
+      "GL": 2,
+      "SG": 1,
+      "AP": 1
     },
     "T10": {
       "PC": 1,
-      "AP": 11,
+      "AP": 14,
       "GL": 8,
       "TP": 1,
       "PP": 2
@@ -31,94 +27,116 @@
       "PP": 3,
       "CE": 2,
       "CO": 5,
-      "GL": 6,
-      "TP": 1
+      "GL": 9,
+      "TP": 1,
+      "AP": 5
     },
     "T06": {
       "PC": 12,
-      "PP": 5,
-      "CE": 3,
-      "TP": 2,
-      "AP": 4,
+      "PP": 11,
+      "CE": 4,
+      "TP": 3,
+      "AP": 14,
       "GL": 1,
-      "CO": 5
+      "CO": 11,
+      "SG": 1
     },
     "T01": {
       "PC": 5,
-      "PP": 1,
-      "CO": 1,
-      "GL": 4
+      "PP": 8,
+      "CO": 3,
+      "GL": 4,
+      "AP": 10
     },
     "T03": {
       "PC": 8,
-      "PP": 5,
+      "PP": 8,
       "TP": 5,
-      "CO": 1,
-      "GL": 21,
-      "AP": 3
+      "CO": 4,
+      "GL": 26,
+      "AP": 9
     },
     "T00": {
       "PC": 1,
-      "PP": 21,
+      "PP": 25,
       "CE": 2,
       "TP": 2,
-      "CO": 3,
-      "GL": 59,
-      "AP": 9
+      "CO": 5,
+      "GL": 65,
+      "AP": 10,
+      "SG": 1
     },
     "T07": {
       "PC": 4,
-      "PP": 2,
-      "CE": 3,
-      "AP": 3,
-      "CO": 4
+      "PP": 3,
+      "CE": 4,
+      "AP": 6,
+      "CO": 6,
+      "GL": 2
     },
     "T04": {
       "PC": 3,
-      "PP": 4,
-      "CE": 3,
-      "TP": 4,
-      "CO": 2,
-      "GL": 5
+      "PP": 6,
+      "CE": 4,
+      "TP": 5,
+      "CO": 7,
+      "GL": 7,
+      "SG": 1,
+      "AP": 5
     },
     "T16": {
       "PP": 19,
       "CE": 2,
-      "CO": 2,
-      "GL": 36,
-      "AP": 10
+      "CO": 3,
+      "GL": 37,
+      "AP": 10,
+      "SG": 6
     },
     "T09": {
       "PP": 1,
-      "TP": 4
+      "TP": 4,
+      "AP": 3
     },
     "T08": {
       "CE": 1,
-      "AP": 3,
+      "AP": 4,
       "CO": 1,
       "TP": 1,
       "GL": 2,
-      "PC": 2
+      "PC": 2,
+      "PP": 1
     },
     "T11": {
       "CE": 1,
-      "TP": 1,
-      "CO": 1,
-      "GL": 1
+      "TP": 2,
+      "CO": 3,
+      "GL": 2,
+      "SG": 6,
+      "PP": 1,
+      "AP": 1
     },
     "T05": {
       "GL": 1,
-      "CO": 1
-    },
-    "T12": {
-      "GL": 7,
-      "AP": 2
-    },
-    "T14": {
+      "CO": 1,
+      "SG": 3,
       "AP": 1
     },
+    "T12": {
+      "GL": 8,
+      "AP": 5,
+      "PP": 1
+    },
+    "T14": {
+      "AP": 2,
+      "GL": 2,
+      "CO": 1
+    },
     "T17": {
-      "GL": 4
+      "GL": 4,
+      "PP": 3,
+      "TP": 1,
+      "CO": 4,
+      "AP": 3
     }
   }
 }

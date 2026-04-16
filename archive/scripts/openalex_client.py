@@ -106,6 +106,13 @@ def api_get_json(path: str, params: Dict[str, str]) -> Dict:
             if attempt >= OPENALEX_MAX_RETRIES:
                 raise
             time.sleep(min(2**attempt, 30))
+        except (TimeoutError, OSError) as exc:
+            # Python 3.10+ surfaces socket read timeouts as the builtin TimeoutError
+            # (an OSError subclass), which is not wrapped by urllib.error.URLError.
+            last_error = exc
+            if attempt >= OPENALEX_MAX_RETRIES:
+                raise
+            time.sleep(min(2**attempt, 30))
 
     raise RuntimeError(f"OpenAlex request failed after retries: {last_error}")
 

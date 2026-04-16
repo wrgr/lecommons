@@ -713,4 +713,27 @@ def build_seed_topic_lookup(topic_by_code: Dict[str, Topic]) -> Dict[str, Set[st
         if topics:
             lookup[f"WORKBOOK-{source_id}"].update(topics)
 
+    # Landscape-anchor seeds (LS-SEED-*) carry their own primary/secondary topics
+    # in expansion_seed_queries.jsonl. Without this, hop candidates whose
+    # origin_seed_ids point at LS-SEED rows resolve to no topics and are dropped
+    # silently by build_hop_papers().
+    seed_query_path = CORPUS_DIR / "expansion_seed_queries.jsonl"
+    if seed_query_path.is_file():
+        with seed_query_path.open("r", encoding="utf-8") as fh:
+            for line in fh:
+                line = line.strip()
+                if not line:
+                    continue
+                try:
+                    row = json.loads(line)
+                except json.JSONDecodeError:
+                    continue
+                seed_id = (row.get("seed_id") or "").strip()
+                if not seed_id:
+                    continue
+                topics = [row.get("primary_topic", "")] + listify(row.get("secondary_topics", []))
+                topics = [t for t in topics if t in topic_by_code]
+                if topics:
+                    lookup[seed_id].update(topics)
+
     return lookup

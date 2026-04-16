@@ -1,14 +1,14 @@
 {
-  "built_at_utc": "2026-04-13T12:18:19.639764+00:00",
+  "built_at_utc": "2026-04-16T20:55:34.767117+00:00",
   "parsed_endnotes": 270,
   "matched_endnotes": 148,
-  "seed_papers": 21,
-  "one_hop_papers": 274,
-  "icicle_resource_items": 199,
-  "graph_nodes": 547,
-  "graph_edges": 1792,
+  "seed_papers": 28,
+  "one_hop_papers": 330,
+  "icicle_resource_items": 232,
+  "graph_nodes": 643,
+  "graph_edges": 2228,
   "concept_nodes": 35,
-  "openalex_papers_total": 295,
+  "openalex_papers_total": 358,
   "openalex_matches": 0,
   "openalex_abstracts_filled": 0,
   "openalex_title_lookups": 0,
@@ -19,6 +19,6 @@
   "url_pdf_abstracts_filled": 0,
   "proxy_descriptions_filled": 0,
   "papers_with_proxy_description": 0,
-  "papers_without_source_abstract": 295,
-  "papers_missing_abstract": 295
+  "papers_without_source_abstract": 358,
+  "papers_missing_abstract": 358
 }

@@ -402,10 +402,9 @@ ITEMS: list[tuple[str, dict]] = [
         "topics": ["T11", "T16"],
         "tags": ["adjacent", "standards"],
         "summary": (
-            "The de facto standard for learning-event instrumentation. Not explicitly on "
-            "ICICLE's resource page, but every LE platform conversation eventually comes "
-            "back to xAPI. Runs through the IEEE LTSC where much of ICICLE's standards "
-            "work also happens."
+            "The de facto standard for learning-event instrumentation. Every LE platform "
+            "conversation eventually comes back to xAPI. Runs through the IEEE LTSC, where "
+            "much of ICICLE's standards work also happens."
         ),
     }),
     ("tools", {
@@ -418,8 +417,7 @@ ITEMS: list[tuple[str, dict]] = [
         "tags": ["adjacent", "standards"],
         "summary": (
             "Caliper is xAPI's closest sibling — a learning-analytics interop standard "
-            "from 1EdTech. If you're picking an LMS analytics stack, you'll encounter "
-            "both. Worth having in this registry even though ICICLE doesn't list it."
+            "from 1EdTech. If you're picking an LMS analytics stack, you'll encounter both."
         ),
     }),
     ("community", {
@@ -432,8 +430,8 @@ ITEMS: list[tuple[str, dict]] = [
         "tags": ["adjacent"],
         "summary": (
             "DoD-funded learning-technology R&D center. Birthplace of SCORM and xAPI. "
-            "Not officially on ICICLE's pages, but the overlap between ADL and the "
-            "Government/Military MIG is substantial and they co-sponsor iFEST each year."
+            "Substantial overlap with the ICICLE Government/Military MIG; they co-sponsor "
+            "iFEST each year."
         ),
     }),
     ("community", {

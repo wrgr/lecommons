@@ -58,6 +58,12 @@ const resourceSchema = z.object({
   // Embeddable player URL (YouTube /embed/ID, Vimeo /video/ID, etc).
   // Only set for items that are safe & useful to embed inline.
   embed: urlTransform,
+  // Optional speaker portrait shown in the hero header for embed-bearing
+  // cards. Falls back to the YouTube thumbnail when omitted.
+  speakerImage: urlTransform,
+  // Optional display name for the speaker(s) shown alongside the portrait.
+  // Distinct from `authors` (which may be a long credit string).
+  speakerName: z.string().optional(),
   provenance,
   order: z.number().default(999),
 });

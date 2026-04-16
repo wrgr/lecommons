@@ -2871,35 +2871,403 @@
     "W1995897489",
     "W2891186800",
     "W3027308092",
-    "W2153738822"
+    "W2153738822",
+    "W2050788534",
+    "W2100677568",
+    "W2602984517",
+    "W2101419153",
+    "W2153959628",
+    "W2156985047",
+    "W2097089247",
+    "W2164314939",
+    "W3023786531",
+    "W2893425640",
+    "W2005422315",
+    "W2065436076",
+    "W2888940799",
+    "W2121005211",
+    "W4310976740",
+    "W2513922847",
+    "W2137838794",
+    "W2019111214",
+    "W4252143234",
+    "W2088078282",
+    "W1758077307",
+    "W3125519655",
+    "W2804047627",
+    "W3023092128",
+    "W2157853130",
+    "W2811133697",
+    "W2066525901",
+    "W2161701892",
+    "W1981029888",
+    "W4394894573",
+    "W2594183968",
+    "W2043861297",
+    "W3122947385",
+    "W2782625861",
+    "W2098419406",
+    "W2087946919",
+    "W2494623578",
+    "W1999138184",
+    "W2624442973",
+    "W2314210620",
+    "W2171238991",
+    "W2223092947",
+    "W3131917433",
+    "W3125283871",
+    "W2142889348",
+    "W2123431441",
+    "W3088283486",
+    "W1985560134",
+    "W4388974454",
+    "W2100739170",
+    "W2008724958",
+    "W2065180801",
+    "W2767195701",
+    "W2250879510",
+    "W2997841911",
+    "W1492856410",
+    "W2135204810",
+    "W2136893259",
+    "W3088162569",
+    "W2611919894",
+    "W1949744349",
+    "W4391943879",
+    "W1971386538",
+    "W2595413261",
+    "W1510404552",
+    "W1564243655",
+    "W2904029666",
+    "W2607464941",
+    "W2063218711",
+    "W2080968720",
+    "W2155222868",
+    "W3112613207",
+    "W2549388509",
+    "W2119506287",
+    "W3156335941",
+    "W2330851421",
+    "W2213987741",
+    "W2740254366",
+    "W2791812915",
+    "W1483956091",
+    "W3042860537",
+    "W2999075180",
+    "W1833767890",
+    "W1522131290",
+    "W2099211852",
+    "W3188577156",
+    "W2027140414",
+    "W2076393573",
+    "W2168626622",
+    "W4391684618",
+    "W2895820749",
+    "W2809631635",
+    "W3010600010",
+    "W4226327328",
+    "W2018440115",
+    "W2085250598",
+    "W2764563804",
+    "W2754767460",
+    "W2019613054",
+    "W2768880409",
+    "W4321598508",
+    "W2981932205",
+    "W2729750142",
+    "W2186892911",
+    "W3084812981",
+    "W2739186969",
+    "W188223361",
+    "W613640840",
+    "W2156023213",
+    "W3190382256",
+    "W2904697794",
+    "W4283708265",
+    "W2921586224",
+    "W3120644159",
+    "W2331349975",
+    "W599934088",
+    "W2604510046",
+    "W4281291316",
+    "W2043103951",
+    "W2613387517",
+    "W4403579163",
+    "W1989314007",
+    "W2047427599",
+    "W2186042616",
+    "W1846353168",
+    "W1592821750",
+    "W4396859409",
+    "W2558113454",
+    "W3195752561",
+    "W2616514185",
+    "W2150716521",
+    "W2075625536",
+    "W2065227243",
+    "W2490046637",
+    "W2913665897",
+    "W2339111061",
+    "W1526257866",
+    "W2020859734",
+    "W4391699480",
+    "W2564324990",
+    "W4409346681",
+    "W2742918966",
+    "W3193226555",
+    "W4240078079",
+    "W3160298860",
+    "W3196678110",
+    "W2981465715",
+    "W2062256440",
+    "W2891762692",
+    "W2296397078",
+    "W3097618032",
+    "W2057722489",
+    "W4388688962",
+    "W2402493359",
+    "W4388922567",
+    "W2415488543",
+    "W2075519027",
+    "W4241278178",
+    "W2767456179",
+    "W2080229077",
+    "W2578291617",
+    "W2007412981",
+    "W1985869334",
+    "W2987056143",
+    "W4391699485",
+    "W2595843310",
+    "W2995476185",
+    "W4293073148",
+    "W1979351200",
+    "W2016332261",
+    "W2270275974",
+    "W4206712060",
+    "W2007934872",
+    "W1979683145",
+    "W4245137558",
+    "W1480772994",
+    "W4296717257",
+    "W2166073443",
+    "W2028040158",
+    "W2559152820",
+    "W2900014540",
+    "W2034129600",
+    "W4403627578",
+    "W2765840934",
+    "W3184799577",
+    "W2163683297",
+    "W2110427820",
+    "W2038938031",
+    "W2783700067",
+    "W4214534460",
+    "W4376274444",
+    "W2607048680",
+    "W2944210015",
+    "W2985411978",
+    "W2323841792",
+    "W2089700394",
+    "W4389980560",
+    "W4386529373",
+    "W1515792141",
+    "W2148517726",
+    "W2613531732",
+    "W4247373332",
+    "W2996139569",
+    "W2909847169",
+    "W1973101803",
+    "W2094161644",
+    "W2948608298",
+    "W2064279856",
+    "W2093762864",
+    "W1970333790",
+    "W2991080016",
+    "W1628239807",
+    "W2462068781",
+    "W2081001058",
+    "W3003287323",
+    "W3119007163",
+    "W2946590331",
+    "W2249250824",
+    "W2144045519",
+    "W2040418527",
+    "W2961070998",
+    "W4388971801",
+    "W1520279186",
+    "W2089993681",
+    "W1902313898",
+    "W4283166366",
+    "W2165903028",
+    "W3025418007",
+    "W2664792341",
+    "W2074771454",
+    "W112406725",
+    "W2013484330",
+    "W4283165182",
+    "W3008910386",
+    "W3118897652",
+    "W4324143711",
+    "W2371269647",
+    "W2087445048",
+    "W3089305319",
+    "W1980183491",
+    "W2897419880",
+    "W4290879062",
+    "W3025897019",
+    "W2150019344",
+    "W2803600410",
+    "W3016687935",
+    "W3019817166",
+    "W2023806869",
+    "W2523901396",
+    "W2046756584",
+    "W1969348900",
+    "W2159812127",
+    "W4379058625",
+    "W2971345523",
+    "W2017620223",
+    "W145349841",
+    "W2972734745",
+    "W1986903381",
+    "W4408343077",
+    "W4381489808",
+    "W2605578446",
+    "W4283165297",
+    "W3176264438",
+    "W2791298150",
+    "W3097273107",
+    "W2981423273",
+    "W2394908573",
+    "W3187829000",
+    "W2921364842",
+    "W4280499699",
+    "W2909829875",
+    "W2002159335",
+    "W3174168214",
+    "W2141605852",
+    "W2894409651",
+    "W2153881195",
+    "W2189585013",
+    "W3200510663",
+    "W2123761170",
+    "W1553141852",
+    "W3186410874",
+    "W2752539025",
+    "W2268171164",
+    "W3108110215",
+    "W4389295941",
+    "W2622199467",
+    "W4283160238",
+    "W2047162235",
+    "W2965576758",
+    "W303879075",
+    "W2405447655",
+    "W2153134333",
+    "W2398264115",
+    "W2008568454",
+    "W2544663488",
+    "W4402712228",
+    "W2772372097",
+    "W2992470934",
+    "W2783095491",
+    "W3095425281",
+    "W2559130643",
+    "W4380143013",
+    "W2593900308",
+    "W4283156165",
+    "W2280990709",
+    "W4283161830",
+    "W2343187942",
+    "W2021616296",
+    "W4313307166",
+    "W1979560248",
+    "W4285141508",
+    "W4367459210",
+    "W4403345800",
+    "W1981629404",
+    "W2025679959",
+    "W2980631420",
+    "W3175217968",
+    "W2214535813",
+    "W2079659733",
+    "W1981823327",
+    "W2130167438",
+    "W2242375662",
+    "W2345672780",
+    "W4321609027",
+    "W2770177319",
+    "W2047418497",
+    "W2120107966",
+    "W3132846037",
+    "W2938327967",
+    "W40005390",
+    "W2076494562",
+    "W2752170712",
+    "W2087120392",
+    "W4206951702",
+    "W2016415155",
+    "W2145964860",
+    "W2169416275",
+    "W4283160047",
+    "W1971831456",
+    "W4283168678",
+    "W2610184023",
+    "W2605389891",
+    "W2182080370",
+    "W2942511341",
+    "W2918324462",
+    "W2566230757",
+    "W3171116279",
+    "W2610496213",
+    "W2570778163",
+    "W3184795752",
+    "W4403486535",
+    "W4404627931",
+    "W3187055133",
+    "W2186300590",
+    "W2775299373",
+    "W4392681637",
+    "W3019980481",
+    "W4367172376",
+    "W2070653261",
+    "W3193981351",
+    "W4285148241",
+    "W2623733884",
+    "W4289100906",
+    "W2760806295",
+    "W2620198703",
+    "W3168949399",
+    "W2096626425",
+    "W2033057518",
+    "W2954208904",
+    "W4392734417",
+    "W2804072062",
+    "W2599211151",
+    "W2549667485",
+    "W4312972210",
+    "W2533294909",
+    "W2573462180",
+    "W2047707427",
+    "W2002660953",
+    "W4391562191",
+    "W2954694369",
+    "W2168757249",
+    "W2517772225",
+    "W2601525362",
+    "W2182724152"
   ],
   "harvest_meta": {
-    "generated_at_utc": "2026-04-13T13:49:02.774252+00:00",
-    "query_plan": "corpus/merged_lane/icicle_adjacent_conference_queries.json",
+    "generated_at_utc": "2026-04-16T19:59:26.277041+00:00",
+    "query_plan": "corpus/merged_lane/icicle_adjacent_conference_queries_landscape_only.json",
     "legacy_only": false,
     "queries": [
-      "ieee_icicle_annual",
-      "conference_learning_engineering",
-      "learning_engineering_proceedings",
-      "icicle_site_conference_on_le",
-      "ieee_industry_consortium_le",
-      "asu_learning_engineering_institute_icicle",
-      "learning_at_scale",
-      "l_at_scale",
-      "edm_conference",
-      "aied_conference",
-      "lak_conference",
-      "its_conference",
-      "icls_conference",
-      "icls_icls",
-      "aied_workshop_le",
-      "ieee_learning_engineering_symposium",
-      "stem_icicle",
-      "lak_learning_engineering",
-      "edm_learning_engineering",
-      "chi_learning",
-      "gem_learning",
-      "aied_genai_recent"
+      "isls_annual_meeting",
+      "jole_journal",
+      "jls_journal",
+      "le_keyword_title",
+      "cognitive_tutor_its_cmu",
+      "design_based_research_le"
     ],
     "max_pages_default": 12,
     "max_per_query_default": 150,
@@ -2907,1080 +3275,450 @@
     "merge_existing": true,
     "audit": [
       {
-        "query_id": "ieee_icicle_annual",
+        "query_id": "isls_annual_meeting",
         "page": 1,
-        "meta_count": 127,
+        "meta_count": 566515,
         "results_len": 50
       },
       {
-        "query_id": "ieee_icicle_annual",
+        "query_id": "isls_annual_meeting",
         "page": 2,
-        "meta_count": 127,
+        "meta_count": 566515,
         "results_len": 50
       },
       {
-        "query_id": "ieee_icicle_annual",
+        "query_id": "isls_annual_meeting",
         "page": 3,
-        "meta_count": 127,
-        "results_len": 27
+        "meta_count": 566515,
+        "results_len": 50
       },
       {
-        "query_id": "ieee_icicle_annual",
+        "query_id": "isls_annual_meeting",
         "page": 4,
-        "meta_count": 127,
-        "results_len": 0
+        "meta_count": 566515,
+        "results_len": 50
       },
       {
-        "query_id": "conference_learning_engineering",
+        "query_id": "jole_journal",
         "page": 1,
-        "meta_count": 888883,
+        "meta_count": 1635222,
         "results_len": 50
       },
       {
-        "query_id": "conference_learning_engineering",
+        "query_id": "jole_journal",
         "page": 2,
-        "meta_count": 888883,
+        "meta_count": 1635222,
         "results_len": 50
       },
       {
-        "query_id": "conference_learning_engineering",
+        "query_id": "jole_journal",
         "page": 3,
-        "meta_count": 888883,
+        "meta_count": 1635222,
         "results_len": 50
       },
       {
-        "query_id": "conference_learning_engineering",
+        "query_id": "jole_journal",
         "page": 4,
-        "meta_count": 888883,
+        "meta_count": 1635222,
         "results_len": 50
       },
       {
-        "query_id": "learning_engineering_proceedings",
-        "page": 1,
-        "meta_count": 318,
-        "results_len": 50
-      },
-      {
-        "query_id": "learning_engineering_proceedings",
-        "page": 2,
-        "meta_count": 318,
-        "results_len": 50
-      },
-      {
-        "query_id": "learning_engineering_proceedings",
-        "page": 3,
-        "meta_count": 318,
-        "results_len": 50
-      },
-      {
-        "query_id": "learning_engineering_proceedings",
-        "page": 4,
-        "meta_count": 318,
-        "results_len": 50
-      },
-      {
-        "query_id": "learning_engineering_proceedings",
+        "query_id": "jole_journal",
         "page": 5,
-        "meta_count": 318,
+        "meta_count": 1635222,
         "results_len": 50
       },
       {
-        "query_id": "icicle_site_conference_on_le",
+        "query_id": "jls_journal",
         "page": 1,
-        "meta_count": 387,
+        "meta_count": 1140328,
         "results_len": 50
       },
       {
-        "query_id": "icicle_site_conference_on_le",
+        "query_id": "jls_journal",
         "page": 2,
-        "meta_count": 387,
+        "meta_count": 1140328,
         "results_len": 50
       },
       {
-        "query_id": "icicle_site_conference_on_le",
+        "query_id": "jls_journal",
         "page": 3,
-        "meta_count": 387,
+        "meta_count": 1140328,
         "results_len": 50
       },
       {
-        "query_id": "icicle_site_conference_on_le",
+        "query_id": "jls_journal",
         "page": 4,
-        "meta_count": 387,
+        "meta_count": 1140328,
         "results_len": 50
       },
       {
-        "query_id": "icicle_site_conference_on_le",
+        "query_id": "jls_journal",
         "page": 5,
-        "meta_count": 387,
+        "meta_count": 1140328,
         "results_len": 50
       },
       {
-        "query_id": "icicle_site_conference_on_le",
+        "query_id": "jls_journal",
         "page": 6,
-        "meta_count": 387,
+        "meta_count": 1140328,
         "results_len": 50
       },
       {
-        "query_id": "icicle_site_conference_on_le",
+        "query_id": "jls_journal",
         "page": 7,
-        "meta_count": 387,
+        "meta_count": 1140328,
         "results_len": 50
       },
       {
-        "query_id": "icicle_site_conference_on_le",
+        "query_id": "jls_journal",
         "page": 8,
-        "meta_count": 387,
-        "results_len": 37
+        "meta_count": 1140328,
+        "results_len": 50
       },
       {
-        "query_id": "icicle_site_conference_on_le",
+        "query_id": "jls_journal",
         "page": 9,
-        "meta_count": 387,
-        "results_len": 0
-      },
-      {
-        "query_id": "ieee_industry_consortium_le",
-        "page": 1,
-        "meta_count": 21706,
-        "results_len": 50
-      },
-      {
-        "query_id": "ieee_industry_consortium_le",
-        "page": 2,
-        "meta_count": 21706,
-        "results_len": 50
-      },
-      {
-        "query_id": "ieee_industry_consortium_le",
-        "page": 3,
-        "meta_count": 21706,
-        "results_len": 50
-      },
-      {
-        "query_id": "ieee_industry_consortium_le",
-        "page": 4,
-        "meta_count": 21706,
-        "results_len": 50
-      },
-      {
-        "query_id": "ieee_industry_consortium_le",
-        "page": 5,
-        "meta_count": 21706,
-        "results_len": 50
-      },
-      {
-        "query_id": "asu_learning_engineering_institute_icicle",
-        "page": 1,
-        "meta_count": 18659,
-        "results_len": 50
-      },
-      {
-        "query_id": "asu_learning_engineering_institute_icicle",
-        "page": 2,
-        "meta_count": 18659,
-        "results_len": 50
-      },
-      {
-        "query_id": "asu_learning_engineering_institute_icicle",
-        "page": 3,
-        "meta_count": 18659,
-        "results_len": 50
-      },
-      {
-        "query_id": "asu_learning_engineering_institute_icicle",
-        "page": 4,
-        "meta_count": 18659,
-        "results_len": 50
-      },
-      {
-        "query_id": "asu_learning_engineering_institute_icicle",
-        "page": 5,
-        "meta_count": 18659,
-        "results_len": 50
-      },
-      {
-        "query_id": "learning_at_scale",
-        "page": 1,
-        "meta_count": 610774,
-        "results_len": 50
-      },
-      {
-        "query_id": "learning_at_scale",
-        "page": 2,
-        "meta_count": 610774,
-        "results_len": 50
-      },
-      {
-        "query_id": "learning_at_scale",
-        "page": 3,
-        "meta_count": 610774,
-        "results_len": 50
-      },
-      {
-        "query_id": "learning_at_scale",
-        "page": 4,
-        "meta_count": 610774,
-        "results_len": 50
-      },
-      {
-        "query_id": "learning_at_scale",
-        "page": 5,
-        "meta_count": 610774,
-        "results_len": 50
-      },
-      {
-        "query_id": "learning_at_scale",
-        "page": 6,
-        "meta_count": 610774,
-        "results_len": 50
-      },
-      {
-        "query_id": "l_at_scale",
-        "page": 1,
-        "meta_count": 1748577,
-        "results_len": 50
-      },
-      {
-        "query_id": "l_at_scale",
-        "page": 2,
-        "meta_count": 1748577,
-        "results_len": 50
-      },
-      {
-        "query_id": "l_at_scale",
-        "page": 3,
-        "meta_count": 1748577,
-        "results_len": 50
-      },
-      {
-        "query_id": "l_at_scale",
-        "page": 4,
-        "meta_count": 1748577,
-        "results_len": 50
-      },
-      {
-        "query_id": "l_at_scale",
-        "page": 5,
-        "meta_count": 1748577,
-        "results_len": 50
-      },
-      {
-        "query_id": "l_at_scale",
-        "page": 6,
-        "meta_count": 1748577,
-        "results_len": 50
-      },
-      {
-        "query_id": "l_at_scale",
-        "page": 7,
-        "meta_count": 1748577,
-        "results_len": 50
-      },
-      {
-        "query_id": "l_at_scale",
-        "page": 8,
-        "meta_count": 1748577,
-        "results_len": 50
-      },
-      {
-        "query_id": "l_at_scale",
-        "page": 9,
-        "meta_count": 1748577,
-        "results_len": 50
-      },
-      {
-        "query_id": "edm_conference",
-        "page": 1,
-        "meta_count": 93104,
-        "results_len": 50
-      },
-      {
-        "query_id": "edm_conference",
-        "page": 2,
-        "meta_count": 93104,
-        "results_len": 50
-      },
-      {
-        "query_id": "edm_conference",
-        "page": 3,
-        "meta_count": 93104,
-        "results_len": 50
-      },
-      {
-        "query_id": "edm_conference",
-        "page": 4,
-        "meta_count": 93104,
-        "results_len": 50
-      },
-      {
-        "query_id": "edm_conference",
-        "page": 5,
-        "meta_count": 93104,
-        "results_len": 50
-      },
-      {
-        "query_id": "aied_conference",
-        "page": 1,
-        "meta_count": 402820,
-        "results_len": 50
-      },
-      {
-        "query_id": "aied_conference",
-        "page": 2,
-        "meta_count": 402820,
-        "results_len": 50
-      },
-      {
-        "query_id": "aied_conference",
-        "page": 3,
-        "meta_count": 402820,
-        "results_len": 50
-      },
-      {
-        "query_id": "aied_conference",
-        "page": 4,
-        "meta_count": 402820,
-        "results_len": 50
-      },
-      {
-        "query_id": "aied_conference",
-        "page": 5,
-        "meta_count": 402820,
-        "results_len": 50
-      },
-      {
-        "query_id": "aied_conference",
-        "page": 6,
-        "meta_count": 402820,
-        "results_len": 50
-      },
-      {
-        "query_id": "lak_conference",
-        "page": 1,
-        "meta_count": 5035,
-        "results_len": 50
-      },
-      {
-        "query_id": "lak_conference",
-        "page": 2,
-        "meta_count": 5035,
-        "results_len": 50
-      },
-      {
-        "query_id": "lak_conference",
-        "page": 3,
-        "meta_count": 5035,
-        "results_len": 50
-      },
-      {
-        "query_id": "lak_conference",
-        "page": 4,
-        "meta_count": 5035,
-        "results_len": 50
-      },
-      {
-        "query_id": "lak_conference",
-        "page": 5,
-        "meta_count": 5035,
-        "results_len": 50
-      },
-      {
-        "query_id": "its_conference",
-        "page": 1,
-        "meta_count": 40014,
-        "results_len": 50
-      },
-      {
-        "query_id": "its_conference",
-        "page": 2,
-        "meta_count": 40014,
-        "results_len": 50
-      },
-      {
-        "query_id": "its_conference",
-        "page": 3,
-        "meta_count": 40014,
-        "results_len": 50
-      },
-      {
-        "query_id": "its_conference",
-        "page": 4,
-        "meta_count": 40014,
-        "results_len": 50
-      },
-      {
-        "query_id": "its_conference",
-        "page": 5,
-        "meta_count": 40014,
-        "results_len": 50
-      },
-      {
-        "query_id": "its_conference",
-        "page": 6,
-        "meta_count": 40014,
-        "results_len": 50
-      },
-      {
-        "query_id": "icls_conference",
-        "page": 1,
-        "meta_count": 2213979,
-        "results_len": 50
-      },
-      {
-        "query_id": "icls_conference",
-        "page": 2,
-        "meta_count": 2213979,
-        "results_len": 50
-      },
-      {
-        "query_id": "icls_conference",
-        "page": 3,
-        "meta_count": 2213979,
-        "results_len": 50
-      },
-      {
-        "query_id": "icls_conference",
-        "page": 4,
-        "meta_count": 2213979,
-        "results_len": 50
-      },
-      {
-        "query_id": "icls_conference",
-        "page": 5,
-        "meta_count": 2213979,
-        "results_len": 50
-      },
-      {
-        "query_id": "icls_conference",
-        "page": 6,
-        "meta_count": 2213979,
-        "results_len": 50
-      },
-      {
-        "query_id": "icls_icls",
-        "page": 1,
-        "meta_count": 12276,
-        "results_len": 50
-      },
-      {
-        "query_id": "icls_icls",
-        "page": 2,
-        "meta_count": 12276,
-        "results_len": 50
-      },
-      {
-        "query_id": "icls_icls",
-        "page": 3,
-        "meta_count": 12276,
-        "results_len": 50
-      },
-      {
-        "query_id": "icls_icls",
-        "page": 4,
-        "meta_count": 12276,
-        "results_len": 50
-      },
-      {
-        "query_id": "icls_icls",
-        "page": 5,
-        "meta_count": 12276,
-        "results_len": 50
-      },
-      {
-        "query_id": "aied_workshop_le",
-        "page": 1,
-        "meta_count": 294891,
-        "results_len": 50
-      },
-      {
-        "query_id": "aied_workshop_le",
-        "page": 2,
-        "meta_count": 294891,
-        "results_len": 50
-      },
-      {
-        "query_id": "aied_workshop_le",
-        "page": 3,
-        "meta_count": 294891,
-        "results_len": 50
-      },
-      {
-        "query_id": "aied_workshop_le",
-        "page": 4,
-        "meta_count": 294891,
-        "results_len": 50
-      },
-      {
-        "query_id": "aied_workshop_le",
-        "page": 5,
-        "meta_count": 294891,
-        "results_len": 50
-      },
-      {
-        "query_id": "aied_workshop_le",
-        "page": 6,
-        "meta_count": 294891,
-        "results_len": 50
-      },
-      {
-        "query_id": "aied_workshop_le",
-        "page": 7,
-        "meta_count": 294891,
-        "results_len": 50
-      },
-      {
-        "query_id": "aied_workshop_le",
-        "page": 8,
-        "meta_count": 294891,
-        "results_len": 50
-      },
-      {
-        "query_id": "aied_workshop_le",
-        "page": 9,
-        "meta_count": 294891,
+        "meta_count": 1140328,
         "results_len": 50
       },
       {
-        "query_id": "aied_workshop_le",
+        "query_id": "jls_journal",
         "page": 10,
-        "meta_count": 294891,
+        "meta_count": 1140328,
         "results_len": 50
       },
       {
-        "query_id": "aied_workshop_le",
+        "query_id": "jls_journal",
         "page": 11,
-        "meta_count": 294891,
+        "meta_count": 1140328,
         "results_len": 50
       },
       {
-        "query_id": "aied_workshop_le",
+        "query_id": "jls_journal",
         "page": 12,
-        "meta_count": 294891,
+        "meta_count": 1140328,
         "results_len": 50
       },
       {
-        "query_id": "aied_workshop_le",
+        "query_id": "jls_journal",
         "page": 13,
-        "meta_count": 294891,
+        "meta_count": 1140328,
         "results_len": 50
       },
       {
-        "query_id": "aied_workshop_le",
+        "query_id": "jls_journal",
         "page": 14,
-        "meta_count": 294891,
+        "meta_count": 1140328,
         "results_len": 50
       },
       {
-        "query_id": "aied_workshop_le",
+        "query_id": "jls_journal",
         "page": 15,
-        "meta_count": 294891,
+        "meta_count": 1140328,
         "results_len": 50
       },
       {
-        "query_id": "ieee_learning_engineering_symposium",
+        "query_id": "le_keyword_title",
         "page": 1,
-        "meta_count": 341398,
+        "meta_count": 2387591,
         "results_len": 50
       },
       {
-        "query_id": "ieee_learning_engineering_symposium",
+        "query_id": "le_keyword_title",
         "page": 2,
-        "meta_count": 341398,
+        "meta_count": 2387591,
         "results_len": 50
       },
       {
-        "query_id": "ieee_learning_engineering_symposium",
+        "query_id": "le_keyword_title",
         "page": 3,
-        "meta_count": 341398,
+        "meta_count": 2387591,
         "results_len": 50
       },
       {
-        "query_id": "ieee_learning_engineering_symposium",
+        "query_id": "le_keyword_title",
         "page": 4,
-        "meta_count": 341398,
+        "meta_count": 2387591,
         "results_len": 50
       },
       {
-        "query_id": "ieee_learning_engineering_symposium",
+        "query_id": "le_keyword_title",
         "page": 5,
-        "meta_count": 341398,
+        "meta_count": 2387591,
         "results_len": 50
       },
       {
-        "query_id": "ieee_learning_engineering_symposium",
+        "query_id": "le_keyword_title",
         "page": 6,
-        "meta_count": 341398,
+        "meta_count": 2387591,
         "results_len": 50
       },
       {
-        "query_id": "ieee_learning_engineering_symposium",
+        "query_id": "le_keyword_title",
         "page": 7,
-        "meta_count": 341398,
+        "meta_count": 2387591,
         "results_len": 50
       },
       {
-        "query_id": "ieee_learning_engineering_symposium",
+        "query_id": "le_keyword_title",
         "page": 8,
-        "meta_count": 341398,
+        "meta_count": 2387591,
         "results_len": 50
       },
       {
-        "query_id": "stem_icicle",
-        "page": 1,
-        "meta_count": 304,
-        "results_len": 50
-      },
-      {
-        "query_id": "stem_icicle",
-        "page": 2,
-        "meta_count": 304,
-        "results_len": 50
-      },
-      {
-        "query_id": "stem_icicle",
-        "page": 3,
-        "meta_count": 304,
-        "results_len": 50
-      },
-      {
-        "query_id": "stem_icicle",
-        "page": 4,
-        "meta_count": 304,
-        "results_len": 50
-      },
-      {
-        "query_id": "stem_icicle",
-        "page": 5,
-        "meta_count": 304,
-        "results_len": 50
-      },
-      {
-        "query_id": "stem_icicle",
-        "page": 6,
-        "meta_count": 304,
-        "results_len": 50
-      },
-      {
-        "query_id": "stem_icicle",
-        "page": 7,
-        "meta_count": 304,
-        "results_len": 4
-      },
-      {
-        "query_id": "stem_icicle",
-        "page": 8,
-        "meta_count": 304,
-        "results_len": 0
-      },
-      {
-        "query_id": "lak_learning_engineering",
-        "page": 1,
-        "meta_count": 518724,
-        "results_len": 50
-      },
-      {
-        "query_id": "lak_learning_engineering",
-        "page": 2,
-        "meta_count": 518724,
-        "results_len": 50
-      },
-      {
-        "query_id": "lak_learning_engineering",
-        "page": 3,
-        "meta_count": 518724,
-        "results_len": 50
-      },
-      {
-        "query_id": "lak_learning_engineering",
-        "page": 4,
-        "meta_count": 518724,
-        "results_len": 50
-      },
-      {
-        "query_id": "lak_learning_engineering",
-        "page": 5,
-        "meta_count": 518724,
-        "results_len": 50
-      },
-      {
-        "query_id": "lak_learning_engineering",
-        "page": 6,
-        "meta_count": 518724,
-        "results_len": 50
-      },
-      {
-        "query_id": "lak_learning_engineering",
-        "page": 7,
-        "meta_count": 518724,
-        "results_len": 50
-      },
-      {
-        "query_id": "lak_learning_engineering",
-        "page": 8,
-        "meta_count": 518724,
-        "results_len": 50
-      },
-      {
-        "query_id": "lak_learning_engineering",
+        "query_id": "le_keyword_title",
         "page": 9,
-        "meta_count": 518724,
+        "meta_count": 2387591,
         "results_len": 50
       },
       {
-        "query_id": "lak_learning_engineering",
+        "query_id": "le_keyword_title",
         "page": 10,
-        "meta_count": 518724,
+        "meta_count": 2387591,
         "results_len": 50
       },
       {
-        "query_id": "lak_learning_engineering",
+        "query_id": "le_keyword_title",
         "page": 11,
-        "meta_count": 518724,
+        "meta_count": 2387591,
         "results_len": 50
       },
       {
-        "query_id": "lak_learning_engineering",
+        "query_id": "le_keyword_title",
         "page": 12,
-        "meta_count": 518724,
+        "meta_count": 2387591,
         "results_len": 50
       },
       {
-        "query_id": "lak_learning_engineering",
+        "query_id": "le_keyword_title",
         "page": 13,
-        "meta_count": 518724,
+        "meta_count": 2387591,
         "results_len": 50
       },
       {
-        "query_id": "lak_learning_engineering",
+        "query_id": "le_keyword_title",
         "page": 14,
-        "meta_count": 518724,
+        "meta_count": 2387591,
         "results_len": 50
       },
       {
-        "query_id": "lak_learning_engineering",
+        "query_id": "le_keyword_title",
         "page": 15,
-        "meta_count": 518724,
+        "meta_count": 2387591,
         "results_len": 50
       },
       {
-        "query_id": "edm_learning_engineering",
+        "query_id": "le_keyword_title",
+        "page": 16,
+        "meta_count": 2387591,
+        "results_len": 50
+      },
+      {
+        "query_id": "le_keyword_title",
+        "page": 17,
+        "meta_count": 2387591,
+        "results_len": 50
+      },
+      {
+        "query_id": "le_keyword_title",
+        "page": 18,
+        "meta_count": 2387591,
+        "results_len": 50
+      },
+      {
+        "query_id": "le_keyword_title",
+        "page": 19,
+        "meta_count": 2387591,
+        "results_len": 50
+      },
+      {
+        "query_id": "le_keyword_title",
+        "page": 20,
+        "meta_count": 2387591,
+        "results_len": 50
+      },
+      {
+        "query_id": "cognitive_tutor_its_cmu",
         "page": 1,
-        "meta_count": 95561,
+        "meta_count": 1241,
         "results_len": 50
       },
       {
-        "query_id": "edm_learning_engineering",
+        "query_id": "cognitive_tutor_its_cmu",
         "page": 2,
-        "meta_count": 95561,
+        "meta_count": 1241,
         "results_len": 50
       },
       {
-        "query_id": "edm_learning_engineering",
+        "query_id": "cognitive_tutor_its_cmu",
         "page": 3,
-        "meta_count": 95561,
+        "meta_count": 1241,
         "results_len": 50
       },
       {
-        "query_id": "edm_learning_engineering",
+        "query_id": "cognitive_tutor_its_cmu",
         "page": 4,
-        "meta_count": 95561,
+        "meta_count": 1241,
         "results_len": 50
       },
       {
-        "query_id": "edm_learning_engineering",
+        "query_id": "cognitive_tutor_its_cmu",
         "page": 5,
-        "meta_count": 95561,
+        "meta_count": 1241,
         "results_len": 50
       },
       {
-        "query_id": "edm_learning_engineering",
+        "query_id": "cognitive_tutor_its_cmu",
         "page": 6,
-        "meta_count": 95561,
+        "meta_count": 1241,
         "results_len": 50
       },
       {
-        "query_id": "edm_learning_engineering",
+        "query_id": "cognitive_tutor_its_cmu",
         "page": 7,
-        "meta_count": 95561,
+        "meta_count": 1241,
         "results_len": 50
       },
       {
-        "query_id": "edm_learning_engineering",
+        "query_id": "cognitive_tutor_its_cmu",
         "page": 8,
-        "meta_count": 95561,
+        "meta_count": 1241,
         "results_len": 50
       },
       {
-        "query_id": "edm_learning_engineering",
+        "query_id": "cognitive_tutor_its_cmu",
         "page": 9,
-        "meta_count": 95561,
+        "meta_count": 1241,
         "results_len": 50
       },
       {
-        "query_id": "edm_learning_engineering",
+        "query_id": "cognitive_tutor_its_cmu",
         "page": 10,
-        "meta_count": 95561,
+        "meta_count": 1241,
         "results_len": 50
       },
       {
-        "query_id": "edm_learning_engineering",
+        "query_id": "cognitive_tutor_its_cmu",
         "page": 11,
-        "meta_count": 95561,
+        "meta_count": 1241,
         "results_len": 50
       },
       {
-        "query_id": "edm_learning_engineering",
+        "query_id": "cognitive_tutor_its_cmu",
         "page": 12,
-        "meta_count": 95561,
+        "meta_count": 1241,
         "results_len": 50
       },
       {
-        "query_id": "edm_learning_engineering",
+        "query_id": "cognitive_tutor_its_cmu",
         "page": 13,
-        "meta_count": 95561,
+        "meta_count": 1241,
         "results_len": 50
       },
       {
-        "query_id": "edm_learning_engineering",
+        "query_id": "cognitive_tutor_its_cmu",
         "page": 14,
-        "meta_count": 95561,
+        "meta_count": 1241,
         "results_len": 50
       },
       {
-        "query_id": "edm_learning_engineering",
+        "query_id": "cognitive_tutor_its_cmu",
         "page": 15,
-        "meta_count": 95561,
+        "meta_count": 1241,
         "results_len": 50
       },
       {
-        "query_id": "chi_learning",
+        "query_id": "design_based_research_le",
         "page": 1,
-        "meta_count": 143578,
+        "meta_count": 368690,
         "results_len": 50
       },
       {
-        "query_id": "chi_learning",
+        "query_id": "design_based_research_le",
         "page": 2,
-        "meta_count": 143578,
+        "meta_count": 368690,
         "results_len": 50
       },
       {
-        "query_id": "chi_learning",
+        "query_id": "design_based_research_le",
         "page": 3,
-        "meta_count": 143578,
+        "meta_count": 368690,
         "results_len": 50
       },
       {
-        "query_id": "chi_learning",
+        "query_id": "design_based_research_le",
         "page": 4,
-        "meta_count": 143578,
+        "meta_count": 368690,
         "results_len": 50
       },
       {
-        "query_id": "chi_learning",
+        "query_id": "design_based_research_le",
         "page": 5,
-        "meta_count": 143578,
+        "meta_count": 368690,
         "results_len": 50
       },
       {
-        "query_id": "chi_learning",
+        "query_id": "design_based_research_le",
         "page": 6,
-        "meta_count": 143578,
+        "meta_count": 368690,
         "results_len": 50
       },
       {
-        "query_id": "chi_learning",
+        "query_id": "design_based_research_le",
         "page": 7,
-        "meta_count": 143578,
+        "meta_count": 368690,
         "results_len": 50
       },
       {
-        "query_id": "chi_learning",
+        "query_id": "design_based_research_le",
         "page": 8,
-        "meta_count": 143578,
+        "meta_count": 368690,
         "results_len": 50
       },
       {
-        "query_id": "chi_learning",
+        "query_id": "design_based_research_le",
         "page": 9,
-        "meta_count": 143578,
+        "meta_count": 368690,
         "results_len": 50
       },
       {
-        "query_id": "chi_learning",
+        "query_id": "design_based_research_le",
         "page": 10,
-        "meta_count": 143578,
+        "meta_count": 368690,
         "results_len": 50
       },
       {
-        "query_id": "chi_learning",
+        "query_id": "design_based_research_le",
         "page": 11,
-        "meta_count": 143578,
+        "meta_count": 368690,
         "results_len": 50
       },
       {
-        "query_id": "chi_learning",
+        "query_id": "design_based_research_le",
         "page": 12,
-        "meta_count": 143578,
+        "meta_count": 368690,
         "results_len": 50
       },
       {
-        "query_id": "chi_learning",
+        "query_id": "design_based_research_le",
         "page": 13,
-        "meta_count": 143578,
+        "meta_count": 368690,
         "results_len": 50
       },
       {
-        "query_id": "chi_learning",
+        "query_id": "design_based_research_le",
         "page": 14,
-        "meta_count": 143578,
+        "meta_count": 368690,
         "results_len": 50
       },
       {
-        "query_id": "chi_learning",
+        "query_id": "design_based_research_le",
         "page": 15,
-        "meta_count": 143578,
-        "results_len": 50
-      },
-      {
-        "query_id": "gem_learning",
-        "page": 1,
-        "meta_count": 318758,
-        "results_len": 50
-      },
-      {
-        "query_id": "gem_learning",
-        "page": 2,
-        "meta_count": 318758,
-        "results_len": 50
-      },
-      {
-        "query_id": "gem_learning",
-        "page": 3,
-        "meta_count": 318758,
-        "results_len": 50
-      },
-      {
-        "query_id": "gem_learning",
-        "page": 4,
-        "meta_count": 318758,
-        "results_len": 50
-      },
-      {
-        "query_id": "gem_learning",
-        "page": 5,
-        "meta_count": 318758,
-        "results_len": 50
-      },
-      {
-        "query_id": "gem_learning",
-        "page": 6,
-        "meta_count": 318758,
-        "results_len": 50
-      },
-      {
-        "query_id": "gem_learning",
-        "page": 7,
-        "meta_count": 318758,
-        "results_len": 50
-      },
-      {
-        "query_id": "gem_learning",
-        "page": 8,
-        "meta_count": 318758,
-        "results_len": 50
-      },
-      {
-        "query_id": "gem_learning",
-        "page": 9,
-        "meta_count": 318758,
-        "results_len": 50
-      },
-      {
-        "query_id": "gem_learning",
-        "page": 10,
-        "meta_count": 318758,
-        "results_len": 50
-      },
-      {
-        "query_id": "gem_learning",
-        "page": 11,
-        "meta_count": 318758,
-        "results_len": 50
-      },
-      {
-        "query_id": "gem_learning",
-        "page": 12,
-        "meta_count": 318758,
-        "results_len": 50
-      },
-      {
-        "query_id": "gem_learning",
-        "page": 13,
-        "meta_count": 318758,
-        "results_len": 50
-      },
-      {
-        "query_id": "gem_learning",
-        "page": 14,
-        "meta_count": 318758,
-        "results_len": 50
-      },
-      {
-        "query_id": "gem_learning",
-        "page": 15,
-        "meta_count": 318758,
-        "results_len": 50
-      },
-      {
-        "query_id": "aied_genai_recent",
-        "page": 1,
-        "meta_count": 81014,
-        "results_len": 50
-      },
-      {
-        "query_id": "aied_genai_recent",
-        "page": 2,
-        "meta_count": 81014,
-        "results_len": 50
-      },
-      {
-        "query_id": "aied_genai_recent",
-        "page": 3,
-        "meta_count": 81014,
-        "results_len": 50
-      },
-      {
-        "query_id": "aied_genai_recent",
-        "page": 4,
-        "meta_count": 81014,
-        "results_len": 50
-      },
-      {
-        "query_id": "aied_genai_recent",
-        "page": 5,
-        "meta_count": 81014,
-        "results_len": 50
-      },
-      {
-        "query_id": "aied_genai_recent",
-        "page": 6,
-        "meta_count": 81014,
-        "results_len": 50
-      },
-      {
-        "query_id": "aied_genai_recent",
-        "page": 7,
-        "meta_count": 81014,
-        "results_len": 50
-      },
-      {
-        "query_id": "aied_genai_recent",
-        "page": 8,
-        "meta_count": 81014,
+        "meta_count": 368690,
         "results_len": 50
       }
     ],
-    "count": 2871
+    "count": 3255
   }
 }
