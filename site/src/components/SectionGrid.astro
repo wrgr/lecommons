@@ -64,7 +64,10 @@ const bodyMap = new Map(rendered);
               year={entry.data.year}
               cluster={entry.data.cluster}
               topics={entry.data.topics}
+              tags={entry.data.tags}
               missingProvenance={entry.data.missingProvenance}
+              summary={entry.data.summary}
+              embed={entry.data.embed}
             >
               {Body && <Body />}
             </Card>

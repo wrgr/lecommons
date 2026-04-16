@@ -10,11 +10,16 @@ interface Props {
   year?: number;
   cluster?: string;
   topics?: string[];
+  tags?: string[];
   missingProvenance?: boolean;
+  summary?: string;
+  embed?: string;
 }
 
 const {
-  title, format, url, venue, authors, year, cluster, topics = [], missingProvenance = false
+  title, format, url, venue, authors, year,
+  cluster, topics = [], tags = [],
+  missingProvenance = false, summary, embed,
 } = Astro.props;
 
 const formatLabel: Record<string, string> = {
@@ -25,13 +30,17 @@ const formatLabel: Record<string, string> = {
   conference: "Conference", workshop: "Workshop", series: "Series", convening: "Convening",
   video: "Video", podcast: "Podcast", keynote: "Keynote", webinar: "Webinar",
   "conference-talk": "Talk",
-  org: "Organization", program: "Program", degree: "Degree", person: "Person", event: "Event",
+  org: "Organization", program: "Program", degree: "Degree", person: "Person",
+  event: "Event", institution: "Institution", "study-group": "Study group",
 };
+
+const isExpertConversation = tags.includes("expert-conversation");
 ---
 
-<article class:list={["card", { "card--missing": missingProvenance }]}>
+<article class:list={["card", { "card--missing": missingProvenance, "card--conversation": isExpertConversation }]}>
   <div class="card-meta">
     <span class="format-chip">{formatLabel[format] ?? format}</span>
+    {isExpertConversation && <span class="conversation-chip">Expert conversation</span>}
     {cluster && <span class="cluster-chip">{cluster}</span>}
     {topics.slice(0, 2).map((t) => <span class="topic-chip">{t}</span>)}
     {missingProvenance && <span class="badge-missing">source unknown</span>}
@@ -47,6 +56,21 @@ const formatLabel: Record<string, string> = {
       {(venue && year) && <span class="sep"> · </span>}
       {year && <span>{year}</span>}
     </p>
+  )}
+  {summary && <p class="card-summary">{summary}</p>}
+  {embed && (
+    <details class="card-embed">
+      <summary>▶ Watch / listen inline</summary>
+      <div class="embed-frame">
+        <iframe
+          src={embed}
+          title={title}
+          loading="lazy"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen
+        />
+      </div>
+    </details>
   )}
   <div class="card-body">
     <slot />
@@ -66,10 +90,11 @@ const formatLabel: Record<string, string> = {
   }
   .card:hover { border-color: var(--accent); }
   .card--missing { border-left: 3px solid #c97a2c; }
+  .card--conversation { border-left: 3px solid var(--accent-2); }
 
   .card-meta { display: flex; gap: .35rem; flex-wrap: wrap; align-items: center; }
 
-  .format-chip, .cluster-chip, .topic-chip {
+  .format-chip, .cluster-chip, .topic-chip, .conversation-chip {
     font-family: var(--sans);
     font-size: .68rem;
     letter-spacing: .08em;
@@ -78,6 +103,11 @@ const formatLabel: Record<string, string> = {
     border-radius: 2px;
   }
   .format-chip { color: var(--accent); background: var(--tint-warm); }
+  .conversation-chip {
+    color: var(--bg);
+    background: var(--accent-2);
+    letter-spacing: .04em;
+  }
   .cluster-chip { color: var(--accent-2); background: #e8f4f6; letter-spacing: .03em; text-transform: none; }
   .topic-chip { color: var(--muted); background: var(--tint); }
 
@@ -110,6 +140,47 @@ const formatLabel: Record<string, string> = {
     margin: 0;
   }
   .sep { margin: 0 .15rem; }
+
+  .card-summary {
+    font-family: var(--serif);
+    font-size: .95rem;
+    color: var(--ink-soft);
+    line-height: 1.55;
+    margin: 0;
+    font-style: italic;
+    max-width: 100%;
+  }
+
+  .card-embed {
+    margin-top: .2rem;
+  }
+  .card-embed summary {
+    list-style: none;
+    cursor: pointer;
+    font-family: var(--sans);
+    font-size: .82rem;
+    color: var(--accent);
+    padding: .35rem 0;
+    user-select: none;
+  }
+  .card-embed summary::-webkit-details-marker { display: none; }
+  .card-embed summary:hover { color: var(--accent-2); }
+  .card-embed[open] summary { color: var(--accent-2); font-weight: 600; }
+  .embed-frame {
+    position: relative;
+    padding-top: 56.25%; /* 16:9 */
+    margin-top: .3rem;
+    background: #000;
+    border-radius: 3px;
+    overflow: hidden;
+  }
+  .embed-frame iframe {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    border: 0;
+  }
 
   .card-body {
     font-size: .95rem;

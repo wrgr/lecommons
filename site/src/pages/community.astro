@@ -13,6 +13,8 @@ type EventEntry = Awaited<ReturnType<typeof getCollection<"events">>>[number];
 const community = await getCollection("community");
 const eventsAll = await getCollection("events");
 
+const base = import.meta.env.BASE_URL;
+
 const STUDY_GROUP_KEYWORDS = [
   " sig", " mig", "working group", "community", "incubator",
   "learnlab", "consortium", "initiative", "lab ",
@@ -141,7 +143,7 @@ const totalCount =
       </h2>
       <p class="group-note">
         Where the field convenes. Individual talks and recordings live on the
-        <a href="/events/">Events</a> page.
+        <a href={base + "events/"}>Events</a> page.
       </p>
       <div class="grid">
         {conferencesFromCommunity.map((entry) => {
@@ -173,7 +175,7 @@ const totalCount =
             missingProvenance={entry.data.missingProvenance}
           >
             <p class="cross-ref-note">
-              Details &amp; talks on <a href="/events/">Events →</a>
+              Details &amp; talks on <a href={base + "events/"}>Events →</a>
             </p>
           </Card>
         ))}

@@ -13,6 +13,8 @@ const {
   description = "A practice-centered guide to learning engineering, anchored on IEEE ICICLE.",
   active,
 } = Astro.props;
+
+const base = import.meta.env.BASE_URL;
 ---
 
 <!doctype html>
@@ -23,7 +25,7 @@ const {
     <meta name="generator" content={Astro.generator} />
     <meta name="description" content={description} />
     <title>{title}</title>
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="icon" type="image/svg+xml" href={base + "favicon.svg"} />
   </head>
   <body>
     <NavBar active={active} />
@@ -37,7 +39,7 @@ const {
           <span class="muted"> · a practice-centered guide</span>
         </div>
         <nav class="footer-links" aria-label="Footer">
-          <a href="/about/">About this site</a>
+          <a href={base + "about/"}>About this site</a>
           <a href="https://sagroups.ieee.org/icicle/" target="_blank" rel="noopener">IEEE ICICLE</a>
         </nav>
       </div>
@@ -65,6 +67,7 @@ const {
 
       *, *::before, *::after { box-sizing: border-box; }
       html, body { margin: 0; padding: 0; }
+      html { overflow-x: hidden; }
       body {
         background: var(--bg);
         color: var(--ink);
@@ -73,6 +76,9 @@ const {
         -webkit-font-smoothing: antialiased;
         text-rendering: optimizeLegibility;
       }
+
+      img, svg, video { max-width: 100%; height: auto; }
+      h1, h2, h3, h4, p, li, blockquote { overflow-wrap: break-word; }
 
       a { color: var(--accent); text-decoration: none; border-bottom: 1px solid transparent; transition: border-color .15s ease; }
       a:hover { border-bottom-color: var(--accent); }

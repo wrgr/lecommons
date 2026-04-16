@@ -53,6 +53,11 @@ const resourceSchema = z.object({
   tags: z.array(z.string()).default([]),
   featured: z.boolean().default(false),
   missingProvenance: z.boolean().default(false),
+  // A 2-4 sentence editorial abstract — distinct from the MDX body.
+  summary: z.string().optional(),
+  // Embeddable player URL (YouTube /embed/ID, Vimeo /video/ID, etc).
+  // Only set for items that are safe & useful to embed inline.
+  embed: urlTransform,
   provenance,
   order: z.number().default(999),
 });

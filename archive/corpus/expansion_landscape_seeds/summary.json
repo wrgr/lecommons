@@ -1,0 +1,20 @@
+{
+  "generated_at_utc": "2026-04-16T19:35:44.170649+00:00",
+  "input_seed_file": "corpus/expansion_seed_queries_landscape_only.jsonl",
+  "counts": {
+    "seed_queries_total": 7,
+    "seed_resolved_total": 7,
+    "seed_unresolved_total": 0,
+    "candidates_total": 988,
+    "candidates_forward_edge": 649,
+    "candidates_backward_edge": 345,
+    "candidates_cross_seed_ge_2": 79,
+    "candidates_cross_seed_ge_3": 10
+  },
+  "seed_resolution_breakdown": {
+    "doi": 7
+  },
+  "seed_kind_breakdown": {
+    "landscape_foundational_anchor": 7
+  }
+}

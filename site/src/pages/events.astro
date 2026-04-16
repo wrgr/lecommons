@@ -1,35 +1,179 @@
 ---
 import Base from "../layouts/Base.astro";
 import SectionHero from "../components/SectionHero.astro";
-import SectionGrid from "../components/SectionGrid.astro";
-import { getCollection } from "astro:content";
+import Card from "../components/Card.astro";
+import { getCollection, render } from "astro:content";
 
 const entries = await getCollection("events");
+
+// Pre-render bodies
+const rendered = await Promise.all(
+  entries.map(async (e) => {
+    const { Content } = await render(e);
+    return [e.id, Content] as const;
+  }),
+);
+const bodyMap = new Map(rendered);
+
+// Curated top group: everything tagged `expert-conversation`.
+const conversations = entries
+  .filter((e) => (e.data.tags ?? []).includes("expert-conversation"))
+  .sort((a, b) =>
+    (b.data.year ?? 0) - (a.data.year ?? 0) ||
+    a.data.title.localeCompare(b.data.title),
+  );
+
+// Everything else, grouped by format in the usual order.
+const nonConv = entries.filter((e) => !(e.data.tags ?? []).includes("expert-conversation"));
+const formatOrder = [
+  "conference", "series", "workshop", "convening",
+  "conference-talk", "keynote", "webinar", "video", "podcast",
+];
+const formatHeadings: Record<string, string> = {
+  conference: "Conferences",
+  series: "Recurring series",
+  workshop: "Workshops",
+  convening: "Convenings",
+  "conference-talk": "Conference talks",
+  keynote: "Keynotes",
+  webinar: "Webinars",
+  video: "Video",
+  podcast: "Podcasts",
+};
+const otherGroups = formatOrder
+  .map((fmt) => ({
+    fmt,
+    heading: formatHeadings[fmt] ?? fmt,
+    items: nonConv
+      .filter((e) => e.data.format === fmt)
+      .sort((a, b) => a.data.title.localeCompare(b.data.title)),
+  }))
+  .filter((g) => g.items.length > 0);
 ---
 
 <Base title="Events · Learning Engineering" active="events">
   <SectionHero
     eyebrow="Events"
-    title="Conferences, workshops &amp; talks"
-    question="Where does the field convene — and what talks, podcasts, and keynotes come out of those convenings?"
+    title="Conferences, workshops &amp; conversations"
+    question="Where the field convenes — and the talks, podcasts, and keynotes that come out of those convenings."
     count={entries.length}
   />
-  <SectionGrid
-    collection="events"
-    formatOrder={[
-      "conference", "series", "workshop", "convening",
-      "conference-talk", "keynote", "webinar", "video", "podcast",
-    ]}
-    groupHeadings={{
-      conference: "Conferences",
-      series: "Recurring series",
-      workshop: "Workshops",
-      convening: "Convenings",
-      "conference-talk": "Conference talks",
-      keynote: "Keynotes",
-      webinar: "Webinars",
-      video: "Video",
-      podcast: "Podcasts",
-    }}
-  />
+
+  <div class="section-grid container">
+    {conversations.length > 0 && (
+      <section class="format-group conversations-group">
+        <div class="group-heading-row">
+          <h2 class="group-heading">
+            Conversations with experts <span class="count muted">({conversations.length})</span>
+          </h2>
+          <p class="group-note">
+            A curated shelf — keynotes, panels, and podcasts where an expert takes
+            the time to work through what learning engineering actually is, why,
+            and how. Each one has a summary and an inline video/audio player.
+          </p>
+        </div>
+        <div class="grid">
+          {conversations.map((entry) => {
+            const Body = bodyMap.get(entry.id);
+            return (
+              <Card
+                title={entry.data.title}
+                format={entry.data.format}
+                url={entry.data.url}
+                venue={entry.data.venue}
+                authors={entry.data.authors}
+                year={entry.data.year}
+                cluster={entry.data.cluster}
+                topics={entry.data.topics}
+                tags={entry.data.tags}
+                missingProvenance={entry.data.missingProvenance}
+                summary={entry.data.summary}
+                embed={entry.data.embed}
+              >
+                {Body && <Body />}
+              </Card>
+            );
+          })}
+        </div>
+      </section>
+    )}
+
+    {otherGroups.map((group) => (
+      <section class="format-group">
+        <h2 class="group-heading">
+          {group.heading} <span class="count muted">({group.items.length})</span>
+        </h2>
+        <div class="grid">
+          {group.items.map((entry) => {
+            const Body = bodyMap.get(entry.id);
+            return (
+              <Card
+                title={entry.data.title}
+                format={entry.data.format}
+                url={entry.data.url}
+                venue={entry.data.venue}
+                authors={entry.data.authors}
+                year={entry.data.year}
+                cluster={entry.data.cluster}
+                topics={entry.data.topics}
+                tags={entry.data.tags}
+                missingProvenance={entry.data.missingProvenance}
+                summary={entry.data.summary}
+                embed={entry.data.embed}
+              >
+                {Body && <Body />}
+              </Card>
+            );
+          })}
+        </div>
+      </section>
+    ))}
+  </div>
 </Base>
+
+<style>
+  .section-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 2.5rem;
+  }
+  .format-group { display: flex; flex-direction: column; gap: 1rem; }
+
+  .conversations-group {
+    background: linear-gradient(0deg, var(--tint) 0%, transparent 100%);
+    padding: 1.5rem;
+    margin: -.5rem -1.5rem 0;
+    border-radius: 6px;
+    border: 1px solid var(--border);
+  }
+  .group-heading-row {
+    display: flex;
+    flex-direction: column;
+    gap: .2rem;
+    margin-bottom: .5rem;
+  }
+
+  .group-heading {
+    font-family: var(--serif);
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin: 0;
+    padding-bottom: .5rem;
+    border-bottom: 1px solid var(--border);
+    text-transform: capitalize;
+  }
+  .group-note {
+    font-family: var(--sans);
+    font-size: .88rem;
+    color: var(--muted);
+    margin: 0 0 .3rem 0;
+    max-width: var(--measure);
+    line-height: 1.5;
+  }
+  .count { font-size: .9rem; font-weight: 400; }
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(20rem, 1fr));
+    gap: 1rem;
+  }
+</style>

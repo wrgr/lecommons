@@ -23,10 +23,16 @@ const bodyMap = new Map(rendered);
   <header class="hero">
     <div class="container">
       <div class="eyebrow">Field Notes</div>
-      <h1>Short practitioner pieces.</h1>
+      <h1>Published ideas worth thinking about.</h1>
       <p class="subhead">
-        Tips, templates, and hard-earned lessons from the work itself. Each note
-        is something you could apply this week — no jargon required, no fluff.
+        Each note highlights a single principle, claim, or argument from the
+        learning-engineering literature — with direct quotes, a pointer to the
+        original, and a question for you to sit with.
+      </p>
+      <p class="grounding">
+        <strong>Grounding.</strong> Every note cites a named source we've read. No
+        practitioner-opinion filler, no fabricated examples. If a note can't
+        point to a published piece, it doesn't belong here.
       </p>
     </div>
   </header>
@@ -63,6 +69,18 @@ const bodyMap = new Map(rendered);
     color: var(--ink-soft);
     max-width: 36rem;
   }
+  .grounding {
+    font-family: var(--sans);
+    font-size: .85rem;
+    color: var(--muted);
+    max-width: 36rem;
+    line-height: 1.55;
+    padding: .8rem 1rem;
+    border-left: 2px solid var(--accent-2);
+    background: var(--bg);
+    margin-top: 1rem;
+  }
+  .grounding strong { color: var(--accent-2); font-weight: 600; }
 
   .notes-list { display: flex; flex-direction: column; gap: 0; }
 
