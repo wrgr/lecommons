@@ -45,6 +45,12 @@ When ready to fold into the main site:
 4. `landscape/data/organizations.json` → `archive/corpus/non_paper_resources.jsonl` + `icicle_resources_registry.json`
 5. `landscape/synthesis/field_overview.md` → `site/src/content/` collection (TBD category)
 
+## Status (April 2026)
+
+Data files populated and committed. Pipeline inputs (expansion seeds, venue queries, registry entries) are all wired into `archive/`. The corpus expansion pipeline has **not yet been run** — that is the next step.
+
+See `archive/REBUILD_STATUS.md` → **PICK UP HERE** section for the exact commands.
+
 ## Primary Source
 
 Content drawn from: "Comprehensive Landscape of Learning Engineering: An Analysis of Foundational Papers, Contemporary Research, and Grey Literature" (internal document, April 2026), supplemented by web research.

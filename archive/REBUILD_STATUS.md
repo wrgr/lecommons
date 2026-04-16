@@ -1,8 +1,9 @@
 # Knowledge Graph Rebuild — Status
 
-**Branch:** `claude/review-mskb-patterns-OmGDe`  
+**Branch:** `claude/learning-engineering-research-qIfDa` (current work — see bottom)  
+**Baseline branch:** `claude/review-mskb-patterns-OmGDe` (three-layer architecture)  
 **Approach:** Apply the [MSKB three-layer methodology](https://github.com/wrgr/mskb) to the LE knowledge graph.  
-**Last updated:** 2026-04-10
+**Last updated:** 2026-04-16
 
 ---
 
@@ -96,7 +97,7 @@ These items are out of scope for the current branch but worth tracking:
 
 ```bash
 cd learning-engineering-resources
-git checkout claude/review-mskb-patterns-OmGDe
+git checkout claude/learning-engineering-research-qIfDa
 
 # Run the full build
 python3 scripts/build_dataset.py
@@ -107,3 +108,68 @@ python3 scripts/build_dataset.py
 #   diversity_audit.json     — per-topic content-type balance warnings
 #   build_summary.json       — includes concept_nodes count
 ```
+
+---
+
+## Landscape Module & Pipeline Extensions (April 2026)
+
+Branch: `claude/learning-engineering-research-qIfDa` | Commit: `e07e5b4`
+
+### What Was Added
+
+| Area | Files Changed | What |
+|------|--------------|------|
+| Landscape module | `landscape/data/*.json`, `landscape/synthesis/field_overview.md` | Comprehensive field review: 15 papers, 15 people, 11 grey lit, 26 orgs/standards, narrative synthesis |
+| Expansion seeds | `corpus/expansion_seed_queries.jsonl` | 7 new foundational seeds (LS-SEED-001–007): Brown 1992, Baker & Yacef 2009, Sweller 1988, SOAR 1987, BKT 1994, Cognitive Tutors 1995, Koedinger & Anderson 1990 |
+| Venue queries | `corpus/merged_lane/icicle_adjacent_conference_queries.json` | 6 new queries: ISLS, JoLE (trust=true), JLS, LE keyword sweep, CMU ITS lineage, DBR interventions |
+| Registry | `corpus/tables/programs_people_registry.json` | 27 new entries LE-PP-090–116: founding figures, grey lit, journals, orgs (87 total) |
+| ICICLE registry | `corpus/tables/icicle_resources_registry.json` | 6 IEEE standards LE-IC-041–046: LTSA, xAPI, AIS P2247, Competencies, LOM, OCX (46 total) |
+| Concept bindings | `corpus/tables/concept_ontology.json` | C04, C06, C13, C14, C20, C22, C24, C31, C32, C34, C35 updated; C34 no longer empty |
+| Gaps | `data/gaps.json` | g_008 + g_009 partially addressed; g_011 (T01/T04 zero-AP), g_012 (JoLE isolation) added |
+
+### Previously Tracked Gaps Now Resolved
+
+| Gap | Was | Now |
+|-----|-----|-----|
+| C34 `primary_resources: []` | Empty | Bound to LE-PP-103 (US DoE AI 2023) |
+| T14 under-resourced | 1 AP, no GL | LE-PP-103 added; C24 also bound |
+| IEEE standards not in ICICLE registry | Missing | LE-IC-041–046 added |
+
+---
+
+## ⬇ PICK UP HERE
+
+**The pipeline inputs are fully prepared. The next step is to run it.**
+
+### Step 1 — Run OpenAlex expansion (seeds → one-hop papers)
+
+```bash
+cd learning-engineering-resources
+python3 archive/scripts/run_openalex_expansion.py
+```
+
+This uses `archive/corpus/expansion_seed_queries.jsonl` (now includes LS-SEED-001–007).
+Output: candidate papers written to `archive/corpus/academic_papers.jsonl`.
+
+Watch for: T01 (CLT/SOAR) and T04 (EDM) papers surfacing from the new seeds — these topics had zero APs.
+
+### Step 2 — Run venue/conference lane (LE-specific venues)
+
+```bash
+python3 archive/scripts/merged_lane_proposal.py
+```
+
+Uses `archive/corpus/merged_lane/icicle_adjacent_conference_queries.json` (now includes JoLE, ISLS, LE keyword sweep).
+This is the primary mechanism for surfacing JoLE papers and ICICLE conference proceedings, which are weakly connected in citation graphs.
+
+### Step 3 — Rebuild the graph and audit
+
+```bash
+python3 archive/scripts/build_dataset.py
+```
+
+Check `data/diversity_audit.json` — look for T01 and T04 to have AP entries after the expansion run.
+
+### Step 4 — Fold landscape/ into main corpus (when ready)
+
+See `landscape/README.md` for the merge path. The landscape IDs (`LE-LS-*`) are designed to be stripped on merge.
