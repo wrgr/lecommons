@@ -1,0 +1,348 @@
+[
+  {
+    "resource_id": "LE-LS-PP-001",
+    "content_type": "PP",
+    "name": "Herbert A. Simon",
+    "affiliation": "Carnegie Mellon University",
+    "years": "1916–2001",
+    "era": "founding",
+    "role": "Originator of the 'learning engineer' concept; Nobel laureate",
+    "key_contributions": [
+      "Coined the term 'learning engineer' in the 1967 Educational Record essay 'The Job of a College President'",
+      "Argued that teaching is a domain of expertise separate from subject-matter knowledge, requiring its own scientific grounding",
+      "Championed evidence-based instruction over discovery learning when discovery imposes excessive cognitive cost",
+      "Co-developed ACT cognitive theory with John Anderson, providing the scientific basis for cognitive tutors",
+      "His broader work on bounded rationality, problem solving, and cognitive simulation laid the intellectual foundation for ITS"
+    ],
+    "key_works": [
+      "The Job of a College President (Educational Record, 1967)",
+      "Human Problem Solving (with Newell, 1972)",
+      "The Sciences of the Artificial (1969)"
+    ],
+    "primary_topic": "T00",
+    "secondary_topics": ["T01", "T06"],
+    "url": "https://www.cmu.edu/simon/"
+  },
+  {
+    "resource_id": "LE-LS-PP-002",
+    "content_type": "PP",
+    "name": "John R. Anderson",
+    "affiliation": "Carnegie Mellon University, HCII",
+    "years": "1947–present",
+    "era": "founding",
+    "role": "Cognitive architect; creator of ACT-R; pioneer of Cognitive Tutors",
+    "key_contributions": [
+      "Developed ACT-R (Adaptive Control of Thought–Rational), the dominant cognitive architecture for modeling skill learning",
+      "Created the LISP Tutor (1983), the first empirically validated intelligent tutoring system",
+      "Co-developed Cognitive Tutor for algebra, deployed in 2,600+ schools to half a million students",
+      "Established the production-rule encoding methodology that allows cognitive models to drive adaptive tutoring",
+      "Demonstrated that ITS-based tutoring produces learning gains equivalent to 1-to-1 human tutoring (the '2-sigma effect')"
+    ],
+    "key_works": [
+      "Rules of the Mind (1993)",
+      "Cognitive Tutors: Lessons Learned (Journal of the Learning Sciences, 1995)",
+      "Abstract planning and perceptual chunks (with Koedinger, Cognitive Science, 1990)"
+    ],
+    "primary_topic": "T06",
+    "secondary_topics": ["T01", "T00"],
+    "url": "https://www.cmu.edu/dietrich/psychology/people/core-training-faculty/anderson-john.html"
+  },
+  {
+    "resource_id": "LE-LS-PP-003",
+    "content_type": "PP",
+    "name": "Allen Newell",
+    "affiliation": "Carnegie Mellon University",
+    "years": "1927–1992",
+    "era": "founding",
+    "role": "Co-creator of SOAR cognitive architecture; pioneer of AI and cognitive science",
+    "key_contributions": [
+      "Co-developed SOAR, a unified theory of cognition modeling problem solving and learning via chunking",
+      "With Herbert Simon, created Logic Theorist (1956) and General Problem Solver (1957), the first AI programs",
+      "Established the 'physical symbol system hypothesis' — the theoretical bridge between computation and cognition",
+      "SOAR's chunking mechanism provided an explicit computational theory of procedural skill acquisition"
+    ],
+    "key_works": [
+      "Human Problem Solving (with Simon, 1972)",
+      "SOAR: An Architecture for General Intelligence (with Laird & Rosenbloom, AI 1987)",
+      "Unified Theories of Cognition (1990)"
+    ],
+    "primary_topic": "T01",
+    "secondary_topics": ["T06"],
+    "url": "https://en.wikipedia.org/wiki/Allen_Newell"
+  },
+  {
+    "resource_id": "LE-LS-PP-004",
+    "content_type": "PP",
+    "name": "John Sweller",
+    "affiliation": "University of New South Wales",
+    "years": "1946–present",
+    "era": "founding",
+    "role": "Developer of Cognitive Load Theory",
+    "key_contributions": [
+      "Formalized Cognitive Load Theory (CLT) distinguishing intrinsic, extraneous, and germane load",
+      "Established that working memory constraints must drive instructional design decisions",
+      "CLT-derived principles (worked examples effect, split-attention effect, redundancy effect) are now standard LE design rules",
+      "Provided the scientific justification for explicit, structured instruction over unguided discovery"
+    ],
+    "key_works": [
+      "Cognitive load during problem solving: Effects on learning (Cognitive Science, 1988)",
+      "Cognitive Load Theory, Learning Difficulty, and Instructional Design (Learning and Instruction, 1994)",
+      "Cognitive Load Theory (with Ayres & Kalyuga, Springer 2011)"
+    ],
+    "primary_topic": "T01",
+    "secondary_topics": ["T12", "T03"],
+    "url": "https://www.unsw.edu.au/staff/john-sweller"
+  },
+  {
+    "resource_id": "LE-LS-PP-005",
+    "content_type": "PP",
+    "name": "Kenneth R. Koedinger",
+    "affiliation": "Carnegie Mellon University, HCII",
+    "years": "active 1988–present",
+    "era": "expansion",
+    "role": "Co-originator of learning engineering as a named field; Cognitive Tutor pioneer; DataShop founder",
+    "key_contributions": [
+      "Led development of Cognitive Tutors deployed in thousands of schools; co-founded Carnegie Learning Inc.",
+      "Founded Pittsburgh Science of Learning Center (PSLC) and DataShop — world's largest open repository of educational log data",
+      "Developed 'Assistment' methodology linking formative assessment to intelligent hints",
+      "Coined the term 'learning engineering' in its modern formulation as an applied, data-driven discipline",
+      "Directed LearnLab, CMU's in-vivo experimentation platform for LE research"
+    ],
+    "key_works": [
+      "Abstract planning and perceptual chunks (with Anderson, Cognitive Science, 1990)",
+      "Intelligent tutoring goes to school in the big city (IJAIED, 1997)",
+      "Learning Engineering for Online Education (contributor, 2019)"
+    ],
+    "primary_topic": "T00",
+    "secondary_topics": ["T06", "T01", "T04"],
+    "url": "https://pact.cs.cmu.edu/koedinger.html"
+  },
+  {
+    "resource_id": "LE-LS-PP-006",
+    "content_type": "PP",
+    "name": "Ann L. Brown",
+    "affiliation": "University of California, Berkeley",
+    "years": "1943–1999",
+    "era": "expansion",
+    "role": "Pioneer of design-based research and collaborative learning",
+    "key_contributions": [
+      "Established design-based research (DBR) as the canonical methodology for testing learning interventions in authentic contexts",
+      "'Design Experiments' (JLS, 1992) is the most-cited paper in the field of learning sciences (2,800+ citations)",
+      "Co-created 'Fostering Communities of Learners' — an influential model for scaffolded, inquiry-based learning environments",
+      "Demonstrated how engineered classroom environments could simultaneously serve as research sites"
+    ],
+    "key_works": [
+      "Design Experiments: Theoretical and Methodological Challenges in Creating Complex Interventions in Classroom Settings (JLS, 1992)",
+      "Guided Discovery in a Community of Learners (1994)"
+    ],
+    "primary_topic": "T17",
+    "secondary_topics": ["T03", "T01"],
+    "url": "https://en.wikipedia.org/wiki/Ann_Brown_(psychologist)"
+  },
+  {
+    "resource_id": "LE-LS-PP-007",
+    "content_type": "PP",
+    "name": "Marlene Scardamalia",
+    "affiliation": "University of Toronto, OISE",
+    "years": "active 1970s–present",
+    "era": "expansion",
+    "role": "Pioneer of knowledge-building communities and CSCL",
+    "key_contributions": [
+      "Co-developed Knowledge Forum (formerly CSILE), the first networked collaborative knowledge-building environment",
+      "With Bereiter, theorized the distinction between 'knowledge telling' and 'knowledge transforming' in writing and learning",
+      "Established socio-cognitive frameworks for collaborative platforms that emphasize collective knowledge construction",
+      "Knowledge-building pedagogy influenced the design of modern collaborative learning systems and MOOCs"
+    ],
+    "key_works": [
+      "Computer Support for Knowledge-Building Communities (with Bereiter, JLS, 1994)",
+      "Knowledge Building: Theory, Pedagogy, and Technology (2006)"
+    ],
+    "primary_topic": "T06",
+    "secondary_topics": ["T01", "T17"],
+    "url": "https://ikit.org/marlene-scardamalia/"
+  },
+  {
+    "resource_id": "LE-LS-PP-008",
+    "content_type": "PP",
+    "name": "Ryan S. J. d. Baker",
+    "affiliation": "University of Pennsylvania, Graduate School of Education",
+    "years": "active 2000s–present",
+    "era": "contemporary",
+    "role": "EDM pioneer; director of Penn Center for Learning Analytics; high-leverage LE policy voice",
+    "key_contributions": [
+      "Codified Educational Data Mining as a formal discipline with Baker & Yacef 2009 (1,500+ citations)",
+      "Developed methods for detecting gaming-the-system, off-task behavior, and boredom in ITS telemetry",
+      "Directed production of 'High-Leverage Opportunities for Learning Engineering' (2021), the field's most cited contemporary policy document",
+      "Directs the Penn Center for Learning Analytics, a major hub for LE research at scale",
+      "Editor of the Journal of Educational Data Mining"
+    ],
+    "key_works": [
+      "The State of Educational Data Mining in 2009 (with Yacef, JEDM, 2009)",
+      "High-Leverage Opportunities for Learning Engineering (with Boser & Shelley, 2021)",
+      "Stupid Tutoring Systems, Intelligent Humans (IJAIED, 2016)"
+    ],
+    "primary_topic": "T04",
+    "secondary_topics": ["T06", "T07", "T17"],
+    "url": "https://www.upenn.edu/faculty/ryan-baker"
+  },
+  {
+    "resource_id": "LE-LS-PP-009",
+    "content_type": "PP",
+    "name": "Bror Saxberg",
+    "affiliation": "Formerly Chan Zuckerberg Initiative / Kaplan; founder of LearningForge",
+    "years": "active 2000s–present",
+    "era": "contemporary",
+    "role": "Learning science practitioner; LE thought leader; industry-academic bridge",
+    "key_contributions": [
+      "Led learning science at Chan Zuckerberg Initiative, framing LE as 'precision education' analogous to precision medicine",
+      "As Chief Learning Officer at Kaplan, pioneered application of cognitive science to large-scale commercial education",
+      "ICICLE advisory board member; co-editor of Learning Engineering for Online Education (Routledge, 2019)",
+      "Defined the practitioner learning engineer as someone who applies learning science at 'massive, affordable scale'",
+      "Trained at MIT (BSc), Oxford (DPhil), and Harvard Medical School; bridges science and practice unusually well"
+    ],
+    "key_works": [
+      "Learning Engineering for Online Education (co-editor, Routledge, 2019)",
+      "Why Do So Many Students Hate School? (Atlantic, 2014)",
+      "A Transformation to Learning Engineering (Simon Initiative, 2016)"
+    ],
+    "primary_topic": "T00",
+    "secondary_topics": ["T03", "T07"],
+    "url": "https://learningforge.com"
+  },
+  {
+    "resource_id": "LE-LS-PP-010",
+    "content_type": "PP",
+    "name": "Chris Dede",
+    "affiliation": "Harvard Graduate School of Education",
+    "years": "active 1980s–present",
+    "era": "contemporary",
+    "role": "Pioneer of immersive learning environments; hybrid education researcher",
+    "key_contributions": [
+      "Established engineering parameters for immersive virtual environments (VR/AR) in STEM education",
+      "'Immersive interfaces for engagement and learning' (Science, 2009) has thousands of citations",
+      "Co-edited Learning Engineering for Online Education (Routledge, 2019) — the field's first major book",
+      "Post-pandemic work framed hybrid learning not as emergency measure but as optimal future state",
+      "Directed multiple NSF and DoE grants applying LE principles to K-12 and higher education"
+    ],
+    "key_works": [
+      "Immersive interfaces for engagement and learning (Science, 2009)",
+      "Learning Engineering for Online Education (co-editor, Routledge, 2019)",
+      "Scaling Up Success: Lessons from Technology-Based Educational Improvement (2006)"
+    ],
+    "primary_topic": "T08",
+    "secondary_topics": ["T00", "T07"],
+    "url": "https://www.gse.harvard.edu/directory/faculty/chris-dede"
+  },
+  {
+    "resource_id": "LE-LS-PP-011",
+    "content_type": "PP",
+    "name": "Neil Heffernan",
+    "affiliation": "Worcester Polytechnic Institute",
+    "years": "active 2000s–present",
+    "era": "contemporary",
+    "role": "Creator of ASSISTments; large-scale LE experimentation pioneer",
+    "key_contributions": [
+      "Created ASSISTments, a free ITS serving 500,000+ students and 20,000+ teachers",
+      "Built E-TRIALS within ASSISTments — a platform for running randomized controlled experiments at scale in real classrooms",
+      "Pioneered the 'crowdsourcing' of instructional design through teacher-authored hint sequences in ASSISTments",
+      "Demonstrated that formative assessment integrated with intelligent hints improves learning outcomes significantly",
+      "Research spans educational data mining, learning analytics, and optimization of student learning pathways"
+    ],
+    "key_works": [
+      "ASSISTments: Helping Mentor Students While Providing Teachers Feedback (ITS, 2004)",
+      "The Doer Effect: Replicating Findings that Doing Causes Learning (EDM, 2018)"
+    ],
+    "primary_topic": "T06",
+    "secondary_topics": ["T04", "T17"],
+    "url": "https://www.wpi.edu/people/faculty/nth"
+  },
+  {
+    "resource_id": "LE-LS-PP-012",
+    "content_type": "PP",
+    "name": "Jim Goodell",
+    "affiliation": "Quality Information Partners (QIP); IEEE ICICLE",
+    "years": "active 2010s–present",
+    "era": "contemporary",
+    "role": "LE standards architect; Learning Engineering Toolkit co-editor; ICICLE community builder",
+    "key_contributions": [
+      "Co-edited the Learning Engineering Toolkit (Taylor & Francis, 2023), the field's primary practitioner handbook",
+      "Co-chaired IEEE ICICLE, building the professional infrastructure for learning engineering",
+      "Developed the Learning Engineering Adoption Maturity Model with ICICLE colleagues",
+      "Framed LE as a verb (a process) rather than a noun (a role or technology)",
+      "Drove development of xAPI standards and competency frameworks for interoperable LE systems"
+    ],
+    "key_works": [
+      "Learning Engineering Toolkit (co-editor, Taylor & Francis, 2023)",
+      "Generalizable Learning Engineering Adoption Maturity Model (with Blake-Plock et al., 2024/2025)"
+    ],
+    "primary_topic": "T16",
+    "secondary_topics": ["T03", "T11"],
+    "url": "https://qip.com"
+  },
+  {
+    "resource_id": "LE-LS-PP-013",
+    "content_type": "PP",
+    "name": "Karen Willcox",
+    "affiliation": "University of Texas at Austin, Oden Institute",
+    "years": "active 2000s–present",
+    "era": "contemporary",
+    "role": "MIT OEPI lead; LE in higher education advocate",
+    "key_contributions": [
+      "Led MIT's Online Education Policy Initiative (OEPI), producing the 2016 catalyst report that re-introduced 'learning engineer' to higher education discourse",
+      "Argued that MOOCs and digital scale require a new professional class with learning science + engineering expertise",
+      "Connected learning engineering to computational science methodologies from aerospace engineering",
+      "Helped establish MIT's residential + online hybrid model as a learning engineering showcase"
+    ],
+    "key_works": [
+      "Online Education: A Catalyst for Higher Education Reforms (with Sarma & Lippel, MIT OEPI, 2016)"
+    ],
+    "primary_topic": "T00",
+    "secondary_topics": ["T11", "T03"],
+    "url": "https://willcox.oden.utexas.edu"
+  },
+  {
+    "resource_id": "LE-LS-PP-014",
+    "content_type": "PP",
+    "name": "Scotty D. Craig",
+    "affiliation": "Arizona State University",
+    "years": "active 2000s–present",
+    "era": "contemporary",
+    "role": "Human factors researcher; virtual humans and pedagogical agents specialist",
+    "key_contributions": [
+      "Systematically investigated design principles for virtual humans and pedagogical agents in learning environments",
+      "Demonstrated that vocal quality, aesthetic design, and agent persona significantly affect learner cognitive load and outcomes",
+      "Co-authored the Learning Engineering Adoption Maturity Model",
+      "Bridges human factors engineering with instructional technology research"
+    ],
+    "key_works": [
+      "Design principles for virtual humans in educational technology environments (with Schroeder, 2018)",
+      "The voice quality of pedagogical agent impacts learning and agent perceptions (with Siegle, JCAL, 2024)",
+      "Generalizable Learning Engineering Adoption Maturity Model (with Blake-Plock et al., 2024/2025)"
+    ],
+    "primary_topic": "T08",
+    "secondary_topics": ["T02", "T06"],
+    "url": "https://scottycraig.com"
+  },
+  {
+    "resource_id": "LE-LS-PP-015",
+    "content_type": "PP",
+    "name": "Albert T. Corbett",
+    "affiliation": "Carnegie Mellon University, HCII",
+    "years": "active 1980s–present",
+    "era": "expansion",
+    "role": "Co-developer of Bayesian Knowledge Tracing; ITS architecture pioneer",
+    "key_contributions": [
+      "Co-developed Bayesian Knowledge Tracing (BKT), the dominant probabilistic student model in ITS",
+      "Co-designed the ACT Programming Tutor and Algebra Cognitive Tutor with Anderson and Koedinger",
+      "Systematic empirical work on learning curves, error analysis, and mastery criteria in cognitive tutors",
+      "Established methods for validating ITS student models against controlled study outcomes"
+    ],
+    "key_works": [
+      "Intelligent tutoring systems (with Koedinger & Anderson, HCI Handbook, 1997)",
+      "Knowledge Tracing: Modeling the Acquisition of Procedural Knowledge (User Modeling and User-Adapted Interaction, 1994)"
+    ],
+    "primary_topic": "T06",
+    "secondary_topics": ["T04", "T01"],
+    "url": "https://www.hcii.cmu.edu/people/albert-corbett"
+  }
+]

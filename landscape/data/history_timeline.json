@@ -1,0 +1,222 @@
+[
+  {
+    "id": "LE-LS-HT-001",
+    "year": 1912,
+    "era": "pre-field",
+    "event": "Munroe proposes applying engineering principles to educational efficiency",
+    "significance": "One of the earliest documented calls for treating the design of educational systems as an engineering discipline, predating the formal field by half a century.",
+    "actors": ["Munroe"],
+    "references": [],
+    "topics": ["T00"]
+  },
+  {
+    "id": "LE-LS-HT-002",
+    "year": 1945,
+    "era": "pre-field",
+    "event": "W.W. Charters asks 'Is There a Field of Educational Engineering?' at Ohio State University",
+    "significance": "First substantive academic debate over whether curriculum design and instruction could constitute a formal engineering discipline. Established the core question the field would spend decades answering.",
+    "actors": ["W.W. Charters"],
+    "references": [],
+    "topics": ["T00"]
+  },
+  {
+    "id": "LE-LS-HT-003",
+    "year": 1956,
+    "era": "pre-field",
+    "event": "Bloom's Taxonomy of Educational Objectives published",
+    "significance": "Provided the first widely adopted framework for classifying learning objectives hierarchically. Became the dominant vocabulary for instructional design and later for competency frameworks used in learning engineering systems.",
+    "actors": ["Benjamin Bloom"],
+    "references": ["Bloom, B. S. (1956). Taxonomy of Educational Objectives."],
+    "topics": ["T12", "T05"]
+  },
+  {
+    "id": "LE-LS-HT-004",
+    "year": 1967,
+    "era": "founding",
+    "event": "Herbert Simon coins the term 'learning engineer' in 'The Job of a College President'",
+    "significance": "The founding document of the field. Simon argued that content expertise does not equal expertise in facilitating learning, and proposed dedicated professionals — learning engineers — to design evidence-based learning experiences. Published in Educational Record, 48(1), 68–78.",
+    "actors": ["Herbert A. Simon"],
+    "references": ["Simon, H. A. (1967). The Job of a College President. Educational Record, 48(1), 68–78."],
+    "topics": ["T00", "T03"]
+  },
+  {
+    "id": "LE-LS-HT-005",
+    "year": 1982,
+    "era": "founding",
+    "event": "SOAR cognitive architecture becomes operational (Newell, Laird, Rosenbloom at CMU)",
+    "significance": "SOAR modeled human problem-solving and learning through 'chunking' — a key mechanism for understanding how procedural knowledge is acquired. Foundational for cognitive modeling in intelligent tutoring systems.",
+    "actors": ["Allen Newell", "John Laird", "Paul Rosenbloom"],
+    "references": ["Laird, J. E., Newell, A., & Rosenbloom, P. S. (1987). Soar: An architecture for general intelligence. Artificial Intelligence, 33(1), 1–64."],
+    "topics": ["T01", "T06"]
+  },
+  {
+    "id": "LE-LS-HT-006",
+    "year": 1983,
+    "era": "founding",
+    "event": "LISP Tutor deployed at Carnegie Mellon — first empirically validated intelligent tutoring system",
+    "significance": "Demonstrated that a computer tutor based on cognitive models (ACT theory) could produce measurable learning gains. Proof of concept for the entire ITS paradigm and direct antecedent of Cognitive Tutor.",
+    "actors": ["John R. Anderson", "Albert T. Corbett"],
+    "references": ["Anderson, J. R., Boyle, C. F., & Reiser, B. J. (1985). Intelligent tutoring systems. Science, 228(4698), 456–462."],
+    "topics": ["T06", "T01"]
+  },
+  {
+    "id": "LE-LS-HT-007",
+    "year": 1985,
+    "era": "founding",
+    "event": "ACT-R (Adaptive Control of Thought—Rational) theory formalized by John Anderson",
+    "significance": "ACT-R provided a unified cognitive architecture distinguishing declarative from procedural memory and specifying how practice drives skill acquisition. Became the theoretical backbone for Cognitive Tutors and much of the ITS field.",
+    "actors": ["John R. Anderson"],
+    "references": ["Anderson, J. R. (1993). Rules of the Mind. Lawrence Erlbaum Associates."],
+    "topics": ["T01", "T06"]
+  },
+  {
+    "id": "LE-LS-HT-008",
+    "year": 1988,
+    "era": "founding",
+    "event": "First International Conference on Intelligent Tutoring Systems held in Montreal",
+    "significance": "Established the formal academic community for ITS research. The ITS conference series (biennial) remains the premier venue for computational learning engineering research to this day.",
+    "actors": [],
+    "references": [],
+    "topics": ["T06", "T00"]
+  },
+  {
+    "id": "LE-LS-HT-009",
+    "year": 1988,
+    "era": "founding",
+    "event": "John Sweller publishes foundational paper on Cognitive Load Theory",
+    "significance": "Cognitive Load Theory formalized the constraints working memory imposes on learning and provided empirically grounded design rules for instructional materials. One of the most-cited theoretical frameworks in instructional design and learning engineering.",
+    "actors": ["John Sweller"],
+    "references": ["Sweller, J. (1988). Cognitive load during problem solving: Effects on learning. Cognitive Science, 12(2), 257–285."],
+    "topics": ["T01", "T12"]
+  },
+  {
+    "id": "LE-LS-HT-010",
+    "year": 1990,
+    "era": "founding",
+    "event": "Koedinger & Anderson map cognitive expertise into computational production rules (Cognitive Science)",
+    "significance": "Bridged cognitive psychology and AI by showing how expert geometry knowledge could be encoded as production rules usable in an ITS. Established the methodology for building the first generation of Cognitive Tutors.",
+    "actors": ["Kenneth R. Koedinger", "John R. Anderson"],
+    "references": ["Koedinger, K. R., & Anderson, J. R. (1990). Abstract planning and perceptual chunks: Elements of expertise in geometry. Cognitive Science, 14(4), 511–550."],
+    "topics": ["T06", "T01"]
+  },
+  {
+    "id": "LE-LS-HT-011",
+    "year": 1992,
+    "era": "expansion",
+    "event": "Ann Brown publishes 'Design Experiments' in Journal of the Learning Sciences",
+    "significance": "Established design-based research as the methodological framework for testing engineered learning interventions in authentic classroom settings. Over 2,800 citations; most influential paper in JLS history. Became the basis for how learning engineers validate systems in the wild.",
+    "actors": ["Ann L. Brown"],
+    "references": ["Brown, A. L. (1992). Design Experiments: Theoretical and Methodological Challenges in Creating Complex Interventions in Classroom Settings. Journal of the Learning Sciences, 2(2), 141–178."],
+    "topics": ["T17", "T03"]
+  },
+  {
+    "id": "LE-LS-HT-012",
+    "year": 1994,
+    "era": "expansion",
+    "event": "Scardamalia & Bereiter publish 'Computer Support for Knowledge-Building Communities' in JLS",
+    "significance": "Engineered the socio-cognitive framework for collaborative digital learning platforms. With over 1,800 citations, this paper shaped how online and CSCL systems are designed to support collective knowledge construction rather than individual acquisition.",
+    "actors": ["Marlene Scardamalia", "Carl Bereiter"],
+    "references": ["Scardamalia, M., & Bereiter, C. (1994). Computer Support for Knowledge-Building Communities. Journal of the Learning Sciences, 3(3), 265–283."],
+    "topics": ["T06", "T01"]
+  },
+  {
+    "id": "LE-LS-HT-013",
+    "year": 1997,
+    "era": "expansion",
+    "event": "Corbett, Koedinger & Anderson publish Bayesian Knowledge Tracing architecture in HCI Handbook",
+    "significance": "Operationalized real-time student modeling: BKT uses a hidden Markov model to track the probability that a student has learned each knowledge component. Became the dominant algorithm in ITS student models and is still widely used.",
+    "actors": ["Albert T. Corbett", "Kenneth R. Koedinger", "John R. Anderson"],
+    "references": ["Corbett, A. T., Koedinger, K. R., & Anderson, J. R. (1997). Intelligent tutoring systems. In Handbook of Human-Computer Interaction (pp. 849–874). Elsevier."],
+    "topics": ["T06", "T04"]
+  },
+  {
+    "id": "LE-LS-HT-014",
+    "year": 2001,
+    "era": "expansion",
+    "event": "Herbert Simon dies; CMU institutionalizes his legacy through the Simon Initiative",
+    "significance": "Simon's death prompted CMU to formally organize the Simon Initiative, creating an ecosystem around learning engineering that includes LearnLab, OLI, DataShop, and the METALS master's program.",
+    "actors": ["Herbert A. Simon"],
+    "references": [],
+    "topics": ["T00"]
+  },
+  {
+    "id": "LE-LS-HT-015",
+    "year": 2009,
+    "era": "expansion",
+    "event": "Baker & Yacef codify Educational Data Mining as a discipline (JEDM)",
+    "significance": "Distinguished EDM from learning analytics and positioned it as a distinct scientific field with its own methods, journals, and conferences. Over 1,500 citations. Catalyzed the formation of the International Educational Data Mining Society and the JEDM journal.",
+    "actors": ["Ryan S. J. d. Baker", "Kalina Yacef"],
+    "references": ["Baker, R. S. J. d., & Yacef, K. (2009). The State of Educational Data Mining in 2009: A Review and Future Visions. Journal of Educational Data Mining, 1(1), 3–17."],
+    "topics": ["T04", "T17"]
+  },
+  {
+    "id": "LE-LS-HT-016",
+    "year": 2011,
+    "era": "expansion",
+    "event": "First Learning Analytics and Knowledge (LAK) conference; Society for Learning Analytics Research (SoLAR) founded",
+    "significance": "Formalized learning analytics as a distinct discipline alongside EDM. LAK emphasizes practice-oriented analytics and ethical deployment; SoLAR anchors the community. LA and EDM now constitute two of the three major computational LE conference series.",
+    "actors": [],
+    "references": [],
+    "topics": ["T04", "T16"]
+  },
+  {
+    "id": "LE-LS-HT-017",
+    "year": 2016,
+    "era": "contemporary",
+    "event": "MIT OEPI publishes 'Online Education: A Catalyst for Higher Education Reforms'",
+    "significance": "Willcox, Sarma & Lippel re-injected 'learning engineer' into mainstream higher education discourse at the moment MOOCs were serving 58M+ students globally. Directly recommended universities create learning engineering roles. Catalyzed institutional adoption of the LE framing.",
+    "actors": ["Karen Willcox", "Sanjay Sarma", "Philip Lippel"],
+    "references": ["Willcox, K., Sarma, S., & Lippel, P. (2016). Online Education: A Catalyst for Higher Education Reforms. MIT Online Education Policy Initiative."],
+    "topics": ["T00", "T11"]
+  },
+  {
+    "id": "LE-LS-HT-018",
+    "year": 2017,
+    "era": "contemporary",
+    "event": "IEEE ICICLE (Industry Consortium on Learning Engineering) chartered under IEEE LTSC",
+    "significance": "First formal standards-aligned professional body specifically for learning engineering. ICICLE produces maturity models, competency frameworks, annual proceedings, and the Journal of Learning Engineering — anchoring the field's professional infrastructure.",
+    "actors": [],
+    "references": [],
+    "topics": ["T16", "T00"]
+  },
+  {
+    "id": "LE-LS-HT-019",
+    "year": 2019,
+    "era": "contemporary",
+    "event": "Learning Engineering for Online Education published (Dede, Richards, Saxberg, eds.)",
+    "significance": "First book-length treatment of learning engineering applied to digital and distributed contexts. Saxberg's framing of LE as applying learning science 'at massive scale' became widely adopted. Routledge.",
+    "actors": ["Chris Dede", "John Richards", "Bror Saxberg"],
+    "references": ["Dede, C., Richards, J., & Saxberg, B. (Eds.). (2019). Learning Engineering for Online Education. Routledge."],
+    "topics": ["T00", "T03"]
+  },
+  {
+    "id": "LE-LS-HT-020",
+    "year": 2021,
+    "era": "contemporary",
+    "event": "'High-Leverage Opportunities for Learning Engineering' report published (Baker, Boser, Shelley)",
+    "significance": "Drew on a 2020 convening of 100+ academics and practitioners to define ten strategic priorities across 'Better LE Infrastructure,' 'Supporting Human Processes,' and 'Better Learning Technologies.' One of the most cited contemporary LE policy documents.",
+    "actors": ["Ryan S. Baker", "Ulrich Boser", "Allison Shelley"],
+    "references": ["Baker, R. S., Boser, U., & Shelley, A. (2021). High-Leverage Opportunities for Learning Engineering. Penn Center for Learning Analytics."],
+    "topics": ["T00", "T04", "T14"]
+  },
+  {
+    "id": "LE-LS-HT-021",
+    "year": 2023,
+    "era": "contemporary",
+    "event": "U.S. Dept. of Education releases 'Artificial Intelligence and the Future of Teaching and Learning'",
+    "significance": "First major federal policy document addressing AI in education with explicit civil-rights framing. Documented algorithmic bias in e-proctoring, mandated fairness requirements. Set policy guardrails that now frame responsible learning engineering practice.",
+    "actors": ["U.S. Department of Education, Office of Educational Technology"],
+    "references": ["U.S. Department of Education, Office of Educational Technology. (2023). Artificial Intelligence and the Future of Teaching and Learning: Insights and Recommendations."],
+    "topics": ["T14", "T07"]
+  },
+  {
+    "id": "LE-LS-HT-022",
+    "year": 2023,
+    "era": "contemporary",
+    "event": "Learning Engineering Toolkit published (Goodell & Kolodner, eds., Taylor & Francis)",
+    "significance": "First practitioner-facing textbook defining LE as a verb — an iterative engineering process — rather than a role or technology set. Covers lean-agile methods, data instrumentation, motivation modeling, and predictive analytics. Agnostic to technology stack.",
+    "actors": ["Jim Goodell", "Janet Kolodner"],
+    "references": ["Goodell, J., & Kolodner, J. (Eds.). (2023). Learning Engineering Toolkit: Evidence-Based Practices from the Learning Sciences, Instructional Design, and Beyond. Taylor & Francis."],
+    "topics": ["T00", "T03"]
+  }
+]
