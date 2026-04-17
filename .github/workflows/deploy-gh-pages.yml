@@ -47,3 +47,4 @@ jobs:
           publish_dir: ./site/dist
           force_orphan: true
           enable_jekyll: false
+          cname: lecommons.org
