@@ -7,6 +7,7 @@
   },
   "scripts": {
     "dev": "astro dev",
+    "prebuild": "python3 scripts/enrich_tags.py --new-only",
     "build": "astro build",
     "preview": "astro preview",
     "astro": "astro"
