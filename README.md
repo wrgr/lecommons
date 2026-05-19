@@ -12,7 +12,7 @@ This repo now serves the Learning Engineering Commons, a topic-linked evidence w
   - seed papers,
   - expansion papers,
   - non-paper resources (programs, people, conferences, tools, orgs).
-- The graph UI includes a **Browse nodes** tab that lists every visible graph node (topics, concepts, papers, resources) with the same search and type filters as the canvas, similar in spirit to Resource Navigator.
+- The graph UI includes a **Browse nodes** tab that lists every visible graph node (topics, concepts, papers, resources) with the same search and type filters as the canvas, similar in spirit to Resource Navigator. 
 
 ## Main Commands
 
