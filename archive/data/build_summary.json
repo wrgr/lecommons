@@ -1,5 +1,5 @@
 {
-  "built_at_utc": "2026-04-17T17:54:57.460920+00:00",
+  "built_at_utc": "2026-04-20T13:47:01.300741+00:00",
   "parsed_endnotes": 270,
   "matched_endnotes": 148,
   "seed_papers": 66,
@@ -22,5 +22,17 @@
   "proxy_descriptions_filled": 0,
   "papers_with_proxy_description": 0,
   "papers_without_source_abstract": 452,
-  "papers_missing_abstract": 452
+  "papers_missing_abstract": 452,
+  "full_text_cache_candidates": 452,
+  "full_text_cache_hits": 0,
+  "full_text_cached_new": 0,
+  "full_text_cache_refreshed": 0,
+  "full_text_cache_failures": 452,
+  "full_text_cache_total_entries": 452,
+  "full_text_urls_checked": 744,
+  "full_text_pdf_fetches": 744,
+  "full_text_html_fetches": 0,
+  "full_text_text_truncated": 0,
+  "papers_with_cached_full_text": 0,
+  "papers_without_cached_full_text": 452
 }

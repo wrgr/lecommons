@@ -19,6 +19,8 @@ class PaperEnrichmentStubTests(unittest.TestCase):
         out = _paper_enrichment_stub(seed, hop)
         self.assertEqual(out["papers_total"], 2)
         self.assertGreaterEqual(out["papers_missing_abstract"], 1)
+        self.assertIn("full_text_cache_total_entries", out)
+        self.assertEqual(out["full_text_cache_total_entries"], 0)
 
     def test_path_first_graph_filters_to_spine_edge_types(self) -> None:
         graph = {

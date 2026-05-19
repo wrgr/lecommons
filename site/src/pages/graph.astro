@@ -34,13 +34,29 @@ const base = import.meta.env.BASE_URL;
 
 // ── 1. Title lookups for papers and resources ─────────────────────────────
 
-const paperTitles = new Map<string, { title: string; authors: string; year: number; url: string }>();
+const paperTitles = new Map<
+  string,
+  {
+    title: string;
+    authors: string;
+    year: number;
+    url: string;
+    fullTextCached: boolean;
+    fullTextChars: number;
+    fullTextSourceUrl: string;
+    fullTextExcerpt: string;
+  }
+>();
 for (const p of (seedPapersData as any).papers ?? []) {
   paperTitles.set(p.id, {
     title: p.title,
     authors: (p.authors ?? []).join(", "),
     year: p.year ?? 0,
     url: p.source_url || "",
+    fullTextCached: Boolean(p.full_text_cached),
+    fullTextChars: Number(p.full_text_char_count || 0),
+    fullTextSourceUrl: p.full_text_source_url || "",
+    fullTextExcerpt: p.full_text_excerpt || "",
   });
 }
 
@@ -105,7 +121,17 @@ interface ConceptMeta {
   bloomLevel: string;
   topicCodes: string[];
   prerequisites: string[];
-  papers: { id: string; title: string; authors: string }[];
+  papers: {
+    id: string;
+    title: string;
+    authors: string;
+    year: number;
+    url: string;
+    fullTextCached: boolean;
+    fullTextChars: number;
+    fullTextSourceUrl: string;
+    fullTextExcerpt: string;
+  }[];
   resources: { id: string; name: string; url: string }[];
 }
 
@@ -120,7 +146,19 @@ for (const c of conceptOntology as any[]) {
     papers: (c.primary_papers ?? [])
       .map((pid: string) => {
         const p = paperTitles.get(pid);
-        return p ? { id: pid, title: p.title, authors: p.authors } : null;
+        return p
+          ? {
+              id: pid,
+              title: p.title,
+              authors: p.authors,
+              year: p.year,
+              url: p.url,
+              fullTextCached: p.fullTextCached,
+              fullTextChars: p.fullTextChars,
+              fullTextSourceUrl: p.fullTextSourceUrl,
+              fullTextExcerpt: p.fullTextExcerpt,
+            }
+          : null;
       })
       .filter(Boolean),
     resources: (c.primary_resources ?? [])
@@ -577,6 +615,15 @@ const indexGroups = layerOrder.flatMap((layer) =>
   const resourcesList = document.getElementById("detail-resources-list")!;
   const countEl = document.getElementById("detail-count")!;
 
+  function escapeHtml(value: string) {
+    return (value ?? "")
+      .replaceAll("&", "&amp;")
+      .replaceAll("<", "&lt;")
+      .replaceAll(">", "&gt;")
+      .replaceAll('"', "&quot;")
+      .replaceAll("'", "&#39;");
+  }
+
   function showDetail(id: string) {
     const nodeEl = svg.querySelector(`.node[data-id="${id}"]`);
     if (!nodeEl) return;
@@ -654,7 +701,39 @@ const indexGroups = layerOrder.flatMap((layer) =>
       // Key papers
       if (data.papers.length > 0) {
         papersList.innerHTML = data.papers
-          .map((p: any) => `<li class="paper-item"><span class="paper-title">${p.title}</span>${p.authors ? `<span class="paper-authors">${p.authors}</span>` : ""}</li>`)
+          .map((p: any) => {
+            const title = escapeHtml(p.title || "Untitled paper");
+            const authors = escapeHtml(p.authors || "");
+            const year = Number(p.year || 0);
+            const hasUrl = typeof p.url === "string" && /^https?:\/\//.test(p.url);
+            const sourceUrl = escapeHtml((p.fullTextSourceUrl || p.url || "") as string);
+            const hasCachedText = Boolean(p.fullTextCached);
+            const chars = Number(p.fullTextChars || 0);
+            const excerpt = escapeHtml((p.fullTextExcerpt || "") as string);
+
+            const titleHtml = hasUrl
+              ? `<a href="${escapeHtml(p.url)}" target="_blank" rel="noopener" class="resource-link paper-title-link">${title}</a>`
+              : `<span class="paper-title">${title}</span>`;
+
+            const metaBits = [];
+            if (authors) metaBits.push(authors);
+            if (year > 0) metaBits.push(String(year));
+            const metaHtml = metaBits.length > 0 ? `<span class="paper-authors">${metaBits.join(" · ")}</span>` : "";
+
+            const cacheBadge = hasCachedText
+              ? `<span class="paper-badge paper-badge--cached">Full text cached${chars > 0 ? ` · ${chars.toLocaleString()} chars` : ""}</span>`
+              : `<span class="paper-badge paper-badge--missing">No cached full text</span>`;
+
+            const cacheLink = hasCachedText && sourceUrl
+              ? `<a href="${sourceUrl}" target="_blank" rel="noopener" class="paper-cache-link">Open full-text source</a>`
+              : "";
+
+            const excerptHtml = hasCachedText && excerpt
+              ? `<details class="paper-excerpt"><summary>Preview cached text</summary><p>${excerpt}</p></details>`
+              : "";
+
+            return `<li class="paper-item">${titleHtml}${metaHtml}<div class="paper-meta-row">${cacheBadge}${cacheLink}</div>${excerptHtml}</li>`;
+          })
           .join("");
         papersSection.hidden = false;
       } else {
@@ -942,7 +1021,55 @@ const indexGroups = layerOrder.flatMap((layer) =>
 
   .paper-item { display: flex; flex-direction: column; gap: .1rem; }
   .paper-title { color: var(--ink-soft); }
+  .paper-title-link { color: var(--accent); text-decoration: none; font-weight: 500; }
+  .paper-title-link:hover { text-decoration: underline; }
   .paper-authors { font-size: .72rem; color: var(--muted); }
+  .paper-meta-row {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: .45rem;
+    margin-top: .1rem;
+  }
+  .paper-badge {
+    display: inline-flex;
+    align-items: center;
+    font-family: var(--sans);
+    font-size: .62rem;
+    letter-spacing: .03em;
+    text-transform: uppercase;
+    border-radius: 999px;
+    padding: .12rem .45rem;
+    border: 1px solid var(--border);
+  }
+  .paper-badge--cached {
+    color: #1f5d42;
+    background: #e5f3ec;
+    border-color: #b8d8c8;
+  }
+  .paper-badge--missing {
+    color: var(--muted);
+    background: var(--bg);
+  }
+  .paper-cache-link {
+    font-size: .68rem;
+    color: var(--accent);
+    text-decoration: none;
+  }
+  .paper-cache-link:hover { text-decoration: underline; }
+  .paper-excerpt { margin-top: .15rem; }
+  .paper-excerpt summary {
+    font-size: .68rem;
+    color: var(--accent);
+    cursor: pointer;
+    user-select: none;
+  }
+  .paper-excerpt p {
+    margin: .3rem 0 0;
+    font-size: .72rem;
+    line-height: 1.45;
+    color: var(--ink-soft);
+  }
 
   .resource-link { color: var(--accent); }
   .resource-link:hover { text-decoration: underline; }

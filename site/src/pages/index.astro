@@ -74,21 +74,34 @@ const whyCards: { key: SectionKey; href: string; lead: string; title: string; de
     detail: "The platforms, systems, and software LEs build on.",
   },
 ];
+
+const programGoals: string[] = [
+  "Prepare practitioners with evidence-driven, methodological skills to instrument learning environments, analyze performance data, and produce decision-grade evidence linking learning outcomes to operational performance.",
+  "Develop analytical and professional skills to responsibly design, deploy, and improve solutions that address critical customer needs, applying implementation science and continuous improvement cycles to integrate human and system capabilities effectively.",
+  "Develop professionals who can navigate the requirements of complex, high-stakes environments, treating privacy, bias, ethics, and accountability as design constraints.",
+  "Enhance capabilities to leverage emerging technologies, including artificial intelligence, and to interpret results and risks responsibly, with attention to uncertainty and auditability.",
+  "Advance the learning engineering field by applying rigorous methods to authentic operational problems in coursework and capstone projects, contributing new evidence on effectiveness.",
+];
 ---
 
-<Base title="Learning Engineering — a practice-centered guide" active="welcome">
+<Base
+  title="LENS — Learning Engineering for Next-Generation Systems"
+  description="A Johns Hopkins program engineering human capability for the complex systems where it matters most."
+  active="welcome"
+>
   <section class="hero">
     <div class="container hero-grid">
       <div class="hero-copy">
-        <div class="eyebrow">Welcome</div>
+        <div class="eyebrow">Engineering human capability · Advancing system performance</div>
         <h1 class="lede">
-          Learning engineers apply the learning sciences and engineering methods
-          to iteratively improve learning outcomes at scale.
+          Traditional instructional design optimizes individual learning experiences.
+          Learning engineering treats capability as a system-level problem.
         </h1>
         <p class="subhead">
-          This site is a practice-centered guide for people doing the work, people curious about the role,
-          and people adjacent to it. It's organized around what you might actually need — not around a graph
-          of citations.
+          In healthcare, defense, public infrastructure, and other high-stakes domains, the gap
+          between human performance and system performance is consequential — and largely
+          unaddressed by the tools and frameworks instructional traditions provide.
+          <strong>LENS</strong> is the Johns Hopkins specialization built to close that gap.
         </p>
       </div>
       <aside class="hero-graphic" aria-hidden="true">
@@ -99,10 +112,83 @@ const whyCards: { key: SectionKey; href: string; lead: string; title: string; de
 
   <hr class="rule-in-container" />
 
+  <section class="capability-gap">
+    <div class="container two-col">
+      <div>
+        <div class="eyebrow">The capability gap</div>
+        <h2>Why a new program, and why now</h2>
+        <p>
+          Learning engineering is an emerging practice and discipline that applies the learning
+          sciences through engineering methods and data-informed decision making to design,
+          implement, and continuously improve systems that develop human capability. Where
+          traditional instructional design focuses on the quality of individual learning
+          experiences, learning engineering treats capability development as a system-level
+          problem — one that requires rigorous evidence, iterative improvement, and integration
+          across the full lifecycle of complex systems.
+        </p>
+        <p>
+          Many academic programs in the learning sciences and learning engineering are organized
+          around designed instructional contexts: schools, universities, and edtech products.
+          These are essential domains, but they represent only a fraction of the environments
+          where human capability development is operationally critical. In healthcare systems,
+          defense enterprises, public infrastructure, and other high-stakes organizations, the
+          gap between human performance and system performance is consequential — and it
+          remains largely unaddressed by the tools and frameworks that instructional traditions
+          provide.
+        </p>
+      </div>
+      <aside class="pull-quotes">
+        <blockquote>
+          "Learning engineering is a process and practice that applies the learning sciences using
+          human-centered engineering design methodologies and data-informed decision-making to
+          support learners and their development."
+          <cite>— IEEE ICICLE definition</cite>
+        </blockquote>
+      </aside>
+    </div>
+  </section>
+
+  <section class="about-lens">
+    <div class="container">
+      <div class="eyebrow">About LENS</div>
+      <h2>Treating human capability as a core engineering function</h2>
+      <p>
+        LENS is built for that gap. Aligned with emerging IEEE ICICLE learning engineering
+        standards, it prepares graduates to treat human capability not as an instructional
+        afterthought but as a core engineering function that must be designed into complex
+        systems from the outset and sustained across the system lifecycle. LENS graduates will
+        operate fluently at the intersection of the learning sciences and systems engineering,
+        able to work across the disciplinary boundaries that currently leave the human side of
+        complex domains neglected at measurable cost to system performance.
+      </p>
+      <p>
+        Within the LDT program, LENS is the specialization most directly oriented toward
+        high-stakes, operationally complex environments — including healthcare, defense, and
+        education itself when understood as a complex system rather than as a collection of
+        instructional events. Learning engineering is emerging as a profession and academic
+        discipline; LENS graduates will enter the workforce at a formative moment, positioned
+        not just to practice learning engineering but to help define it.
+      </p>
+
+      <h3 class="goals-heading">Program goals</h3>
+      <ol class="program-goals">
+        {programGoals.map((goal) => <li>{goal}</li>)}
+      </ol>
+    </div>
+  </section>
+
   <section class="why-here">
     <div class="container">
-      <div class="eyebrow">Navigate the field</div>
-      <h2>Start from a question, a topic, or a guided tour</h2>
+      <div class="eyebrow">Resources</div>
+      <h2>Curated learning engineering resources, in context</h2>
+      <p class="resources-intro">
+        Alongside the program, this site hosts a curated set of learning engineering resources —
+        practitioner notes, methods, reading, tools, events, and community references — adapted
+        from the Learning Engineering Commons and aligned with the
+        <a href="https://sagroups.ieee.org/icicle/" target="_blank" rel="noopener">IEEE ICICLE</a>
+        community. They are presented here as supporting context for the LENS thesis: the field
+        students and practitioners are entering, and the evidence base they will build on.
+      </p>
       <ul class="why-list why-list--discovery">
         {discoveryCards.map((c) => (
           <li>
@@ -129,54 +215,23 @@ const whyCards: { key: SectionKey; href: string; lead: string; title: string; de
     </div>
   </section>
 
-  <section class="what-they-do">
-    <div class="container two-col">
-      <div>
-        <h2>What learning engineers do</h2>
-        <p>
-          They work at the intersection of learning science, instructional design, data analysis, and
-          systems thinking. They diagnose why a course or training program isn't producing the outcomes
-          it should, redesign the intervention with evidence in mind, instrument it to collect signal,
-          and iterate. The work spans K–12 classrooms, higher-ed platforms, workplace training, and
-          high-consequence domains like medicine and defense.
-        </p>
-        <p>
-          What learning engineering adds to instructional design is an emphasis on
-          <em>evidence of impact</em> — and the willingness to
-          treat learning interventions as systems that can be measured, debugged, and improved.
-        </p>
-      </div>
-      <aside class="pull-quotes">
-        <blockquote>
-          "Learning engineering is a process and practice that applies the learning sciences using
-          human-centered engineering design methodologies and data-informed decision-making to
-          support learners and their development."
-          <cite>— IEEE ICICLE definition</cite>
-        </blockquote>
-        <blockquote>
-          "We need learning engineers who can take what the learning sciences tell us and translate
-          it into practice — at scale, in real settings, with real measurement."
-          <cite>— Bror Saxberg</cite>
-        </blockquote>
-      </aside>
-    </div>
-  </section>
-
   <section class="audiences">
     <div class="container">
-      <h2>Who this site is for</h2>
+      <h2>Who this is for</h2>
       <ul class="audience-list">
         <li>
-          <strong>Practitioners</strong> who already do this work and want a shared vocabulary,
-          practice references, and a way to point colleagues to the field.
+          <strong>Prospective LENS students</strong> evaluating whether the program fits the
+          problem they want to work on — and what they would graduate able to do.
         </li>
         <li>
-          <strong>Students and new entrants</strong> deciding whether learning engineering is the
-          right path — and where to study or start.
+          <strong>Practitioners in high-stakes domains</strong> (healthcare, defense, public
+          infrastructure) who recognize the capability gap and want a vocabulary, evidence
+          base, and peer community for closing it.
         </li>
         <li>
-          <strong>Adjacent professionals</strong> (instructional designers, ML engineers, learning
-          scientists, HR/L&D leaders) who need to understand how this role overlaps with theirs.
+          <strong>Adjacent professionals</strong> — instructional designers, ML engineers,
+          learning scientists, HR/L&D leaders, systems engineers — who need to understand how
+          learning engineering overlaps with what they already do.
         </li>
       </ul>
     </div>
@@ -186,11 +241,13 @@ const whyCards: { key: SectionKey; href: string; lead: string; title: string; de
     <div class="container">
       <h2>About this site</h2>
       <p>
-        Most entries come from a hand-curated workbook of IEEE ICICLE–adjacent resources, plus
-        original practitioner posts in Field Notes. Items are tagged by format and by curatorial
-        cluster (e.g. "ICICLE resources," "Bror Saxberg," "I/ITSEC"). Sources with incomplete
-        provenance carry a visible <em>source unknown</em> badge — we'd rather show you a promising
-        lead we haven't verified than quietly drop it. <a href={base + "about/"}>More on scope &amp; method →</a>
+        The Resources section draws on a hand-curated workbook of IEEE ICICLE–adjacent material
+        originally assembled as the <em>Learning Engineering Commons</em>, plus original
+        practitioner posts in Field Notes. Items are tagged by format and by curatorial cluster
+        (e.g. "ICICLE resources," "Bror Saxberg," "I/ITSEC"). Sources with incomplete provenance
+        carry a visible <em>source unknown</em> badge — we'd rather show you a promising lead we
+        haven't verified than quietly drop it.
+        <a href={base + "about/"}>More on scope &amp; method →</a>
       </p>
     </div>
   </section>
@@ -234,6 +291,7 @@ const whyCards: { key: SectionKey; href: string; lead: string; title: string; de
     max-width: 40rem;
     line-height: 1.55;
   }
+  .subhead strong { color: var(--accent); font-weight: 600; }
   .hero-graphic {
     justify-self: end;
     width: min(100%, 34rem);
@@ -270,11 +328,93 @@ const whyCards: { key: SectionKey; href: string; lead: string; title: string; de
     border-top: 1px solid var(--border);
   }
 
+  /* ── Capability gap section ──────────────────────────────────────────── */
+  .capability-gap { margin-top: 1rem; }
+  .capability-gap h2 {
+    font-size: clamp(1.3rem, 2.4vw, 1.6rem);
+    margin-bottom: 1rem;
+    max-width: 36rem;
+  }
+  .two-col {
+    display: grid;
+    grid-template-columns: 1.2fr 1fr;
+    gap: 2.5rem;
+    align-items: start;
+  }
+  @media (max-width: 780px) {
+    .two-col { grid-template-columns: 1fr; gap: 1.5rem; }
+  }
+  .pull-quotes {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    border-left: 2px solid var(--accent);
+    padding: .2rem 0 .2rem 1.2rem;
+  }
+  blockquote {
+    margin: 0;
+    font-family: var(--serif);
+    font-size: 1rem;
+    font-style: italic;
+    color: var(--ink-soft);
+    line-height: 1.5;
+  }
+  blockquote cite {
+    display: block;
+    margin-top: .5rem;
+    font-style: normal;
+    font-size: .85rem;
+    color: var(--muted);
+    font-family: var(--sans);
+  }
+
+  /* ── About LENS section ──────────────────────────────────────────────── */
+  .about-lens {
+    background: var(--tint);
+    border-top: 1px solid var(--border);
+    border-bottom: 1px solid var(--border);
+    margin-top: 2rem;
+  }
+  .about-lens .container { padding-top: 2.5rem; padding-bottom: 2.5rem; }
+  .about-lens h2 {
+    font-size: clamp(1.3rem, 2.4vw, 1.6rem);
+    margin-bottom: 1rem;
+    max-width: 36rem;
+  }
+  .goals-heading {
+    font-family: var(--serif);
+    font-size: 1.05rem;
+    font-weight: 600;
+    color: var(--ink);
+    margin: 2rem 0 .75rem;
+  }
+  .program-goals {
+    margin: 0;
+    padding-left: 1.25rem;
+    max-width: 48rem;
+    display: flex;
+    flex-direction: column;
+    gap: .65rem;
+  }
+  .program-goals li {
+    font-size: .95rem;
+    line-height: 1.55;
+    color: var(--ink-soft);
+  }
+
+  /* ── Resources (formerly "why here") ─────────────────────────────────── */
   .why-here { padding-top: 1rem; }
   .why-here h2 {
     font-size: clamp(1.3rem, 2.4vw, 1.6rem);
-    margin-bottom: 1.4rem;
+    margin-bottom: .8rem;
     max-width: 36rem;
+  }
+  .resources-intro {
+    font-size: .98rem;
+    color: var(--ink-soft);
+    max-width: 44rem;
+    margin: 0 0 1.6rem 0;
+    line-height: 1.55;
   }
   .why-list {
     list-style: none;
@@ -338,41 +478,7 @@ const whyCards: { key: SectionKey; href: string; lead: string; title: string; de
     line-height: 1.45;
   }
 
-  .what-they-do { margin-top: 2.5rem; }
-  .two-col {
-    display: grid;
-    grid-template-columns: 1.2fr 1fr;
-    gap: 2.5rem;
-    align-items: start;
-  }
-  @media (max-width: 780px) {
-    .two-col { grid-template-columns: 1fr; gap: 1.5rem; }
-  }
-
-  .pull-quotes {
-    display: flex;
-    flex-direction: column;
-    gap: 1.5rem;
-    border-left: 2px solid var(--accent);
-    padding: .2rem 0 .2rem 1.2rem;
-  }
-  blockquote {
-    margin: 0;
-    font-family: var(--serif);
-    font-size: 1rem;
-    font-style: italic;
-    color: var(--ink-soft);
-    line-height: 1.5;
-  }
-  blockquote cite {
-    display: block;
-    margin-top: .5rem;
-    font-style: normal;
-    font-size: .85rem;
-    color: var(--muted);
-    font-family: var(--sans);
-  }
-
+  /* ── Audiences ───────────────────────────────────────────────────────── */
   .audiences {
     background: var(--tint);
     border-top: 1px solid var(--border);
@@ -395,8 +501,9 @@ const whyCards: { key: SectionKey; href: string; lead: string; title: string; de
   }
   .audience-list strong { color: var(--accent); font-weight: 600; }
 
+  /* ── About this site ─────────────────────────────────────────────────── */
   .about-site { margin-top: 2.5rem; padding-bottom: 2rem; }
-  .about-site p { font-size: .95rem; color: var(--ink-soft); max-width: 40rem; }
+  .about-site p { font-size: .95rem; color: var(--ink-soft); max-width: 44rem; }
 
   @media (max-width: 900px) {
     .hero .container { padding-top: 3rem; }

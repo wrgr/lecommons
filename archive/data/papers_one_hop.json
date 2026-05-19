@@ -51,7 +51,12 @@
       "edge_types": [
         "backward",
         "forward"
-      ]
+      ],
+      "full_text_cached": false,
+      "full_text_char_count": 0,
+      "full_text_source_url": "",
+      "full_text_source_type": "",
+      "full_text_excerpt": ""
     },
     {
       "id": "W4250727746",
@@ -104,7 +109,12 @@
       "edge_types": [
         "backward",
         "forward"
-      ]
+      ],
+      "full_text_cached": false,
+      "full_text_char_count": 0,
+      "full_text_source_url": "",
+      "full_text_source_type": "",
+      "full_text_excerpt": ""
     },
     {
       "id": "W1526122805",
@@ -158,7 +168,12 @@
       ],
       "edge_types": [
         "forward"
-      ]
+      ],
+      "full_text_cached": false,
+      "full_text_char_count": 0,
+      "full_text_source_url": "",
+      "full_text_source_type": "",
+      "full_text_excerpt": ""
     },
     {
       "id": "W2077111155",
@@ -203,7 +218,12 @@
       "edge_types": [
         "backward",
         "forward"
-      ]
+      ],
+      "full_text_cached": false,
+      "full_text_char_count": 0,
+      "full_text_source_url": "",
+      "full_text_source_type": "",
+      "full_text_excerpt": ""
     },
     {
       "id": "W2157535018",
@@ -254,7 +274,12 @@
       "edge_types": [
         "backward",
         "forward"
-      ]
+      ],
+      "full_text_cached": false,
+      "full_text_char_count": 0,
+      "full_text_source_url": "",
+      "full_text_source_type": "",
+      "full_text_excerpt": ""
     },
     {
       "id": "W1551403135",
@@ -298,7 +323,12 @@
       "edge_types": [
         "backward",
         "forward"
-      ]
+      ],
+      "full_text_cached": false,
+      "full_text_char_count": 0,
+      "full_text_source_url": "",
+      "full_text_source_type": "",
+      "full_text_excerpt": ""
     },
     {
       "id": "W1589525026",
@@ -344,7 +374,12 @@
       "edge_types": [
         "backward",
         "forward"
-      ]
+      ],
+      "full_text_cached": false,
+      "full_text_char_count": 0,
+      "full_text_source_url": "",
+      "full_text_source_type": "",
+      "full_text_excerpt": ""
     },
     {
       "id": "W1950434568",
@@ -399,7 +434,12 @@
       ],
       "edge_types": [
         "forward"
-      ]
+      ],
+      "full_text_cached": false,
+      "full_text_char_count": 0,
+      "full_text_source_url": "",
+      "full_text_source_type": "",
+      "full_text_excerpt": ""
     },
     {
       "id": "W1993868776",
@@ -447,7 +487,12 @@
       "edge_types": [
         "backward",
         "forward"
-      ]
+      ],
+      "full_text_cached": false,
+      "full_text_char_count": 0,
+      "full_text_source_url": "",
+      "full_text_source_type": "",
+      "full_text_excerpt": ""
     },
     {
       "id": "W2104279103",
@@ -491,7 +536,12 @@
       "edge_types": [
         "backward",
         "forward"
-      ]
+      ],
+      "full_text_cached": false,
+      "full_text_char_count": 0,
+      "full_text_source_url": "",
+      "full_text_source_type": "",
+      "full_text_excerpt": ""
     },
     {
       "id": "W2116199508",
@@ -536,7 +586,12 @@
       ],
       "edge_types": [
         "backward"
-      ]
+      ],
+      "full_text_cached": false,
+      "full_text_char_count": 0,
+      "full_text_source_url": "",
+      "full_text_source_type": "",
+      "full_text_excerpt": ""
     },
     {
       "id": "W4285086207",
@@ -579,7 +634,12 @@
       ],
       "edge_types": [
         "forward"
-      ]
+      ],
+      "full_text_cached": false,
+      "full_text_char_count": 0,
+      "full_text_source_url": "",
+      "full_text_source_type": "",
+      "full_text_excerpt": ""
     },
     {
       "id": "W600881208",
@@ -632,7 +692,12 @@
       ],
       "edge_types": [
         "backward"
-      ]
+      ],
+      "full_text_cached": false,
+      "full_text_char_count": 0,
+      "full_text_source_url": "",
+      "full_text_source_type": "",
+      "full_text_excerpt": ""
     },
     {
       "id": "W643967429",
@@ -679,7 +744,12 @@
       ],
       "edge_types": [
         "forward"
-      ]
+      ],
+      "full_text_cached": false,
+      "full_text_char_count": 0,
+      "full_text_source_url": "",
+      "full_text_source_type": "",
+      "full_text_excerpt": ""
     },
     {
       "id": "W1562748096",
@@ -730,7 +800,12 @@
       "edge_types": [
         "backward",
         "forward"
-      ]
+      ],
+      "full_text_cached": false,
+      "full_text_char_count": 0,
+      "full_text_source_url": "",
+      "full_text_source_type": "",
+      "full_text_excerpt": ""
     },
     {
       "id": "W1569653074",
@@ -774,7 +849,12 @@
       ],
       "edge_types": [
         "backward"
-      ]
+      ],
+      "full_text_cached": false,
+      "full_text_char_count": 0,
+      "full_text_source_url": "",
+      "full_text_source_type": "",
+      "full_text_excerpt": ""
     },
     {
       "id": "W1594874760",
@@ -816,7 +896,12 @@
       ],
       "edge_types": [
         "backward"
-      ]
+      ],
+      "full_text_cached": false,
+      "full_text_char_count": 0,
+      "full_text_source_url": "",
+      "full_text_source_type": "",
+      "full_text_excerpt": ""
     },
     {
       "id": "W1670942626",
@@ -858,7 +943,12 @@
       ],
       "edge_types": [
         "backward"
-      ]
+      ],
+      "full_text_cached": false,
+      "full_text_char_count": 0,
+      "full_text_source_url": "",
+      "full_text_source_type": "",
+      "full_text_excerpt": ""
     },
     {
       "id": "W1752512628",
@@ -904,7 +994,12 @@
       ],
       "edge_types": [
         "backward"
-      ]
+      ],
+      "full_text_cached": false,
+      "full_text_char_count": 0,
+      "full_text_source_url": "",
+      "full_text_source_type": "",
+      "full_text_excerpt": ""
     },
     {
       "id": "W1761828760",
@@ -946,7 +1041,12 @@
       ],
       "edge_types": [
         "backward"
-      ]
+      ],
+      "full_text_cached": false,
+      "full_text_char_count": 0,
+      "full_text_source_url": "",
+      "full_text_source_type": "",
+      "full_text_excerpt": ""
     },
     {
       "id": "W1855733103",
@@ -989,7 +1089,12 @@
       "edge_types": [
         "backward",
         "forward"
-      ]
+      ],
+      "full_text_cached": false,
+      "full_text_char_count": 0,
+      "full_text_source_url": "",
+      "full_text_source_type": "",
+      "full_text_excerpt": ""
     },
     {
       "id": "W1971228271",
@@ -1036,7 +1141,12 @@
       "edge_types": [
         "backward",
         "forward"
-      ]
+      ],
+      "full_text_cached": false,
+      "full_text_char_count": 0,
+      "full_text_source_url": "",
+      "full_text_source_type": "",
+      "full_text_excerpt": ""
     },
     {
       "id": "W2001564915",
@@ -1088,7 +1198,12 @@
       ],
       "edge_types": [
         "backward"
-      ]
+      ],
+      "full_text_cached": false,
+      "full_text_char_count": 0,
+      "full_text_source_url": "",
+      "full_text_source_type": "",
+      "full_text_excerpt": ""
     },
     {
       "id": "W2026161499",
@@ -1134,7 +1249,12 @@
       ],
       "edge_types": [
         "backward"
-      ]
+      ],
+      "full_text_cached": false,
+      "full_text_char_count": 0,
+      "full_text_source_url": "",
+      "full_text_source_type": "",
+      "full_text_excerpt": ""
     },
     {
       "id": "W2031099082",
@@ -1177,7 +1297,12 @@
       "edge_types": [
         "backward",
         "forward"
-      ]
+      ],
+      "full_text_cached": false,
+      "full_text_char_count": 0,
+      "full_text_source_url": "",
+      "full_text_source_type": "",
+      "full_text_excerpt": ""
     },
     {
       "id": "W2046675442",
@@ -1223,7 +1348,12 @@
       ],
       "edge_types": [
         "backward"
-      ]
+      ],
+      "full_text_cached": false,
+      "full_text_char_count": 0,
+      "full_text_source_url": "",
+      "full_text_source_type": "",
+      "full_text_excerpt": ""
     },
     {
       "id": "W2049428464",
@@ -1265,7 +1395,12 @@
       ],
       "edge_types": [
         "backward"
-      ]
+      ],
+      "full_text_cached": false,
+      "full_text_char_count": 0,
+      "full_text_source_url": "",
+      "full_text_source_type": "",
+      "full_text_excerpt": ""
     },
     {
       "id": "W2061177236",
@@ -1312,7 +1447,12 @@
       "edge_types": [
         "backward",
         "forward"
-      ]
+      ],
+      "full_text_cached": false,
+      "full_text_char_count": 0,
+      "full_text_source_url": "",
+      "full_text_source_type": "",
+      "full_text_excerpt": ""
     },
     {
       "id": "W2088563966",
@@ -1358,7 +1498,12 @@
       ],
       "edge_types": [
         "backward"
-      ]
+      ],
+      "full_text_cached": false,
+      "full_text_char_count": 0,
+      "full_text_source_url": "",
+      "full_text_source_type": "",
+      "full_text_excerpt": ""
     },
     {
       "id": "W2105543722",
@@ -1405,7 +1550,12 @@
       "edge_types": [
         "backward",
         "forward"
-      ]
+      ],
+      "full_text_cached": false,
+      "full_text_char_count": 0,
+      "full_text_source_url": "",
+      "full_text_source_type": "",
+      "full_text_excerpt": ""
     },
     {
       "id": "W2123184471",
@@ -1452,7 +1602,12 @@
       "edge_types": [
         "backward",
         "forward"
-      ]
+      ],
+      "full_text_cached": false,
+      "full_text_char_count": 0,
+      "full_text_source_url": "",
+      "full_text_source_type": "",
+      "full_text_excerpt": ""
     },
     {
       "id": "W2129660020",
@@ -1494,7 +1649,12 @@
       ],
       "edge_types": [
         "forward"
-      ]
+      ],
+      "full_text_cached": false,
+      "full_text_char_count": 0,
+      "full_text_source_url": "",
+      "full_text_source_type": "",
+      "full_text_excerpt": ""
     },
     {
       "id": "W2130736456",
@@ -1539,7 +1699,12 @@
       "edge_types": [
         "backward",
         "forward"
-      ]
+      ],
+      "full_text_cached": false,
+      "full_text_char_count": 0,
+      "full_text_source_url": "",
+      "full_text_source_type": "",
+      "full_text_excerpt": ""
     },
     {
       "id": "W2135943618",
@@ -1581,7 +1746,12 @@
       ],
       "edge_types": [
         "backward"
-      ]
+      ],
+      "full_text_cached": false,
+      "full_text_char_count": 0,
+      "full_text_source_url": "",
+      "full_text_source_type": "",
+      "full_text_excerpt": ""
     },
     {
       "id": "W2137576942",
@@ -1628,7 +1798,12 @@
       "edge_types": [
         "backward",
         "forward"
-      ]
+      ],
+      "full_text_cached": false,
+      "full_text_char_count": 0,
+      "full_text_source_url": "",
+      "full_text_source_type": "",
+      "full_text_excerpt": ""
     },
     {
       "id": "W2162792036",
@@ -1674,7 +1849,12 @@
       ],
       "edge_types": [
         "backward"
-      ]
+      ],
+      "full_text_cached": false,
+      "full_text_char_count": 0,
+      "full_text_source_url": "",
+      "full_text_source_type": "",
+      "full_text_excerpt": ""
     },
     {
       "id": "W2163640453",
@@ -1725,7 +1905,12 @@
       "edge_types": [
         "backward",
         "forward"
-      ]
+      ],
+      "full_text_cached": false,
+      "full_text_char_count": 0,
+      "full_text_source_url": "",
+      "full_text_source_type": "",
+      "full_text_excerpt": ""
     },
     {
       "id": "W2333196491",
@@ -1769,7 +1954,12 @@
       ],
       "edge_types": [
         "backward"
-      ]
+      ],
+      "full_text_cached": false,
+      "full_text_char_count": 0,
+      "full_text_source_url": "",
+      "full_text_source_type": "",
+      "full_text_excerpt": ""
     },
     {
       "id": "W2489865376",
@@ -1817,7 +2007,12 @@
       ],
       "edge_types": [
         "backward"
-      ]
+      ],
+      "full_text_cached": false,
+      "full_text_char_count": 0,
+      "full_text_source_url": "",
+      "full_text_source_type": "",
+      "full_text_excerpt": ""
     },
     {
       "id": "W3049252626",
@@ -1859,7 +2054,12 @@
       ],
       "edge_types": [
         "forward"
-      ]
+      ],
+      "full_text_cached": false,
+      "full_text_char_count": 0,
+      "full_text_source_url": "",
+      "full_text_source_type": "",
+      "full_text_excerpt": ""
     },
     {
       "id": "W3158904737",
@@ -1904,7 +2104,12 @@
       "edge_types": [
         "backward",
         "forward"
-      ]
+      ],
+      "full_text_cached": false,
+      "full_text_char_count": 0,
+      "full_text_source_url": "",
+      "full_text_source_type": "",
+      "full_text_excerpt": ""
     },
     {
       "id": "W4283746498",
@@ -1946,7 +2151,12 @@
       ],
       "edge_types": [
         "forward"
-      ]
+      ],
+      "full_text_cached": false,
+      "full_text_char_count": 0,
+      "full_text_source_url": "",
+      "full_text_source_type": "",
+      "full_text_excerpt": ""
     },
     {
       "id": "W4301914006",
@@ -1992,7 +2202,12 @@
       ],
       "edge_types": [
         "backward"
-      ]
+      ],
+      "full_text_cached": false,
+      "full_text_char_count": 0,
+      "full_text_source_url": "",
+      "full_text_source_type": "",
+      "full_text_excerpt": ""
     },
     {
       "id": "W49761325",
@@ -2039,7 +2254,12 @@
       "edge_types": [
         "backward",
         "forward"
-      ]
+      ],
+      "full_text_cached": false,
+      "full_text_char_count": 0,
+      "full_text_source_url": "",
+      "full_text_source_type": "",
+      "full_text_excerpt": ""
     },
     {
       "id": "W612243507",
@@ -2081,7 +2301,12 @@
       ],
       "edge_types": [
         "backward"
-      ]
+      ],
+      "full_text_cached": false,
+      "full_text_char_count": 0,
+      "full_text_source_url": "",
+      "full_text_source_type": "",
+      "full_text_excerpt": ""
     },
     {
       "id": "W12309149",
@@ -2122,7 +2347,12 @@
       ],
       "edge_types": [
         "backward"
-      ]
+      ],
+      "full_text_cached": false,
+      "full_text_char_count": 0,
+      "full_text_source_url": "",
+      "full_text_source_type": "",
+      "full_text_excerpt": ""
     },
     {
       "id": "W1491087240",
@@ -2163,7 +2393,12 @@
       ],
       "edge_types": [
         "backward"
-      ]
+      ],
+      "full_text_cached": false,
+      "full_text_char_count": 0,
+      "full_text_source_url": "",
+      "full_text_source_type": "",
+      "full_text_excerpt": ""
     },
     {
       "id": "W1494137514",
@@ -2206,7 +2441,12 @@
       ],
       "edge_types": [
         "backward"
-      ]
+      ],
+      "full_text_cached": false,
+      "full_text_char_count": 0,
+      "full_text_source_url": "",
+      "full_text_source_type": "",
+      "full_text_excerpt": ""
     },
     {
       "id": "W1523882937",
@@ -2248,7 +2488,12 @@
       "edge_types": [
         "backward",
         "forward"
-      ]
+      ],
+      "full_text_cached": false,
+      "full_text_char_count": 0,
+      "full_text_source_url": "",
+      "full_text_source_type": "",
+      "full_text_excerpt": ""
     },
     {
       "id": "W1539947443",
@@ -2289,7 +2534,12 @@
       ],
       "edge_types": [
         "backward"
-      ]
+      ],
+      "full_text_cached": false,
+      "full_text_char_count": 0,
+      "full_text_source_url": "",
+      "full_text_source_type": "",
+      "full_text_excerpt": ""
     },
     {
       "id": "W1553185521",
@@ -2330,7 +2580,12 @@
       ],
       "edge_types": [
         "backward"
-      ]
+      ],
+      "full_text_cached": false,
+      "full_text_char_count": 0,
+      "full_text_source_url": "",
+      "full_text_source_type": "",
+      "full_text_excerpt": ""
     },
     {
       "id": "W1584714453",
@@ -2371,7 +2626,12 @@
       ],
       "edge_types": [
         "backward"
-      ]
+      ],
+      "full_text_cached": false,
+      "full_text_char_count": 0,
+      "full_text_source_url": "",
+      "full_text_source_type": "",
+      "full_text_excerpt": ""
     },
     {
       "id": "W1708874574",
@@ -2414,7 +2674,12 @@
       ],
       "edge_types": [
         "backward"
-      ]
+      ],
+      "full_text_cached": false,
+      "full_text_char_count": 0,
+      "full_text_source_url": "",
+      "full_text_source_type": "",
+      "full_text_excerpt": ""
     },
     {
       "id": "W1765030997",
@@ -2458,7 +2723,12 @@
       "edge_types": [
         "backward",
         "forward"
-      ]
+      ],
+      "full_text_cached": false,
+      "full_text_char_count": 0,
+      "full_text_source_url": "",
+      "full_text_source_type": "",
+      "full_text_excerpt": ""
     },
     {
       "id": "W1963697479",
@@ -2502,7 +2772,12 @@
       "edge_types": [
         "backward",
         "forward"
-      ]
+      ],
+      "full_text_cached": false,
+      "full_text_char_count": 0,
+      "full_text_source_url": "",
+      "full_text_source_type": "",
+      "full_text_excerpt": ""
     },
     {
       "id": "W1974219072",
@@ -2547,7 +2822,12 @@
       ],
       "edge_types": [
         "forward"
-      ]
+      ],
+      "full_text_cached": false,
+      "full_text_char_count": 0,
+      "full_text_source_url": "",
+      "full_text_source_type": "",
+      "full_text_excerpt": ""
     },
     {
       "id": "W1985919181",
@@ -2589,7 +2869,12 @@
       "edge_types": [
         "backward",
         "forward"
-      ]
+      ],
+      "full_text_cached": false,
+      "full_text_char_count": 0,
+      "full_text_source_url": "",
+      "full_text_source_type": "",
+      "full_text_excerpt": ""
     },
     {
       "id": "W1989930562",
@@ -2632,7 +2917,12 @@
       ],
       "edge_types": [
         "backward"
-      ]
+      ],
+      "full_text_cached": false,
+      "full_text_char_count": 0,
+      "full_text_source_url": "",
+      "full_text_source_type": "",
+      "full_text_excerpt": ""
     },
     {
       "id": "W1994925058",
@@ -2673,7 +2963,12 @@
       ],
       "edge_types": [
         "backward"
-      ]
+      ],
+      "full_text_cached": false,
+      "full_text_char_count": 0,
+      "full_text_source_url": "",
+      "full_text_source_type": "",
+      "full_text_excerpt": ""
     },
     {
       "id": "W1999626445",
@@ -2715,7 +3010,12 @@
       "edge_types": [
         "backward",
         "forward"
-      ]
+      ],
+      "full_text_cached": false,
+      "full_text_char_count": 0,
+      "full_text_source_url": "",
+      "full_text_source_type": "",
+      "full_text_excerpt": ""
     },
     {
       "id": "W2000052479",
@@ -2756,7 +3056,12 @@
       ],
       "edge_types": [
         "backward"
-      ]
+      ],
+      "full_text_cached": false,
+      "full_text_char_count": 0,
+      "full_text_source_url": "",
+      "full_text_source_type": "",
+      "full_text_excerpt": ""
     },
     {
       "id": "W2001468118",
@@ -2800,7 +3105,12 @@
       "edge_types": [
         "backward",
         "forward"
-      ]
+      ],
+      "full_text_cached": false,
+      "full_text_char_count": 0,
+      "full_text_source_url": "",
+      "full_text_source_type": "",
+      "full_text_excerpt": ""
     },
     {
       "id": "W2001469931",
@@ -2846,7 +3156,12 @@
       "edge_types": [
         "backward",
         "forward"
-      ]
+      ],
+      "full_text_cached": false,
+      "full_text_char_count": 0,
+      "full_text_source_url": "",
+      "full_text_source_type": "",
+      "full_text_excerpt": ""
     },
     {
       "id": "W2007377366",
@@ -2890,7 +3205,12 @@
       "edge_types": [
         "backward",
         "forward"
-      ]
+      ],
+      "full_text_cached": false,
+      "full_text_char_count": 0,
+      "full_text_source_url": "",
+      "full_text_source_type": "",
+      "full_text_excerpt": ""
     },
     {
       "id": "W2010793828",
@@ -2929,7 +3249,12 @@
       ],
       "edge_types": [
         "backward"
-      ]
+      ],
+      "full_text_cached": false,
+      "full_text_char_count": 0,
+      "full_text_source_url": "",
+      "full_text_source_type": "",
+      "full_text_excerpt": ""
     },
     {
       "id": "W2015040676",
@@ -2973,7 +3298,12 @@
       "edge_types": [
         "backward",
         "forward"
-      ]
+      ],
+      "full_text_cached": false,
+      "full_text_char_count": 0,
+      "full_text_source_url": "",
+      "full_text_source_type": "",
+      "full_text_excerpt": ""
     },
     {
       "id": "W2016288462",
@@ -3018,7 +3348,12 @@
       ],
       "edge_types": [
         "backward"
-      ]
+      ],
+      "full_text_cached": false,
+      "full_text_char_count": 0,
+      "full_text_source_url": "",
+      "full_text_source_type": "",
+      "full_text_excerpt": ""
     },
     {
       "id": "W2020229731",
@@ -3059,7 +3394,12 @@
       ],
       "edge_types": [
         "forward"
-      ]
+      ],
+      "full_text_cached": false,
+      "full_text_char_count": 0,
+      "full_text_source_url": "",
+      "full_text_source_type": "",
+      "full_text_excerpt": ""
     },
     {
       "id": "W2027429247",
@@ -3103,7 +3443,12 @@
       "edge_types": [
         "backward",
         "forward"
-      ]
+      ],
+      "full_text_cached": false,
+      "full_text_char_count": 0,
+      "full_text_source_url": "",
+      "full_text_source_type": "",
+      "full_text_excerpt": ""
     },
     {
       "id": "W2027711578",
@@ -3146,7 +3491,12 @@
       ],
       "edge_types": [
         "backward"
-      ]
+      ],
+      "full_text_cached": false,
+      "full_text_char_count": 0,
+      "full_text_source_url": "",
+      "full_text_source_type": "",
+      "full_text_excerpt": ""
     },
     {
       "id": "W2032267485",
@@ -3192,7 +3542,12 @@
       "edge_types": [
         "backward",
         "forward"
-      ]
+      ],
+      "full_text_cached": false,
+      "full_text_char_count": 0,
+      "full_text_source_url": "",
+      "full_text_source_type": "",
+      "full_text_excerpt": ""
     },
     {
       "id": "W2045300586",
@@ -3233,7 +3588,12 @@
       ],
       "edge_types": [
         "backward"
-      ]
+      ],
+      "full_text_cached": false,
+      "full_text_char_count": 0,
+      "full_text_source_url": "",
+      "full_text_source_type": "",
+      "full_text_excerpt": ""
     },
     {
       "id": "W2046109394",
@@ -3277,7 +3637,12 @@
       "edge_types": [
         "backward",
         "forward"
-      ]
+      ],
+      "full_text_cached": false,
+      "full_text_char_count": 0,
+      "full_text_source_url": "",
+      "full_text_source_type": "",
+      "full_text_excerpt": ""
     },
     {
       "id": "W2060045074",
@@ -3323,7 +3688,12 @@
       "edge_types": [
         "backward",
         "forward"
-      ]
+      ],
+      "full_text_cached": false,
+      "full_text_char_count": 0,
+      "full_text_source_url": "",
+      "full_text_source_type": "",
+      "full_text_excerpt": ""
     },
     {
       "id": "W2060642394",
@@ -3364,7 +3734,12 @@
       ],
       "edge_types": [
         "backward"
-      ]
+      ],
+      "full_text_cached": false,
+      "full_text_char_count": 0,
+      "full_text_source_url": "",
+      "full_text_source_type": "",
+      "full_text_excerpt": ""
     },
     {
       "id": "W2069322390",
@@ -3406,7 +3781,12 @@
       "edge_types": [
         "backward",
         "forward"
-      ]
+      ],
+      "full_text_cached": false,
+      "full_text_char_count": 0,
+      "full_text_source_url": "",
+      "full_text_source_type": "",
+      "full_text_excerpt": ""
     },
     {
       "id": "W2071476613",
@@ -3450,7 +3830,12 @@
       "edge_types": [
         "backward",
         "forward"
-      ]
+      ],
+      "full_text_cached": false,
+      "full_text_char_count": 0,
+      "full_text_source_url": "",
+      "full_text_source_type": "",
+      "full_text_excerpt": ""
     },
     {
       "id": "W2078428840",
@@ -3494,7 +3879,12 @@
       "edge_types": [
         "backward",
         "forward"
-      ]
+      ],
+      "full_text_cached": false,
+      "full_text_char_count": 0,
+      "full_text_source_url": "",
+      "full_text_source_type": "",
+      "full_text_excerpt": ""
     },
     {
       "id": "W2078482049",
@@ -3538,7 +3928,12 @@
       "edge_types": [
         "backward",
         "forward"
-      ]
+      ],
+      "full_text_cached": false,
+      "full_text_char_count": 0,
+      "full_text_source_url": "",
+      "full_text_source_type": "",
+      "full_text_excerpt": ""
     },
     {
       "id": "W2081811286",
@@ -3582,7 +3977,12 @@
       "edge_types": [
         "backward",
         "forward"
-      ]
+      ],
+      "full_text_cached": false,
+      "full_text_char_count": 0,
+      "full_text_source_url": "",
+      "full_text_source_type": "",
+      "full_text_excerpt": ""
     },
     {
       "id": "W2083133776",
@@ -3623,7 +4023,12 @@
       ],
       "edge_types": [
         "backward"
-      ]
+      ],
+      "full_text_cached": false,
+      "full_text_char_count": 0,
+      "full_text_source_url": "",
+      "full_text_source_type": "",
+      "full_text_excerpt": ""
     },
     {
       "id": "W2088730954",
@@ -3667,7 +4072,12 @@
       "edge_types": [
         "backward",
         "forward"
-      ]
+      ],
+      "full_text_cached": false,
+      "full_text_char_count": 0,
+      "full_text_source_url": "",
+      "full_text_source_type": "",
+      "full_text_excerpt": ""
     },
     {
       "id": "W2091785129",
@@ -3710,7 +4120,12 @@
       ],
       "edge_types": [
         "backward"
-      ]
+      ],
+      "full_text_cached": false,
+      "full_text_char_count": 0,
+      "full_text_source_url": "",
+      "full_text_source_type": "",
+      "full_text_excerpt": ""
     },
     {
       "id": "W2094192576",
@@ -3751,7 +4166,12 @@
       ],
       "edge_types": [
         "backward"
-      ]
+      ],
+      "full_text_cached": false,
+      "full_text_char_count": 0,
+      "full_text_source_url": "",
+      "full_text_source_type": "",
+      "full_text_excerpt": ""
     },
     {
       "id": "W2095371090",
@@ -3792,7 +4212,12 @@
       ],
       "edge_types": [
         "backward"
-      ]
+      ],
+      "full_text_cached": false,
+      "full_text_char_count": 0,
+      "full_text_source_url": "",
+      "full_text_source_type": "",
+      "full_text_excerpt": ""
     },
     {
       "id": "W2099013648",
@@ -3833,7 +4258,12 @@
       ],
       "edge_types": [
         "backward"
-      ]
+      ],
+      "full_text_cached": false,
+      "full_text_char_count": 0,
+      "full_text_source_url": "",
+      "full_text_source_type": "",
+      "full_text_excerpt": ""
     },
     {
       "id": "W2104732510",
@@ -3874,7 +4304,12 @@
       ],
       "edge_types": [
         "backward"
-      ]
+      ],
+      "full_text_cached": false,
+      "full_text_char_count": 0,
+      "full_text_source_url": "",
+      "full_text_source_type": "",
+      "full_text_excerpt": ""
     },
     {
       "id": "W2106779500",
@@ -3922,7 +4357,12 @@
       "edge_types": [
         "backward",
         "forward"
-      ]
+      ],
+      "full_text_cached": false,
+      "full_text_char_count": 0,
+      "full_text_source_url": "",
+      "full_text_source_type": "",
+      "full_text_excerpt": ""
     },
     {
       "id": "W2108606031",
@@ -3966,7 +4406,12 @@
       "edge_types": [
         "backward",
         "forward"
-      ]
+      ],
+      "full_text_cached": false,
+      "full_text_char_count": 0,
+      "full_text_source_url": "",
+      "full_text_source_type": "",
+      "full_text_excerpt": ""
     },
     {
       "id": "W2112564774",
@@ -4010,7 +4455,12 @@
       "edge_types": [
         "backward",
         "forward"
-      ]
+      ],
+      "full_text_cached": false,
+      "full_text_char_count": 0,
+      "full_text_source_url": "",
+      "full_text_source_type": "",
+      "full_text_excerpt": ""
     },
     {
       "id": "W2113476921",
@@ -4054,7 +4504,12 @@
       "edge_types": [
         "backward",
         "forward"
-      ]
+      ],
+      "full_text_cached": false,
+      "full_text_char_count": 0,
+      "full_text_source_url": "",
+      "full_text_source_type": "",
+      "full_text_excerpt": ""
     },
     {
       "id": "W2116669434",
@@ -4098,7 +4553,12 @@
       "edge_types": [
         "backward",
         "forward"
-      ]
+      ],
+      "full_text_cached": false,
+      "full_text_char_count": 0,
+      "full_text_source_url": "",
+      "full_text_source_type": "",
+      "full_text_excerpt": ""
     },
     {
       "id": "W2122423127",
@@ -4140,7 +4600,12 @@
       "edge_types": [
         "backward",
         "forward"
-      ]
+      ],
+      "full_text_cached": false,
+      "full_text_char_count": 0,
+      "full_text_source_url": "",
+      "full_text_source_type": "",
+      "full_text_excerpt": ""
     },
     {
       "id": "W2124868162",
@@ -4181,7 +4646,12 @@
       ],
       "edge_types": [
         "backward"
-      ]
+      ],
+      "full_text_cached": false,
+      "full_text_char_count": 0,
+      "full_text_source_url": "",
+      "full_text_source_type": "",
+      "full_text_excerpt": ""
     },
     {
       "id": "W2128365310",
@@ -4222,7 +4692,12 @@
       ],
       "edge_types": [
         "backward"
-      ]
+      ],
+      "full_text_cached": false,
+      "full_text_char_count": 0,
+      "full_text_source_url": "",
+      "full_text_source_type": "",
+      "full_text_excerpt": ""
     },
     {
       "id": "W2130000957",
@@ -4263,7 +4738,12 @@
       ],
       "edge_types": [
         "backward"
-      ]
+      ],
+      "full_text_cached": false,
+      "full_text_char_count": 0,
+      "full_text_source_url": "",
+      "full_text_source_type": "",
+      "full_text_excerpt": ""
     },
     {
       "id": "W2131057562",
@@ -4309,7 +4789,12 @@
       "edge_types": [
         "backward",
         "forward"
-      ]
+      ],
+      "full_text_cached": false,
+      "full_text_char_count": 0,
+      "full_text_source_url": "",
+      "full_text_source_type": "",
+      "full_text_excerpt": ""
     },
     {
       "id": "W2133705455",
@@ -4350,7 +4835,12 @@
       ],
       "edge_types": [
         "backward"
-      ]
+      ],
+      "full_text_cached": false,
+      "full_text_char_count": 0,
+      "full_text_source_url": "",
+      "full_text_source_type": "",
+      "full_text_excerpt": ""
     },
     {
       "id": "W2134907585",
@@ -4391,7 +4881,12 @@
       ],
       "edge_types": [
         "backward"
-      ]
+      ],
+      "full_text_cached": false,
+      "full_text_char_count": 0,
+      "full_text_source_url": "",
+      "full_text_source_type": "",
+      "full_text_excerpt": ""
     },
     {
       "id": "W2140995456",
@@ -4435,7 +4930,12 @@
       "edge_types": [
         "backward",
         "forward"
-      ]
+      ],
+      "full_text_cached": false,
+      "full_text_char_count": 0,
+      "full_text_source_url": "",
+      "full_text_source_type": "",
+      "full_text_excerpt": ""
     },
     {
       "id": "W2143963523",
@@ -4479,7 +4979,12 @@
       "edge_types": [
         "backward",
         "forward"
-      ]
+      ],
+      "full_text_cached": false,
+      "full_text_char_count": 0,
+      "full_text_source_url": "",
+      "full_text_source_type": "",
+      "full_text_excerpt": ""
     },
     {
       "id": "W2145560170",
@@ -4520,7 +5025,12 @@
       ],
       "edge_types": [
         "backward"
-      ]
+      ],
+      "full_text_cached": false,
+      "full_text_char_count": 0,
+      "full_text_source_url": "",
+      "full_text_source_type": "",
+      "full_text_excerpt": ""
     },
     {
       "id": "W2147435888",
@@ -4564,7 +5074,12 @@
       "edge_types": [
         "backward",
         "forward"
-      ]
+      ],
+      "full_text_cached": false,
+      "full_text_char_count": 0,
+      "full_text_source_url": "",
+      "full_text_source_type": "",
+      "full_text_excerpt": ""
     },
     {
       "id": "W2147763969",
@@ -4605,7 +5120,12 @@
       ],
       "edge_types": [
         "backward"
-      ]
+      ],
+      "full_text_cached": false,
+      "full_text_char_count": 0,
+      "full_text_source_url": "",
+      "full_text_source_type": "",
+      "full_text_excerpt": ""
     },
     {
       "id": "W2150415683",
@@ -4647,7 +5167,12 @@
       "edge_types": [
         "backward",
         "forward"
-      ]
+      ],
+      "full_text_cached": false,
+      "full_text_char_count": 0,
+      "full_text_source_url": "",
+      "full_text_source_type": "",
+      "full_text_excerpt": ""
     },
     {
       "id": "W2158241055",
@@ -4688,7 +5213,12 @@
       ],
       "edge_types": [
         "backward"
-      ]
+      ],
+      "full_text_cached": false,
+      "full_text_char_count": 0,
+      "full_text_source_url": "",
+      "full_text_source_type": "",
+      "full_text_excerpt": ""
     },
     {
       "id": "W2164599981",
@@ -4729,7 +5259,12 @@
       ],
       "edge_types": [
         "backward"
-      ]
+      ],
+      "full_text_cached": false,
+      "full_text_char_count": 0,
+      "full_text_source_url": "",
+      "full_text_source_type": "",
+      "full_text_excerpt": ""
     },
     {
       "id": "W2293509135",
@@ -4771,7 +5306,12 @@
       "edge_types": [
         "backward",
         "forward"
-      ]
+      ],
+      "full_text_cached": false,
+      "full_text_char_count": 0,
+      "full_text_source_url": "",
+      "full_text_source_type": "",
+      "full_text_excerpt": ""
     },
     {
       "id": "W2594908799",
@@ -4812,7 +5352,12 @@
       ],
       "edge_types": [
         "backward"
-      ]
+      ],
+      "full_text_cached": false,
+      "full_text_char_count": 0,
+      "full_text_source_url": "",
+      "full_text_source_type": "",
+      "full_text_excerpt": ""
     },
     {
       "id": "W2912828701",
@@ -4853,7 +5398,12 @@
       ],
       "edge_types": [
         "backward"
-      ]
+      ],
+      "full_text_cached": false,
+      "full_text_char_count": 0,
+      "full_text_source_url": "",
+      "full_text_source_type": "",
+      "full_text_excerpt": ""
     },
     {
       "id": "W2993450401",
@@ -4895,7 +5445,12 @@
       "edge_types": [
         "backward",
         "forward"
-      ]
+      ],
+      "full_text_cached": false,
+      "full_text_char_count": 0,
+      "full_text_source_url": "",
+      "full_text_source_type": "",
+      "full_text_excerpt": ""
     },
     {
       "id": "W3128690923",
@@ -4942,7 +5497,12 @@
       ],
       "edge_types": [
         "backward"
-      ]
+      ],
+      "full_text_cached": false,
+      "full_text_char_count": 0,
+      "full_text_source_url": "",
+      "full_text_source_type": "",
+      "full_text_excerpt": ""
     },
     {
       "id": "W3146115948",
@@ -4983,7 +5543,12 @@
       ],
       "edge_types": [
         "backward"
-      ]
+      ],
+      "full_text_cached": false,
+      "full_text_char_count": 0,
+      "full_text_source_url": "",
+      "full_text_source_type": "",
+      "full_text_excerpt": ""
     },
     {
       "id": "W4231434309",
@@ -5026,7 +5591,12 @@
       ],
       "edge_types": [
         "backward"
-      ]
+      ],
+      "full_text_cached": false,
+      "full_text_char_count": 0,
+      "full_text_source_url": "",
+      "full_text_source_type": "",
+      "full_text_excerpt": ""
     },
     {
       "id": "W4243420394",
@@ -5067,7 +5637,12 @@
       ],
       "edge_types": [
         "backward"
-      ]
+      ],
+      "full_text_cached": false,
+      "full_text_char_count": 0,
+      "full_text_source_url": "",
+      "full_text_source_type": "",
+      "full_text_excerpt": ""
     },
     {
       "id": "W4245961435",
@@ -5108,7 +5683,12 @@
       ],
       "edge_types": [
         "backward"
-      ]
+      ],
+      "full_text_cached": false,
+      "full_text_char_count": 0,
+      "full_text_source_url": "",
+      "full_text_source_type": "",
+      "full_text_excerpt": ""
     },
     {
       "id": "W4302282158",
@@ -5149,7 +5729,12 @@
       ],
       "edge_types": [
         "forward"
-      ]
+      ],
+      "full_text_cached": false,
+      "full_text_char_count": 0,
+      "full_text_source_url": "",
+      "full_text_source_type": "",
+      "full_text_excerpt": ""
     },
     {
       "id": "W568024311",
@@ -5202,7 +5787,12 @@
       ],
       "edge_types": [
         "backward"
-      ]
+      ],
+      "full_text_cached": false,
+      "full_text_char_count": 0,
+      "full_text_source_url": "",
+      "full_text_source_type": "",
+      "full_text_excerpt": ""
     },
     {
       "id": "W109702185",
@@ -5242,7 +5832,12 @@
       ],
       "edge_types": [
         "backward"
-      ]
+      ],
+      "full_text_cached": false,
+      "full_text_char_count": 0,
+      "full_text_source_url": "",
+      "full_text_source_type": "",
+      "full_text_excerpt": ""
     },
     {
       "id": "W124870434",
@@ -5282,7 +5877,12 @@
       ],
       "edge_types": [
         "backward"
-      ]
+      ],
+      "full_text_cached": false,
+      "full_text_char_count": 0,
+      "full_text_source_url": "",
+      "full_text_source_type": "",
+      "full_text_excerpt": ""
     },
     {
       "id": "W131038430",
@@ -5322,7 +5922,12 @@
       ],
       "edge_types": [
         "backward"
-      ]
+      ],
+      "full_text_cached": false,
+      "full_text_char_count": 0,
+      "full_text_source_url": "",
+      "full_text_source_type": "",
+      "full_text_excerpt": ""
     },
     {
       "id": "W13581958",
@@ -5362,7 +5967,12 @@
       ],
       "edge_types": [
         "backward"
-      ]
+      ],
+      "full_text_cached": false,
+      "full_text_char_count": 0,
+      "full_text_source_url": "",
+      "full_text_source_type": "",
+      "full_text_excerpt": ""
     },
     {
       "id": "W143118477",
@@ -5402,7 +6012,12 @@
       ],
       "edge_types": [
         "backward"
-      ]
+      ],
+      "full_text_cached": false,
+      "full_text_char_count": 0,
+      "full_text_source_url": "",
+      "full_text_source_type": "",
+      "full_text_excerpt": ""
     },
     {
       "id": "W14377909",
@@ -5442,7 +6057,12 @@
       ],
       "edge_types": [
         "backward"
-      ]
+      ],
+      "full_text_cached": false,
+      "full_text_char_count": 0,
+      "full_text_source_url": "",
+      "full_text_source_type": "",
+      "full_text_excerpt": ""
     },
     {
       "id": "W144248838",
@@ -5482,7 +6102,12 @@
       ],
       "edge_types": [
         "backward"
-      ]
+      ],
+      "full_text_cached": false,
+      "full_text_char_count": 0,
+      "full_text_source_url": "",
+      "full_text_source_type": "",
+      "full_text_excerpt": ""
     },
     {
       "id": "W14494740",
@@ -5522,7 +6147,12 @@
       ],
       "edge_types": [
         "backward"
-      ]
+      ],
+      "full_text_cached": false,
+      "full_text_char_count": 0,
+      "full_text_source_url": "",
+      "full_text_source_type": "",
+      "full_text_excerpt": ""
     },
     {
       "id": "W1483155202",
@@ -5562,7 +6192,12 @@
       ],
       "edge_types": [
         "backward"
-      ]
+      ],
+      "full_text_cached": false,
+      "full_text_char_count": 0,
+      "full_text_source_url": "",
+      "full_text_source_type": "",
+      "full_text_excerpt": ""
     },
     {
       "id": "W1483580517",
@@ -5602,7 +6237,12 @@
       ],
       "edge_types": [
         "forward"
-      ]
+      ],
+      "full_text_cached": false,
+      "full_text_char_count": 0,
+      "full_text_source_url": "",
+      "full_text_source_type": "",
+      "full_text_excerpt": ""
     },
     {
       "id": "W1488133941",
@@ -5644,7 +6284,12 @@
       ],
       "edge_types": [
         "backward"
-      ]
+      ],
+      "full_text_cached": false,
+      "full_text_char_count": 0,
+      "full_text_source_url": "",
+      "full_text_source_type": "",
+      "full_text_excerpt": ""
     },
     {
       "id": "W1490094820",
@@ -5684,7 +6329,12 @@
       ],
       "edge_types": [
         "backward"
-      ]
+      ],
+      "full_text_cached": false,
+      "full_text_char_count": 0,
+      "full_text_source_url": "",
+      "full_text_source_type": "",
+      "full_text_excerpt": ""
     },
     {
       "id": "W1490935989",
@@ -5726,7 +6376,12 @@
       ],
       "edge_types": [
         "forward"
-      ]
+      ],
+      "full_text_cached": false,
+      "full_text_char_count": 0,
+      "full_text_source_url": "",
+      "full_text_source_type": "",
+      "full_text_excerpt": ""
     },
     {
       "id": "W1492518088",
@@ -5770,7 +6425,12 @@
       ],
       "edge_types": [
         "backward"
-      ]
+      ],
+      "full_text_cached": false,
+      "full_text_char_count": 0,
+      "full_text_source_url": "",
+      "full_text_source_type": "",
+      "full_text_excerpt": ""
     },
     {
       "id": "W1498993769",
@@ -5810,7 +6470,12 @@
       ],
       "edge_types": [
         "backward"
-      ]
+      ],
+      "full_text_cached": false,
+      "full_text_char_count": 0,
+      "full_text_source_url": "",
+      "full_text_source_type": "",
+      "full_text_excerpt": ""
     },
     {
       "id": "W1501218279",
@@ -5850,7 +6515,12 @@
       ],
       "edge_types": [
         "backward"
-      ]
+      ],
+      "full_text_cached": false,
+      "full_text_char_count": 0,
+      "full_text_source_url": "",
+      "full_text_source_type": "",
+      "full_text_excerpt": ""
     },
     {
       "id": "W1504261278",
@@ -5890,7 +6560,12 @@
       ],
       "edge_types": [
         "backward"
-      ]
+      ],
+      "full_text_cached": false,
+      "full_text_char_count": 0,
+      "full_text_source_url": "",
+      "full_text_source_type": "",
+      "full_text_excerpt": ""
     },
     {
       "id": "W1510397660",
@@ -5935,7 +6610,12 @@
       "edge_types": [
         "backward",
         "forward"
-      ]
+      ],
+      "full_text_cached": false,
+      "full_text_char_count": 0,
+      "full_text_source_url": "",
+      "full_text_source_type": "",
+      "full_text_excerpt": ""
     },
     {
       "id": "W1512657631",
@@ -5975,7 +6655,12 @@
       ],
       "edge_types": [
         "backward"
-      ]
+      ],
+      "full_text_cached": false,
+      "full_text_char_count": 0,
+      "full_text_source_url": "",
+      "full_text_source_type": "",
+      "full_text_excerpt": ""
     },
     {
       "id": "W1515294235",
@@ -6015,7 +6700,12 @@
       ],
       "edge_types": [
         "backward"
-      ]
+      ],
+      "full_text_cached": false,
+      "full_text_char_count": 0,
+      "full_text_source_url": "",
+      "full_text_source_type": "",
+      "full_text_excerpt": ""
     },
     {
       "id": "W1523179845",
@@ -6055,7 +6745,12 @@
       ],
       "edge_types": [
         "backward"
-      ]
+      ],
+      "full_text_cached": false,
+      "full_text_char_count": 0,
+      "full_text_source_url": "",
+      "full_text_source_type": "",
+      "full_text_excerpt": ""
     },
     {
       "id": "W152487190",
@@ -6095,7 +6790,12 @@
       ],
       "edge_types": [
         "backward"
-      ]
+      ],
+      "full_text_cached": false,
+      "full_text_char_count": 0,
+      "full_text_source_url": "",
+      "full_text_source_type": "",
+      "full_text_excerpt": ""
     },
     {
       "id": "W1524917549",
@@ -6144,7 +6844,12 @@
       "edge_types": [
         "backward",
         "forward"
-      ]
+      ],
+      "full_text_cached": false,
+      "full_text_char_count": 0,
+      "full_text_source_url": "",
+      "full_text_source_type": "",
+      "full_text_excerpt": ""
     },
     {
       "id": "W1529024143",
@@ -6184,7 +6889,12 @@
       ],
       "edge_types": [
         "backward"
-      ]
+      ],
+      "full_text_cached": false,
+      "full_text_char_count": 0,
+      "full_text_source_url": "",
+      "full_text_source_type": "",
+      "full_text_excerpt": ""
     },
     {
       "id": "W1529098247",
@@ -6226,7 +6936,12 @@
       ],
       "edge_types": [
         "forward"
-      ]
+      ],
+      "full_text_cached": false,
+      "full_text_char_count": 0,
+      "full_text_source_url": "",
+      "full_text_source_type": "",
+      "full_text_excerpt": ""
     },
     {
       "id": "W1532689176",
@@ -6266,7 +6981,12 @@
       ],
       "edge_types": [
         "backward"
-      ]
+      ],
+      "full_text_cached": false,
+      "full_text_char_count": 0,
+      "full_text_source_url": "",
+      "full_text_source_type": "",
+      "full_text_excerpt": ""
     },
     {
       "id": "W1535782774",
@@ -6306,7 +7026,12 @@
       ],
       "edge_types": [
         "backward"
-      ]
+      ],
+      "full_text_cached": false,
+      "full_text_char_count": 0,
+      "full_text_source_url": "",
+      "full_text_source_type": "",
+      "full_text_excerpt": ""
     },
     {
       "id": "W1539706247",
@@ -6346,7 +7071,12 @@
       ],
       "edge_types": [
         "backward"
-      ]
+      ],
+      "full_text_cached": false,
+      "full_text_char_count": 0,
+      "full_text_source_url": "",
+      "full_text_source_type": "",
+      "full_text_excerpt": ""
     },
     {
       "id": "W1559417428",
@@ -6384,7 +7114,12 @@
       ],
       "edge_types": [
         "backward"
-      ]
+      ],
+      "full_text_cached": false,
+      "full_text_char_count": 0,
+      "full_text_source_url": "",
+      "full_text_source_type": "",
+      "full_text_excerpt": ""
     },
     {
       "id": "W1562975070",
@@ -6424,7 +7159,12 @@
       ],
       "edge_types": [
         "backward"
-      ]
+      ],
+      "full_text_cached": false,
+      "full_text_char_count": 0,
+      "full_text_source_url": "",
+      "full_text_source_type": "",
+      "full_text_excerpt": ""
     },
     {
       "id": "W1564750093",
@@ -6464,7 +7204,12 @@
       ],
       "edge_types": [
         "backward"
-      ]
+      ],
+      "full_text_cached": false,
+      "full_text_char_count": 0,
+      "full_text_source_url": "",
+      "full_text_source_type": "",
+      "full_text_excerpt": ""
     },
     {
       "id": "W1566499617",
@@ -6504,7 +7249,12 @@
       ],
       "edge_types": [
         "backward"
-      ]
+      ],
+      "full_text_cached": false,
+      "full_text_char_count": 0,
+      "full_text_source_url": "",
+      "full_text_source_type": "",
+      "full_text_excerpt": ""
     },
     {
       "id": "W1570448133",
@@ -6544,7 +7294,12 @@
       ],
       "edge_types": [
         "backward"
-      ]
+      ],
+      "full_text_cached": false,
+      "full_text_char_count": 0,
+      "full_text_source_url": "",
+      "full_text_source_type": "",
+      "full_text_excerpt": ""
     },
     {
       "id": "W157663540",
@@ -6584,7 +7339,12 @@
       ],
       "edge_types": [
         "backward"
-      ]
+      ],
+      "full_text_cached": false,
+      "full_text_char_count": 0,
+      "full_text_source_url": "",
+      "full_text_source_type": "",
+      "full_text_excerpt": ""
     },
     {
       "id": "W1577088816",
@@ -6626,7 +7386,12 @@
       ],
       "edge_types": [
         "backward"
-      ]
+      ],
+      "full_text_cached": false,
+      "full_text_char_count": 0,
+      "full_text_source_url": "",
+      "full_text_source_type": "",
+      "full_text_excerpt": ""
     },
     {
       "id": "W1581376112",
@@ -6664,7 +7429,12 @@
       ],
       "edge_types": [
         "backward"
-      ]
+      ],
+      "full_text_cached": false,
+      "full_text_char_count": 0,
+      "full_text_source_url": "",
+      "full_text_source_type": "",
+      "full_text_excerpt": ""
     },
     {
       "id": "W1598222101",
@@ -6704,7 +7474,12 @@
       ],
       "edge_types": [
         "backward"
-      ]
+      ],
+      "full_text_cached": false,
+      "full_text_char_count": 0,
+      "full_text_source_url": "",
+      "full_text_source_type": "",
+      "full_text_excerpt": ""
     },
     {
       "id": "W1607666861",
@@ -6748,7 +7523,12 @@
       ],
       "edge_types": [
         "backward"
-      ]
+      ],
+      "full_text_cached": false,
+      "full_text_char_count": 0,
+      "full_text_source_url": "",
+      "full_text_source_type": "",
+      "full_text_excerpt": ""
     },
     {
       "id": "W1612541191",
@@ -6790,7 +7570,12 @@
       ],
       "edge_types": [
         "backward"
-      ]
+      ],
+      "full_text_cached": false,
+      "full_text_char_count": 0,
+      "full_text_source_url": "",
+      "full_text_source_type": "",
+      "full_text_excerpt": ""
     },
     {
       "id": "W1633170972",
@@ -6830,7 +7615,12 @@
       ],
       "edge_types": [
         "backward"
-      ]
+      ],
+      "full_text_cached": false,
+      "full_text_char_count": 0,
+      "full_text_source_url": "",
+      "full_text_source_type": "",
+      "full_text_excerpt": ""
     },
     {
       "id": "W1660123436",
@@ -6870,7 +7660,12 @@
       ],
       "edge_types": [
         "backward"
-      ]
+      ],
+      "full_text_cached": false,
+      "full_text_char_count": 0,
+      "full_text_source_url": "",
+      "full_text_source_type": "",
+      "full_text_excerpt": ""
     },
     {
       "id": "W1674947250",
@@ -6910,7 +7705,12 @@
       ],
       "edge_types": [
         "backward"
-      ]
+      ],
+      "full_text_cached": false,
+      "full_text_char_count": 0,
+      "full_text_source_url": "",
+      "full_text_source_type": "",
+      "full_text_excerpt": ""
     },
     {
       "id": "W1679907412",
@@ -6950,7 +7750,12 @@
       ],
       "edge_types": [
         "backward"
-      ]
+      ],
+      "full_text_cached": false,
+      "full_text_char_count": 0,
+      "full_text_source_url": "",
+      "full_text_source_type": "",
+      "full_text_excerpt": ""
     },
     {
       "id": "W172563333",
@@ -6990,7 +7795,12 @@
       ],
       "edge_types": [
         "backward"
-      ]
+      ],
+      "full_text_cached": false,
+      "full_text_char_count": 0,
+      "full_text_source_url": "",
+      "full_text_source_type": "",
+      "full_text_excerpt": ""
     },
     {
       "id": "W1758863888",
@@ -7030,7 +7840,12 @@
       ],
       "edge_types": [
         "backward"
-      ]
+      ],
+      "full_text_cached": false,
+      "full_text_char_count": 0,
+      "full_text_source_url": "",
+      "full_text_source_type": "",
+      "full_text_excerpt": ""
     },
     {
       "id": "W1806683521",
@@ -7070,7 +7885,12 @@
       ],
       "edge_types": [
         "backward"
-      ]
+      ],
+      "full_text_cached": false,
+      "full_text_char_count": 0,
+      "full_text_source_url": "",
+      "full_text_source_type": "",
+      "full_text_excerpt": ""
     },
     {
       "id": "W1813811056",
@@ -7114,7 +7934,12 @@
       ],
       "edge_types": [
         "backward"
-      ]
+      ],
+      "full_text_cached": false,
+      "full_text_char_count": 0,
+      "full_text_source_url": "",
+      "full_text_source_type": "",
+      "full_text_excerpt": ""
     },
     {
       "id": "W1823967723",
@@ -7156,7 +7981,12 @@
       ],
       "edge_types": [
         "forward"
-      ]
+      ],
+      "full_text_cached": false,
+      "full_text_char_count": 0,
+      "full_text_source_url": "",
+      "full_text_source_type": "",
+      "full_text_excerpt": ""
     },
     {
       "id": "W1898103075",
@@ -7202,7 +8032,12 @@
       ],
       "edge_types": [
         "forward"
-      ]
+      ],
+      "full_text_cached": false,
+      "full_text_char_count": 0,
+      "full_text_source_url": "",
+      "full_text_source_type": "",
+      "full_text_excerpt": ""
     },
     {
       "id": "W1911642898",
@@ -7242,7 +8077,12 @@
       ],
       "edge_types": [
         "forward"
-      ]
+      ],
+      "full_text_cached": false,
+      "full_text_char_count": 0,
+      "full_text_source_url": "",
+      "full_text_source_type": "",
+      "full_text_excerpt": ""
     },
     {
       "id": "W192680528",
@@ -7279,7 +8119,12 @@
       "edge_types": [
         "backward",
         "forward"
-      ]
+      ],
+      "full_text_cached": false,
+      "full_text_char_count": 0,
+      "full_text_source_url": "",
+      "full_text_source_type": "",
+      "full_text_excerpt": ""
     },
     {
       "id": "W1963811932",
@@ -7319,7 +8164,12 @@
       ],
       "edge_types": [
         "backward"
-      ]
+      ],
+      "full_text_cached": false,
+      "full_text_char_count": 0,
+      "full_text_source_url": "",
+      "full_text_source_type": "",
+      "full_text_excerpt": ""
     },
     {
       "id": "W1964499255",
@@ -7359,7 +8209,12 @@
       ],
       "edge_types": [
         "forward"
-      ]
+      ],
+      "full_text_cached": false,
+      "full_text_char_count": 0,
+      "full_text_source_url": "",
+      "full_text_source_type": "",
+      "full_text_excerpt": ""
     },
     {
       "id": "W1964716415",
@@ -7404,7 +8259,12 @@
       "edge_types": [
         "backward",
         "forward"
-      ]
+      ],
+      "full_text_cached": false,
+      "full_text_char_count": 0,
+      "full_text_source_url": "",
+      "full_text_source_type": "",
+      "full_text_excerpt": ""
     },
     {
       "id": "W1968199915",
@@ -7444,7 +8304,12 @@
       ],
       "edge_types": [
         "backward"
-      ]
+      ],
+      "full_text_cached": false,
+      "full_text_char_count": 0,
+      "full_text_source_url": "",
+      "full_text_source_type": "",
+      "full_text_excerpt": ""
     },
     {
       "id": "W1968466673",
@@ -7488,7 +8353,12 @@
       ],
       "edge_types": [
         "backward"
-      ]
+      ],
+      "full_text_cached": false,
+      "full_text_char_count": 0,
+      "full_text_source_url": "",
+      "full_text_source_type": "",
+      "full_text_excerpt": ""
     },
     {
       "id": "W1969129312",
@@ -7528,7 +8398,12 @@
       ],
       "edge_types": [
         "backward"
-      ]
+      ],
+      "full_text_cached": false,
+      "full_text_char_count": 0,
+      "full_text_source_url": "",
+      "full_text_source_type": "",
+      "full_text_excerpt": ""
     },
     {
       "id": "W1969658372",
@@ -7568,7 +8443,12 @@
       ],
       "edge_types": [
         "backward"
-      ]
+      ],
+      "full_text_cached": false,
+      "full_text_char_count": 0,
+      "full_text_source_url": "",
+      "full_text_source_type": "",
+      "full_text_excerpt": ""
     },
     {
       "id": "W1971746982",
@@ -7609,7 +8489,12 @@
       "edge_types": [
         "backward",
         "forward"
-      ]
+      ],
+      "full_text_cached": false,
+      "full_text_char_count": 0,
+      "full_text_source_url": "",
+      "full_text_source_type": "",
+      "full_text_excerpt": ""
     },
     {
       "id": "W1972905956",
@@ -7656,7 +8541,12 @@
       "edge_types": [
         "backward",
         "forward"
-      ]
+      ],
+      "full_text_cached": false,
+      "full_text_char_count": 0,
+      "full_text_source_url": "",
+      "full_text_source_type": "",
+      "full_text_excerpt": ""
     },
     {
       "id": "W1976518595",
@@ -7696,7 +8586,12 @@
       ],
       "edge_types": [
         "backward"
-      ]
+      ],
+      "full_text_cached": false,
+      "full_text_char_count": 0,
+      "full_text_source_url": "",
+      "full_text_source_type": "",
+      "full_text_excerpt": ""
     },
     {
       "id": "W1976637107",
@@ -7737,7 +8632,12 @@
       "edge_types": [
         "backward",
         "forward"
-      ]
+      ],
+      "full_text_cached": false,
+      "full_text_char_count": 0,
+      "full_text_source_url": "",
+      "full_text_source_type": "",
+      "full_text_excerpt": ""
     },
     {
       "id": "W1977196850",
@@ -7777,7 +8677,12 @@
       ],
       "edge_types": [
         "backward"
-      ]
+      ],
+      "full_text_cached": false,
+      "full_text_char_count": 0,
+      "full_text_source_url": "",
+      "full_text_source_type": "",
+      "full_text_excerpt": ""
     },
     {
       "id": "W1979627663",
@@ -7817,7 +8722,12 @@
       ],
       "edge_types": [
         "backward"
-      ]
+      ],
+      "full_text_cached": false,
+      "full_text_char_count": 0,
+      "full_text_source_url": "",
+      "full_text_source_type": "",
+      "full_text_excerpt": ""
     },
     {
       "id": "W1984314602",
@@ -7861,7 +8771,12 @@
       ],
       "edge_types": [
         "backward"
-      ]
+      ],
+      "full_text_cached": false,
+      "full_text_char_count": 0,
+      "full_text_source_url": "",
+      "full_text_source_type": "",
+      "full_text_excerpt": ""
     },
     {
       "id": "W1986086318",
@@ -7899,7 +8814,12 @@
       ],
       "edge_types": [
         "backward"
-      ]
+      ],
+      "full_text_cached": false,
+      "full_text_char_count": 0,
+      "full_text_source_url": "",
+      "full_text_source_type": "",
+      "full_text_excerpt": ""
     },
     {
       "id": "W1986787497",
@@ -7939,7 +8859,12 @@
       ],
       "edge_types": [
         "backward"
-      ]
+      ],
+      "full_text_cached": false,
+      "full_text_char_count": 0,
+      "full_text_source_url": "",
+      "full_text_source_type": "",
+      "full_text_excerpt": ""
     },
     {
       "id": "W1987626674",
@@ -7985,7 +8910,12 @@
       ],
       "edge_types": [
         "forward"
-      ]
+      ],
+      "full_text_cached": false,
+      "full_text_char_count": 0,
+      "full_text_source_url": "",
+      "full_text_source_type": "",
+      "full_text_excerpt": ""
     },
     {
       "id": "W1991284076",
@@ -8025,7 +8955,12 @@
       ],
       "edge_types": [
         "backward"
-      ]
+      ],
+      "full_text_cached": false,
+      "full_text_char_count": 0,
+      "full_text_source_url": "",
+      "full_text_source_type": "",
+      "full_text_excerpt": ""
     },
     {
       "id": "W1993806858",
@@ -8066,7 +9001,12 @@
       "edge_types": [
         "backward",
         "forward"
-      ]
+      ],
+      "full_text_cached": false,
+      "full_text_char_count": 0,
+      "full_text_source_url": "",
+      "full_text_source_type": "",
+      "full_text_excerpt": ""
     },
     {
       "id": "W1994701398",
@@ -8106,7 +9046,12 @@
       ],
       "edge_types": [
         "backward"
-      ]
+      ],
+      "full_text_cached": false,
+      "full_text_char_count": 0,
+      "full_text_source_url": "",
+      "full_text_source_type": "",
+      "full_text_excerpt": ""
     },
     {
       "id": "W1996650435",
@@ -8146,7 +9091,12 @@
       ],
       "edge_types": [
         "backward"
-      ]
+      ],
+      "full_text_cached": false,
+      "full_text_char_count": 0,
+      "full_text_source_url": "",
+      "full_text_source_type": "",
+      "full_text_excerpt": ""
     },
     {
       "id": "W1997788290",
@@ -8190,7 +9140,12 @@
       ],
       "edge_types": [
         "backward"
-      ]
+      ],
+      "full_text_cached": false,
+      "full_text_char_count": 0,
+      "full_text_source_url": "",
+      "full_text_source_type": "",
+      "full_text_excerpt": ""
     },
     {
       "id": "W1998213518",
@@ -8230,7 +9185,12 @@
       ],
       "edge_types": [
         "backward"
-      ]
+      ],
+      "full_text_cached": false,
+      "full_text_char_count": 0,
+      "full_text_source_url": "",
+      "full_text_source_type": "",
+      "full_text_excerpt": ""
     },
     {
       "id": "W2001098248",
@@ -8270,7 +9230,12 @@
       ],
       "edge_types": [
         "backward"
-      ]
+      ],
+      "full_text_cached": false,
+      "full_text_char_count": 0,
+      "full_text_source_url": "",
+      "full_text_source_type": "",
+      "full_text_excerpt": ""
     },
     {
       "id": "W2001308469",
@@ -8306,7 +9271,12 @@
       ],
       "edge_types": [
         "backward"
-      ]
+      ],
+      "full_text_cached": false,
+      "full_text_char_count": 0,
+      "full_text_source_url": "",
+      "full_text_source_type": "",
+      "full_text_excerpt": ""
     },
     {
       "id": "W2001866327",
@@ -8348,7 +9318,12 @@
       ],
       "edge_types": [
         "backward"
-      ]
+      ],
+      "full_text_cached": false,
+      "full_text_char_count": 0,
+      "full_text_source_url": "",
+      "full_text_source_type": "",
+      "full_text_excerpt": ""
     },
     {
       "id": "W2004429519",
@@ -8392,7 +9367,12 @@
       ],
       "edge_types": [
         "forward"
-      ]
+      ],
+      "full_text_cached": false,
+      "full_text_char_count": 0,
+      "full_text_source_url": "",
+      "full_text_source_type": "",
+      "full_text_excerpt": ""
     },
     {
       "id": "W2006336094",
@@ -8432,7 +9412,12 @@
       ],
       "edge_types": [
         "backward"
-      ]
+      ],
+      "full_text_cached": false,
+      "full_text_char_count": 0,
+      "full_text_source_url": "",
+      "full_text_source_type": "",
+      "full_text_excerpt": ""
     },
     {
       "id": "W2006444123",
@@ -8473,7 +9458,12 @@
       "edge_types": [
         "backward",
         "forward"
-      ]
+      ],
+      "full_text_cached": false,
+      "full_text_char_count": 0,
+      "full_text_source_url": "",
+      "full_text_source_type": "",
+      "full_text_excerpt": ""
     },
     {
       "id": "W2009816677",
@@ -8513,7 +9503,12 @@
       ],
       "edge_types": [
         "forward"
-      ]
+      ],
+      "full_text_cached": false,
+      "full_text_char_count": 0,
+      "full_text_source_url": "",
+      "full_text_source_type": "",
+      "full_text_excerpt": ""
     },
     {
       "id": "W2011458368",
@@ -8554,7 +9549,12 @@
       "edge_types": [
         "backward",
         "forward"
-      ]
+      ],
+      "full_text_cached": false,
+      "full_text_char_count": 0,
+      "full_text_source_url": "",
+      "full_text_source_type": "",
+      "full_text_excerpt": ""
     },
     {
       "id": "W2012770494",
@@ -8594,7 +9594,12 @@
       ],
       "edge_types": [
         "backward"
-      ]
+      ],
+      "full_text_cached": false,
+      "full_text_char_count": 0,
+      "full_text_source_url": "",
+      "full_text_source_type": "",
+      "full_text_excerpt": ""
     },
     {
       "id": "W2013068849",
@@ -8634,7 +9639,12 @@
       ],
       "edge_types": [
         "backward"
-      ]
+      ],
+      "full_text_cached": false,
+      "full_text_char_count": 0,
+      "full_text_source_url": "",
+      "full_text_source_type": "",
+      "full_text_excerpt": ""
     },
     {
       "id": "W2013352133",
@@ -8674,7 +9684,12 @@
       ],
       "edge_types": [
         "backward"
-      ]
+      ],
+      "full_text_cached": false,
+      "full_text_char_count": 0,
+      "full_text_source_url": "",
+      "full_text_source_type": "",
+      "full_text_excerpt": ""
     },
     {
       "id": "W2014366154",
@@ -8714,7 +9729,12 @@
       ],
       "edge_types": [
         "backward"
-      ]
+      ],
+      "full_text_cached": false,
+      "full_text_char_count": 0,
+      "full_text_source_url": "",
+      "full_text_source_type": "",
+      "full_text_excerpt": ""
     },
     {
       "id": "W2014511864",
@@ -8761,7 +9781,12 @@
       "edge_types": [
         "backward",
         "forward"
-      ]
+      ],
+      "full_text_cached": false,
+      "full_text_char_count": 0,
+      "full_text_source_url": "",
+      "full_text_source_type": "",
+      "full_text_excerpt": ""
     },
     {
       "id": "W2015289523",
@@ -8805,7 +9830,12 @@
       ],
       "edge_types": [
         "forward"
-      ]
+      ],
+      "full_text_cached": false,
+      "full_text_char_count": 0,
+      "full_text_source_url": "",
+      "full_text_source_type": "",
+      "full_text_excerpt": ""
     },
     {
       "id": "W2015463865",
@@ -8846,7 +9876,12 @@
       "edge_types": [
         "backward",
         "forward"
-      ]
+      ],
+      "full_text_cached": false,
+      "full_text_char_count": 0,
+      "full_text_source_url": "",
+      "full_text_source_type": "",
+      "full_text_excerpt": ""
     },
     {
       "id": "W2019566340",
@@ -8886,7 +9921,12 @@
       ],
       "edge_types": [
         "backward"
-      ]
+      ],
+      "full_text_cached": false,
+      "full_text_char_count": 0,
+      "full_text_source_url": "",
+      "full_text_source_type": "",
+      "full_text_excerpt": ""
     },
     {
       "id": "W2022041506",
@@ -8926,7 +9966,12 @@
       ],
       "edge_types": [
         "forward"
-      ]
+      ],
+      "full_text_cached": false,
+      "full_text_char_count": 0,
+      "full_text_source_url": "",
+      "full_text_source_type": "",
+      "full_text_excerpt": ""
     },
     {
       "id": "W2023330715",
@@ -8966,7 +10011,12 @@
       ],
       "edge_types": [
         "backward"
-      ]
+      ],
+      "full_text_cached": false,
+      "full_text_char_count": 0,
+      "full_text_source_url": "",
+      "full_text_source_type": "",
+      "full_text_excerpt": ""
     },
     {
       "id": "W2023697782",
@@ -9006,7 +10056,12 @@
       ],
       "edge_types": [
         "backward"
-      ]
+      ],
+      "full_text_cached": false,
+      "full_text_char_count": 0,
+      "full_text_source_url": "",
+      "full_text_source_type": "",
+      "full_text_excerpt": ""
     },
     {
       "id": "W2025271066",
@@ -9050,7 +10105,12 @@
       ],
       "edge_types": [
         "backward"
-      ]
+      ],
+      "full_text_cached": false,
+      "full_text_char_count": 0,
+      "full_text_source_url": "",
+      "full_text_source_type": "",
+      "full_text_excerpt": ""
     },
     {
       "id": "W2026190834",
@@ -9090,7 +10150,12 @@
       ],
       "edge_types": [
         "backward"
-      ]
+      ],
+      "full_text_cached": false,
+      "full_text_char_count": 0,
+      "full_text_source_url": "",
+      "full_text_source_type": "",
+      "full_text_excerpt": ""
     },
     {
       "id": "W2027890252",
@@ -9130,7 +10195,12 @@
       ],
       "edge_types": [
         "forward"
-      ]
+      ],
+      "full_text_cached": false,
+      "full_text_char_count": 0,
+      "full_text_source_url": "",
+      "full_text_source_type": "",
+      "full_text_excerpt": ""
     },
     {
       "id": "W2031125651",
@@ -9170,7 +10240,12 @@
       ],
       "edge_types": [
         "backward"
-      ]
+      ],
+      "full_text_cached": false,
+      "full_text_char_count": 0,
+      "full_text_source_url": "",
+      "full_text_source_type": "",
+      "full_text_excerpt": ""
     },
     {
       "id": "W2035659515",
@@ -9210,7 +10285,12 @@
       ],
       "edge_types": [
         "backward"
-      ]
+      ],
+      "full_text_cached": false,
+      "full_text_char_count": 0,
+      "full_text_source_url": "",
+      "full_text_source_type": "",
+      "full_text_excerpt": ""
     },
     {
       "id": "W2036233135",
@@ -9250,7 +10330,12 @@
       ],
       "edge_types": [
         "backward"
-      ]
+      ],
+      "full_text_cached": false,
+      "full_text_char_count": 0,
+      "full_text_source_url": "",
+      "full_text_source_type": "",
+      "full_text_excerpt": ""
     },
     {
       "id": "W2039113359",
@@ -9292,7 +10377,12 @@
       ],
       "edge_types": [
         "backward"
-      ]
+      ],
+      "full_text_cached": false,
+      "full_text_char_count": 0,
+      "full_text_source_url": "",
+      "full_text_source_type": "",
+      "full_text_excerpt": ""
     },
     {
       "id": "W2041146801",
@@ -9332,7 +10422,12 @@
       ],
       "edge_types": [
         "backward"
-      ]
+      ],
+      "full_text_cached": false,
+      "full_text_char_count": 0,
+      "full_text_source_url": "",
+      "full_text_source_type": "",
+      "full_text_excerpt": ""
     },
     {
       "id": "W2041179101",
@@ -9372,7 +10467,12 @@
       ],
       "edge_types": [
         "backward"
-      ]
+      ],
+      "full_text_cached": false,
+      "full_text_char_count": 0,
+      "full_text_source_url": "",
+      "full_text_source_type": "",
+      "full_text_excerpt": ""
     },
     {
       "id": "W2041201199",
@@ -9412,7 +10512,12 @@
       ],
       "edge_types": [
         "backward"
-      ]
+      ],
+      "full_text_cached": false,
+      "full_text_char_count": 0,
+      "full_text_source_url": "",
+      "full_text_source_type": "",
+      "full_text_excerpt": ""
     },
     {
       "id": "W2043409247",
@@ -9452,7 +10557,12 @@
       ],
       "edge_types": [
         "forward"
-      ]
+      ],
+      "full_text_cached": false,
+      "full_text_char_count": 0,
+      "full_text_source_url": "",
+      "full_text_source_type": "",
+      "full_text_excerpt": ""
     },
     {
       "id": "W2045181804",
@@ -9492,7 +10602,12 @@
       ],
       "edge_types": [
         "backward"
-      ]
+      ],
+      "full_text_cached": false,
+      "full_text_char_count": 0,
+      "full_text_source_url": "",
+      "full_text_source_type": "",
+      "full_text_excerpt": ""
     },
     {
       "id": "W2046099063",
@@ -9533,7 +10648,12 @@
       "edge_types": [
         "backward",
         "forward"
-      ]
+      ],
+      "full_text_cached": false,
+      "full_text_char_count": 0,
+      "full_text_source_url": "",
+      "full_text_source_type": "",
+      "full_text_excerpt": ""
     },
     {
       "id": "W2048679005",
@@ -9573,7 +10693,12 @@
       ],
       "edge_types": [
         "backward"
-      ]
+      ],
+      "full_text_cached": false,
+      "full_text_char_count": 0,
+      "full_text_source_url": "",
+      "full_text_source_type": "",
+      "full_text_excerpt": ""
     },
     {
       "id": "W2050719120",
@@ -9613,7 +10738,12 @@
       ],
       "edge_types": [
         "forward"
-      ]
+      ],
+      "full_text_cached": false,
+      "full_text_char_count": 0,
+      "full_text_source_url": "",
+      "full_text_source_type": "",
+      "full_text_excerpt": ""
     },
     {
       "id": "W2051480848",
@@ -9653,7 +10783,12 @@
       ],
       "edge_types": [
         "backward"
-      ]
+      ],
+      "full_text_cached": false,
+      "full_text_char_count": 0,
+      "full_text_source_url": "",
+      "full_text_source_type": "",
+      "full_text_excerpt": ""
     },
     {
       "id": "W2053686229",
@@ -9693,7 +10828,12 @@
       ],
       "edge_types": [
         "forward"
-      ]
+      ],
+      "full_text_cached": false,
+      "full_text_char_count": 0,
+      "full_text_source_url": "",
+      "full_text_source_type": "",
+      "full_text_excerpt": ""
     },
     {
       "id": "W2054487443",
@@ -9733,7 +10873,12 @@
       ],
       "edge_types": [
         "backward"
-      ]
+      ],
+      "full_text_cached": false,
+      "full_text_char_count": 0,
+      "full_text_source_url": "",
+      "full_text_source_type": "",
+      "full_text_excerpt": ""
     },
     {
       "id": "W2054658115",
@@ -9773,7 +10918,12 @@
       ],
       "edge_types": [
         "backward"
-      ]
+      ],
+      "full_text_cached": false,
+      "full_text_char_count": 0,
+      "full_text_source_url": "",
+      "full_text_source_type": "",
+      "full_text_excerpt": ""
     },
     {
       "id": "W2056513446",
@@ -9809,7 +10959,12 @@
       ],
       "edge_types": [
         "backward"
-      ]
+      ],
+      "full_text_cached": false,
+      "full_text_char_count": 0,
+      "full_text_source_url": "",
+      "full_text_source_type": "",
+      "full_text_excerpt": ""
     },
     {
       "id": "W2058166043",
@@ -9849,7 +11004,12 @@
       ],
       "edge_types": [
         "backward"
-      ]
+      ],
+      "full_text_cached": false,
+      "full_text_char_count": 0,
+      "full_text_source_url": "",
+      "full_text_source_type": "",
+      "full_text_excerpt": ""
     },
     {
       "id": "W2060397636",
@@ -9889,7 +11049,12 @@
       ],
       "edge_types": [
         "backward"
-      ]
+      ],
+      "full_text_cached": false,
+      "full_text_char_count": 0,
+      "full_text_source_url": "",
+      "full_text_source_type": "",
+      "full_text_excerpt": ""
     },
     {
       "id": "W2061421613",
@@ -9929,7 +11094,12 @@
       ],
       "edge_types": [
         "backward"
-      ]
+      ],
+      "full_text_cached": false,
+      "full_text_char_count": 0,
+      "full_text_source_url": "",
+      "full_text_source_type": "",
+      "full_text_excerpt": ""
     },
     {
       "id": "W2064874336",
@@ -9970,7 +11140,12 @@
       "edge_types": [
         "backward",
         "forward"
-      ]
+      ],
+      "full_text_cached": false,
+      "full_text_char_count": 0,
+      "full_text_source_url": "",
+      "full_text_source_type": "",
+      "full_text_excerpt": ""
     },
     {
       "id": "W2066816090",
@@ -10010,7 +11185,12 @@
       ],
       "edge_types": [
         "backward"
-      ]
+      ],
+      "full_text_cached": false,
+      "full_text_char_count": 0,
+      "full_text_source_url": "",
+      "full_text_source_type": "",
+      "full_text_excerpt": ""
     },
     {
       "id": "W2067115680",
@@ -10050,7 +11230,12 @@
       ],
       "edge_types": [
         "backward"
-      ]
+      ],
+      "full_text_cached": false,
+      "full_text_char_count": 0,
+      "full_text_source_url": "",
+      "full_text_source_type": "",
+      "full_text_excerpt": ""
     },
     {
       "id": "W2070810369",
@@ -10091,7 +11276,12 @@
       "edge_types": [
         "backward",
         "forward"
-      ]
+      ],
+      "full_text_cached": false,
+      "full_text_char_count": 0,
+      "full_text_source_url": "",
+      "full_text_source_type": "",
+      "full_text_excerpt": ""
     },
     {
       "id": "W2070903304",
@@ -10131,7 +11321,12 @@
       ],
       "edge_types": [
         "backward"
-      ]
+      ],
+      "full_text_cached": false,
+      "full_text_char_count": 0,
+      "full_text_source_url": "",
+      "full_text_source_type": "",
+      "full_text_excerpt": ""
     },
     {
       "id": "W2071666535",
@@ -10169,7 +11364,12 @@
       ],
       "edge_types": [
         "backward"
-      ]
+      ],
+      "full_text_cached": false,
+      "full_text_char_count": 0,
+      "full_text_source_url": "",
+      "full_text_source_type": "",
+      "full_text_excerpt": ""
     },
     {
       "id": "W2072035149",
@@ -10211,7 +11411,12 @@
       ],
       "edge_types": [
         "forward"
-      ]
+      ],
+      "full_text_cached": false,
+      "full_text_char_count": 0,
+      "full_text_source_url": "",
+      "full_text_source_type": "",
+      "full_text_excerpt": ""
     },
     {
       "id": "W2072435181",
@@ -10251,7 +11456,12 @@
       ],
       "edge_types": [
         "backward"
-      ]
+      ],
+      "full_text_cached": false,
+      "full_text_char_count": 0,
+      "full_text_source_url": "",
+      "full_text_source_type": "",
+      "full_text_excerpt": ""
     },
     {
       "id": "W2073371272",
@@ -10291,7 +11501,12 @@
       ],
       "edge_types": [
         "backward"
-      ]
+      ],
+      "full_text_cached": false,
+      "full_text_char_count": 0,
+      "full_text_source_url": "",
+      "full_text_source_type": "",
+      "full_text_excerpt": ""
     },
     {
       "id": "W2074545285",
@@ -10329,7 +11544,12 @@
       ],
       "edge_types": [
         "backward"
-      ]
+      ],
+      "full_text_cached": false,
+      "full_text_char_count": 0,
+      "full_text_source_url": "",
+      "full_text_source_type": "",
+      "full_text_excerpt": ""
     },
     {
       "id": "W2074757189",
@@ -10373,7 +11593,12 @@
       ],
       "edge_types": [
         "forward"
-      ]
+      ],
+      "full_text_cached": false,
+      "full_text_char_count": 0,
+      "full_text_source_url": "",
+      "full_text_source_type": "",
+      "full_text_excerpt": ""
     },
     {
       "id": "W2074801235",
@@ -10414,7 +11639,12 @@
       "edge_types": [
         "backward",
         "forward"
-      ]
+      ],
+      "full_text_cached": false,
+      "full_text_char_count": 0,
+      "full_text_source_url": "",
+      "full_text_source_type": "",
+      "full_text_excerpt": ""
     },
     {
       "id": "W2075243909",
@@ -10454,7 +11684,12 @@
       ],
       "edge_types": [
         "backward"
-      ]
+      ],
+      "full_text_cached": false,
+      "full_text_char_count": 0,
+      "full_text_source_url": "",
+      "full_text_source_type": "",
+      "full_text_excerpt": ""
     },
     {
       "id": "W2075983023",
@@ -10495,7 +11730,12 @@
       "edge_types": [
         "backward",
         "forward"
-      ]
+      ],
+      "full_text_cached": false,
+      "full_text_char_count": 0,
+      "full_text_source_url": "",
+      "full_text_source_type": "",
+      "full_text_excerpt": ""
     },
     {
       "id": "W2077763589",
@@ -10536,7 +11776,12 @@
       "edge_types": [
         "backward",
         "forward"
-      ]
+      ],
+      "full_text_cached": false,
+      "full_text_char_count": 0,
+      "full_text_source_url": "",
+      "full_text_source_type": "",
+      "full_text_excerpt": ""
     },
     {
       "id": "W2078475126",
@@ -10576,7 +11821,12 @@
       ],
       "edge_types": [
         "backward"
-      ]
+      ],
+      "full_text_cached": false,
+      "full_text_char_count": 0,
+      "full_text_source_url": "",
+      "full_text_source_type": "",
+      "full_text_excerpt": ""
     },
     {
       "id": "W2080847544",
@@ -10616,7 +11866,12 @@
       ],
       "edge_types": [
         "backward"
-      ]
+      ],
+      "full_text_cached": false,
+      "full_text_char_count": 0,
+      "full_text_source_url": "",
+      "full_text_source_type": "",
+      "full_text_excerpt": ""
     },
     {
       "id": "W2083062267",
@@ -10660,7 +11915,12 @@
       ],
       "edge_types": [
         "forward"
-      ]
+      ],
+      "full_text_cached": false,
+      "full_text_char_count": 0,
+      "full_text_source_url": "",
+      "full_text_source_type": "",
+      "full_text_excerpt": ""
     },
     {
       "id": "W2083772030",
@@ -10704,7 +11964,12 @@
       ],
       "edge_types": [
         "backward"
-      ]
+      ],
+      "full_text_cached": false,
+      "full_text_char_count": 0,
+      "full_text_source_url": "",
+      "full_text_source_type": "",
+      "full_text_excerpt": ""
     },
     {
       "id": "W2084895013",
@@ -10744,7 +12009,12 @@
       ],
       "edge_types": [
         "backward"
-      ]
+      ],
+      "full_text_cached": false,
+      "full_text_char_count": 0,
+      "full_text_source_url": "",
+      "full_text_source_type": "",
+      "full_text_excerpt": ""
     },
     {
       "id": "W2085455523",
@@ -10784,7 +12054,12 @@
       ],
       "edge_types": [
         "backward"
-      ]
+      ],
+      "full_text_cached": false,
+      "full_text_char_count": 0,
+      "full_text_source_url": "",
+      "full_text_source_type": "",
+      "full_text_excerpt": ""
     },
     {
       "id": "W2086618114",
@@ -10824,7 +12099,12 @@
       ],
       "edge_types": [
         "backward"
-      ]
+      ],
+      "full_text_cached": false,
+      "full_text_char_count": 0,
+      "full_text_source_url": "",
+      "full_text_source_type": "",
+      "full_text_excerpt": ""
     },
     {
       "id": "W2089636244",
@@ -10860,7 +12140,12 @@
       ],
       "edge_types": [
         "backward"
-      ]
+      ],
+      "full_text_cached": false,
+      "full_text_char_count": 0,
+      "full_text_source_url": "",
+      "full_text_source_type": "",
+      "full_text_excerpt": ""
     },
     {
       "id": "W2091097903",
@@ -10900,7 +12185,12 @@
       ],
       "edge_types": [
         "backward"
-      ]
+      ],
+      "full_text_cached": false,
+      "full_text_char_count": 0,
+      "full_text_source_url": "",
+      "full_text_source_type": "",
+      "full_text_excerpt": ""
     },
     {
       "id": "W2091934148",
@@ -10940,7 +12230,12 @@
       ],
       "edge_types": [
         "backward"
-      ]
+      ],
+      "full_text_cached": false,
+      "full_text_char_count": 0,
+      "full_text_source_url": "",
+      "full_text_source_type": "",
+      "full_text_excerpt": ""
     },
     {
       "id": "W2092696541",
@@ -10981,7 +12276,12 @@
       "edge_types": [
         "backward",
         "forward"
-      ]
+      ],
+      "full_text_cached": false,
+      "full_text_char_count": 0,
+      "full_text_source_url": "",
+      "full_text_source_type": "",
+      "full_text_excerpt": ""
     },
     {
       "id": "W2092919341",
@@ -11021,7 +12321,12 @@
       ],
       "edge_types": [
         "backward"
-      ]
+      ],
+      "full_text_cached": false,
+      "full_text_char_count": 0,
+      "full_text_source_url": "",
+      "full_text_source_type": "",
+      "full_text_excerpt": ""
     },
     {
       "id": "W2100749877",
@@ -11061,7 +12366,12 @@
       ],
       "edge_types": [
         "backward"
-      ]
+      ],
+      "full_text_cached": false,
+      "full_text_char_count": 0,
+      "full_text_source_url": "",
+      "full_text_source_type": "",
+      "full_text_excerpt": ""
     },
     {
       "id": "W2101780042",
@@ -11101,7 +12411,12 @@
       ],
       "edge_types": [
         "backward"
-      ]
+      ],
+      "full_text_cached": false,
+      "full_text_char_count": 0,
+      "full_text_source_url": "",
+      "full_text_source_type": "",
+      "full_text_excerpt": ""
     },
     {
       "id": "W2101988917",
@@ -11139,7 +12454,12 @@
       ],
       "edge_types": [
         "backward"
-      ]
+      ],
+      "full_text_cached": false,
+      "full_text_char_count": 0,
+      "full_text_source_url": "",
+      "full_text_source_type": "",
+      "full_text_excerpt": ""
     },
     {
       "id": "W2105428750",
@@ -11179,7 +12499,12 @@
       ],
       "edge_types": [
         "backward"
-      ]
+      ],
+      "full_text_cached": false,
+      "full_text_char_count": 0,
+      "full_text_source_url": "",
+      "full_text_source_type": "",
+      "full_text_excerpt": ""
     },
     {
       "id": "W2108499824",
@@ -11216,7 +12541,12 @@
       "edge_types": [
         "backward",
         "forward"
-      ]
+      ],
+      "full_text_cached": false,
+      "full_text_char_count": 0,
+      "full_text_source_url": "",
+      "full_text_source_type": "",
+      "full_text_excerpt": ""
     },
     {
       "id": "W2111804672",
@@ -11253,7 +12583,12 @@
       "edge_types": [
         "backward",
         "forward"
-      ]
+      ],
+      "full_text_cached": false,
+      "full_text_char_count": 0,
+      "full_text_source_url": "",
+      "full_text_source_type": "",
+      "full_text_excerpt": ""
     },
     {
       "id": "W2111850066",
@@ -11293,7 +12628,12 @@
       ],
       "edge_types": [
         "forward"
-      ]
+      ],
+      "full_text_cached": false,
+      "full_text_char_count": 0,
+      "full_text_source_url": "",
+      "full_text_source_type": "",
+      "full_text_excerpt": ""
     },
     {
       "id": "W2112268323",
@@ -11337,7 +12677,12 @@
       ],
       "edge_types": [
         "backward"
-      ]
+      ],
+      "full_text_cached": false,
+      "full_text_char_count": 0,
+      "full_text_source_url": "",
+      "full_text_source_type": "",
+      "full_text_excerpt": ""
     },
     {
       "id": "W2113386642",
@@ -11378,7 +12723,12 @@
       "edge_types": [
         "backward",
         "forward"
-      ]
+      ],
+      "full_text_cached": false,
+      "full_text_char_count": 0,
+      "full_text_source_url": "",
+      "full_text_source_type": "",
+      "full_text_excerpt": ""
     },
     {
       "id": "W2115486496",
@@ -11420,7 +12770,12 @@
       ],
       "edge_types": [
         "forward"
-      ]
+      ],
+      "full_text_cached": false,
+      "full_text_char_count": 0,
+      "full_text_source_url": "",
+      "full_text_source_type": "",
+      "full_text_excerpt": ""
     },
     {
       "id": "W2116343313",
@@ -11460,7 +12815,12 @@
       ],
       "edge_types": [
         "backward"
-      ]
+      ],
+      "full_text_cached": false,
+      "full_text_char_count": 0,
+      "full_text_source_url": "",
+      "full_text_source_type": "",
+      "full_text_excerpt": ""
     },
     {
       "id": "W2116782019",
@@ -11500,7 +12860,12 @@
       ],
       "edge_types": [
         "backward"
-      ]
+      ],
+      "full_text_cached": false,
+      "full_text_char_count": 0,
+      "full_text_source_url": "",
+      "full_text_source_type": "",
+      "full_text_excerpt": ""
     },
     {
       "id": "W2117211119",
@@ -11540,7 +12905,12 @@
       ],
       "edge_types": [
         "backward"
-      ]
+      ],
+      "full_text_cached": false,
+      "full_text_char_count": 0,
+      "full_text_source_url": "",
+      "full_text_source_type": "",
+      "full_text_excerpt": ""
     },
     {
       "id": "W2117909082",
@@ -11580,7 +12950,12 @@
       ],
       "edge_types": [
         "backward"
-      ]
+      ],
+      "full_text_cached": false,
+      "full_text_char_count": 0,
+      "full_text_source_url": "",
+      "full_text_source_type": "",
+      "full_text_excerpt": ""
     },
     {
       "id": "W2118340088",
@@ -11620,7 +12995,12 @@
       ],
       "edge_types": [
         "backward"
-      ]
+      ],
+      "full_text_cached": false,
+      "full_text_char_count": 0,
+      "full_text_source_url": "",
+      "full_text_source_type": "",
+      "full_text_excerpt": ""
     },
     {
       "id": "W2120380779",
@@ -11667,7 +13047,12 @@
       "edge_types": [
         "backward",
         "forward"
-      ]
+      ],
+      "full_text_cached": false,
+      "full_text_char_count": 0,
+      "full_text_source_url": "",
+      "full_text_source_type": "",
+      "full_text_excerpt": ""
     },
     {
       "id": "W2120495185",
@@ -11713,7 +13098,12 @@
       ],
       "edge_types": [
         "backward"
-      ]
+      ],
+      "full_text_cached": false,
+      "full_text_char_count": 0,
+      "full_text_source_url": "",
+      "full_text_source_type": "",
+      "full_text_excerpt": ""
     },
     {
       "id": "W2120607730",
@@ -11751,7 +13141,12 @@
       ],
       "edge_types": [
         "backward"
-      ]
+      ],
+      "full_text_cached": false,
+      "full_text_char_count": 0,
+      "full_text_source_url": "",
+      "full_text_source_type": "",
+      "full_text_excerpt": ""
     },
     {
       "id": "W2121342934",
@@ -11792,7 +13187,12 @@
       "edge_types": [
         "backward",
         "forward"
-      ]
+      ],
+      "full_text_cached": false,
+      "full_text_char_count": 0,
+      "full_text_source_url": "",
+      "full_text_source_type": "",
+      "full_text_excerpt": ""
     },
     {
       "id": "W2121477371",
@@ -11835,7 +13235,12 @@
       "edge_types": [
         "backward",
         "forward"
-      ]
+      ],
+      "full_text_cached": false,
+      "full_text_char_count": 0,
+      "full_text_source_url": "",
+      "full_text_source_type": "",
+      "full_text_excerpt": ""
     },
     {
       "id": "W2125829696",
@@ -11879,7 +13284,12 @@
       ],
       "edge_types": [
         "forward"
-      ]
+      ],
+      "full_text_cached": false,
+      "full_text_char_count": 0,
+      "full_text_source_url": "",
+      "full_text_source_type": "",
+      "full_text_excerpt": ""
     },
     {
       "id": "W2126177085",
@@ -11919,7 +13329,12 @@
       ],
       "edge_types": [
         "backward"
-      ]
+      ],
+      "full_text_cached": false,
+      "full_text_char_count": 0,
+      "full_text_source_url": "",
+      "full_text_source_type": "",
+      "full_text_excerpt": ""
     },
     {
       "id": "W2126180793",
@@ -11958,7 +13373,12 @@
       "edge_types": [
         "backward",
         "forward"
-      ]
+      ],
+      "full_text_cached": false,
+      "full_text_char_count": 0,
+      "full_text_source_url": "",
+      "full_text_source_type": "",
+      "full_text_excerpt": ""
     },
     {
       "id": "W2127076710",
@@ -12005,7 +13425,12 @@
       "edge_types": [
         "backward",
         "forward"
-      ]
+      ],
+      "full_text_cached": false,
+      "full_text_char_count": 0,
+      "full_text_source_url": "",
+      "full_text_source_type": "",
+      "full_text_excerpt": ""
     },
     {
       "id": "W2130232844",
@@ -12046,7 +13471,12 @@
       "edge_types": [
         "backward",
         "forward"
-      ]
+      ],
+      "full_text_cached": false,
+      "full_text_char_count": 0,
+      "full_text_source_url": "",
+      "full_text_source_type": "",
+      "full_text_excerpt": ""
     },
     {
       "id": "W2130334200",
@@ -12084,7 +13514,12 @@
       ],
       "edge_types": [
         "backward"
-      ]
+      ],
+      "full_text_cached": false,
+      "full_text_char_count": 0,
+      "full_text_source_url": "",
+      "full_text_source_type": "",
+      "full_text_excerpt": ""
     },
     {
       "id": "W2131370811",
@@ -12124,7 +13559,12 @@
       ],
       "edge_types": [
         "backward"
-      ]
+      ],
+      "full_text_cached": false,
+      "full_text_char_count": 0,
+      "full_text_source_url": "",
+      "full_text_source_type": "",
+      "full_text_excerpt": ""
     },
     {
       "id": "W2132426951",
@@ -12164,7 +13604,12 @@
       ],
       "edge_types": [
         "backward"
-      ]
+      ],
+      "full_text_cached": false,
+      "full_text_char_count": 0,
+      "full_text_source_url": "",
+      "full_text_source_type": "",
+      "full_text_excerpt": ""
     },
     {
       "id": "W2132687596",
@@ -12204,7 +13649,12 @@
       ],
       "edge_types": [
         "forward"
-      ]
+      ],
+      "full_text_cached": false,
+      "full_text_char_count": 0,
+      "full_text_source_url": "",
+      "full_text_source_type": "",
+      "full_text_excerpt": ""
     },
     {
       "id": "W2133739167",
@@ -12244,7 +13694,12 @@
       ],
       "edge_types": [
         "backward"
-      ]
+      ],
+      "full_text_cached": false,
+      "full_text_char_count": 0,
+      "full_text_source_url": "",
+      "full_text_source_type": "",
+      "full_text_excerpt": ""
     },
     {
       "id": "W2134145060",
@@ -12284,7 +13739,12 @@
       ],
       "edge_types": [
         "backward"
-      ]
+      ],
+      "full_text_cached": false,
+      "full_text_char_count": 0,
+      "full_text_source_url": "",
+      "full_text_source_type": "",
+      "full_text_excerpt": ""
     },
     {
       "id": "W2134894556",
@@ -12324,7 +13784,12 @@
       ],
       "edge_types": [
         "forward"
-      ]
+      ],
+      "full_text_cached": false,
+      "full_text_char_count": 0,
+      "full_text_source_url": "",
+      "full_text_source_type": "",
+      "full_text_excerpt": ""
     },
     {
       "id": "W2136070270",
@@ -12364,7 +13829,12 @@
       ],
       "edge_types": [
         "backward"
-      ]
+      ],
+      "full_text_cached": false,
+      "full_text_char_count": 0,
+      "full_text_source_url": "",
+      "full_text_source_type": "",
+      "full_text_excerpt": ""
     },
     {
       "id": "W2136208491",
@@ -12404,7 +13874,12 @@
       ],
       "edge_types": [
         "backward"
-      ]
+      ],
+      "full_text_cached": false,
+      "full_text_char_count": 0,
+      "full_text_source_url": "",
+      "full_text_source_type": "",
+      "full_text_excerpt": ""
     },
     {
       "id": "W2136518234",
@@ -12444,7 +13919,12 @@
       ],
       "edge_types": [
         "backward"
-      ]
+      ],
+      "full_text_cached": false,
+      "full_text_char_count": 0,
+      "full_text_source_url": "",
+      "full_text_source_type": "",
+      "full_text_excerpt": ""
     },
     {
       "id": "W2136576070",
@@ -12484,7 +13964,12 @@
       ],
       "edge_types": [
         "backward"
-      ]
+      ],
+      "full_text_cached": false,
+      "full_text_char_count": 0,
+      "full_text_source_url": "",
+      "full_text_source_type": "",
+      "full_text_excerpt": ""
     },
     {
       "id": "W2137247190",
@@ -12522,7 +14007,12 @@
       ],
       "edge_types": [
         "backward"
-      ]
+      ],
+      "full_text_cached": false,
+      "full_text_char_count": 0,
+      "full_text_source_url": "",
+      "full_text_source_type": "",
+      "full_text_excerpt": ""
     },
     {
       "id": "W2138491732",
@@ -12562,7 +14052,12 @@
       ],
       "edge_types": [
         "backward"
-      ]
+      ],
+      "full_text_cached": false,
+      "full_text_char_count": 0,
+      "full_text_source_url": "",
+      "full_text_source_type": "",
+      "full_text_excerpt": ""
     },
     {
       "id": "W2139471083",
@@ -12602,7 +14097,12 @@
       ],
       "edge_types": [
         "backward"
-      ]
+      ],
+      "full_text_cached": false,
+      "full_text_char_count": 0,
+      "full_text_source_url": "",
+      "full_text_source_type": "",
+      "full_text_excerpt": ""
     },
     {
       "id": "W2139559367",
@@ -12643,7 +14143,12 @@
       "edge_types": [
         "backward",
         "forward"
-      ]
+      ],
+      "full_text_cached": false,
+      "full_text_char_count": 0,
+      "full_text_source_url": "",
+      "full_text_source_type": "",
+      "full_text_excerpt": ""
     },
     {
       "id": "W2139678233",
@@ -12683,7 +14188,12 @@
       ],
       "edge_types": [
         "backward"
-      ]
+      ],
+      "full_text_cached": false,
+      "full_text_char_count": 0,
+      "full_text_source_url": "",
+      "full_text_source_type": "",
+      "full_text_excerpt": ""
     },
     {
       "id": "W2140369176",
@@ -12721,7 +14231,12 @@
       ],
       "edge_types": [
         "backward"
-      ]
+      ],
+      "full_text_cached": false,
+      "full_text_char_count": 0,
+      "full_text_source_url": "",
+      "full_text_source_type": "",
+      "full_text_excerpt": ""
     },
     {
       "id": "W2140503925",
@@ -12761,7 +14276,12 @@
       ],
       "edge_types": [
         "backward"
-      ]
+      ],
+      "full_text_cached": false,
+      "full_text_char_count": 0,
+      "full_text_source_url": "",
+      "full_text_source_type": "",
+      "full_text_excerpt": ""
     },
     {
       "id": "W2144208367",
@@ -12801,7 +14321,12 @@
       ],
       "edge_types": [
         "backward"
-      ]
+      ],
+      "full_text_cached": false,
+      "full_text_char_count": 0,
+      "full_text_source_url": "",
+      "full_text_source_type": "",
+      "full_text_excerpt": ""
     },
     {
       "id": "W2146068067",
@@ -12843,7 +14368,12 @@
       ],
       "edge_types": [
         "backward"
-      ]
+      ],
+      "full_text_cached": false,
+      "full_text_char_count": 0,
+      "full_text_source_url": "",
+      "full_text_source_type": "",
+      "full_text_excerpt": ""
     },
     {
       "id": "W2146991114",
@@ -12883,7 +14413,12 @@
       ],
       "edge_types": [
         "backward"
-      ]
+      ],
+      "full_text_cached": false,
+      "full_text_char_count": 0,
+      "full_text_source_url": "",
+      "full_text_source_type": "",
+      "full_text_excerpt": ""
     },
     {
       "id": "W2147624292",
@@ -12923,7 +14458,12 @@
       ],
       "edge_types": [
         "forward"
-      ]
+      ],
+      "full_text_cached": false,
+      "full_text_char_count": 0,
+      "full_text_source_url": "",
+      "full_text_source_type": "",
+      "full_text_excerpt": ""
     },
     {
       "id": "W2148119838",
@@ -12963,7 +14503,12 @@
       ],
       "edge_types": [
         "backward"
-      ]
+      ],
+      "full_text_cached": false,
+      "full_text_char_count": 0,
+      "full_text_source_url": "",
+      "full_text_source_type": "",
+      "full_text_excerpt": ""
     },
     {
       "id": "W2148354545",
@@ -13000,7 +14545,12 @@
       "edge_types": [
         "backward",
         "forward"
-      ]
+      ],
+      "full_text_cached": false,
+      "full_text_char_count": 0,
+      "full_text_source_url": "",
+      "full_text_source_type": "",
+      "full_text_excerpt": ""
     },
     {
       "id": "W2150794602",
@@ -13041,7 +14591,12 @@
       "edge_types": [
         "backward",
         "forward"
-      ]
+      ],
+      "full_text_cached": false,
+      "full_text_char_count": 0,
+      "full_text_source_url": "",
+      "full_text_source_type": "",
+      "full_text_excerpt": ""
     },
     {
       "id": "W2151041132",
@@ -13081,7 +14636,12 @@
       ],
       "edge_types": [
         "backward"
-      ]
+      ],
+      "full_text_cached": false,
+      "full_text_char_count": 0,
+      "full_text_source_url": "",
+      "full_text_source_type": "",
+      "full_text_excerpt": ""
     },
     {
       "id": "W2152475379",
@@ -13121,7 +14681,12 @@
       ],
       "edge_types": [
         "backward"
-      ]
+      ],
+      "full_text_cached": false,
+      "full_text_char_count": 0,
+      "full_text_source_url": "",
+      "full_text_source_type": "",
+      "full_text_excerpt": ""
     },
     {
       "id": "W2153699412",
@@ -13161,7 +14726,12 @@
       ],
       "edge_types": [
         "backward"
-      ]
+      ],
+      "full_text_cached": false,
+      "full_text_char_count": 0,
+      "full_text_source_url": "",
+      "full_text_source_type": "",
+      "full_text_excerpt": ""
     },
     {
       "id": "W2157565254",
@@ -13198,7 +14768,12 @@
       "edge_types": [
         "backward",
         "forward"
-      ]
+      ],
+      "full_text_cached": false,
+      "full_text_char_count": 0,
+      "full_text_source_url": "",
+      "full_text_source_type": "",
+      "full_text_excerpt": ""
     },
     {
       "id": "W2157904933",
@@ -13238,7 +14813,12 @@
       ],
       "edge_types": [
         "backward"
-      ]
+      ],
+      "full_text_cached": false,
+      "full_text_char_count": 0,
+      "full_text_source_url": "",
+      "full_text_source_type": "",
+      "full_text_excerpt": ""
     },
     {
       "id": "W2158703238",
@@ -13280,7 +14860,12 @@
       ],
       "edge_types": [
         "forward"
-      ]
+      ],
+      "full_text_cached": false,
+      "full_text_char_count": 0,
+      "full_text_source_url": "",
+      "full_text_source_type": "",
+      "full_text_excerpt": ""
     },
     {
       "id": "W2160231112",
@@ -13320,7 +14905,12 @@
       ],
       "edge_types": [
         "backward"
-      ]
+      ],
+      "full_text_cached": false,
+      "full_text_char_count": 0,
+      "full_text_source_url": "",
+      "full_text_source_type": "",
+      "full_text_excerpt": ""
     },
     {
       "id": "W2160534505",
@@ -13360,7 +14950,12 @@
       ],
       "edge_types": [
         "backward"
-      ]
+      ],
+      "full_text_cached": false,
+      "full_text_char_count": 0,
+      "full_text_source_url": "",
+      "full_text_source_type": "",
+      "full_text_excerpt": ""
     },
     {
       "id": "W2162639440",
@@ -13401,7 +14996,12 @@
       "edge_types": [
         "backward",
         "forward"
-      ]
+      ],
+      "full_text_cached": false,
+      "full_text_char_count": 0,
+      "full_text_source_url": "",
+      "full_text_source_type": "",
+      "full_text_excerpt": ""
     },
     {
       "id": "W2163569782",
@@ -13437,7 +15037,12 @@
       ],
       "edge_types": [
         "backward"
-      ]
+      ],
+      "full_text_cached": false,
+      "full_text_char_count": 0,
+      "full_text_source_url": "",
+      "full_text_source_type": "",
+      "full_text_excerpt": ""
     },
     {
       "id": "W2163721389",
@@ -13478,7 +15083,12 @@
       "edge_types": [
         "backward",
         "forward"
-      ]
+      ],
+      "full_text_cached": false,
+      "full_text_char_count": 0,
+      "full_text_source_url": "",
+      "full_text_source_type": "",
+      "full_text_excerpt": ""
     },
     {
       "id": "W2165923593",
@@ -13516,7 +15126,12 @@
       ],
       "edge_types": [
         "backward"
-      ]
+      ],
+      "full_text_cached": false,
+      "full_text_char_count": 0,
+      "full_text_source_url": "",
+      "full_text_source_type": "",
+      "full_text_excerpt": ""
     },
     {
       "id": "W2166550729",
@@ -13556,7 +15171,12 @@
       ],
       "edge_types": [
         "backward"
-      ]
+      ],
+      "full_text_cached": false,
+      "full_text_char_count": 0,
+      "full_text_source_url": "",
+      "full_text_source_type": "",
+      "full_text_excerpt": ""
     },
     {
       "id": "W2166916420",
@@ -13596,7 +15216,12 @@
       ],
       "edge_types": [
         "backward"
-      ]
+      ],
+      "full_text_cached": false,
+      "full_text_char_count": 0,
+      "full_text_source_url": "",
+      "full_text_source_type": "",
+      "full_text_excerpt": ""
     },
     {
       "id": "W2167359396",
@@ -13636,7 +15261,12 @@
       ],
       "edge_types": [
         "backward"
-      ]
+      ],
+      "full_text_cached": false,
+      "full_text_char_count": 0,
+      "full_text_source_url": "",
+      "full_text_source_type": "",
+      "full_text_excerpt": ""
     },
     {
       "id": "W2167800343",
@@ -13679,7 +15309,12 @@
       "edge_types": [
         "backward",
         "forward"
-      ]
+      ],
+      "full_text_cached": false,
+      "full_text_char_count": 0,
+      "full_text_source_url": "",
+      "full_text_source_type": "",
+      "full_text_excerpt": ""
     },
     {
       "id": "W2169419728",
@@ -13715,7 +15350,12 @@
       ],
       "edge_types": [
         "backward"
-      ]
+      ],
+      "full_text_cached": false,
+      "full_text_char_count": 0,
+      "full_text_source_url": "",
+      "full_text_source_type": "",
+      "full_text_excerpt": ""
     },
     {
       "id": "W2170980207",
@@ -13752,7 +15392,12 @@
       "edge_types": [
         "backward",
         "forward"
-      ]
+      ],
+      "full_text_cached": false,
+      "full_text_char_count": 0,
+      "full_text_source_url": "",
+      "full_text_source_type": "",
+      "full_text_excerpt": ""
     },
     {
       "id": "W2171825763",
@@ -13792,7 +15437,12 @@
       ],
       "edge_types": [
         "forward"
-      ]
+      ],
+      "full_text_cached": false,
+      "full_text_char_count": 0,
+      "full_text_source_url": "",
+      "full_text_source_type": "",
+      "full_text_excerpt": ""
     },
     {
       "id": "W2172297119",
@@ -13832,7 +15482,12 @@
       ],
       "edge_types": [
         "backward"
-      ]
+      ],
+      "full_text_cached": false,
+      "full_text_char_count": 0,
+      "full_text_source_url": "",
+      "full_text_source_type": "",
+      "full_text_excerpt": ""
     },
     {
       "id": "W2180885055",
@@ -13872,7 +15527,12 @@
       ],
       "edge_types": [
         "backward"
-      ]
+      ],
+      "full_text_cached": false,
+      "full_text_char_count": 0,
+      "full_text_source_url": "",
+      "full_text_source_type": "",
+      "full_text_excerpt": ""
     },
     {
       "id": "W22297218",
@@ -13912,7 +15572,12 @@
       ],
       "edge_types": [
         "backward"
-      ]
+      ],
+      "full_text_cached": false,
+      "full_text_char_count": 0,
+      "full_text_source_url": "",
+      "full_text_source_type": "",
+      "full_text_excerpt": ""
     },
     {
       "id": "W2232925767",
@@ -13952,7 +15617,12 @@
       ],
       "edge_types": [
         "backward"
-      ]
+      ],
+      "full_text_cached": false,
+      "full_text_char_count": 0,
+      "full_text_source_url": "",
+      "full_text_source_type": "",
+      "full_text_excerpt": ""
     },
     {
       "id": "W2320084995",
@@ -13992,7 +15662,12 @@
       ],
       "edge_types": [
         "backward"
-      ]
+      ],
+      "full_text_cached": false,
+      "full_text_char_count": 0,
+      "full_text_source_url": "",
+      "full_text_source_type": "",
+      "full_text_excerpt": ""
     },
     {
       "id": "W2326141067",
@@ -14028,7 +15703,12 @@
       ],
       "edge_types": [
         "backward"
-      ]
+      ],
+      "full_text_cached": false,
+      "full_text_char_count": 0,
+      "full_text_source_url": "",
+      "full_text_source_type": "",
+      "full_text_excerpt": ""
     },
     {
       "id": "W2337068785",
@@ -14072,7 +15752,12 @@
       ],
       "edge_types": [
         "backward"
-      ]
+      ],
+      "full_text_cached": false,
+      "full_text_char_count": 0,
+      "full_text_source_url": "",
+      "full_text_source_type": "",
+      "full_text_excerpt": ""
     },
     {
       "id": "W2373189977",
@@ -14112,7 +15797,12 @@
       ],
       "edge_types": [
         "backward"
-      ]
+      ],
+      "full_text_cached": false,
+      "full_text_char_count": 0,
+      "full_text_source_url": "",
+      "full_text_source_type": "",
+      "full_text_excerpt": ""
     },
     {
       "id": "W2463230187",
@@ -14150,7 +15840,12 @@
       ],
       "edge_types": [
         "backward"
-      ]
+      ],
+      "full_text_cached": false,
+      "full_text_char_count": 0,
+      "full_text_source_url": "",
+      "full_text_source_type": "",
+      "full_text_excerpt": ""
     },
     {
       "id": "W2470750584",
@@ -14190,7 +15885,12 @@
       ],
       "edge_types": [
         "forward"
-      ]
+      ],
+      "full_text_cached": false,
+      "full_text_char_count": 0,
+      "full_text_source_url": "",
+      "full_text_source_type": "",
+      "full_text_excerpt": ""
     },
     {
       "id": "W2551301908",
@@ -14230,7 +15930,12 @@
       ],
       "edge_types": [
         "backward"
-      ]
+      ],
+      "full_text_cached": false,
+      "full_text_char_count": 0,
+      "full_text_source_url": "",
+      "full_text_source_type": "",
+      "full_text_excerpt": ""
     },
     {
       "id": "W2560703437",
@@ -14268,7 +15973,12 @@
       ],
       "edge_types": [
         "backward"
-      ]
+      ],
+      "full_text_cached": false,
+      "full_text_char_count": 0,
+      "full_text_source_url": "",
+      "full_text_source_type": "",
+      "full_text_excerpt": ""
     },
     {
       "id": "W2579624057",
@@ -14308,7 +16018,12 @@
       ],
       "edge_types": [
         "backward"
-      ]
+      ],
+      "full_text_cached": false,
+      "full_text_char_count": 0,
+      "full_text_source_url": "",
+      "full_text_source_type": "",
+      "full_text_excerpt": ""
     },
     {
       "id": "W2587446836",
@@ -14348,7 +16063,12 @@
       ],
       "edge_types": [
         "backward"
-      ]
+      ],
+      "full_text_cached": false,
+      "full_text_char_count": 0,
+      "full_text_source_url": "",
+      "full_text_source_type": "",
+      "full_text_excerpt": ""
     },
     {
       "id": "W2606747632",
@@ -14388,7 +16108,12 @@
       ],
       "edge_types": [
         "backward"
-      ]
+      ],
+      "full_text_cached": false,
+      "full_text_char_count": 0,
+      "full_text_source_url": "",
+      "full_text_source_type": "",
+      "full_text_excerpt": ""
     },
     {
       "id": "W2606965029",
@@ -14428,7 +16153,12 @@
       ],
       "edge_types": [
         "backward"
-      ]
+      ],
+      "full_text_cached": false,
+      "full_text_char_count": 0,
+      "full_text_source_url": "",
+      "full_text_source_type": "",
+      "full_text_excerpt": ""
     },
     {
       "id": "W2612152805",
@@ -14468,7 +16198,12 @@
       ],
       "edge_types": [
         "backward"
-      ]
+      ],
+      "full_text_cached": false,
+      "full_text_char_count": 0,
+      "full_text_source_url": "",
+      "full_text_source_type": "",
+      "full_text_excerpt": ""
     },
     {
       "id": "W2615786590",
@@ -14514,7 +16249,12 @@
       ],
       "edge_types": [
         "forward"
-      ]
+      ],
+      "full_text_cached": false,
+      "full_text_char_count": 0,
+      "full_text_source_url": "",
+      "full_text_source_type": "",
+      "full_text_excerpt": ""
     },
     {
       "id": "W2618608669",
@@ -14554,7 +16294,12 @@
       ],
       "edge_types": [
         "backward"
-      ]
+      ],
+      "full_text_cached": false,
+      "full_text_char_count": 0,
+      "full_text_source_url": "",
+      "full_text_source_type": "",
+      "full_text_excerpt": ""
     },
     {
       "id": "W2738883334",
@@ -14594,7 +16339,12 @@
       ],
       "edge_types": [
         "backward"
-      ]
+      ],
+      "full_text_cached": false,
+      "full_text_char_count": 0,
+      "full_text_source_url": "",
+      "full_text_source_type": "",
+      "full_text_excerpt": ""
     },
     {
       "id": "W2742227015",
@@ -14634,7 +16384,12 @@
       ],
       "edge_types": [
         "backward"
-      ]
+      ],
+      "full_text_cached": false,
+      "full_text_char_count": 0,
+      "full_text_source_url": "",
+      "full_text_source_type": "",
+      "full_text_excerpt": ""
     },
     {
       "id": "W2767277073",
@@ -14674,7 +16429,12 @@
       ],
       "edge_types": [
         "backward"
-      ]
+      ],
+      "full_text_cached": false,
+      "full_text_char_count": 0,
+      "full_text_source_url": "",
+      "full_text_source_type": "",
+      "full_text_excerpt": ""
     },
     {
       "id": "W2767970495",
@@ -14714,7 +16474,12 @@
       ],
       "edge_types": [
         "backward"
-      ]
+      ],
+      "full_text_cached": false,
+      "full_text_char_count": 0,
+      "full_text_source_url": "",
+      "full_text_source_type": "",
+      "full_text_excerpt": ""
     },
     {
       "id": "W2785349534",
@@ -14754,7 +16519,12 @@
       ],
       "edge_types": [
         "backward"
-      ]
+      ],
+      "full_text_cached": false,
+      "full_text_char_count": 0,
+      "full_text_source_url": "",
+      "full_text_source_type": "",
+      "full_text_excerpt": ""
     },
     {
       "id": "W2790783572",
@@ -14794,7 +16564,12 @@
       ],
       "edge_types": [
         "backward"
-      ]
+      ],
+      "full_text_cached": false,
+      "full_text_char_count": 0,
+      "full_text_source_url": "",
+      "full_text_source_type": "",
+      "full_text_excerpt": ""
     },
     {
       "id": "W2798806259",
@@ -14838,7 +16613,12 @@
       ],
       "edge_types": [
         "backward"
-      ]
+      ],
+      "full_text_cached": false,
+      "full_text_char_count": 0,
+      "full_text_source_url": "",
+      "full_text_source_type": "",
+      "full_text_excerpt": ""
     },
     {
       "id": "W2888239338",
@@ -14878,7 +16658,12 @@
       ],
       "edge_types": [
         "backward"
-      ]
+      ],
+      "full_text_cached": false,
+      "full_text_char_count": 0,
+      "full_text_source_url": "",
+      "full_text_source_type": "",
+      "full_text_excerpt": ""
     },
     {
       "id": "W2914746235",
@@ -14918,7 +16703,12 @@
       ],
       "edge_types": [
         "backward"
-      ]
+      ],
+      "full_text_cached": false,
+      "full_text_char_count": 0,
+      "full_text_source_url": "",
+      "full_text_source_type": "",
+      "full_text_excerpt": ""
     },
     {
       "id": "W2920253877",
@@ -14958,7 +16748,12 @@
       ],
       "edge_types": [
         "backward"
-      ]
+      ],
+      "full_text_cached": false,
+      "full_text_char_count": 0,
+      "full_text_source_url": "",
+      "full_text_source_type": "",
+      "full_text_excerpt": ""
     },
     {
       "id": "W2951197302",
@@ -14998,7 +16793,12 @@
       ],
       "edge_types": [
         "backward"
-      ]
+      ],
+      "full_text_cached": false,
+      "full_text_char_count": 0,
+      "full_text_source_url": "",
+      "full_text_source_type": "",
+      "full_text_excerpt": ""
     },
     {
       "id": "W2979190497",
@@ -15038,7 +16838,12 @@
       ],
       "edge_types": [
         "backward"
-      ]
+      ],
+      "full_text_cached": false,
+      "full_text_char_count": 0,
+      "full_text_source_url": "",
+      "full_text_source_type": "",
+      "full_text_excerpt": ""
     },
     {
       "id": "W3021942713",
@@ -15080,7 +16885,12 @@
       ],
       "edge_types": [
         "forward"
-      ]
+      ],
+      "full_text_cached": false,
+      "full_text_char_count": 0,
+      "full_text_source_url": "",
+      "full_text_source_type": "",
+      "full_text_excerpt": ""
     },
     {
       "id": "W3147653952",
@@ -15120,7 +16930,12 @@
       ],
       "edge_types": [
         "backward"
-      ]
+      ],
+      "full_text_cached": false,
+      "full_text_char_count": 0,
+      "full_text_source_url": "",
+      "full_text_source_type": "",
+      "full_text_excerpt": ""
     },
     {
       "id": "W3182208082",
@@ -15160,7 +16975,12 @@
       ],
       "edge_types": [
         "backward"
-      ]
+      ],
+      "full_text_cached": false,
+      "full_text_char_count": 0,
+      "full_text_source_url": "",
+      "full_text_source_type": "",
+      "full_text_excerpt": ""
     },
     {
       "id": "W367043469",
@@ -15200,7 +17020,12 @@
       ],
       "edge_types": [
         "backward"
-      ]
+      ],
+      "full_text_cached": false,
+      "full_text_char_count": 0,
+      "full_text_source_url": "",
+      "full_text_source_type": "",
+      "full_text_excerpt": ""
     },
     {
       "id": "W37106624",
@@ -15240,7 +17065,12 @@
       ],
       "edge_types": [
         "backward"
-      ]
+      ],
+      "full_text_cached": false,
+      "full_text_char_count": 0,
+      "full_text_source_url": "",
+      "full_text_source_type": "",
+      "full_text_excerpt": ""
     },
     {
       "id": "W371153924",
@@ -15280,7 +17110,12 @@
       ],
       "edge_types": [
         "backward"
-      ]
+      ],
+      "full_text_cached": false,
+      "full_text_char_count": 0,
+      "full_text_source_url": "",
+      "full_text_source_type": "",
+      "full_text_excerpt": ""
     },
     {
       "id": "W4233205495",
@@ -15324,7 +17159,12 @@
       ],
       "edge_types": [
         "backward"
-      ]
+      ],
+      "full_text_cached": false,
+      "full_text_char_count": 0,
+      "full_text_source_url": "",
+      "full_text_source_type": "",
+      "full_text_excerpt": ""
     },
     {
       "id": "W4238339051",
@@ -15364,7 +17204,12 @@
       ],
       "edge_types": [
         "backward"
-      ]
+      ],
+      "full_text_cached": false,
+      "full_text_char_count": 0,
+      "full_text_source_url": "",
+      "full_text_source_type": "",
+      "full_text_excerpt": ""
     },
     {
       "id": "W4239613992",
@@ -15404,7 +17249,12 @@
       ],
       "edge_types": [
         "backward"
-      ]
+      ],
+      "full_text_cached": false,
+      "full_text_char_count": 0,
+      "full_text_source_url": "",
+      "full_text_source_type": "",
+      "full_text_excerpt": ""
     },
     {
       "id": "W4239816899",
@@ -15444,7 +17294,12 @@
       ],
       "edge_types": [
         "backward"
-      ]
+      ],
+      "full_text_cached": false,
+      "full_text_char_count": 0,
+      "full_text_source_url": "",
+      "full_text_source_type": "",
+      "full_text_excerpt": ""
     },
     {
       "id": "W4245034476",
@@ -15484,7 +17339,12 @@
       ],
       "edge_types": [
         "forward"
-      ]
+      ],
+      "full_text_cached": false,
+      "full_text_char_count": 0,
+      "full_text_source_url": "",
+      "full_text_source_type": "",
+      "full_text_excerpt": ""
     },
     {
       "id": "W4248308907",
@@ -15524,7 +17384,12 @@
       ],
       "edge_types": [
         "backward"
-      ]
+      ],
+      "full_text_cached": false,
+      "full_text_char_count": 0,
+      "full_text_source_url": "",
+      "full_text_source_type": "",
+      "full_text_excerpt": ""
     },
     {
       "id": "W4251731575",
@@ -15564,7 +17429,12 @@
       ],
       "edge_types": [
         "backward"
-      ]
+      ],
+      "full_text_cached": false,
+      "full_text_char_count": 0,
+      "full_text_source_url": "",
+      "full_text_source_type": "",
+      "full_text_excerpt": ""
     },
     {
       "id": "W4252599113",
@@ -15610,7 +17480,12 @@
       ],
       "edge_types": [
         "forward"
-      ]
+      ],
+      "full_text_cached": false,
+      "full_text_char_count": 0,
+      "full_text_source_url": "",
+      "full_text_source_type": "",
+      "full_text_excerpt": ""
     },
     {
       "id": "W4255229883",
@@ -15650,7 +17525,12 @@
       ],
       "edge_types": [
         "backward"
-      ]
+      ],
+      "full_text_cached": false,
+      "full_text_char_count": 0,
+      "full_text_source_url": "",
+      "full_text_source_type": "",
+      "full_text_excerpt": ""
     },
     {
       "id": "W4289350584",
@@ -15690,7 +17570,12 @@
       ],
       "edge_types": [
         "forward"
-      ]
+      ],
+      "full_text_cached": false,
+      "full_text_char_count": 0,
+      "full_text_source_url": "",
+      "full_text_source_type": "",
+      "full_text_excerpt": ""
     },
     {
       "id": "W4292952947",
@@ -15730,7 +17615,12 @@
       ],
       "edge_types": [
         "backward"
-      ]
+      ],
+      "full_text_cached": false,
+      "full_text_char_count": 0,
+      "full_text_source_url": "",
+      "full_text_source_type": "",
+      "full_text_excerpt": ""
     },
     {
       "id": "W49541035",
@@ -15770,7 +17660,12 @@
       ],
       "edge_types": [
         "backward"
-      ]
+      ],
+      "full_text_cached": false,
+      "full_text_char_count": 0,
+      "full_text_source_url": "",
+      "full_text_source_type": "",
+      "full_text_excerpt": ""
     },
     {
       "id": "W54318667",
@@ -15810,7 +17705,12 @@
       ],
       "edge_types": [
         "backward"
-      ]
+      ],
+      "full_text_cached": false,
+      "full_text_char_count": 0,
+      "full_text_source_url": "",
+      "full_text_source_type": "",
+      "full_text_excerpt": ""
     },
     {
       "id": "W595197191",
@@ -15850,7 +17750,12 @@
       ],
       "edge_types": [
         "backward"
-      ]
+      ],
+      "full_text_cached": false,
+      "full_text_char_count": 0,
+      "full_text_source_url": "",
+      "full_text_source_type": "",
+      "full_text_excerpt": ""
     },
     {
       "id": "W610468007",
@@ -15896,7 +17801,12 @@
       ],
       "edge_types": [
         "backward"
-      ]
+      ],
+      "full_text_cached": false,
+      "full_text_char_count": 0,
+      "full_text_source_url": "",
+      "full_text_source_type": "",
+      "full_text_excerpt": ""
     },
     {
       "id": "W630082074",
@@ -15936,7 +17846,12 @@
       ],
       "edge_types": [
         "backward"
-      ]
+      ],
+      "full_text_cached": false,
+      "full_text_char_count": 0,
+      "full_text_source_url": "",
+      "full_text_source_type": "",
+      "full_text_excerpt": ""
     },
     {
       "id": "W69358297",
@@ -15974,7 +17889,12 @@
       ],
       "edge_types": [
         "backward"
-      ]
+      ],
+      "full_text_cached": false,
+      "full_text_char_count": 0,
+      "full_text_source_url": "",
+      "full_text_source_type": "",
+      "full_text_excerpt": ""
     },
     {
       "id": "W747585077",
@@ -16014,7 +17934,12 @@
       ],
       "edge_types": [
         "backward"
-      ]
+      ],
+      "full_text_cached": false,
+      "full_text_char_count": 0,
+      "full_text_source_url": "",
+      "full_text_source_type": "",
+      "full_text_excerpt": ""
     },
     {
       "id": "W75572175",
@@ -16054,7 +17979,12 @@
       ],
       "edge_types": [
         "backward"
-      ]
+      ],
+      "full_text_cached": false,
+      "full_text_char_count": 0,
+      "full_text_source_url": "",
+      "full_text_source_type": "",
+      "full_text_excerpt": ""
     }
   ]
 }

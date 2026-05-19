@@ -1,11 +1,12 @@
 from __future__ import annotations
 
 import json
-import os
 import re
+import shutil
 import subprocess
 import tempfile
 import time
+from html import unescape
 import urllib.error
 import urllib.parse
 import urllib.request
@@ -13,7 +14,7 @@ from collections import defaultdict
 from dataclasses import dataclass
 from datetime import datetime, timezone
 from pathlib import Path
-from typing import Dict, List, Set, Tuple
+from typing import Dict, List, Optional, Set, TextIO, Tuple
 
 from utils import (
     normalize_doi, to_work_id, load_json, write_json, doi_to_url,
@@ -21,6 +22,7 @@ from utils import (
     OPENALEX_CACHE_PATH, OPENALEX_SELECT_FIELDS,
     URL_FETCH_TIMEOUT_SEC, URL_FETCH_SLEEP_SEC, URL_FETCH_MAX_RETRIES,
     URL_ABSTRACT_CACHE_PATH, URL_PDF_ABSTRACT_CACHE_PATH,
+    FULL_TEXT_CACHE_PATH, FULL_TEXT_PROGRESS_LOG_PATH, FULL_TEXT_CACHE_MAX_CHARS, FULL_TEXT_CACHE_MAX_PDF_PAGES, FULL_TEXT_CACHE_MIN_CHARS,
     CORPUS_DIR,
 )
 from openalex_client import (
@@ -33,6 +35,49 @@ from openalex_client import (
     enrich_missing_abstracts_from_arxiv,
     strip_tags,
 )
+
+USER_AGENT = "learning-engineering-resources/1.0"
+
+
+def _curl_available() -> bool:
+    return shutil.which("curl") is not None
+
+
+def _curl_fetch_headers(url: str) -> str:
+    if not url or not _curl_available():
+        return ""
+    timeout_sec = max(int(URL_FETCH_TIMEOUT_SEC), 1)
+    try:
+        return subprocess.check_output(
+            ["curl", "-sS", "-L", "-I", "--max-time", str(timeout_sec), "-A", USER_AGENT, url],
+            text=True,
+            stderr=subprocess.DEVNULL,
+        )
+    except Exception:
+        return ""
+
+
+def _curl_content_type(url: str) -> str:
+    headers = _curl_fetch_headers(url)
+    if not headers:
+        return ""
+    matches = re.findall(r"(?im)^content-type:\s*([^\r\n;]+)", headers)
+    if not matches:
+        return ""
+    return matches[-1].strip().lower()
+
+
+def _curl_fetch_bytes(url: str) -> bytes:
+    if not url or not _curl_available():
+        return b""
+    timeout_sec = max(int(URL_FETCH_TIMEOUT_SEC), 1)
+    try:
+        return subprocess.check_output(
+            ["curl", "-sS", "-L", "--max-time", str(timeout_sec), "-A", USER_AGENT, url],
+            stderr=subprocess.DEVNULL,
+        )
+    except Exception:
+        return b""
 
 
 def load_url_abstract_cache(path: Path) -> Dict[str, str]:
@@ -81,6 +126,39 @@ def save_url_pdf_abstract_cache(path: Path, rows: Dict[str, str]) -> None:
     write_json(path, payload)
 
 
+def load_full_text_cache(path: Path) -> Dict[str, Dict]:
+    if not path.exists():
+        return {}
+    try:
+        payload = load_json(path)
+    except Exception:
+        return {}
+    if isinstance(payload, dict) and isinstance(payload.get("papers"), dict):
+        out: Dict[str, Dict] = {}
+        for key, value in payload["papers"].items():
+            if isinstance(value, dict):
+                out[str(key)] = value
+        return out
+    if isinstance(payload, dict):
+        out: Dict[str, Dict] = {}
+        for key, value in payload.items():
+            if isinstance(value, str):
+                out[str(key)] = {"text": value}
+            elif isinstance(value, dict):
+                out[str(key)] = value
+        return out
+    return {}
+
+
+def save_full_text_cache(path: Path, rows: Dict[str, Dict]) -> None:
+    payload = {
+        "updated_at_utc": datetime.now(timezone.utc).isoformat(),
+        "papers": rows,
+        "count": len(rows),
+    }
+    write_json(path, payload)
+
+
 def looks_abstract_like(text: str) -> bool:
     if not text:
         return False
@@ -119,7 +197,7 @@ def looks_pdf_abstract_like(text: str) -> bool:
 def fetch_url_html(url: str) -> str:
     if not url:
         return ""
-    req = urllib.request.Request(url, headers={"User-Agent": "learning-engineering-resources/1.0"})
+    req = urllib.request.Request(url, headers={"User-Agent": USER_AGENT})
     for attempt in range(URL_FETCH_MAX_RETRIES + 1):
         try:
             with urllib.request.urlopen(req, timeout=URL_FETCH_TIMEOUT_SEC) as resp:
@@ -138,9 +216,15 @@ def fetch_url_html(url: str) -> str:
             time.sleep(min(2**attempt, 20))
         except urllib.error.URLError:
             if attempt >= URL_FETCH_MAX_RETRIES:
-                return ""
+                break
             time.sleep(min(2**attempt, 20))
-    return ""
+    content_type = _curl_content_type(url)
+    if "html" not in content_type and "xml" not in content_type:
+        return ""
+    body = _curl_fetch_bytes(url)
+    if not body:
+        return ""
+    return body.decode("utf-8", errors="ignore")
 
 
 def discover_pdf_urls_from_html(html: str, base_url: str) -> List[str]:
@@ -180,7 +264,7 @@ def discover_pdf_urls_from_html(html: str, base_url: str) -> List[str]:
 def fetch_pdf_bytes(url: str) -> bytes:
     if not url:
         return b""
-    req = urllib.request.Request(url, headers={"User-Agent": "learning-engineering-resources/1.0"})
+    req = urllib.request.Request(url, headers={"User-Agent": USER_AGENT})
     for attempt in range(URL_FETCH_MAX_RETRIES + 1):
         try:
             with urllib.request.urlopen(req, timeout=URL_FETCH_TIMEOUT_SEC) as resp:
@@ -200,9 +284,91 @@ def fetch_pdf_bytes(url: str) -> bytes:
             time.sleep(min(2**attempt, 20))
         except urllib.error.URLError:
             if attempt >= URL_FETCH_MAX_RETRIES:
-                return b""
+                break
             time.sleep(min(2**attempt, 20))
-    return b""
+    content_type = _curl_content_type(url)
+    body = _curl_fetch_bytes(url)
+    if not body:
+        return b""
+    looks_pdf = body.startswith(b"%PDF") or "pdf" in content_type or url.lower().endswith(".pdf")
+    return body if looks_pdf else b""
+
+
+def _pdftotext_from_bytes(pdf_bytes: bytes, first_page: int = 1, last_page: int = 0) -> str:
+    if not pdf_bytes:
+        return ""
+    args = ["pdftotext", "-enc", "UTF-8"]
+    if first_page > 0:
+        args.extend(["-f", str(first_page)])
+    if last_page > 0:
+        args.extend(["-l", str(last_page)])
+    try:
+        with tempfile.NamedTemporaryFile(suffix=".pdf", delete=True) as infile:
+            infile.write(pdf_bytes)
+            infile.flush()
+            out = subprocess.check_output(
+                [*args, infile.name, "-"],
+                text=True,
+                stderr=subprocess.DEVNULL,
+            )
+    except Exception:
+        return ""
+    return out or ""
+
+
+def _normalize_text(text: str, max_chars: int) -> Tuple[str, bool]:
+    normalized = re.sub(r"\s+", " ", text or "").strip()
+    if not normalized:
+        return "", False
+    if max_chars > 0 and len(normalized) > max_chars:
+        return normalized[:max_chars].rstrip(), True
+    return normalized, False
+
+
+def _looks_full_text_like(text: str) -> bool:
+    if not text:
+        return False
+    t = " ".join(text.split())
+    if len(t) < FULL_TEXT_CACHE_MIN_CHARS:
+        return False
+    low = t.lower()
+    bad_snippets = [
+        "javascript is disabled",
+        "enable cookies",
+        "access denied",
+        "cloudflare",
+        "captcha",
+    ]
+    if any(s in low for s in bad_snippets):
+        return False
+    alpha = sum(1 for ch in t if ch.isalpha())
+    if alpha < 700:
+        return False
+    return True
+
+
+def extract_full_text_from_pdf_bytes(pdf_bytes: bytes) -> Tuple[str, bool]:
+    if FULL_TEXT_CACHE_MAX_PDF_PAGES > 0:
+        raw = _pdftotext_from_bytes(pdf_bytes, first_page=1, last_page=FULL_TEXT_CACHE_MAX_PDF_PAGES)
+    else:
+        raw = _pdftotext_from_bytes(pdf_bytes, first_page=1, last_page=0)
+    text, truncated = _normalize_text(raw, FULL_TEXT_CACHE_MAX_CHARS)
+    if not _looks_full_text_like(text):
+        return "", False
+    return text, truncated
+
+
+def extract_full_text_from_html(html: str) -> Tuple[str, bool]:
+    if not html:
+        return "", False
+    cleaned = re.sub(r"(?is)<script[^>]*>.*?</script>", " ", html)
+    cleaned = re.sub(r"(?is)<style[^>]*>.*?</style>", " ", cleaned)
+    cleaned = re.sub(r"(?s)<[^>]+>", " ", cleaned)
+    cleaned = unescape(cleaned)
+    text, truncated = _normalize_text(cleaned, FULL_TEXT_CACHE_MAX_CHARS)
+    if not _looks_full_text_like(text):
+        return "", False
+    return text, truncated
 
 
 def extract_candidate_abstract_from_text(text: str) -> str:
@@ -231,29 +397,7 @@ def extract_candidate_abstract_from_text(text: str) -> str:
 
 
 def extract_abstract_from_pdf_bytes(pdf_bytes: bytes) -> str:
-    if not pdf_bytes:
-        return ""
-    try:
-        with tempfile.NamedTemporaryFile(suffix=".pdf", delete=True) as infile:
-            infile.write(pdf_bytes)
-            infile.flush()
-            out = subprocess.check_output(
-                [
-                    "pdftotext",
-                    "-f",
-                    "1",
-                    "-l",
-                    "3",
-                    "-enc",
-                    "UTF-8",
-                    infile.name,
-                    "-",
-                ],
-                text=True,
-                stderr=subprocess.DEVNULL,
-            )
-    except Exception:
-        return ""
+    out = _pdftotext_from_bytes(pdf_bytes, first_page=1, last_page=3)
     return extract_candidate_abstract_from_text(out)
 
 
@@ -337,6 +481,287 @@ def candidate_urls_for_paper(paper: Dict) -> List[str]:
     if openalex_id and openalex_id not in urls:
         urls.append(openalex_id)
     return urls
+
+
+def empty_full_text_cache_stats() -> Dict[str, int]:
+    return {
+        "full_text_cache_candidates": 0,
+        "full_text_cache_hits": 0,
+        "full_text_urls_checked": 0,
+        "full_text_pdf_fetches": 0,
+        "full_text_html_fetches": 0,
+        "full_text_cached_new": 0,
+        "full_text_cache_refreshed": 0,
+        "full_text_cache_failures": 0,
+        "full_text_text_truncated": 0,
+        "full_text_cache_total_entries": 0,
+        "papers_with_cached_full_text": 0,
+        "papers_without_cached_full_text": 0,
+    }
+
+
+def _emit_full_text_progress(line: str, log_file: Optional[TextIO]) -> None:
+    print(line, flush=True)
+    if log_file is not None:
+        log_file.write(line + "\n")
+        log_file.flush()
+
+
+def _paper_full_text_cache_key(paper: Dict, fallback_index: int) -> str:
+    pid = (paper.get("id") or "").strip()
+    if pid:
+        return f"id:{pid}"
+    doi = normalize_doi(paper.get("doi", ""))
+    if doi:
+        return f"doi:{doi.lower()}"
+    src = (paper.get("source_url") or paper.get("openalex_id") or "").strip()
+    if src:
+        return f"url:{src}"
+    return f"row:{fallback_index}"
+
+
+def _paper_id_for_entry(paper: Dict, fallback_index: int) -> str:
+    pid = (paper.get("id") or "").strip()
+    if pid:
+        return pid
+    doi = normalize_doi(paper.get("doi", ""))
+    if doi:
+        return f"doi:{doi}"
+    return f"row:{fallback_index}"
+
+
+def prime_full_text_cache(
+    seed_papers: List[Dict],
+    hop_papers: List[Dict],
+    *,
+    max_papers: int = 0,
+    refresh: bool = False,
+) -> Dict[str, int]:
+    papers = seed_papers + hop_papers
+    if max_papers > 0:
+        papers = papers[:max_papers]
+
+    total = len(papers)
+    stats = empty_full_text_cache_stats()
+    stats["full_text_cache_candidates"] = total
+    cache = load_full_text_cache(FULL_TEXT_CACHE_PATH)
+    cache_mutated = False
+    progress_log: Optional[TextIO] = None
+    try:
+        FULL_TEXT_PROGRESS_LOG_PATH.parent.mkdir(parents=True, exist_ok=True)
+        progress_log = FULL_TEXT_PROGRESS_LOG_PATH.open("w", encoding="utf-8")
+        progress_log.write(
+            f"# full-text progress started {datetime.now(timezone.utc).isoformat()} candidates={total}\n"
+        )
+        progress_log.flush()
+    except Exception:
+        progress_log = None
+
+    for idx, paper in enumerate(papers, start=1):
+        paper_id = _paper_id_for_entry(paper, idx)
+        paper_title = (paper.get("title") or "").strip() or "Untitled"
+        cache_key = _paper_full_text_cache_key(paper, idx)
+        existing = cache.get(cache_key) if isinstance(cache.get(cache_key), dict) else None
+        if existing and not refresh and ((existing.get("text") or "").strip() or existing.get("status") == "unavailable"):
+            stats["full_text_cache_hits"] += 1
+            _emit_full_text_progress(
+                f"[full-text] {idx}/{total} cache_hit {paper_id} | {paper_title}",
+                progress_log,
+            )
+            continue
+
+        urls = [u for u in candidate_urls_for_paper(paper) if u.startswith(("http://", "https://"))]
+        urls = list(dict.fromkeys(urls))
+        stats["full_text_urls_checked"] += len(urls)
+
+        best_text = ""
+        best_source_url = ""
+        best_source_type = ""
+        was_truncated = False
+
+        for url in urls:
+            if best_text:
+                break
+
+            url_low = url.lower()
+            html = ""
+            tried_direct_pdf = False
+
+            # Some DOI or publisher links resolve directly to a PDF even when the URL
+            # does not end with ".pdf". Try direct PDF extraction first for likely cases.
+            if url_low.endswith(".pdf") or "doi.org/" in url_low or "/pdf/" in url_low or "arxiv.org/pdf/" in url_low:
+                stats["full_text_pdf_fetches"] += 1
+                tried_direct_pdf = True
+                pdf_bytes = fetch_pdf_bytes(url)
+                if pdf_bytes:
+                    text, truncated = extract_full_text_from_pdf_bytes(pdf_bytes)
+                    if text:
+                        best_text = text
+                        best_source_url = url
+                        best_source_type = "pdf"
+                        was_truncated = truncated
+                        break
+
+            if best_text:
+                break
+
+            html = fetch_url_html(url)
+            if html:
+                stats["full_text_html_fetches"] += 1
+            elif not tried_direct_pdf:
+                # Fallback: when HTML fetch yields nothing, the URL may still be
+                # serving binary PDF content behind a non-obvious path.
+                stats["full_text_pdf_fetches"] += 1
+                pdf_bytes = fetch_pdf_bytes(url)
+                if pdf_bytes:
+                    text, truncated = extract_full_text_from_pdf_bytes(pdf_bytes)
+                    if text:
+                        best_text = text
+                        best_source_url = url
+                        best_source_type = "pdf"
+                        was_truncated = truncated
+                        break
+
+            if not html:
+                continue
+
+            pdf_urls = discover_pdf_urls_from_html(html, url)
+            for pdf_url in pdf_urls:
+                stats["full_text_pdf_fetches"] += 1
+                pdf_bytes = fetch_pdf_bytes(pdf_url)
+                if not pdf_bytes:
+                    continue
+                text, truncated = extract_full_text_from_pdf_bytes(pdf_bytes)
+                if text:
+                    best_text = text
+                    best_source_url = pdf_url
+                    best_source_type = "pdf"
+                    was_truncated = truncated
+                    break
+            if best_text:
+                break
+
+            html_text, truncated = extract_full_text_from_html(html)
+            if html_text:
+                best_text = html_text
+                best_source_url = url
+                best_source_type = "html"
+                was_truncated = truncated
+                break
+
+        now = datetime.now(timezone.utc).isoformat()
+        if best_text:
+            if was_truncated:
+                stats["full_text_text_truncated"] += 1
+            cache[cache_key] = {
+                "paper_id": paper_id,
+                "title": paper_title,
+                "scope": (paper.get("scope") or "").strip(),
+                "doi": normalize_doi(paper.get("doi", "")),
+                "source_url": best_source_url,
+                "source_type": best_source_type,
+                "char_count": len(best_text),
+                "truncated": was_truncated,
+                "status": "ok",
+                "updated_at_utc": now,
+                "text": best_text,
+            }
+            if existing and refresh:
+                stats["full_text_cache_refreshed"] += 1
+                event = "refreshed"
+            else:
+                stats["full_text_cached_new"] += 1
+                event = "cached"
+            cache_mutated = True
+            save_full_text_cache(FULL_TEXT_CACHE_PATH, cache)
+            _emit_full_text_progress(
+                f"[full-text] {idx}/{total} {event} {paper_id} | chars={len(best_text)} | source={best_source_type} | {paper_title}",
+                progress_log,
+            )
+        else:
+            cache[cache_key] = {
+                "paper_id": paper_id,
+                "title": paper_title,
+                "scope": (paper.get("scope") or "").strip(),
+                "doi": normalize_doi(paper.get("doi", "")),
+                "status": "unavailable",
+                "updated_at_utc": now,
+                "attempted_urls": urls,
+                "text": "",
+            }
+            stats["full_text_cache_failures"] += 1
+            cache_mutated = True
+            save_full_text_cache(FULL_TEXT_CACHE_PATH, cache)
+            _emit_full_text_progress(
+                f"[full-text] {idx}/{total} unavailable {paper_id} | urls={len(urls)} | {paper_title}",
+                progress_log,
+            )
+
+    if cache_mutated:
+        save_full_text_cache(FULL_TEXT_CACHE_PATH, cache)
+    if progress_log is not None:
+        progress_log.write(
+            f"# full-text progress completed {datetime.now(timezone.utc).isoformat()} total_entries={len(cache)}\n"
+        )
+        progress_log.flush()
+        progress_log.close()
+    stats["full_text_cache_total_entries"] = len(cache)
+    return stats
+
+
+def _excerpt_for_display(text: str, max_chars: int = 320) -> str:
+    compact = re.sub(r"\s+", " ", text or "").strip()
+    if not compact:
+        return ""
+    if len(compact) <= max_chars:
+        return compact
+    return compact[: max_chars - 1].rstrip() + "\u2026"
+
+
+def annotate_papers_with_full_text_cache(seed_papers: List[Dict], hop_papers: List[Dict]) -> Dict[str, int]:
+    cache = load_full_text_cache(FULL_TEXT_CACHE_PATH)
+    by_paper_id: Dict[str, Dict] = {}
+    by_doi: Dict[str, Dict] = {}
+    for entry in cache.values():
+        if not isinstance(entry, dict):
+            continue
+        status = (entry.get("status") or "").strip()
+        text = (entry.get("text") or "").strip()
+        if status != "ok" or not text:
+            continue
+        pid = (entry.get("paper_id") or "").strip()
+        doi = normalize_doi(entry.get("doi", ""))
+        if pid:
+            by_paper_id[pid] = entry
+        if doi:
+            by_doi[doi] = entry
+
+    papers = seed_papers + hop_papers
+    cached_count = 0
+    for paper in papers:
+        pid = (paper.get("id") or "").strip()
+        doi = normalize_doi(paper.get("doi", ""))
+        entry = by_paper_id.get(pid) or by_doi.get(doi)
+        if entry:
+            text = (entry.get("text") or "").strip()
+            paper["full_text_cached"] = True
+            paper["full_text_char_count"] = int(entry.get("char_count") or len(text))
+            paper["full_text_source_url"] = (entry.get("source_url") or "").strip()
+            paper["full_text_source_type"] = (entry.get("source_type") or "").strip()
+            paper["full_text_excerpt"] = _excerpt_for_display(text)
+            cached_count += 1
+        else:
+            paper["full_text_cached"] = False
+            paper["full_text_char_count"] = 0
+            paper["full_text_source_url"] = ""
+            paper["full_text_source_type"] = ""
+            paper["full_text_excerpt"] = ""
+
+    return {
+        "papers_with_cached_full_text": cached_count,
+        "papers_without_cached_full_text": max(len(papers) - cached_count, 0),
+        "full_text_cache_total_entries": len(cache),
+    }
 
 
 def enrich_missing_abstracts_from_urls(seed_papers: List[Dict], hop_papers: List[Dict]) -> Dict:

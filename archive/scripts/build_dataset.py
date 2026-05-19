@@ -18,7 +18,10 @@ from utils import (
     ROOT, CORPUS_DIR, DATA_DIR, load_dotenv_optional,
 )
 from abstract_fetcher import (
+    annotate_papers_with_full_text_cache,
     enrich_papers_with_openalex,
+    empty_full_text_cache_stats,
+    prime_full_text_cache,
     Topic,
     load_topics,
     build_seed_topic_lookup,
@@ -59,6 +62,7 @@ def _paper_enrichment_stub(seed_papers: List[Dict], hop_papers: List[Dict]) -> D
         "papers_missing_abstract_after_url_fallback": missing,
         "proxy_descriptions_filled": 0,
         "papers_missing_abstract_after_proxy": missing,
+        **empty_full_text_cache_stats(),
     }
 
 
@@ -76,6 +80,22 @@ def parse_args() -> argparse.Namespace:
         "--skip-paper-enrichment",
         action="store_true",
         help="Skip OpenAlex/CrossRef/arXiv/URL/proxy abstract enrichment (fast; use after registry-only edits).",
+    )
+    p.add_argument(
+        "--prime-full-text-cache",
+        action="store_true",
+        help="Fetch and cache full text for papers in archive/corpus/cache/paper_full_text_cache.json.",
+    )
+    p.add_argument(
+        "--full-text-cache-max-papers",
+        type=int,
+        default=0,
+        help="Optional cap when priming full-text cache (0 = all papers considered by this build).",
+    )
+    p.add_argument(
+        "--refresh-full-text-cache",
+        action="store_true",
+        help="Re-fetch papers even if full-text cache already has an entry.",
     )
     return p.parse_args()
 
@@ -737,6 +757,18 @@ def build_summary(
         "papers_with_proxy_description": openalex_enrichment.get("papers_with_proxy_description", 0),
         "papers_without_source_abstract": openalex_enrichment.get("papers_without_source_abstract", 0),
         "papers_missing_abstract": openalex_enrichment.get("papers_missing_abstract", 0),
+        "full_text_cache_candidates": openalex_enrichment.get("full_text_cache_candidates", 0),
+        "full_text_cache_hits": openalex_enrichment.get("full_text_cache_hits", 0),
+        "full_text_cached_new": openalex_enrichment.get("full_text_cached_new", 0),
+        "full_text_cache_refreshed": openalex_enrichment.get("full_text_cache_refreshed", 0),
+        "full_text_cache_failures": openalex_enrichment.get("full_text_cache_failures", 0),
+        "full_text_cache_total_entries": openalex_enrichment.get("full_text_cache_total_entries", 0),
+        "full_text_urls_checked": openalex_enrichment.get("full_text_urls_checked", 0),
+        "full_text_pdf_fetches": openalex_enrichment.get("full_text_pdf_fetches", 0),
+        "full_text_html_fetches": openalex_enrichment.get("full_text_html_fetches", 0),
+        "full_text_text_truncated": openalex_enrichment.get("full_text_text_truncated", 0),
+        "papers_with_cached_full_text": openalex_enrichment.get("papers_with_cached_full_text", 0),
+        "papers_without_cached_full_text": openalex_enrichment.get("papers_without_cached_full_text", 0),
     }
 
 
@@ -857,6 +889,18 @@ def main() -> None:
         openalex_enrichment = _paper_enrichment_stub(seed_papers, hop_papers)
     else:
         openalex_enrichment = enrich_papers_with_openalex(seed_papers, hop_papers)
+    if args.prime_full_text_cache:
+        full_text_stats = prime_full_text_cache(
+            seed_papers,
+            hop_papers,
+            max_papers=max(0, args.full_text_cache_max_papers),
+            refresh=args.refresh_full_text_cache,
+        )
+    else:
+        full_text_stats = empty_full_text_cache_stats()
+    openalex_enrichment = {**openalex_enrichment, **full_text_stats}
+    full_text_annotation_stats = annotate_papers_with_full_text_cache(seed_papers, hop_papers)
+    openalex_enrichment = {**openalex_enrichment, **full_text_annotation_stats}
 
     resources_payload, resources_flat = build_resources(topic_by_code)
     programs_payload = build_programs(resources_flat)

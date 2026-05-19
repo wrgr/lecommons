@@ -27,12 +27,19 @@
         "T01",
         "T03"
       ],
+      "home_topic": "T00",
+      "home_concept": "C01",
       "artifact_type": "AP",
       "topic_names": [
         "Field Overview & History",
         "Learning Science Foundations",
         "Learning Engineering Process"
-      ]
+      ],
+      "full_text_cached": false,
+      "full_text_char_count": 0,
+      "full_text_source_url": "",
+      "full_text_source_type": "",
+      "full_text_excerpt": ""
     },
     {
       "id": "LE-T1-002",
@@ -61,12 +68,19 @@
         "T13",
         "T15"
       ],
+      "home_topic": "T00",
+      "home_concept": "C01",
       "artifact_type": "GL",
       "topic_names": [
         "Field Overview & History",
         "High-Consequence & Complex Domains",
         "Evidence & Evaluation Standards"
-      ]
+      ],
+      "full_text_cached": false,
+      "full_text_char_count": 0,
+      "full_text_source_url": "",
+      "full_text_source_type": "",
+      "full_text_excerpt": ""
     },
     {
       "id": "LE-T1-003",
@@ -94,11 +108,18 @@
         "T01",
         "T03"
       ],
+      "home_topic": "T01",
+      "home_concept": "C04",
       "artifact_type": "AP",
       "topic_names": [
         "Learning Science Foundations",
         "Learning Engineering Process"
-      ]
+      ],
+      "full_text_cached": false,
+      "full_text_char_count": 0,
+      "full_text_source_url": "",
+      "full_text_source_type": "",
+      "full_text_excerpt": ""
     },
     {
       "id": "LE-T1-004",
@@ -125,10 +146,17 @@
       "topic_codes": [
         "T01"
       ],
+      "home_topic": "T01",
+      "home_concept": "C05",
       "artifact_type": "AP",
       "topic_names": [
         "Learning Science Foundations"
-      ]
+      ],
+      "full_text_cached": false,
+      "full_text_char_count": 0,
+      "full_text_source_url": "",
+      "full_text_source_type": "",
+      "full_text_excerpt": ""
     },
     {
       "id": "LE-T1-005",
@@ -156,11 +184,18 @@
         "T02",
         "T13"
       ],
+      "home_topic": "T02",
+      "home_concept": "C09",
       "artifact_type": "SG",
       "topic_names": [
         "Systems Engineering & Human Factors",
         "High-Consequence & Complex Domains"
-      ]
+      ],
+      "full_text_cached": false,
+      "full_text_char_count": 0,
+      "full_text_source_url": "",
+      "full_text_source_type": "",
+      "full_text_excerpt": ""
     },
     {
       "id": "LE-T1-006",
@@ -189,12 +224,19 @@
         "T06",
         "T12"
       ],
+      "home_topic": "T01",
+      "home_concept": "C06",
       "artifact_type": "AP",
       "topic_names": [
         "Learning Science Foundations",
         "Intelligent Tutoring & Adaptive Systems",
         "Instructional Design & Curriculum"
-      ]
+      ],
+      "full_text_cached": false,
+      "full_text_char_count": 0,
+      "full_text_source_url": "",
+      "full_text_source_type": "",
+      "full_text_excerpt": ""
     },
     {
       "id": "LE-T1-007",
@@ -223,12 +265,19 @@
         "T00",
         "T15"
       ],
+      "home_topic": "T03",
+      "home_concept": "C03",
       "artifact_type": "GL",
       "topic_names": [
         "Learning Engineering Process",
         "Field Overview & History",
         "Evidence & Evaluation Standards"
-      ]
+      ],
+      "full_text_cached": false,
+      "full_text_char_count": 0,
+      "full_text_source_url": "",
+      "full_text_source_type": "",
+      "full_text_excerpt": ""
     },
     {
       "id": "LE-T1-008",
@@ -257,12 +306,19 @@
         "T01",
         "T06"
       ],
+      "home_topic": "T03",
+      "home_concept": "C11",
       "artifact_type": "AP",
       "topic_names": [
         "Learning Engineering Process",
         "Learning Science Foundations",
         "Intelligent Tutoring & Adaptive Systems"
-      ]
+      ],
+      "full_text_cached": false,
+      "full_text_char_count": 0,
+      "full_text_source_url": "",
+      "full_text_source_type": "",
+      "full_text_excerpt": ""
     },
     {
       "id": "LE-T1-009",
@@ -290,11 +346,18 @@
         "T04",
         "T06"
       ],
+      "home_topic": "T04",
+      "home_concept": "C13",
       "artifact_type": "AP",
       "topic_names": [
         "Measurement & Analytics",
         "Intelligent Tutoring & Adaptive Systems"
-      ]
+      ],
+      "full_text_cached": false,
+      "full_text_char_count": 0,
+      "full_text_source_url": "",
+      "full_text_source_type": "",
+      "full_text_excerpt": ""
     },
     {
       "id": "LE-T1-010",
@@ -322,11 +385,18 @@
         "T04",
         "T11"
       ],
+      "home_topic": "T04",
+      "home_concept": "C14",
       "artifact_type": "AP",
       "topic_names": [
         "Measurement & Analytics",
         "Learning Infrastructure & Platforms"
-      ]
+      ],
+      "full_text_cached": false,
+      "full_text_char_count": 0,
+      "full_text_source_url": "",
+      "full_text_source_type": "",
+      "full_text_excerpt": ""
     },
     {
       "id": "LE-T1-011",
@@ -354,11 +424,18 @@
         "T05",
         "T12"
       ],
+      "home_topic": "T05",
+      "home_concept": "C18",
       "artifact_type": "AP",
       "topic_names": [
         "Knowledge Representation",
         "Instructional Design & Curriculum"
-      ]
+      ],
+      "full_text_cached": false,
+      "full_text_char_count": 0,
+      "full_text_source_url": "",
+      "full_text_source_type": "",
+      "full_text_excerpt": ""
     },
     {
       "id": "LE-T1-013",
@@ -386,11 +463,18 @@
         "T06",
         "T07"
       ],
+      "home_topic": "T06",
+      "home_concept": "C20",
       "artifact_type": "AP",
       "topic_names": [
         "Intelligent Tutoring & Adaptive Systems",
         "AI & Foundation Models in Learning"
-      ]
+      ],
+      "full_text_cached": false,
+      "full_text_char_count": 0,
+      "full_text_source_url": "",
+      "full_text_source_type": "",
+      "full_text_excerpt": ""
     },
     {
       "id": "LE-T1-015",
@@ -418,11 +502,18 @@
         "T07",
         "T06"
       ],
+      "home_topic": "T07",
+      "home_concept": "C23",
       "artifact_type": "AP",
       "topic_names": [
         "AI & Foundation Models in Learning",
         "Intelligent Tutoring & Adaptive Systems"
-      ]
+      ],
+      "full_text_cached": false,
+      "full_text_char_count": 0,
+      "full_text_source_url": "",
+      "full_text_source_type": "",
+      "full_text_excerpt": ""
     },
     {
       "id": "LE-T1-017",
@@ -451,12 +542,19 @@
         "T10",
         "T13"
       ],
+      "home_topic": "T08",
+      "home_concept": "C25",
       "artifact_type": "AP",
       "topic_names": [
         "Simulation & Experiential Learning",
         "Workforce Development & Training Systems",
         "High-Consequence & Complex Domains"
-      ]
+      ],
+      "full_text_cached": false,
+      "full_text_char_count": 0,
+      "full_text_source_url": "",
+      "full_text_source_type": "",
+      "full_text_excerpt": ""
     },
     {
       "id": "LE-T1-019",
@@ -484,11 +582,18 @@
         "T09",
         "T10"
       ],
+      "home_topic": "T09",
+      "home_concept": "C12",
       "artifact_type": "AP",
       "topic_names": [
         "Expert Knowledge Elicitation",
         "Workforce Development & Training Systems"
-      ]
+      ],
+      "full_text_cached": false,
+      "full_text_char_count": 0,
+      "full_text_source_url": "",
+      "full_text_source_type": "",
+      "full_text_excerpt": ""
     },
     {
       "id": "LE-T1-021",
@@ -516,11 +621,18 @@
         "T10",
         "T15"
       ],
+      "home_topic": "T10",
+      "home_concept": "C17",
       "artifact_type": "AP",
       "topic_names": [
         "Workforce Development & Training Systems",
         "Evidence & Evaluation Standards"
-      ]
+      ],
+      "full_text_cached": false,
+      "full_text_char_count": 0,
+      "full_text_source_url": "",
+      "full_text_source_type": "",
+      "full_text_excerpt": ""
     },
     {
       "id": "LE-T1-027",
@@ -548,11 +660,18 @@
         "T13",
         "T02"
       ],
+      "home_topic": "T13",
+      "home_concept": "C33",
       "artifact_type": "AP",
       "topic_names": [
         "High-Consequence & Complex Domains",
         "Systems Engineering & Human Factors"
-      ]
+      ],
+      "full_text_cached": false,
+      "full_text_char_count": 0,
+      "full_text_source_url": "",
+      "full_text_source_type": "",
+      "full_text_excerpt": ""
     },
     {
       "id": "LE-T1-029",
@@ -581,12 +700,19 @@
         "T07",
         "T04"
       ],
+      "home_topic": "T14",
+      "home_concept": "C24",
       "artifact_type": "AP",
       "topic_names": [
         "Ethics, Equity & Responsible LE",
         "AI & Foundation Models in Learning",
         "Measurement & Analytics"
-      ]
+      ],
+      "full_text_cached": false,
+      "full_text_char_count": 0,
+      "full_text_source_url": "",
+      "full_text_source_type": "",
+      "full_text_excerpt": ""
     },
     {
       "id": "LE-T1-031",
@@ -614,11 +740,18 @@
         "T15",
         "T09"
       ],
+      "home_topic": "T15",
+      "home_concept": "C15",
       "artifact_type": "AP",
       "topic_names": [
         "Evidence & Evaluation Standards",
         "Expert Knowledge Elicitation"
-      ]
+      ],
+      "full_text_cached": false,
+      "full_text_char_count": 0,
+      "full_text_source_url": "",
+      "full_text_source_type": "",
+      "full_text_excerpt": ""
     },
     {
       "id": "LE-T1-033",
@@ -646,11 +779,18 @@
         "T16",
         "T00"
       ],
+      "home_topic": "T16",
+      "home_concept": "C32",
       "artifact_type": "SG",
       "topic_names": [
         "Standards, Credentialing & Community",
         "Field Overview & History"
-      ]
+      ],
+      "full_text_cached": false,
+      "full_text_char_count": 0,
+      "full_text_source_url": "",
+      "full_text_source_type": "",
+      "full_text_excerpt": ""
     },
     {
       "id": "LE-T1-035",
@@ -679,12 +819,19 @@
         "T03",
         "T15"
       ],
+      "home_topic": "T17",
+      "home_concept": "C31",
       "artifact_type": "AP",
       "topic_names": [
         "Research Methods & Field Development",
         "Learning Engineering Process",
         "Evidence & Evaluation Standards"
-      ]
+      ],
+      "full_text_cached": false,
+      "full_text_char_count": 0,
+      "full_text_source_url": "",
+      "full_text_source_type": "",
+      "full_text_excerpt": ""
     },
     {
       "id": "LE-LS-AP-001",
@@ -713,12 +860,19 @@
         "T03",
         "T15"
       ],
+      "home_topic": "T17",
+      "home_concept": "C31",
       "artifact_type": "AP",
       "topic_names": [
         "Research Methods & Field Development",
         "Learning Engineering Process",
         "Evidence & Evaluation Standards"
-      ]
+      ],
+      "full_text_cached": false,
+      "full_text_char_count": 0,
+      "full_text_source_url": "",
+      "full_text_source_type": "",
+      "full_text_excerpt": ""
     },
     {
       "id": "LE-LS-AP-002",
@@ -747,12 +901,19 @@
         "T17",
         "T06"
       ],
+      "home_topic": "T04",
+      "home_concept": "C13",
       "artifact_type": "AP",
       "topic_names": [
         "Measurement & Analytics",
         "Research Methods & Field Development",
         "Intelligent Tutoring & Adaptive Systems"
-      ]
+      ],
+      "full_text_cached": false,
+      "full_text_char_count": 0,
+      "full_text_source_url": "",
+      "full_text_source_type": "",
+      "full_text_excerpt": ""
     },
     {
       "id": "LE-LS-AP-003",
@@ -781,12 +942,19 @@
         "T04",
         "T01"
       ],
+      "home_topic": "T06",
+      "home_concept": "C20",
       "artifact_type": "AP",
       "topic_names": [
         "Intelligent Tutoring & Adaptive Systems",
         "Measurement & Analytics",
         "Learning Science Foundations"
-      ]
+      ],
+      "full_text_cached": false,
+      "full_text_char_count": 0,
+      "full_text_source_url": "",
+      "full_text_source_type": "",
+      "full_text_excerpt": ""
     },
     {
       "id": "LE-LS-AP-004",
@@ -815,12 +983,19 @@
         "T01",
         "T15"
       ],
+      "home_topic": "T06",
+      "home_concept": "C20",
       "artifact_type": "AP",
       "topic_names": [
         "Intelligent Tutoring & Adaptive Systems",
         "Learning Science Foundations",
         "Evidence & Evaluation Standards"
-      ]
+      ],
+      "full_text_cached": false,
+      "full_text_char_count": 0,
+      "full_text_source_url": "",
+      "full_text_source_type": "",
+      "full_text_excerpt": ""
     },
     {
       "id": "LE-LS-AP-005",
@@ -849,12 +1024,19 @@
         "T12",
         "T03"
       ],
+      "home_topic": "T01",
+      "home_concept": "C04",
       "artifact_type": "AP",
       "topic_names": [
         "Learning Science Foundations",
         "Instructional Design & Curriculum",
         "Learning Engineering Process"
-      ]
+      ],
+      "full_text_cached": false,
+      "full_text_char_count": 0,
+      "full_text_source_url": "",
+      "full_text_source_type": "",
+      "full_text_excerpt": ""
     },
     {
       "id": "LE-LS-AP-006",
@@ -883,12 +1065,19 @@
         "T01",
         "T09"
       ],
+      "home_topic": "T06",
+      "home_concept": "C20",
       "artifact_type": "AP",
       "topic_names": [
         "Intelligent Tutoring & Adaptive Systems",
         "Learning Science Foundations",
         "Expert Knowledge Elicitation"
-      ]
+      ],
+      "full_text_cached": false,
+      "full_text_char_count": 0,
+      "full_text_source_url": "",
+      "full_text_source_type": "",
+      "full_text_excerpt": ""
     },
     {
       "id": "LE-LS-AP-007",
@@ -916,11 +1105,18 @@
         "T01",
         "T06"
       ],
+      "home_topic": "T01",
+      "home_concept": "C04",
       "artifact_type": "AP",
       "topic_names": [
         "Learning Science Foundations",
         "Intelligent Tutoring & Adaptive Systems"
-      ]
+      ],
+      "full_text_cached": false,
+      "full_text_char_count": 0,
+      "full_text_source_url": "",
+      "full_text_source_type": "",
+      "full_text_excerpt": ""
     },
     {
       "id": "LE-LS-AP-009",
@@ -949,12 +1145,19 @@
         "T02",
         "T06"
       ],
+      "home_topic": "T08",
+      "home_concept": "C25",
       "artifact_type": "AP",
       "topic_names": [
         "Simulation & Experiential Learning",
         "Systems Engineering & Human Factors",
         "Intelligent Tutoring & Adaptive Systems"
-      ]
+      ],
+      "full_text_cached": false,
+      "full_text_char_count": 0,
+      "full_text_source_url": "",
+      "full_text_source_type": "",
+      "full_text_excerpt": ""
     },
     {
       "id": "LE-LS-AP-010",
@@ -983,12 +1186,19 @@
         "T02",
         "T07"
       ],
+      "home_topic": "T08",
+      "home_concept": "C25",
       "artifact_type": "AP",
       "topic_names": [
         "Simulation & Experiential Learning",
         "Systems Engineering & Human Factors",
         "AI & Foundation Models in Learning"
-      ]
+      ],
+      "full_text_cached": false,
+      "full_text_char_count": 0,
+      "full_text_source_url": "",
+      "full_text_source_type": "",
+      "full_text_excerpt": ""
     },
     {
       "id": "LE-LS-AP-012",
@@ -1017,12 +1227,19 @@
         "T03",
         "T15"
       ],
+      "home_topic": "T04",
+      "home_concept": "C13",
       "artifact_type": "AP",
       "topic_names": [
         "Measurement & Analytics",
         "Learning Engineering Process",
         "Evidence & Evaluation Standards"
-      ]
+      ],
+      "full_text_cached": false,
+      "full_text_char_count": 0,
+      "full_text_source_url": "",
+      "full_text_source_type": "",
+      "full_text_excerpt": ""
     },
     {
       "id": "LE-LS-AP-013",
@@ -1051,12 +1268,19 @@
         "T03",
         "T15"
       ],
+      "home_topic": "T16",
+      "home_concept": "C32",
       "artifact_type": "AP",
       "topic_names": [
         "Standards, Credentialing & Community",
         "Learning Engineering Process",
         "Evidence & Evaluation Standards"
-      ]
+      ],
+      "full_text_cached": false,
+      "full_text_char_count": 0,
+      "full_text_source_url": "",
+      "full_text_source_type": "",
+      "full_text_excerpt": ""
     },
     {
       "id": "GF-AP-001",
@@ -1085,12 +1309,19 @@
         "T03",
         "T09"
       ],
+      "home_topic": "T02",
+      "home_concept": "C09",
       "artifact_type": "AP",
       "topic_names": [
         "Systems Engineering & Human Factors",
         "Learning Engineering Process",
         "Expert Knowledge Elicitation"
-      ]
+      ],
+      "full_text_cached": false,
+      "full_text_char_count": 0,
+      "full_text_source_url": "",
+      "full_text_source_type": "",
+      "full_text_excerpt": ""
     },
     {
       "id": "GF-AP-002",
@@ -1118,11 +1349,18 @@
         "T02",
         "T13"
       ],
+      "home_topic": "T02",
+      "home_concept": "C09",
       "artifact_type": "AP",
       "topic_names": [
         "Systems Engineering & Human Factors",
         "High-Consequence & Complex Domains"
-      ]
+      ],
+      "full_text_cached": false,
+      "full_text_char_count": 0,
+      "full_text_source_url": "",
+      "full_text_source_type": "",
+      "full_text_excerpt": ""
     },
     {
       "id": "GF-AP-003",
@@ -1151,12 +1389,19 @@
         "T09",
         "T13"
       ],
+      "home_topic": "T02",
+      "home_concept": "C09",
       "artifact_type": "AP",
       "topic_names": [
         "Systems Engineering & Human Factors",
         "Expert Knowledge Elicitation",
         "High-Consequence & Complex Domains"
-      ]
+      ],
+      "full_text_cached": false,
+      "full_text_char_count": 0,
+      "full_text_source_url": "",
+      "full_text_source_type": "",
+      "full_text_excerpt": ""
     },
     {
       "id": "GF-AP-004",
@@ -1184,11 +1429,18 @@
         "T02",
         "T13"
       ],
+      "home_topic": "T02",
+      "home_concept": "C09",
       "artifact_type": "AP",
       "topic_names": [
         "Systems Engineering & Human Factors",
         "High-Consequence & Complex Domains"
-      ]
+      ],
+      "full_text_cached": false,
+      "full_text_char_count": 0,
+      "full_text_source_url": "",
+      "full_text_source_type": "",
+      "full_text_excerpt": ""
     },
     {
       "id": "GF-AP-005",
@@ -1217,12 +1469,19 @@
         "T12",
         "T03"
       ],
+      "home_topic": "T05",
+      "home_concept": "C18",
       "artifact_type": "AP",
       "topic_names": [
         "Knowledge Representation",
         "Instructional Design & Curriculum",
         "Learning Engineering Process"
-      ]
+      ],
+      "full_text_cached": false,
+      "full_text_char_count": 0,
+      "full_text_source_url": "",
+      "full_text_source_type": "",
+      "full_text_excerpt": ""
     },
     {
       "id": "GF-AP-006",
@@ -1251,12 +1510,19 @@
         "T10",
         "T04"
       ],
+      "home_topic": "T05",
+      "home_concept": "C18",
       "artifact_type": "AP",
       "topic_names": [
         "Knowledge Representation",
         "Workforce Development & Training Systems",
         "Measurement & Analytics"
-      ]
+      ],
+      "full_text_cached": false,
+      "full_text_char_count": 0,
+      "full_text_source_url": "",
+      "full_text_source_type": "",
+      "full_text_excerpt": ""
     },
     {
       "id": "GF-AP-007",
@@ -1285,12 +1551,19 @@
         "T10",
         "T06"
       ],
+      "home_topic": "T05",
+      "home_concept": "C18",
       "artifact_type": "AP",
       "topic_names": [
         "Knowledge Representation",
         "Workforce Development & Training Systems",
         "Intelligent Tutoring & Adaptive Systems"
-      ]
+      ],
+      "full_text_cached": false,
+      "full_text_char_count": 0,
+      "full_text_source_url": "",
+      "full_text_source_type": "",
+      "full_text_excerpt": ""
     },
     {
       "id": "GF-AP-008",
@@ -1319,12 +1592,19 @@
         "T09",
         "T03"
       ],
+      "home_topic": "T05",
+      "home_concept": "C18",
       "artifact_type": "AP",
       "topic_names": [
         "Knowledge Representation",
         "Expert Knowledge Elicitation",
         "Learning Engineering Process"
-      ]
+      ],
+      "full_text_cached": false,
+      "full_text_char_count": 0,
+      "full_text_source_url": "",
+      "full_text_source_type": "",
+      "full_text_excerpt": ""
     },
     {
       "id": "GF-AP-009",
@@ -1353,12 +1633,19 @@
         "T02",
         "T13"
       ],
+      "home_topic": "T09",
+      "home_concept": "C28",
       "artifact_type": "AP",
       "topic_names": [
         "Expert Knowledge Elicitation",
         "Systems Engineering & Human Factors",
         "High-Consequence & Complex Domains"
-      ]
+      ],
+      "full_text_cached": false,
+      "full_text_char_count": 0,
+      "full_text_source_url": "",
+      "full_text_source_type": "",
+      "full_text_excerpt": ""
     },
     {
       "id": "GF-AP-010",
@@ -1387,12 +1674,19 @@
         "T06",
         "T02"
       ],
+      "home_topic": "T09",
+      "home_concept": "C28",
       "artifact_type": "AP",
       "topic_names": [
         "Expert Knowledge Elicitation",
         "Intelligent Tutoring & Adaptive Systems",
         "Systems Engineering & Human Factors"
-      ]
+      ],
+      "full_text_cached": false,
+      "full_text_char_count": 0,
+      "full_text_source_url": "",
+      "full_text_source_type": "",
+      "full_text_excerpt": ""
     },
     {
       "id": "GF-AP-011",
@@ -1421,12 +1715,19 @@
         "T01",
         "T06"
       ],
+      "home_topic": "T09",
+      "home_concept": "C28",
       "artifact_type": "AP",
       "topic_names": [
         "Expert Knowledge Elicitation",
         "Learning Science Foundations",
         "Intelligent Tutoring & Adaptive Systems"
-      ]
+      ],
+      "full_text_cached": false,
+      "full_text_char_count": 0,
+      "full_text_source_url": "",
+      "full_text_source_type": "",
+      "full_text_excerpt": ""
     },
     {
       "id": "GF-AP-012",
@@ -1455,12 +1756,19 @@
         "T12",
         "T10"
       ],
+      "home_topic": "T09",
+      "home_concept": "C28",
       "artifact_type": "AP",
       "topic_names": [
         "Expert Knowledge Elicitation",
         "Instructional Design & Curriculum",
         "Workforce Development & Training Systems"
-      ]
+      ],
+      "full_text_cached": false,
+      "full_text_char_count": 0,
+      "full_text_source_url": "",
+      "full_text_source_type": "",
+      "full_text_excerpt": ""
     },
     {
       "id": "GF-AP-013",
@@ -1488,11 +1796,18 @@
         "T09",
         "T02"
       ],
+      "home_topic": "T09",
+      "home_concept": "C28",
       "artifact_type": "AP",
       "topic_names": [
         "Expert Knowledge Elicitation",
         "Systems Engineering & Human Factors"
-      ]
+      ],
+      "full_text_cached": false,
+      "full_text_char_count": 0,
+      "full_text_source_url": "",
+      "full_text_source_type": "",
+      "full_text_excerpt": ""
     },
     {
       "id": "GF-AP-014",
@@ -1521,12 +1836,19 @@
         "T05",
         "T03"
       ],
+      "home_topic": "T12",
+      "home_concept": "",
       "artifact_type": "AP",
       "topic_names": [
         "Instructional Design & Curriculum",
         "Knowledge Representation",
         "Learning Engineering Process"
-      ]
+      ],
+      "full_text_cached": false,
+      "full_text_char_count": 0,
+      "full_text_source_url": "",
+      "full_text_source_type": "",
+      "full_text_excerpt": ""
     },
     {
       "id": "GF-AP-015",
@@ -1555,12 +1877,19 @@
         "T01",
         "T03"
       ],
+      "home_topic": "T12",
+      "home_concept": "",
       "artifact_type": "AP",
       "topic_names": [
         "Instructional Design & Curriculum",
         "Learning Science Foundations",
         "Learning Engineering Process"
-      ]
+      ],
+      "full_text_cached": false,
+      "full_text_char_count": 0,
+      "full_text_source_url": "",
+      "full_text_source_type": "",
+      "full_text_excerpt": ""
     },
     {
       "id": "GF-AP-016",
@@ -1589,12 +1918,19 @@
         "T01",
         "T06"
       ],
+      "home_topic": "T12",
+      "home_concept": "",
       "artifact_type": "AP",
       "topic_names": [
         "Instructional Design & Curriculum",
         "Learning Science Foundations",
         "Intelligent Tutoring & Adaptive Systems"
-      ]
+      ],
+      "full_text_cached": false,
+      "full_text_char_count": 0,
+      "full_text_source_url": "",
+      "full_text_source_type": "",
+      "full_text_excerpt": ""
     },
     {
       "id": "GF-AP-017",
@@ -1622,11 +1958,18 @@
         "T12",
         "T03"
       ],
+      "home_topic": "T12",
+      "home_concept": "",
       "artifact_type": "AP",
       "topic_names": [
         "Instructional Design & Curriculum",
         "Learning Engineering Process"
-      ]
+      ],
+      "full_text_cached": false,
+      "full_text_char_count": 0,
+      "full_text_source_url": "",
+      "full_text_source_type": "",
+      "full_text_excerpt": ""
     },
     {
       "id": "GF-AP-018",
@@ -1655,12 +1998,19 @@
         "T07",
         "T06"
       ],
+      "home_topic": "T12",
+      "home_concept": "",
       "artifact_type": "AP",
       "topic_names": [
         "Instructional Design & Curriculum",
         "AI & Foundation Models in Learning",
         "Intelligent Tutoring & Adaptive Systems"
-      ]
+      ],
+      "full_text_cached": false,
+      "full_text_char_count": 0,
+      "full_text_source_url": "",
+      "full_text_source_type": "",
+      "full_text_excerpt": ""
     },
     {
       "id": "GF-T02-001",
@@ -1688,11 +2038,18 @@
         "T02",
         "T10"
       ],
+      "home_topic": "T02",
+      "home_concept": "C09",
       "artifact_type": "AP",
       "topic_names": [
         "Systems Engineering & Human Factors",
         "Workforce Development & Training Systems"
-      ]
+      ],
+      "full_text_cached": false,
+      "full_text_char_count": 0,
+      "full_text_source_url": "",
+      "full_text_source_type": "",
+      "full_text_excerpt": ""
     },
     {
       "id": "GF-T02-002",
@@ -1720,11 +2077,18 @@
         "T02",
         "T01"
       ],
+      "home_topic": "T02",
+      "home_concept": "C09",
       "artifact_type": "AP",
       "topic_names": [
         "Systems Engineering & Human Factors",
         "Learning Science Foundations"
-      ]
+      ],
+      "full_text_cached": false,
+      "full_text_char_count": 0,
+      "full_text_source_url": "",
+      "full_text_source_type": "",
+      "full_text_excerpt": ""
     },
     {
       "id": "GF-T02-003",
@@ -1752,11 +2116,18 @@
         "T02",
         "T09"
       ],
+      "home_topic": "T02",
+      "home_concept": "C09",
       "artifact_type": "AP",
       "topic_names": [
         "Systems Engineering & Human Factors",
         "Expert Knowledge Elicitation"
-      ]
+      ],
+      "full_text_cached": false,
+      "full_text_char_count": 0,
+      "full_text_source_url": "",
+      "full_text_source_type": "",
+      "full_text_excerpt": ""
     },
     {
       "id": "GF-T02-004",
@@ -1785,12 +2156,19 @@
         "T01",
         "T09"
       ],
+      "home_topic": "T02",
+      "home_concept": "C09",
       "artifact_type": "AP",
       "topic_names": [
         "Systems Engineering & Human Factors",
         "Learning Science Foundations",
         "Expert Knowledge Elicitation"
-      ]
+      ],
+      "full_text_cached": false,
+      "full_text_char_count": 0,
+      "full_text_source_url": "",
+      "full_text_source_type": "",
+      "full_text_excerpt": ""
     },
     {
       "id": "GF-T02-005",
@@ -1819,12 +2197,19 @@
         "T15",
         "T16"
       ],
+      "home_topic": "T02",
+      "home_concept": "C09",
       "artifact_type": "AP",
       "topic_names": [
         "Systems Engineering & Human Factors",
         "Evidence & Evaluation Standards",
         "Standards, Credentialing & Community"
-      ]
+      ],
+      "full_text_cached": false,
+      "full_text_char_count": 0,
+      "full_text_source_url": "",
+      "full_text_source_type": "",
+      "full_text_excerpt": ""
     },
     {
       "id": "GF-T05-006",
@@ -1853,12 +2238,19 @@
         "T01",
         "T03"
       ],
+      "home_topic": "T05",
+      "home_concept": "C18",
       "artifact_type": "AP",
       "topic_names": [
         "Knowledge Representation",
         "Learning Science Foundations",
         "Learning Engineering Process"
-      ]
+      ],
+      "full_text_cached": false,
+      "full_text_char_count": 0,
+      "full_text_source_url": "",
+      "full_text_source_type": "",
+      "full_text_excerpt": ""
     },
     {
       "id": "GF-T05-007",
@@ -1887,12 +2279,19 @@
         "T04",
         "T06"
       ],
+      "home_topic": "T05",
+      "home_concept": "C18",
       "artifact_type": "AP",
       "topic_names": [
         "Knowledge Representation",
         "Measurement & Analytics",
         "Intelligent Tutoring & Adaptive Systems"
-      ]
+      ],
+      "full_text_cached": false,
+      "full_text_char_count": 0,
+      "full_text_source_url": "",
+      "full_text_source_type": "",
+      "full_text_excerpt": ""
     },
     {
       "id": "GF-T05-008",
@@ -1921,12 +2320,19 @@
         "T04",
         "T06"
       ],
+      "home_topic": "T05",
+      "home_concept": "C18",
       "artifact_type": "AP",
       "topic_names": [
         "Knowledge Representation",
         "Measurement & Analytics",
         "Intelligent Tutoring & Adaptive Systems"
-      ]
+      ],
+      "full_text_cached": false,
+      "full_text_char_count": 0,
+      "full_text_source_url": "",
+      "full_text_source_type": "",
+      "full_text_excerpt": ""
     },
     {
       "id": "GF-T05-009",
@@ -1954,11 +2360,18 @@
         "T05",
         "T06"
       ],
+      "home_topic": "T05",
+      "home_concept": "C18",
       "artifact_type": "AP",
       "topic_names": [
         "Knowledge Representation",
         "Intelligent Tutoring & Adaptive Systems"
-      ]
+      ],
+      "full_text_cached": false,
+      "full_text_char_count": 0,
+      "full_text_source_url": "",
+      "full_text_source_type": "",
+      "full_text_excerpt": ""
     },
     {
       "id": "GF-T05-010",
@@ -1987,12 +2400,19 @@
         "T04",
         "T01"
       ],
+      "home_topic": "T05",
+      "home_concept": "C18",
       "artifact_type": "AP",
       "topic_names": [
         "Knowledge Representation",
         "Measurement & Analytics",
         "Learning Science Foundations"
-      ]
+      ],
+      "full_text_cached": false,
+      "full_text_char_count": 0,
+      "full_text_source_url": "",
+      "full_text_source_type": "",
+      "full_text_excerpt": ""
     },
     {
       "id": "GF-T05-011",
@@ -2021,12 +2441,19 @@
         "T04",
         "T07"
       ],
+      "home_topic": "T05",
+      "home_concept": "C18",
       "artifact_type": "AP",
       "topic_names": [
         "Knowledge Representation",
         "Measurement & Analytics",
         "AI & Foundation Models in Learning"
-      ]
+      ],
+      "full_text_cached": false,
+      "full_text_char_count": 0,
+      "full_text_source_url": "",
+      "full_text_source_type": "",
+      "full_text_excerpt": ""
     },
     {
       "id": "GF-T09-012",
@@ -2054,11 +2481,18 @@
         "T09",
         "T02"
       ],
+      "home_topic": "T09",
+      "home_concept": "C28",
       "artifact_type": "AP",
       "topic_names": [
         "Expert Knowledge Elicitation",
         "Systems Engineering & Human Factors"
-      ]
+      ],
+      "full_text_cached": false,
+      "full_text_char_count": 0,
+      "full_text_source_url": "",
+      "full_text_source_type": "",
+      "full_text_excerpt": ""
     },
     {
       "id": "GF-T09-013",
@@ -2087,12 +2521,19 @@
         "T01",
         "T15"
       ],
+      "home_topic": "T09",
+      "home_concept": "C28",
       "artifact_type": "AP",
       "topic_names": [
         "Expert Knowledge Elicitation",
         "Learning Science Foundations",
         "Evidence & Evaluation Standards"
-      ]
+      ],
+      "full_text_cached": false,
+      "full_text_char_count": 0,
+      "full_text_source_url": "",
+      "full_text_source_type": "",
+      "full_text_excerpt": ""
     },
     {
       "id": "GF-T09-014",
@@ -2121,12 +2562,19 @@
         "T03",
         "T12"
       ],
+      "home_topic": "T09",
+      "home_concept": "C28",
       "artifact_type": "AP",
       "topic_names": [
         "Expert Knowledge Elicitation",
         "Learning Engineering Process",
         "Instructional Design & Curriculum"
-      ]
+      ],
+      "full_text_cached": false,
+      "full_text_char_count": 0,
+      "full_text_source_url": "",
+      "full_text_source_type": "",
+      "full_text_excerpt": ""
     },
     {
       "id": "GF-T09-015",
@@ -2155,12 +2603,19 @@
         "T02",
         "T03"
       ],
+      "home_topic": "T09",
+      "home_concept": "C28",
       "artifact_type": "AP",
       "topic_names": [
         "Expert Knowledge Elicitation",
         "Systems Engineering & Human Factors",
         "Learning Engineering Process"
-      ]
+      ],
+      "full_text_cached": false,
+      "full_text_char_count": 0,
+      "full_text_source_url": "",
+      "full_text_source_type": "",
+      "full_text_excerpt": ""
     },
     {
       "id": "GF-T09-016",
@@ -2188,11 +2643,18 @@
         "T09",
         "T17"
       ],
+      "home_topic": "T09",
+      "home_concept": "C28",
       "artifact_type": "AP",
       "topic_names": [
         "Expert Knowledge Elicitation",
         "Research Methods & Field Development"
-      ]
+      ],
+      "full_text_cached": false,
+      "full_text_char_count": 0,
+      "full_text_source_url": "",
+      "full_text_source_type": "",
+      "full_text_excerpt": ""
     }
   ]
 }

@@ -34,8 +34,8 @@ const activeLabel = items.find((it) => it.slug === active)?.label ?? "Menu";
 <header class="site-nav">
   <div class="nav-inner">
     <a href={base} class="brand" aria-label="Home">
-      <span class="brand-mark">LEC</span>
-      <span class="brand-text">Learning Engineering Commons</span>
+      <span class="brand-mark">LENS</span>
+      <span class="brand-text">Learning Engineering for Next-Generation Systems</span>
     </a>
 
     <nav class="desktop-nav" aria-label="Primary">
@@ -102,13 +102,15 @@ const activeLabel = items.find((it) => it.slug === active)?.label ?? "Menu";
   .brand-mark {
     display: inline-grid;
     place-items: center;
-    width: 1.8rem;
+    min-width: 1.8rem;
     height: 1.8rem;
+    padding: 0 .35rem;
     background: var(--accent);
     color: var(--bg);
     font-family: var(--sans);
     font-size: .8rem;
     font-weight: 700;
+    letter-spacing: .02em;
     border-radius: 2px;
   }
   .brand-text { font-size: 1rem; font-weight: 600; white-space: nowrap; }

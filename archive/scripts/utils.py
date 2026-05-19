@@ -31,6 +31,16 @@ def _int_env(name: str, default: int) -> int:
         return default
 
 
+def _float_env(name: str, default: float) -> float:
+    raw = (os.getenv(name) or "").strip()
+    if not raw:
+        return default
+    try:
+        return float(raw)
+    except ValueError:
+        return default
+
+
 ROOT = Path(__file__).resolve().parents[1]
 CORPUS_DIR = ROOT / "corpus"
 DATA_DIR = ROOT / "data"
@@ -54,12 +64,13 @@ ARXIV_TIMEOUT_SEC = 25.0
 ARXIV_SLEEP_SEC = 0.12
 ARXIV_MAX_RETRIES = 4
 ARXIV_CACHE_PATH = CORPUS_DIR / "cache" / "arxiv_abstract_cache.json"
-URL_FETCH_TIMEOUT_SEC = 30.0
-URL_FETCH_SLEEP_SEC = 0.08
-URL_FETCH_MAX_RETRIES = 4
+URL_FETCH_TIMEOUT_SEC = _float_env("URL_FETCH_TIMEOUT_SEC", 30.0)
+URL_FETCH_SLEEP_SEC = _float_env("URL_FETCH_SLEEP_SEC", 0.08)
+URL_FETCH_MAX_RETRIES = _int_env("URL_FETCH_MAX_RETRIES", 4)
 URL_ABSTRACT_CACHE_PATH = CORPUS_DIR / "cache" / "url_abstract_cache.json"
 URL_PDF_ABSTRACT_CACHE_PATH = CORPUS_DIR / "cache" / "url_pdf_abstract_cache.json"
 FULL_TEXT_CACHE_PATH = CORPUS_DIR / "cache" / "paper_full_text_cache.json"
+FULL_TEXT_PROGRESS_LOG_PATH = CORPUS_DIR / "cache" / "full_text_progress.log"
 FULL_TEXT_CACHE_MAX_CHARS = _int_env("FULL_TEXT_CACHE_MAX_CHARS", 180000)
 FULL_TEXT_CACHE_MAX_PDF_PAGES = _int_env("FULL_TEXT_CACHE_MAX_PDF_PAGES", 0)
 FULL_TEXT_CACHE_MIN_CHARS = _int_env("FULL_TEXT_CACHE_MIN_CHARS", 1200)

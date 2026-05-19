@@ -52,6 +52,27 @@ python3 scripts/build_dataset.py --skip-paper-enrichment
 
 Same behavior: set **`SKIP_PAPER_ENRICHMENT=1`** in the environment.
 
+To populate a **full-text paper cache** (PDF-first, HTML fallback) for downstream retrieval workflows:
+
+```bash
+python3 scripts/build_dataset.py --prime-full-text-cache
+```
+
+Useful options:
+- `--full-text-cache-max-papers 50` to cap a run while testing.
+- `--refresh-full-text-cache` to re-fetch entries already present in cache.
+
+Cache file: [`archive/corpus/cache/paper_full_text_cache.json`](archive/corpus/cache/paper_full_text_cache.json).
+Progress log (updated per paper): [`archive/corpus/cache/full_text_progress.log`](archive/corpus/cache/full_text_progress.log).
+For live progress in a terminal, run:
+
+```bash
+tail -f archive/corpus/cache/full_text_progress.log
+```
+
+Tune limits via env vars: `FULL_TEXT_CACHE_MAX_CHARS`, `FULL_TEXT_CACHE_MAX_PDF_PAGES`, `FULL_TEXT_CACHE_MIN_CHARS`.
+Network fetch behavior is configurable with `URL_FETCH_TIMEOUT_SEC` (default `30`), `URL_FETCH_SLEEP_SEC` (default `0.08`), and `URL_FETCH_MAX_RETRIES` (default `4`).
+
 5. Serve website locally:
 
 ```bash
