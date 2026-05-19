@@ -4,6 +4,9 @@
 //   - Mobile/tablet (<900px): collapsed <details> disclosure with a hamburger
 // Each shows the same link list; CSS swaps which one is visible.
 // No JavaScript.
+//
+// When Base sets body.dark-shell (pageTheme="dark"), :global() rules at the
+// bottom of this file recolor the nav for the dark homepage chrome.
 
 interface Props {
   active?: string;
@@ -231,5 +234,58 @@ const activeLabel = items.find((it) => it.slug === active)?.label ?? "Menu";
     .nav-inner { flex-wrap: nowrap; }
     .desktop-nav { display: block; }
     .mobile-nav  { display: none; }
+  }
+
+  /* ── Dark shell overrides ─────────────────────────────────────────────────
+     Activated when Base applies body.dark-shell (homepage). Hardcoded colors
+     mirror the homepage palette in src/pages/index.astro. */
+  :global(body.dark-shell .site-nav) {
+    background: rgba(10, 22, 40, 0.85);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border-bottom: 1px solid rgba(26, 138, 125, 0.15);
+  }
+  :global(body.dark-shell .brand) { color: #f5f0e8; }
+  :global(body.dark-shell .brand-text) { color: #f5f0e8; }
+  :global(body.dark-shell .brand-mark) {
+    background: #1a8a7d;
+    color: #0a1628;
+  }
+  :global(body.dark-shell .desktop-nav a) { color: #8a9ab5; }
+  :global(body.dark-shell .desktop-nav a:hover) {
+    background: rgba(44, 196, 179, 0.08);
+    color: #2cc4b3;
+  }
+  :global(body.dark-shell .desktop-nav a.active) {
+    color: #2cc4b3;
+    background: rgba(44, 196, 179, 0.10);
+  }
+  :global(body.dark-shell .mobile-nav summary) {
+    background: rgba(255, 255, 255, 0.04);
+    border-color: rgba(138, 154, 181, 0.2);
+    color: #8a9ab5;
+  }
+  :global(body.dark-shell .mobile-nav summary .current) { color: #2cc4b3; }
+  :global(body.dark-shell .mobile-nav[open] summary) {
+    background: rgba(44, 196, 179, 0.08);
+    border-color: #2cc4b3;
+    color: #2cc4b3;
+  }
+  :global(body.dark-shell .mobile-nav nav) {
+    background: #132240;
+    border-color: rgba(138, 154, 181, 0.2);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.5);
+  }
+  :global(body.dark-shell .mobile-nav nav a) {
+    color: #8a9ab5;
+    border-bottom-color: rgba(138, 154, 181, 0.1);
+  }
+  :global(body.dark-shell .mobile-nav nav a:hover) {
+    background: rgba(44, 196, 179, 0.08);
+    color: #2cc4b3;
+  }
+  :global(body.dark-shell .mobile-nav nav a.active) {
+    background: rgba(44, 196, 179, 0.10);
+    color: #2cc4b3;
   }
 </style>

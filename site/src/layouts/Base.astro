@@ -1,20 +1,27 @@
 ---
 // Shared page shell: metadata, global styles, nav, footer.
+// pageTheme="dark" applies a `dark-shell` class on <body>; NavBar and footer
+// pick that up via :global() overrides so the homepage's dark navy hero
+// experience extends through the chrome. Interior pages stay on the default
+// cream/Charter shell.
 import NavBar from "../components/NavBar.astro";
 
 interface Props {
   title: string;
   description?: string;
   active?: string;
+  pageTheme?: "light" | "dark";
 }
 
 const {
   title,
   description = "Learning Engineering for Next-Generation Systems (LENS) — engineering human capability, advancing system performance.",
   active,
+  pageTheme = "light",
 } = Astro.props;
 
 const base = import.meta.env.BASE_URL;
+const bodyClass = pageTheme === "dark" ? "dark-shell" : undefined;
 ---
 
 <!doctype html>
@@ -26,8 +33,9 @@ const base = import.meta.env.BASE_URL;
     <meta name="description" content={description} />
     <title>{title}</title>
     <link rel="icon" type="image/svg+xml" href={base + "favicon.svg"} />
+    <slot name="head" />
   </head>
-  <body>
+  <body class={bodyClass}>
     <NavBar active={active} />
     <main>
       <slot />
@@ -181,6 +189,30 @@ const base = import.meta.env.BASE_URL;
       .footer-links { display: flex; gap: 1.2rem; }
       .footer-links a { color: var(--muted); border: none; }
       .footer-links a:hover { color: var(--accent); }
+
+      /* Dark shell: applied when pageTheme="dark". Overrides the cream body +
+         footer chrome. NavBar has its own :global(body.dark-shell) rules. */
+      body.dark-shell {
+        background: #0a1628;
+        color: #f5f0e8;
+        font-family: "DM Sans", -apple-system, BlinkMacSystemFont, "Inter", sans-serif;
+      }
+      body.dark-shell main {
+        min-height: auto;
+        padding-bottom: 0;
+      }
+      body.dark-shell footer {
+        background: #132240;
+        border-top: 1px solid rgba(138, 154, 181, 0.1);
+        margin-top: 0;
+        color: #8a9ab5;
+      }
+      body.dark-shell .footer-brand,
+      body.dark-shell .footer-brand strong { color: #f5f0e8; }
+      body.dark-shell .footer-brand .muted { color: #8a9ab5; }
+      body.dark-shell .footer-links a { color: #8a9ab5; }
+      body.dark-shell .footer-links a:hover { color: #2cc4b3; }
+      body.dark-shell .footer-brand a { color: #2cc4b3; }
     </style>
   </body>
 </html>

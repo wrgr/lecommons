@@ -1,535 +1,482 @@
 ---
+// Homepage: dark navy "Capability is a system parameter" landing experience.
+// Uses Base with pageTheme="dark" so the NavBar + footer render on a dark
+// chrome. Interior pages keep the default cream/Charter shell.
 import Base from "../layouts/Base.astro";
-import { getCollection } from "astro:content";
 
-const base = import.meta.env.BASE_URL;
-
-const counts = {
-  practice:      (await getCollection("practice")).length,
-  tools:         (await getCollection("tools")).length,
-  "field-notes": (await getCollection("field-notes")).filter((p) => !p.data.draft).length,
-  "reading-list":(await getCollection("reading-list")).length,
-  events:        (await getCollection("events")).length,
-  community:     (await getCollection("community")).length,
-};
-
-type SectionKey = keyof typeof counts;
-
-const discoveryCards: { href: string; lead: string; title: string; detail: string }[] = [
-  {
-    href: base + "topics/",
-    lead: "Exploring by topic?",
-    title: "Topics",
-    detail: "Browse 18 topics across three layers — from learning science foundations to ethics and evidence standards.",
-  },
-  {
-    href: base + "pathways/",
-    lead: "Want a guided tour?",
-    title: "Pathways",
-    detail: "Five narrative threads through the field — follow the one that matches your question.",
-  },
-];
-
-const whyCards: { key: SectionKey; href: string; lead: string; title: string; detail: string }[] = [
-  {
-    key: "field-notes",
-    href: base + "field-notes/",
-    lead: "Need something you can use this week?",
-    title: "Field Notes",
-    detail: "Short practitioner pieces — tips, templates, and lessons from the actual work.",
-  },
-  {
-    key: "practice",
-    href: base + "practice/",
-    lead: "Figuring out how LEs structure their work?",
-    title: "Practice",
-    detail: "Process diagrams, maturity models, and analysis methods (Five Whys, Fishbone, task analysis).",
-  },
-  {
-    key: "community",
-    href: base + "community/",
-    lead: "Looking for people or programs?",
-    title: "Community",
-    detail: "Organizations, degree programs, and practitioners who do this work.",
-  },
-  {
-    key: "events",
-    href: base + "events/",
-    lead: "Planning to attend, present, or catch up?",
-    title: "Events",
-    detail: "Conferences, recurring series, keynotes, podcasts, and talks from the field.",
-  },
-  {
-    key: "reading-list",
-    href: base + "reading-list/",
-    lead: "Scanning the field or citing the literature?",
-    title: "Reading List",
-    detail: "Papers, books, articles, and reports that define the evidence base.",
-  },
-  {
-    key: "tools",
-    href: base + "tools/",
-    lead: "Picking a platform or instrumenting something?",
-    title: "Tools",
-    detail: "The platforms, systems, and software LEs build on.",
-  },
-];
-
-const programGoals: string[] = [
-  "Prepare practitioners with evidence-driven, methodological skills to instrument learning environments, analyze performance data, and produce decision-grade evidence linking learning outcomes to operational performance.",
-  "Develop analytical and professional skills to responsibly design, deploy, and improve solutions that address critical customer needs, applying implementation science and continuous improvement cycles to integrate human and system capabilities effectively.",
-  "Develop professionals who can navigate the requirements of complex, high-stakes environments, treating privacy, bias, ethics, and accountability as design constraints.",
-  "Enhance capabilities to leverage emerging technologies, including artificial intelligence, and to interpret results and risks responsibly, with attention to uncertainty and auditability.",
-  "Advance the learning engineering field by applying rigorous methods to authentic operational problems in coursework and capstone projects, contributing new evidence on effectiveness.",
-];
+const LENS_PROGRAM_URL =
+  "https://education.jhu.edu/masters-programs/master-of-education-in-learning-design-and-technology/learning-engineering-next-generation-systems-concentration/";
+const ICICLE_URL = "https://sagroups.ieee.org/icicle/";
 ---
 
 <Base
-  title="LENS — Learning Engineering for Next-Generation Systems"
-  description="A Johns Hopkins program engineering human capability for the complex systems where it matters most."
+  title="Capability Matters — LENS at Johns Hopkins"
+  description="Capability is a system parameter. LENS is the Johns Hopkins specialization that engineers human capability into complex systems."
   active="welcome"
+  pageTheme="dark"
 >
+  <link
+    slot="head"
+    rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=DM+Sans:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400&display=swap"
+  />
+
   <section class="hero">
-    <div class="container hero-grid">
-      <div class="hero-copy">
-        <div class="eyebrow">Engineering human capability · Advancing system performance</div>
-        <h1 class="lede">
-          Traditional instructional design optimizes individual learning experiences.
-          Learning engineering treats capability as a system-level problem.
-        </h1>
-        <p class="subhead">
-          In healthcare, defense, public infrastructure, and other high-stakes domains, the gap
-          between human performance and system performance is consequential — and largely
-          unaddressed by the tools and frameworks instructional traditions provide.
-          <strong>LENS</strong> is the Johns Hopkins specialization built to close that gap.
-        </p>
+    <div class="hero-label">Learning Engineering for Next-Generation Systems</div>
+    <h1>Capability is a <em>system parameter</em></h1>
+    <p class="hero-sub">
+      Every complex system depends on what people can do inside it.
+      That dependency is measurable, designable, and too important to leave to chance.
+    </p>
+    <div class="hero-line"></div>
+    <div class="scroll-cue" aria-hidden="true">
+      <div class="line"></div>
+      The argument
+    </div>
+  </section>
+
+  <section class="statement reveal" id="argument">
+    <div class="statement-number">01</div>
+    <h2>Systems don't fail because the technology breaks. They fail because <em>someone couldn't do what the system required.</em></h2>
+    <p>
+      The operator who misreads a display under stress. The clinician who wasn't trained on the new protocol. The maintenance team that lost institutional knowledge when three people retired. These aren't edge cases. They're the norm.
+    </p>
+  </section>
+
+  <section class="statement right reveal">
+    <div class="statement-number">02</div>
+    <h2>We engineer every parameter of a system <em>except the people.</em></h2>
+    <p>
+      Hardware gets reliability analysis. Software gets tested to specification. Human capability gets a training program bolted on at the end. Then we wonder why the system underperforms.
+    </p>
+  </section>
+
+  <section class="statement reveal">
+    <div class="statement-number">03</div>
+    <h2>Capability is not a <em>soft</em> problem. It's a systems engineering problem.</h2>
+    <p>
+      How people develop, retain, and transfer operational competence is as tractable as any other engineering domain—when you bring the right methods, the right evidence, and the right integration into the system lifecycle.
+    </p>
+  </section>
+
+  <section class="evidence-strip">
+    <div class="evidence-cell reveal">
+      <div class="num">250K+</div>
+      <div class="unit">deaths per year</div>
+      <p>from medical errors in the U.S.—the third leading cause of death. Not individual mistakes: system-wide failings and poorly coordinated care.</p>
+      <div class="cite">Makary &amp; Daniel, <em>BMJ</em>, 2016 · Johns Hopkins</div>
+    </div>
+    <div class="evidence-cell reveal">
+      <div class="num">~10yr</div>
+      <div class="unit">of unmet training requirements</div>
+      <p>The Marine Corps has been unable to meet training requirements in the Indo-Pacific—the theater the National Defense Strategy designates as DoD's top priority.</p>
+      <div class="cite">GAO-24-107463 · 2022 National Defense Strategy</div>
+    </div>
+    <div class="evidence-cell reveal">
+      <div class="num">$100M</div>
+      <div class="unit">spent, then shut down in 14 months</div>
+      <p>inBloom collapsed not because the technology failed—but because governance, privacy, and stakeholder trust were treated as afterthoughts, not design constraints.</p>
+      <div class="cite">Data &amp; Society, 2017 · Education Week · 9 states withdrew</div>
+    </div>
+  </section>
+
+  <section class="statement right reveal">
+    <div class="statement-number">04</div>
+    <h2>Decision-grade evidence. <em>Not opinions about training.</em></h2>
+    <p>
+      Can you prove your people are ready? Not with completion rates or satisfaction scores. With evidence that links learning interventions to operational outcomes—evidence rigorous enough to drive design decisions.
+    </p>
+  </section>
+
+  <section class="domains" id="domains">
+    <div class="domains-header reveal">
+      <h2>High-consequence, high-impact domains</h2>
+      <p>Where human capability is inseparable from system performance—and the cost of getting it wrong is measured in lives, readiness, and equity.</p>
+    </div>
+    <div class="domain-cards">
+      <div class="domain-card reveal">
+        <div class="icon" aria-hidden="true">⚕</div>
+        <h3>Healthcare</h3>
+        <p>Clinical teams navigating new protocols, devices, and care models under conditions where errors compound and learning can't wait.</p>
       </div>
-      <aside class="hero-graphic" aria-hidden="true">
-        <img src={base + "lecommons.jpg"} alt="" class="hero-image" />
-      </aside>
-    </div>
-  </section>
-
-  <hr class="rule-in-container" />
-
-  <section class="capability-gap">
-    <div class="container two-col">
-      <div>
-        <div class="eyebrow">The capability gap</div>
-        <h2>Why a new program, and why now</h2>
-        <p>
-          Learning engineering is an emerging practice and discipline that applies the learning
-          sciences through engineering methods and data-informed decision making to design,
-          implement, and continuously improve systems that develop human capability. Where
-          traditional instructional design focuses on the quality of individual learning
-          experiences, learning engineering treats capability development as a system-level
-          problem — one that requires rigorous evidence, iterative improvement, and integration
-          across the full lifecycle of complex systems.
-        </p>
-        <p>
-          Many academic programs in the learning sciences and learning engineering are organized
-          around designed instructional contexts: schools, universities, and edtech products.
-          These are essential domains, but they represent only a fraction of the environments
-          where human capability development is operationally critical. In healthcare systems,
-          defense enterprises, public infrastructure, and other high-stakes organizations, the
-          gap between human performance and system performance is consequential — and it
-          remains largely unaddressed by the tools and frameworks that instructional traditions
-          provide.
-        </p>
+      <div class="domain-card reveal">
+        <div class="icon" aria-hidden="true">⛨</div>
+        <h3>Defense &amp; National Security</h3>
+        <p>Operators, maintainers, and analysts whose readiness determines whether billion-dollar systems achieve their intended effect.</p>
       </div>
-      <aside class="pull-quotes">
-        <blockquote>
-          "Learning engineering is a process and practice that applies the learning sciences using
-          human-centered engineering design methodologies and data-informed decision-making to
-          support learners and their development."
-          <cite>— IEEE ICICLE definition</cite>
-        </blockquote>
-      </aside>
+      <div class="domain-card reveal">
+        <div class="icon" aria-hidden="true">◈</div>
+        <h3>Education at Scale</h3>
+        <p>Systems serving millions of learners, where design decisions ripple across institutions and equity is a structural concern, not an afterthought.</p>
+      </div>
     </div>
   </section>
 
-  <section class="about-lens">
-    <div class="container">
-      <div class="eyebrow">About LENS</div>
-      <h2>Treating human capability as a core engineering function</h2>
-      <p>
-        LENS is built for that gap. Aligned with emerging IEEE ICICLE learning engineering
-        standards, it prepares graduates to treat human capability not as an instructional
-        afterthought but as a core engineering function that must be designed into complex
-        systems from the outset and sustained across the system lifecycle. LENS graduates will
-        operate fluently at the intersection of the learning sciences and systems engineering,
-        able to work across the disciplinary boundaries that currently leave the human side of
-        complex domains neglected at measurable cost to system performance.
-      </p>
-      <p>
-        Within the LDT program, LENS is the specialization most directly oriented toward
-        high-stakes, operationally complex environments — including healthcare, defense, and
-        education itself when understood as a complex system rather than as a collection of
-        instructional events. Learning engineering is emerging as a profession and academic
-        discipline; LENS graduates will enter the workforce at a formative moment, positioned
-        not just to practice learning engineering but to help define it.
-      </p>
-
-      <h3 class="goals-heading">Program goals</h3>
-      <ol class="program-goals">
-        {programGoals.map((goal) => <li>{goal}</li>)}
-      </ol>
-    </div>
-  </section>
-
-  <section class="why-here">
-    <div class="container">
-      <div class="eyebrow">Resources</div>
-      <h2>Curated learning engineering resources, in context</h2>
-      <p class="resources-intro">
-        Alongside the program, this site hosts a curated set of learning engineering resources —
-        practitioner notes, methods, reading, tools, events, and community references — adapted
-        from the Learning Engineering Commons and aligned with the
-        <a href="https://sagroups.ieee.org/icicle/" target="_blank" rel="noopener">IEEE ICICLE</a>
-        community. They are presented here as supporting context for the LENS thesis: the field
-        students and practitioners are entering, and the evidence base they will build on.
-      </p>
-      <ul class="why-list why-list--discovery">
-        {discoveryCards.map((c) => (
-          <li>
-            <a href={c.href} class="why-card why-card--discovery">
-              <div class="why-lead">{c.lead}</div>
-              <div class="why-title">{c.title} →</div>
-              <div class="why-detail">{c.detail}</div>
-            </a>
-          </li>
-        ))}
-      </ul>
-      <h3 class="browse-heading">Or browse by what you need</h3>
-      <ul class="why-list">
-        {whyCards.map((c) => (
-          <li>
-            <a href={c.href} class="why-card">
-              <div class="why-lead">{c.lead}</div>
-              <div class="why-title">{c.title} <span class="why-count">({counts[c.key]})</span> →</div>
-              <div class="why-detail">{c.detail}</div>
-            </a>
-          </li>
-        ))}
-      </ul>
-    </div>
-  </section>
-
-  <section class="audiences">
-    <div class="container">
-      <h2>Who this is for</h2>
-      <ul class="audience-list">
-        <li>
-          <strong>Prospective LENS students</strong> evaluating whether the program fits the
-          problem they want to work on — and what they would graduate able to do.
-        </li>
-        <li>
-          <strong>Practitioners in high-stakes domains</strong> (healthcare, defense, public
-          infrastructure) who recognize the capability gap and want a vocabulary, evidence
-          base, and peer community for closing it.
-        </li>
-        <li>
-          <strong>Adjacent professionals</strong> — instructional designers, ML engineers,
-          learning scientists, HR/L&D leaders, systems engineers — who need to understand how
-          learning engineering overlaps with what they already do.
-        </li>
-      </ul>
-    </div>
-  </section>
-
-  <section class="about-site">
-    <div class="container">
-      <h2>About this site</h2>
-      <p>
-        The Resources section draws on a hand-curated workbook of IEEE ICICLE–adjacent material
-        originally assembled as the <em>Learning Engineering Commons</em>, plus original
-        practitioner posts in Field Notes. Items are tagged by format and by curatorial cluster
-        (e.g. "ICICLE resources," "Bror Saxberg," "I/ITSEC"). Sources with incomplete provenance
-        carry a visible <em>source unknown</em> badge — we'd rather show you a promising lead we
-        haven't verified than quietly drop it.
-        <a href={base + "about/"}>More on scope &amp; method →</a>
-      </p>
+  <section class="cta-section" id="connect">
+    <h2 class="reveal">Human capability is a designable, measurable, <em>engineerable</em> property of every complex system.</h2>
+    <p class="reveal">LENS is a graduate specialization at Johns Hopkins that prepares practitioners to do this work—grounded in learning sciences and human systems integration, built for the domains where it matters most.</p>
+    <div class="cta-buttons reveal">
+      <a href={LENS_PROGRAM_URL} class="cta-btn" target="_blank" rel="noopener">Explore the LENS specialization</a>
+      <a href={ICICLE_URL} class="cta-btn secondary" target="_blank" rel="noopener">Learn about learning engineering</a>
     </div>
   </section>
 </Base>
 
 <style>
+  /* Dark homepage palette + typography. Custom properties live on
+     body.dark-shell so children (including statement, evidence, etc.) inherit
+     them through normal cascade. */
+  :global(body.dark-shell) {
+    --hp-navy: #0a1628;
+    --hp-navy-mid: #132240;
+    --hp-teal: #1a8a7d;
+    --hp-teal-light: #2cc4b3;
+    --hp-gold: #d4a843;
+    --hp-cream: #f5f0e8;
+    --hp-text-muted: #8a9ab5;
+    --hp-serif: "Instrument Serif", Georgia, "Times New Roman", serif;
+    --hp-sans: "DM Sans", -apple-system, BlinkMacSystemFont, "Inter", sans-serif;
+  }
+
+  /* HERO */
   .hero {
-    background:
-      radial-gradient(42rem 16rem at 88% -5%, #f7f1e3 0%, transparent 70%),
-      radial-gradient(28rem 14rem at 9% -20%, #f1ece1 0%, transparent 75%),
-      var(--bg);
-    border-bottom: 1px solid var(--border);
-  }
-  .hero .container {
-    padding-top: 4rem;
-    padding-bottom: 2rem;
-  }
-  .hero-grid {
-    display: grid;
-    grid-template-columns: minmax(0, 1fr) minmax(22rem, 1.1fr);
-    align-items: center;
-    gap: clamp(1.2rem, 3vw, 2.4rem);
-  }
-  .hero-copy {
+    min-height: 88vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 6rem 4rem 6rem;
     position: relative;
-    z-index: 1;
   }
-  .lede {
-    font-family: var(--serif);
-    font-size: clamp(1.6rem, 3.2vw, 2.4rem);
+  .hero::before {
+    content: '';
+    position: absolute;
+    top: 0; right: 0;
+    width: 55%;
+    height: 100%;
+    background: radial-gradient(ellipse at 70% 40%, rgba(26, 138, 125, 0.08) 0%, transparent 70%);
+    pointer-events: none;
+  }
+  .hero-label {
+    font-family: var(--hp-sans);
+    font-size: 0.8rem;
     font-weight: 500;
-    line-height: 1.25;
-    letter-spacing: -0.005em;
-    max-width: 40rem;
-    color: var(--ink);
-    margin: 0 0 1.2rem 0;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: var(--hp-teal-light);
+    margin-bottom: 2rem;
+    opacity: 0;
+    animation: fadeUp 0.8s 0.3s forwards;
   }
-  .subhead {
-    font-size: 1.1rem;
-    color: var(--ink-soft);
-    max-width: 40rem;
-    line-height: 1.55;
+  .hero h1 {
+    font-family: var(--hp-serif);
+    font-weight: 400;
+    font-size: clamp(3.2rem, 7vw, 6.5rem);
+    line-height: 1.05;
+    max-width: 900px;
+    color: var(--hp-cream);
+    margin: 0;
+    opacity: 0;
+    animation: fadeUp 0.8s 0.5s forwards;
   }
-  .subhead strong { color: var(--accent); font-weight: 600; }
-  .hero-graphic {
-    justify-self: end;
-    width: min(100%, 34rem);
-    padding: .35rem;
-    border-radius: 3px;
-    background: #f8f4ea;
-    border: 1px solid #ddd4c5;
-    box-shadow: 0 10px 28px rgba(32, 31, 25, 0.12);
-    overflow: hidden;
-    animation: liftIn .42s ease-out both;
+  .hero h1 em { font-style: italic; color: var(--hp-teal-light); }
+  .hero-sub {
+    margin: 2.5rem 0 0;
+    font-family: var(--hp-sans);
+    font-size: 1.25rem;
+    font-weight: 300;
+    line-height: 1.7;
+    max-width: 600px;
+    color: var(--hp-text-muted);
+    opacity: 0;
+    animation: fadeUp 0.8s 0.7s forwards;
   }
-  .hero-image {
-    display: block;
-    width: 100%;
-    height: auto;
-    border-radius: 2px;
+  .hero-line {
+    width: 80px;
+    height: 2px;
+    background: var(--hp-gold);
+    margin-top: 3rem;
+    opacity: 0;
+    animation: fadeUp 0.8s 0.9s forwards;
   }
-
-  @keyframes liftIn {
-    from {
-      transform: translateY(10px);
-      opacity: 0;
-    }
-    to {
-      transform: translateY(0);
-      opacity: 1;
-    }
-  }
-
-  .rule-in-container {
-    max-width: 60rem;
-    margin: 0 auto;
-    border: none;
-    border-top: 1px solid var(--border);
-  }
-
-  /* ── Capability gap section ──────────────────────────────────────────── */
-  .capability-gap { margin-top: 1rem; }
-  .capability-gap h2 {
-    font-size: clamp(1.3rem, 2.4vw, 1.6rem);
-    margin-bottom: 1rem;
-    max-width: 36rem;
-  }
-  .two-col {
-    display: grid;
-    grid-template-columns: 1.2fr 1fr;
-    gap: 2.5rem;
-    align-items: start;
-  }
-  @media (max-width: 780px) {
-    .two-col { grid-template-columns: 1fr; gap: 1.5rem; }
-  }
-  .pull-quotes {
+  .scroll-cue {
+    position: absolute;
+    bottom: 3rem;
+    left: 4rem;
     display: flex;
-    flex-direction: column;
-    gap: 1.5rem;
-    border-left: 2px solid var(--accent);
-    padding: .2rem 0 .2rem 1.2rem;
-  }
-  blockquote {
-    margin: 0;
-    font-family: var(--serif);
-    font-size: 1rem;
-    font-style: italic;
-    color: var(--ink-soft);
-    line-height: 1.5;
-  }
-  blockquote cite {
-    display: block;
-    margin-top: .5rem;
-    font-style: normal;
-    font-size: .85rem;
-    color: var(--muted);
-    font-family: var(--sans);
-  }
-
-  /* ── About LENS section ──────────────────────────────────────────────── */
-  .about-lens {
-    background: var(--tint);
-    border-top: 1px solid var(--border);
-    border-bottom: 1px solid var(--border);
-    margin-top: 2rem;
-  }
-  .about-lens .container { padding-top: 2.5rem; padding-bottom: 2.5rem; }
-  .about-lens h2 {
-    font-size: clamp(1.3rem, 2.4vw, 1.6rem);
-    margin-bottom: 1rem;
-    max-width: 36rem;
-  }
-  .goals-heading {
-    font-family: var(--serif);
-    font-size: 1.05rem;
-    font-weight: 600;
-    color: var(--ink);
-    margin: 2rem 0 .75rem;
-  }
-  .program-goals {
-    margin: 0;
-    padding-left: 1.25rem;
-    max-width: 48rem;
-    display: flex;
-    flex-direction: column;
-    gap: .65rem;
-  }
-  .program-goals li {
-    font-size: .95rem;
-    line-height: 1.55;
-    color: var(--ink-soft);
-  }
-
-  /* ── Resources (formerly "why here") ─────────────────────────────────── */
-  .why-here { padding-top: 1rem; }
-  .why-here h2 {
-    font-size: clamp(1.3rem, 2.4vw, 1.6rem);
-    margin-bottom: .8rem;
-    max-width: 36rem;
-  }
-  .resources-intro {
-    font-size: .98rem;
-    color: var(--ink-soft);
-    max-width: 44rem;
-    margin: 0 0 1.6rem 0;
-    line-height: 1.55;
-  }
-  .why-list {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(min(100%, 16rem), 1fr));
+    align-items: center;
     gap: 1rem;
+    font-family: var(--hp-sans);
+    color: var(--hp-text-muted);
+    font-size: 0.75rem;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    opacity: 0;
+    animation: fadeUp 0.8s 1.2s forwards;
   }
-  .why-list--discovery {
-    grid-template-columns: repeat(auto-fit, minmax(min(100%, 18rem), 1fr));
-    margin-bottom: 1.8rem;
+  .scroll-cue .line { width: 40px; height: 1px; background: var(--hp-text-muted); }
+
+  /* STATEMENTS */
+  .statement {
+    padding: 8rem 4rem;
+    border-top: 1px solid rgba(138, 154, 181, 0.1);
+    position: relative;
   }
-  .why-card--discovery {
-    border-top-color: var(--accent-2);
-    background: var(--tint);
+  .statement-number {
+    font-family: var(--hp-serif);
+    font-size: 0.9rem;
+    color: var(--hp-gold);
+    margin-bottom: 1.5rem;
+    letter-spacing: 0.05em;
   }
-  .why-card--discovery .why-title { color: var(--accent-2); }
-  .browse-heading {
-    font-family: var(--serif);
-    font-size: 1rem;
-    font-weight: 500;
-    color: var(--ink-soft);
+  .statement h2 {
+    font-family: var(--hp-serif);
+    font-weight: 400;
+    font-size: clamp(2rem, 4.5vw, 3.8rem);
+    line-height: 1.15;
+    max-width: 800px;
+    color: var(--hp-cream);
+    margin: 0;
+  }
+  .statement h2 em { font-style: italic; color: var(--hp-teal-light); }
+  .statement p {
+    margin: 2rem 0 0;
+    font-family: var(--hp-sans);
+    font-size: 1.1rem;
+    font-weight: 300;
+    line-height: 1.8;
+    max-width: 580px;
+    color: var(--hp-text-muted);
+  }
+  .statement.right {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    text-align: right;
+  }
+
+  /* EVIDENCE STRIP */
+  .evidence-strip {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    border-top: 1px solid rgba(138, 154, 181, 0.1);
+  }
+  .evidence-cell {
+    padding: 4rem;
+    border-right: 1px solid rgba(138, 154, 181, 0.1);
+    position: relative;
+  }
+  .evidence-cell:last-child { border-right: none; }
+  .evidence-cell .num {
+    font-family: var(--hp-serif);
+    font-size: 3.5rem;
+    color: var(--hp-gold);
+    line-height: 1;
+    margin-bottom: 0.5rem;
+  }
+  .evidence-cell .unit {
+    font-family: var(--hp-sans);
+    font-size: 0.75rem;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    color: var(--hp-teal-light);
+    margin-bottom: 1.5rem;
+  }
+  .evidence-cell p {
+    font-family: var(--hp-sans);
+    font-size: 0.95rem;
+    font-weight: 300;
+    line-height: 1.6;
+    color: var(--hp-text-muted);
+    margin: 0;
+    max-width: none;
+  }
+  .evidence-cell .cite {
+    margin-top: 1.2rem;
+    font-family: var(--hp-sans);
+    font-size: 0.72rem;
+    font-weight: 400;
+    letter-spacing: 0.03em;
+    color: rgba(138, 154, 181, 0.5);
+    border-top: 1px solid rgba(138, 154, 181, 0.08);
+    padding-top: 0.8rem;
+  }
+
+  /* DOMAINS */
+  .domains {
+    padding: 8rem 4rem;
+    border-top: 1px solid rgba(138, 154, 181, 0.1);
+  }
+  .domains-header { margin-bottom: 4rem; }
+  .domains-header h2 {
+    font-family: var(--hp-serif);
+    font-weight: 400;
+    font-size: clamp(2rem, 3.5vw, 3rem);
+    color: var(--hp-cream);
     margin: 0 0 1rem;
   }
-  .why-card {
-    display: flex;
-    flex-direction: column;
-    gap: .5rem;
-    padding: 1.2rem 1.25rem;
-    background: var(--bg);
-    border: 1px solid var(--border);
-    border-radius: 4px;
-    border-top: 3px solid var(--accent);
-    color: var(--ink);
-    transition: transform .15s ease, border-color .15s ease;
-    height: 100%;
-  }
-  .why-card:hover {
-    transform: translateY(-1px);
-    border-color: var(--accent);
-    border-top-color: var(--accent);
-  }
-  .why-lead {
-    font-family: var(--serif);
-    font-size: .95rem;
-    color: var(--ink-soft);
-    font-style: italic;
-  }
-  .why-title {
-    font-family: var(--serif);
-    font-size: 1.2rem;
-    font-weight: 600;
-    color: var(--accent);
-  }
-  .why-count { color: var(--muted); font-weight: 400; font-size: .9rem; }
-  .why-detail {
-    font-family: var(--sans);
-    font-size: .85rem;
-    color: var(--muted);
-    line-height: 1.45;
-  }
-
-  /* ── Audiences ───────────────────────────────────────────────────────── */
-  .audiences {
-    background: var(--tint);
-    border-top: 1px solid var(--border);
-    border-bottom: 1px solid var(--border);
-    margin-top: 3rem;
-  }
-  .audiences .container { padding-top: 2.5rem; padding-bottom: 2.5rem; }
-  .audience-list {
-    list-style: none;
+  .domains-header p {
+    font-family: var(--hp-sans);
+    font-size: 1rem;
+    font-weight: 300;
+    color: var(--hp-text-muted);
+    max-width: 500px;
     margin: 0;
-    padding: 0;
+  }
+  .domain-cards {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(min(100%, 16rem), 1fr));
-    gap: 1.2rem;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
   }
-  .audience-list li {
-    font-size: .98rem;
-    line-height: 1.55;
-    color: var(--ink-soft);
+  .domain-card {
+    background: var(--hp-navy-mid);
+    border: 1px solid rgba(138, 154, 181, 0.1);
+    padding: 2.5rem 2rem;
+    transition: border-color 0.4s ease, transform 0.3s ease;
   }
-  .audience-list strong { color: var(--accent); font-weight: 600; }
+  .domain-card:hover {
+    border-color: var(--hp-teal);
+    transform: translateY(-4px);
+  }
+  .domain-card .icon {
+    font-size: 1.8rem;
+    margin-bottom: 1.5rem;
+    color: var(--hp-teal-light);
+  }
+  .domain-card h3 {
+    font-family: var(--hp-serif);
+    font-weight: 400;
+    font-size: 1.5rem;
+    color: var(--hp-cream);
+    margin: 0 0 1rem;
+  }
+  .domain-card p {
+    font-family: var(--hp-sans);
+    font-size: 0.9rem;
+    font-weight: 300;
+    line-height: 1.7;
+    color: var(--hp-text-muted);
+    margin: 0;
+    max-width: none;
+  }
 
-  /* ── About this site ─────────────────────────────────────────────────── */
-  .about-site { margin-top: 2.5rem; padding-bottom: 2rem; }
-  .about-site p { font-size: .95rem; color: var(--ink-soft); max-width: 44rem; }
-
-  @media (max-width: 900px) {
-    .hero .container { padding-top: 3rem; }
-    .hero-grid {
-      grid-template-columns: 1fr;
-      align-items: start;
-      gap: 1.2rem;
-    }
-    .hero-graphic {
-      justify-self: start;
-      width: min(100%, 36rem);
-    }
+  /* CTA */
+  .cta-section {
+    padding: 10rem 4rem;
+    text-align: center;
+    position: relative;
+    border-top: 1px solid rgba(138, 154, 181, 0.1);
   }
-
-  @media (max-width: 560px) {
-    .hero .container {
-      padding-top: 2.3rem;
-      padding-bottom: 1.5rem;
-    }
-    .hero-graphic {
-      border-radius: 2px;
-      box-shadow: 0 8px 20px rgba(32, 31, 25, 0.09);
-    }
+  .cta-section::before {
+    content: '';
+    position: absolute;
+    bottom: 0; left: 50%;
+    transform: translateX(-50%);
+    width: 80%;
+    height: 60%;
+    background: radial-gradient(ellipse at center bottom, rgba(26, 138, 125, 0.06) 0%, transparent 70%);
+    pointer-events: none;
   }
+  .cta-section h2 {
+    font-family: var(--hp-serif);
+    font-weight: 400;
+    font-size: clamp(2.2rem, 4vw, 3.5rem);
+    color: var(--hp-cream);
+    max-width: 700px;
+    margin: 0 auto;
+    line-height: 1.2;
+  }
+  .cta-section h2 em { font-style: italic; color: var(--hp-teal-light); }
+  .cta-section p {
+    margin: 1.5rem auto 0;
+    font-family: var(--hp-sans);
+    font-size: 1.05rem;
+    font-weight: 300;
+    color: var(--hp-text-muted);
+    max-width: 500px;
+  }
+  .cta-buttons {
+    display: flex;
+    gap: 1.5rem;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 3rem;
+    position: relative;
+  }
+  .cta-btn {
+    display: inline-block;
+    padding: 1rem 3rem;
+    background: transparent;
+    border: 1px solid var(--hp-gold);
+    color: var(--hp-gold);
+    font-family: var(--hp-sans);
+    font-size: 0.85rem;
+    font-weight: 500;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    text-decoration: none;
+    transition: background 0.3s, color 0.3s, border-color 0.3s;
+  }
+  .cta-btn:hover { background: var(--hp-gold); color: var(--hp-navy); }
+  .cta-btn.secondary { border-color: var(--hp-text-muted); color: var(--hp-text-muted); }
+  .cta-btn.secondary:hover { background: var(--hp-text-muted); color: var(--hp-navy); }
+
+  /* ANIMATIONS */
+  @keyframes fadeUp {
+    from { opacity: 0; transform: translateY(24px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+  .reveal {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 0.7s ease, transform 0.7s ease;
+  }
+  .reveal.visible { opacity: 1; transform: translateY(0); }
 
   @media (prefers-reduced-motion: reduce) {
-    .hero-graphic { animation: none; }
+    .hero-label, .hero h1, .hero-sub, .hero-line, .scroll-cue { animation: none; opacity: 1; }
+    .reveal { opacity: 1; transform: none; transition: none; }
+    .domain-card { transition: none; }
+  }
+
+  /* RESPONSIVE */
+  @media (max-width: 900px) {
+    .hero { padding: 5rem 2rem; min-height: 80vh; }
+    .statement { padding: 5rem 2rem; }
+    .statement.right { align-items: flex-start; text-align: left; }
+    .evidence-strip { grid-template-columns: 1fr; }
+    .evidence-cell {
+      border-right: none;
+      border-bottom: 1px solid rgba(138, 154, 181, 0.1);
+      padding: 3rem 2rem;
+    }
+    .evidence-cell:last-child { border-bottom: none; }
+    .domain-cards { grid-template-columns: 1fr; }
+    .domains { padding: 5rem 2rem; }
+    .cta-section { padding: 6rem 2rem; }
+    .scroll-cue { display: none; }
   }
 </style>
+
+<script is:inline>
+  // Progressive enhancement: fade-in on scroll for elements marked .reveal.
+  // Falls back to the CSS opacity:0 baseline if Intersection Observer is
+  // missing; @media (prefers-reduced-motion) forces all reveals visible.
+  (function () {
+    var nodes = document.querySelectorAll('.reveal');
+    if (!('IntersectionObserver' in window)) {
+      nodes.forEach(function (n) { n.classList.add('visible'); });
+      return;
+    }
+    var io = new IntersectionObserver(function (entries) {
+      entries.forEach(function (e) {
+        if (e.isIntersecting) {
+          e.target.classList.add('visible');
+          io.unobserve(e.target);
+        }
+      });
+    }, { threshold: 0.15 });
+    nodes.forEach(function (n) { io.observe(n); });
+  })();
+</script>
+</content>
+</invoke>
