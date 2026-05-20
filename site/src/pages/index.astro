@@ -4,9 +4,11 @@
 // chrome. Interior pages keep the default cream/Charter shell.
 import Base from "../layouts/Base.astro";
 
+const base = import.meta.env.BASE_URL;
 const LENS_PROGRAM_URL =
   "https://education.jhu.edu/masters-programs/master-of-education-in-learning-design-and-technology/learning-engineering-next-generation-systems-concentration/";
 const ICICLE_URL = "https://sagroups.ieee.org/icicle/";
+const OVERVIEW_PDF_URL = base + "LENS_Overview_May2026.pdf";
 ---
 
 <Base
@@ -119,6 +121,9 @@ const ICICLE_URL = "https://sagroups.ieee.org/icicle/";
       <a href={LENS_PROGRAM_URL} class="cta-btn" target="_blank" rel="noopener">Explore the LENS specialization</a>
       <a href={ICICLE_URL} class="cta-btn secondary" target="_blank" rel="noopener">Learn about learning engineering</a>
     </div>
+    <p class="cta-tertiary reveal">
+      <a href={OVERVIEW_PDF_URL} target="_blank" rel="noopener">Download the LENS one-page overview (PDF)</a>
+    </p>
   </section>
 </Base>
 
@@ -419,6 +424,25 @@ const ICICLE_URL = "https://sagroups.ieee.org/icicle/";
   .cta-btn:hover { background: var(--hp-gold); color: var(--hp-navy); }
   .cta-btn.secondary { border-color: var(--hp-text-muted); color: var(--hp-text-muted); }
   .cta-btn.secondary:hover { background: var(--hp-text-muted); color: var(--hp-navy); }
+  .cta-tertiary {
+    margin: 2rem auto 0;
+    font-family: var(--hp-sans);
+    font-size: 0.85rem;
+    color: var(--hp-text-muted);
+    max-width: none;
+    position: relative;
+  }
+  .cta-tertiary a {
+    color: var(--hp-text-muted);
+    text-decoration: none;
+    border-bottom: 1px solid rgba(138, 154, 181, 0.3);
+    padding-bottom: 2px;
+    transition: color 0.2s, border-color 0.2s;
+  }
+  .cta-tertiary a:hover {
+    color: var(--hp-teal-light);
+    border-bottom-color: var(--hp-teal-light);
+  }
 
   /* ANIMATIONS */
   @keyframes fadeUp {

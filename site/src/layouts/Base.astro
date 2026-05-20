@@ -51,6 +51,7 @@ const bodyClass = pageTheme === "dark" ? "dark-shell" : undefined;
           <a href="https://sagroups.ieee.org/icicle/" target="_blank" rel="noopener">IEEE ICICLE</a>
         </nav>
       </div>
+      <div class="footer-copy">© 2026</div>
     </footer>
 
     <style is:global>
@@ -189,6 +190,16 @@ const bodyClass = pageTheme === "dark" ? "dark-shell" : undefined;
       .footer-links { display: flex; gap: 1.2rem; }
       .footer-links a { color: var(--muted); border: none; }
       .footer-links a:hover { color: var(--accent); }
+      .footer-copy {
+        max-width: 72rem;
+        margin: 0 auto;
+        padding: 0 var(--page-pad) 1rem;
+        font-family: var(--sans);
+        font-size: .75rem;
+        color: var(--muted);
+        letter-spacing: .04em;
+      }
+      body.dark-shell .footer-copy { color: #8a9ab5; }
 
       /* Dark shell: applied when pageTheme="dark". Overrides the cream body +
          footer chrome. NavBar has its own :global(body.dark-shell) rules. */
