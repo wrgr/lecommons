@@ -1,18 +1,42 @@
 ---
 import Base from "../layouts/Base.astro";
 import SectionHero from "../components/SectionHero.astro";
+import StartHere from "../components/StartHere.astro";
 import SectionGrid from "../components/SectionGrid.astro";
 import { getCollection } from "astro:content";
 
 const entries = await getCollection("practice");
+
+// Hand-picked entry points. Slug = filename in src/content/practice/ without
+// the .mdx extension. Notes are page-side editorial framing.
+const startHerePicks = [
+  {
+    slug: "le-ic-033-data-use-across-the-learning-engineering-process",
+    note: "If you're new — one diagram that frames the whole LE workflow.",
+  },
+  {
+    slug: "le-ic-005-five-whys-root-cause-analysis-template",
+    note: "The simplest tool for getting past symptoms to causes.",
+  },
+  {
+    slug: "le-ic-006-fishbone-cause-and-effect-analysis-template",
+    note: "Use when the failure has more than one suspect.",
+  },
+];
 ---
 
-<Base title="Practice · Learning Engineering Commons" active="practice">
+<Base title="Practice · LENS" active="practice">
   <SectionHero
     eyebrow="Practice"
     title="Process, methods &amp; frameworks"
+    claim="The disciplined work of learning engineering is observable, repeatable, and teachable — these are the artifacts that make it so."
     question="How do learning engineers structure their work — and what techniques do they apply?"
     count={entries.length}
+  />
+  <StartHere
+    collection="practice"
+    picks={startHerePicks}
+    title="Three to start with"
   />
   <SectionGrid
     collection="practice"

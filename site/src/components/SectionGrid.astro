@@ -1,5 +1,8 @@
 ---
 // Renders a resource collection as a card grid, optionally grouped by `format`.
+// Includes a filter-chip bar above the grid: clicking a chip narrows the visible
+// groups to a single format via client-side JS (no page reload). When only one
+// format is present the chip bar is suppressed so it doesn't read as noise.
 
 import { getCollection, render } from "astro:content";
 import Card from "./Card.astro";
@@ -9,9 +12,16 @@ interface Props {
   formatOrder?: string[];
   groupHeadings?: Record<string, string>;
   limit?: number;
+  showFilters?: boolean;
 }
 
-const { collection, formatOrder, groupHeadings = {}, limit } = Astro.props;
+const {
+  collection,
+  formatOrder,
+  groupHeadings = {},
+  limit,
+  showFilters = true,
+} = Astro.props;
 
 const entries = await getCollection(collection);
 entries.sort(
@@ -35,6 +45,8 @@ for (const fmt of order) {
   });
 }
 
+const totalItems = groups.reduce((sum, g) => sum + g.items.length, 0);
+
 const rendered = await Promise.all(
   groups.flatMap((g) => g.items).map(async (entry) => {
     const { Content } = await render(entry);
@@ -42,11 +54,26 @@ const rendered = await Promise.all(
   }),
 );
 const bodyMap = new Map(rendered);
+
+const showChips = showFilters && groups.length > 1;
 ---
 
-<div class="section-grid container">
+<div class="section-grid container" data-grid>
+  {showChips && (
+    <nav class="filter-bar" aria-label="Filter by format">
+      <button type="button" class="chip active" data-filter="all">
+        All <span class="chip-count">{totalItems}</span>
+      </button>
+      {groups.map((g) => (
+        <button type="button" class="chip" data-filter={g.format}>
+          {g.heading} <span class="chip-count">{g.items.length}</span>
+        </button>
+      ))}
+    </nav>
+  )}
+
   {groups.map((group) => (
-    <section class="format-group">
+    <section class="format-group" data-format={group.format}>
       <h2 class="group-heading">
         {group.heading}
         <span class="count muted">({group.items.length})</span>
@@ -80,6 +107,37 @@ const bodyMap = new Map(rendered);
   ))}
 </div>
 
+{showChips && (
+  <script is:inline>
+    // Filter-chip behavior: clicking a chip narrows visible .format-group
+    // children of its containing [data-grid]. Each grid is independent.
+    (function () {
+      var bars = document.querySelectorAll('[data-grid] .filter-bar');
+      bars.forEach(function (bar) {
+        var grid = bar.closest('[data-grid]');
+        if (!grid) return;
+        bar.addEventListener('click', function (e) {
+          var btn = e.target.closest('.chip');
+          if (!btn) return;
+          bar.querySelectorAll('.chip').forEach(function (c) { c.classList.remove('active'); });
+          btn.classList.add('active');
+          var filter = btn.getAttribute('data-filter');
+          grid.querySelectorAll('.format-group').forEach(function (g) {
+            if (filter === 'all' || g.getAttribute('data-format') === filter) {
+              g.removeAttribute('hidden');
+            } else {
+              g.setAttribute('hidden', '');
+            }
+          });
+          // Smooth scroll to top of grid so the chosen group is visible.
+          var top = grid.getBoundingClientRect().top + window.scrollY - 80;
+          window.scrollTo({ top: top, behavior: 'smooth' });
+        });
+      });
+    })();
+  </script>
+)}
+
 <style>
   .section-grid {
     display: flex;
@@ -102,4 +160,46 @@ const bodyMap = new Map(rendered);
     grid-template-columns: repeat(auto-fill, minmax(min(100%, 18rem), 1fr));
     gap: 1rem;
   }
+
+  /* Filter chip bar */
+  .filter-bar {
+    display: flex;
+    flex-wrap: wrap;
+    gap: .4rem;
+    padding-bottom: .5rem;
+    margin-bottom: -.5rem;
+    border-bottom: 1px solid var(--border);
+    padding-bottom: 1rem;
+    margin-bottom: 0;
+  }
+  .chip {
+    font-family: var(--sans);
+    font-size: .82rem;
+    font-weight: 500;
+    color: var(--ink-soft);
+    background: var(--tint);
+    border: 1px solid var(--border);
+    border-radius: 999px;
+    padding: .35rem .85rem .4rem;
+    cursor: pointer;
+    transition: background .15s ease, color .15s ease, border-color .15s ease;
+    text-transform: capitalize;
+    letter-spacing: .01em;
+    display: inline-flex;
+    align-items: baseline;
+    gap: .4rem;
+  }
+  .chip:hover { background: var(--tint-warm); color: var(--accent); border-color: var(--accent); }
+  .chip.active {
+    background: var(--accent);
+    color: var(--bg);
+    border-color: var(--accent);
+  }
+  .chip-count {
+    font-size: .72rem;
+    font-weight: 400;
+    color: inherit;
+    opacity: .7;
+  }
+  .chip.active .chip-count { opacity: .85; }
 </style>

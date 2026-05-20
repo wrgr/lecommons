@@ -1,37 +1,56 @@
 ---
-// Section-page header: eyebrow, title, anchor question.
+// Section-page header. The hero leads with an editorial *claim* (a sentence
+// stating what this section is *for*), with the older "anchor question" still
+// supported as a quieter supporting line below.
 
 interface Props {
   eyebrow: string;
   title: string;
-  question: string;
+  claim?: string;
+  question?: string;
   count?: number;
 }
 
-const { eyebrow, title, question, count } = Astro.props;
+const { eyebrow, title, claim, question, count } = Astro.props;
 ---
 
 <header class="section-hero">
   <div class="container">
-    <div class="eyebrow">{eyebrow}{count !== undefined && <span class="count"> · {count} items</span>}</div>
+    <div class="eyebrow">
+      {eyebrow}
+      {count !== undefined && <span class="count"> · {count} items</span>}
+    </div>
     <h1>{title}</h1>
-    <p class="question">{question}</p>
+    {claim && <p class="claim">{claim}</p>}
+    {question && <p class="question">{question}</p>}
   </div>
 </header>
 
 <style>
   .section-hero {
     border-bottom: 1px solid var(--border);
-    background: var(--tint);
+    background:
+      radial-gradient(36rem 14rem at 95% -10%, var(--tint-warm) 0%, transparent 75%),
+      var(--tint);
   }
   .section-hero .container {
     padding-top: 3rem;
-    padding-bottom: 2rem;
+    padding-bottom: 2.2rem;
   }
   .count { color: var(--muted); font-weight: 400; letter-spacing: 0; text-transform: none; }
+
+  .claim {
+    font-family: var(--serif);
+    font-size: clamp(1.05rem, 1.6vw, 1.2rem);
+    font-weight: 500;
+    color: var(--ink);
+    line-height: 1.45;
+    max-width: var(--measure);
+    margin: 0 0 .7rem;
+  }
   .question {
     font-family: var(--serif);
-    font-size: 1.15rem;
+    font-size: 1rem;
     font-style: italic;
     color: var(--ink-soft);
     margin: 0;
@@ -41,8 +60,9 @@ const { eyebrow, title, question, count } = Astro.props;
   @media (max-width: 560px) {
     .section-hero .container {
       padding-top: 2.4rem;
-      padding-bottom: 1.5rem;
+      padding-bottom: 1.6rem;
     }
-    .question { font-size: 1.03rem; }
+    .claim { font-size: 1rem; }
+    .question { font-size: .95rem; }
   }
 </style>

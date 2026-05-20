@@ -1,9 +1,25 @@
 ---
 import Base from "../layouts/Base.astro";
 import SectionHero from "../components/SectionHero.astro";
+import StartHere from "../components/StartHere.astro";
 import Card from "../components/Card.astro";
 import VideoCard from "../components/VideoCard.astro";
 import { getCollection, render } from "astro:content";
+
+const startHerePicks = [
+  {
+    slug: "icicle-conference-on-learning-engineering-2024",
+    note: "Most recent ICICLE — the clearest snapshot of where the field is now.",
+  },
+  {
+    slug: "ieee-learning-engineering-podcast",
+    note: "Practitioners interviewing practitioners — best for picking up vocabulary.",
+  },
+  {
+    slug: "le-ic-014-introduction-to-learning-engineering-webinar-series",
+    note: "If you want a structured intro, this is the curriculum-shaped one.",
+  },
+];
 
 const entries = await getCollection("events");
 
@@ -61,12 +77,18 @@ const remainingGroups = remainingOrder
   .filter((g) => g.items.length > 0);
 ---
 
-<Base title="Events · Learning Engineering Commons" active="events">
+<Base title="Events · LENS" active="events">
   <SectionHero
     eyebrow="Events"
     title="Conferences, workshops &amp; conversations"
+    claim="Where the field thinks out loud — the convenings, talks, and conversations worth your time."
     question="Where the field convenes — and the talks, podcasts, and keynotes worth watching."
     count={entries.length}
+  />
+  <StartHere
+    collection="events"
+    picks={startHerePicks}
+    title="Three to watch first"
   />
 
   <div class="section-grid container">
