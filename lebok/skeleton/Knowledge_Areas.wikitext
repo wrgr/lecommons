@@ -1,0 +1,43 @@
+<!-- LEBOK seed content: knowledge-area index. Paste into a page titled "Knowledge Areas". -->
+<!-- Numbering follows the ICICLE LEBOK working draft as cited in the Commons corpus. -->
+<!-- Rows marked "title pending" are deliberate placeholders — confirm names with the -->
+<!-- working group rather than inventing them. -->
+
+The Learning Engineering Body of Knowledge is organized into numbered
+'''knowledge areas''' (KAs). The numbering follows the ICICLE working
+draft; titles shown in ''italics'' have not yet been confirmed by the
+working group.
+
+{| class="wikitable"
+! # !! Knowledge area !! Status
+|-
+| KA1 || ''Title pending working-group confirmation'' || Not started
+|-
+| KA2 || ''Title pending working-group confirmation'' || Not started
+|-
+| KA3 || ''Title pending working-group confirmation'' || Not started
+|-
+| KA4 || ''Title pending working-group confirmation'' || Not started
+|-
+| KA5 || [[KA5: Instructional Strategy Design|Instructional Strategy Design]] || Stub
+|-
+| KA6 || [[KA6: Learning Experience Design|Learning Experience Design]] || Stub
+|-
+| KA7 || ''Title pending working-group confirmation'' || Not started
+|-
+| KA8 || ''Title pending working-group confirmation'' || Not started
+|-
+| KA9 || ''Title pending working-group confirmation'' || Not started
+|-
+| KA10 || [[KA10: Evaluation and Continuous Improvement|Evaluation and Continuous Improvement]] || Draft
+|-
+| KA11 || [[KA11: Research Methods|Research Methods]] || Stub
+|-
+| KA12 || ''Title pending working-group confirmation'' || Not started
+|}
+
+To start a new KA page, create it as <code>KA&lt;n&gt;: &lt;Name&gt;</code>
+and use the section structure described in [[LEBOK:Contributing]].
+
+[[Category:LEBOK]]
+[[Category:Knowledge Areas]]

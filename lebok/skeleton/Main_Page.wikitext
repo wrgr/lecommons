@@ -1,0 +1,46 @@
+<!-- LEBOK seed content: wiki landing page. Paste into "Main Page" (source editor). -->
+<!-- Plain core wikitext only — renders on a stock MediaWiki with no templates installed. -->
+
+= LEBOK – The Learning Engineering Body of Knowledge =
+
+'''LEBOK''' is a community-maintained reference for the discipline of
+'''learning engineering''': the practice of applying the learning sciences,
+human-centered design, and data-informed iteration to create and improve
+learning experiences. It is organized into '''[[Knowledge Areas]]''' and
+maintained with editorial review, in alignment with the
+[https://sagroups.ieee.org/icicle/ IEEE ICICLE] community's work toward
+professional standards.
+
+''This wiki is a working draft. Knowledge-area titles and boundaries are
+pending confirmation by the working group — pages marked '''Draft''' are
+starting points for community revision, not settled positions.''
+
+== Knowledge Areas ==
+
+The full index, including status, is at '''[[Knowledge Areas]]'''.
+Drafted so far:
+
+* [[KA5: Instructional Strategy Design]]
+* [[KA6: Learning Experience Design]]
+* [[KA10: Evaluation and Continuous Improvement]]
+* [[KA11: Research Methods]]
+
+== How this wiki works ==
+
+Anyone can propose an edit — create an account and click ''Edit'' on any
+page. Proposed changes go into a moderation queue and are reviewed by
+editors before they publish, so the version you are reading has always
+passed editorial review. See '''[[LEBOK:Contributing]]''' for how to make
+a change, citation expectations, and how trusted contributors gain direct
+edit rights.
+
+== The wider ecosystem ==
+
+LEBOK is one part of the Learning Engineering Commons:
+
+* [https://lecommons.org The Learning Engineering Commons] — the hub: people, organizations, and resources of the field
+* [https://capabilitymatters.org LENS @ JHU] — evidence and editorial analysis, including the [https://capabilitymatters.org/graph capability graph] and [https://capabilitymatters.org/resources resource library]
+* [https://sagroups.ieee.org/icicle/ IEEE ICICLE] — the industry consortium for learning engineering standards
+* [https://github.com/wrgr/lebok LEBOK on GitHub] — backups (XML dumps) and tooling for this wiki
+
+[[Category:LEBOK]]

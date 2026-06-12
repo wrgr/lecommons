@@ -1,0 +1,30 @@
+<!-- LEBOK seed content: blank knowledge-area page skeleton. -->
+<!-- Copy into a new page titled "KA<n>: <Name>" and replace the bracketed guidance. -->
+<!-- The HTML comments below don't render — keep or delete them as you fill sections in. -->
+
+''Draft — this knowledge area is open for community revision via the
+moderation queue. See [[LEBOK:Contributing]].''
+
+== Summary ==
+<!-- Two or three sentences: what this KA covers and why it is its own area. -->
+
+== Scope ==
+<!-- What's in, what's out, and where the boundaries with neighboring KAs sit. -->
+
+== Key concepts ==
+<!-- Bulleted list of the load-bearing ideas, each with a one-line gloss. -->
+
+== Methods and practices ==
+<!-- What practitioners in this KA actually do; name concrete methods. -->
+
+== Evidence and further reading ==
+<!-- Cited sources via <ref> tags; link the LENS resource library where relevant:
+     https://capabilitymatters.org/resources -->
+
+== Related knowledge areas ==
+<!-- Internal links, e.g. [[KA11: Research Methods]] -->
+
+== References ==
+<references />
+
+[[Category:Knowledge Areas]]

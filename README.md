@@ -11,8 +11,9 @@ Sibling projects:
   [capabilitymatters.org](https://capabilitymatters.org) — the LENS @ JHU editorial lens site.
   The Commons references LENS; LENS links back here for resources.
 - [`wrgr/lebok`](https://github.com/wrgr/lebok) — the Learning Engineering Body of Knowledge,
-  growing into a community-editable wiki with editorial review, linked prominently from the
-  Commons.
+  a community-editable wiki with editorial review (MediaWiki on Miraheze, moderation queue),
+  linked prominently from the Commons. Setup guide and paste-ready seed pages live in
+  [`lebok/`](lebok/) here; the GitHub repo holds backups and tooling.
 
 ## What's here
 

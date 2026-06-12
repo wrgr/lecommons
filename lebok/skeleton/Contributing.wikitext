@@ -1,0 +1,48 @@
+<!-- LEBOK seed content: contributor guidelines. Paste into a page titled "LEBOK:Contributing". -->
+
+= Contributing to LEBOK =
+
+LEBOK is written by its community and reviewed by its editors. Everything
+you read here has passed editorial review; everything you propose will get
+it.
+
+== How to propose a change ==
+
+# [[Special:CreateAccount|Create an account]] (editing requires login; reading never does).
+# Click ''Edit'' on any page — the visual editor opens by default; the <code>&lt;/&gt;</code> icon switches to source/wikitext mode.
+# Make your change and save it with a short edit summary saying what and why.
+# Your change enters the '''moderation queue'''. It is not visible to readers yet. An editor will approve it, or decline it with a reason — typically within a few days.
+
+To propose a new page (for example, drafting an unstarted knowledge
+area), search the exact title you want — e.g.
+<code>KA4: &lt;Name&gt;</code> — and follow the red link. New KA pages
+should use the section structure of the existing ones:
+'''Summary · Scope · Key concepts · Methods and practices · Evidence and
+further reading · Related knowledge areas · References'''.
+
+== What makes a change approvable ==
+
+* '''Cite it.''' Claims about what works in learning need sources, via <code>&lt;ref&gt;</code> tags. The [https://capabilitymatters.org/resources LENS resource library] is a good place to find evidence-graded ones.
+* '''Reference, not advocacy.''' Write in a neutral, professional register. Contested questions get described as contested, with the positions cited.
+* '''Respect draft status.''' Knowledge-area numbering and titles follow the ICICLE working draft; don't rename or renumber KAs — raise that on the page's ''Discussion'' tab instead.
+
+== Discussion ==
+
+Every page has a ''Discussion'' tab. Use it to question content, propose
+larger restructurings, or explain a change a moderator declined. Sign talk
+posts with <code>~~~~</code>.
+
+== Becoming a trusted editor ==
+
+Contributors with a track record of approvable edits can be granted
+'''automoderated''' status (your edits publish immediately) and
+'''moderator''' status (you review the queue). Ask on the Discussion tab
+of this page, or an editor may simply offer.
+
+== Licensing ==
+
+By saving an edit you agree to release it under this wiki's license (see
+the page footer). Don't paste text you don't have the right to license —
+summarize and cite it instead.
+
+[[Category:LEBOK]]

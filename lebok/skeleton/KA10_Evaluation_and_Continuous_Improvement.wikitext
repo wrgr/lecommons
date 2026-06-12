@@ -1,0 +1,64 @@
+<!-- LEBOK seed content: worked-example KA page. -->
+<!-- Paste into a page titled "KA10: Evaluation and Continuous Improvement". -->
+<!-- Written as a deliberately modest draft for the community to revise. -->
+
+''Draft — this knowledge area is open for community revision via the
+moderation queue. See [[LEBOK:Contributing]].''
+
+== Summary ==
+
+Evaluation and continuous improvement is the knowledge area concerned with
+finding out whether a learning experience works, for whom, and under what
+conditions — and feeding those findings back into the next design
+iteration. It is what distinguishes learning ''engineering'' from
+learning ''development'': the design loop is closed with evidence rather
+than shipped and forgotten.
+
+== Scope ==
+
+In scope: defining success measures before building; instrumenting
+learning experiences so the needed data exists; formative and summative
+evaluation; analysis of learner outcomes and process data; and the
+organizational practices that turn findings into design changes.
+
+Out of scope: the design of the experiences themselves
+([[KA5: Instructional Strategy Design]],
+[[KA6: Learning Experience Design]]) and the general design of research
+studies ([[KA11: Research Methods]]) — though the boundary with KA11 is
+deliberately porous: evaluation borrows its rigor from research methods
+and returns questions worth studying.
+
+== Key concepts ==
+
+* '''Formative vs. summative evaluation''' — improving a thing while it is being built vs. judging it once built.
+* '''Instrumentation''' — designing what gets logged, and when, so that evaluation questions are answerable later.
+* '''Learning analytics''' — analysis of learner-produced data to understand and optimize learning and its environments.
+* '''Rapid experimentation''' — A/B tests and quasi-experiments embedded in running learning products.
+* '''Improvement science''' — disciplined iteration cycles (e.g., plan–do–study–act) applied at program scale.
+* '''Levels of evidence''' — matching the strength of a claim to the strength of its study design.
+
+== Methods and practices ==
+
+Practitioners in this KA write measurement plans alongside design
+documents, build dashboards and data pipelines for learner data, run and
+interpret embedded experiments, conduct efficacy studies, and run
+retrospectives that convert findings into prioritized design changes.
+
+== Evidence and further reading ==
+
+A curated, evidence-graded reading list for this area is maintained in the
+[https://capabilitymatters.org/resources LENS resource library]; the
+[https://capabilitymatters.org/graph LENS capability graph] maps how
+evaluation capabilities connect to the rest of the field. Citations added
+to this page should use <code>&lt;ref&gt;</code> tags.
+
+== Related knowledge areas ==
+
+* [[KA5: Instructional Strategy Design]] — evaluation findings feed strategy revision
+* [[KA6: Learning Experience Design]] — instrumentation is designed into the experience
+* [[KA11: Research Methods]] — supplies the designs and inferential rigor evaluation depends on
+
+== References ==
+<references />
+
+[[Category:Knowledge Areas]]
