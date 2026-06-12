@@ -1,10 +1,10 @@
 # Landscape: Comprehensive Learning Engineering Field Review
 
-A structured research layer providing a comprehensive view of the learning engineering field: its history, critical people, landmark papers, grey literature, standards, and journals/conferences. This module is intentionally **separate from the website** (now [`wrgr/capabilitymatters`](https://github.com/wrgr/capabilitymatters)) and will be folded into the existing corpus pipeline when ready.
+A structured research layer providing a comprehensive view of the learning engineering field: its history, critical people, landmark papers, grey literature, standards, and journals/conferences. This module is intentionally **separate from the website** (`site/`, serving lecommons.org) and will be folded into the existing corpus pipeline when ready.
 
 ## Why This Exists
 
-The website (`wrgr/capabilitymatters`, previously `site/` here) and the archived pipeline (`archive/`) focus on curated resources linked to the existing 18-topic knowledge graph. This module goes deeper on field history and intellectual lineage — capturing the foundational literature, key actors, and synthesis documents that explain *why* the field exists and *how* it developed, rather than simply cataloging current resources.
+The website (`site/`, lecommons.org) and the archived pipeline (`archive/`) focus on curated resources linked to the existing 18-topic knowledge graph. This module goes deeper on field history and intellectual lineage — capturing the foundational literature, key actors, and synthesis documents that explain *why* the field exists and *how* it developed, rather than simply cataloging current resources.
 
 ## Contents
 
@@ -43,7 +43,7 @@ When ready to fold into the main pipeline:
 2. `landscape/data/papers.json` → `archive/corpus/academic_papers.jsonl` (append) + seed queries
 3. `landscape/data/grey_literature.json` → `archive/corpus/non_paper_resources.jsonl` (append)
 4. `landscape/data/organizations.json` → `archive/corpus/non_paper_resources.jsonl` + `icicle_resources_registry.json`
-5. `landscape/synthesis/field_overview.md` → `src/content/` collection in `wrgr/capabilitymatters` (TBD category)
+5. `landscape/synthesis/field_overview.md` → `site/src/content/` collection (TBD category)
 
 ## Status (April 2026)
 

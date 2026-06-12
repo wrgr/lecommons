@@ -4,8 +4,7 @@ Provenance values:
   curated           — manually authored/reviewed entry
   openalex_expansion — from OpenAlex cross-seed expansion (has openalex_id)
   book_endnotes     — from Goodell & Kolodner Learning Engineering Toolkit endnotes
-  registry_migration — migrated from the site's programs_people_registry.json
-                       (the site now lives in wrgr/capabilitymatters)
+  registry_migration — migrated from site/src/data/programs_people_registry.json
 """
 
 from __future__ import annotations
