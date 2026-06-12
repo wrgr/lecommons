@@ -1,0 +1,31 @@
+---
+// Community institutions index built from the shared community collection page component.
+import Base from "../../layouts/Base.astro";
+import { getCollection } from "astro:content";
+import { partitionCommunity } from "../../data/communityBuckets";
+import CommunityCollectionPage from "../../components/CommunityCollectionPage.astro";
+
+const community = await getCollection("community");
+const { institutions } = partitionCommunity(community);
+
+const base = import.meta.env.BASE_URL;
+---
+
+<Base title="Community Institutions · Learning Engineering Commons" active="community">
+  <CommunityCollectionPage
+    title="Institutions"
+    question="Where is learning engineering work hosted and scaled?"
+    count={institutions.length}
+    searchPlaceholder="Institution, center, agency, topic..."
+    groupName="institution"
+    groupLabel="Institutions"
+    groupNote="Universities, research centers, agencies, and professional societies that host LE work."
+    breadcrumbs={[
+      { href: base + "community/", label: "Community hub" },
+      { href: base + "community/people/", label: "People" },
+      { href: base + "community/programs-groups/", label: "Programs & groups" },
+      { href: base + "community/conferences/", label: "Conferences" },
+    ]}
+    entries={institutions}
+  />
+</Base>

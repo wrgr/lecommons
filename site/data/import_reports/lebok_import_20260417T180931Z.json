@@ -1,0 +1,47 @@
+{
+  "input_path": "/private/tmp/lebok_refs_sample.txt",
+  "mode": "write",
+  "created_count": 0,
+  "skipped_count": 7,
+  "failed_count": 0,
+  "created": [],
+  "skipped": [
+    {
+      "raw": "Goodell, et Al. (2024). Generalizable Learning Engineering Adoption Maturity Model. [add IITSEC paper details]",
+      "reason": "duplicate_title_existing",
+      "match": "generalizable-learning-engineering-adoption-maturity-model-i-itsec-2024.mdx"
+    },
+    {
+      "raw": "Goodell, J. & Kolodner, J. (Ed.). (2022). The Learning Engineering Toolkit: Evidence-Based Practices from the Learning Sciences, Instructional Design, and Beyond. Routledge.",
+      "reason": "duplicate_title_existing",
+      "match": "learning-engineering-toolkit.mdx"
+    },
+    {
+      "raw": "Dede, C., Richards, J., & Saxberg, B. (2018). Learning Engineering for Online Education: Theoretical Contexts and Design-Based Examples. Milton: Routledge.",
+      "reason": "duplicate_title_existing",
+      "match": "learning-engineering-for-online-education.mdx"
+    },
+    {
+      "raw": "Van Campenhout R. (2021) Learning Engineering as an Ethical Framework. In: Sottilare R.A., Schwarz J. (eds) Adaptive Instructional Systems. Design and Evaluation. HCII 2021. Lecture Notes in Computer Science, vol 12792. Springer, Cham. https://doi.org/10.1007/978-3-030-77857-6_7",
+      "reason": "duplicate_title_existing",
+      "match": "learning-engineering-as-an-ethical-framework.mdx"
+    },
+    {
+      "raw": "In Niemi, D. M. (2018). Learning analytics in education.",
+      "reason": "duplicate_title_existing",
+      "match": "learning-analytics-in-education-niemi-2018.mdx"
+    },
+    {
+      "raw": "Hess, F. M., & Saxberg, B. (2014). Breakthrough leadership in the digital age: Using learning science to reboot schooling.",
+      "reason": "duplicate_title_existing",
+      "match": "breakthrough-leadership-in-the-digital-age.mdx"
+    },
+    {
+      "raw": "*Young, Jeff. Better Faster Learning. The Moonshot Catalog. EdSurge June 8, 2020.",
+      "reason": "duplicate_title_existing",
+      "match": "better-faster-learning.mdx"
+    }
+  ],
+  "failed": [],
+  "generated_at_utc": "2026-04-17T18:09:31.546872+00:00"
+}

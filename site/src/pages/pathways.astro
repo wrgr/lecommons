@@ -1,0 +1,99 @@
+---
+/** Narrative pathways page: five curated trails through learning engineering topics. */
+
+import Base from "../layouts/Base.astro";
+import SectionHero from "../components/SectionHero.astro";
+import PathwayTrail from "../components/PathwayTrail.astro";
+import { getCollection } from "astro:content";
+
+// @ts-ignore — JSON imports
+import topicMap from "../data/topic_map.json";
+// @ts-ignore
+import pathwaysData from "../data/pathways.json";
+
+import { topicUrl } from "../data/topicSlugs";
+
+// Build topic lookup
+const topicByCode = new Map(
+  (topicMap as any[]).map((t) => [t.topic_code, t]),
+);
+
+// Load all content to resolve highlights
+const allContent = new Map<string, any>();
+const collections = ["reading-list", "practice", "tools", "events", "community"] as const;
+for (const coll of collections) {
+  const items = await getCollection(coll);
+  for (const item of items) {
+    allContent.set(`${coll}/${item.id}`, item);
+  }
+}
+
+// Build enriched pathway data for each trail
+const trails = (pathwaysData as any[]).map((pw) => ({
+  id: pw.id as string,
+  title: pw.title as string,
+  theme: pw.theme as string,
+  description: pw.description as string,
+  stops: (pw.topics as string[]).map((code: string) => {
+    const t = topicByCode.get(code);
+    const highlightSlugs: string[] = pw.highlights?.[code] ?? [];
+    const highlights = highlightSlugs
+      .map((slug: string) => {
+        const item = allContent.get(slug);
+        if (!item) return null;
+        const d = item.data as any;
+        return {
+          title: d.title,
+          format: d.format,
+          url: d.url,
+          authors: d.authors,
+          venue: d.venue,
+          year: d.year,
+        };
+      })
+      .filter(Boolean);
+    return {
+      code,
+      name: t?.topic_name ?? code,
+      layer: t?.layer ?? "Foundation",
+      href: topicUrl(code),
+      highlights,
+    };
+  }),
+}));
+---
+
+<Base title="Pathways · Learning Engineering" active="pathways">
+  <SectionHero
+    eyebrow="Pathways"
+    title="Five threads through learning engineering"
+    question="Each pathway traces a narrative across multiple topics — follow the one that matches your question."
+  />
+
+  <section class="pathways-body">
+    <div class="container">
+      {trails.map((trail, i) => (
+        <>
+          {i > 0 && <hr class="trail-rule" />}
+          <PathwayTrail
+            id={trail.id}
+            title={trail.title}
+            theme={trail.theme}
+            description={trail.description}
+            stops={trail.stops}
+          />
+        </>
+      ))}
+    </div>
+  </section>
+</Base>
+
+<style>
+  .pathways-body { padding-bottom: 2rem; }
+
+  .trail-rule {
+    border: none;
+    border-top: 1px solid var(--border);
+    margin: 0;
+  }
+</style>

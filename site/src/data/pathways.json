@@ -1,0 +1,108 @@
+[
+  {
+    "id": "identity",
+    "title": "What makes LE different?",
+    "theme": "Identity",
+    "description": "Learning engineering didn't emerge from instructional design alone — it grew from the conviction that learning interventions should be treated as engineered systems: measurable, debuggable, and improvable. This thread traces the field's self-definition, its iterative process, and how it relates to (and differs from) traditional instructional design.",
+    "topics": ["T00", "T03", "T12"],
+    "highlights": {
+      "T00": [
+        "reading-list/le-toolkit-introduction-open-access-chapter",
+        "reading-list/learning-engineering-enlightenment-think-like-an-engineer"
+      ],
+      "T03": [
+        "reading-list/le-toolkit-learning-engineering-is-a-process-open-access-chapter",
+        "reading-list/why-did-we-do-that-a-systematic-approach-to-tracking-decisions-in-the-"
+      ],
+      "T12": [
+        "tools/teaching-online-preparation-toolkit-topkit",
+        "events/unlock-the-learning-engineer-in-you-pk-12-context"
+      ]
+    }
+  },
+  {
+    "id": "evidence",
+    "title": "How do we know it works?",
+    "theme": "Evidence",
+    "description": "The scientific spine of learning engineering: how do we measure learning outcomes, what counts as evidence, and how do we design studies that produce actionable results? This thread connects measurement and analytics to evaluation frameworks and research methodology — the hardest questions the field faces.",
+    "topics": ["T04", "T15", "T17"],
+    "highlights": {
+      "T04": [
+        "reading-list/designing-a-student-progress-panel-for-formative-practice-a-learning-e",
+        "tools/yet-analytics-learning-engineering-tools"
+      ],
+      "T15": [
+        "reading-list/why-did-we-do-that-a-systematic-approach-to-tracking-decisions-in-the-",
+        "reading-list/2020-educause-horizon-report-teaching-and-learning-edition"
+      ],
+      "T17": [
+        "reading-list/design-based-research-an-emerging-paradigm",
+        "reading-list/design-experiments-in-educational-research"
+      ]
+    }
+  },
+  {
+    "id": "transformation",
+    "title": "AI is changing everything",
+    "theme": "Transformation",
+    "description": "From classical intelligent tutoring systems built on knowledge tracing to LLM-powered tutors generating real-time feedback — AI is reshaping what's possible in learning at scale. This thread traces the evolution and asks the critical question: how do we harness these capabilities responsibly?",
+    "topics": ["T06", "T07", "T14"],
+    "highlights": {
+      "T06": [
+        "tools/gift-generalized-intelligent-framework-for-tutoring",
+        "reading-list/designing-a-student-progress-panel-for-formative-practice-a-learning-e"
+      ],
+      "T07": [
+        "events/learning-engineering-in-the-age-of-ai-kumar-garg",
+        "events/learning-engineering-a-path-to-empowering-learners-in-and-for-the-age-"
+      ],
+      "T14": [
+        "reading-list/algorithmic-fairness-in-education",
+        "reading-list/ai-and-future-of-teaching-and-learning-us-dept-of-education"
+      ]
+    }
+  },
+  {
+    "id": "application",
+    "title": "Learning for high-stakes work",
+    "theme": "Application",
+    "description": "In defense, healthcare, and emergency response, the cost of underperformance is measured in lives. This thread follows learning engineering through systems engineering and human factors, expert knowledge capture, workforce development, and the unique demands of high-consequence domains.",
+    "topics": ["T02", "T09", "T10", "T13"],
+    "highlights": {
+      "T02": [
+        "events/silver-lining-for-learning-applying-human-centered-engineering-methods"
+      ],
+      "T09": [
+        "reading-list/a-practical-guide-to-cognitive-task-analysis"
+      ],
+      "T10": [
+        "events/advancing-workforce-learning-through-learning-engineering",
+        "events/applying-learning-engineering-in-a-global-context"
+      ],
+      "T13": [
+        "events/applying-learning-engineering-in-mission-critical-environments"
+      ]
+    }
+  },
+  {
+    "id": "infrastructure",
+    "title": "Building the knowledge architecture",
+    "theme": "Infrastructure",
+    "description": "Before adaptive systems can personalize or analytics can measure, someone has to structure the knowledge itself. This thread covers how learning engineers represent competencies, build platform infrastructure, and design curricula — the structural plumbing that makes everything else work.",
+    "topics": ["T05", "T11", "T12"],
+    "highlights": {
+      "T05": [
+        "reading-list/a-taxonomy-for-learning-teaching-and-assessing-revised-blooms",
+        "reading-list/evidence-centered-design"
+      ],
+      "T11": [
+        "tools/xapi-experience-api-specification",
+        "tools/caliper-analytics"
+      ],
+      "T12": [
+        "tools/teaching-online-preparation-toolkit-topkit",
+        "events/unlock-the-learning-engineer-in-you-pk-12-context"
+      ]
+    }
+  }
+]

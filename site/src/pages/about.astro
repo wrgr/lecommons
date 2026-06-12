@@ -1,0 +1,94 @@
+---
+import Base from "../layouts/Base.astro";
+---
+
+<Base title="About · LENS" active="about">
+  <div class="container">
+    <div class="eyebrow">About this site</div>
+    <h1>A practice-centered guide, not an exhaustive one.</h1>
+
+    <p>
+      This site is a working reference for the emerging field of learning engineering.
+      It's organized around the work itself — process, methods, tools, evidence, community —
+      rather than around paper taxonomies or citation graphs. The goal is that someone
+      arriving cold can quickly see what learning engineers are and what they do, and that
+      practitioners can point colleagues here without a long preamble.
+    </p>
+
+    <h2>Sources</h2>
+    <p>
+      Most content is seeded from open, hand-curated registries maintained in this
+      repository and from publicly available material on the
+      <a href="https://sagroups.ieee.org/icicle/" target="_blank" rel="noopener">IEEE ICICLE</a>
+      community site. Named practitioners come from a separate study that catalogs people who
+      self-apply the "Learning Engineer" title across LinkedIn, ResearchGate, Google Scholar, and
+      institutional rosters. Full methodology and caveats live in
+      the repository's <a href="https://github.com/wrgr/lecommons/blob/main/titlesearch/PROVENANCE.md" target="_blank" rel="noopener">provenance documentation</a>.
+    </p>
+
+    <h2>Scope &amp; caveats</h2>
+    <ul>
+      <li>
+        <strong>Curated, not comprehensive.</strong> This is a scoped starting point. Sections are deliberately focused; depth grows over time.
+      </li>
+      <li>
+        <strong>English-language bias.</strong> Non-English title variants, older labels like
+        "instructional designer," and government/defense practitioners who aren't publicly
+        indexed are under-represented.
+      </li>
+      <li>
+        <strong>ICICLE is authoritative.</strong> When ICICLE and this site differ on a
+        definition or taxonomy, defer to ICICLE.
+      </li>
+      <li>
+        <strong>Links may rot.</strong> External resources change. File an issue if you find one.
+      </li>
+    </ul>
+
+    <h2>Tools used</h2>
+    <p>
+      Claude (Anthropic) was used as an assistant throughout development and resource
+      curation — for code generation, draft copy, and triage of the underlying corpus.
+      Final editorial decisions, scope, and accuracy review are human-authored.
+    </p>
+
+    <h2>Contributing</h2>
+    <p>
+      Suggestions, corrections, and additional resources are welcome. Open an issue or PR in
+      the repository. Editorial priorities: keep each section page short, each blurb under three
+      sentences, and every inclusion tied to a real practice or community.
+    </p>
+  </div>
+</Base>
+
+<style>
+  .container { padding-top: 3rem; }
+  h1 {
+    font-size: clamp(1.8rem, 4vw, 2.4rem);
+    font-weight: 500;
+    max-width: 32rem;
+    margin-bottom: 2rem;
+  }
+  h2 {
+    margin-top: 2.5rem;
+    border-top: 1px solid var(--border);
+    padding-top: 1.2rem;
+    font-size: 1.15rem;
+  }
+  ul {
+    padding-left: 1.3rem;
+    max-width: var(--measure);
+  }
+  li {
+    margin-bottom: .6rem;
+    color: var(--ink-soft);
+  }
+  li strong { color: var(--ink); }
+  code {
+    font-family: var(--mono);
+    font-size: .9em;
+    background: var(--tint);
+    padding: .08em .4em;
+    border-radius: 2px;
+  }
+</style>

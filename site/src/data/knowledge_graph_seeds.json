@@ -1,0 +1,194 @@
+[
+  {
+    "node_type": "TOPIC",
+    "node_id": "T00",
+    "node_label": "Field Overview & History",
+    "edge_type": "PREREQ_FOR",
+    "edge_target": "T01",
+    "edge_label": "Must understand LE field before learning science foundations"
+  },
+  {
+    "node_type": "TOPIC",
+    "node_id": "T00",
+    "node_label": "Field Overview & History",
+    "edge_type": "PREREQ_FOR",
+    "edge_target": "T03",
+    "edge_label": "LE process presupposes field overview"
+  },
+  {
+    "node_type": "TOPIC",
+    "node_id": "T01",
+    "node_label": "Learning Science Foundations",
+    "edge_type": "PREREQ_FOR",
+    "edge_target": "T06",
+    "edge_label": "ITS requires learning science theory"
+  },
+  {
+    "node_type": "TOPIC",
+    "node_id": "T01",
+    "node_label": "Learning Science Foundations",
+    "edge_type": "PREREQ_FOR",
+    "edge_target": "T08",
+    "edge_label": "Simulation design requires learning theory"
+  },
+  {
+    "node_type": "TOPIC",
+    "node_id": "T02",
+    "node_label": "Systems Engineering & HSI",
+    "edge_type": "PREREQ_FOR",
+    "edge_target": "T13",
+    "edge_label": "High-consequence domains require SE framing"
+  },
+  {
+    "node_type": "TOPIC",
+    "node_id": "T03",
+    "node_label": "LE Process",
+    "edge_type": "PREREQ_FOR",
+    "edge_target": "T04",
+    "edge_label": "Measurement presupposes process understanding"
+  },
+  {
+    "node_type": "TOPIC",
+    "node_id": "T04",
+    "node_label": "Measurement & Analytics",
+    "edge_type": "PREREQ_FOR",
+    "edge_target": "T15",
+    "edge_label": "Evidence standards require analytics competency"
+  },
+  {
+    "node_type": "TOPIC",
+    "node_id": "T05",
+    "node_label": "Knowledge Representation",
+    "edge_type": "PREREQ_FOR",
+    "edge_target": "T09",
+    "edge_label": "Elicitation requires knowledge representation concepts"
+  },
+  {
+    "node_type": "TOPIC",
+    "node_id": "T06",
+    "node_label": "ITS & Adaptive Systems",
+    "edge_type": "STRONGLY_RELATED",
+    "edge_target": "T07",
+    "edge_label": "AI/LLMs are evolving ITS paradigm"
+  },
+  {
+    "node_type": "TOPIC",
+    "node_id": "T09",
+    "node_label": "Expert Knowledge Elicitation",
+    "edge_type": "STRONGLY_RELATED",
+    "edge_target": "T10",
+    "edge_label": "Workforce dev requires expert knowledge capture"
+  },
+  {
+    "node_type": "TOPIC",
+    "node_id": "T14",
+    "node_label": "Ethics & Equity",
+    "edge_type": "CROSS_CUTS",
+    "edge_target": "ALL",
+    "edge_label": "Ethics/equity relevant to all practice topics"
+  },
+  {
+    "node_type": "PROGRAM",
+    "node_id": "LE-PP-001",
+    "node_label": "LENS @ JHU",
+    "edge_type": "COVERS",
+    "edge_target": "T13",
+    "edge_label": "Program targets high-consequence domains"
+  },
+  {
+    "node_type": "PROGRAM",
+    "node_id": "LE-PP-001",
+    "node_label": "LENS @ JHU",
+    "edge_type": "COVERS",
+    "edge_target": "T02",
+    "edge_label": "HSI framing is core to program"
+  },
+  {
+    "node_type": "PROGRAM",
+    "node_id": "LE-PP-001",
+    "node_label": "LENS @ JHU",
+    "edge_type": "COVERS",
+    "edge_target": "T10",
+    "edge_label": "Workforce development emphasis"
+  },
+  {
+    "node_type": "PROGRAM",
+    "node_id": "LE-PP-001",
+    "node_label": "LENS @ JHU",
+    "edge_type": "COVERS",
+    "edge_target": "T15",
+    "edge_label": "Decision-grade evidence standard"
+  },
+  {
+    "node_type": "PROGRAM",
+    "node_id": "LE-PP-001",
+    "node_label": "LENS @ JHU",
+    "edge_type": "AFFILIATED_WITH",
+    "edge_target": "LE-PP-040",
+    "edge_label": "IEEE ICICLE partnership"
+  },
+  {
+    "node_type": "PERSON",
+    "node_id": "LE-PP-010",
+    "node_label": "Ken Koedinger",
+    "edge_type": "FOUNDED",
+    "edge_target": "LE-PP-002",
+    "edge_label": "CMU HCII"
+  },
+  {
+    "node_type": "PERSON",
+    "node_id": "LE-PP-010",
+    "node_label": "Ken Koedinger",
+    "edge_type": "CREATED",
+    "edge_target": "LE-PP-004",
+    "edge_label": "Open Learning Initiative"
+  },
+  {
+    "node_type": "PERSON",
+    "node_id": "LE-PP-013",
+    "node_label": "Jim Goodell",
+    "edge_type": "EDITED",
+    "edge_target": "LE-T1-001",
+    "edge_label": "IEEE Press LE textbook"
+  },
+  {
+    "node_type": "PAPER",
+    "node_id": "LE-T1-008",
+    "node_label": "KLI Framework",
+    "edge_type": "SEEDS",
+    "edge_target": "T03",
+    "edge_label": "Primary T03 seed document"
+  },
+  {
+    "node_type": "CONFERENCE",
+    "node_id": "LE-PP-020",
+    "node_label": "Learning @ Scale",
+    "edge_type": "PRIMARY_VENUE_FOR",
+    "edge_target": "T06",
+    "edge_label": "Premier adaptive learning venue"
+  },
+  {
+    "node_type": "CONFERENCE",
+    "node_id": "LE-PP-021",
+    "node_label": "EDM Conference",
+    "edge_type": "PRIMARY_VENUE_FOR",
+    "edge_target": "T04",
+    "edge_label": "Premier analytics venue"
+  },
+  {
+    "node_type": "ORG",
+    "node_id": "LE-PP-040",
+    "node_label": "IEEE ICICLE",
+    "edge_type": "CURATES",
+    "edge_target": "LE-PP-051",
+    "edge_label": "IEEE ICICLE Resources page"
+  },
+  {
+    "node_type": "ORG",
+    "node_id": "LE-PP-040",
+    "node_label": "IEEE ICICLE",
+    "edge_type": "DEVELOPING",
+    "edge_target": "LE-T1-033",
+    "edge_label": "Body of Knowledge"
+  }
+]

@@ -1,0 +1,31 @@
+---
+// Community programs and groups index built from the shared community collection page component.
+import Base from "../../layouts/Base.astro";
+import { getCollection } from "astro:content";
+import { partitionCommunity } from "../../data/communityBuckets";
+import CommunityCollectionPage from "../../components/CommunityCollectionPage.astro";
+
+const community = await getCollection("community");
+const { study } = partitionCommunity(community);
+
+const base = import.meta.env.BASE_URL;
+---
+
+<Base title="Community Programs & Groups · Learning Engineering Commons" active="community">
+  <CommunityCollectionPage
+    title="Programs & groups"
+    question="What active groups are organizing learning engineering work?"
+    count={study.length}
+    searchPlaceholder="Program, group, initiative, topic..."
+    groupName="study"
+    groupLabel="Programs & groups"
+    groupNote="SIGs, MIGs, labs, and collaborative programs inside the broader LE ecosystem."
+    breadcrumbs={[
+      { href: base + "community/", label: "Community hub" },
+      { href: base + "community/people/", label: "People" },
+      { href: base + "community/institutions/", label: "Institutions" },
+      { href: base + "community/conferences/", label: "Conferences" },
+    ]}
+    entries={study}
+  />
+</Base>

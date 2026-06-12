@@ -1,0 +1,352 @@
+[
+  {
+    "concept_id": "C01",
+    "name": "What is Learning Engineering?",
+    "topic_codes": ["T00"],
+    "book_chapter_anchors": [1],
+    "bloom_level": "Understand",
+    "prerequisites": [],
+    "primary_papers": ["LE-T1-001", "LE-T1-002"],
+    "primary_resources": ["LE-PP-050", "LE-PP-040", "LE-PP-053", "LE-IC-031"]
+  },
+  {
+    "concept_id": "C02",
+    "name": "LE vs. Instructional Design",
+    "topic_codes": ["T00", "T12"],
+    "book_chapter_anchors": [1],
+    "bloom_level": "Analyze",
+    "prerequisites": ["C01"],
+    "primary_papers": ["LE-T1-001", "LE-T1-002"],
+    "primary_resources": ["LE-IC-022", "LE-IC-029", "LE-IC-001"]
+  },
+  {
+    "concept_id": "C03",
+    "name": "Learning Engineering Teams & Roles",
+    "topic_codes": ["T00", "T03"],
+    "book_chapter_anchors": [1],
+    "bloom_level": "Apply",
+    "prerequisites": ["C01"],
+    "primary_papers": ["LE-T1-001", "LE-T1-007"],
+    "primary_resources": ["LE-IC-010", "LE-IC-035", "LE-IC-036", "LE-IC-037"]
+  },
+  {
+    "concept_id": "C04",
+    "name": "How People Learn: Cognitive Foundations",
+    "topic_codes": ["T01"],
+    "book_chapter_anchors": [2],
+    "bloom_level": "Understand",
+    "prerequisites": ["C01"],
+    "primary_papers": ["LE-T1-003"],
+    "primary_resources": ["LE-PP-052", "LE-IC-012", "LE-PP-091", "LE-PP-092", "LE-PP-093"]
+  },
+  {
+    "concept_id": "C05",
+    "name": "Desirable Difficulties & Memory Principles",
+    "topic_codes": ["T01"],
+    "book_chapter_anchors": [2],
+    "bloom_level": "Apply",
+    "prerequisites": ["C04"],
+    "primary_papers": ["LE-T1-003", "LE-T1-004"],
+    "primary_resources": ["LE-PP-052"]
+  },
+  {
+    "concept_id": "C06",
+    "name": "Cognitive Load Theory",
+    "topic_codes": ["T01"],
+    "book_chapter_anchors": [2],
+    "bloom_level": "Apply",
+    "prerequisites": ["C04"],
+    "primary_papers": ["LE-T1-006"],
+    "primary_resources": ["LE-PP-052", "LE-PP-093"]
+  },
+  {
+    "concept_id": "C07",
+    "name": "Motivation, Engagement & Self-Regulation",
+    "topic_codes": ["T01"],
+    "book_chapter_anchors": [2],
+    "bloom_level": "Apply",
+    "prerequisites": ["C04"],
+    "primary_papers": ["LE-T1-003"],
+    "primary_resources": ["LE-PP-052"]
+  },
+  {
+    "concept_id": "C08",
+    "name": "Transfer of Learning",
+    "topic_codes": ["T01"],
+    "book_chapter_anchors": [2],
+    "bloom_level": "Analyze",
+    "prerequisites": ["C04"],
+    "primary_papers": ["LE-T1-003", "LE-T1-004"],
+    "primary_resources": ["LE-PP-052"]
+  },
+  {
+    "concept_id": "C09",
+    "name": "Human Systems Integration",
+    "topic_codes": ["T02"],
+    "book_chapter_anchors": [3],
+    "bloom_level": "Understand",
+    "prerequisites": ["C01"],
+    "primary_papers": ["LE-T1-005"],
+    "primary_resources": ["LE-PP-001"]
+  },
+  {
+    "concept_id": "C10",
+    "name": "Human-Centered Design",
+    "topic_codes": ["T02", "T03"],
+    "book_chapter_anchors": [3],
+    "bloom_level": "Apply",
+    "prerequisites": ["C09"],
+    "primary_papers": ["LE-T1-005"],
+    "primary_resources": ["LE-IC-038"]
+  },
+  {
+    "concept_id": "C11",
+    "name": "The Learning Engineering Process",
+    "topic_codes": ["T03"],
+    "book_chapter_anchors": [3, 4],
+    "bloom_level": "Apply",
+    "prerequisites": ["C01", "C10"],
+    "primary_papers": ["LE-T1-007", "LE-T1-008"],
+    "primary_resources": ["LE-IC-002", "LE-IC-003", "LE-IC-009", "LE-PP-051"]
+  },
+  {
+    "concept_id": "C12",
+    "name": "Needs Analysis & Task Analysis",
+    "topic_codes": ["T03", "T09"],
+    "book_chapter_anchors": [3],
+    "bloom_level": "Apply",
+    "prerequisites": ["C11"],
+    "primary_papers": ["LE-T1-007", "LE-T1-019"],
+    "primary_resources": ["LE-IC-005", "LE-IC-006", "LE-IC-007"]
+  },
+  {
+    "concept_id": "C13",
+    "name": "Educational Data Mining",
+    "topic_codes": ["T04"],
+    "book_chapter_anchors": [5],
+    "bloom_level": "Apply",
+    "prerequisites": ["C04"],
+    "primary_papers": ["LE-T1-009"],
+    "primary_resources": ["LE-PP-021", "LE-PP-031", "LE-IC-039", "LE-PP-108", "LE-PP-110"]
+  },
+  {
+    "concept_id": "C14",
+    "name": "Learning Analytics",
+    "topic_codes": ["T04"],
+    "book_chapter_anchors": [5],
+    "bloom_level": "Apply",
+    "prerequisites": ["C13"],
+    "primary_papers": ["LE-T1-010"],
+    "primary_resources": ["LE-PP-023", "LE-PP-041", "LE-PP-031", "LE-IC-037", "LE-PP-112"]
+  },
+  {
+    "concept_id": "C15",
+    "name": "Assessment & Measurement Design",
+    "topic_codes": ["T04", "T15"],
+    "book_chapter_anchors": [5],
+    "bloom_level": "Apply",
+    "prerequisites": ["C04", "C11"],
+    "primary_papers": ["LE-T1-009", "LE-T1-031"],
+    "primary_resources": ["LE-IC-033", "LE-IC-008"]
+  },
+  {
+    "concept_id": "C16",
+    "name": "Tracking Decisions & Evidence Throughout the Process",
+    "topic_codes": ["T03", "T15"],
+    "book_chapter_anchors": [4, 5],
+    "bloom_level": "Apply",
+    "prerequisites": ["C11"],
+    "primary_papers": ["LE-T1-007"],
+    "primary_resources": ["LE-IC-008", "LE-IC-009", "LE-IC-033"]
+  },
+  {
+    "concept_id": "C17",
+    "name": "Evaluation Frameworks",
+    "topic_codes": ["T15"],
+    "book_chapter_anchors": [9],
+    "bloom_level": "Evaluate",
+    "prerequisites": ["C14", "C15"],
+    "primary_papers": ["LE-T1-021", "LE-T1-031"],
+    "primary_resources": ["LE-IC-004", "LE-IC-023"]
+  },
+  {
+    "concept_id": "C18",
+    "name": "Knowledge-Learning-Instruction (KLI) Framework",
+    "topic_codes": ["T05", "T03"],
+    "book_chapter_anchors": [6, 7],
+    "bloom_level": "Understand",
+    "prerequisites": ["C04"],
+    "primary_papers": ["LE-T1-008", "LE-T1-011"],
+    "primary_resources": ["LE-PP-002", "LE-PP-004"]
+  },
+  {
+    "concept_id": "C19",
+    "name": "Competency Frameworks & Learning Objectives",
+    "topic_codes": ["T05", "T12"],
+    "book_chapter_anchors": [7],
+    "bloom_level": "Apply",
+    "prerequisites": ["C18"],
+    "primary_papers": ["LE-T1-011"],
+    "primary_resources": ["LE-PP-054", "LE-IC-011"]
+  },
+  {
+    "concept_id": "C20",
+    "name": "Intelligent Tutoring Systems",
+    "topic_codes": ["T06"],
+    "book_chapter_anchors": [6],
+    "bloom_level": "Apply",
+    "prerequisites": ["C04", "C18"],
+    "primary_papers": ["LE-T1-013"],
+    "primary_resources": ["LE-PP-030", "LE-PP-002", "LE-PP-020", "LE-PP-091", "LE-PP-099"]
+  },
+  {
+    "concept_id": "C21",
+    "name": "Adaptive Learning Systems",
+    "topic_codes": ["T06"],
+    "book_chapter_anchors": [6],
+    "bloom_level": "Analyze",
+    "prerequisites": ["C20"],
+    "primary_papers": ["LE-T1-013"],
+    "primary_resources": ["LE-PP-004", "LE-PP-030", "LE-IC-024"]
+  },
+  {
+    "concept_id": "C22",
+    "name": "Learning Infrastructure & Data Standards",
+    "topic_codes": ["T11"],
+    "book_chapter_anchors": [7],
+    "bloom_level": "Understand",
+    "prerequisites": ["C19"],
+    "primary_papers": ["LE-T1-011"],
+    "primary_resources": ["LE-PP-032", "LE-PP-031", "LE-IC-033", "LE-IC-041", "LE-IC-042", "LE-IC-043", "LE-IC-044", "LE-IC-045"]
+  },
+  {
+    "concept_id": "C23",
+    "name": "AI & Foundation Models in Education",
+    "topic_codes": ["T07"],
+    "book_chapter_anchors": [],
+    "bloom_level": "Analyze",
+    "prerequisites": ["C20", "C21"],
+    "primary_papers": ["LE-T1-015"],
+    "primary_resources": ["LE-PP-022", "LE-IC-013", "LE-IC-014"]
+  },
+  {
+    "concept_id": "C24",
+    "name": "AI Ethics & Responsible Use in Learning",
+    "topic_codes": ["T07", "T14"],
+    "book_chapter_anchors": [],
+    "bloom_level": "Evaluate",
+    "prerequisites": ["C23"],
+    "primary_papers": ["LE-T1-015", "LE-T1-029"],
+    "primary_resources": ["LE-PP-022", "LE-PP-103"]
+  },
+  {
+    "concept_id": "C25",
+    "name": "Simulation-Based Training",
+    "topic_codes": ["T08"],
+    "book_chapter_anchors": [8],
+    "bloom_level": "Apply",
+    "prerequisites": ["C04", "C06"],
+    "primary_papers": ["LE-T1-017"],
+    "primary_resources": ["LE-IC-032", "LE-PP-001"]
+  },
+  {
+    "concept_id": "C26",
+    "name": "Serious Games & Gamification",
+    "topic_codes": ["T08"],
+    "book_chapter_anchors": [8],
+    "bloom_level": "Apply",
+    "prerequisites": ["C04", "C07"],
+    "primary_papers": ["LE-T1-017"],
+    "primary_resources": ["LE-IC-030", "LE-IC-032"]
+  },
+  {
+    "concept_id": "C27",
+    "name": "Extended Reality (XR/VR/AR) in Learning",
+    "topic_codes": ["T08"],
+    "book_chapter_anchors": [8],
+    "bloom_level": "Apply",
+    "prerequisites": ["C25"],
+    "primary_papers": ["LE-T1-017"],
+    "primary_resources": ["LE-IC-032"]
+  },
+  {
+    "concept_id": "C28",
+    "name": "Expert Knowledge Elicitation & Cognitive Task Analysis",
+    "topic_codes": ["T09"],
+    "book_chapter_anchors": [3],
+    "bloom_level": "Apply",
+    "prerequisites": ["C12"],
+    "primary_papers": ["LE-T1-019"],
+    "primary_resources": ["LE-IC-007"]
+  },
+  {
+    "concept_id": "C29",
+    "name": "Workforce Development & Training Systems",
+    "topic_codes": ["T10"],
+    "book_chapter_anchors": [4],
+    "bloom_level": "Apply",
+    "prerequisites": ["C28", "C08"],
+    "primary_papers": ["LE-T1-021"],
+    "primary_resources": ["LE-PP-001", "LE-IC-014"]
+  },
+  {
+    "concept_id": "C30",
+    "name": "Evidence Standards in Learning Research",
+    "topic_codes": ["T15"],
+    "book_chapter_anchors": [9],
+    "bloom_level": "Evaluate",
+    "prerequisites": ["C15", "C31"],
+    "primary_papers": ["LE-T1-031"],
+    "primary_resources": ["LE-IC-018", "LE-IC-023"]
+  },
+  {
+    "concept_id": "C31",
+    "name": "Research Methods in Learning Engineering",
+    "topic_codes": ["T17"],
+    "book_chapter_anchors": [9],
+    "bloom_level": "Apply",
+    "prerequisites": ["C11"],
+    "primary_papers": ["LE-T1-035"],
+    "primary_resources": ["LE-IC-018", "LE-IC-039", "LE-PP-094", "LE-PP-109"]
+  },
+  {
+    "concept_id": "C32",
+    "name": "Standards, Credentialing & Professional Community",
+    "topic_codes": ["T16"],
+    "book_chapter_anchors": [],
+    "bloom_level": "Understand",
+    "prerequisites": ["C01"],
+    "primary_papers": ["LE-T1-033"],
+    "primary_resources": ["LE-PP-040", "LE-PP-054", "LE-PP-024", "LE-IC-034", "LE-IC-043", "LE-IC-044", "LE-PP-105"]
+  },
+  {
+    "concept_id": "C33",
+    "name": "High-Consequence Domain Learning",
+    "topic_codes": ["T13"],
+    "book_chapter_anchors": [],
+    "bloom_level": "Apply",
+    "prerequisites": ["C09"],
+    "primary_papers": ["LE-T1-027"],
+    "primary_resources": ["LE-PP-001", "LE-IC-031"]
+  },
+  {
+    "concept_id": "C34",
+    "name": "Ethics & Equity in Learning Engineering",
+    "topic_codes": ["T14"],
+    "book_chapter_anchors": [],
+    "bloom_level": "Evaluate",
+    "prerequisites": [],
+    "primary_papers": ["LE-T1-029"],
+    "primary_resources": ["LE-PP-103"]
+  },
+  {
+    "concept_id": "C35",
+    "name": "Learning Engineering at Scale & Online Education",
+    "topic_codes": ["T11", "T06"],
+    "book_chapter_anchors": [],
+    "bloom_level": "Analyze",
+    "prerequisites": ["C21", "C22"],
+    "primary_papers": ["LE-T1-015"],
+    "primary_resources": ["LE-PP-004", "LE-PP-020", "LE-IC-001", "LE-IC-026", "LE-PP-107"]
+  }
+]

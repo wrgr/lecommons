@@ -1,0 +1,123 @@
+---
+/** Topic index page: all 18 topics grouped by layer. */
+
+import Base from "../../layouts/Base.astro";
+import SectionHero from "../../components/SectionHero.astro";
+import TopicCard from "../../components/TopicCard.astro";
+import { getCollection } from "astro:content";
+
+// @ts-ignore — JSON import
+import topicMap from "../../data/topic_map.json";
+// @ts-ignore
+import conceptOntology from "../../data/concept_ontology.json";
+import { topicUrl } from "../../data/topicSlugs";
+
+// Content counts per topic
+const allItems = [
+  ...(await getCollection("practice")),
+  ...(await getCollection("tools")),
+  ...(await getCollection("reading-list")),
+  ...(await getCollection("events")),
+  ...(await getCollection("community")),
+];
+const topicCounts: Record<string, number> = {};
+for (const item of allItems) {
+  for (const t of (item.data as any).topics ?? []) {
+    topicCounts[t] = (topicCounts[t] || 0) + 1;
+  }
+}
+
+// Concept counts per topic
+const conceptCounts: Record<string, number> = {};
+for (const c of conceptOntology as any[]) {
+  const primary = c.topic_codes[0];
+  conceptCounts[primary] = (conceptCounts[primary] || 0) + 1;
+}
+
+// Group topics by layer
+const layers = ["Foundation", "Practice", "Context"] as const;
+const grouped = layers.map((layer) => ({
+  layer,
+  topics: (topicMap as any[]).filter((t) => t.layer === layer),
+}));
+
+const totalItems = allItems.length;
+---
+
+<Base title="Topics · Learning Engineering" active="topics">
+  <SectionHero
+    eyebrow="Topics"
+    title="18 topics across three layers"
+    question="Browse the field by what it covers, not just by format. Foundation topics feed into Practice, which feeds into Context."
+    count={totalItems}
+  />
+
+  {grouped.map(({ layer, topics }) => (
+    <section class={`layer-section layer-section--${layer.toLowerCase()}`}>
+      <div class="container">
+        <h2 class={`layer-heading layer-heading--${layer.toLowerCase()}`}>
+          {layer}
+          <span class="layer-count">{topics.length} topics</span>
+        </h2>
+        <p class="layer-desc">
+          {layer === "Foundation" && "The scientific and engineering foundations that every learning engineer draws on."}
+          {layer === "Practice" && "The methods, systems, and technologies learning engineers use to build and improve learning."}
+          {layer === "Context" && "The domains, standards, ethics, and evidence frameworks that shape how the work is done."}
+        </p>
+        <div class="topic-grid">
+          {topics.map((t: any) => (
+            <TopicCard
+              code={t.topic_code}
+              name={t.topic_name}
+              layer={t.layer}
+              description={t.why_it_matters}
+              contentCount={topicCounts[t.topic_code] || 0}
+              conceptCount={conceptCounts[t.topic_code] || 0}
+              href={topicUrl(t.topic_code)}
+            />
+          ))}
+        </div>
+      </div>
+    </section>
+  ))}
+</Base>
+
+<style>
+  .layer-section { padding: 2rem 0 1rem; }
+  .layer-section + .layer-section { border-top: 1px solid var(--border); }
+
+  .layer-heading {
+    font-family: var(--serif);
+    font-size: 1.3rem;
+    font-weight: 600;
+    margin: 0 0 .3rem;
+    display: flex;
+    align-items: baseline;
+    gap: .6rem;
+  }
+  .layer-heading--foundation { color: #7a4e22; }
+  .layer-heading--practice   { color: #2c5f6f; }
+  .layer-heading--context    { color: #5a6b4a; }
+
+  .layer-count {
+    font-family: var(--sans);
+    font-size: .75rem;
+    font-weight: 400;
+    color: var(--muted);
+  }
+
+  .layer-desc {
+    font-size: .92rem;
+    color: var(--ink-soft);
+    max-width: var(--measure);
+    margin: 0 0 1.2rem;
+    line-height: 1.5;
+  }
+
+  .topic-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(min(100%, 17rem), 1fr));
+    gap: 1rem;
+    margin-bottom: 1.5rem;
+  }
+</style>

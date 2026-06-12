@@ -1,0 +1,176 @@
+---
+// Community hub page split into focused index pages.
+import Base from "../layouts/Base.astro";
+import SectionHero from "../components/SectionHero.astro";
+import { getCollection } from "astro:content";
+import { conferenceEvents, partitionCommunity } from "../data/communityBuckets";
+
+const community = await getCollection("community");
+const eventsAll = await getCollection("events");
+
+const { study, conferencesFromCommunity, institutions, people } = partitionCommunity(community);
+const conferencesFromEvents = conferenceEvents(eventsAll);
+
+const conferenceEntries = [...conferencesFromCommunity, ...conferencesFromEvents];
+const totalCount = study.length + conferenceEntries.length + institutions.length + people.length;
+const base = import.meta.env.BASE_URL;
+
+const sections = [
+  {
+    href: base + "community/programs-groups/",
+    label: "Programs & groups",
+    count: study.length,
+    description: "SIGs, MIGs, research labs, and working groups that organize applied LE work.",
+    samples: study.slice(0, 4).map((entry) => entry.data.title),
+  },
+  {
+    href: base + "community/conferences/",
+    label: "Conferences",
+    count: conferenceEntries.length,
+    description: "Recurring venues where the field gathers, shares findings, and publishes proceedings.",
+    samples: conferenceEntries.slice(0, 4).map((entry) => entry.data.title),
+  },
+  {
+    href: base + "community/institutions/",
+    label: "Institutions",
+    count: institutions.length,
+    description: "Universities, centers, agencies, and societies supporting learning engineering.",
+    samples: institutions.slice(0, 4).map((entry) => entry.data.title),
+  },
+  {
+    href: base + "community/people/",
+    label: "People",
+    count: people.length,
+    description: "Practitioners and researchers connected to ICICLE and adjacent LE networks.",
+    samples: people.slice(0, 4).map((entry) => entry.data.title),
+  },
+];
+---
+
+<Base title="Community · LENS" active="community">
+  <SectionHero
+    eyebrow="Community"
+    title="Study groups, conferences, institutions &amp; people"
+    claim="A field is only as real as its community. Here's where learning engineering actually convenes, organizes, and credentials itself."
+    question="Where does the field live — and who does the work?"
+    count={totalCount}
+  />
+
+  <div class="container-wide hub-shell">
+    <section class="hub-intro">
+      <h2>Browse by category</h2>
+      <p>
+        This page is now a lighter index. Open a category to see the full list with filtering.
+      </p>
+    </section>
+
+    <section class="hub-grid" aria-label="Community categories">
+      {sections.map((section) => (
+        <article class="hub-card">
+          <h3>{section.label}</h3>
+          <p class="hub-meta">{section.count} entries</p>
+          <p class="hub-desc">{section.description}</p>
+          {section.samples.length > 0 && (
+            <ul class="hub-samples" aria-label={`${section.label} sample entries`}>
+              {section.samples.map((title) => (
+                <li>{title}</li>
+              ))}
+            </ul>
+          )}
+          <a class="hub-link" href={section.href}>View all {section.count} →</a>
+        </article>
+      ))}
+    </section>
+
+    <section class="hub-tools">
+      <a class="hub-link" href={base + "search/"}>Search across the full site</a>
+      <a class="hub-link" href={base + "events/"}>See event talks and recordings</a>
+    </section>
+  </div>
+</Base>
+
+<style>
+  .hub-shell {
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem;
+  }
+  .hub-intro {
+    border: 1px solid var(--border);
+    border-radius: 4px;
+    background: var(--tint);
+    padding: 1rem;
+  }
+  .hub-intro h2 {
+    margin: 0;
+    font-size: 1.2rem;
+  }
+  .hub-intro p {
+    margin: .55rem 0 0 0;
+    font-family: var(--sans);
+    font-size: .92rem;
+    color: var(--ink-soft);
+    max-width: 58ch;
+  }
+  .hub-grid {
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: repeat(auto-fit, minmax(min(100%, 18rem), 1fr));
+  }
+  .hub-card {
+    border: 1px solid var(--border);
+    border-radius: 4px;
+    background: var(--bg);
+    padding: .95rem;
+    display: flex;
+    flex-direction: column;
+    gap: .55rem;
+  }
+  .hub-card h3 {
+    margin: 0;
+    font-family: var(--serif);
+    font-size: 1.1rem;
+  }
+  .hub-meta {
+    margin: 0;
+    font-family: var(--sans);
+    font-size: .82rem;
+    color: var(--muted);
+    letter-spacing: .04em;
+    text-transform: uppercase;
+  }
+  .hub-desc {
+    margin: 0;
+    font-family: var(--sans);
+    font-size: .88rem;
+    color: var(--ink-soft);
+  }
+  .hub-samples {
+    margin: .15rem 0 0 1rem;
+    padding: 0;
+    display: grid;
+    gap: .25rem;
+    color: var(--muted);
+    font-family: var(--sans);
+    font-size: .82rem;
+  }
+  .hub-link {
+    width: fit-content;
+    border: 1px solid var(--border);
+    border-radius: 3px;
+    background: var(--tint);
+    color: var(--accent);
+    padding: .35rem .55rem;
+    font-family: var(--sans);
+    font-size: .82rem;
+  }
+  .hub-link:hover {
+    border-color: var(--accent);
+    background: var(--tint-warm);
+  }
+  .hub-tools {
+    display: flex;
+    flex-wrap: wrap;
+    gap: .55rem;
+  }
+</style>

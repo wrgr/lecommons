@@ -1,0 +1,39 @@
+---
+// Community conferences index built from the shared community collection page component.
+import Base from "../../layouts/Base.astro";
+import { getCollection } from "astro:content";
+import { conferenceEvents, partitionCommunity } from "../../data/communityBuckets";
+import CommunityCollectionPage from "../../components/CommunityCollectionPage.astro";
+
+const community = await getCollection("community");
+const eventsAll = await getCollection("events");
+
+const { conferencesFromCommunity } = partitionCommunity(community);
+const conferencesFromEvents = conferenceEvents(eventsAll);
+
+const base = import.meta.env.BASE_URL;
+const total = conferencesFromCommunity.length + conferencesFromEvents.length;
+---
+
+<Base title="Community Conferences · Learning Engineering Commons" active="community">
+  <CommunityCollectionPage
+    title="Conferences"
+    question="Where does the field gather and share practice?"
+    count={total}
+    searchPlaceholder="Conference, venue, topic..."
+    groupName="conference"
+    groupLabel="Conferences"
+    groupNote="Recurring venues and annual meetings. Individual talks and recordings remain on the"
+    groupNoteLinkHref={base + "events/"}
+    groupNoteLinkLabel="Events page."
+    breadcrumbs={[
+      { href: base + "community/", label: "Community hub" },
+      { href: base + "community/people/", label: "People" },
+      { href: base + "community/institutions/", label: "Institutions" },
+      { href: base + "community/programs-groups/", label: "Programs & groups" },
+    ]}
+    entries={conferencesFromCommunity}
+    extraEntries={conferencesFromEvents}
+    extraNote={{ href: base + "events/", text: "Details & talks on Events →" }}
+  />
+</Base>

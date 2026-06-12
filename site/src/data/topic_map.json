@@ -1,0 +1,164 @@
+[
+  {
+    "topic_code": "T00",
+    "layer": "Foundation",
+    "topic_name": "Field Overview & History",
+    "why_it_matters": "What is LE? Origins in cognitive science, instructional design, systems engineering. ICICLE body of knowledge. Why LE is distinct from instructional design.",
+    "seed_a": "LE-T1-001",
+    "seed_b": "LE-T1-002",
+    "target_n": "20-25"
+  },
+  {
+    "topic_code": "T01",
+    "layer": "Foundation",
+    "topic_name": "Learning Science Foundations",
+    "why_it_matters": "Cognitive load theory; spaced practice; retrieval; worked examples; transfer. The scientific basis for design decisions.",
+    "seed_a": "LE-T1-003",
+    "seed_b": "LE-T1-004",
+    "target_n": "25-30"
+  },
+  {
+    "topic_code": "T02",
+    "layer": "Foundation",
+    "topic_name": "Systems Engineering & Human Factors",
+    "why_it_matters": "Human systems integration; HSI principles; human as top-level design constraint; MBSE; sociotechnical systems.",
+    "seed_a": "LE-T1-005",
+    "seed_b": "LE-T1-006",
+    "target_n": "20-25"
+  },
+  {
+    "topic_code": "T03",
+    "layer": "Foundation",
+    "topic_name": "Learning Engineering Process",
+    "why_it_matters": "LE as iterative, evidence-based design process. Rapid prototyping; formative evaluation; A/B testing in learning contexts.",
+    "seed_a": "LE-T1-007",
+    "seed_b": "LE-T1-008",
+    "target_n": "25-30"
+  },
+  {
+    "topic_code": "T04",
+    "layer": "Foundation",
+    "topic_name": "Measurement & Analytics",
+    "why_it_matters": "Learning analytics; educational data mining; psychometrics; competency assessment; performance measurement.",
+    "seed_a": "LE-T1-009",
+    "seed_b": "LE-T1-010",
+    "target_n": "25-30"
+  },
+  {
+    "topic_code": "T05",
+    "layer": "Foundation",
+    "topic_name": "Knowledge Representation",
+    "why_it_matters": "Ontologies; knowledge graphs; concept maps; prerequisite relationships; competency frameworks; skill taxonomies.",
+    "seed_a": "LE-T1-011",
+    "seed_b": "LE-T1-012",
+    "target_n": "20-25"
+  },
+  {
+    "topic_code": "T06",
+    "layer": "Practice",
+    "topic_name": "Intelligent Tutoring & Adaptive Systems",
+    "why_it_matters": "ITS architecture; knowledge tracing; Bayesian student models; ALEKS; Cognitive Tutor; modern DKT.",
+    "seed_a": "LE-T1-013",
+    "seed_b": "LE-T1-014",
+    "target_n": "25-30"
+  },
+  {
+    "topic_code": "T07",
+    "layer": "Practice",
+    "topic_name": "AI & Foundation Models in Learning",
+    "why_it_matters": "LLM tutors; generative feedback; AI-generated content; automated hint systems; risks and opportunities.",
+    "seed_a": "LE-T1-015",
+    "seed_b": "LE-T1-016",
+    "target_n": "20-25"
+  },
+  {
+    "topic_code": "T08",
+    "layer": "Practice",
+    "topic_name": "Simulation & Experiential Learning",
+    "why_it_matters": "Serious games; XR/VR/AR; simulation fidelity; transfer; after-action review; scenario design.",
+    "seed_a": "LE-T1-017",
+    "seed_b": "LE-T1-018",
+    "target_n": "20-25"
+  },
+  {
+    "topic_code": "T09",
+    "layer": "Practice",
+    "topic_name": "Expert Knowledge Elicitation",
+    "why_it_matters": "Cognitive task analysis; SME elicitation; tacit knowledge; PKSM; knowledge auditing; elicitation pipelines.",
+    "seed_a": "LE-T1-019",
+    "seed_b": "LE-T1-020",
+    "target_n": "20-25"
+  },
+  {
+    "topic_code": "T10",
+    "layer": "Practice",
+    "topic_name": "Workforce Development & Training Systems",
+    "why_it_matters": "Military/defense training; healthcare training; large-scale workforce upskilling; apprenticeship; on-the-job learning.",
+    "seed_a": "LE-T1-021",
+    "seed_b": "LE-T1-022",
+    "target_n": "25-30"
+  },
+  {
+    "topic_code": "T11",
+    "layer": "Practice",
+    "topic_name": "Learning Infrastructure & Platforms",
+    "why_it_matters": "LMS; xAPI/Tin Can; data interoperability; learning record stores; open standards; platform architecture.",
+    "seed_a": "LE-T1-023",
+    "seed_b": "LE-T1-024",
+    "target_n": "15-20"
+  },
+  {
+    "topic_code": "T12",
+    "layer": "Practice",
+    "topic_name": "Instructional Design & Curriculum",
+    "why_it_matters": "ADDIE; backward design; competency-based design; curriculum mapping; learning objectives taxonomy.",
+    "seed_a": "LE-T1-025",
+    "seed_b": "LE-T1-026",
+    "target_n": "20-25"
+  },
+  {
+    "topic_code": "T13",
+    "layer": "Context",
+    "topic_name": "High-Consequence & Complex Domains",
+    "why_it_matters": "Defense/national security; healthcare; emergency response; aviation; nuclear. Stakes of performance gaps. Human error.",
+    "seed_a": "LE-T1-027",
+    "seed_b": "LE-T1-028",
+    "target_n": "20-25"
+  },
+  {
+    "topic_code": "T14",
+    "layer": "Context",
+    "topic_name": "Ethics, Equity & Responsible LE",
+    "why_it_matters": "Algorithmic fairness in adaptive systems; data privacy; equity in access; avoiding automation bias in assessment.",
+    "seed_a": "LE-T1-029",
+    "seed_b": "LE-T1-030",
+    "target_n": "20-25"
+  },
+  {
+    "topic_code": "T15",
+    "layer": "Context",
+    "topic_name": "Evidence & Evaluation Standards",
+    "why_it_matters": "What counts as evidence? Level 1-4 Kirkpatrick; decision-grade evidence; reproducibility in LE research.",
+    "seed_a": "LE-T1-031",
+    "seed_b": "LE-T1-032",
+    "target_n": "15-20"
+  },
+  {
+    "topic_code": "T16",
+    "layer": "Context",
+    "topic_name": "Standards, Credentialing & Community",
+    "why_it_matters": "IEEE ICICLE body of knowledge; LE credential pathways; professional community development; field maturation.",
+    "seed_a": "LE-T1-033",
+    "seed_b": "LE-T1-034",
+    "target_n": "15-20"
+  },
+  {
+    "topic_code": "T17",
+    "layer": "Context",
+    "topic_name": "Research Methods & Field Development",
+    "why_it_matters": "Randomized trials in education; quasi-experimental designs; design-based research; open science; replication.",
+    "seed_a": "LE-T1-035",
+    "seed_b": "LE-T1-036",
+    "target_n": "15-20"
+  }
+]

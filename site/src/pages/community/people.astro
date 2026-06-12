@@ -1,0 +1,32 @@
+---
+// Community people index built from the shared community collection page component.
+import Base from "../../layouts/Base.astro";
+import { getCollection } from "astro:content";
+import { partitionCommunity } from "../../data/communityBuckets";
+import CommunityCollectionPage from "../../components/CommunityCollectionPage.astro";
+
+const community = await getCollection("community");
+const { people } = partitionCommunity(community);
+
+const base = import.meta.env.BASE_URL;
+---
+
+<Base title="Community People · Learning Engineering Commons" active="community">
+  <CommunityCollectionPage
+    title="People"
+    question="Who is actively shaping work in learning engineering?"
+    count={people.length}
+    searchPlaceholder="Person, affiliation, topic..."
+    groupName="person"
+    groupLabel="People"
+    groupNote="ICICLE SIG/MIG leaders and contributors, with links to published work and related resources."
+    breadcrumbs={[
+      { href: base + "community/", label: "Community hub" },
+      { href: base + "community/institutions/", label: "Institutions" },
+      { href: base + "community/programs-groups/", label: "Programs & groups" },
+      { href: base + "community/conferences/", label: "Conferences" },
+    ]}
+    entries={people}
+    showTypeFilter={false}
+  />
+</Base>

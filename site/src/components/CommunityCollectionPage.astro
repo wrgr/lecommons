@@ -1,0 +1,356 @@
+---
+// Reusable community subpage shell to keep filtering UI and card rendering consistent.
+import Card from "./Card.astro";
+import { render, type CollectionEntry } from "astro:content";
+
+type CommEntry = CollectionEntry<"community">;
+type EventEntry = CollectionEntry<"events">;
+
+type Breadcrumb = {
+  href: string;
+  label: string;
+};
+
+type ExtraNote = {
+  href: string;
+  text: string;
+};
+
+interface Props {
+  title: string;
+  question: string;
+  count: number;
+  searchPlaceholder: string;
+  groupName: "person" | "institution" | "study" | "conference";
+  groupLabel: string;
+  groupNote: string;
+  groupNoteLinkHref?: string;
+  groupNoteLinkLabel?: string;
+  breadcrumbs: Breadcrumb[];
+  entries: CommEntry[];
+  extraEntries?: EventEntry[];
+  extraNote?: ExtraNote;
+  showTypeFilter?: boolean;
+}
+
+const {
+  title,
+  question,
+  count,
+  searchPlaceholder,
+  groupName,
+  groupLabel,
+  groupNote,
+  groupNoteLinkHref,
+  groupNoteLinkLabel,
+  breadcrumbs,
+  entries,
+  extraEntries = [],
+  extraNote,
+  showTypeFilter = true,
+} = Astro.props;
+
+const rendered = await Promise.all(
+  entries.map(async (entry) => {
+    const { Content } = await render(entry);
+    return [entry.id, Content] as const;
+  }),
+);
+const bodyMap = new Map(rendered);
+
+const allEntries = [...entries, ...extraEntries];
+
+const topicOptions = Array.from(
+  new Set(allEntries.flatMap((entry) => entry.data.topics ?? []).filter(Boolean)),
+).sort((a, b) => a.localeCompare(b));
+
+const typeOptions = Array.from(
+  new Set(allEntries.map((entry) => entry.data.format)),
+).sort((a, b) => a.localeCompare(b));
+
+function searchBlob(values: Array<string | number | undefined>): string {
+  return values
+    .filter(Boolean)
+    .join(" ")
+    .toLowerCase();
+}
+
+function topicsBlob(topics: string[] | undefined): string {
+  return (topics ?? []).map((topic) => topic.toLowerCase()).join("|");
+}
+
+const base = import.meta.env.BASE_URL;
+---
+
+<header class="hero">
+  <div class="container-wide">
+    <div class="eyebrow">Community</div>
+    <h1>{title}</h1>
+    <p class="subhead">{question}</p>
+  </div>
+</header>
+
+<div class="container-wide page-shell" data-community-filter-root>
+  <p class="crumbs">
+    {breadcrumbs.map((crumb, index) => (
+      <>
+        {index > 0 && <span> · </span>}
+        <a href={crumb.href}>{crumb.label}</a>
+      </>
+    ))}
+  </p>
+
+  <section class="filter-shell">
+    <div class="filter-row">
+      <label class="filter-input">
+        <span>Search</span>
+        <input data-filter-search type="search" placeholder={searchPlaceholder} />
+      </label>
+      {showTypeFilter && (
+        <label class="filter-input">
+          <span>Type</span>
+          <select data-filter-type>
+            <option value="all">All types</option>
+            {typeOptions.map((type) => <option value={type}>{type}</option>)}
+          </select>
+        </label>
+      )}
+      <label class="filter-input">
+        <span>Topic</span>
+        <select data-filter-topic>
+          <option value="all">All topics</option>
+          {topicOptions.map((topic) => <option value={topic.toLowerCase()}>{topic}</option>)}
+        </select>
+      </label>
+    </div>
+    <label class="filter-check">
+      <input data-filter-known-source type="checkbox" />
+      <span>Only show entries with known source provenance</span>
+    </label>
+    <p class="filter-meta"><span data-filter-count>{count}</span> entries shown</p>
+    <p class="filter-empty" data-filter-empty hidden>
+      No entries match these filters.
+    </p>
+  </section>
+
+  <section class="group" data-community-section data-group-name={groupName} data-section-total={count}>
+    <h2 class="group-heading">
+      {groupLabel} <span class="count muted" data-section-count>({count})</span>
+    </h2>
+    <p class="group-note">
+      {groupNote}
+      {groupNoteLinkHref && groupNoteLinkLabel && (
+        <>
+          {" "}
+          <a href={groupNoteLinkHref}>{groupNoteLinkLabel}</a>
+        </>
+      )}
+    </p>
+    <div class="grid">
+      {entries.map((entry) => {
+        const Body = bodyMap.get(entry.id);
+        return (
+          <div
+            class="community-item"
+            data-community-item
+            data-group={groupName}
+            data-format={entry.data.format}
+            data-topics={topicsBlob(entry.data.topics)}
+            data-missing={entry.data.missingProvenance ? "true" : "false"}
+            data-search={searchBlob([
+              entry.data.title,
+              entry.data.format,
+              entry.data.authors,
+              entry.data.venue,
+              entry.data.year,
+              entry.data.cluster,
+              ...(entry.data.topics ?? []),
+              ...(entry.data.tags ?? []),
+            ])}
+          >
+            <Card
+              title={entry.data.title}
+              format={entry.data.format}
+              url={entry.data.url}
+              venue={entry.data.venue}
+              authors={entry.data.authors}
+              year={entry.data.year}
+              cluster={entry.data.cluster}
+              topics={entry.data.topics}
+              tags={entry.data.tags}
+              missingProvenance={entry.data.missingProvenance}
+            >
+              {Body && <Body />}
+            </Card>
+          </div>
+        );
+      })}
+
+      {extraEntries.map((entry) => (
+        <div
+          class="community-item"
+          data-community-item
+          data-group={groupName}
+          data-format={entry.data.format}
+          data-topics={topicsBlob(entry.data.topics)}
+          data-missing={entry.data.missingProvenance ? "true" : "false"}
+          data-search={searchBlob([
+            entry.data.title,
+            entry.data.format,
+            entry.data.authors,
+            entry.data.venue,
+            entry.data.year,
+            entry.data.cluster,
+            ...(entry.data.topics ?? []),
+            ...(entry.data.tags ?? []),
+          ])}
+        >
+          <Card
+            title={entry.data.title}
+            format={entry.data.format}
+            url={entry.data.url}
+            venue={entry.data.venue}
+            authors={entry.data.authors}
+            year={entry.data.year}
+            cluster={entry.data.cluster}
+            topics={entry.data.topics}
+            tags={entry.data.tags}
+            missingProvenance={entry.data.missingProvenance}
+          >
+            {extraNote && (
+              <p class="cross-ref-note">
+                <a href={extraNote.href}>{extraNote.text}</a>
+              </p>
+            )}
+          </Card>
+        </div>
+      ))}
+    </div>
+  </section>
+</div>
+
+<script type="module" src={base + "scripts/community-filters.js"}></script>
+
+<style>
+  .hero {
+    border-bottom: 1px solid var(--border);
+    background: var(--tint);
+  }
+  .hero .container-wide {
+    padding-top: 2.5rem;
+    padding-bottom: 1.8rem;
+  }
+  .subhead {
+    margin: 0;
+    font-size: 1rem;
+    color: var(--ink-soft);
+    max-width: 40rem;
+  }
+  .page-shell {
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem;
+  }
+  .crumbs {
+    margin: 0;
+    font-family: var(--sans);
+    font-size: .82rem;
+    color: var(--muted);
+    max-width: none;
+  }
+  .crumbs a {
+    color: var(--ink-soft);
+    border-bottom-color: transparent;
+  }
+  .crumbs a:hover {
+    color: var(--accent);
+    border-bottom-color: var(--accent);
+  }
+  .filter-shell {
+    border: 1px solid var(--border);
+    border-radius: 4px;
+    padding: .9rem;
+    display: flex;
+    flex-direction: column;
+    gap: .7rem;
+  }
+  .filter-row {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(12rem, 1fr));
+    gap: .65rem;
+  }
+  .filter-input {
+    display: flex;
+    flex-direction: column;
+    gap: .25rem;
+    font-family: var(--sans);
+    font-size: .74rem;
+    letter-spacing: .06em;
+    text-transform: uppercase;
+    color: var(--muted);
+  }
+  .filter-input input,
+  .filter-input select {
+    width: 100%;
+    border: 1px solid var(--border);
+    border-radius: 3px;
+    background: var(--bg);
+    color: var(--ink);
+    font-size: .9rem;
+    padding: .45rem .55rem;
+    font-family: var(--sans);
+    text-transform: none;
+    letter-spacing: normal;
+  }
+  .filter-check {
+    display: inline-flex;
+    align-items: center;
+    gap: .45rem;
+    font-family: var(--sans);
+    font-size: .82rem;
+    color: var(--ink-soft);
+  }
+  .filter-meta {
+    margin: 0;
+    font-family: var(--sans);
+    font-size: .82rem;
+    color: var(--muted);
+  }
+  .filter-empty {
+    margin: 0;
+    font-family: var(--sans);
+    font-size: .86rem;
+    color: var(--muted);
+    background: var(--tint);
+    border-radius: 3px;
+    padding: .6rem .7rem;
+  }
+  .group { display: flex; flex-direction: column; gap: .9rem; }
+  .group-heading {
+    font-family: var(--serif);
+    font-size: 1.3rem;
+    font-weight: 600;
+    margin: 0;
+    padding-bottom: .5rem;
+    border-bottom: 1px solid var(--border);
+  }
+  .group-note {
+    font-family: var(--sans);
+    font-size: .85rem;
+    color: var(--muted);
+    margin: 0 0 .3rem 0;
+    max-width: var(--measure);
+  }
+  .count { font-size: .95rem; font-weight: 400; }
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(min(100%, 18rem), 1fr));
+    gap: 1rem;
+  }
+  .cross-ref-note {
+    margin: 0;
+    font-family: var(--sans);
+    font-size: .85rem;
+    color: var(--muted);
+  }
+</style>
