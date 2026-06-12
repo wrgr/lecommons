@@ -4,9 +4,6 @@
 //   - Mobile/tablet (<900px): collapsed <details> disclosure with a hamburger
 // Each shows the same link list; CSS swaps which one is visible.
 // No JavaScript.
-//
-// When Base sets body.dark-shell (pageTheme="dark"), :global() rules at the
-// bottom of this file recolor the nav for the dark homepage chrome.
 
 interface Props {
   active?: string;
@@ -16,6 +13,7 @@ const { active } = Astro.props;
 
 const base = import.meta.env.BASE_URL;
 
+// LEBOK links to the wiki repo until the published wiki goes live.
 const items = [
   { href: base,                   label: "Welcome",      slug: "welcome" },
   { href: base + "graph/",        label: "Graph",        slug: "graph" },
@@ -28,6 +26,7 @@ const items = [
   { href: base + "topics/",       label: "Topics",       slug: "topics" },
   { href: base + "pathways/",     label: "Pathways",     slug: "pathways" },
   { href: base + "search/",       label: "Search",       slug: "search" },
+  { href: "https://github.com/wrgr/lebok", label: "LEBOK", slug: "lebok" },
   { href: base + "about/",        label: "About",        slug: "about" },
 ];
 
@@ -37,8 +36,8 @@ const activeLabel = items.find((it) => it.slug === active)?.label ?? "Menu";
 <header class="site-nav">
   <div class="nav-inner">
     <a href={base} class="brand" aria-label="Home">
-      <span class="brand-mark">LENS</span>
-      <span class="brand-text">Learning Engineering for Next-Generation Systems</span>
+      <span class="brand-mark">LE</span>
+      <span class="brand-text">Learning Engineering Commons</span>
     </a>
 
     <nav class="desktop-nav" aria-label="Primary">
@@ -234,58 +233,5 @@ const activeLabel = items.find((it) => it.slug === active)?.label ?? "Menu";
     .nav-inner { flex-wrap: nowrap; }
     .desktop-nav { display: block; }
     .mobile-nav  { display: none; }
-  }
-
-  /* ── Dark shell overrides ─────────────────────────────────────────────────
-     Activated when Base applies body.dark-shell (homepage). Hardcoded colors
-     mirror the homepage palette in src/pages/index.astro. */
-  :global(body.dark-shell .site-nav) {
-    background: rgba(10, 22, 40, 0.85);
-    backdrop-filter: blur(12px);
-    -webkit-backdrop-filter: blur(12px);
-    border-bottom: 1px solid rgba(26, 138, 125, 0.15);
-  }
-  :global(body.dark-shell .brand) { color: #f5f0e8; }
-  :global(body.dark-shell .brand-text) { color: #f5f0e8; }
-  :global(body.dark-shell .brand-mark) {
-    background: #1a8a7d;
-    color: #0a1628;
-  }
-  :global(body.dark-shell .desktop-nav a) { color: #8a9ab5; }
-  :global(body.dark-shell .desktop-nav a:hover) {
-    background: rgba(44, 196, 179, 0.08);
-    color: #2cc4b3;
-  }
-  :global(body.dark-shell .desktop-nav a.active) {
-    color: #2cc4b3;
-    background: rgba(44, 196, 179, 0.10);
-  }
-  :global(body.dark-shell .mobile-nav summary) {
-    background: rgba(255, 255, 255, 0.04);
-    border-color: rgba(138, 154, 181, 0.2);
-    color: #8a9ab5;
-  }
-  :global(body.dark-shell .mobile-nav summary .current) { color: #2cc4b3; }
-  :global(body.dark-shell .mobile-nav[open] summary) {
-    background: rgba(44, 196, 179, 0.08);
-    border-color: #2cc4b3;
-    color: #2cc4b3;
-  }
-  :global(body.dark-shell .mobile-nav nav) {
-    background: #132240;
-    border-color: rgba(138, 154, 181, 0.2);
-    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.5);
-  }
-  :global(body.dark-shell .mobile-nav nav a) {
-    color: #8a9ab5;
-    border-bottom-color: rgba(138, 154, 181, 0.1);
-  }
-  :global(body.dark-shell .mobile-nav nav a:hover) {
-    background: rgba(44, 196, 179, 0.08);
-    color: #2cc4b3;
-  }
-  :global(body.dark-shell .mobile-nav nav a.active) {
-    background: rgba(44, 196, 179, 0.10);
-    color: #2cc4b3;
   }
 </style>

@@ -1,27 +1,21 @@
 ---
 // Shared page shell: metadata, global styles, nav, footer.
-// pageTheme="dark" applies a `dark-shell` class on <body>; NavBar and footer
-// pick that up via :global() overrides so the homepage's dark navy hero
-// experience extends through the chrome. Interior pages stay on the default
-// cream/Charter shell.
+// All pages use the cream/Charter shell.
 import NavBar from "../components/NavBar.astro";
 
 interface Props {
   title: string;
   description?: string;
   active?: string;
-  pageTheme?: "light" | "dark";
 }
 
 const {
   title,
-  description = "Learning Engineering for Next-Generation Systems (LENS) — engineering human capability, advancing system performance.",
+  description = "Learning Engineering Commons — a community-curated library of learning engineering resources, adapted from IEEE ICICLE and other community sources.",
   active,
-  pageTheme = "light",
 } = Astro.props;
 
 const base = import.meta.env.BASE_URL;
-const bodyClass = pageTheme === "dark" ? "dark-shell" : undefined;
 ---
 
 <!doctype html>
@@ -35,7 +29,7 @@ const bodyClass = pageTheme === "dark" ? "dark-shell" : undefined;
     <link rel="icon" type="image/svg+xml" href={base + "favicon.svg"} />
     <slot name="head" />
   </head>
-  <body class={bodyClass}>
+  <body>
     <NavBar active={active} />
     <main>
       <slot />
@@ -43,12 +37,14 @@ const bodyClass = pageTheme === "dark" ? "dark-shell" : undefined;
     <footer>
       <div class="footer-inner">
         <div class="footer-brand">
-          <strong>LENS</strong>
-          <span class="muted"> · Learning Engineering for Next-Generation Systems · curated resources adapted from IEEE ICICLE and other community sources, with credit. To include, modify, or exclude your content, please <a href="mailto:wgr@jhu.edu">reach out</a>!</span>
+          <strong>Learning Engineering Commons</strong>
+          <span class="muted"> · curated resources adapted from IEEE ICICLE and other community sources, with credit. To include, modify, or exclude your content, please <a href="mailto:wgr@jhu.edu">reach out</a>!</span>
         </div>
         <nav class="footer-links" aria-label="Footer">
           <a href={base + "about/"}>About this site</a>
           <a href="https://sagroups.ieee.org/icicle/" target="_blank" rel="noopener">IEEE ICICLE</a>
+          <a href="https://capabilitymatters.org" target="_blank" rel="noopener">LENS @ JHU</a>
+          <a href="https://github.com/wrgr/lebok" target="_blank" rel="noopener">LEBOK</a>
         </nav>
       </div>
       <div class="footer-copy">© 2026</div>
@@ -199,31 +195,6 @@ const bodyClass = pageTheme === "dark" ? "dark-shell" : undefined;
         color: var(--muted);
         letter-spacing: .04em;
       }
-      body.dark-shell .footer-copy { color: #8a9ab5; }
-
-      /* Dark shell: applied when pageTheme="dark". Overrides the cream body +
-         footer chrome. NavBar has its own :global(body.dark-shell) rules. */
-      body.dark-shell {
-        background: #0a1628;
-        color: #f5f0e8;
-        font-family: "DM Sans", -apple-system, BlinkMacSystemFont, "Inter", sans-serif;
-      }
-      body.dark-shell main {
-        min-height: auto;
-        padding-bottom: 0;
-      }
-      body.dark-shell footer {
-        background: #132240;
-        border-top: 1px solid rgba(138, 154, 181, 0.1);
-        margin-top: 0;
-        color: #8a9ab5;
-      }
-      body.dark-shell .footer-brand,
-      body.dark-shell .footer-brand strong { color: #f5f0e8; }
-      body.dark-shell .footer-brand .muted { color: #8a9ab5; }
-      body.dark-shell .footer-links a { color: #8a9ab5; }
-      body.dark-shell .footer-links a:hover { color: #2cc4b3; }
-      body.dark-shell .footer-brand a { color: #2cc4b3; }
     </style>
   </body>
 </html>

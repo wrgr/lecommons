@@ -1,0 +1,64 @@
+name: Deploy Commons site to gh-pages
+
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - "site/**"
+      - "landscape/**"
+      - "scripts/build_registry.py"
+      - "scripts/validate_mdx_refs.py"
+      - ".github/workflows/deploy-gh-pages.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: gh-pages-deploy
+  cancel-in-progress: true
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: site
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+          cache: npm
+          cache-dependency-path: site/package-lock.json
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      # The prebuild step (scripts/build_registry.py) parses the landscape
+      # YAML corpus, so PyYAML must be available to the runner's python3.
+      - name: Install Python dependencies
+        working-directory: ${{ github.workspace }}
+        run: pip install pyyaml
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Build Astro site
+        run: npm run build
+
+      - name: Deploy to gh-pages branch
+        uses: peaceiris/actions-gh-pages@v4
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_branch: gh-pages
+          publish_dir: ./site/dist
+          force_orphan: true
+          enable_jekyll: false
+          cname: lecommons.org
