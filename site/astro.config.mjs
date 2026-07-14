@@ -2,11 +2,10 @@
 import { defineConfig } from "astro/config";
 import mdx from "@astrojs/mdx";
 
-// Deployed via GitHub Pages at the default wrgr.github.io/lecommons URL (no
-// custom domain configured yet). `site` + `base` keep canonical URLs and
-// sitemap entries rooted there — update both if a custom domain is added.
+// Deployed to https://lecommons.org via the gh-pages workflow. `site` + `base`
+// keep canonical URLs and sitemap entries rooted at the custom domain.
 export default defineConfig({
-  site: "https://wrgr.github.io",
-  base: "/lecommons/",
+  site: "https://lecommons.org",
+  base: "/",
   integrations: [mdx()],
 });
