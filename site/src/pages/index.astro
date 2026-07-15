@@ -1,8 +1,8 @@
 ---
-// Homepage: dark navy landing experience for the Learning Engineering
-// Commons — the field's shared, topic-linked evidence corpus. Uses Base
-// with pageTheme="dark" so the NavBar + footer render on a dark chrome.
-// Interior pages keep the default cream/Charter shell.
+// Homepage: dark graphite/indigo landing experience for the Learning
+// Engineering Commons — the field's shared, topic-linked evidence corpus.
+// Uses Base with pageTheme="dark" so the NavBar + footer render on a dark
+// chrome. Interior pages keep the default light "reference index" shell.
 import Base from "../layouts/Base.astro";
 
 const base = import.meta.env.BASE_URL;
@@ -19,7 +19,7 @@ const ICICLE_URL = "https://sagroups.ieee.org/icicle/";
   <link
     slot="head"
     rel="stylesheet"
-    href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=DM+Sans:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400&display=swap"
+    href="https://fonts.googleapis.com/css2?family=Fraunces:ital,wght@0,400;0,500;1,400;1,500&family=Space+Grotesk:wght@300;400;500;700&display=swap"
   />
 
   <section class="hero">
@@ -131,15 +131,15 @@ const ICICLE_URL = "https://sagroups.ieee.org/icicle/";
      body.dark-shell so children (including statement, evidence, etc.) inherit
      them through normal cascade. */
   :global(body.dark-shell) {
-    --hp-navy: #0a1628;
-    --hp-navy-mid: #132240;
-    --hp-teal: #1a8a7d;
-    --hp-teal-light: #2cc4b3;
-    --hp-gold: #d4a843;
-    --hp-cream: #f5f0e8;
-    --hp-text-muted: #8a9ab5;
-    --hp-serif: "Instrument Serif", Georgia, "Times New Roman", serif;
-    --hp-sans: "DM Sans", -apple-system, BlinkMacSystemFont, "Inter", sans-serif;
+    --hp-bg: #14151c;
+    --hp-bg-mid: #1e2029;
+    --hp-accent: #7c6fe8;
+    --hp-accent-light: #9b8fff;
+    --hp-warm: #c97b3d;
+    --hp-cream: #eef0f6;
+    --hp-text-muted: #a8acc4;
+    --hp-serif: "Fraunces", Georgia, "Times New Roman", serif;
+    --hp-sans: "Space Grotesk", -apple-system, BlinkMacSystemFont, "Inter", sans-serif;
   }
 
   /* HERO */
@@ -157,7 +157,7 @@ const ICICLE_URL = "https://sagroups.ieee.org/icicle/";
     top: 0; right: 0;
     width: 55%;
     height: 100%;
-    background: radial-gradient(ellipse at 70% 40%, rgba(26, 138, 125, 0.08) 0%, transparent 70%);
+    background: radial-gradient(ellipse at 70% 40%, rgba(124, 111, 232, 0.08) 0%, transparent 70%);
     pointer-events: none;
   }
   .hero-label {
@@ -166,7 +166,7 @@ const ICICLE_URL = "https://sagroups.ieee.org/icicle/";
     font-weight: 500;
     letter-spacing: 0.2em;
     text-transform: uppercase;
-    color: var(--hp-teal-light);
+    color: var(--hp-accent-light);
     margin-bottom: 2rem;
     opacity: 0;
     animation: fadeUp 0.8s 0.3s forwards;
@@ -182,7 +182,7 @@ const ICICLE_URL = "https://sagroups.ieee.org/icicle/";
     opacity: 0;
     animation: fadeUp 0.8s 0.5s forwards;
   }
-  .hero h1 em { font-style: italic; color: var(--hp-teal-light); }
+  .hero h1 em { font-style: italic; color: var(--hp-accent-light); }
   .hero-sub {
     margin: 2.5rem 0 0;
     font-family: var(--hp-sans);
@@ -197,7 +197,7 @@ const ICICLE_URL = "https://sagroups.ieee.org/icicle/";
   .hero-line {
     width: 80px;
     height: 2px;
-    background: var(--hp-gold);
+    background: var(--hp-warm);
     margin-top: 3rem;
     opacity: 0;
     animation: fadeUp 0.8s 0.9s forwards;
@@ -222,13 +222,13 @@ const ICICLE_URL = "https://sagroups.ieee.org/icicle/";
   /* STATEMENTS */
   .statement {
     padding: 8rem 4rem;
-    border-top: 1px solid rgba(138, 154, 181, 0.1);
+    border-top: 1px solid rgba(168, 172, 196, 0.1);
     position: relative;
   }
   .statement-number {
     font-family: var(--hp-serif);
     font-size: 0.9rem;
-    color: var(--hp-gold);
+    color: var(--hp-warm);
     margin-bottom: 1.5rem;
     letter-spacing: 0.05em;
   }
@@ -241,7 +241,7 @@ const ICICLE_URL = "https://sagroups.ieee.org/icicle/";
     color: var(--hp-cream);
     margin: 0;
   }
-  .statement h2 em { font-style: italic; color: var(--hp-teal-light); }
+  .statement h2 em { font-style: italic; color: var(--hp-accent-light); }
   .statement p {
     margin: 2rem 0 0;
     font-family: var(--hp-sans);
@@ -262,18 +262,18 @@ const ICICLE_URL = "https://sagroups.ieee.org/icicle/";
   .evidence-strip {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    border-top: 1px solid rgba(138, 154, 181, 0.1);
+    border-top: 1px solid rgba(168, 172, 196, 0.1);
   }
   .evidence-cell {
     padding: 4rem;
-    border-right: 1px solid rgba(138, 154, 181, 0.1);
+    border-right: 1px solid rgba(168, 172, 196, 0.1);
     position: relative;
   }
   .evidence-cell:last-child { border-right: none; }
   .evidence-cell .num {
     font-family: var(--hp-serif);
     font-size: 3.5rem;
-    color: var(--hp-gold);
+    color: var(--hp-warm);
     line-height: 1;
     margin-bottom: 0.5rem;
   }
@@ -282,7 +282,7 @@ const ICICLE_URL = "https://sagroups.ieee.org/icicle/";
     font-size: 0.75rem;
     letter-spacing: 0.15em;
     text-transform: uppercase;
-    color: var(--hp-teal-light);
+    color: var(--hp-accent-light);
     margin-bottom: 1.5rem;
   }
   .evidence-cell p {
@@ -300,15 +300,15 @@ const ICICLE_URL = "https://sagroups.ieee.org/icicle/";
     font-size: 0.72rem;
     font-weight: 400;
     letter-spacing: 0.03em;
-    color: rgba(138, 154, 181, 0.5);
-    border-top: 1px solid rgba(138, 154, 181, 0.08);
+    color: rgba(168, 172, 196, 0.5);
+    border-top: 1px solid rgba(168, 172, 196, 0.08);
     padding-top: 0.8rem;
   }
 
   /* DOMAINS */
   .domains {
     padding: 8rem 4rem;
-    border-top: 1px solid rgba(138, 154, 181, 0.1);
+    border-top: 1px solid rgba(168, 172, 196, 0.1);
   }
   .domains-header { margin-bottom: 4rem; }
   .domains-header h2 {
@@ -333,20 +333,20 @@ const ICICLE_URL = "https://sagroups.ieee.org/icicle/";
   }
   .domain-card {
     display: block;
-    background: var(--hp-navy-mid);
-    border: 1px solid rgba(138, 154, 181, 0.1);
+    background: var(--hp-bg-mid);
+    border: 1px solid rgba(168, 172, 196, 0.1);
     padding: 2.5rem 2rem;
     transition: border-color 0.4s ease, transform 0.3s ease;
     text-decoration: none;
   }
   .domain-card:hover {
-    border-color: var(--hp-teal);
+    border-color: var(--hp-accent);
     transform: translateY(-4px);
   }
   .domain-card .icon {
     font-size: 1.8rem;
     margin-bottom: 1.5rem;
-    color: var(--hp-teal-light);
+    color: var(--hp-accent-light);
   }
   .domain-card h3 {
     font-family: var(--hp-serif);
@@ -370,7 +370,7 @@ const ICICLE_URL = "https://sagroups.ieee.org/icicle/";
     padding: 10rem 4rem;
     text-align: center;
     position: relative;
-    border-top: 1px solid rgba(138, 154, 181, 0.1);
+    border-top: 1px solid rgba(168, 172, 196, 0.1);
   }
   .cta-section::before {
     content: '';
@@ -379,7 +379,7 @@ const ICICLE_URL = "https://sagroups.ieee.org/icicle/";
     transform: translateX(-50%);
     width: 80%;
     height: 60%;
-    background: radial-gradient(ellipse at center bottom, rgba(26, 138, 125, 0.06) 0%, transparent 70%);
+    background: radial-gradient(ellipse at center bottom, rgba(124, 111, 232, 0.06) 0%, transparent 70%);
     pointer-events: none;
   }
   .cta-section h2 {
@@ -391,7 +391,7 @@ const ICICLE_URL = "https://sagroups.ieee.org/icicle/";
     margin: 0 auto;
     line-height: 1.2;
   }
-  .cta-section h2 em { font-style: italic; color: var(--hp-teal-light); }
+  .cta-section h2 em { font-style: italic; color: var(--hp-accent-light); }
   .cta-section p {
     margin: 1.5rem auto 0;
     font-family: var(--hp-sans);
@@ -412,8 +412,8 @@ const ICICLE_URL = "https://sagroups.ieee.org/icicle/";
     display: inline-block;
     padding: 1rem 3rem;
     background: transparent;
-    border: 1px solid var(--hp-gold);
-    color: var(--hp-gold);
+    border: 1px solid var(--hp-warm);
+    color: var(--hp-warm);
     font-family: var(--hp-sans);
     font-size: 0.85rem;
     font-weight: 500;
@@ -422,9 +422,9 @@ const ICICLE_URL = "https://sagroups.ieee.org/icicle/";
     text-decoration: none;
     transition: background 0.3s, color 0.3s, border-color 0.3s;
   }
-  .cta-btn:hover { background: var(--hp-gold); color: var(--hp-navy); }
+  .cta-btn:hover { background: var(--hp-warm); color: var(--hp-bg); }
   .cta-btn.secondary { border-color: var(--hp-text-muted); color: var(--hp-text-muted); }
-  .cta-btn.secondary:hover { background: var(--hp-text-muted); color: var(--hp-navy); }
+  .cta-btn.secondary:hover { background: var(--hp-text-muted); color: var(--hp-bg); }
   .cta-tertiary {
     margin: 2rem auto 0;
     font-family: var(--hp-sans);
@@ -436,13 +436,13 @@ const ICICLE_URL = "https://sagroups.ieee.org/icicle/";
   .cta-tertiary a {
     color: var(--hp-text-muted);
     text-decoration: none;
-    border-bottom: 1px solid rgba(138, 154, 181, 0.3);
+    border-bottom: 1px solid rgba(168, 172, 196, 0.3);
     padding-bottom: 2px;
     transition: color 0.2s, border-color 0.2s;
   }
   .cta-tertiary a:hover {
-    color: var(--hp-teal-light);
-    border-bottom-color: var(--hp-teal-light);
+    color: var(--hp-accent-light);
+    border-bottom-color: var(--hp-accent-light);
   }
 
   /* ANIMATIONS */
@@ -471,7 +471,7 @@ const ICICLE_URL = "https://sagroups.ieee.org/icicle/";
     .evidence-strip { grid-template-columns: 1fr; }
     .evidence-cell {
       border-right: none;
-      border-bottom: 1px solid rgba(138, 154, 181, 0.1);
+      border-bottom: 1px solid rgba(168, 172, 196, 0.1);
       padding: 3rem 2rem;
     }
     .evidence-cell:last-child { border-bottom: none; }
