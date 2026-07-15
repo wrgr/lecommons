@@ -246,54 +246,54 @@ const activeLabel = items.find((it) => it.slug === active)?.label ?? "Menu";
      a fully-:global()-wrapped selector loses that scoping attribute and can
      lose the specificity fight against `.desktop-nav a.active` above, which
      silently reverted every dark-shell nav color back to the light theme's
-     near-black text on the dark navy bar. */
+     near-black text on the dark nav bar. */
   :global(body.dark-shell) .site-nav {
-    background: rgba(10, 22, 40, 0.85);
+    background: rgba(20, 21, 28, 0.85);
     backdrop-filter: blur(12px);
     -webkit-backdrop-filter: blur(12px);
-    border-bottom: 1px solid rgba(26, 138, 125, 0.15);
+    border-bottom: 1px solid rgba(124, 111, 232, 0.15);
   }
-  :global(body.dark-shell) .brand { color: #f5f0e8; }
-  :global(body.dark-shell) .brand-text { color: #f5f0e8; }
+  :global(body.dark-shell) .brand { color: #eef0f6; }
+  :global(body.dark-shell) .brand-text { color: #eef0f6; }
   :global(body.dark-shell) .brand-mark {
-    background: #1a8a7d;
-    color: #0a1628;
+    background: #7c6fe8;
+    color: #14151c;
   }
-  :global(body.dark-shell) .desktop-nav a { color: #c3cbe2; }
+  :global(body.dark-shell) .desktop-nav a { color: #c2c5db; }
   :global(body.dark-shell) .desktop-nav a:hover {
-    background: rgba(44, 196, 179, 0.08);
-    color: #2cc4b3;
+    background: rgba(155, 143, 255, 0.08);
+    color: #9b8fff;
   }
   :global(body.dark-shell) .desktop-nav a.active {
-    color: #2cc4b3;
-    background: rgba(44, 196, 179, 0.10);
+    color: #9b8fff;
+    background: rgba(155, 143, 255, 0.10);
   }
   :global(body.dark-shell) .mobile-nav summary {
     background: rgba(255, 255, 255, 0.04);
-    border-color: rgba(138, 154, 181, 0.2);
-    color: #c3cbe2;
+    border-color: rgba(168, 172, 196, 0.2);
+    color: #c2c5db;
   }
-  :global(body.dark-shell) .mobile-nav summary .current { color: #2cc4b3; }
+  :global(body.dark-shell) .mobile-nav summary .current { color: #9b8fff; }
   :global(body.dark-shell) .mobile-nav[open] summary {
-    background: rgba(44, 196, 179, 0.08);
-    border-color: #2cc4b3;
-    color: #2cc4b3;
+    background: rgba(155, 143, 255, 0.08);
+    border-color: #9b8fff;
+    color: #9b8fff;
   }
   :global(body.dark-shell) .mobile-nav nav {
-    background: #132240;
-    border-color: rgba(138, 154, 181, 0.2);
+    background: #1e2029;
+    border-color: rgba(168, 172, 196, 0.2);
     box-shadow: 0 8px 24px rgba(0, 0, 0, 0.5);
   }
   :global(body.dark-shell) .mobile-nav nav a {
-    color: #c3cbe2;
-    border-bottom-color: rgba(138, 154, 181, 0.1);
+    color: #c2c5db;
+    border-bottom-color: rgba(168, 172, 196, 0.1);
   }
   :global(body.dark-shell) .mobile-nav nav a:hover {
-    background: rgba(44, 196, 179, 0.08);
-    color: #2cc4b3;
+    background: rgba(155, 143, 255, 0.08);
+    color: #9b8fff;
   }
   :global(body.dark-shell) .mobile-nav nav a.active {
-    background: rgba(44, 196, 179, 0.10);
-    color: #2cc4b3;
+    background: rgba(155, 143, 255, 0.10);
+    color: #9b8fff;
   }
 </style>
