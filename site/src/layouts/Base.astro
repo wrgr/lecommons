@@ -15,7 +15,7 @@ interface Props {
 
 const {
   title,
-  description = "Learning Engineering for Next-Generation Systems (LENS) — engineering human capability, advancing system performance.",
+  description = "Learning Engineering Commons — the field's shared, topic-linked evidence corpus of practice, tools, reading list, events, and community.",
   active,
   pageTheme = "light",
 } = Astro.props;
@@ -43,8 +43,8 @@ const bodyClass = pageTheme === "dark" ? "dark-shell" : undefined;
     <footer>
       <div class="footer-inner">
         <div class="footer-brand">
-          <strong>LENS</strong>
-          <span class="muted"> · Learning Engineering for Next-Generation Systems · curated resources adapted from IEEE ICICLE and other community sources, with credit. To include, modify, or exclude your content, please <a href="mailto:wgr@jhu.edu">reach out</a>!</span>
+          <strong>Learning Engineering Commons</strong>
+          <span class="muted"> · curated resources adapted from IEEE ICICLE and other community sources, with credit. To include, modify, or exclude your content, please <a href="mailto:wgr@jhu.edu">reach out</a>!</span>
         </div>
         <nav class="footer-links" aria-label="Footer">
           <a href={base + "about/"}>About this site</a>

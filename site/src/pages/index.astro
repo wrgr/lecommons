@@ -1,19 +1,18 @@
 ---
-// Homepage: dark navy "Capability is a system parameter" landing experience.
-// Uses Base with pageTheme="dark" so the NavBar + footer render on a dark
-// chrome. Interior pages keep the default cream/Charter shell.
+// Homepage: dark navy landing experience for the Learning Engineering
+// Commons — the field's shared, topic-linked evidence corpus. Uses Base
+// with pageTheme="dark" so the NavBar + footer render on a dark chrome.
+// Interior pages keep the default cream/Charter shell.
 import Base from "../layouts/Base.astro";
 
 const base = import.meta.env.BASE_URL;
-const LENS_PROGRAM_URL =
-  "https://education.jhu.edu/masters-programs/master-of-education-in-learning-design-and-technology/learning-engineering-next-generation-systems-concentration/";
+const CAPABILITYMATTERS_URL = "https://capabilitymatters.org/";
 const ICICLE_URL = "https://sagroups.ieee.org/icicle/";
-const OVERVIEW_PDF_URL = base + "LENS_Overview_May2026.pdf";
 ---
 
 <Base
-  title="Capability Matters — LENS at Johns Hopkins"
-  description="Capability is a system parameter. LENS is the Johns Hopkins specialization that engineers human capability into complex systems."
+  title="Learning Engineering Commons"
+  description="The field's shared, topic-linked evidence corpus — practice, tools, reading list, events, and community, including material from IEEE ICICLE."
   active="welcome"
   pageTheme="dark"
 >
@@ -24,105 +23,105 @@ const OVERVIEW_PDF_URL = base + "LENS_Overview_May2026.pdf";
   />
 
   <section class="hero">
-    <div class="hero-label">Learning Engineering for Next-Generation Systems</div>
-    <h1>Capability is a <em>system parameter</em></h1>
+    <div class="hero-label">Learning Engineering Commons</div>
+    <h1>The field, <em>traced to its sources</em></h1>
     <p class="hero-sub">
-      Every complex system depends on what people can do inside it.
-      That dependency is measurable, designable, and too important to leave to chance.
+      Learning engineering is scattered across conferences, standards bodies, and grey literature.
+      This is where it's linked together — topic by topic, claim by claim.
     </p>
     <div class="hero-line"></div>
     <div class="scroll-cue" aria-hidden="true">
       <div class="line"></div>
-      The argument
+      Why this exists
     </div>
   </section>
 
   <section class="statement reveal" id="argument">
     <div class="statement-number">01</div>
-    <h2>Systems don't fail because the technology breaks. They fail because <em>someone couldn't do what the system required.</em></h2>
+    <h2>Practitioners define the field differently depending on where they <em>found it.</em></h2>
     <p>
-      The operator who misreads a display under stress. The clinician who wasn't trained on the new protocol. The maintenance team that lost institutional knowledge when three people retired. These aren't edge cases. They're the norm.
+      A conference talk. A standards committee. A blog post. The vocabulary doesn't converge. A claim made in one venue rarely gets traced back to its evidence, and the evidence rarely links forward to where it's actually used.
     </p>
   </section>
 
   <section class="statement right reveal">
     <div class="statement-number">02</div>
-    <h2>We engineer every parameter of a system <em>except the people.</em></h2>
+    <h2>So every topic here links to <em>what backs it up.</em></h2>
     <p>
-      Hardware gets reliability analysis. Software gets tested to specification. Human capability gets a training program bolted on at the end. Then we wonder why the system underperforms.
+      Seed papers. Expansion literature pulled from the wider citation graph. And the non-paper resources — programs, people, conferences, tools, organizations — that make the claim operational, not just cited.
     </p>
   </section>
 
   <section class="statement reveal">
     <div class="statement-number">03</div>
-    <h2>Capability is not a <em>soft</em> problem. It's a systems engineering problem.</h2>
+    <h2>Curated, then filtered, then <em>verified.</em></h2>
     <p>
-      How people develop, retain, and transfer operational competence is as tractable as any other engineering domain—when you bring the right methods, the right evidence, and the right integration into the system lifecycle.
+      Corpus filters, cross-seed scoring, and human review keep the noise out. What's here is meant to hold up when someone checks it.
     </p>
   </section>
 
   <section class="evidence-strip">
     <div class="evidence-cell reveal">
-      <div class="num">250K+</div>
-      <div class="unit">deaths per year</div>
-      <p>from medical errors in the U.S.—the third leading cause of death. Not individual mistakes: system-wide failings and poorly coordinated care.</p>
-      <div class="cite">Makary &amp; Daniel, <em>BMJ</em>, 2016 · Johns Hopkins</div>
+      <div class="num">340+</div>
+      <div class="unit">people, programs &amp; institutions</div>
+      <p>Tracked across the field — practitioners, degree programs, standards bodies, and the organizations that convene them.</p>
+      <div class="cite">Programs &amp; people registry · updated continuously</div>
     </div>
     <div class="evidence-cell reveal">
-      <div class="num">~10yr</div>
-      <div class="unit">of unmet training requirements</div>
-      <p>The Marine Corps has been unable to meet training requirements in the Indo-Pacific—the theater the National Defense Strategy designates as DoD's top priority.</p>
-      <div class="cite">GAO-24-107463 · 2022 National Defense Strategy</div>
+      <div class="num">247</div>
+      <div class="unit">resources indexed</div>
+      <p>Papers, tools, talks, and frameworks spanning practice, the reading list, events, and tools — plus the community roster.</p>
+      <div class="cite">Practice + tools + reading list + events + community</div>
     </div>
     <div class="evidence-cell reveal">
-      <div class="num">$100M</div>
-      <div class="unit">spent, then shut down in 14 months</div>
-      <p>inBloom collapsed not because the technology failed—but because governance, privacy, and stakeholder trust were treated as afterthoughts, not design constraints.</p>
-      <div class="cite">Data &amp; Society, 2017 · Education Week · 9 states withdrew</div>
+      <div class="num">18</div>
+      <div class="unit">topics, three layers</div>
+      <p>From foundational learning science through practice methods to the high-consequence domains the field operates in.</p>
+      <div class="cite">Foundation → Practice → Context</div>
     </div>
   </section>
 
   <section class="statement right reveal">
     <div class="statement-number">04</div>
-    <h2>Decision-grade evidence. <em>Not opinions about training.</em></h2>
+    <h2>This is a reference, <em>not a pitch.</em></h2>
     <p>
-      Can you prove your people are ready? Not with completion rates or satisfaction scores. With evidence that links learning interventions to operational outcomes—evidence rigorous enough to drive design decisions.
+      No claim without a source. No resource without a link back to where it came from. When ICICLE and this site differ on a definition, ICICLE wins.
     </p>
   </section>
 
   <section class="domains" id="domains">
     <div class="domains-header reveal">
-      <h2>High-consequence, high-impact domains</h2>
-      <p>Where human capability is inseparable from system performance—and the cost of getting it wrong is measured in lives, readiness, and equity.</p>
+      <h2>What's in the corpus</h2>
+      <p>Four ways into the same evidence base.</p>
     </div>
     <div class="domain-cards">
-      <div class="domain-card reveal">
-        <div class="icon" aria-hidden="true">⚕</div>
-        <h3>Healthcare</h3>
-        <p>Clinical teams navigating new protocols, devices, and care models under conditions where errors compound and learning can't wait.</p>
-      </div>
-      <div class="domain-card reveal">
-        <div class="icon" aria-hidden="true">⛨</div>
-        <h3>Defense &amp; National Security</h3>
-        <p>Operators, maintainers, and analysts whose readiness determines whether billion-dollar systems achieve their intended effect.</p>
-      </div>
-      <div class="domain-card reveal">
+      <a class="domain-card reveal" href={base + "practice/"}>
+        <div class="icon" aria-hidden="true">▤</div>
+        <h3>Practice</h3>
+        <p>Process diagrams, frameworks, and templates learning engineers actually use.</p>
+      </a>
+      <a class="domain-card reveal" href={base + "tools/"}>
+        <div class="icon" aria-hidden="true">⚒</div>
+        <h3>Tools &amp; Standards</h3>
+        <p>The platforms and interoperability specs the field builds on — xAPI, Caliper, DataShop, and more.</p>
+      </a>
+      <a class="domain-card reveal" href={base + "community/"}>
         <div class="icon" aria-hidden="true">◈</div>
-        <h3>Education at Scale</h3>
-        <p>Systems serving millions of learners, where design decisions ripple across institutions and equity is a structural concern, not an afterthought.</p>
-      </div>
+        <h3>Community</h3>
+        <p>Institutions, programs, conferences, and the people doing the work — including the IEEE ICICLE network.</p>
+      </a>
     </div>
   </section>
 
   <section class="cta-section" id="connect">
-    <h2 class="reveal">Human capability is a designable, measurable, <em>engineerable</em> property of every complex system.</h2>
-    <p class="reveal">LENS is a graduate specialization at Johns Hopkins that prepares practitioners to do this work—grounded in learning sciences and human systems integration, built for the domains where it matters most.</p>
+    <h2 class="reveal">One shared record beats a hundred <em>private</em> ones.</h2>
+    <p class="reveal">Browse by topic, search across the whole corpus, or see how one graduate program — Johns Hopkins' LENS specialization — applies this work in practice.</p>
     <div class="cta-buttons reveal">
-      <a href={LENS_PROGRAM_URL} class="cta-btn" target="_blank" rel="noopener">Explore the LENS specialization</a>
-      <a href={ICICLE_URL} class="cta-btn secondary" target="_blank" rel="noopener">Learn about learning engineering</a>
+      <a href={base + "topics/"} class="cta-btn">Browse by topic</a>
+      <a href={CAPABILITYMATTERS_URL} class="cta-btn secondary" target="_blank" rel="noopener">See LENS at Johns Hopkins</a>
     </div>
     <p class="cta-tertiary reveal">
-      <a href={OVERVIEW_PDF_URL} target="_blank" rel="noopener">Download the LENS one-page overview (PDF)</a>
+      <a href={ICICLE_URL} target="_blank" rel="noopener">Learn about IEEE ICICLE, the field's professional home</a>
     </p>
   </section>
 </Base>
@@ -333,10 +332,12 @@ const OVERVIEW_PDF_URL = base + "LENS_Overview_May2026.pdf";
     gap: 1.5rem;
   }
   .domain-card {
+    display: block;
     background: var(--hp-navy-mid);
     border: 1px solid rgba(138, 154, 181, 0.1);
     padding: 2.5rem 2rem;
     transition: border-color 0.4s ease, transform 0.3s ease;
+    text-decoration: none;
   }
   .domain-card:hover {
     border-color: var(--hp-teal);
@@ -502,5 +503,3 @@ const OVERVIEW_PDF_URL = base + "LENS_Overview_May2026.pdf";
     nodes.forEach(function (n) { io.observe(n); });
   })();
 </script>
-</content>
-</invoke>
