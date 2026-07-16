@@ -1,0 +1,47 @@
+[
+  {
+    "id": "learning-science-application",
+    "title": "Applying the Learning Sciences",
+    "description": "Ground design decisions in how people actually learn — memory, cognitive load, motivation, and transfer — rather than intuition or tradition.",
+    "topics": ["T01", "T03"],
+    "concepts": ["C04", "C05", "C06", "C07", "C08"],
+    "standards": [],
+    "pedagogy": "Evidence-informed design: each instructional choice is justified by a learning-science principle and treated as a testable hypothesis, echoing the LEAMM competency model's 'learning science application' domain."
+  },
+  {
+    "id": "human-centered-design",
+    "title": "Human-Centered Design",
+    "description": "Design learning experiences around real learners and their contexts, integrating human factors and iterative needs analysis into every LE project.",
+    "topics": ["T02", "T03"],
+    "concepts": ["C09", "C10", "C11", "C12"],
+    "standards": [],
+    "pedagogy": "Design-thinking and human-systems-integration practice: empathize, prototype, and test with learners in the loop before committing to a solution."
+  },
+  {
+    "id": "data-instrumentation-analytics",
+    "title": "Data Instrumentation & Analytics",
+    "description": "Instrument learning environments and turn the resulting data into evidence — through measurement design, educational data mining, and learning analytics.",
+    "topics": ["T04", "T11", "T15"],
+    "concepts": ["C13", "C14", "C15", "C22"],
+    "standards": [],
+    "pedagogy": "Formative, data-driven improvement: build measurement in from the start so learning can be observed, debugged, and improved on evidence."
+  },
+  {
+    "id": "competency-frameworks-knowledge-representation",
+    "title": "Competency Frameworks & Knowledge Representation",
+    "description": "Structure what learners should know and be able to do into interoperable competency frameworks, learning objectives, and machine-readable standards.",
+    "topics": ["T05", "T12"],
+    "concepts": ["C18", "C19"],
+    "standards": ["LE-SG-004", "LE-SG-007"],
+    "pedagogy": "Competency-based design: outcomes are defined explicitly and portably (per IEEE 1484.20.2 and CASE) so assessment, credentialing, and adaptivity can all reference the same shared model."
+  },
+  {
+    "id": "lean-agile-systems-thinking",
+    "title": "Lean-Agile Methods & Systems Thinking",
+    "description": "Run learning-engineering work as iterative, decision-tracked cycles and reason about the whole learning system, not isolated interventions.",
+    "topics": ["T03", "T10", "T13"],
+    "concepts": ["C11", "C16", "C29", "C33"],
+    "standards": [],
+    "pedagogy": "Lean-agile delivery: short build-measure-learn loops with documented decisions, so the process itself is inspectable and continuously improved."
+  }
+]
