@@ -203,6 +203,29 @@ From `data/build_summary.json`:
 - Topic-to-paper and topic-to-resource links are explicit in `data/graph.json` and `data/icicle_resources.json`.
 - RAG modules remain present under `rag/` for downstream retrieval workflows.
 
+## Explore page — learner journeys → LEBOK knowledge graph
 
+The Astro site's **Explore** page (`site/src/pages/explore.astro`, menu item "Explore")
+renders an interactive, client-side force-directed graph that reconfigures around a
+chosen **learner journey** or **competency**, linking lecommons topics and resources to
+the [LEBOK](https://github.com/wrgr/lebokai) Knowledge Area pages that ground them.
+
+Data sources:
+
+- `site/src/data/pathways.json` — learner journeys (each now carries a `pedagogy` note).
+- `site/src/data/competencies.json` — competency selectors (topic/concept/standards codes).
+- `site/src/data/lebokai_nodes.json` — **vendored** copy of lebokai's `public/graph-nodes.json`.
+- Shared graph logic lives in `site/src/scripts/focusGraph.ts`.
+
+To refresh the LEBOK node data after lebokai regenerates its manifest
+(`npm run build:graph` in the lebokai repo):
+
+```bash
+python3 scripts/sync_lebokai_nodes.py           # copies ../lebokai/public/graph-nodes.json
+# or point at a different checkout:
+LEBOKAI_DIR=/path/to/lebokai python3 scripts/sync_lebokai_nodes.py
+```
+
+Validate the graph data files with `python3 tests/test_graph_data.py`.
 
 This site is under rapid dev

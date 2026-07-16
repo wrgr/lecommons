@@ -1,0 +1,204 @@
+---
+/**
+ * Explore page: an interactive knowledge graph that reconfigures around a chosen
+ * learner journey or competency, linking lecommons topics + resources to the
+ * lebokai (LEBOK) Knowledge Area pages that ground them pedagogically.
+ */
+
+import Base from "../layouts/Base.astro";
+import { getCollection } from "astro:content";
+
+// @ts-ignore — JSON imports
+import topicMap from "../data/topic_map.json";
+// @ts-ignore
+import knowledgeSeeds from "../data/knowledge_graph_seeds.json";
+// @ts-ignore
+import pathwaysData from "../data/pathways.json";
+// @ts-ignore
+import competenciesData from "../data/competencies.json";
+// @ts-ignore — vendored copy of lebokai's public/graph-nodes.json (run scripts/sync_lebokai_nodes.py)
+import lebokNodes from "../data/lebokai_nodes.json";
+// @ts-ignore
+import ppRegistry from "../data/programs_people_registry.json";
+
+import { topicUrl } from "../data/topicSlugs";
+
+// LEBOK wiki base (same public URL used in index.astro / Base.astro).
+const LEBOK_URL = "https://wrgr.github.io/lebokai";
+
+// ── Topic nodes ────────────────────────────────────────────────────────────
+const topics = (topicMap as any[]).map((t) => ({
+  id: t.topic_code,
+  label: t.topic_name,
+  layer: t.layer,
+  description: t.why_it_matters,
+}));
+
+// ── Topic→topic edges (prerequisite + strongly-related), as in graph.astro ──
+const topicEdges = (knowledgeSeeds as any[])
+  .filter((e) => e.node_type === "TOPIC" && (e.edge_type === "PREREQ_FOR" || e.edge_type === "STRONGLY_RELATED"))
+  .map((e) => ({ source: e.node_id, target: e.edge_target, type: e.edge_type }));
+
+// ── lebokai page nodes (from the vendored manifest) ─────────────────────────
+const lebok = (lebokNodes as any[]).map((n) => ({
+  id: `lebok:${n.slug}`,
+  label: n.title,
+  topics: n.topics ?? [],
+  description: n.graph_description ?? "",
+  href: n.href,
+  kaNumber: n.ka_number ?? null,
+  // Overview view shows only Knowledge Area landing pages (top-level nodes).
+  isKa: n.parent === null && String(n.slug).startsWith("knowledge-area"),
+}));
+
+// ── Topic → site resource items (same pattern as graph.astro) ───────────────
+function entryAnchorId(slug: string): string {
+  return `entry-${slug.replace(/[^a-zA-Z0-9_-]/g, "-")}`;
+}
+const collectionLabels: Record<string, string> = {
+  practice: "Practice", tools: "Tools", "reading-list": "Reading List",
+  events: "Events", community: "Community",
+};
+const allItems = [
+  ...(await getCollection("practice")),
+  ...(await getCollection("tools")),
+  ...(await getCollection("reading-list")),
+  ...(await getCollection("events")),
+  ...(await getCollection("community")),
+];
+const topicItems: Record<string, { title: string; href: string; external: boolean; collection: string }[]> = {};
+for (const item of allItems) {
+  const d = item.data as any;
+  for (const t of d.topics ?? []) {
+    if (!topicItems[t]) topicItems[t] = [];
+    const hasExternal = typeof d.url === "string" && /^https?:\/\//.test(d.url);
+    topicItems[t].push({
+      title: d.title ?? item.id,
+      href: hasExternal ? d.url : `${topicUrl(t)}#${entryAnchorId(item.slug ?? item.id)}`,
+      external: hasExternal,
+      collection: collectionLabels[item.collection] ?? item.collection,
+    });
+  }
+}
+for (const code of Object.keys(topicItems)) {
+  topicItems[code].sort((a, b) => a.collection.localeCompare(b.collection) || a.title.localeCompare(b.title));
+}
+
+// ── Standards lookup (for competency documentation links) ───────────────────
+const standards: Record<string, { name: string; url: string }> = {};
+for (const r of ppRegistry as any[]) {
+  if (r.content_type === "SG") standards[r.resource_id] = { name: r.name, url: r.url ?? "" };
+}
+
+// ── Selections: journeys + competencies ─────────────────────────────────────
+const journeySelections = (pathwaysData as any[]).map((p) => ({
+  id: p.id, kind: "journey" as const, label: p.title, description: p.description,
+  pedagogy: p.pedagogy ?? "", theme: p.theme, topics: p.topics ?? [], concepts: [], standards: [],
+}));
+const competencySelections = (competenciesData as any[]).map((c) => ({
+  id: c.id, kind: "competency" as const, label: c.title, description: c.description,
+  pedagogy: c.pedagogy ?? "", topics: c.topics ?? [], concepts: c.concepts ?? [], standards: c.standards ?? [],
+}));
+const selections = [...journeySelections, ...competencySelections];
+
+const exploreData = { topics, lebok, topicEdges, topicItems, selections, standards, wikiBase: LEBOK_URL };
+---
+
+<Base title="Explore · Learning Engineering Commons" active="explore">
+  <section class="hero">
+    <div class="container">
+      <div class="eyebrow">Explore</div>
+      <h1>Learner journeys through the knowledge graph</h1>
+      <p class="subhead">
+        Pick a learner journey or a competency to reconfigure the graph around the
+        topics it touches — revealing the LEBOK Knowledge Area pages and the
+        lecommons resources that ground it. Click any node for detail.
+      </p>
+    </div>
+  </section>
+
+  <div class="explore-layout container-wide">
+    <aside class="explore-sidebar">
+      <div id="explore-controls" class="explore-controls">
+        <h2 class="ctrl-heading">Focus the graph</h2>
+        <button class="sel-btn active" data-sel="__all__" type="button">Full overview</button>
+        <h3 class="ctrl-group">Learner journeys</h3>
+        {journeySelections.map((s) => (
+          <button class="sel-btn" data-sel={s.id} type="button">{s.label}</button>
+        ))}
+        <h3 class="ctrl-group">Competencies</h3>
+        {competencySelections.map((s) => (
+          <button class="sel-btn" data-sel={s.id} type="button">{s.label}</button>
+        ))}
+      </div>
+    </aside>
+
+    <div class="explore-main">
+      <div class="graph-wrap">
+        <svg id="explore-svg" viewBox="0 0 1200 820" xmlns="http://www.w3.org/2000/svg"
+          role="img" aria-label="Interactive knowledge graph of learning engineering topics and LEBOK pages"></svg>
+      </div>
+      <p id="explore-cap" class="explore-cap"></p>
+      <div class="legend">
+        <span class="legend-item"><svg width="14" height="14"><circle cx="7" cy="7" r="6" fill="#7a4e22"/></svg> Foundation topic</span>
+        <span class="legend-item"><svg width="14" height="14"><circle cx="7" cy="7" r="6" fill="#2c5f6f"/></svg> Practice topic</span>
+        <span class="legend-item"><svg width="14" height="14"><circle cx="7" cy="7" r="6" fill="#5a6b4a"/></svg> Context topic</span>
+        <span class="legend-item"><svg width="14" height="14"><circle cx="7" cy="7" r="5" fill="#c98a3a"/></svg> LEBOK page</span>
+      </div>
+    </div>
+
+    <aside id="explore-detail" class="explore-detail"></aside>
+  </div>
+
+  <script type="application/json" id="explore-data" set:html={JSON.stringify(exploreData)} />
+  <script>
+    import { initExploreGraph } from "../scripts/focusGraph";
+    initExploreGraph();
+  </script>
+</Base>
+
+<style>
+  .hero .container { padding-top: 3rem; padding-bottom: 1rem; }
+  .hero h1 { font-family: var(--serif); font-size: clamp(1.6rem, 3vw, 2.2rem); font-weight: 500; margin: 0 0 .8rem; }
+  .subhead { font-size: 1rem; color: var(--ink-soft); max-width: 42rem; line-height: 1.55; }
+
+  .explore-layout { display: grid; grid-template-columns: 14rem 1fr 18rem; gap: 1.4rem; align-items: start; }
+  @media (max-width: 1100px) { .explore-layout { grid-template-columns: 1fr; } }
+
+  .explore-sidebar, .explore-detail { position: sticky; top: 4rem; }
+  .ctrl-heading { font-family: var(--serif); font-size: .95rem; margin: 0 0 .6rem; }
+  .ctrl-group { font-family: var(--sans); font-size: .68rem; text-transform: uppercase; letter-spacing: .08em; color: var(--muted); margin: .9rem 0 .35rem; }
+  .sel-btn { display: block; width: 100%; text-align: left; background: var(--bg); border: 1px solid var(--border); border-radius: 4px; padding: .35rem .55rem; margin-bottom: .3rem; font: inherit; font-size: .8rem; color: var(--ink-soft); cursor: pointer; }
+  .sel-btn:hover { border-color: var(--accent); color: var(--ink); }
+  .sel-btn.active { background: var(--tint-warm); border-color: var(--accent); color: var(--ink); font-weight: 600; }
+
+  .explore-main { min-width: 0; }
+  .graph-wrap { border: 1px solid var(--border); border-radius: 4px; background: var(--bg); overflow-x: auto; }
+  .graph-wrap svg { display: block; width: 100%; height: auto; min-width: 640px; }
+  .explore-cap { font-family: var(--sans); font-size: .75rem; color: var(--muted); margin: .5rem 0 0; }
+  .legend { display: flex; flex-wrap: wrap; gap: .5rem 1.1rem; padding: .7rem 0; font-family: var(--sans); font-size: .74rem; color: var(--muted); }
+  .legend-item { display: inline-flex; align-items: center; gap: .35rem; }
+
+  .explore-detail { max-height: calc(100vh - 5rem); overflow-y: auto; border-left: 1px solid var(--border); padding-left: 1rem; font-family: var(--sans); font-size: .85rem; }
+  .explore-detail :global(h3) { font-family: var(--serif); font-size: 1.05rem; margin: .3rem 0 .4rem; }
+  .explore-detail :global(h4) { font-size: .7rem; text-transform: uppercase; letter-spacing: .06em; color: var(--muted); margin: .9rem 0 .3rem; }
+  .explore-detail :global(p) { color: var(--ink-soft); line-height: 1.5; margin: 0 0 .5rem; }
+  .explore-detail :global(.ex-muted) { color: var(--muted); font-style: italic; }
+  .explore-detail :global(.ex-ped) { background: var(--tint); border-left: 2px solid var(--accent); padding: .5rem .6rem; border-radius: 0 3px 3px 0; }
+  .explore-detail :global(.ex-chip) { display: inline-block; font-size: .62rem; text-transform: uppercase; letter-spacing: .07em; padding: .12rem .45rem; border-radius: 3px; background: var(--accent-2, #5a6b4a); color: #fff; }
+  .explore-detail :global(.ex-chip--lebok) { background: #c98a3a; }
+  .explore-detail :global(.ex-chip--sel) { background: var(--accent); }
+  .explore-detail :global(.ex-list) { list-style: none; margin: 0; padding: 0; }
+  .explore-detail :global(.ex-list li) { padding: .2rem 0; border-bottom: 1px solid var(--border); line-height: 1.35; }
+  .explore-detail :global(.ex-list li:last-child) { border-bottom: none; }
+  .explore-detail :global(.ex-meta) { font-size: .64rem; color: var(--muted); text-transform: uppercase; letter-spacing: .04em; }
+
+  :global(.ex-edge) { stroke: var(--muted); stroke-width: 1; opacity: .3; }
+  :global(.ex-edge--prereq_for) { opacity: .45; }
+  :global(.ex-edge--covers) { stroke-dasharray: 3 3; opacity: .22; }
+  :global(.ex-node) { cursor: pointer; }
+  :global(.ex-node:hover circle) { filter: drop-shadow(0 0 4px rgba(0,0,0,.3)); }
+  :global(.ex-label) { font-family: var(--sans); fill: var(--ink-soft); pointer-events: none; }
+  :global(.ex-label--topic) { font-size: 11px; font-weight: 600; }
+  :global(.ex-label--lebok) { font-size: 9px; }
+</style>
