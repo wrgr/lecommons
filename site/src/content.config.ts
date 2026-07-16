@@ -1,12 +1,14 @@
 // Content collection schemas.
 //
-// Six collections, organized around the visitor's question:
+// Five collections, organized around the visitor's question:
 //   practice      — how LEs work (diagrams, frameworks, methods, templates, toolkits)
 //   tools         — platforms and software LEs build on
-//   field-notes   — short editorial practitioner posts (our voice)
 //   reading-list  — papers, books, articles, reports, posts
 //   events        — conferences, workshops, recurring series, talks, podcasts, keynotes
 //   community     — orgs, programs, degrees, people
+//
+// Field notes (editorial "our voice" posts) live at capabilitymatters.org, not here —
+// that voice belongs to the LENS program specifically, not the shared commons.
 
 import { defineCollection } from "astro:content";
 import { glob } from "astro/loaders";
@@ -68,14 +70,6 @@ const resourceSchema = z.object({
   order: z.number().default(999),
 });
 
-const fieldNoteSchema = z.object({
-  title: z.string(),
-  date: z.coerce.date(),
-  summary: z.string(),
-  tags: z.array(z.string()).default([]),
-  draft: z.boolean().default(false),
-});
-
 function resourceCollection(name: string) {
   return defineCollection({
     loader: glob({ pattern: "**/*.mdx", base: `./src/content/${name}` }),
@@ -89,8 +83,4 @@ export const collections = {
   "reading-list": resourceCollection("reading-list"),
   events:         resourceCollection("events"),
   community:      resourceCollection("community"),
-  "field-notes":  defineCollection({
-    loader: glob({ pattern: "**/*.mdx", base: "./src/content/field-notes" }),
-    schema: fieldNoteSchema,
-  }),
 };
