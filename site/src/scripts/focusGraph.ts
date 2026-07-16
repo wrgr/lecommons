@@ -56,6 +56,36 @@ function esc(v: string): string {
     .replace(/>/g, "&gt;").replace(/"/g, "&quot;").replace(/'/g, "&#39;");
 }
 
+/** Flatten a wiki slug to the content-bundle filename (mirrors lebokai's export). */
+function contentFileName(slug: string): string {
+  return slug.replace(/\//g, "__") + ".json";
+}
+
+/** Inline markdown: escape, then apply bold and links (used inside blocks). */
+function mdInline(s: string): string {
+  return esc(s)
+    .replace(/\*\*([^*]+)\*\*/g, "<strong>$1</strong>")
+    .replace(/\[([^\]]+)\]\((https?:[^)]+)\)/g, '<a href="$2" target="_blank" rel="noopener">$1</a>');
+}
+
+/** Minimal markdown → HTML for retrieved LEBOK bodies: headings, lists, paragraphs. */
+function mdToHtml(text: string): string {
+  const out: string[] = [];
+  let list: string[] = [];
+  const flush = () => { if (list.length) { out.push(`<ul>${list.join("")}</ul>`); list = []; } };
+  for (const block of text.split(/\n{2,}/)) {
+    const line = block.trim();
+    if (!line) continue;
+    const heading = line.match(/^(#{2,4})\s+(.*)$/);
+    if (heading) { flush(); const lvl = Math.min(heading[1].length + 1, 5); out.push(`<h${lvl}>${mdInline(heading[2])}</h${lvl}>`); continue; }
+    if (/^[-*]\s+/.test(line)) { for (const li of line.split(/\n/)) list.push(`<li>${mdInline(li.replace(/^[-*]\s+/, ""))}</li>`); continue; }
+    flush();
+    out.push(`<p>${mdInline(line).replace(/\n/g, "<br>")}</p>`);
+  }
+  flush();
+  return out.join("");
+}
+
 /** Nodes + edges to show for a selection (null = default topic overview). */
 function visibleGraph(data: ExploreData, sel: Selection | null): { nodes: SimNode[]; edges: SimEdge[] } {
   const topicSet = sel ? new Set(sel.topics) : null;
@@ -217,16 +247,51 @@ export function initExploreGraph(): void {
   const svg = document.getElementById("explore-svg") as SVGSVGElement | null;
   const detail = document.getElementById("explore-detail");
   const controls = document.getElementById("explore-controls");
+  const content = document.getElementById("explore-content");
   if (!dataEl || !svg || !detail || !controls) return;
   const data: ExploreData = JSON.parse(dataEl.textContent ?? "{}");
+  const contentCache = new Map<string, { title: string; text: string } | null>();
 
   let current: Selection | null = null;
+
+  function hideContent(): void {
+    if (content) { content.hidden = true; content.innerHTML = ""; }
+  }
+
+  /** Fetch a LEBOK page's content and render it below the graph (cross-origin, CORS). */
+  async function loadContent(node: LebokNode): Promise<void> {
+    if (!content) return;
+    const slug = node.href.replace(/^\/wiki\//, "");
+    const url = `${data.wikiBase}/lebok-content/${contentFileName(slug)}`;
+    const extLink = `<p class="ex-content-ext"><a href="${esc(data.wikiBase + node.href)}" target="_blank" rel="noopener">Open the full page in the LEBOK wiki →</a></p>`;
+    content.hidden = false;
+    content.innerHTML = `<h2 class="ex-content-title">${esc(node.label)}</h2><p class="ex-muted">Loading content…</p>`;
+    try {
+      let page = contentCache.get(slug);
+      if (page === undefined) {
+        const res = await fetch(url);
+        page = res.ok ? await res.json() : null;
+        contentCache.set(slug, page);
+      }
+      if (!page) throw new Error("not found");
+      content.innerHTML = `<h2 class="ex-content-title">${esc(page.title)}</h2>${extLink}<div class="ex-content-body">${mdToHtml(page.text)}</div>`;
+    } catch {
+      content.innerHTML = `<h2 class="ex-content-title">${esc(node.label)}</h2>` +
+        `<p class="ex-muted">Couldn't load the page content here.</p>${extLink}`;
+    }
+  }
+
+  function showNode(node: SimNode): void {
+    detail!.innerHTML = nodeDetailHtml(data, node);
+    if (node.kind === "lebok") loadContent(node.ref as LebokNode);
+    else hideContent();
+  }
 
   function draw(): void {
     const { nodes, edges } = visibleGraph(data, current);
     layout(nodes, edges);
     render(svg!, nodes, edges);
-    attachNodeHandlers(svg!, nodes, (n) => { detail!.innerHTML = nodeDetailHtml(data, n); });
+    attachNodeHandlers(svg!, nodes, showNode);
     if (current) detail!.innerHTML = selectionDetailHtml(data, current);
     else detail!.innerHTML = "<p class='ex-muted'>Select a journey or competency to focus the graph, or click any node for detail.</p>";
     const total = current ? data.lebok.filter((n) => n.topics.some((t) => current!.topics.includes(t))).length : 0;
@@ -240,6 +305,7 @@ export function initExploreGraph(): void {
     const id = btn.getAttribute("data-sel");
     current = id === "__all__" ? null : (data.selections.find((s) => s.id === id) ?? null);
     for (const b of Array.from(controls.querySelectorAll("[data-sel]"))) b.classList.toggle("active", b === btn);
+    hideContent();
     draw();
   });
 
