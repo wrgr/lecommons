@@ -44,6 +44,17 @@ def test_pathways_have_pedagogy() -> None:
         assert pw.get("pedagogy"), f"pathway {pw['id']} missing pedagogy"
 
 
+def test_learner_journey_codes_resolve() -> None:
+    """Every learner journey's topic and concept codes exist in the taxonomy."""
+    topics, concepts = _valid_topics(), _valid_concepts()
+    for j in _load("learner_journeys.json"):
+        assert j["topics"], f"journey {j['id']} has no topics"
+        for code in j["topics"]:
+            assert code in topics, f"{j['id']}: unknown topic {code}"
+        for code in j["concepts"]:
+            assert code in concepts, f"{j['id']}: unknown concept {code}"
+
+
 def test_lebokai_nodes_topics_valid() -> None:
     """Vendored lebokai node topics are all real taxonomy codes (if the manifest is present)."""
     path = DATA / "lebokai_nodes.json"
@@ -60,5 +71,6 @@ def test_lebokai_nodes_topics_valid() -> None:
 if __name__ == "__main__":
     test_competency_codes_resolve()
     test_pathways_have_pedagogy()
+    test_learner_journey_codes_resolve()
     test_lebokai_nodes_topics_valid()
     print("graph data OK")

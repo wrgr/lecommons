@@ -207,12 +207,16 @@ From `data/build_summary.json`:
 
 The Astro site's **Explore** page (`site/src/pages/explore.astro`, menu item "Explore")
 renders an interactive, client-side force-directed graph that reconfigures around a
-chosen **learner journey** or **competency**, linking lecommons topics and resources to
-the [LEBOK](https://github.com/wrgr/lebokai) Knowledge Area pages that ground them.
+chosen **learner journey**, **theme**, **competency**, or **role**, focusing on the
+specific **leaf** topic pages of the [LEBOK](https://github.com/wrgr/lebokai) wiki. Each
+page node exposes its evidence & examples (lecommons resources tagged to its topics) and,
+on click, its full prose + references fetched from the LEBOK site.
 
 Data sources:
 
-- `site/src/data/pathways.json` — learner journeys (each now carries a `pedagogy` note).
+- `site/src/data/learner_journeys.json` — 6 staged learner journeys, generated from the
+  archive by `python3 scripts/build_learner_journeys.py`; also supplies the role filter.
+- `site/src/data/pathways.json` — 5 thematic threads (each carries a `pedagogy` note).
 - `site/src/data/competencies.json` — competency selectors (topic/concept/standards codes).
 - `site/src/data/lebokai_nodes.json` — **vendored** copy of lebokai's `public/graph-nodes.json`.
 - Shared graph logic lives in `site/src/scripts/focusGraph.ts`.

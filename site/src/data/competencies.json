@@ -43,5 +43,41 @@
     "concepts": ["C11", "C16", "C29", "C33"],
     "standards": [],
     "pedagogy": "Lean-agile delivery: short build-measure-learn loops with documented decisions, so the process itself is inspectable and continuously improved."
+  },
+  {
+    "id": "assessment-and-measurement",
+    "title": "Assessment & Measurement",
+    "description": "Design valid, reliable assessments and measurement instruments, and judge what counts as credible evidence of learning.",
+    "topics": ["T04", "T15"],
+    "concepts": ["C15", "C17", "C30"],
+    "standards": [],
+    "pedagogy": "Assessment-as-evidence: every measure is tied to a construct and an intended decision, following evidence-centered design so scores mean what they claim to."
+  },
+  {
+    "id": "ai-in-learning-engineering",
+    "title": "AI in Learning Engineering",
+    "description": "Apply intelligent tutoring, adaptive systems, and foundation models to learning, and reason about where AI does and doesn't help.",
+    "topics": ["T06", "T07"],
+    "concepts": ["C20", "C21", "C23"],
+    "standards": [],
+    "pedagogy": "Capability-then-critique: understand how ITS and LLM-based systems work before deciding where to apply them, grounding claims in evaluation rather than hype."
+  },
+  {
+    "id": "ethics-equity-responsible-le",
+    "title": "Ethics, Equity & Responsible LE",
+    "description": "Anticipate harms, protect learner data and rights, and design for fairness and inclusion across learning systems.",
+    "topics": ["T14"],
+    "concepts": ["C24", "C34"],
+    "standards": [],
+    "pedagogy": "Ethics-by-design: treat equity and responsible use as first-class design constraints checked throughout, not a compliance step bolted on at the end."
+  },
+  {
+    "id": "operations-and-project-management",
+    "title": "Operations & Project Management",
+    "description": "Plan, staff, budget, and run learning-engineering work as managed projects and sustained operations at scale.",
+    "topics": ["T10", "T13"],
+    "concepts": ["C29", "C33"],
+    "standards": [],
+    "pedagogy": "Delivery discipline: scope, sequence, and resource LE work like any engineering program, with feedback loops that keep operations improving over time."
   }
 ]

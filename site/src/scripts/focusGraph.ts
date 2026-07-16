@@ -21,13 +21,15 @@ const LEBOK_CAP = 60; // max lebok page nodes shown per focused selection
 interface TopicNode { id: string; label: string; layer: string; description: string }
 interface LebokNode {
   id: string; label: string; topics: string[]; description: string;
-  href: string; kaNumber: number | null; isKa: boolean;
+  href: string; kaNumber: number | null; isKa: boolean; isLeaf: boolean;
 }
 interface TopicEdge { source: string; target: string; type: string }
 interface ResourceItem { title: string; href: string; external: boolean; collection: string }
+interface PageRef { id: string; label: string; url?: string }
+interface PageContent { title: string; text: string; refs?: PageRef[] }
 interface Selection {
-  id: string; kind: "journey" | "competency"; label: string;
-  description: string; pedagogy: string; theme?: string;
+  id: string; kind: "journey" | "pathway" | "competency" | "role"; label: string;
+  description: string; pedagogy: string; theme?: string; role?: string;
   topics: string[]; concepts: string[]; standards: string[];
 }
 interface ExploreData {
@@ -86,6 +88,27 @@ function mdToHtml(text: string): string {
   return out.join("");
 }
 
+/** Deduped lecommons resources tagged to any of the given topics (evidence/examples). */
+function resourcesForTopics(data: ExploreData, topics: string[]): ResourceItem[] {
+  const items: ResourceItem[] = [];
+  const seen = new Set<string>();
+  for (const t of topics) {
+    for (const i of data.topicItems[t] ?? []) {
+      if (seen.has(i.href)) continue;
+      seen.add(i.href); items.push(i);
+    }
+  }
+  return items;
+}
+
+/** Render resource items as <li> links with a collection tag. */
+function resourceListHtml(items: ResourceItem[], cap: number): string {
+  return items.slice(0, cap).map((i) => {
+    const tgt = i.external ? ' target="_blank" rel="noopener"' : "";
+    return `<li><a href="${esc(i.href)}"${tgt}>${esc(i.title)}</a> <span class="ex-meta">${esc(i.collection)}</span></li>`;
+  }).join("");
+}
+
 /** Nodes + edges to show for a selection (null = default topic overview). */
 function visibleGraph(data: ExploreData, sel: Selection | null): { nodes: SimNode[]; edges: SimEdge[] } {
   const topicSet = sel ? new Set(sel.topics) : null;
@@ -96,9 +119,11 @@ function visibleGraph(data: ExploreData, sel: Selection | null): { nodes: SimNod
   if (!topicSet) {
     lebok = data.lebok.filter((n) => n.isKa); // overview: KA landing pages only
   } else {
-    lebok = data.lebok.filter((n) => n.topics.some((t) => topicSet.has(t)));
-    // Prefer AI-tagged/described nodes, then stable alpha; cap to keep it legible.
-    lebok = lebok
+    // Focused view: show the specific leaf topic pages tagged with the selection's
+    // topics (fall back to any matching page if a selection has no tagged leaves).
+    const matching = data.lebok.filter((n) => n.topics.some((t) => topicSet.has(t)));
+    const leaves = matching.filter((n) => n.isLeaf);
+    lebok = (leaves.length ? leaves : matching)
       .sort((a, b) => Number(Boolean(b.description)) - Number(Boolean(a.description)) || a.label.localeCompare(b.label))
       .slice(0, LEBOK_CAP);
   }
@@ -198,32 +223,30 @@ function nodeDetailHtml(data: ExploreData, node: SimNode): string {
   const ref = node.ref as LebokNode;
   const url = data.wikiBase + ref.href;
   const desc = ref.description ? `<p>${esc(ref.description)}</p>` : "<p class='ex-muted'>No description yet (pending review).</p>";
-  return `<span class="ex-chip ex-chip--lebok">LEBOK${ref.kaNumber ? " · KA" + ref.kaNumber : ""}</span>` +
+  const examples = resourcesForTopics(data, ref.topics);
+  const exHtml = examples.length
+    ? `<h4>Evidence &amp; examples</h4><ul class="ex-list">${resourceListHtml(examples, 10)}</ul>`
+    : "";
+  return `<span class="ex-chip ex-chip--lebok">LEBOK${ref.kaNumber ? " · KA" + ref.kaNumber : ""}${ref.isLeaf ? "" : " · index"}</span>` +
     `<h3>${esc(ref.label)}</h3>${desc}` +
     `<p><a href="${esc(url)}" target="_blank" rel="noopener">Open in LEBOK wiki →</a></p>` +
-    `<p class="ex-meta">Topics: ${ref.topics.map(esc).join(", ") || "—"}</p>`;
+    `<p class="ex-meta">Topics: ${ref.topics.map(esc).join(", ") || "—"}</p>` +
+    exHtml;
 }
+
+const KIND_LABEL: Record<Selection["kind"], string> = {
+  journey: "Learner journey", pathway: "Theme", competency: "Competency", role: "Role",
+};
 
 /** Selection summary panel: pedagogy grounding + documented resources. */
 function selectionDetailHtml(data: ExploreData, sel: Selection): string {
-  const items: ResourceItem[] = [];
-  const seen = new Set<string>();
-  for (const t of sel.topics) {
-    for (const i of data.topicItems[t] ?? []) {
-      if (seen.has(i.href)) continue;
-      seen.add(i.href); items.push(i);
-    }
-  }
-  const resList = items.slice(0, 12).map((i) => {
-    const tgt = i.external ? ' target="_blank" rel="noopener"' : "";
-    return `<li><a href="${esc(i.href)}"${tgt}>${esc(i.title)}</a> <span class="ex-meta">${esc(i.collection)}</span></li>`;
-  }).join("");
+  const resList = resourceListHtml(resourcesForTopics(data, sel.topics), 12);
   const standards = sel.standards.map((id) => data.standards[id]).filter(Boolean)
     .map((s) => `<li><a href="${esc(s.url)}" target="_blank" rel="noopener">${esc(s.name)}</a></li>`).join("");
-  const kind = sel.kind === "journey" ? "Journey" : "Competency";
-  return `<span class="ex-chip ex-chip--sel">${kind}</span><h3>${esc(sel.label)}</h3>` +
-    `<p>${esc(sel.description)}</p>` +
-    `<h4>Pedagogical grounding</h4><p class="ex-ped">${esc(sel.pedagogy)}</p>` +
+  const ped = sel.pedagogy
+    ? `<h4>Pedagogical grounding</h4><p class="ex-ped">${esc(sel.pedagogy)}</p>` : "";
+  return `<span class="ex-chip ex-chip--sel">${KIND_LABEL[sel.kind]}</span><h3>${esc(sel.label)}</h3>` +
+    `<p>${esc(sel.description)}</p>${ped}` +
     (standards ? `<h4>Standards</h4><ul class="ex-list">${standards}</ul>` : "") +
     (resList ? `<h4>Documented resources</h4><ul class="ex-list">${resList}</ul>` : "");
 }
@@ -250,7 +273,7 @@ export function initExploreGraph(): void {
   const content = document.getElementById("explore-content");
   if (!dataEl || !svg || !detail || !controls) return;
   const data: ExploreData = JSON.parse(dataEl.textContent ?? "{}");
-  const contentCache = new Map<string, { title: string; text: string } | null>();
+  const contentCache = new Map<string, PageContent | null>();
 
   let current: Selection | null = null;
 
@@ -274,7 +297,14 @@ export function initExploreGraph(): void {
         contentCache.set(slug, page);
       }
       if (!page) throw new Error("not found");
-      content.innerHTML = `<h2 class="ex-content-title">${esc(page.title)}</h2>${extLink}<div class="ex-content-body">${mdToHtml(page.text)}</div>`;
+      const refsHtml = page.refs && page.refs.length
+        ? `<h3 class="ex-refs-heading">References</h3><ol class="ex-refs">` + page.refs.map((r) => {
+            const label = esc(r.label || r.id);
+            return `<li>${r.url ? `<a href="${esc(r.url)}" target="_blank" rel="noopener">${label}</a>` : label}</li>`;
+          }).join("") + `</ol>`
+        : "";
+      content.innerHTML = `<h2 class="ex-content-title">${esc(page.title)}</h2>${extLink}` +
+        `<div class="ex-content-body">${mdToHtml(page.text)}</div>${refsHtml}`;
     } catch {
       content.innerHTML = `<h2 class="ex-content-title">${esc(node.label)}</h2>` +
         `<p class="ex-muted">Couldn't load the page content here.</p>${extLink}`;
@@ -293,7 +323,7 @@ export function initExploreGraph(): void {
     render(svg!, nodes, edges);
     attachNodeHandlers(svg!, nodes, showNode);
     if (current) detail!.innerHTML = selectionDetailHtml(data, current);
-    else detail!.innerHTML = "<p class='ex-muted'>Select a journey or competency to focus the graph, or click any node for detail.</p>";
+    else detail!.innerHTML = "<p class='ex-muted'>Select a journey, theme, competency, or role to focus the graph, or click any node for detail.</p>";
     const total = current ? data.lebok.filter((n) => n.topics.some((t) => current!.topics.includes(t))).length : 0;
     const cap = document.getElementById("explore-cap");
     if (cap) cap.textContent = current && total > LEBOK_CAP ? `Showing ${LEBOK_CAP} of ${total} matching LEBOK pages.` : "";
