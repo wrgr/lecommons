@@ -1,5 +1,17 @@
 [
   {
+    "slug": "about-this-prototype",
+    "href": "/wiki/about-this-prototype",
+    "title": "About This Prototype & Its Pedagogy",
+    "ka_number": null,
+    "section": null,
+    "graph_description": "What this deployment is (and isn't), and the pedagogy behind how it presents the Learning Engineering Body of Knowledge.",
+    "topics": [],
+    "concepts": [],
+    "parent": null,
+    "graph_generated": false
+  },
+  {
     "slug": "consolidated-references",
     "href": "/wiki/consolidated-references",
     "title": "Consolidated References",

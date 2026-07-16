@@ -15,6 +15,8 @@ import knowledgeSeeds from "../data/knowledge_graph_seeds.json";
 // @ts-ignore
 import pathwaysData from "../data/pathways.json";
 // @ts-ignore
+import learnerJourneys from "../data/learner_journeys.json";
+// @ts-ignore
 import competenciesData from "../data/competencies.json";
 // @ts-ignore — vendored copy of lebokai's public/graph-nodes.json (run scripts/sync_lebokai_nodes.py)
 import lebokNodes from "../data/lebokai_nodes.json";
@@ -40,6 +42,8 @@ const topicEdges = (knowledgeSeeds as any[])
   .map((e) => ({ source: e.node_id, target: e.edge_target, type: e.edge_type }));
 
 // ── lebokai page nodes (from the vendored manifest) ─────────────────────────
+// A node is a leaf when no other node names it as parent.
+const parentSlugs = new Set((lebokNodes as any[]).map((n) => n.parent).filter(Boolean));
 const lebok = (lebokNodes as any[]).map((n) => ({
   id: `lebok:${n.slug}`,
   label: n.title,
@@ -49,6 +53,7 @@ const lebok = (lebokNodes as any[]).map((n) => ({
   kaNumber: n.ka_number ?? null,
   // Overview view shows only Knowledge Area landing pages (top-level nodes).
   isKa: n.parent === null && String(n.slug).startsWith("knowledge-area"),
+  isLeaf: !parentSlugs.has(n.slug),
 }));
 
 // ── Topic → site resource items (same pattern as graph.astro) ───────────────
@@ -90,16 +95,37 @@ for (const r of ppRegistry as any[]) {
   if (r.content_type === "SG") standards[r.resource_id] = { name: r.name, url: r.url ?? "" };
 }
 
-// ── Selections: journeys + competencies ─────────────────────────────────────
-const journeySelections = (pathwaysData as any[]).map((p) => ({
-  id: p.id, kind: "journey" as const, label: p.title, description: p.description,
+// ── Selections: four focus groups ───────────────────────────────────────────
+// Learner journeys (staged, from the archive import).
+const learnerJourneySelections = (learnerJourneys as any[]).map((j) => ({
+  id: j.id, kind: "journey" as const, label: j.title, description: j.learner_type,
+  pedagogy: "", role: j.role, topics: j.topics ?? [], concepts: j.concepts ?? [], standards: [],
+}));
+// Thematic pathways (narrative threads).
+const pathwaySelections = (pathwaysData as any[]).map((p) => ({
+  id: p.id, kind: "pathway" as const, label: p.title, description: p.description,
   pedagogy: p.pedagogy ?? "", theme: p.theme, topics: p.topics ?? [], concepts: [], standards: [],
 }));
 const competencySelections = (competenciesData as any[]).map((c) => ({
   id: c.id, kind: "competency" as const, label: c.title, description: c.description,
   pedagogy: c.pedagogy ?? "", topics: c.topics ?? [], concepts: c.concepts ?? [], standards: c.standards ?? [],
 }));
-const selections = [...journeySelections, ...competencySelections];
+// Roles (learner-type axis): union each role's journeys' topics/concepts.
+const roleMap = new Map<string, any>();
+for (const j of learnerJourneys as any[]) {
+  const key = j.role;
+  const r = roleMap.get(key) ?? {
+    id: `role-${key.toLowerCase().replace(/[^a-z0-9]+/g, "-")}`, kind: "role" as const,
+    label: key, description: j.learner_type, pedagogy: "", topics: [], concepts: [], standards: [],
+  };
+  for (const t of j.topics ?? []) if (!r.topics.includes(t)) r.topics.push(t);
+  for (const c of j.concepts ?? []) if (!r.concepts.includes(c)) r.concepts.push(c);
+  roleMap.set(key, r);
+}
+const roleSelections = [...roleMap.values()];
+const selections = [
+  ...learnerJourneySelections, ...pathwaySelections, ...competencySelections, ...roleSelections,
+];
 
 const exploreData = { topics, lebok, topicEdges, topicItems, selections, standards, wikiBase: LEBOK_URL };
 ---
@@ -110,9 +136,10 @@ const exploreData = { topics, lebok, topicEdges, topicItems, selections, standar
       <div class="eyebrow">Explore</div>
       <h1>Learner journeys through the knowledge graph</h1>
       <p class="subhead">
-        Pick a learner journey or a competency to reconfigure the graph around the
-        topics it touches — revealing the LEBOK Knowledge Area pages and the
-        lecommons resources that ground it. Click any node for detail.
+        Pick a learner journey, theme, competency, or role to reconfigure the graph
+        around the topics it touches — surfacing the specific LEBOK topic pages and
+        the lecommons resources that ground it. Click any page node for its content,
+        evidence, and examples.
       </p>
     </div>
   </section>
@@ -123,11 +150,19 @@ const exploreData = { topics, lebok, topicEdges, topicItems, selections, standar
         <h2 class="ctrl-heading">Focus the graph</h2>
         <button class="sel-btn active" data-sel="__all__" type="button">Full overview</button>
         <h3 class="ctrl-group">Learner journeys</h3>
-        {journeySelections.map((s) => (
+        {learnerJourneySelections.map((s) => (
+          <button class="sel-btn" data-sel={s.id} type="button">{s.label}</button>
+        ))}
+        <h3 class="ctrl-group">Themes</h3>
+        {pathwaySelections.map((s) => (
           <button class="sel-btn" data-sel={s.id} type="button">{s.label}</button>
         ))}
         <h3 class="ctrl-group">Competencies</h3>
         {competencySelections.map((s) => (
+          <button class="sel-btn" data-sel={s.id} type="button">{s.label}</button>
+        ))}
+        <h3 class="ctrl-group">By role</h3>
+        {roleSelections.map((s) => (
           <button class="sel-btn" data-sel={s.id} type="button">{s.label}</button>
         ))}
       </div>
@@ -228,6 +263,10 @@ const exploreData = { topics, lebok, topicEdges, topicItems, selections, standar
   .explore-content :global(.ex-content-body a),
   .explore-content :global(.ex-content-ext a) { color: var(--accent); }
   .explore-content :global(.ex-muted) { color: var(--muted); font-style: italic; }
+  .explore-content :global(.ex-refs-heading) { font-family: var(--serif); font-size: 1rem; margin: 1.2rem 0 .4rem; }
+  .explore-content :global(.ex-refs) { margin: 0 0 0 1.2rem; padding: 0; font-family: var(--sans); font-size: .8rem; color: var(--ink-soft); }
+  .explore-content :global(.ex-refs li) { margin-bottom: .3rem; line-height: 1.4; }
+  .explore-content :global(.ex-refs a) { color: var(--accent); }
 
   /* ── Mobile: stack columns, drop sticky/borders, keep graph scrollable ── */
   @media (max-width: 1100px) {
