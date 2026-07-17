@@ -3,6 +3,7 @@
 
 import Base from "../layouts/Base.astro";
 import SectionHero from "../components/SectionHero.astro";
+import BrowseViews from "../components/BrowseViews.astro";
 import PathwayTrail from "../components/PathwayTrail.astro";
 import { getCollection } from "astro:content";
 
@@ -69,6 +70,8 @@ const trails = (pathwaysData as any[]).map((pw) => ({
     title="Five threads through learning engineering"
     question="Each pathway traces a narrative across multiple topics — follow the one that matches your question."
   />
+
+  <BrowseViews active="pathways" />
 
   <section class="pathways-body">
     <div class="container">
