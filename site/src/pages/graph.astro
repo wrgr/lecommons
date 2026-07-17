@@ -398,6 +398,9 @@ const indexGroups = layerOrder.flatMap((layer) =>
       <p class="audience-guidance audience-guidance--practitioner">
         <strong>Practitioner lens:</strong> use the Practice topics to move from a local learning problem to a practical next step, with approaches that can be adapted for resource-constrained and developing-country contexts.
       </p>
+      <p class="cross-link">
+        Prefer to start from a learner or problem? <a href={base + "explore/"}>Explore learner journeys →</a>
+      </p>
     </div>
   </section>
 
@@ -835,6 +838,8 @@ const indexGroups = layerOrder.flatMap((layer) =>
     margin: 0 0 .8rem;
   }
   .subhead { font-size: 1rem; color: var(--ink-soft); max-width: 40rem; line-height: 1.55; }
+  .cross-link { margin: .7rem 0 0; font-family: var(--sans); font-size: .8rem; color: var(--muted); }
+  .cross-link a { color: var(--accent); }
   .audience-guidance { margin: .8rem 0 0; max-width: 52rem; font-family: var(--sans); font-size: .82rem; line-height: 1.5; color: var(--muted); }
   .audience-guidance--practitioner { display: none; }
   :global(html[data-audience="practitioner"]) .audience-guidance--academic { display: none; }
