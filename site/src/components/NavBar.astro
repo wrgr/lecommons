@@ -23,6 +23,7 @@ const base = import.meta.env.BASE_URL;
 //   metaItems    — About
 const doItems = [
   { href: base,                   label: "Welcome",   slug: "welcome" },
+  { href: base + "start/",        label: "Start",     slug: "start" },
   { href: base + "practice/",     label: "Practice",  slug: "practice" },
   { href: base + "tools/",        label: "Tools",     slug: "tools" },
   { href: base + "community/",    label: "Community", slug: "community" },
@@ -55,7 +56,7 @@ const activeLabel = allItems.find((it) => it.slug === active)?.label ?? "Menu";
       <ul class="nav-list">
         {doItems.map((it) => (
           <li>
-            <a href={it.href} class:list={[{ active: it.slug === active }]}>{it.label}</a>
+            <a href={it.href} class:list={[{ active: it.slug === active }, { "nav-cta": it.slug === "start" }]}>{it.label}</a>
           </li>
         ))}
       </ul>
@@ -99,7 +100,7 @@ const activeLabel = allItems.find((it) => it.slug === active)?.label ?? "Menu";
         <ul>
           {doItems.map((it) => (
             <li>
-              <a href={it.href} class:list={[{ active: it.slug === active }]}>{it.label}</a>
+              <a href={it.href} class:list={[{ active: it.slug === active }, { "nav-cta": it.slug === "start" }]}>{it.label}</a>
             </li>
           ))}
         </ul>
@@ -233,6 +234,10 @@ const activeLabel = allItems.find((it) => it.slug === active)?.label ?? "Menu";
     white-space: nowrap;
   }
   .desktop-nav a:hover { background: var(--tint); color: var(--accent); }
+  /* "Start" is the practitioner front door — keep it visually primary. */
+  .desktop-nav a.nav-cta { color: var(--accent); font-weight: 700; }
+  .desktop-nav a.nav-cta:hover { background: var(--tint-warm); }
+  .mobile-nav nav a.nav-cta { color: var(--accent); font-weight: 700; }
   .desktop-nav a.active {
     color: var(--accent);
     background: var(--tint-warm);

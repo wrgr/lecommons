@@ -1,0 +1,115 @@
+---
+// Practitioner front door: a "start from your problem" page that routes people
+// with a concrete learning problem straight to the relevant sections, topics,
+// and the Explore graph — the do-oriented counterpart to the research-first
+// Graph/Explore views. Problem cards are data-driven from start_problems.json.
+import Base from "../layouts/Base.astro";
+import { topicUrl } from "../data/topicSlugs";
+// @ts-ignore — JSON import
+import problems from "../data/start_problems.json";
+
+const base = import.meta.env.BASE_URL;
+
+interface StartLink {
+  label: string;
+  section?: string;
+  topic?: string;
+}
+
+/** Resolve a problem link to a URL: topic links use topicUrl, section links map to /<slug>/. */
+function linkHref(link: StartLink): string {
+  return link.topic ? topicUrl(link.topic) : `${base}${link.section}/`;
+}
+---
+
+<Base
+  title="Start · Learning Engineering Commons"
+  description="Start from a learning problem and get to a concrete next step — practical methods, tools, and topics, adaptable to resource-constrained and developing-country settings."
+  active="start"
+>
+  <section class="hero">
+    <div class="container">
+      <div class="eyebrow">Start</div>
+      <h1>Start from your problem</h1>
+      <p class="claim">
+        Pick the problem closest to yours and go straight to the methods, tools, and topics that address it —
+        no research background required.
+      </p>
+      <p class="note note--academic">
+        Prefer to browse the evidence structure instead? Open the <a href={base + "graph/"}>topic map</a> or
+        <a href={base + "explore/"}>explore by journey</a>.
+      </p>
+      <p class="note note--practitioner">
+        These are practical entry points. Many approaches can be adapted for resource-constrained and
+        developing-country settings.
+      </p>
+    </div>
+  </section>
+
+  <div class="container">
+    <div class="problem-grid">
+      {problems.map((p: any) => (
+        <article class="problem-card">
+          <h2>{p.title}</h2>
+          <p>{p.blurb}</p>
+          <ul class="problem-links">
+            {(p.links as StartLink[]).map((link) => (
+              <li><a href={linkHref(link)}>{link.label} →</a></li>
+            ))}
+          </ul>
+        </article>
+      ))}
+    </div>
+  </div>
+</Base>
+
+<style>
+  .hero .container { padding-top: 3rem; padding-bottom: 1rem; }
+  .hero h1 { font-family: var(--serif); font-size: clamp(1.7rem, 3.5vw, 2.4rem); font-weight: 500; margin: 0 0 .7rem; }
+  .claim { font-size: 1.05rem; color: var(--ink-soft); max-width: 42rem; line-height: 1.55; }
+  .note { margin: .8rem 0 0; max-width: 46rem; font-family: var(--sans); font-size: .82rem; line-height: 1.5; color: var(--muted); }
+  .note a { color: var(--accent); }
+  /* The academic note leads by default; the practitioner note replaces it under the practitioner lens. */
+  .note--practitioner { display: none; }
+  :global(html[data-audience="practitioner"]) .note--academic { display: none; }
+  :global(html[data-audience="practitioner"]) .note--practitioner { display: block; color: #2c5f6f; }
+
+  .problem-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(20rem, 1fr));
+    gap: 1.1rem;
+    padding-bottom: 1rem;
+  }
+  .problem-card {
+    background: var(--bg);
+    border: 1px solid var(--border);
+    border-radius: 4px;
+    padding: 1.2rem 1.3rem;
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+  }
+  .problem-card h2 {
+    font-family: var(--serif);
+    font-size: 1.12rem;
+    font-weight: 600;
+    line-height: 1.3;
+    margin: 0;
+  }
+  .problem-card > p {
+    font-family: var(--sans);
+    font-size: .88rem;
+    line-height: 1.55;
+    color: var(--ink-soft);
+    margin: 0;
+    max-width: none;
+  }
+  .problem-links { list-style: none; margin: .2rem 0 0; padding: 0; display: flex; flex-direction: column; gap: .3rem; }
+  .problem-links a {
+    font-family: var(--sans);
+    font-size: .84rem;
+    color: var(--accent);
+    border-bottom: 1px solid transparent;
+  }
+  .problem-links a:hover { border-bottom-color: var(--accent); }
+</style>
