@@ -1,507 +1,346 @@
 ---
-// Homepage: dark graphite/indigo landing experience for the Learning
-// Engineering Commons — the field's shared, topic-linked evidence corpus.
-// Uses Base with pageTheme="dark" so the NavBar + footer render on a dark
-// chrome. Interior pages keep the default light "reference index" shell.
+// Homepage: a light "reference-library" landing for the Learning Engineering
+// Commons — the field's shared, topic-linked evidence corpus. It uses the
+// default light Base shell and the site's serif/sans type so the landing reads
+// as a practical field resource consistent with the interior pages, rather than
+// a dark editorial scroll experience. The messaging is unchanged; only the
+// look and feel is light and utilitarian.
 import Base from "../layouts/Base.astro";
 
 const base = import.meta.env.BASE_URL;
 const CAPABILITYMATTERS_URL = "https://capabilitymatters.org/";
 const ICICLE_URL = "https://sagroups.ieee.org/icicle/";
 const LEBOK_URL = "https://wrgr.github.io/lebokai/";
+
+// The "why this exists" argument, kept verbatim from the prior homepage.
+const argument = [
+  {
+    n: "01",
+    heading: "Practitioners define the field differently depending on where they <em>found it.</em>",
+    body: "A conference talk. A standards committee. A blog post. The vocabulary doesn't converge. A claim made in one venue rarely gets traced back to its evidence, and the evidence rarely links forward to where it's actually used.",
+  },
+  {
+    n: "02",
+    heading: "So every topic here links to <em>what backs it up.</em>",
+    body: "Seed papers. Expansion literature pulled from the wider citation graph. And the non-paper resources — programs, people, conferences, tools, organizations — that make the claim operational, not just cited.",
+  },
+  {
+    n: "03",
+    heading: "Curated, then filtered, then <em>verified.</em>",
+    body: "Corpus filters, cross-seed scoring, and human review keep the noise out. What's here is meant to hold up when someone checks it.",
+  },
+  {
+    n: "04",
+    heading: "This is a reference, <em>not a pitch.</em>",
+    body: "No claim without a source. No resource without a link back to where it came from. When ICICLE and this site differ on a definition, ICICLE wins.",
+  },
+];
+
+// The three headline corpus counts, kept verbatim.
+const stats = [
+  {
+    num: "340+",
+    unit: "people, programs & institutions",
+    body: "Tracked across the field — practitioners, degree programs, standards bodies, and the organizations that convene them.",
+    cite: "Programs & people registry · updated continuously",
+  },
+  {
+    num: "247",
+    unit: "resources indexed",
+    body: "Papers, tools, talks, and frameworks spanning practice, the reading list, events, and tools — plus the community roster.",
+    cite: "Practice + tools + reading list + events + community",
+  },
+  {
+    num: "18",
+    unit: "topics, three layers",
+    body: "From foundational learning science through practice methods to the high-consequence domains the field operates in.",
+    cite: "Foundation → Practice → Context",
+  },
+];
 ---
 
 <Base
   title="Learning Engineering Commons"
   description="The field's shared, topic-linked evidence corpus — practice, tools, reading list, events, and community, including material from IEEE ICICLE."
   active="welcome"
-  pageTheme="dark"
 >
-  <link
-    slot="head"
-    rel="stylesheet"
-    href="https://fonts.googleapis.com/css2?family=Fraunces:ital,wght@0,400;0,500;1,400;1,500&family=Space+Grotesk:wght@300;400;500;700&display=swap"
-  />
-
-  <section class="hero">
-    <div class="hero-label">Learning Engineering Commons</div>
-    <h1>The field, <em>traced to its sources</em></h1>
-    <p class="hero-sub">
-      Learning engineering is scattered across conferences, standards bodies, and grey literature.
-      This is where it's linked together — topic by topic, claim by claim.
-    </p>
-    <div class="hero-line"></div>
-    <div class="scroll-cue" aria-hidden="true">
-      <div class="line"></div>
-      Why this exists
+  <section class="hp-hero">
+    <div class="container-wide">
+      <p class="eyebrow">Learning Engineering Commons</p>
+      <h1 class="hp-title">The field, <em>traced to its sources</em></h1>
+      <p class="hp-sub">
+        Learning engineering is scattered across conferences, standards bodies, and grey literature.
+        This is where it's linked together — topic by topic, claim by claim.
+      </p>
+      <div class="hp-actions">
+        <a href={base + "topics/"} class="btn btn-primary">Browse by topic</a>
+        <a href={base + "graph/"} class="btn btn-ghost">Open the topic map</a>
+        <a href={base + "search/"} class="btn btn-ghost">Search the corpus</a>
+      </div>
     </div>
   </section>
 
-  <section class="statement reveal" id="argument">
-    <div class="statement-number">01</div>
-    <h2>Practitioners define the field differently depending on where they <em>found it.</em></h2>
-    <p>
-      A conference talk. A standards committee. A blog post. The vocabulary doesn't converge. A claim made in one venue rarely gets traced back to its evidence, and the evidence rarely links forward to where it's actually used.
-    </p>
-  </section>
-
-  <section class="statement right reveal">
-    <div class="statement-number">02</div>
-    <h2>So every topic here links to <em>what backs it up.</em></h2>
-    <p>
-      Seed papers. Expansion literature pulled from the wider citation graph. And the non-paper resources — programs, people, conferences, tools, organizations — that make the claim operational, not just cited.
-    </p>
-  </section>
-
-  <section class="statement reveal">
-    <div class="statement-number">03</div>
-    <h2>Curated, then filtered, then <em>verified.</em></h2>
-    <p>
-      Corpus filters, cross-seed scoring, and human review keep the noise out. What's here is meant to hold up when someone checks it.
-    </p>
-  </section>
-
-  <section class="evidence-strip">
-    <div class="evidence-cell reveal">
-      <div class="num">340+</div>
-      <div class="unit">people, programs &amp; institutions</div>
-      <p>Tracked across the field — practitioners, degree programs, standards bodies, and the organizations that convene them.</p>
-      <div class="cite">Programs &amp; people registry · updated continuously</div>
-    </div>
-    <div class="evidence-cell reveal">
-      <div class="num">247</div>
-      <div class="unit">resources indexed</div>
-      <p>Papers, tools, talks, and frameworks spanning practice, the reading list, events, and tools — plus the community roster.</p>
-      <div class="cite">Practice + tools + reading list + events + community</div>
-    </div>
-    <div class="evidence-cell reveal">
-      <div class="num">18</div>
-      <div class="unit">topics, three layers</div>
-      <p>From foundational learning science through practice methods to the high-consequence domains the field operates in.</p>
-      <div class="cite">Foundation → Practice → Context</div>
+  <section class="hp-argument" id="argument">
+    <div class="container-wide">
+      <p class="eyebrow">Why this exists</p>
+      <div class="arg-grid">
+        {argument.map((a) => (
+          <article class="arg-item">
+            <span class="arg-num">{a.n}</span>
+            <div>
+              <h2 set:html={a.heading} />
+              <p>{a.body}</p>
+            </div>
+          </article>
+        ))}
+      </div>
     </div>
   </section>
 
-  <section class="statement right reveal">
-    <div class="statement-number">04</div>
-    <h2>This is a reference, <em>not a pitch.</em></h2>
-    <p>
-      No claim without a source. No resource without a link back to where it came from. When ICICLE and this site differ on a definition, ICICLE wins.
-    </p>
-  </section>
-
-  <section class="domains" id="domains">
-    <div class="domains-header reveal">
-      <h2>What's in the corpus</h2>
-      <p>Four ways into the same evidence base.</p>
-    </div>
-    <div class="domain-cards">
-      <a class="domain-card reveal" href={base + "practice/"}>
-        <div class="icon" aria-hidden="true">▤</div>
-        <h3>Practice</h3>
-        <p>Process diagrams, frameworks, and templates learning engineers actually use.</p>
-      </a>
-      <a class="domain-card reveal" href={base + "tools/"}>
-        <div class="icon" aria-hidden="true">⚒</div>
-        <h3>Tools &amp; Standards</h3>
-        <p>The platforms and interoperability specs the field builds on — xAPI, Caliper, DataShop, and more.</p>
-      </a>
-      <a class="domain-card reveal" href={base + "community/"}>
-        <div class="icon" aria-hidden="true">◈</div>
-        <h3>Community</h3>
-        <p>Institutions, programs, conferences, and the people doing the work — including the IEEE ICICLE network.</p>
-      </a>
+  <section class="hp-evidence">
+    <div class="container-wide">
+      <div class="stat-row">
+        {stats.map((s) => (
+          <div class="stat">
+            <div class="stat-num">{s.num}</div>
+            <div class="stat-unit">{s.unit}</div>
+            <p>{s.body}</p>
+            <div class="stat-cite">{s.cite}</div>
+          </div>
+        ))}
+      </div>
     </div>
   </section>
 
-  <section class="cta-section" id="connect">
-    <h2 class="reveal">One shared record beats a hundred <em>private</em> ones.</h2>
-    <p class="reveal">Browse by topic or search across the whole corpus. Developed in collaboration with IEEE ICICLE by LENS faculty at Johns Hopkins.</p>
-    <div class="cta-buttons reveal">
-      <a href={base + "topics/"} class="cta-btn">Browse by topic</a>
-      <a href={CAPABILITYMATTERS_URL} class="cta-btn secondary" target="_blank" rel="noopener">See LENS at Johns Hopkins</a>
+  <section class="hp-domains" id="domains">
+    <div class="container-wide">
+      <div class="hp-section-head">
+        <h2>What's in the corpus</h2>
+        <p>Four ways into the same evidence base.</p>
+      </div>
+      <div class="domain-grid">
+        <a class="domain-card" href={base + "practice/"}>
+          <div class="icon" aria-hidden="true">▤</div>
+          <h3>Practice</h3>
+          <p>Process diagrams, frameworks, and templates learning engineers actually use.</p>
+        </a>
+        <a class="domain-card" href={base + "tools/"}>
+          <div class="icon" aria-hidden="true">⚒</div>
+          <h3>Tools &amp; Standards</h3>
+          <p>The platforms and interoperability specs the field builds on — xAPI, Caliper, DataShop, and more.</p>
+        </a>
+        <a class="domain-card" href={base + "community/"}>
+          <div class="icon" aria-hidden="true">◈</div>
+          <h3>Community</h3>
+          <p>Institutions, programs, conferences, and the people doing the work — including the IEEE ICICLE network.</p>
+        </a>
+      </div>
     </div>
-    <p class="cta-tertiary reveal">
-      <a href={ICICLE_URL} target="_blank" rel="noopener">Learn about IEEE ICICLE, the field's professional home</a>
-      · <a href={LEBOK_URL} target="_blank" rel="noopener">Explore LEBoK, the field's curricular structure</a>
-    </p>
+  </section>
+
+  <section class="hp-cta" id="connect">
+    <div class="container">
+      <h2>One shared record beats a hundred <em>private</em> ones.</h2>
+      <p>Browse by topic or search across the whole corpus. Developed in collaboration with IEEE ICICLE by LENS faculty at Johns Hopkins.</p>
+      <div class="hp-actions hp-actions--center">
+        <a href={base + "topics/"} class="btn btn-primary">Browse by topic</a>
+        <a href={CAPABILITYMATTERS_URL} class="btn btn-ghost" target="_blank" rel="noopener">See LENS at Johns Hopkins</a>
+      </div>
+      <p class="hp-cta-links">
+        <a href={ICICLE_URL} target="_blank" rel="noopener">Learn about IEEE ICICLE, the field's professional home</a>
+        · <a href={LEBOK_URL} target="_blank" rel="noopener">Explore LEBoK, the field's curricular structure</a>
+      </p>
+    </div>
   </section>
 </Base>
 
 <style>
-  /* Dark homepage palette + typography. Custom properties live on
-     body.dark-shell so children (including statement, evidence, etc.) inherit
-     them through normal cascade. */
-  :global(body.dark-shell) {
-    --hp-bg: #14151c;
-    --hp-bg-mid: #1e2029;
-    --hp-accent: #7c6fe8;
-    --hp-accent-light: #9b8fff;
-    --hp-warm: #c97b3d;
-    --hp-cream: #eef0f6;
-    --hp-text-muted: #a8acc4;
-    --hp-serif: "Fraunces", Georgia, "Times New Roman", serif;
-    --hp-sans: "Space Grotesk", -apple-system, BlinkMacSystemFont, "Inter", sans-serif;
+  /* ── Hero ──────────────────────────────────────────────────────────── */
+  .hp-hero {
+    border-bottom: 1px solid var(--border);
+    background:
+      radial-gradient(42rem 20rem at 92% -25%, var(--tint-warm) 0%, transparent 70%),
+      var(--tint);
   }
-
-  /* HERO */
-  .hero {
-    min-height: 88vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    padding: 6rem 4rem 6rem;
-    position: relative;
-  }
-  .hero::before {
-    content: '';
-    position: absolute;
-    top: 0; right: 0;
-    width: 55%;
-    height: 100%;
-    background: radial-gradient(ellipse at 70% 40%, rgba(124, 111, 232, 0.08) 0%, transparent 70%);
-    pointer-events: none;
-  }
-  .hero-label {
-    font-family: var(--hp-sans);
-    font-size: 0.8rem;
+  .hp-hero .container-wide { padding-top: 4rem; padding-bottom: 3.4rem; }
+  .hp-title {
+    font-family: var(--serif);
     font-weight: 500;
-    letter-spacing: 0.2em;
-    text-transform: uppercase;
-    color: var(--hp-accent-light);
-    margin-bottom: 2rem;
-    opacity: 0;
-    animation: fadeUp 0.8s 0.3s forwards;
+    font-size: clamp(2.3rem, 5vw, 3.9rem);
+    line-height: 1.08;
+    letter-spacing: -0.01em;
+    margin: 0 0 1.1rem;
+    max-width: 18ch;
   }
-  .hero h1 {
-    font-family: var(--hp-serif);
-    font-weight: 400;
-    font-size: clamp(3.2rem, 7vw, 6.5rem);
-    line-height: 1.05;
-    max-width: 900px;
-    color: var(--hp-cream);
-    margin: 0;
-    opacity: 0;
-    animation: fadeUp 0.8s 0.5s forwards;
-  }
-  .hero h1 em { font-style: italic; color: var(--hp-accent-light); }
-  .hero-sub {
-    margin: 2.5rem 0 0;
-    font-family: var(--hp-sans);
-    font-size: 1.25rem;
-    font-weight: 300;
-    line-height: 1.7;
-    max-width: 600px;
-    color: var(--hp-text-muted);
-    opacity: 0;
-    animation: fadeUp 0.8s 0.7s forwards;
-  }
-  .hero-line {
-    width: 80px;
-    height: 2px;
-    background: var(--hp-warm);
-    margin-top: 3rem;
-    opacity: 0;
-    animation: fadeUp 0.8s 0.9s forwards;
-  }
-  .scroll-cue {
-    position: absolute;
-    bottom: 3rem;
-    left: 4rem;
-    display: flex;
-    align-items: center;
-    gap: 1rem;
-    font-family: var(--hp-sans);
-    color: var(--hp-text-muted);
-    font-size: 0.75rem;
-    letter-spacing: 0.15em;
-    text-transform: uppercase;
-    opacity: 0;
-    animation: fadeUp 0.8s 1.2s forwards;
-  }
-  .scroll-cue .line { width: 40px; height: 1px; background: var(--hp-text-muted); }
-
-  /* STATEMENTS */
-  .statement {
-    padding: 8rem 4rem;
-    border-top: 1px solid rgba(168, 172, 196, 0.1);
-    position: relative;
-  }
-  .statement-number {
-    font-family: var(--hp-serif);
-    font-size: 0.9rem;
-    color: var(--hp-warm);
-    margin-bottom: 1.5rem;
-    letter-spacing: 0.05em;
-  }
-  .statement h2 {
-    font-family: var(--hp-serif);
-    font-weight: 400;
-    font-size: clamp(2rem, 4.5vw, 3.8rem);
-    line-height: 1.15;
-    max-width: 800px;
-    color: var(--hp-cream);
-    margin: 0;
-  }
-  .statement h2 em { font-style: italic; color: var(--hp-accent-light); }
-  .statement p {
-    margin: 2rem 0 0;
-    font-family: var(--hp-sans);
-    font-size: 1.1rem;
-    font-weight: 300;
-    line-height: 1.8;
-    max-width: 580px;
-    color: var(--hp-text-muted);
-  }
-  .statement.right {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-end;
-    text-align: right;
-  }
-
-  /* EVIDENCE STRIP */
-  .evidence-strip {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    border-top: 1px solid rgba(168, 172, 196, 0.1);
-  }
-  .evidence-cell {
-    padding: 4rem;
-    border-right: 1px solid rgba(168, 172, 196, 0.1);
-    position: relative;
-  }
-  .evidence-cell:last-child { border-right: none; }
-  .evidence-cell .num {
-    font-family: var(--hp-serif);
-    font-size: 3.5rem;
-    color: var(--hp-warm);
-    line-height: 1;
-    margin-bottom: 0.5rem;
-  }
-  .evidence-cell .unit {
-    font-family: var(--hp-sans);
-    font-size: 0.75rem;
-    letter-spacing: 0.15em;
-    text-transform: uppercase;
-    color: var(--hp-accent-light);
-    margin-bottom: 1.5rem;
-  }
-  .evidence-cell p {
-    font-family: var(--hp-sans);
-    font-size: 0.95rem;
-    font-weight: 300;
+  .hp-title em { font-style: italic; color: var(--accent); }
+  .hp-sub {
+    font-family: var(--sans);
+    font-size: clamp(1rem, 1.5vw, 1.15rem);
     line-height: 1.6;
-    color: var(--hp-text-muted);
+    color: var(--ink-soft);
+    max-width: 40rem;
+    margin: 0 0 2rem;
+  }
+
+  /* ── Buttons (shared by hero + CTA) ────────────────────────────────── */
+  .hp-actions { display: flex; flex-wrap: wrap; gap: .7rem; }
+  .hp-actions--center { justify-content: center; }
+  .btn {
+    display: inline-block;
+    font-family: var(--sans);
+    font-size: .8rem;
+    font-weight: 500;
+    letter-spacing: .03em;
+    padding: .6rem 1.25rem;
+    border-radius: 3px;
+    border: 1px solid var(--accent);
+    transition: background .15s ease, color .15s ease, border-color .15s ease;
+  }
+  .btn-primary { background: var(--accent); color: #fff; }
+  .btn-primary:hover { background: #294066; border-color: #294066; color: #fff; }
+  .btn-ghost { background: transparent; color: var(--accent); }
+  .btn-ghost:hover { background: var(--tint-warm); border-color: var(--accent); color: var(--accent); }
+
+  /* ── Argument ("why this exists") ──────────────────────────────────── */
+  .hp-argument { border-bottom: 1px solid var(--border); }
+  .hp-argument .container-wide { padding-top: 3rem; padding-bottom: 3rem; }
+  .hp-argument .eyebrow { margin-bottom: 1.8rem; }
+  .arg-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2.4rem 3rem;
+  }
+  .arg-item {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: 1rem;
+    align-items: start;
+  }
+  .arg-num {
+    font-family: var(--sans);
+    font-size: .82rem;
+    font-weight: 700;
+    letter-spacing: .1em;
+    color: var(--accent);
+    padding-top: .3rem;
+  }
+  .arg-item h2 {
+    font-family: var(--serif);
+    font-weight: 500;
+    font-size: clamp(1.2rem, 2vw, 1.5rem);
+    line-height: 1.25;
+    margin: 0 0 .55rem;
+  }
+  .arg-item :global(h2 em) { font-style: italic; color: var(--accent); }
+  .arg-item p {
+    font-family: var(--sans);
+    font-size: .92rem;
+    line-height: 1.6;
+    color: var(--ink-soft);
     margin: 0;
+    max-width: 34rem;
+  }
+
+  /* ── Evidence stats ────────────────────────────────────────────────── */
+  .hp-evidence { background: var(--tint); border-bottom: 1px solid var(--border); }
+  .hp-evidence .container-wide { padding-top: 2.6rem; padding-bottom: 2.6rem; }
+  .stat-row { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.25rem; }
+  .stat {
+    background: var(--bg);
+    border: 1px solid var(--border);
+    border-radius: 4px;
+    padding: 1.4rem 1.5rem;
+  }
+  .stat-num {
+    font-family: var(--serif);
+    font-size: 2.5rem;
+    font-weight: 600;
+    line-height: 1;
+    color: var(--accent);
+  }
+  .stat-unit {
+    font-family: var(--sans);
+    font-size: .7rem;
+    letter-spacing: .12em;
+    text-transform: uppercase;
+    color: var(--accent-2);
+    margin: .5rem 0 .85rem;
+  }
+  .stat p {
+    font-family: var(--sans);
+    font-size: .88rem;
+    line-height: 1.55;
+    color: var(--ink-soft);
+    margin: 0 0 .9rem;
     max-width: none;
   }
-  .evidence-cell .cite {
-    margin-top: 1.2rem;
-    font-family: var(--hp-sans);
-    font-size: 0.72rem;
-    font-weight: 400;
-    letter-spacing: 0.03em;
-    color: rgba(168, 172, 196, 0.5);
-    border-top: 1px solid rgba(168, 172, 196, 0.08);
-    padding-top: 0.8rem;
+  .stat-cite {
+    font-family: var(--sans);
+    font-size: .7rem;
+    color: var(--muted);
+    border-top: 1px solid var(--border);
+    padding-top: .7rem;
   }
 
-  /* DOMAINS */
-  .domains {
-    padding: 8rem 4rem;
-    border-top: 1px solid rgba(168, 172, 196, 0.1);
-  }
-  .domains-header { margin-bottom: 4rem; }
-  .domains-header h2 {
-    font-family: var(--hp-serif);
-    font-weight: 400;
-    font-size: clamp(2rem, 3.5vw, 3rem);
-    color: var(--hp-cream);
-    margin: 0 0 1rem;
-  }
-  .domains-header p {
-    font-family: var(--hp-sans);
-    font-size: 1rem;
-    font-weight: 300;
-    color: var(--hp-text-muted);
-    max-width: 500px;
-    margin: 0;
-  }
-  .domain-cards {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 1.5rem;
-  }
+  /* ── Domains ───────────────────────────────────────────────────────── */
+  .hp-domains .container-wide { padding-top: 3rem; padding-bottom: 3rem; }
+  .hp-section-head { margin-bottom: 1.6rem; }
+  .hp-section-head h2 { font-family: var(--serif); font-size: clamp(1.5rem, 3vw, 2rem); margin: 0 0 .4rem; }
+  .hp-section-head p { font-family: var(--sans); color: var(--muted); margin: 0; }
+  .domain-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.25rem; }
   .domain-card {
     display: block;
-    background: var(--hp-bg-mid);
-    border: 1px solid rgba(168, 172, 196, 0.1);
-    padding: 2.5rem 2rem;
-    transition: border-color 0.4s ease, transform 0.3s ease;
-    text-decoration: none;
+    background: var(--bg);
+    border: 1px solid var(--border);
+    border-radius: 4px;
+    padding: 1.6rem 1.5rem;
+    color: inherit;
+    transition: border-color .15s ease, transform .15s ease;
   }
-  .domain-card:hover {
-    border-color: var(--hp-accent);
-    transform: translateY(-4px);
-  }
-  .domain-card .icon {
-    font-size: 1.8rem;
-    margin-bottom: 1.5rem;
-    color: var(--hp-accent-light);
-  }
-  .domain-card h3 {
-    font-family: var(--hp-serif);
-    font-weight: 400;
-    font-size: 1.5rem;
-    color: var(--hp-cream);
-    margin: 0 0 1rem;
-  }
+  .domain-card:hover { border-color: var(--accent); transform: translateY(-3px); }
+  .domain-card .icon { font-size: 1.6rem; color: var(--accent); line-height: 1; }
+  .domain-card h3 { font-family: var(--serif); font-size: 1.25rem; margin: .8rem 0 .5rem; }
   .domain-card p {
-    font-family: var(--hp-sans);
-    font-size: 0.9rem;
-    font-weight: 300;
-    line-height: 1.7;
-    color: var(--hp-text-muted);
+    font-family: var(--sans);
+    font-size: .9rem;
+    line-height: 1.6;
+    color: var(--ink-soft);
     margin: 0;
     max-width: none;
   }
 
-  /* CTA */
-  .cta-section {
-    padding: 10rem 4rem;
-    text-align: center;
-    position: relative;
-    border-top: 1px solid rgba(168, 172, 196, 0.1);
-  }
-  .cta-section::before {
-    content: '';
-    position: absolute;
-    bottom: 0; left: 50%;
-    transform: translateX(-50%);
-    width: 80%;
-    height: 60%;
-    background: radial-gradient(ellipse at center bottom, rgba(124, 111, 232, 0.06) 0%, transparent 70%);
-    pointer-events: none;
-  }
-  .cta-section h2 {
-    font-family: var(--hp-serif);
-    font-weight: 400;
-    font-size: clamp(2.2rem, 4vw, 3.5rem);
-    color: var(--hp-cream);
-    max-width: 700px;
-    margin: 0 auto;
-    line-height: 1.2;
-  }
-  .cta-section h2 em { font-style: italic; color: var(--hp-accent-light); }
-  .cta-section p {
-    margin: 1.5rem auto 0;
-    font-family: var(--hp-sans);
-    font-size: 1.05rem;
-    font-weight: 300;
-    color: var(--hp-text-muted);
-    max-width: 500px;
-  }
-  .cta-buttons {
-    display: flex;
-    gap: 1.5rem;
-    justify-content: center;
-    flex-wrap: wrap;
-    margin-top: 3rem;
-    position: relative;
-  }
-  .cta-btn {
-    display: inline-block;
-    padding: 1rem 3rem;
-    background: transparent;
-    border: 1px solid var(--hp-warm);
-    color: var(--hp-warm);
-    font-family: var(--hp-sans);
-    font-size: 0.85rem;
+  /* ── CTA ───────────────────────────────────────────────────────────── */
+  .hp-cta { background: var(--tint); border-top: 1px solid var(--border); }
+  .hp-cta .container { text-align: center; padding-top: 3.6rem; padding-bottom: 3.6rem; }
+  .hp-cta h2 {
+    font-family: var(--serif);
     font-weight: 500;
-    letter-spacing: 0.12em;
-    text-transform: uppercase;
-    text-decoration: none;
-    transition: background 0.3s, color 0.3s, border-color 0.3s;
+    font-size: clamp(1.6rem, 3vw, 2.3rem);
+    line-height: 1.2;
+    margin: 0 auto .8rem;
+    max-width: 32rem;
   }
-  .cta-btn:hover { background: var(--hp-warm); color: var(--hp-bg); }
-  .cta-btn.secondary { border-color: var(--hp-text-muted); color: var(--hp-text-muted); }
-  .cta-btn.secondary:hover { background: var(--hp-text-muted); color: var(--hp-bg); }
-  .cta-tertiary {
-    margin: 2rem auto 0;
-    font-family: var(--hp-sans);
-    font-size: 0.85rem;
-    color: var(--hp-text-muted);
+  .hp-cta :global(h2 em) { font-style: italic; color: var(--accent); }
+  .hp-cta > .container > p {
+    font-family: var(--sans);
+    color: var(--ink-soft);
+    margin: 0 auto 1.5rem;
+    max-width: 34rem;
+  }
+  .hp-cta-links {
+    font-family: var(--sans);
+    font-size: .82rem;
+    color: var(--muted);
     max-width: none;
-    position: relative;
+    margin: 1.4rem auto 0;
   }
-  .cta-tertiary a {
-    color: var(--hp-text-muted);
-    text-decoration: none;
-    border-bottom: 1px solid rgba(168, 172, 196, 0.3);
-    padding-bottom: 2px;
-    transition: color 0.2s, border-color 0.2s;
-  }
-  .cta-tertiary a:hover {
-    color: var(--hp-accent-light);
-    border-bottom-color: var(--hp-accent-light);
-  }
+  .hp-cta-links a { color: var(--accent); }
 
-  /* ANIMATIONS */
-  @keyframes fadeUp {
-    from { opacity: 0; transform: translateY(24px); }
-    to { opacity: 1; transform: translateY(0); }
-  }
-  .reveal {
-    opacity: 0;
-    transform: translateY(30px);
-    transition: opacity 0.7s ease, transform 0.7s ease;
-  }
-  .reveal.visible { opacity: 1; transform: translateY(0); }
-
-  @media (prefers-reduced-motion: reduce) {
-    .hero-label, .hero h1, .hero-sub, .hero-line, .scroll-cue { animation: none; opacity: 1; }
-    .reveal { opacity: 1; transform: none; transition: none; }
-    .domain-card { transition: none; }
-  }
-
-  /* RESPONSIVE */
-  @media (max-width: 900px) {
-    .hero { padding: 5rem 2rem; min-height: 80vh; }
-    .statement { padding: 5rem 2rem; }
-    .statement.right { align-items: flex-start; text-align: left; }
-    .evidence-strip { grid-template-columns: 1fr; }
-    .evidence-cell {
-      border-right: none;
-      border-bottom: 1px solid rgba(168, 172, 196, 0.1);
-      padding: 3rem 2rem;
-    }
-    .evidence-cell:last-child { border-bottom: none; }
-    .domain-cards { grid-template-columns: 1fr; }
-    .domains { padding: 5rem 2rem; }
-    .cta-section { padding: 6rem 2rem; }
-    .scroll-cue { display: none; }
+  /* ── Responsive ────────────────────────────────────────────────────── */
+  @media (max-width: 760px) {
+    .arg-grid { grid-template-columns: 1fr; gap: 1.8rem; }
+    .stat-row { grid-template-columns: 1fr; }
+    .domain-grid { grid-template-columns: 1fr; }
+    .hp-hero .container-wide { padding-top: 3rem; padding-bottom: 2.6rem; }
   }
 </style>
-
-<script is:inline>
-  // Progressive enhancement: fade-in on scroll for elements marked .reveal.
-  // Falls back to the CSS opacity:0 baseline if Intersection Observer is
-  // missing; @media (prefers-reduced-motion) forces all reveals visible.
-  (function () {
-    var nodes = document.querySelectorAll('.reveal');
-    if (!('IntersectionObserver' in window)) {
-      nodes.forEach(function (n) { n.classList.add('visible'); });
-      return;
-    }
-    var io = new IntersectionObserver(function (entries) {
-      entries.forEach(function (e) {
-        if (e.isIntersecting) {
-          e.target.classList.add('visible');
-          io.unobserve(e.target);
-        }
-      });
-    }, { threshold: 0.15 });
-    nodes.forEach(function (n) { io.observe(n); });
-  })();
-</script>
