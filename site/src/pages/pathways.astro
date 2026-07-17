@@ -72,9 +72,17 @@ const trails = (pathwaysData as any[]).map((pw) => ({
 
   <section class="pathways-body">
     <div class="container">
-      {trails.map((trail, i) => (
-        <>
-          {i > 0 && <hr class="trail-rule" />}
+      <div class="pathway-picker" role="group" aria-label="Choose a learning journey">
+        <div>
+          <p class="picker-kicker">Choose a question</p>
+          <h2>One useful route at a time</h2>
+        </div>
+        <div class="pathway-picker-buttons">
+          {trails.map((trail) => <button type="button" data-pathway={trail.id}>{trail.title}</button>)}
+        </div>
+      </div>
+      {trails.map((trail) => (
+        <section class="trail-panel" data-pathway-panel={trail.id} hidden={trail.id !== "evidence"}>
           <PathwayTrail
             id={trail.id}
             title={trail.title}
@@ -82,18 +90,53 @@ const trails = (pathwaysData as any[]).map((pw) => ({
             description={trail.description}
             stops={trail.stops}
           />
-        </>
+        </section>
       ))}
     </div>
   </section>
+
+  <script>
+    const buttons = document.querySelectorAll<HTMLButtonElement>("[data-pathway]");
+    const panels = document.querySelectorAll<HTMLElement>("[data-pathway-panel]");
+
+    function selectPathway(id: string) {
+      panels.forEach((panel) => panel.toggleAttribute("hidden", panel.dataset.pathwayPanel !== id));
+      buttons.forEach((button) => {
+        const active = button.dataset.pathway === id;
+        button.classList.toggle("active", active);
+        button.setAttribute("aria-pressed", String(active));
+      });
+    }
+
+    buttons.forEach((button) => button.addEventListener("click", () => selectPathway(button.dataset.pathway!)));
+    selectPathway(document.documentElement.dataset.audience === "practitioner" ? "application" : "evidence");
+    document.addEventListener("lec-audience-change", (event) => {
+      selectPathway((event as CustomEvent<string>).detail === "practitioner" ? "application" : "evidence");
+    });
+  </script>
 </Base>
 
 <style>
   .pathways-body { padding-bottom: 2rem; }
-
-  .trail-rule {
-    border: none;
-    border-top: 1px solid var(--border);
-    margin: 0;
+  .pathway-picker {
+    display: flex;
+    align-items: end;
+    justify-content: space-between;
+    gap: 1.5rem;
+    margin-top: 1.5rem;
+    padding: 1rem 1.15rem;
+    border: 1px solid var(--border);
+    border-radius: 6px;
+    background: #fff;
+  }
+  .picker-kicker { margin: 0 0 .2rem; color: var(--accent); font-family: var(--sans); font-size: .67rem; font-weight: 700; letter-spacing: .12em; text-transform: uppercase; }
+  .pathway-picker h2 { margin: 0; font-size: 1.1rem; }
+  .pathway-picker-buttons { display: flex; flex-wrap: wrap; justify-content: flex-end; gap: .35rem; }
+  .pathway-picker button { border: 1px solid var(--border); border-radius: 999px; background: var(--bg); padding: .32rem .6rem; color: var(--ink-soft); cursor: pointer; font-family: var(--sans); font-size: .73rem; }
+  .pathway-picker button:hover, .pathway-picker button.active { border-color: var(--accent); background: var(--tint-warm); color: var(--accent); }
+  @media (max-width: 700px) {
+    .pathway-picker { display: block; padding: .9rem; }
+    .pathway-picker-buttons { justify-content: flex-start; margin-top: .7rem; flex-wrap: nowrap; overflow-x: auto; padding-bottom: .2rem; }
+    .pathway-picker button { flex: 0 0 auto; }
   }
 </style>

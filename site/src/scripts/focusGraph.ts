@@ -275,7 +275,10 @@ export function initExploreGraph(): void {
   const data: ExploreData = JSON.parse(dataEl.textContent ?? "{}");
   const contentCache = new Map<string, PageContent | null>();
 
-  let current: Selection | null = null;
+  // A focused route is more actionable than a 18-topic overview. The site lens
+  // selects an appropriate first view, while the full overview stays available.
+  const defaultSelectionId = document.documentElement.dataset.audience === "practitioner" ? "j-01" : "j-03";
+  let current: Selection | null = data.selections.find((selection) => selection.id === defaultSelectionId) ?? null;
 
   function hideContent(): void {
     if (content) { content.hidden = true; content.innerHTML = ""; }
@@ -335,6 +338,19 @@ export function initExploreGraph(): void {
     const id = btn.getAttribute("data-sel");
     current = id === "__all__" ? null : (data.selections.find((s) => s.id === id) ?? null);
     for (const b of Array.from(controls.querySelectorAll("[data-sel]"))) b.classList.toggle("active", b === btn);
+    hideContent();
+    draw();
+  });
+
+  const initialButton = controls.querySelector<HTMLButtonElement>(`[data-sel="${current?.id}"]`);
+  initialButton?.classList.add("active");
+  document.addEventListener("lec-audience-change", (event) => {
+    const audience = (event as CustomEvent<string>).detail;
+    const selectionId = audience === "practitioner" ? "j-01" : "j-03";
+    current = data.selections.find((selection) => selection.id === selectionId) ?? null;
+    controls.querySelectorAll("[data-sel]").forEach((button) => {
+      button.classList.toggle("active", button.getAttribute("data-sel") === selectionId);
+    });
     hideContent();
     draw();
   });
