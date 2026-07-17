@@ -25,6 +25,8 @@ import ppRegistry from "../data/programs_people_registry.json";
 
 import { topicUrl } from "../data/topicSlugs";
 
+const base = import.meta.env.BASE_URL;
+
 // LEBOK wiki base (same public URL used in index.astro / Base.astro).
 const LEBOK_URL = "https://wrgr.github.io/lebokai";
 
@@ -186,6 +188,9 @@ const exploreData = { topics, lebok, topicEdges, topicItems, selections, standar
       <p class="audience-guidance audience-guidance--practitioner">
         <strong>Practitioner lens:</strong> start from a learner, role, or problem and get to a concrete next step — with approaches you can adapt for resource-constrained and developing-country settings.
       </p>
+      <p class="cross-link">
+        Want the concept prerequisite map instead? <a href={base + "graph/"}>See the topic map →</a>
+      </p>
     </div>
   </section>
 
@@ -252,6 +257,8 @@ const exploreData = { topics, lebok, topicEdges, topicItems, selections, standar
   .hero .container { padding-top: 3rem; padding-bottom: 1rem; }
   .hero h1 { font-family: var(--serif); font-size: clamp(1.6rem, 3vw, 2.2rem); font-weight: 500; margin: 0 0 .8rem; }
   .subhead { font-size: 1rem; color: var(--ink-soft); max-width: 42rem; line-height: 1.55; }
+  .cross-link { margin: .7rem 0 0; font-family: var(--sans); font-size: .8rem; color: var(--muted); }
+  .cross-link a { color: var(--accent); }
 
   /* Audience-lens copy toggle (mirrors the graph page): academic is default,
      practitioner copy appears when html[data-audience="practitioner"]. */

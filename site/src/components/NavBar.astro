@@ -13,22 +13,35 @@ const { active } = Astro.props;
 
 const base = import.meta.env.BASE_URL;
 
-const items = [
-  { href: base,                   label: "Welcome",      slug: "welcome" },
+// Navigation is grouped to cut the "wall of similar tabs" that overwhelms
+// newcomers and do-it practitioners:
+//   doItems      — the practical sections you reach for to get something done
+//   exploreItems — the topic-map / research views (Explore, Graph, Topics,
+//                  Pathways, …) that otherwise read as several near-duplicate
+//                  tabs; gathered under one label, marked "optional" under the
+//                  practitioner lens
+//   metaItems    — About
+const doItems = [
+  { href: base,                   label: "Welcome",   slug: "welcome" },
+  { href: base + "practice/",     label: "Practice",  slug: "practice" },
+  { href: base + "tools/",        label: "Tools",     slug: "tools" },
+  { href: base + "community/",    label: "Community", slug: "community" },
+  { href: base + "search/",       label: "Search",    slug: "search" },
+];
+const exploreItems = [
+  { href: base + "explore/",      label: "Explore",      slug: "explore" },
   { href: base + "graph/",        label: "Graph",        slug: "graph" },
-  { href: base + "practice/",     label: "Practice",     slug: "practice" },
-  { href: base + "tools/",        label: "Tools",        slug: "tools" },
-  { href: base + "reading-list/", label: "Reading List", slug: "reading-list" },
-  { href: base + "events/",       label: "Events",       slug: "events" },
-  { href: base + "community/",    label: "Community",    slug: "community" },
   { href: base + "topics/",       label: "Topics",       slug: "topics" },
   { href: base + "pathways/",     label: "Pathways",     slug: "pathways" },
-  { href: base + "explore/",      label: "Explore",      slug: "explore" },
-  { href: base + "search/",       label: "Search",       slug: "search" },
+  { href: base + "reading-list/", label: "Reading List", slug: "reading-list" },
+  { href: base + "events/",       label: "Events",       slug: "events" },
+];
+const metaItems = [
   { href: base + "about/",        label: "About",        slug: "about" },
 ];
 
-const activeLabel = items.find((it) => it.slug === active)?.label ?? "Menu";
+const allItems = [...doItems, ...exploreItems, ...metaItems];
+const activeLabel = allItems.find((it) => it.slug === active)?.label ?? "Menu";
 ---
 
 <header class="site-nav">
@@ -39,12 +52,30 @@ const activeLabel = items.find((it) => it.slug === active)?.label ?? "Menu";
     </a>
 
     <nav class="desktop-nav" aria-label="Primary">
-      <ul>
-        {items.map((it) => (
+      <ul class="nav-list">
+        {doItems.map((it) => (
           <li>
-            <a href={it.href} class:list={[{ active: it.slug === active }]}>
-              {it.label}
-            </a>
+            <a href={it.href} class:list={[{ active: it.slug === active }]}>{it.label}</a>
+          </li>
+        ))}
+      </ul>
+      <span class="nav-sep" aria-hidden="true"></span>
+      <span class="nav-group-label" aria-hidden="true">
+        <span class="lens-academic">Explore</span>
+        <span class="lens-practitioner">Optional</span>
+      </span>
+      <ul class="nav-list nav-list--explore">
+        {exploreItems.map((it) => (
+          <li>
+            <a href={it.href} class:list={[{ active: it.slug === active }]}>{it.label}</a>
+          </li>
+        ))}
+      </ul>
+      <span class="nav-sep" aria-hidden="true"></span>
+      <ul class="nav-list">
+        {metaItems.map((it) => (
+          <li>
+            <a href={it.href} class:list={[{ active: it.slug === active }]}>{it.label}</a>
           </li>
         ))}
       </ul>
@@ -64,12 +95,29 @@ const activeLabel = items.find((it) => it.slug === active)?.label ?? "Menu";
         </svg>
       </summary>
       <nav aria-label="Primary (mobile)">
+        <p class="m-group">Get started</p>
         <ul>
-          {items.map((it) => (
+          {doItems.map((it) => (
             <li>
-              <a href={it.href} class:list={[{ active: it.slug === active }]}>
-                {it.label}
-              </a>
+              <a href={it.href} class:list={[{ active: it.slug === active }]}>{it.label}</a>
+            </li>
+          ))}
+        </ul>
+        <p class="m-group">
+          <span class="lens-academic">Explore the field</span>
+          <span class="lens-practitioner">Go deeper · optional</span>
+        </p>
+        <ul>
+          {exploreItems.map((it) => (
+            <li>
+              <a href={it.href} class:list={[{ active: it.slug === active }]}>{it.label}</a>
+            </li>
+          ))}
+        </ul>
+        <ul>
+          {metaItems.map((it) => (
+            <li>
+              <a href={it.href} class:list={[{ active: it.slug === active }]}>{it.label}</a>
             </li>
           ))}
         </ul>
@@ -146,7 +194,7 @@ const activeLabel = items.find((it) => it.slug === active)?.label ?? "Menu";
 
   /* ── Desktop nav (hidden below 900px) ─────────────────────────────────── */
   .desktop-nav { display: none; }
-  .desktop-nav ul {
+  .nav-list {
     list-style: none;
     margin: 0; padding: 0;
     display: flex;
@@ -154,6 +202,27 @@ const activeLabel = items.find((it) => it.slug === active)?.label ?? "Menu";
     gap: .1rem;
     justify-content: flex-end;
   }
+  /* Thin divider + micro-label that mark the "explore/research" group so the
+     six map/reading views read as one cluster, not six competing tabs. */
+  .nav-sep { flex: 0 0 auto; width: 1px; height: 1.1rem; background: var(--border); margin: 0 .35rem; }
+  .nav-group-label {
+    flex: 0 0 auto;
+    font-family: var(--sans);
+    font-size: .58rem;
+    font-weight: 700;
+    letter-spacing: .1em;
+    text-transform: uppercase;
+    color: var(--muted);
+    white-space: nowrap;
+    margin-right: .1rem;
+  }
+  /* Practitioner lens: soften the research group so the do-it links lead. */
+  :global(html[data-audience="practitioner"]) .nav-list--explore a { color: var(--muted); }
+  :global(html[data-audience="practitioner"]) .nav-list--explore a.active { color: var(--accent); }
+  /* Lens copy toggle (academic default; practitioner alternate). */
+  .lens-practitioner { display: none; }
+  :global(html[data-audience="practitioner"]) .lens-academic { display: none; }
+  :global(html[data-audience="practitioner"]) .lens-practitioner { display: inline; }
   .desktop-nav a {
     font-family: var(--sans);
     font-size: .85rem;
@@ -266,6 +335,19 @@ const activeLabel = items.find((it) => it.slug === active)?.label ?? "Menu";
     background: var(--tint-warm);
     font-weight: 600;
   }
+  /* Mobile group headings that label each nav cluster. */
+  .m-group {
+    margin: 0;
+    padding: .5rem .5rem .25rem;
+    font-family: var(--sans);
+    font-size: .62rem;
+    font-weight: 700;
+    letter-spacing: .1em;
+    text-transform: uppercase;
+    color: var(--muted);
+    background: var(--tint);
+    border-bottom: 1px solid var(--border);
+  }
 
   @media (max-width: 620px) {
     .brand-text {
@@ -287,7 +369,7 @@ const activeLabel = items.find((it) => it.slug === active)?.label ?? "Menu";
   /* ── Swap at 900px ────────────────────────────────────────────────────── */
   @media (min-width: 900px) {
     .nav-inner { flex-wrap: nowrap; }
-    .desktop-nav { display: block; }
+    .desktop-nav { display: flex; align-items: center; flex-wrap: wrap; justify-content: flex-end; gap: .1rem .15rem; }
     .mobile-nav  { display: none; }
   }
 </style>
