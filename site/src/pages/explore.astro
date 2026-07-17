@@ -127,6 +127,45 @@ const selections = [
   ...learnerJourneySelections, ...pathwaySelections, ...competencySelections, ...roleSelections,
 ];
 
+// Focus groups drive the horizontal filter bar above the graph. Each group has
+// a brief academic description and a plain-language practitioner description;
+// the active site lens (html[data-audience]) decides which shows. The journey
+// group is flagged as the practitioner starting point.
+const focusGroups = [
+  {
+    key: "journey",
+    label: "Learner journeys",
+    descAcademic: "Staged progressions a specific learner moves through.",
+    descPractitioner: "Start from a real learner's path and see what to teach next.",
+    practitionerStart: true,
+    items: learnerJourneySelections,
+  },
+  {
+    key: "theme",
+    label: "Themes",
+    descAcademic: "Narrative threads that cut across several topics.",
+    descPractitioner: "Use when your problem spans more than one area.",
+    practitionerStart: false,
+    items: pathwaySelections,
+  },
+  {
+    key: "competency",
+    label: "Competencies",
+    descAcademic: "Skills mapped to topics and standards.",
+    descPractitioner: "Target one specific skill you need people to build.",
+    practitionerStart: false,
+    items: competencySelections,
+  },
+  {
+    key: "role",
+    label: "By role",
+    descAcademic: "Topics unioned across a role's journeys.",
+    descPractitioner: "Filter to what your role actually has to do.",
+    practitionerStart: false,
+    items: roleSelections,
+  },
+];
+
 const exploreData = { topics, lebok, topicEdges, topicItems, selections, standards, wikiBase: LEBOK_URL };
 ---
 
@@ -141,32 +180,47 @@ const exploreData = { topics, lebok, topicEdges, topicItems, selections, standar
         the lecommons resources that ground it. Click any page node for its content,
         evidence, and examples.
       </p>
+      <p class="audience-guidance audience-guidance--academic">
+        <strong>Academic lens:</strong> trace how each journey, theme, or competency maps to topics, LEBOK pages, and the evidence behind them.
+      </p>
+      <p class="audience-guidance audience-guidance--practitioner">
+        <strong>Practitioner lens:</strong> start from a learner, role, or problem and get to a concrete next step — with approaches you can adapt for resource-constrained and developing-country settings.
+      </p>
     </div>
   </section>
 
   <div class="explore-layout container-wide">
-    <aside class="explore-sidebar">
-      <div id="explore-controls" class="explore-controls">
-        <h2 class="ctrl-heading">Focus the graph</h2>
-        <button class="sel-btn active" data-sel="__all__" type="button">Full overview</button>
-        <h3 class="ctrl-group">Learner journeys</h3>
-        {learnerJourneySelections.map((s) => (
-          <button class="sel-btn" data-sel={s.id} type="button">{s.label}</button>
-        ))}
-        <h3 class="ctrl-group">Themes</h3>
-        {pathwaySelections.map((s) => (
-          <button class="sel-btn" data-sel={s.id} type="button">{s.label}</button>
-        ))}
-        <h3 class="ctrl-group">Competencies</h3>
-        {competencySelections.map((s) => (
-          <button class="sel-btn" data-sel={s.id} type="button">{s.label}</button>
-        ))}
-        <h3 class="ctrl-group">By role</h3>
-        {roleSelections.map((s) => (
-          <button class="sel-btn" data-sel={s.id} type="button">{s.label}</button>
+    <section class="focus-controls" id="explore-controls" aria-label="Focus the graph">
+      <div class="focus-heading">
+        <div>
+          <p class="controls-kicker">
+            <span class="lens-academic">Focus the graph</span>
+            <span class="lens-practitioner">Start solving</span>
+          </p>
+          <h2>
+            <span class="lens-academic">Reconfigure by journey or competency</span>
+            <span class="lens-practitioner">Start from your problem</span>
+          </h2>
+        </div>
+        <button class="sel-btn sel-btn--overview active" data-sel="__all__" type="button">Full overview</button>
+      </div>
+      <div class="focus-groups">
+        {focusGroups.map((grp) => (
+          <section class={`focus-group focus-group--${grp.key}`}>
+            <div class="focus-group-heading">
+              <h3>{grp.label}{grp.practitionerStart && <span class="start-here-pill">Start here</span>}</h3>
+              <p class="lens-academic">{grp.descAcademic}</p>
+              <p class="lens-practitioner">{grp.descPractitioner}</p>
+            </div>
+            <div class="sel-list">
+              {grp.items.map((s) => (
+                <button class="sel-btn" data-sel={s.id} type="button">{s.label}</button>
+              ))}
+            </div>
+          </section>
         ))}
       </div>
-    </aside>
+    </section>
 
     <div class="explore-main">
       <div class="graph-wrap">
@@ -181,11 +235,10 @@ const exploreData = { topics, lebok, topicEdges, topicItems, selections, standar
         <span class="legend-item"><svg width="14" height="14"><circle cx="7" cy="7" r="5" fill="#c98a3a"/></svg> LEBOK page</span>
       </div>
 
-      {/* Retrieved LEBOK page content, shown inline below the graph when a page node is selected */}
+      {/* Selection / node summary and the retrieved LEBOK page content stack full-width below the graph */}
+      <aside id="explore-detail" class="explore-detail"></aside>
       <section id="explore-content" class="explore-content" hidden></section>
     </div>
-
-    <aside id="explore-detail" class="explore-detail"></aside>
   </div>
 
   <script type="application/json" id="explore-data" set:html={JSON.stringify(exploreData)} />
@@ -200,15 +253,77 @@ const exploreData = { topics, lebok, topicEdges, topicItems, selections, standar
   .hero h1 { font-family: var(--serif); font-size: clamp(1.6rem, 3vw, 2.2rem); font-weight: 500; margin: 0 0 .8rem; }
   .subhead { font-size: 1rem; color: var(--ink-soft); max-width: 42rem; line-height: 1.55; }
 
-  .explore-layout { display: grid; grid-template-columns: 14rem 1fr 18rem; gap: 1.4rem; align-items: start; }
-  @media (max-width: 1100px) { .explore-layout { grid-template-columns: 1fr; } }
+  /* Audience-lens copy toggle (mirrors the graph page): academic is default,
+     practitioner copy appears when html[data-audience="practitioner"]. */
+  .audience-guidance { margin: .8rem 0 0; max-width: 52rem; font-family: var(--sans); font-size: .82rem; line-height: 1.5; color: var(--muted); }
+  .audience-guidance--practitioner { display: none; }
+  :global(html[data-audience="practitioner"]) .audience-guidance--academic { display: none; }
+  :global(html[data-audience="practitioner"]) .audience-guidance--practitioner { display: block; color: #2c5f6f; }
+  .lens-practitioner { display: none; }
+  :global(html[data-audience="practitioner"]) .lens-academic { display: none; }
+  :global(html[data-audience="practitioner"]) .lens-practitioner { display: revert; }
 
-  .explore-sidebar, .explore-detail { position: sticky; top: 4rem; }
-  .ctrl-heading { font-family: var(--serif); font-size: .95rem; margin: 0 0 .6rem; }
-  .ctrl-group { font-family: var(--sans); font-size: .68rem; text-transform: uppercase; letter-spacing: .08em; color: var(--muted); margin: .9rem 0 .35rem; }
-  .sel-btn { display: block; width: 100%; text-align: left; background: var(--bg); border: 1px solid var(--border); border-radius: 4px; padding: .35rem .55rem; margin-bottom: .3rem; font: inherit; font-size: .8rem; color: var(--ink-soft); cursor: pointer; }
-  .sel-btn:hover { border-color: var(--accent); color: var(--ink); }
-  .sel-btn.active { background: var(--tint-warm); border-color: var(--accent); color: var(--ink); font-weight: 600; }
+  /* Single column: the graph gets the full container width (full-frame). */
+  .explore-layout { display: block; }
+
+  /* ── Horizontal grouped filter bar above the graph ─────────────────── */
+  .focus-controls {
+    margin-bottom: 1.25rem;
+    border: 1px solid var(--border);
+    border-radius: 6px;
+    background: #fff;
+    overflow: hidden;
+  }
+  .focus-heading {
+    display: flex;
+    align-items: end;
+    justify-content: space-between;
+    gap: 1.5rem;
+    padding: 1rem 1.2rem;
+    border-bottom: 1px solid var(--border);
+  }
+  .controls-kicker {
+    margin: 0 0 .2rem;
+    font-family: var(--sans);
+    font-size: .67rem;
+    font-weight: 700;
+    letter-spacing: .12em;
+    text-transform: uppercase;
+    color: var(--accent);
+  }
+  .focus-heading h2 { margin: 0; font-size: 1.1rem; }
+  .focus-groups { display: grid; grid-template-columns: repeat(4, 1fr); }
+  .focus-group { padding: .9rem 1rem 1rem; min-width: 0; }
+  .focus-group + .focus-group { border-left: 1px solid var(--border); }
+  .focus-group-heading { margin-bottom: .6rem; }
+  .focus-group-heading h3 { margin: 0 0 .15rem; font-family: var(--sans); font-size: .76rem; }
+  .focus-group-heading p { margin: 0; color: var(--muted); font-size: .7rem; line-height: 1.3; }
+  .focus-group--journey h3 { color: #7a4e22; }
+  .focus-group--theme h3 { color: #2c5f6f; }
+  .focus-group--competency h3 { color: #5a6b4a; }
+  .focus-group--role h3 { color: #6b4fa0; }
+
+  .sel-list { display: flex; flex-wrap: wrap; gap: .35rem; }
+  .sel-btn {
+    display: inline-flex; align-items: center; text-align: left;
+    background: var(--bg); border: 1px solid var(--border); border-radius: 999px;
+    padding: .3rem .6rem; font: inherit; font-size: .72rem; line-height: 1.2;
+    color: var(--ink-soft); cursor: pointer;
+  }
+  .sel-btn:hover { border-color: var(--accent); background: var(--tint-warm); color: var(--accent); }
+  .sel-btn.active { background: var(--accent); border-color: var(--accent); color: #fff; font-weight: 600; }
+  .sel-btn--overview { flex: 0 0 auto; padding: .4rem .9rem; }
+
+  /* Practitioner emphasis: the learner-journey group is the recommended entry
+     point, tinted and flagged only when the practitioner lens is active. */
+  .start-here-pill { display: none; }
+  :global(html[data-audience="practitioner"]) .focus-group--journey { background: #faf5ee; }
+  :global(html[data-audience="practitioner"]) .start-here-pill {
+    display: inline-block; margin-left: .4rem; padding: .08rem .4rem;
+    border-radius: 999px; background: #7a4e22; color: #fff;
+    font-size: .56rem; font-weight: 700; letter-spacing: .07em; text-transform: uppercase;
+    vertical-align: middle;
+  }
 
   .explore-main { min-width: 0; }
   .graph-wrap { border: 1px solid var(--border); border-radius: 4px; background: var(--bg); overflow-x: auto; }
@@ -217,7 +332,8 @@ const exploreData = { topics, lebok, topicEdges, topicItems, selections, standar
   .legend { display: flex; flex-wrap: wrap; gap: .5rem 1.1rem; padding: .7rem 0; font-family: var(--sans); font-size: .74rem; color: var(--muted); }
   .legend-item { display: inline-flex; align-items: center; gap: .35rem; }
 
-  .explore-detail { max-height: calc(100vh - 5rem); overflow-y: auto; border-left: 1px solid var(--border); padding-left: 1rem; font-family: var(--sans); font-size: .85rem; }
+  .explore-detail { margin-top: 1rem; border: 1px solid var(--border); border-radius: 4px; padding: 1rem 1.2rem; background: var(--tint); font-family: var(--sans); font-size: .85rem; }
+  .explore-detail:empty { display: none; }
   .explore-detail :global(h3) { font-family: var(--serif); font-size: 1.05rem; margin: .3rem 0 .4rem; }
   .explore-detail :global(h4) { font-size: .7rem; text-transform: uppercase; letter-spacing: .06em; color: var(--muted); margin: .9rem 0 .3rem; }
   .explore-detail :global(p) { color: var(--ink-soft); line-height: 1.5; margin: 0 0 .5rem; }
@@ -268,16 +384,16 @@ const exploreData = { topics, lebok, topicEdges, topicItems, selections, standar
   .explore-content :global(.ex-refs li) { margin-bottom: .3rem; line-height: 1.4; }
   .explore-content :global(.ex-refs a) { color: var(--accent); }
 
-  /* ── Mobile: stack columns, drop sticky/borders, keep graph scrollable ── */
-  @media (max-width: 1100px) {
-    .explore-sidebar, .explore-detail { position: static; max-height: none; }
-    .explore-detail { border-left: none; border-top: 1px solid var(--border); padding-left: 0; padding-top: 1rem; margin-top: 1rem; }
-    .explore-controls { display: flex; flex-wrap: wrap; gap: .3rem; align-items: baseline; }
-    .explore-controls .ctrl-heading, .explore-controls .ctrl-group { width: 100%; }
-    .sel-btn { width: auto; }
+  /* ── Mobile: stack filter groups, keep the graph scrollable ─────────── */
+  @media (max-width: 820px) {
+    .focus-heading { display: block; padding: .9rem; }
+    .focus-heading .sel-btn--overview { margin-top: .6rem; }
+    .focus-groups { display: block; }
+    .focus-group { padding: .8rem .9rem; }
+    .focus-group + .focus-group { border-left: none; border-top: 1px solid var(--border); }
+    .sel-list { flex-wrap: wrap; }
   }
   @media (max-width: 640px) {
-    .sel-btn { width: 100%; }
     .explore-content { padding: .9rem 1rem; }
     .graph-wrap svg { min-width: 560px; }
   }

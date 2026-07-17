@@ -336,6 +336,13 @@ const stats = [
   }
   .hp-cta-links a { color: var(--accent); }
 
+  /* The CTA is the homepage's final band and shares the footer's tint, so the
+     default shell's main padding-bottom (4rem) + footer margin-top (4rem) would
+     leave a blank light gap here. Zero both, scoped to pages that render the CTA
+     (only the homepage ships this stylesheet, and :has keeps it defensive). */
+  :global(main:has(.hp-cta)) { padding-bottom: 0; }
+  :global(body:has(.hp-cta) footer) { margin-top: 0; }
+
   /* ── Responsive ────────────────────────────────────────────────────── */
   @media (max-width: 760px) {
     .arg-grid { grid-template-columns: 1fr; gap: 1.8rem; }
