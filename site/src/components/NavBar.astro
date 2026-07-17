@@ -3,10 +3,7 @@
 //   - Desktop (>=900px): plain horizontal <nav class="desktop-nav">
 //   - Mobile/tablet (<900px): collapsed <details> disclosure with a hamburger
 // Each shows the same link list; CSS swaps which one is visible.
-// No JavaScript.
-//
-// When Base sets body.dark-shell (pageTheme="dark"), :global() rules at the
-// bottom of this file recolor the nav for the dark homepage chrome.
+// The audience toggle (academic / practitioner) is the only scripted piece.
 
 interface Props {
   active?: string;
@@ -292,66 +289,5 @@ const activeLabel = items.find((it) => it.slug === active)?.label ?? "Menu";
     .nav-inner { flex-wrap: nowrap; }
     .desktop-nav { display: block; }
     .mobile-nav  { display: none; }
-  }
-
-  /* ── Dark shell overrides ─────────────────────────────────────────────────
-     Activated when Base applies body.dark-shell (homepage). Hardcoded colors
-     mirror the homepage palette in src/pages/index.astro.
-     Only `body.dark-shell` is wrapped in :global() — the rest of each
-     selector stays scoped, so Astro applies the same [data-astro-cid] scoping
-     attribute it gives the light-theme rules above. That keeps specificity
-     comparable (plus the extra .dark-shell class, so these correctly win);
-     a fully-:global()-wrapped selector loses that scoping attribute and can
-     lose the specificity fight against `.desktop-nav a.active` above, which
-     silently reverted every dark-shell nav color back to the light theme's
-     near-black text on the dark nav bar. */
-  :global(body.dark-shell) .site-nav {
-    background: rgba(20, 21, 28, 0.85);
-    backdrop-filter: blur(12px);
-    -webkit-backdrop-filter: blur(12px);
-    border-bottom: 1px solid rgba(124, 111, 232, 0.15);
-  }
-  :global(body.dark-shell) .brand { color: #eef0f6; }
-  :global(body.dark-shell) .brand-text { color: #eef0f6; }
-  :global(body.dark-shell) .brand-mark {
-    background: #7c6fe8;
-    color: #14151c;
-  }
-  :global(body.dark-shell) .desktop-nav a { color: #c2c5db; }
-  :global(body.dark-shell) .desktop-nav a:hover {
-    background: rgba(155, 143, 255, 0.08);
-    color: #9b8fff;
-  }
-  :global(body.dark-shell) .desktop-nav a.active {
-    color: #9b8fff;
-    background: rgba(155, 143, 255, 0.10);
-  }
-  :global(body.dark-shell) .mobile-nav summary {
-    background: rgba(255, 255, 255, 0.04);
-    border-color: rgba(168, 172, 196, 0.2);
-    color: #c2c5db;
-  }
-  :global(body.dark-shell) .mobile-nav summary .current { color: #9b8fff; }
-  :global(body.dark-shell) .mobile-nav[open] summary {
-    background: rgba(155, 143, 255, 0.08);
-    border-color: #9b8fff;
-    color: #9b8fff;
-  }
-  :global(body.dark-shell) .mobile-nav nav {
-    background: #1e2029;
-    border-color: rgba(168, 172, 196, 0.2);
-    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.5);
-  }
-  :global(body.dark-shell) .mobile-nav nav a {
-    color: #c2c5db;
-    border-bottom-color: rgba(168, 172, 196, 0.1);
-  }
-  :global(body.dark-shell) .mobile-nav nav a:hover {
-    background: rgba(155, 143, 255, 0.08);
-    color: #9b8fff;
-  }
-  :global(body.dark-shell) .mobile-nav nav a.active {
-    background: rgba(155, 143, 255, 0.10);
-    color: #9b8fff;
   }
 </style>

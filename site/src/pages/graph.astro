@@ -356,10 +356,19 @@ const CONCEPT_R = 9;
 // ── 8. Build concept index grouped by topic, ordered by layer ─────────────
 
 const layerOrder = ["Foundation", "Practice", "Context"];
+// Two parallel description sets keyed by layer. The academic set frames each
+// group as a body of evidence; the practitioner set (shown when the site lens
+// is "practitioner") reframes the same groups as plain-language, get-it-done
+// starting points, including low-resource and developing-country settings.
 const layerDescriptions: Record<string, string> = {
   Foundation: "Core ideas and evidence that explain how people learn.",
   Practice: "Methods, tools, and ways to design, test, and improve learning.",
   Context: "The settings, systems, and responsibilities that shape real-world use.",
+};
+const layerDescriptionsPractitioner: Record<string, string> = {
+  Foundation: "A few ideas about how people learn — worth a look before you change anything.",
+  Practice: "Hands-on methods to design, test, and fix real learning. Start here.",
+  Context: "Making it work in your setting, including low-resource and developing-country programs.",
 };
 const indexGroups = layerOrder.flatMap((layer) =>
   (topicMap as any[])
@@ -396,17 +405,25 @@ const indexGroups = layerOrder.flatMap((layer) =>
     <section class="map-controls" aria-label="Browse map topics">
       <div class="map-controls-heading">
         <div>
-          <p class="controls-kicker">Browse the map</p>
-          <h2>Start with a topic</h2>
+          <p class="controls-kicker">
+            <span class="lens-academic">Browse the map</span>
+            <span class="lens-practitioner">Start solving</span>
+          </p>
+          <h2>
+            <span class="lens-academic">Start with a topic</span>
+            <span class="lens-practitioner">Start from your problem</span>
+          </h2>
         </div>
-        <p>Choose a topic to highlight its connections and open its details. The graph stays wide so relationships remain easy to follow.</p>
+        <p class="lens-academic">Choose a topic to highlight its connections and open its details. The graph stays wide so relationships remain easy to follow.</p>
+        <p class="lens-practitioner">Pick the Practice topic closest to the problem you're facing. Each one opens practical methods and next steps you can adapt to your own setting.</p>
       </div>
       <div class="topic-groups">
         {layerOrder.map((layer) => (
           <section class={`topic-group topic-group--${layer.toLowerCase()}`}>
             <div class="topic-group-heading">
-              <h3>{layer}</h3>
-              <p>{layerDescriptions[layer]}</p>
+              <h3>{layer}{layer === "Practice" && <span class="start-here-pill">Start here</span>}</h3>
+              <p class="lens-academic">{layerDescriptions[layer]}</p>
+              <p class="lens-practitioner">{layerDescriptionsPractitioner[layer]}</p>
             </div>
             <div class="topic-chip-list">
               {indexGroups.filter((g) => g.layer === layer).map((g) => (
@@ -823,6 +840,13 @@ const indexGroups = layerOrder.flatMap((layer) =>
   :global(html[data-audience="practitioner"]) .audience-guidance--academic { display: none; }
   :global(html[data-audience="practitioner"]) .audience-guidance--practitioner { display: block; color: #2c5f6f; }
 
+  /* Generic lens toggle: academic copy is the default; practitioner copy is
+     revealed only when the site lens is set to practitioner. `revert` restores
+     each element's native display (inline for span, block for p). */
+  .lens-practitioner { display: none; }
+  :global(html[data-audience="practitioner"]) .lens-academic { display: none; }
+  :global(html[data-audience="practitioner"]) .lens-practitioner { display: revert; }
+
   /* ── Full-width graph with controls above it ────────────────────── */
   .graph-layout {
     padding-top: 0;
@@ -868,6 +892,27 @@ const indexGroups = layerOrder.flatMap((layer) =>
   .topic-group--foundation h3 { color: #7a4e22; }
   .topic-group--practice h3 { color: #2c5f6f; }
   .topic-group--context h3 { color: #5a6b4a; }
+
+  /* Practitioner emphasis: the Practice group is the recommended entry point,
+     so it gets a tint and a "Start here" pill only when the practitioner lens
+     is active. Hidden by default so the academic view stays neutral. */
+  .start-here-pill { display: none; }
+  :global(html[data-audience="practitioner"]) .topic-group--practice {
+    background: #f1f7f8;
+  }
+  :global(html[data-audience="practitioner"]) .start-here-pill {
+    display: inline-block;
+    margin-left: .45rem;
+    padding: .08rem .4rem;
+    border-radius: 999px;
+    background: #2c5f6f;
+    color: #fff;
+    font-size: .56rem;
+    font-weight: 700;
+    letter-spacing: .07em;
+    text-transform: uppercase;
+    vertical-align: middle;
+  }
   .topic-chip-list { display: flex; flex-wrap: wrap; gap: .35rem; }
   .topic-chip {
     display: inline-flex; align-items: baseline; gap: .3rem;
