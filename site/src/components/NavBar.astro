@@ -16,11 +16,14 @@ const base = import.meta.env.BASE_URL;
 // Navigation is grouped to cut the "wall of similar tabs" that overwhelms
 // newcomers and do-it practitioners:
 //   doItems      — the practical sections you reach for to get something done
-//   exploreItems — the topic-map / research views (Explore, Graph, Topics,
-//                  Pathways, …) that otherwise read as several near-duplicate
-//                  tabs; gathered under one label, marked "optional" under the
-//                  practitioner lens
+//   exploreItems — the browse/read views; the four field-map surfaces (Explore,
+//                  Graph, Topics, Pathways) are consolidated behind the single
+//                  "Explore" hub, so only Explore + the two content lists appear
+//                  here, marked "optional" under the practitioner lens
 //   metaItems    — About
+//   hubItems     — Graph/Topics/Pathways: reached from the Explore hub's
+//                  "Browse the field" bar rather than the top nav; kept here
+//                  only so the mobile menu can label the current page
 const doItems = [
   { href: base,                   label: "Welcome",   slug: "welcome" },
   { href: base + "start/",        label: "Start",     slug: "start" },
@@ -31,17 +34,19 @@ const doItems = [
 ];
 const exploreItems = [
   { href: base + "explore/",      label: "Explore",      slug: "explore" },
-  { href: base + "graph/",        label: "Graph",        slug: "graph" },
-  { href: base + "topics/",       label: "Topics",       slug: "topics" },
-  { href: base + "pathways/",     label: "Pathways",     slug: "pathways" },
   { href: base + "reading-list/", label: "Reading List", slug: "reading-list" },
   { href: base + "events/",       label: "Events",       slug: "events" },
 ];
 const metaItems = [
   { href: base + "about/",        label: "About",        slug: "about" },
 ];
+const hubItems = [
+  { href: base + "graph/",        label: "Graph",        slug: "graph" },
+  { href: base + "topics/",       label: "Topics",       slug: "topics" },
+  { href: base + "pathways/",     label: "Pathways",     slug: "pathways" },
+];
 
-const allItems = [...doItems, ...exploreItems, ...metaItems];
+const allItems = [...doItems, ...exploreItems, ...metaItems, ...hubItems];
 const activeLabel = allItems.find((it) => it.slug === active)?.label ?? "Menu";
 ---
 

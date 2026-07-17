@@ -3,6 +3,7 @@
 
 import Base from "../../layouts/Base.astro";
 import SectionHero from "../../components/SectionHero.astro";
+import BrowseViews from "../../components/BrowseViews.astro";
 import TopicCard from "../../components/TopicCard.astro";
 import { getCollection } from "astro:content";
 
@@ -51,6 +52,8 @@ const totalItems = allItems.length;
     question="Browse the field by what it covers, not just by format. Foundation topics feed into Practice, which feeds into Context."
     count={totalItems}
   />
+
+  <BrowseViews active="topics" />
 
   {grouped.map(({ layer, topics }) => (
     <section class={`layer-section layer-section--${layer.toLowerCase()}`}>

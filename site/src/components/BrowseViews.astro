@@ -1,0 +1,73 @@
+---
+// Shared "views" bar that ties the field-navigation surfaces together — the
+// Explore hub, the topic map, the topics index, and the narrative pathways —
+// so they read as one browse surface with switchable views rather than four
+// separate top-level tabs. Rendered near the top of each of those pages.
+
+interface Props {
+  active: "explore" | "graph" | "topics" | "pathways";
+}
+
+const { active } = Astro.props;
+const base = import.meta.env.BASE_URL;
+
+const views = [
+  { slug: "explore",  label: "Learner journeys", href: base + "explore/" },
+  { slug: "graph",    label: "Topic map",        href: base + "graph/" },
+  { slug: "topics",   label: "All topics",       href: base + "topics/" },
+  { slug: "pathways", label: "Pathways",         href: base + "pathways/" },
+];
+---
+
+<nav class="browse-views" aria-label="Browse the field">
+  <div class="container-wide browse-views-inner">
+    <span class="browse-views-label">Browse the field</span>
+    <ul>
+      {views.map((v) => (
+        <li>
+          <a
+            href={v.href}
+            class:list={[{ active: v.slug === active }]}
+            aria-current={v.slug === active ? "page" : undefined}
+          >{v.label}</a>
+        </li>
+      ))}
+    </ul>
+  </div>
+</nav>
+
+<style>
+  .browse-views { border-bottom: 1px solid var(--border); background: var(--bg); }
+  .browse-views-inner {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: .3rem .8rem;
+    padding-top: .7rem;
+    padding-bottom: .7rem;
+  }
+  .browse-views-label {
+    font-family: var(--sans);
+    font-size: .6rem;
+    font-weight: 700;
+    letter-spacing: .12em;
+    text-transform: uppercase;
+    color: var(--muted);
+  }
+  .browse-views ul { list-style: none; display: flex; flex-wrap: wrap; gap: .3rem; margin: 0; padding: 0; }
+  .browse-views a {
+    font-family: var(--sans);
+    font-size: .78rem;
+    color: var(--ink-soft);
+    border: 1px solid var(--border);
+    border-radius: 999px;
+    padding: .28rem .7rem;
+  }
+  .browse-views a:hover { border-color: var(--accent); background: var(--tint-warm); color: var(--accent); }
+  .browse-views a.active {
+    background: var(--accent);
+    border-color: var(--accent);
+    color: #fff;
+    font-weight: 600;
+  }
+</style>
