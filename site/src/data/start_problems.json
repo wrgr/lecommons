@@ -1,0 +1,61 @@
+[
+  {
+    "id": "retention",
+    "title": "Learners aren't retaining or transferring what we teach",
+    "blurb": "Get to the learning-science reasons — and the concrete methods that address them.",
+    "links": [
+      { "label": "Analysis methods in Practice", "section": "practice" },
+      { "label": "Learning Science Foundations", "topic": "T01" },
+      { "label": "Focus the graph", "section": "explore" }
+    ]
+  },
+  {
+    "id": "measure",
+    "title": "We can't tell whether our training actually works",
+    "blurb": "Find measurement approaches and evaluation standards you can put to use.",
+    "links": [
+      { "label": "Tools & standards", "section": "tools" },
+      { "label": "Measurement & Analytics", "topic": "T04" },
+      { "label": "Evidence & Evaluation Standards", "topic": "T15" }
+    ]
+  },
+  {
+    "id": "build-fast",
+    "title": "We need to design or fix a course — fast",
+    "blurb": "Start from process diagrams, templates, and instructional-design methods.",
+    "links": [
+      { "label": "Process diagrams & templates", "section": "practice" },
+      { "label": "Instructional Design & Curriculum", "topic": "T12" }
+    ]
+  },
+  {
+    "id": "low-resource",
+    "title": "We're working in a low-resource or developing-country setting",
+    "blurb": "Approaches that adapt to constrained infrastructure, connectivity, and budgets.",
+    "links": [
+      { "label": "Practical methods", "section": "practice" },
+      { "label": "Workforce Development & Training Systems", "topic": "T10" },
+      { "label": "Focus the graph on your problem", "section": "explore" }
+    ]
+  },
+  {
+    "id": "ai",
+    "title": "We want to add AI or adaptive tech — responsibly",
+    "blurb": "See the tools, the adaptive-systems topics, and the ethics guardrails together.",
+    "links": [
+      { "label": "Tools & standards", "section": "tools" },
+      { "label": "AI & Foundation Models in Learning", "topic": "T07" },
+      { "label": "Ethics, Equity & Responsible LE", "topic": "T14" }
+    ]
+  },
+  {
+    "id": "orient",
+    "title": "We're new and want the lay of the land",
+    "blurb": "A quick orientation to what learning engineering is and how it fits together.",
+    "links": [
+      { "label": "Explore the field", "section": "explore" },
+      { "label": "Topic map", "section": "graph" },
+      { "label": "Reading list", "section": "reading-list" }
+    ]
+  }
+]
