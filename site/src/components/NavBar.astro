@@ -53,6 +53,12 @@ const activeLabel = items.find((it) => it.slug === active)?.label ?? "Menu";
       </ul>
     </nav>
 
+    <div class="audience-toggle" role="group" aria-label="Choose your site lens">
+      <span class="audience-label">Site lens</span>
+      <button type="button" data-audience-mode="academic" aria-pressed="true">Academic</button>
+      <button type="button" data-audience-mode="practitioner" aria-pressed="false">Practitioner</button>
+    </div>
+
     <details class="mobile-nav">
       <summary aria-label="Toggle navigation menu">
         <span class="current">{activeLabel}</span>
@@ -74,6 +80,29 @@ const activeLabel = items.find((it) => it.slug === active)?.label ?? "Menu";
     </details>
   </div>
 </header>
+
+<script>
+  const audienceButtons = document.querySelectorAll<HTMLButtonElement>("[data-audience-mode]");
+  const audienceStorageKey = "lec-audience-mode";
+
+  function setAudienceMode(mode: "academic" | "practitioner") {
+    document.documentElement.dataset.audience = mode;
+    audienceButtons.forEach((button) => {
+      button.setAttribute("aria-pressed", String(button.dataset.audienceMode === mode));
+    });
+  }
+
+  const savedAudience = localStorage.getItem(audienceStorageKey);
+  setAudienceMode(savedAudience === "practitioner" ? "practitioner" : "academic");
+
+  audienceButtons.forEach((button) => {
+    button.addEventListener("click", () => {
+      const mode = button.dataset.audienceMode === "practitioner" ? "practitioner" : "academic";
+      localStorage.setItem(audienceStorageKey, mode);
+      setAudienceMode(mode);
+    });
+  });
+</script>
 
 <style>
   .site-nav {
@@ -143,6 +172,32 @@ const activeLabel = items.find((it) => it.slug === active)?.label ?? "Menu";
     background: var(--tint-warm);
   }
 
+  .audience-toggle {
+    display: inline-flex;
+    align-items: center;
+    gap: .15rem;
+    padding: .2rem;
+    border: 1px solid var(--border);
+    border-radius: 999px;
+    background: var(--tint);
+    font-family: var(--sans);
+  }
+  .audience-label { padding: 0 .3rem; color: var(--muted); font-size: .67rem; white-space: nowrap; }
+  .audience-toggle button {
+    border: 0;
+    border-radius: 999px;
+    padding: .27rem .5rem;
+    background: transparent;
+    color: var(--ink-soft);
+    cursor: pointer;
+    font: inherit;
+    font-size: .7rem;
+    white-space: nowrap;
+  }
+  .audience-toggle button[aria-pressed="true"] { background: var(--accent); color: #fff; }
+  .audience-toggle button:hover { color: var(--accent); }
+  .audience-toggle button[aria-pressed="true"]:hover { color: #fff; }
+
   /* ── Mobile nav (visible below 900px) ─────────────────────────────────── */
   .mobile-nav {
     width: 100%;
@@ -150,6 +205,9 @@ const activeLabel = items.find((it) => it.slug === active)?.label ?? "Menu";
     display: flex;
     justify-content: flex-start;
     position: relative;
+  }
+  @media (max-width: 899px) {
+    .audience-toggle { margin-left: auto; }
   }
   .mobile-nav summary {
     list-style: none;

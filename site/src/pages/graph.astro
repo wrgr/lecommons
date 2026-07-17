@@ -356,6 +356,11 @@ const CONCEPT_R = 9;
 // ── 8. Build concept index grouped by topic, ordered by layer ─────────────
 
 const layerOrder = ["Foundation", "Practice", "Context"];
+const layerDescriptions: Record<string, string> = {
+  Foundation: "Core ideas and evidence that explain how people learn.",
+  Practice: "Methods, tools, and ways to design, test, and improve learning.",
+  Context: "The settings, systems, and responsibilities that shape real-world use.",
+};
 const indexGroups = layerOrder.flatMap((layer) =>
   (topicMap as any[])
     .filter((t) => t.layer === layer)
@@ -378,38 +383,43 @@ const indexGroups = layerOrder.flatMap((layer) =>
         Foundation topics at the top feed into Practice, which feeds into Context.
         Click any node for details — including prerequisite chains, key papers, and linked resources.
       </p>
+      <p class="audience-guidance audience-guidance--academic">
+        <strong>Academic lens:</strong> follow the evidence, concepts, and source material behind each topic.
+      </p>
+      <p class="audience-guidance audience-guidance--practitioner">
+        <strong>Practitioner lens:</strong> use the Practice topics to move from a local learning problem to a practical next step, with approaches that can be adapted for resource-constrained and developing-country contexts.
+      </p>
     </div>
   </section>
 
   <div class="graph-layout container-wide">
-    {/* ── Left: Concept Index ──────────────────────────────────────────── */}
-    <aside class="concept-index" id="concept-index">
-      <h2 class="index-heading">Concept Index</h2>
-      {indexGroups.map((g) => (
-        <div class="index-group">
-          <h3 class={`index-topic layer-text--${g.layer.toLowerCase()}`}>
-            <button class="index-topic-btn" data-node-id={g.topic} type="button">
-              <span class="index-topic-code">{g.topic}</span>
-              {g.topicName}
-            </button>
-          </h3>
-          {g.concepts.length > 0 && (
-            <ul class="index-concepts">
-              {g.concepts.map((c) => (
-                <li>
-                  <button class="index-concept-btn" data-node-id={c.id} type="button">
-                    {c.name}
-                    <span class="index-bloom">{c.bloom}</span>
-                  </button>
-                </li>
-              ))}
-            </ul>
-          )}
+    <section class="map-controls" aria-label="Browse map topics">
+      <div class="map-controls-heading">
+        <div>
+          <p class="controls-kicker">Browse the map</p>
+          <h2>Start with a topic</h2>
         </div>
-      ))}
-    </aside>
+        <p>Choose a topic to highlight its connections and open its details. The graph stays wide so relationships remain easy to follow.</p>
+      </div>
+      <div class="topic-groups">
+        {layerOrder.map((layer) => (
+          <section class={`topic-group topic-group--${layer.toLowerCase()}`}>
+            <div class="topic-group-heading">
+              <h3>{layer}</h3>
+              <p>{layerDescriptions[layer]}</p>
+            </div>
+            <div class="topic-chip-list">
+              {indexGroups.filter((g) => g.layer === layer).map((g) => (
+                <button class="topic-chip" data-node-id={g.topic} type="button">
+                  <span>{g.topic}</span>{g.topicName}
+                </button>
+              ))}
+            </div>
+          </section>
+        ))}
+      </div>
+    </section>
 
-    {/* ── Right: Graph + Detail ─────────────────────────────────────────── */}
     <div class="graph-main">
       <div class="graph-wrap">
         <svg
@@ -540,7 +550,7 @@ const indexGroups = layerOrder.flatMap((layer) =>
 </Base>
 
 <script>
-  // Interactive graph: hover, click detail panel, concept index navigation.
+  // Interactive graph: hover, click detail panel, and topic controls.
   const svg = document.getElementById("graph-svg")!;
   const panel = document.getElementById("detail-panel")!;
   const enrichment: Record<string, any> = JSON.parse(
@@ -782,7 +792,7 @@ const indexGroups = layerOrder.flatMap((layer) =>
     });
   }
 
-  // Concept index sidebar: clicking navigates to graph node + shows detail
+  // Topic controls navigate to the corresponding graph node and details.
   document.querySelectorAll("[data-node-id]").forEach((btn) => {
     btn.addEventListener("click", () => {
       const id = btn.getAttribute("data-node-id")!;
@@ -808,79 +818,65 @@ const indexGroups = layerOrder.flatMap((layer) =>
     margin: 0 0 .8rem;
   }
   .subhead { font-size: 1rem; color: var(--ink-soft); max-width: 40rem; line-height: 1.55; }
+  .audience-guidance { margin: .8rem 0 0; max-width: 52rem; font-family: var(--sans); font-size: .82rem; line-height: 1.5; color: var(--muted); }
+  .audience-guidance--practitioner { display: none; }
+  :global(html[data-audience="practitioner"]) .audience-guidance--academic { display: none; }
+  :global(html[data-audience="practitioner"]) .audience-guidance--practitioner { display: block; color: #2c5f6f; }
 
-  /* ── Two-column layout: index + graph ──────────────────────────── */
+  /* ── Full-width graph with controls above it ────────────────────── */
   .graph-layout {
-    display: grid;
-    grid-template-columns: 16rem 1fr;
-    gap: 1.5rem;
-    align-items: start;
     padding-top: 0;
   }
-  @media (max-width: 900px) {
-    .graph-layout { grid-template-columns: 1fr; }
-    .concept-index { display: none; }
+  .map-controls {
+    margin-bottom: 1.25rem;
+    border: 1px solid var(--border);
+    border-radius: 6px;
+    background: #fff;
+    overflow: hidden;
   }
-
-  /* ── Concept Index sidebar ─────────────────────────────────────── */
-  .concept-index {
-    position: sticky;
-    top: 4rem;
-    max-height: calc(100vh - 5rem);
-    overflow-y: auto;
-    padding-right: .5rem;
+  .map-controls-heading {
+    display: flex;
+    align-items: end;
+    justify-content: space-between;
+    gap: 2rem;
+    padding: 1rem 1.2rem;
+    border-bottom: 1px solid var(--border);
+  }
+  .controls-kicker {
+    margin: 0 0 .2rem;
     font-family: var(--sans);
-    font-size: .78rem;
-    border-right: 1px solid var(--border);
+    font-size: .67rem;
+    font-weight: 700;
+    letter-spacing: .12em;
+    text-transform: uppercase;
+    color: var(--accent);
   }
-  .index-heading {
-    font-family: var(--serif);
-    font-size: .95rem;
-    font-weight: 600;
-    margin: 0 0 .8rem;
-    color: var(--ink);
-  }
-  .index-group { margin-bottom: .6rem; }
-  .index-topic {
-    font-size: .72rem;
-    font-weight: 600;
+  .map-controls h2 { margin: 0; font-size: 1.1rem; }
+  .map-controls-heading > p {
     margin: 0;
-    text-transform: none;
-  }
-  .index-topic-btn {
-    background: none; border: none; cursor: pointer;
-    font: inherit; color: inherit; padding: .2rem 0; text-align: left; width: 100%;
-  }
-  .index-topic-btn:hover { color: var(--accent); }
-  .index-topic-code {
-    display: inline-block;
-    width: 2rem;
+    max-width: 31rem;
     color: var(--muted);
-    font-weight: 400;
-    font-size: .65rem;
+    font-size: .83rem;
+    line-height: 1.45;
   }
-  .layer-text--foundation { color: #7a4e22; }
-  .layer-text--practice   { color: #2c5f6f; }
-  .layer-text--context    { color: #5a6b4a; }
-
-  .index-concepts {
-    list-style: none;
-    margin: .15rem 0 0 2rem;
-    padding: 0;
+  .topic-groups { display: grid; grid-template-columns: repeat(3, 1fr); }
+  .topic-group { padding: .9rem 1rem 1rem; min-width: 0; }
+  .topic-group + .topic-group { border-left: 1px solid var(--border); }
+  .topic-group-heading { display: flex; align-items: baseline; gap: .45rem; margin-bottom: .65rem; }
+  .topic-group-heading h3 { margin: 0; font-family: var(--sans); font-size: .76rem; }
+  .topic-group-heading p { margin: 0; color: var(--muted); font-size: .7rem; line-height: 1.3; }
+  .topic-group--foundation h3 { color: #7a4e22; }
+  .topic-group--practice h3 { color: #2c5f6f; }
+  .topic-group--context h3 { color: #5a6b4a; }
+  .topic-chip-list { display: flex; flex-wrap: wrap; gap: .35rem; }
+  .topic-chip {
+    display: inline-flex; align-items: baseline; gap: .3rem;
+    padding: .3rem .45rem; border: 1px solid var(--border); border-radius: 999px;
+    background: var(--bg); color: var(--ink-soft); cursor: pointer; text-align: left;
+    font-family: var(--sans); font-size: .7rem; line-height: 1.2;
   }
-  .index-concepts li { margin-bottom: .1rem; }
-  .index-concept-btn {
-    background: none; border: none; cursor: pointer;
-    font: inherit; color: var(--ink-soft); padding: .15rem 0; text-align: left; width: 100%;
-    font-size: .72rem; line-height: 1.4;
-  }
-  .index-concept-btn:hover { color: var(--accent); }
-  .index-bloom {
-    font-size: .6rem;
-    color: var(--muted);
-    font-style: italic;
-    margin-left: .3rem;
-  }
+  .topic-chip span { color: var(--muted); font-size: .62rem; }
+  .topic-chip:hover, .topic-chip:focus-visible { border-color: var(--accent); background: var(--tint-warm); color: var(--accent); outline: none; }
 
   /* ── Graph area ────────────────────────────────────────────────── */
   .graph-main { min-width: 0; }
@@ -1097,6 +1093,14 @@ const indexGroups = layerOrder.flatMap((layer) =>
   .detail-count { font-family: var(--sans); font-size: .82rem; color: var(--accent); margin: .8rem 0 0; font-weight: 500; }
 
   @media (max-width: 700px) {
+    .map-controls-heading { display: block; padding: .9rem; }
+    .map-controls-heading > p { margin-top: .45rem; }
+    .topic-groups { display: block; }
+    .topic-group { padding: .8rem .9rem; }
+    .topic-group + .topic-group { border-left: none; border-top: 1px solid var(--border); }
+    .topic-group-heading { align-items: flex-start; flex-direction: column; gap: .15rem; }
+    .topic-chip-list { flex-wrap: nowrap; overflow-x: auto; padding-bottom: .25rem; -webkit-overflow-scrolling: touch; }
+    .topic-chip { flex: 0 0 auto; }
     .legend {
       gap: .45rem .8rem;
       font-size: .7rem;
