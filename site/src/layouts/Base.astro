@@ -2,6 +2,7 @@
 // Shared page shell: metadata, global styles, nav, footer. Every page — the
 // homepage included — renders on the light "reference index" shell.
 import NavBar from "../components/NavBar.astro";
+import LensChooser from "../components/LensChooser.astro";
 
 interface Props {
   title: string;
@@ -27,10 +28,23 @@ const base = import.meta.env.BASE_URL;
     <meta name="description" content={description} />
     <title>{title}</title>
     <link rel="icon" type="image/svg+xml" href={base + "favicon.svg"} />
+    <script is:inline>
+      // Set the audience/lens attribute before first paint so the practitioner
+      // theme (fonts, spacing, accent) never flashes in as the academic default.
+      // Any stored value other than "practitioner" resolves to the researcher
+      // (internally "academic") lens, so legacy/garbage values stay safe.
+      try {
+        var m = localStorage.getItem("lec-audience-mode");
+        document.documentElement.dataset.audience = m === "practitioner" ? "practitioner" : "academic";
+      } catch (e) {
+        document.documentElement.dataset.audience = "academic";
+      }
+    </script>
     <slot name="head" />
   </head>
   <body>
     <NavBar active={active} />
+    <LensChooser />
     <main>
       <slot />
     </main>
@@ -54,7 +68,8 @@ const base = import.meta.env.BASE_URL;
         /* Cool "reference index" palette — deliberately distinct from
            capabilitymatters' warm cream/brown editorial theme. --tint-warm
            keeps its name (used as the "highlighted/active" tint throughout
-           the component library) even though the value is no longer warm. */
+           the component library) even though the value is no longer warm.
+           This is the RESEARCHER (internally "academic") lens: dense serif. */
         --bg:        #f6f7f6;
         --ink:       #14161a;
         --ink-soft:  #2b2f36;
@@ -69,8 +84,30 @@ const base = import.meta.env.BASE_URL;
         --sans:  "Trebuchet MS", "Segoe UI", Verdana, sans-serif;
         --mono:  ui-monospace, SFMono-Regular, "SF Mono", Menlo, Consolas, monospace;
 
+        /* Indirection tokens the two lenses re-point. Body/heading fonts and
+           line-height flow through these so the practitioner override below can
+           reshape the whole site's typography without touching every rule. */
+        --font-body: var(--serif);
+        --font-head: var(--serif);
+        --line: 1.6;
+
         --measure: 38rem;
         --page-pad: clamp(1rem, 4vw, 2.5rem);
+      }
+
+      /* PRACTITIONER lens: a plainer, roomier, warmer treatment — sans-serif
+         body + headings, taller line-height, a warmer high-contrast accent, and
+         a larger base rem so every rem-based size scales up at once (bigger
+         type, more whitespace, lower density). Researcher keeps the :root
+         defaults untouched. Set pre-paint by the inline <head> script. */
+      html[data-audience="practitioner"] {
+        --font-body: var(--sans);
+        --font-head: var(--sans);
+        --line: 1.75;
+        --accent:    #b4531f;
+        --accent-2:  #7a3d12;
+        --tint-warm: #f7e9dd;
+        font-size: 106.25%;
       }
 
       *, *::before, *::after { box-sizing: border-box; }
@@ -79,8 +116,8 @@ const base = import.meta.env.BASE_URL;
       body {
         background: var(--bg);
         color: var(--ink);
-        font-family: var(--serif);
-        line-height: 1.6;
+        font-family: var(--font-body);
+        line-height: var(--line);
         -webkit-font-smoothing: antialiased;
         text-rendering: optimizeLegibility;
       }
@@ -128,7 +165,7 @@ const base = import.meta.env.BASE_URL;
       main { min-height: calc(100vh - 120px); padding-bottom: 4rem; }
 
       h1, h2, h3, h4 {
-        font-family: var(--serif);
+        font-family: var(--font-head);
         font-weight: 600;
         line-height: 1.2;
         color: var(--ink);
@@ -140,6 +177,17 @@ const base = import.meta.env.BASE_URL;
 
       p { margin: 0 0 1em 0; max-width: var(--measure); }
       .muted { color: var(--muted); }
+
+      /* Lens-scoped content. Works at section and item level. Researcher is the
+         default lens, so .lens-only--researcher shows by default and hides under
+         the practitioner lens; .lens-only--practitioner is the mirror. `revert`
+         restores the element's native display (block, inline, grid, …). Use
+         these to expose genuinely different resources per lens — e.g. citations,
+         concept ontology and Bloom levels for researchers; how-to and
+         adapt-to-your-setting guidance for practitioners. */
+      .lens-only--practitioner { display: none; }
+      html[data-audience="practitioner"] .lens-only--researcher { display: none; }
+      html[data-audience="practitioner"] .lens-only--practitioner { display: revert; }
 
       .eyebrow {
         font-family: var(--sans);

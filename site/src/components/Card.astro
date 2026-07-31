@@ -83,7 +83,7 @@ const isHero = Boolean(embed);
     {isExpertConversation && <span class="conversation-chip">Expert conversation</span>}
     {cluster && <span class="cluster-chip">{cluster}</span>}
     {topics.slice(0, 2).map((t) => <a href={topicUrl(t)} class="topic-chip">{topicName(t)}</a>)}
-    {missingProvenance && <span class="badge-missing">source unknown</span>}
+    {missingProvenance && <span class="badge-missing lens-only--researcher">source unknown</span>}
   </div>
 
   {isHero ? (
@@ -115,7 +115,7 @@ const isHero = Boolean(embed);
         {url ? <a href={url} target="_blank" rel="noopener">{title}</a> : title}
       </h3>
       {(authors || venue || year) && (
-        <p class="card-byline">
+        <p class="card-byline lens-only--researcher">
           {authors && <span>{authors}</span>}
           {authors && (venue || year) && <span class="sep"> · </span>}
           {venue && <span>{venue}</span>}

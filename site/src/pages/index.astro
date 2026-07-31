@@ -64,6 +64,8 @@ const stats = [
   description="The field's shared, topic-linked evidence corpus — practice, tools, reading list, events, and community, including material from IEEE ICICLE."
   active="welcome"
 >
+  {/* ── Researcher lens: evidence-first landing ─────────────────────────── */}
+  <div class="lens-only--researcher">
   <section class="hp-hero">
     <div class="container-wide">
       <p class="eyebrow">Learning Engineering Commons</p>
@@ -108,6 +110,51 @@ const stats = [
             <div class="stat-cite">{s.cite}</div>
           </div>
         ))}
+      </div>
+    </div>
+  </section>
+  </div>
+
+  {/* ── Practitioner lens: problem-first landing ────────────────────────── */}
+  <section class="hp-hero hp-hero--practitioner lens-only--practitioner">
+    <div class="container-wide">
+      <p class="eyebrow">Learning Engineering Commons</p>
+      <h1 class="hp-title">Solve a learning problem — <em>start here</em></h1>
+      <p class="hp-sub">
+        Plain-language methods, tools, and next steps for people building and running
+        real learning — including in resource-constrained and developing-country settings.
+        No research background needed.
+      </p>
+      <div class="hp-actions">
+        <a href={base + "start/"} class="btn btn-primary">Start from your problem</a>
+        <a href={base + "practice/"} class="btn btn-ghost">Browse practical methods</a>
+        <a href={base + "tools/"} class="btn btn-ghost">See the tools</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="hp-quickpaths lens-only--practitioner">
+    <div class="container-wide">
+      <div class="hp-section-head">
+        <h2>Where do you want to start?</h2>
+        <p>Pick the closest fit and go straight to what's useful.</p>
+      </div>
+      <div class="domain-grid">
+        <a class="domain-card" href={base + "start/"}>
+          <div class="icon" aria-hidden="true">◎</div>
+          <h3>I have a specific problem</h3>
+          <p>Match your situation to a method and a concrete next step.</p>
+        </a>
+        <a class="domain-card" href={base + "practice/"}>
+          <div class="icon" aria-hidden="true">▤</div>
+          <h3>Show me how others do it</h3>
+          <p>Process diagrams, frameworks, and templates you can reuse.</p>
+        </a>
+        <a class="domain-card" href={base + "community/"}>
+          <div class="icon" aria-hidden="true">◈</div>
+          <h3>Connect me with people</h3>
+          <p>Programs, institutions, and practitioners doing the work.</p>
+        </a>
       </div>
     </div>
   </section>
@@ -282,7 +329,9 @@ const stats = [
     padding-top: .7rem;
   }
 
-  /* ── Domains ───────────────────────────────────────────────────────── */
+  /* ── Domains + practitioner quick paths (shared card styles) ─────────── */
+  .hp-quickpaths { border-bottom: 1px solid var(--border); background: var(--tint); }
+  .hp-quickpaths .container-wide { padding-top: 3rem; padding-bottom: 3rem; }
   .hp-domains .container-wide { padding-top: 3rem; padding-bottom: 3rem; }
   .hp-section-head { margin-bottom: 1.6rem; }
   .hp-section-head h2 { font-family: var(--serif); font-size: clamp(1.5rem, 3vw, 2rem); margin: 0 0 .4rem; }

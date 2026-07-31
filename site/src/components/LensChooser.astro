@@ -1,0 +1,151 @@
+---
+// First-run lens chooser: a one-time dialog that lets a visitor pick the
+// Researcher or Practitioner experience instead of silently defaulting. Shown
+// only when no lens is stored; the choice persists to localStorage and is
+// applied immediately. Dismissing keeps the current default so it never nags.
+---
+
+<div
+  id="lens-chooser"
+  class="lens-chooser"
+  role="dialog"
+  aria-modal="true"
+  aria-labelledby="lens-chooser-title"
+  hidden
+>
+  <div class="lens-chooser-card">
+    <h2 id="lens-chooser-title">How do you want to use this site?</h2>
+    <p>
+      Pick the experience that fits you — you can switch anytime with the “Site lens”
+      toggle in the top bar.
+    </p>
+    <div class="lens-chooser-options">
+      <button type="button" data-choose="academic" class="lens-choice">
+        <span class="lens-choice-title">I’m a researcher</span>
+        <span class="lens-choice-desc">Evidence-first: papers, citations, concepts, and the full topic map.</span>
+      </button>
+      <button type="button" data-choose="practitioner" class="lens-choice">
+        <span class="lens-choice-title">I’m a practitioner</span>
+        <span class="lens-choice-desc">Problem-first: plain-language methods, tools, and next steps you can apply.</span>
+      </button>
+    </div>
+    <button type="button" data-choose="skip" class="lens-skip">Skip for now</button>
+  </div>
+</div>
+
+<script is:inline>
+  // Self-contained: no imports so it can run inline right after the nav renders.
+  (function () {
+    var KEY = "lec-audience-mode";
+    var dialog = document.getElementById("lens-chooser");
+    if (!dialog) return;
+
+    // Only prompt on a genuine first visit (nothing stored yet).
+    var stored;
+    try { stored = localStorage.getItem(KEY); } catch (e) { stored = "academic"; }
+    if (stored === "academic" || stored === "practitioner") return;
+
+    var buttons = dialog.querySelectorAll("[data-choose]");
+    var focusable = dialog.querySelectorAll(".lens-choice, .lens-skip");
+    var first = focusable[0];
+    var last = focusable[focusable.length - 1];
+
+    function apply(mode) {
+      // Mirror NavBar.setAudienceMode so the header toggle reflects the choice.
+      document.documentElement.dataset.audience = mode;
+      var toggles = document.querySelectorAll("[data-audience-mode]");
+      for (var i = 0; i < toggles.length; i++) {
+        toggles[i].setAttribute("aria-pressed", String(toggles[i].dataset.audienceMode === mode));
+      }
+    }
+
+    function close(mode) {
+      // Persist the resolved lens (default academic on skip) so this never reappears.
+      var resolved = mode === "practitioner" ? "practitioner" : "academic";
+      try { localStorage.setItem(KEY, resolved); } catch (e) {}
+      apply(resolved);
+      dialog.hidden = true;
+    }
+
+    for (var i = 0; i < buttons.length; i++) {
+      buttons[i].addEventListener("click", function () {
+        var choice = this.getAttribute("data-choose");
+        close(choice === "skip" ? "academic" : choice);
+      });
+    }
+
+    // Minimal focus trap: keep Tab within the dialog; Escape dismisses (default).
+    dialog.addEventListener("keydown", function (e) {
+      if (e.key === "Escape") { close("academic"); return; }
+      if (e.key !== "Tab") return;
+      if (e.shiftKey && document.activeElement === first) { e.preventDefault(); last.focus(); }
+      else if (!e.shiftKey && document.activeElement === last) { e.preventDefault(); first.focus(); }
+    });
+
+    dialog.hidden = false;
+    if (first) first.focus();
+  })();
+</script>
+
+<style>
+  .lens-chooser {
+    position: fixed;
+    inset: 0;
+    z-index: 100;
+    display: grid;
+    place-items: center;
+    padding: 1.5rem;
+    background: rgba(20, 22, 26, 0.5);
+  }
+  .lens-chooser[hidden] { display: none; }
+  .lens-chooser-card {
+    max-width: 34rem;
+    width: 100%;
+    background: var(--bg);
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    padding: 1.6rem 1.7rem;
+    box-shadow: 0 12px 40px rgba(20, 22, 26, 0.25);
+  }
+  .lens-chooser-card h2 { font-family: var(--font-head); font-size: 1.3rem; margin: 0 0 .5rem; }
+  .lens-chooser-card > p {
+    font-family: var(--sans);
+    font-size: .9rem;
+    color: var(--ink-soft);
+    line-height: 1.55;
+    margin: 0 0 1.1rem;
+    max-width: none;
+  }
+  .lens-chooser-options { display: grid; grid-template-columns: 1fr 1fr; gap: .8rem; }
+  .lens-choice {
+    display: flex;
+    flex-direction: column;
+    gap: .35rem;
+    text-align: left;
+    padding: 1rem 1.05rem;
+    background: var(--tint);
+    border: 1px solid var(--border);
+    border-radius: 5px;
+    cursor: pointer;
+    font: inherit;
+  }
+  .lens-choice:hover, .lens-choice:focus-visible { border-color: var(--accent); outline: none; background: var(--tint-warm); }
+  .lens-choice-title { font-family: var(--sans); font-weight: 700; font-size: .95rem; color: var(--accent); }
+  .lens-choice-desc { font-family: var(--sans); font-size: .8rem; line-height: 1.45; color: var(--ink-soft); }
+  .lens-skip {
+    margin-top: 1rem;
+    background: none;
+    border: none;
+    padding: .3rem;
+    font-family: var(--sans);
+    font-size: .8rem;
+    color: var(--muted);
+    cursor: pointer;
+    text-decoration: underline;
+  }
+  .lens-skip:hover, .lens-skip:focus-visible { color: var(--accent); outline: none; }
+
+  @media (max-width: 520px) {
+    .lens-chooser-options { grid-template-columns: 1fr; }
+  }
+</style>

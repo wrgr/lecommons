@@ -31,8 +31,6 @@ import seedPapersData from "../data/papers_seed.json";
 import ppRegistry from "../data/programs_people_registry.json";
 import { topicUrl } from "../data/topicSlugs";
 
-const base = import.meta.env.BASE_URL;
-
 // ── 1. Title lookups for papers and resources ─────────────────────────────
 
 const paperTitles = new Map<
@@ -224,6 +222,8 @@ for (const t of topicMap as any[]) {
     type: "topic",
     name: t.topic_name,
     description: t.why_it_matters,
+    // Explicit destination for the panel's "Open full topic page" link.
+    url: topicUrl(t.topic_code),
     contentCount: topicCounts[t.topic_code] || 0,
     siteItems: topicItems[t.topic_code] ?? [],
     children,
@@ -241,6 +241,7 @@ interface GNode {
   bloomLevel?: string;
   contentCount: number;
   parentTopic?: string;
+  laneX?: number;
   x?: number;
   y?: number;
   vx?: number;
@@ -314,6 +315,33 @@ const layerBands = [
   { layer: "Context",    y: HEIGHT * 0.66, h: HEIGHT * 0.34 },
 ];
 
+// Deterministic lane seeding. Group nodes by layer band, order them stably
+// (topics first, then concepts, by id), and give each an evenly spaced initial
+// x "lane". This starts the simulation spread out instead of collapsed at the
+// centre — the old near-zero forceX let dense bands pile against the clamp
+// edges. Seeding is purely index-based (no Math.random) so the baked SVG stays
+// byte-stable across builds.
+const nodesByLayer = new Map<string, GNode[]>();
+for (const n of nodes) {
+  if (!nodesByLayer.has(n.layer)) nodesByLayer.set(n.layer, []);
+  nodesByLayer.get(n.layer)!.push(n);
+}
+for (const band of nodesByLayer.values()) {
+  band.sort(
+    (a, b) =>
+      (a.nodeType === b.nodeType ? 0 : a.nodeType === "topic" ? -1 : 1) ||
+      a.id.localeCompare(b.id),
+  );
+  band.forEach((n, i) => {
+    const laneX = PADDING + ((i + 0.5) / band.length) * (WIDTH - 2 * PADDING);
+    n.laneX = laneX;
+    n.x = laneX;
+    // Alternate a small vertical offset so same-lane neighbours don't overlap
+    // before the collide force separates them.
+    n.y = (layerY[n.layer] ?? HEIGHT / 2) + (i % 2 ? 28 : -28);
+  });
+}
+
 const sim = forceSimulation(nodes as any)
   .force(
     "link",
@@ -322,10 +350,12 @@ const sim = forceSimulation(nodes as any)
       .distance((d: any) => (d.edgeType === "BELONGS_TO" ? 60 : 120))
       .strength((d: any) => (d.edgeType === "BELONGS_TO" ? 0.8 : 0.3)),
   )
-  .force("charge", forceManyBody().strength(-300))
-  .force("x", forceX(WIDTH / 2).strength(0.04))
+  .force("charge", forceManyBody().strength(-220))
+  // Pull each node toward its seeded lane (strong enough to hold the spread)
+  // while forceY keeps it in its layer band.
+  .force("x", forceX((d: any) => d.laneX ?? WIDTH / 2).strength(0.09))
   .force("y", forceY((d: any) => layerY[d.layer] ?? HEIGHT / 2).strength(0.35))
-  .force("collide", forceCollide().radius((d: any) => (d.nodeType === "topic" ? 58 : 40)))
+  .force("collide", forceCollide().radius((d: any) => (d.nodeType === "topic" ? 42 : 28)).strength(0.9))
   .stop();
 
 for (let i = 0; i < 400; i++) sim.tick();
@@ -530,10 +560,11 @@ const indexGroups = layerOrder.flatMap((layer) =>
         <button class="detail-close" aria-label="Close detail panel">&times;</button>
         <div class="detail-header">
           <span id="detail-chip" class="detail-chip"></span>
-          <span id="detail-bloom" class="detail-bloom"></span>
+          <span id="detail-bloom" class="detail-bloom lens-only--researcher"></span>
         </div>
         <h3 id="detail-title" class="detail-title"></h3>
         <p id="detail-description" class="detail-description"></p>
+        <a id="detail-open" class="detail-open" href="#" hidden>Open full topic page →</a>
 
         <div id="detail-prereqs" class="detail-section" hidden>
           <h4 class="detail-section-heading">Learning path</h4>
@@ -550,7 +581,7 @@ const indexGroups = layerOrder.flatMap((layer) =>
           <ul id="detail-items-list" class="detail-list"></ul>
         </div>
 
-        <div id="detail-papers" class="detail-section" hidden>
+        <div id="detail-papers" class="detail-section lens-only--researcher" hidden>
           <h4 class="detail-section-heading">Key papers</h4>
           <ul id="detail-papers-list" class="detail-list"></ul>
         </div>
@@ -570,263 +601,8 @@ const indexGroups = layerOrder.flatMap((layer) =>
 </Base>
 
 <script>
-  // Interactive graph: hover, click detail panel, and topic controls.
-  const svg = document.getElementById("graph-svg")!;
-  const panel = document.getElementById("detail-panel")!;
-  const enrichment: Record<string, any> = JSON.parse(
-    document.getElementById("enrichment-data")!.textContent!,
-  );
-
-  const allNodes = svg.querySelectorAll(".node");
-  const allEdges = svg.querySelectorAll(".edge");
-
-  // Adjacency index
-  const neighbors = new Map<string, Set<string>>();
-  const nodeEdges = new Map<string, Set<Element>>();
-
-  for (const edge of allEdges) {
-    const src = edge.getAttribute("data-source")!;
-    const tgt = edge.getAttribute("data-target")!;
-    for (const id of [src, tgt]) {
-      if (!neighbors.has(id)) neighbors.set(id, new Set());
-      if (!nodeEdges.has(id)) nodeEdges.set(id, new Set());
-    }
-    neighbors.get(src)!.add(tgt);
-    neighbors.get(tgt)!.add(src);
-    nodeEdges.get(src)!.add(edge);
-    nodeEdges.get(tgt)!.add(edge);
-  }
-
-  function clearHighlight() {
-    for (const n of allNodes) n.classList.remove("dimmed", "highlighted");
-    for (const e of allEdges) {
-      e.classList.remove("dimmed", "highlighted");
-      if (e.getAttribute("marker-end")) e.setAttribute("marker-end", "url(#arrow)");
-    }
-  }
-
-  function highlightNode(id: string) {
-    const nbrs = neighbors.get(id) ?? new Set();
-    const myEdges = nodeEdges.get(id) ?? new Set();
-    for (const n of allNodes) {
-      const nid = n.getAttribute("data-id")!;
-      n.classList.toggle("highlighted", nid === id || nbrs.has(nid));
-      n.classList.toggle("dimmed", nid !== id && !nbrs.has(nid));
-    }
-    for (const e of allEdges) {
-      e.classList.toggle("highlighted", myEdges.has(e));
-      e.classList.toggle("dimmed", !myEdges.has(e));
-      if (myEdges.has(e) && e.getAttribute("marker-end")) {
-        e.setAttribute("marker-end", "url(#arrow-hl)");
-      }
-    }
-  }
-
-  // Hover
-  for (const node of allNodes) {
-    node.addEventListener("mouseenter", () => highlightNode(node.getAttribute("data-id")!));
-    node.addEventListener("mouseleave", clearHighlight);
-  }
-
-  // Detail panel elements
-  const chipEl = document.getElementById("detail-chip")!;
-  const bloomEl = document.getElementById("detail-bloom")!;
-  const titleEl = document.getElementById("detail-title")!;
-  const descEl = document.getElementById("detail-description")!;
-  const prereqsSection = document.getElementById("detail-prereqs")!;
-  const prereqChainEl = document.getElementById("detail-prereq-chain")!;
-  const childrenSection = document.getElementById("detail-children")!;
-  const childrenList = document.getElementById("detail-children-list")!;
-  const itemsSection = document.getElementById("detail-items")!;
-  const itemsList = document.getElementById("detail-items-list")!;
-  const papersSection = document.getElementById("detail-papers")!;
-  const papersList = document.getElementById("detail-papers-list")!;
-  const resourcesSection = document.getElementById("detail-resources")!;
-  const resourcesList = document.getElementById("detail-resources-list")!;
-  const countEl = document.getElementById("detail-count")!;
-
-  function escapeHtml(value: string) {
-    return (value ?? "")
-      .replaceAll("&", "&amp;")
-      .replaceAll("<", "&lt;")
-      .replaceAll(">", "&gt;")
-      .replaceAll('"', "&quot;")
-      .replaceAll("'", "&#39;");
-  }
-
-  function showDetail(id: string) {
-    const nodeEl = svg.querySelector(`.node[data-id="${id}"]`);
-    if (!nodeEl) return;
-    const label = nodeEl.getAttribute("data-label")!;
-    const type = nodeEl.getAttribute("data-type")!;
-    const layer = nodeEl.getAttribute("data-layer")!;
-    const data = enrichment[id];
-    if (!data) return;
-
-    chipEl.textContent = type === "topic" ? `Topic ${id}` : `Concept ${id}`;
-    chipEl.className = `detail-chip detail-chip--${layer.toLowerCase()}`;
-    titleEl.textContent = label;
-
-    if (data.type === "topic") {
-      bloomEl.hidden = true;
-      descEl.textContent = data.description;
-      descEl.hidden = !data.description;
-
-      // Child concepts
-      if (data.children.length > 0) {
-        childrenList.innerHTML = data.children
-          .map(
-            (c: any) =>
-              `<li class="associated-concept"><button class="detail-link" data-nav="${c.id}" type="button">${c.name}</button><span class="bloom-tag">${c.bloom}</span></li>`
-          )
-          .join("");
-        childrenSection.hidden = false;
-      } else {
-        childrenSection.hidden = true;
-      }
-
-      prereqsSection.hidden = true;
-      papersSection.hidden = true;
-      resourcesSection.hidden = true;
-
-      if (data.siteItems.length > 0) {
-        itemsList.innerHTML = data.siteItems
-          .map((item: any) => {
-            const target = item.external ? ` target="_blank" rel="noopener"` : "";
-            return `<li class="associated-item"><a href="${item.href}"${target} class="resource-link">${item.title}</a><span class="associated-meta">${item.collection}</span></li>`;
-          })
-          .join("");
-        itemsSection.hidden = false;
-      } else {
-        itemsSection.hidden = true;
-      }
-
-      if (data.contentCount > 0) {
-        countEl.innerHTML = `<strong>${data.contentCount}</strong> site item${data.contentCount !== 1 ? "s" : ""} tagged with this topic`;
-        countEl.hidden = false;
-      } else {
-        countEl.textContent = "No site items tagged with this topic yet";
-        countEl.hidden = false;
-      }
-    } else {
-      // Concept
-      bloomEl.textContent = `Bloom: ${data.bloom}`;
-      bloomEl.hidden = false;
-      descEl.hidden = true;
-      childrenSection.hidden = true;
-      itemsSection.hidden = true;
-
-      // Prereq chain
-      if (data.prereqChain.length > 0) {
-        const steps = [
-          ...data.prereqChain.map((c: any) => `<button class="chain-step" data-nav="${c.id}" type="button">${c.name}</button>`),
-          `<span class="chain-current">${label}</span>`,
-        ];
-        prereqChainEl.innerHTML = steps.join('<span class="chain-arrow">\u2192</span>');
-        prereqsSection.hidden = false;
-      } else {
-        prereqsSection.hidden = true;
-      }
-
-      // Key papers
-      if (data.papers.length > 0) {
-        papersList.innerHTML = data.papers
-          .map((p: any) => {
-            const title = escapeHtml(p.title || "Untitled paper");
-            const authors = escapeHtml(p.authors || "");
-            const year = Number(p.year || 0);
-            const hasUrl = typeof p.url === "string" && /^https?:\/\//.test(p.url);
-            const sourceUrl = escapeHtml((p.fullTextSourceUrl || p.url || "") as string);
-            const hasCachedText = Boolean(p.fullTextCached);
-            const chars = Number(p.fullTextChars || 0);
-            const excerpt = escapeHtml((p.fullTextExcerpt || "") as string);
-
-            const titleHtml = hasUrl
-              ? `<a href="${escapeHtml(p.url)}" target="_blank" rel="noopener" class="resource-link paper-title-link">${title}</a>`
-              : `<span class="paper-title">${title}</span>`;
-
-            const metaBits = [];
-            if (authors) metaBits.push(authors);
-            if (year > 0) metaBits.push(String(year));
-            const metaHtml = metaBits.length > 0 ? `<span class="paper-authors">${metaBits.join(" · ")}</span>` : "";
-
-            const cacheBadge = hasCachedText
-              ? `<span class="paper-badge paper-badge--cached">Full text cached${chars > 0 ? ` · ${chars.toLocaleString()} chars` : ""}</span>`
-              : `<span class="paper-badge paper-badge--missing">No cached full text</span>`;
-
-            const cacheLink = hasCachedText && sourceUrl
-              ? `<a href="${sourceUrl}" target="_blank" rel="noopener" class="paper-cache-link">Open full-text source</a>`
-              : "";
-
-            const excerptHtml = hasCachedText && excerpt
-              ? `<details class="paper-excerpt"><summary>Preview cached text</summary><p>${excerpt}</p></details>`
-              : "";
-
-            return `<li class="paper-item">${titleHtml}${metaHtml}<div class="paper-meta-row">${cacheBadge}${cacheLink}</div>${excerptHtml}</li>`;
-          })
-          .join("");
-        papersSection.hidden = false;
-      } else {
-        papersSection.hidden = true;
-      }
-
-      // Key resources
-      if (data.resources.length > 0) {
-        resourcesList.innerHTML = data.resources
-          .map((r: any) => {
-            const hasUrl = r.url && r.url !== "[internal]" && r.url.startsWith("http");
-            return hasUrl
-              ? `<li><a href="${r.url}" target="_blank" rel="noopener" class="resource-link">${r.name}</a></li>`
-              : `<li class="resource-item">${r.name}</li>`;
-          })
-          .join("");
-        resourcesSection.hidden = false;
-      } else {
-        resourcesSection.hidden = true;
-      }
-
-      countEl.hidden = true;
-    }
-
-    panel.hidden = false;
-    highlightNode(id);
-    panel.scrollIntoView({ behavior: "smooth", block: "nearest" });
-  }
-
-  // Click on graph node
-  for (const node of allNodes) {
-    node.addEventListener("click", () => showDetail(node.getAttribute("data-id")!));
-  }
-
-  // Close button
-  panel.querySelector(".detail-close")!.addEventListener("click", () => {
-    panel.hidden = true;
-    clearHighlight();
-  });
-
-  // Keyboard: Enter/Space on focused node
-  for (const node of allNodes) {
-    node.addEventListener("keydown", (e: Event) => {
-      const ke = e as KeyboardEvent;
-      if (ke.key === "Enter" || ke.key === " ") { ke.preventDefault(); (node as HTMLElement).click(); }
-    });
-  }
-
-  // Topic controls navigate to the corresponding graph node and details.
-  document.querySelectorAll("[data-node-id]").forEach((btn) => {
-    btn.addEventListener("click", () => {
-      const id = btn.getAttribute("data-node-id")!;
-      showDetail(id);
-    });
-  });
-
-  // Detail panel internal navigation (prereq chain steps, child concepts)
-  panel.addEventListener("click", (e) => {
-    const target = (e.target as HTMLElement).closest("[data-nav]");
-    if (target) {
-      showDetail(target.getAttribute("data-nav")!);
-    }
-  });
+  import { initTopicMap } from "../scripts/topicMap";
+  initTopicMap();
 </script>
 
 <style>
@@ -987,6 +763,19 @@ const indexGroups = layerOrder.flatMap((layer) =>
 
   .detail-title { font-family: var(--serif); font-size: 1.2rem; font-weight: 600; margin: .2rem 0 .4rem; }
   .detail-description { font-size: .95rem; color: var(--ink-soft); line-height: 1.55; max-width: var(--measure); margin: 0; }
+
+  /* Explicit "go to the full topic page" affordance in the node panel. */
+  .detail-open {
+    display: inline-block;
+    margin-top: .7rem;
+    font-family: var(--sans);
+    font-size: .82rem;
+    font-weight: 600;
+    color: var(--accent);
+    border-bottom: 1px solid transparent;
+  }
+  .detail-open:hover { border-bottom-color: var(--accent); }
+  .detail-open[hidden] { display: none; }
 
   .detail-section { margin-top: .8rem; }
   .detail-section-heading {

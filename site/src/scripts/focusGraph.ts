@@ -9,7 +9,8 @@ import {
   forceSimulation,
   forceLink,
   forceManyBody,
-  forceCenter,
+  forceX,
+  forceY,
   forceCollide,
 } from "d3-force";
 
@@ -58,6 +59,16 @@ function esc(v: string): string {
     .replace(/>/g, "&gt;").replace(/"/g, "&quot;").replace(/'/g, "&#39;");
 }
 
+/** True only for absolute http(s) URLs — used to avoid emitting broken links. */
+function isHttpUrl(u: unknown): u is string {
+  return typeof u === "string" && /^https?:\/\//.test(u);
+}
+
+/** A href is safe to link if it is an absolute http(s) URL or a root-relative path. */
+function isLinkable(href: unknown): href is string {
+  return isHttpUrl(href) || (typeof href === "string" && href.startsWith("/"));
+}
+
 /** Flatten a wiki slug to the content-bundle filename (mirrors lebokai's export). */
 function contentFileName(slug: string): string {
   return slug.replace(/\//g, "__") + ".json";
@@ -101,11 +112,13 @@ function resourcesForTopics(data: ExploreData, topics: string[]): ResourceItem[]
   return items;
 }
 
-/** Render resource items as <li> links with a collection tag. */
+/** Render resource items as <li> links with a collection tag (plain text if the URL is unsafe). */
 function resourceListHtml(items: ResourceItem[], cap: number): string {
   return items.slice(0, cap).map((i) => {
+    const meta = `<span class="ex-meta">${esc(i.collection)}</span>`;
+    if (!isLinkable(i.href)) return `<li>${esc(i.title)} ${meta}</li>`;
     const tgt = i.external ? ' target="_blank" rel="noopener"' : "";
-    return `<li><a href="${esc(i.href)}"${tgt}>${esc(i.title)}</a> <span class="ex-meta">${esc(i.collection)}</span></li>`;
+    return `<li><a href="${esc(i.href)}"${tgt}>${esc(i.title)}</a> ${meta}</li>`;
   }).join("");
 }
 
@@ -148,10 +161,24 @@ function visibleGraph(data: ExploreData, sel: Selection | null): { nodes: SimNod
 
 /** Run the force simulation to assign x/y, then clamp to the viewBox. */
 function layout(nodes: SimNode[], edges: SimEdge[]): void {
+  // Seed positions on two concentric rings (topics inner, lebok pages outer)
+  // before ticking. Fresh nodes otherwise start with no x/y and the old
+  // forceCenter collapsed small selections into a single clump; seeding gives
+  // the simulation a spread starting point so even 2–3 node views stay legible.
+  seedRingPositions(nodes);
+
+  // Scale the repulsion and link length to the node count: small selections
+  // need a stronger push to avoid clumping, large ones need shorter links so
+  // they don't fly to the clamp edges.
+  const charge = -Math.min(420, 160 + nodes.length * 8);
+  const linkDistance = nodes.length < 24 ? 70 : 120;
   const sim = forceSimulation(nodes as never[])
-    .force("link", forceLink(edges as never[]).id((d: never) => (d as SimNode).id).distance(90).strength(0.25))
-    .force("charge", forceManyBody().strength(-260))
-    .force("center", forceCenter(WIDTH / 2, HEIGHT / 2))
+    .force("link", forceLink(edges as never[]).id((d: never) => (d as SimNode).id).distance(linkDistance).strength(0.25))
+    .force("charge", forceManyBody().strength(charge))
+    // Gentle pull toward the centre on each axis instead of forceCenter, which
+    // re-collapsed sparse graphs onto one point.
+    .force("cx", forceX(WIDTH / 2).strength(0.05))
+    .force("cy", forceY(HEIGHT / 2).strength(0.05))
     .force("collide", forceCollide().radius((d: never) => ((d as SimNode).kind === "topic" ? 34 : 20)))
     .stop();
   const ticks = Math.min(400, 120 + nodes.length * 2);
@@ -161,6 +188,21 @@ function layout(nodes: SimNode[], edges: SimEdge[]): void {
     n.x = Math.max(pad, Math.min(WIDTH - pad, n.x ?? WIDTH / 2));
     n.y = Math.max(pad, Math.min(HEIGHT - pad, n.y ?? HEIGHT / 2));
   }
+}
+
+/** Seed node x/y on concentric rings around centre so layouts never collapse. */
+function seedRingPositions(nodes: SimNode[]): void {
+  const topics = nodes.filter((n) => n.kind === "topic");
+  const others = nodes.filter((n) => n.kind !== "topic");
+  const place = (group: SimNode[], radius: number) => {
+    group.forEach((n, i) => {
+      const angle = (2 * Math.PI * i) / Math.max(1, group.length);
+      n.x = WIDTH / 2 + radius * Math.cos(angle);
+      n.y = HEIGHT / 2 + radius * Math.sin(angle);
+    });
+  };
+  place(topics, 150);
+  place(others, 300);
 }
 
 /** Draw the current node/edge set into the SVG element. */
@@ -212,24 +254,26 @@ function nodeDetailHtml(data: ExploreData, node: SimNode): string {
   if (node.kind === "topic") {
     const ref = node.ref as TopicNode;
     const items = (data.topicItems[node.id] ?? []).slice(0, 12);
-    const list = items.map((i) => {
-      const tgt = i.external ? ' target="_blank" rel="noopener"' : "";
-      return `<li><a href="${esc(i.href)}"${tgt}>${esc(i.title)}</a> <span class="ex-meta">${esc(i.collection)}</span></li>`;
-    }).join("");
+    const list = resourceListHtml(items, 12);
     return `<span class="ex-chip">Topic ${esc(node.id)}</span>` +
       `<h3>${esc(ref.label)}</h3><p>${esc(ref.description)}</p>` +
       (list ? `<h4>Associated resources</h4><ul class="ex-list">${list}</ul>` : "<p class='ex-muted'>No resources tagged yet.</p>");
   }
   const ref = node.ref as LebokNode;
-  const url = data.wikiBase + ref.href;
+  // Only build the external wiki URL when the vendored href is a well-formed
+  // /wiki/ path; a drifted/empty manifest entry otherwise yields a broken link.
+  const wikiUrl = typeof ref.href === "string" && ref.href.startsWith("/wiki/")
+    ? data.wikiBase + ref.href : "";
   const desc = ref.description ? `<p>${esc(ref.description)}</p>` : "<p class='ex-muted'>No description yet (pending review).</p>";
   const examples = resourcesForTopics(data, ref.topics);
   const exHtml = examples.length
     ? `<h4>Evidence &amp; examples</h4><ul class="ex-list">${resourceListHtml(examples, 10)}</ul>`
     : "";
+  const wikiLink = wikiUrl
+    ? `<p><a href="${esc(wikiUrl)}" target="_blank" rel="noopener">Open in LEBOK wiki →</a></p>`
+    : "";
   return `<span class="ex-chip ex-chip--lebok">LEBOK${ref.kaNumber ? " · KA" + ref.kaNumber : ""}${ref.isLeaf ? "" : " · index"}</span>` +
-    `<h3>${esc(ref.label)}</h3>${desc}` +
-    `<p><a href="${esc(url)}" target="_blank" rel="noopener">Open in LEBOK wiki →</a></p>` +
+    `<h3>${esc(ref.label)}</h3>${desc}${wikiLink}` +
     `<p class="ex-meta">Topics: ${ref.topics.map(esc).join(", ") || "—"}</p>` +
     exHtml;
 }
@@ -242,7 +286,9 @@ const KIND_LABEL: Record<Selection["kind"], string> = {
 function selectionDetailHtml(data: ExploreData, sel: Selection): string {
   const resList = resourceListHtml(resourcesForTopics(data, sel.topics), 12);
   const standards = sel.standards.map((id) => data.standards[id]).filter(Boolean)
-    .map((s) => `<li><a href="${esc(s.url)}" target="_blank" rel="noopener">${esc(s.name)}</a></li>`).join("");
+    .map((s) => isHttpUrl(s.url)
+      ? `<li><a href="${esc(s.url)}" target="_blank" rel="noopener">${esc(s.name)}</a></li>`
+      : `<li>${esc(s.name)}</li>`).join("");
   const ped = sel.pedagogy
     ? `<h4>Pedagogical grounding</h4><p class="ex-ped">${esc(sel.pedagogy)}</p>` : "";
   return `<span class="ex-chip ex-chip--sel">${KIND_LABEL[sel.kind]}</span><h3>${esc(sel.label)}</h3>` +
@@ -324,9 +370,22 @@ export function initExploreGraph(): void {
     attachNodeHandlers(svg!, nodes, showNode);
     if (current) detail!.innerHTML = selectionDetailHtml(data, current);
     else detail!.innerHTML = "<p class='ex-muted'>Select a journey, theme, competency, or role to focus the graph, or click any node for detail.</p>";
+
+    // Cap/status line. Some selections (e.g. topics with no mapped LEBOK pages)
+    // resolve to only a topic node or two; say so plainly instead of leaving a
+    // lone dot that reads as a broken/clumped graph.
     const total = current ? data.lebok.filter((n) => n.topics.some((t) => current!.topics.includes(t))).length : 0;
+    const lebokShown = nodes.filter((n) => n.kind === "lebok").length;
     const cap = document.getElementById("explore-cap");
-    if (cap) cap.textContent = current && total > LEBOK_CAP ? `Showing ${LEBOK_CAP} of ${total} matching LEBOK pages.` : "";
+    if (cap) {
+      if (current && lebokShown === 0) {
+        cap.textContent = "No LEBOK pages are mapped to this selection yet — click the topic node for its resources, or try another journey.";
+      } else if (current && total > LEBOK_CAP) {
+        cap.textContent = `Showing ${LEBOK_CAP} of ${total} matching LEBOK pages.`;
+      } else {
+        cap.textContent = "";
+      }
+    }
   }
 
   controls.addEventListener("click", (e) => {

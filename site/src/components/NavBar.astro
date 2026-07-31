@@ -3,7 +3,8 @@
 //   - Desktop (>=900px): plain horizontal <nav class="desktop-nav">
 //   - Mobile/tablet (<900px): collapsed <details> disclosure with a hamburger
 // Each shows the same link list; CSS swaps which one is visible.
-// The audience toggle (academic / practitioner) is the only scripted piece.
+// The site-lens toggle (Researcher / Practitioner — stored internally as
+// "academic" / "practitioner") is the only scripted piece.
 
 interface Props {
   active?: string;
@@ -87,9 +88,9 @@ const activeLabel = allItems.find((it) => it.slug === active)?.label ?? "Menu";
       </ul>
     </nav>
 
-    <div class="audience-toggle" role="group" aria-label="Choose your site lens">
+    <div class="audience-toggle" role="group" aria-label="Choose your site lens: researcher or practitioner">
       <span class="audience-label">Site lens</span>
-      <button type="button" data-audience-mode="academic" aria-pressed="true">Academic</button>
+      <button type="button" data-audience-mode="academic" aria-pressed="true">Researcher</button>
       <button type="button" data-audience-mode="practitioner" aria-pressed="false">Practitioner</button>
     </div>
 
