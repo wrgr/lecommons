@@ -232,4 +232,27 @@ LEBOKAI_DIR=/path/to/lebokai python3 scripts/sync_lebokai_nodes.py
 
 Validate the graph data files with `python3 tests/test_graph_data.py`.
 
+The build-time **Topic Map** page (`site/src/pages/graph.astro`) bakes a static SVG via
+d3-force; its client interactivity (hover, detail panel, "open topic page" link) lives in
+`site/src/scripts/topicMap.ts`.
+
+## Site lens — Researcher vs. Practitioner
+
+The header "Site lens" toggle switches every page between two experiences, persisted in
+`localStorage` under `lec-audience-mode` (values `academic` = Researcher, `practitioner`).
+The choice is a single attribute — `html[data-audience="…"]` — set **before first paint** by
+an inline script in `site/src/layouts/Base.astro`, so the theme never flashes. A one-time
+`LensChooser` dialog (`site/src/components/LensChooser.astro`) prompts first-time visitors.
+
+- **Researcher** (default): the dense, cool, serif "reference index" — papers, citations,
+  concept ontology, and Bloom levels are exposed.
+- **Practitioner**: a plainer, roomier, warmer sans-serif treatment (theme tokens are
+  re-pointed in `Base.astro`); academic scaffolding is hidden and problem-first, how-to
+  affordances lead.
+
+The lens drives content visibility through two global utility classes defined in
+`Base.astro`: `.lens-only--researcher` and `.lens-only--practitioner` (usable at section or
+item level). Micro-copy still uses the older paired `.lens-academic` / `.lens-practitioner`
+spans. Guarded with `python3 tests/test_lens_assets.py`.
+
 This site is under rapid dev

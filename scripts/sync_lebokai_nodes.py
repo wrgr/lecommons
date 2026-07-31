@@ -39,6 +39,17 @@ def load_and_validate(path: Path) -> tuple[str, list[dict]]:
     missing = REQUIRED_KEYS - set(data[0].keys())
     if missing:
         raise SystemExit(f"Manifest nodes are missing required keys: {sorted(missing)}")
+    # Every node's href must be a well-formed /wiki/ path and its slug free of
+    # whitespace: the Explore graph derives the external wiki URL and the
+    # per-page content filename (slug's "/"→"__") from these, so malformed
+    # entries would silently produce broken links. Catch drift at sync time.
+    for node in data:
+        href = node.get("href", "")
+        slug = str(node.get("slug", ""))
+        if not isinstance(href, str) or not href.startswith("/wiki/"):
+            raise SystemExit(f"Manifest node {slug!r} has a non-/wiki/ href: {href!r}")
+        if not slug or any(ch.isspace() for ch in slug):
+            raise SystemExit(f"Manifest node has an empty or whitespace slug: {slug!r}")
     return text, data
 
 

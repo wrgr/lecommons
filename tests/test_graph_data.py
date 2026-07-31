@@ -68,9 +68,30 @@ def test_lebokai_nodes_topics_valid() -> None:
             assert code in topics, f"{node['slug']}: unknown topic {code}"
 
 
+def test_lebokai_hrefs_wellformed() -> None:
+    """Vendored lebokai nodes have /wiki/ hrefs and safe slugs (if the manifest is present).
+
+    The Explore graph builds the external wiki URL and the per-page content
+    filename (slug '/'→'__') from these fields, so a malformed href or a
+    whitespace slug would produce broken links. This flags manifest drift
+    offline; it cannot verify the live wiki still serves each URL.
+    """
+    path = DATA / "lebokai_nodes.json"
+    if not path.exists():
+        return  # manifest is synced separately; absence is not a failure here
+    nodes = json.loads(path.read_text(encoding="utf-8"))
+    for node in nodes:
+        href = node.get("href", "")
+        slug = str(node.get("slug", ""))
+        assert isinstance(href, str) and href.startswith("/wiki/"), f"{slug}: bad href {href!r}"
+        assert node.get("title"), f"{slug}: missing title"
+        assert slug and not any(ch.isspace() for ch in slug), f"whitespace/empty slug {slug!r}"
+
+
 if __name__ == "__main__":
     test_competency_codes_resolve()
     test_pathways_have_pedagogy()
     test_learner_journey_codes_resolve()
     test_lebokai_nodes_topics_valid()
+    test_lebokai_hrefs_wellformed()
     print("graph data OK")

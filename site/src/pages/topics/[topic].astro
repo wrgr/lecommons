@@ -163,9 +163,22 @@ function entryAnchorId(slug: string): string {
     </section>
   )}
 
-  {/* ── Concepts ──────────────────────────────────────────────────────── */}
+  {/* ── Practitioner lens: how to use this topic (plain-language) ──────── */}
+  <section class="how-to-section lens-only--practitioner">
+    <div class="container">
+      <h2>How to use this topic</h2>
+      <p class="how-to-lead">
+        Start with the resources below — they’re the practical methods, tools, and examples
+        tagged to this area. Many can be adapted for resource-constrained and
+        developing-country settings. When you need the underlying evidence and concept
+        structure, switch the site lens to Researcher.
+      </p>
+    </div>
+  </section>
+
+  {/* ── Concepts (researcher lens: concept ontology + Bloom levels) ────── */}
   {concepts.length > 0 && (
-    <section class="concepts-section">
+    <section class="concepts-section lens-only--researcher">
       <div class="container">
         <h2>Concepts in this topic</h2>
         <div class="concept-list">
@@ -340,6 +353,17 @@ function entryAnchorId(slug: string): string {
     font-family: var(--sans);
     font-size: .78rem;
     color: var(--accent);
+  }
+
+  /* ── Practitioner how-to intro ────────────────────────────────────── */
+  .how-to-section { padding: 2rem 0 0; }
+  .how-to-section h2 { font-family: var(--font-head); font-size: 1.15rem; margin: 0 0 .8rem; }
+  .how-to-lead {
+    font-family: var(--sans);
+    font-size: .95rem;
+    line-height: 1.6;
+    color: var(--ink-soft);
+    max-width: var(--measure);
   }
 
   /* ── Concepts ─────────────────────────────────────────────────────── */
