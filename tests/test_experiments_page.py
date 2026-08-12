@@ -48,7 +48,7 @@ def test_featured_paper_banner() -> None:
     """The featured paper is shown as a banner across the top and links out."""
     page = _read("pages/experiments.astro")
     assert "featured-banner" in page, "featured paper banner markup missing"
-    assert "lens-concentration/blob/main/papers/show-your-work.pdf" in page, (
+    assert "lens-concentration/main/papers/show-your-work.pdf" in page, (
         "featured paper link missing"
     )
 
