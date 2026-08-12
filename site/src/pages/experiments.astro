@@ -20,6 +20,15 @@ interface Experiment {
   host: string;
 }
 
+// A single highlighted item shown as a full-width banner across the top of the
+// page, above the experiment grid. Links out to a PDF hosted in another repo.
+const featuredPaper = {
+  title: "Show Your Work",
+  url: "https://github.com/wrgr/lens-concentration/blob/main/papers/show-your-work.pdf",
+  description:
+    "A paper from the LENS concentration on making reasoning visible — showing the work behind judgments rather than only the conclusions.",
+};
+
 // Ordered as presented. Descriptions are editorial blurbs — keep them under
 // three sentences to match the site's card copy elsewhere.
 const experiments: Experiment[] = [
@@ -70,6 +79,15 @@ const experiments: Experiment[] = [
     count={experiments.length}
   />
 
+  <a class="featured-banner" href={featuredPaper.url} target="_blank" rel="noopener">
+    <div class="container featured-inner">
+      <span class="featured-eyebrow">Featured paper</span>
+      <span class="featured-title">{featuredPaper.title}</span>
+      <span class="featured-desc">{featuredPaper.description}</span>
+      <span class="featured-cta">Read the PDF &rarr;</span>
+    </div>
+  </a>
+
   <div class="section-grid container">
     <div class="grid">
       {experiments.map((exp) => (
@@ -92,6 +110,55 @@ const experiments: Experiment[] = [
 </Base>
 
 <style>
+  /* Full-width featured banner across the top, above the grid. The whole
+     banner is a link; a warm tint + accent border sets it apart from cards. */
+  .featured-banner {
+    display: block;
+    border: none;
+    border-bottom: 1px solid var(--border);
+    background:
+      radial-gradient(40rem 12rem at 8% 120%, var(--tint-warm) 0%, transparent 70%),
+      var(--tint);
+  }
+  .featured-inner {
+    display: grid;
+    grid-template-columns: auto;
+    gap: .35rem;
+    padding-top: 1.4rem;
+    padding-bottom: 1.4rem;
+  }
+  .featured-banner:hover { background: var(--tint-warm); }
+  .featured-eyebrow {
+    font-family: var(--sans);
+    font-size: .68rem;
+    font-weight: 700;
+    letter-spacing: .1em;
+    text-transform: uppercase;
+    color: var(--accent);
+  }
+  .featured-title {
+    font-family: var(--serif);
+    font-size: clamp(1.2rem, 2.2vw, 1.5rem);
+    font-weight: 600;
+    color: var(--ink);
+    line-height: 1.25;
+  }
+  .featured-desc {
+    font-family: var(--serif);
+    font-size: 1rem;
+    color: var(--ink-soft);
+    line-height: 1.5;
+    max-width: var(--measure);
+  }
+  .featured-cta {
+    font-family: var(--sans);
+    font-size: .82rem;
+    font-weight: 600;
+    color: var(--accent);
+    margin-top: .1rem;
+  }
+  .featured-banner:hover .featured-cta { text-decoration: underline; }
+
   .section-grid {
     display: flex;
     flex-direction: column;

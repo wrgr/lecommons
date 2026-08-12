@@ -44,8 +44,18 @@ def test_experiments_linked_from_nav() -> None:
     assert 'slug: "experiments"' in nav, "experiments tab not wired into NavBar"
 
 
+def test_featured_paper_banner() -> None:
+    """The featured paper is shown as a banner across the top and links out."""
+    page = _read("pages/experiments.astro")
+    assert "featured-banner" in page, "featured paper banner markup missing"
+    assert "lens-concentration/blob/main/papers/show-your-work.pdf" in page, (
+        "featured paper link missing"
+    )
+
+
 if __name__ == "__main__":
     test_experiments_page_exists()
     test_experiments_page_lists_each_experiment()
     test_experiments_linked_from_nav()
+    test_featured_paper_banner()
     print("experiments page OK")
