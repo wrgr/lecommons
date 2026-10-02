@@ -1,0 +1,664 @@
+<!DOCTYPE html><html lang="en"> <head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="generator" content="Astro v6.1.7"><meta name="description" content="A working vocabulary and conceptual model grounded in IEEE ICICLE, connecting learners, challenges, design, evidence and iteration."><title>Learning engineering ontology · Learning Engineering Commons</title><link rel="icon" type="image/svg+xml" href="/favicon.svg"><script>
+      // Set the audience/lens attribute before first paint so the practitioner
+      // theme (fonts, spacing, accent) never flashes in as the academic default.
+      // Any stored value other than "practitioner" resolves to the researcher
+      // (internally "academic") lens, so legacy/garbage values stay safe.
+      try {
+        var m = localStorage.getItem("lec-audience-mode");
+        document.documentElement.dataset.audience = m === "practitioner" ? "practitioner" : "academic";
+      } catch (e) {
+        document.documentElement.dataset.audience = "academic";
+      }
+    </script> <meta name="robots" content="noindex, nofollow"> <link rel="stylesheet" href="/ontology/json-view.css"> <link rel="stylesheet" href="/_astro/Base.BKkVWIIg.css">
+<link rel="stylesheet" href="/_astro/index@_@astro.Bhb_CEjL.css"></head> <body> <header class="site-nav" data-astro-cid-ymhdp2rl> <div class="nav-inner" data-astro-cid-ymhdp2rl> <a href="/" class="brand" aria-label="Home" data-astro-cid-ymhdp2rl> <span class="brand-mark" data-astro-cid-ymhdp2rl>LEC</span> <span class="brand-text" data-astro-cid-ymhdp2rl>Learning Engineering Commons</span> </a> <nav class="desktop-nav" aria-label="Primary" data-astro-cid-ymhdp2rl> <ul class="nav-list" data-astro-cid-ymhdp2rl> <li data-astro-cid-ymhdp2rl> <a href="/" data-astro-cid-ymhdp2rl>Welcome</a> </li><li data-astro-cid-ymhdp2rl> <a href="/start/" class="nav-cta" data-astro-cid-ymhdp2rl>Start</a> </li><li data-astro-cid-ymhdp2rl> <a href="/practice/" data-astro-cid-ymhdp2rl>Practice</a> </li><li data-astro-cid-ymhdp2rl> <a href="/tools/" data-astro-cid-ymhdp2rl>Tools</a> </li><li data-astro-cid-ymhdp2rl> <a href="/community/" data-astro-cid-ymhdp2rl>Community</a> </li><li data-astro-cid-ymhdp2rl> <a href="/search/" data-astro-cid-ymhdp2rl>Search</a> </li> </ul> <span class="nav-sep" aria-hidden="true" data-astro-cid-ymhdp2rl></span> <span class="nav-group-label" aria-hidden="true" data-astro-cid-ymhdp2rl> <span class="lens-academic" data-astro-cid-ymhdp2rl>Explore</span> <span class="lens-practitioner" data-astro-cid-ymhdp2rl>Optional</span> </span> <ul class="nav-list nav-list--explore" data-astro-cid-ymhdp2rl> <li data-astro-cid-ymhdp2rl> <a href="/explore/" data-astro-cid-ymhdp2rl>Explore</a> </li><li data-astro-cid-ymhdp2rl> <a href="/reading-list/" data-astro-cid-ymhdp2rl>Reading List</a> </li><li data-astro-cid-ymhdp2rl> <a href="/events/" data-astro-cid-ymhdp2rl>Events</a> </li> </ul> <span class="nav-sep" aria-hidden="true" data-astro-cid-ymhdp2rl></span> <ul class="nav-list" data-astro-cid-ymhdp2rl> <li data-astro-cid-ymhdp2rl> <a href="/about/" data-astro-cid-ymhdp2rl>About</a> </li> </ul> </nav> <div class="audience-toggle" role="group" aria-label="Choose your site lens: researcher or practitioner" data-astro-cid-ymhdp2rl> <span class="audience-label" data-astro-cid-ymhdp2rl>Site lens</span> <button type="button" data-audience-mode="academic" aria-pressed="true" data-astro-cid-ymhdp2rl>Researcher</button> <button type="button" data-audience-mode="practitioner" aria-pressed="false" data-astro-cid-ymhdp2rl>Practitioner</button> </div> <details class="mobile-nav" data-astro-cid-ymhdp2rl> <summary aria-label="Toggle navigation menu" data-astro-cid-ymhdp2rl> <span class="current" data-astro-cid-ymhdp2rl>Menu</span> <svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true" focusable="false" data-astro-cid-ymhdp2rl> <path d="M4 7h16M4 12h16M4 17h16" stroke="currentColor" stroke-width="2" stroke-linecap="round" data-astro-cid-ymhdp2rl></path> </svg> </summary> <nav aria-label="Primary (mobile)" data-astro-cid-ymhdp2rl> <p class="m-group" data-astro-cid-ymhdp2rl>Get started</p> <ul data-astro-cid-ymhdp2rl> <li data-astro-cid-ymhdp2rl> <a href="/" data-astro-cid-ymhdp2rl>Welcome</a> </li><li data-astro-cid-ymhdp2rl> <a href="/start/" class="nav-cta" data-astro-cid-ymhdp2rl>Start</a> </li><li data-astro-cid-ymhdp2rl> <a href="/practice/" data-astro-cid-ymhdp2rl>Practice</a> </li><li data-astro-cid-ymhdp2rl> <a href="/tools/" data-astro-cid-ymhdp2rl>Tools</a> </li><li data-astro-cid-ymhdp2rl> <a href="/community/" data-astro-cid-ymhdp2rl>Community</a> </li><li data-astro-cid-ymhdp2rl> <a href="/search/" data-astro-cid-ymhdp2rl>Search</a> </li> </ul> <p class="m-group" data-astro-cid-ymhdp2rl> <span class="lens-academic" data-astro-cid-ymhdp2rl>Explore the field</span> <span class="lens-practitioner" data-astro-cid-ymhdp2rl>Go deeper · optional</span> </p> <ul data-astro-cid-ymhdp2rl> <li data-astro-cid-ymhdp2rl> <a href="/explore/" data-astro-cid-ymhdp2rl>Explore</a> </li><li data-astro-cid-ymhdp2rl> <a href="/reading-list/" data-astro-cid-ymhdp2rl>Reading List</a> </li><li data-astro-cid-ymhdp2rl> <a href="/events/" data-astro-cid-ymhdp2rl>Events</a> </li> </ul> <ul data-astro-cid-ymhdp2rl> <li data-astro-cid-ymhdp2rl> <a href="/about/" data-astro-cid-ymhdp2rl>About</a> </li> </ul> </nav> </details> </div> </header> <script type="module">const a=document.querySelectorAll("[data-audience-mode]"),c="lec-audience-mode";function d(e){document.documentElement.dataset.audience=e,a.forEach(t=>{t.setAttribute("aria-pressed",String(t.dataset.audienceMode===e))})}const i=localStorage.getItem(c);d(i==="practitioner"?"practitioner":"academic");a.forEach(e=>{e.addEventListener("click",()=>{const t=e.dataset.audienceMode==="practitioner"?"practitioner":"academic";localStorage.setItem(c,t),d(t)})});</script> <div id="lens-chooser" class="lens-chooser" role="dialog" aria-modal="true" aria-labelledby="lens-chooser-title" hidden data-astro-cid-d7afkfju> <div class="lens-chooser-card" data-astro-cid-d7afkfju> <h2 id="lens-chooser-title" data-astro-cid-d7afkfju>How do you want to use this site?</h2> <p data-astro-cid-d7afkfju>
+Pick the experience that fits you — you can switch anytime with the “Site lens”
+      toggle in the top bar.
+</p> <div class="lens-chooser-options" data-astro-cid-d7afkfju> <button type="button" data-choose="academic" class="lens-choice" data-astro-cid-d7afkfju> <span class="lens-choice-title" data-astro-cid-d7afkfju>I’m a researcher</span> <span class="lens-choice-desc" data-astro-cid-d7afkfju>Evidence-first: papers, citations, concepts, and the full topic map.</span> </button> <button type="button" data-choose="practitioner" class="lens-choice" data-astro-cid-d7afkfju> <span class="lens-choice-title" data-astro-cid-d7afkfju>I’m a practitioner</span> <span class="lens-choice-desc" data-astro-cid-d7afkfju>Problem-first: plain-language methods, tools, and next steps you can apply.</span> </button> </div> <button type="button" data-choose="skip" class="lens-skip" data-astro-cid-d7afkfju>Skip for now</button> </div> </div> <script>
+  // Self-contained: no imports so it can run inline right after the nav renders.
+  (function () {
+    var KEY = "lec-audience-mode";
+    var dialog = document.getElementById("lens-chooser");
+    if (!dialog) return;
+
+    // Only prompt on a genuine first visit (nothing stored yet).
+    var stored;
+    try { stored = localStorage.getItem(KEY); } catch (e) { stored = "academic"; }
+    if (stored === "academic" || stored === "practitioner") return;
+
+    var buttons = dialog.querySelectorAll("[data-choose]");
+    var focusable = dialog.querySelectorAll(".lens-choice, .lens-skip");
+    var first = focusable[0];
+    var last = focusable[focusable.length - 1];
+
+    function apply(mode) {
+      // Mirror NavBar.setAudienceMode so the header toggle reflects the choice.
+      document.documentElement.dataset.audience = mode;
+      var toggles = document.querySelectorAll("[data-audience-mode]");
+      for (var i = 0; i < toggles.length; i++) {
+        toggles[i].setAttribute("aria-pressed", String(toggles[i].dataset.audienceMode === mode));
+      }
+    }
+
+    function close(mode) {
+      // Persist the resolved lens (default academic on skip) so this never reappears.
+      var resolved = mode === "practitioner" ? "practitioner" : "academic";
+      try { localStorage.setItem(KEY, resolved); } catch (e) {}
+      apply(resolved);
+      dialog.hidden = true;
+    }
+
+    for (var i = 0; i < buttons.length; i++) {
+      buttons[i].addEventListener("click", function () {
+        var choice = this.getAttribute("data-choose");
+        close(choice === "skip" ? "academic" : choice);
+      });
+    }
+
+    // Minimal focus trap: keep Tab within the dialog; Escape dismisses (default).
+    dialog.addEventListener("keydown", function (e) {
+      if (e.key === "Escape") { close("academic"); return; }
+      if (e.key !== "Tab") return;
+      if (e.shiftKey && document.activeElement === first) { e.preventDefault(); last.focus(); }
+      else if (!e.shiftKey && document.activeElement === last) { e.preventDefault(); first.focus(); }
+    });
+
+    dialog.hidden = false;
+    if (first) first.focus();
+  })();
+</script> <main>   <div class="container-wide ontology" data-astro-cid-5dtft5wh> <header class="intro" data-astro-cid-5dtft5wh> <p class="eyebrow" data-astro-cid-5dtft5wh>Shared vocabulary · Working draft 0.1.0</p> <h1 data-astro-cid-5dtft5wh>Learning engineering,<br data-astro-cid-5dtft5wh>connected.</h1> <p class="lede" data-astro-cid-5dtft5wh>A vocabulary for describing the people, problems, methods and evidence involved in supporting learning.</p> <div class="draft" data-astro-cid-5dtft5wh><strong data-astro-cid-5dtft5wh>For review.</strong> Grounded in IEEE ICICLE. Definitions and relationships are proposed; this is not an IEEE standard or an ICICLE-endorsed ontology.</div> <nav class="page-links" aria-label="On this page" data-astro-cid-5dtft5wh><a href="#vocabulary" data-astro-cid-5dtft5wh>Vocabulary</a><a href="#competencies" data-astro-cid-5dtft5wh>Competencies</a><a href="#case" data-astro-cid-5dtft5wh>Worked example</a><a href="#sources" data-astro-cid-5dtft5wh>Sources</a><a href="#record" data-astro-cid-5dtft5wh>Formatted JSON</a></nav> </header> <section class="foundation" aria-labelledby="foundation-heading" data-astro-cid-5dtft5wh> <div data-astro-cid-5dtft5wh><p class="eyebrow" data-astro-cid-5dtft5wh>The foundation</p><h2 id="foundation-heading" data-astro-cid-5dtft5wh>Process and practice</h2><p data-astro-cid-5dtft5wh>Applying learning sciences through human-centered and engineering design, using iterative data-informed decisions to support learners and learning.</p><p class="source-note" data-astro-cid-5dtft5wh>Paraphrase of <a href="https://sagroups.ieee.org/icicle/learning-engineering-process/" data-astro-cid-5dtft5wh>ICICLE’s published definition</a>.</p></div> <div class="distinctions" data-astro-cid-5dtft5wh><h3 data-astro-cid-5dtft5wh>Distinctions that matter</h3><p data-astro-cid-5dtft5wh><strong data-astro-cid-5dtft5wh>Desired ≠ observed.</strong> An intended result is not evidence of achievement.</p><p data-astro-cid-5dtft5wh><strong data-astro-cid-5dtft5wh>Data ≠ evidence ≠ decisions.</strong> Observations need interpretation; choices need a rationale.</p><p data-astro-cid-5dtft5wh><strong data-astro-cid-5dtft5wh>Iteration throughout.</strong> Activities may overlap and revisit earlier work.</p></div> </section> <div class="model-layout" id="vocabulary" data-astro-cid-5dtft5wh> <aside class="module-index" data-astro-cid-5dtft5wh><h2 data-astro-cid-5dtft5wh>Eight parts of the model</h2><p data-astro-cid-5dtft5wh>28 concepts · 35 relationships</p><nav aria-label="Vocabulary modules" data-astro-cid-5dtft5wh><a href="#module-purpose" data-astro-cid-5dtft5wh><span data-astro-cid-5dtft5wh>01</span>Process and practice</a><a href="#module-people" data-astro-cid-5dtft5wh><span data-astro-cid-5dtft5wh>02</span>Learners, stakeholders, and context</a><a href="#module-challenge" data-astro-cid-5dtft5wh><span data-astro-cid-5dtft5wh>03</span>Challenges and intended outcomes</a><a href="#module-foundations" data-astro-cid-5dtft5wh><span data-astro-cid-5dtft5wh>04</span>Scientific foundations and design methods</a><a href="#module-solution" data-astro-cid-5dtft5wh><span data-astro-cid-5dtft5wh>05</span>Solutions and learning experiences</a><a href="#module-evidence" data-astro-cid-5dtft5wh><span data-astro-cid-5dtft5wh>06</span>Measurement, evidence, and decisions</a><a href="#module-improvement" data-astro-cid-5dtft5wh><span data-astro-cid-5dtft5wh>07</span>Implementation, investigation, and iteration</a><a href="#module-capacity" data-astro-cid-5dtft5wh><span data-astro-cid-5dtft5wh>08</span>Teams and organizational capacity</a></nav><a class="small-link" href="#questions" data-astro-cid-5dtft5wh>Questions the model should answer</a></aside> <div class="vocabulary" data-astro-cid-5dtft5wh><section class="module" id="module-purpose" aria-labelledby="heading-purpose" data-astro-cid-5dtft5wh> <div class="module-heading" data-astro-cid-5dtft5wh><span data-astro-cid-5dtft5wh>01</span><h2 id="heading-purpose" data-astro-cid-5dtft5wh>Process and practice</h2></div> <article class="term" id="term-learning-engineering" data-astro-cid-5dtft5wh> <h3 data-astro-cid-5dtft5wh>Learning engineering<a class="permalink" href="#term-learning-engineering" aria-label="Link to Learning engineering" data-astro-cid-5dtft5wh>#</a></h3><p data-astro-cid-5dtft5wh>The process and practice characterized by the foundation definition above.</p>    <p class="term-source" data-astro-cid-5dtft5wh>Grounding: <a href="https://sagroups.ieee.org/icicle/learning-engineering-process/" data-astro-cid-5dtft5wh>ICICLE process</a></p> </article><article class="term" id="term-process" data-astro-cid-5dtft5wh> <h3 data-astro-cid-5dtft5wh>Learning engineering process<a class="permalink" href="#term-process" aria-label="Link to Learning engineering process" data-astro-cid-5dtft5wh>#</a></h3><p data-astro-cid-5dtft5wh>Connected activities undertaken in a particular learning engineering effort.</p>  <ul class="relations" data-astro-cid-5dtft5wh><li data-astro-cid-5dtft5wh><span data-astro-cid-5dtft5wh>includes</span><a href="#term-creation" data-astro-cid-5dtft5wh>Creation</a></li><li data-astro-cid-5dtft5wh><span data-astro-cid-5dtft5wh>includes</span><a href="#term-implementation" data-astro-cid-5dtft5wh>Implementation</a></li><li data-astro-cid-5dtft5wh><span data-astro-cid-5dtft5wh>includes</span><a href="#term-investigation" data-astro-cid-5dtft5wh>Investigation</a></li><li data-astro-cid-5dtft5wh><span data-astro-cid-5dtft5wh>includes</span><a href="#term-iteration" data-astro-cid-5dtft5wh>Iteration</a></li><li data-astro-cid-5dtft5wh><span data-astro-cid-5dtft5wh>addresses</span><a href="#term-challenge" data-astro-cid-5dtft5wh>Learning challenge</a></li><li data-astro-cid-5dtft5wh><span data-astro-cid-5dtft5wh>applies knowledge from</span><a href="#term-learning-sciences" data-astro-cid-5dtft5wh>Learning sciences</a></li><li data-astro-cid-5dtft5wh><span data-astro-cid-5dtft5wh>uses</span><a href="#term-design-method" data-astro-cid-5dtft5wh>Design method</a></li></ul>  <p class="term-source" data-astro-cid-5dtft5wh>Grounding: <a href="https://sagroups.ieee.org/icicle/learning-engineering-process/" data-astro-cid-5dtft5wh>ICICLE process</a></p> </article><article class="term" id="term-practice" data-astro-cid-5dtft5wh> <h3 data-astro-cid-5dtft5wh>Learning engineering practice<a class="permalink" href="#term-practice" aria-label="Link to Learning engineering practice" data-astro-cid-5dtft5wh>#</a></h3><p data-astro-cid-5dtft5wh>The enacted use of learning engineering approaches across efforts.</p>  <ul class="relations" data-astro-cid-5dtft5wh><li data-astro-cid-5dtft5wh><span data-astro-cid-5dtft5wh>is enacted through</span><a href="#term-process" data-astro-cid-5dtft5wh>Learning engineering process</a></li></ul>  <p class="term-source" data-astro-cid-5dtft5wh>Grounding: <a href="https://sagroups.ieee.org/icicle/learning-engineering-process/" data-astro-cid-5dtft5wh>ICICLE process</a></p> </article> </section><section class="module" id="module-people" aria-labelledby="heading-people" data-astro-cid-5dtft5wh> <div class="module-heading" data-astro-cid-5dtft5wh><span data-astro-cid-5dtft5wh>02</span><h2 id="heading-people" data-astro-cid-5dtft5wh>Learners, stakeholders, and context</h2></div> <article class="term" id="term-learner" data-astro-cid-5dtft5wh> <h3 data-astro-cid-5dtft5wh>Learner<a class="permalink" href="#term-learner" aria-label="Link to Learner" data-astro-cid-5dtft5wh>#</a></h3><p data-astro-cid-5dtft5wh>A participant whose learning the effort seeks to support.</p>  <ul class="relations" data-astro-cid-5dtft5wh><li data-astro-cid-5dtft5wh><span data-astro-cid-5dtft5wh>participates in</span><a href="#term-learning-experience" data-astro-cid-5dtft5wh>Learning experience</a></li></ul>  <p class="term-source" data-astro-cid-5dtft5wh>Grounding: <a href="https://sagroups.ieee.org/icicle/learning-engineering-process/" data-astro-cid-5dtft5wh>ICICLE process</a></p> </article><article class="term" id="term-stakeholder" data-astro-cid-5dtft5wh> <h3 data-astro-cid-5dtft5wh>Stakeholder<a class="permalink" href="#term-stakeholder" aria-label="Link to Stakeholder" data-astro-cid-5dtft5wh>#</a></h3><p data-astro-cid-5dtft5wh>A person or group with an interest in an effort.</p>  <ul class="relations" data-astro-cid-5dtft5wh><li data-astro-cid-5dtft5wh><span data-astro-cid-5dtft5wh>participates in</span><a href="#term-creation" data-astro-cid-5dtft5wh>Creation</a></li></ul>  <p class="term-source" data-astro-cid-5dtft5wh>Grounding: <a href="https://sagroups.ieee.org/icicle/learning-engineering-process/" data-astro-cid-5dtft5wh>ICICLE process</a></p> </article><article class="term" id="term-context" data-astro-cid-5dtft5wh> <h3 data-astro-cid-5dtft5wh>Learning context<a class="permalink" href="#term-context" aria-label="Link to Learning context" data-astro-cid-5dtft5wh>#</a></h3><p data-astro-cid-5dtft5wh>Conditions surrounding learners, the challenge, and the solution.</p>    <p class="term-source" data-astro-cid-5dtft5wh>Grounding: <a href="https://sagroups.ieee.org/icicle/learning-engineering-process/" data-astro-cid-5dtft5wh>ICICLE process</a></p> </article> </section><section class="module" id="module-challenge" aria-labelledby="heading-challenge" data-astro-cid-5dtft5wh> <div class="module-heading" data-astro-cid-5dtft5wh><span data-astro-cid-5dtft5wh>03</span><h2 id="heading-challenge" data-astro-cid-5dtft5wh>Challenges and intended outcomes</h2></div> <article class="term" id="term-challenge" data-astro-cid-5dtft5wh> <h3 data-astro-cid-5dtft5wh>Learning challenge<a class="permalink" href="#term-challenge" aria-label="Link to Learning challenge" data-astro-cid-5dtft5wh>#</a></h3><p data-astro-cid-5dtft5wh>A problem or opportunity an effort aims to address.</p>  <ul class="relations" data-astro-cid-5dtft5wh><li data-astro-cid-5dtft5wh><span data-astro-cid-5dtft5wh>is situated in</span><a href="#term-context" data-astro-cid-5dtft5wh>Learning context</a></li><li data-astro-cid-5dtft5wh><span data-astro-cid-5dtft5wh>concerns</span><a href="#term-learner" data-astro-cid-5dtft5wh>Learner</a></li><li data-astro-cid-5dtft5wh><span data-astro-cid-5dtft5wh>has intended result</span><a href="#term-desired-outcome" data-astro-cid-5dtft5wh>Desired outcome</a></li></ul>  <p class="term-source" data-astro-cid-5dtft5wh>Grounding: <a href="https://sagroups.ieee.org/icicle/learning-engineering-process/" data-astro-cid-5dtft5wh>ICICLE process</a></p> </article><article class="term" id="term-desired-outcome" data-astro-cid-5dtft5wh> <h3 data-astro-cid-5dtft5wh>Desired outcome<a class="permalink" href="#term-desired-outcome" aria-label="Link to Desired outcome" data-astro-cid-5dtft5wh>#</a></h3><p data-astro-cid-5dtft5wh>An intended result, distinguished from what actually occurs.</p> <p class="term-note" data-astro-cid-5dtft5wh>Proposed distinction from observed outcome.</p>   <p class="term-source" data-astro-cid-5dtft5wh>Grounding: <a href="https://sagroups.ieee.org/icicle/learning-engineering-process/" data-astro-cid-5dtft5wh>ICICLE process</a></p> </article> </section><section class="module" id="module-foundations" aria-labelledby="heading-foundations" data-astro-cid-5dtft5wh> <div class="module-heading" data-astro-cid-5dtft5wh><span data-astro-cid-5dtft5wh>04</span><h2 id="heading-foundations" data-astro-cid-5dtft5wh>Scientific foundations and design methods</h2></div> <article class="term" id="term-learning-sciences" data-astro-cid-5dtft5wh> <h3 data-astro-cid-5dtft5wh>Learning sciences<a class="permalink" href="#term-learning-sciences" aria-label="Link to Learning sciences" data-astro-cid-5dtft5wh>#</a></h3><p data-astro-cid-5dtft5wh>Scientific knowledge and inquiry concerning learning.</p>    <p class="term-source" data-astro-cid-5dtft5wh>Grounding: <a href="https://sagroups.ieee.org/icicle/learning-engineering-process/" data-astro-cid-5dtft5wh>ICICLE process</a></p> </article><article class="term" id="term-design-principle" data-astro-cid-5dtft5wh> <h3 data-astro-cid-5dtft5wh>Design principle<a class="permalink" href="#term-design-principle" aria-label="Link to Design principle" data-astro-cid-5dtft5wh>#</a></h3><p data-astro-cid-5dtft5wh>A statement guiding design choices under stated conditions.</p> <p class="term-note" data-astro-cid-5dtft5wh>Candidate elaboration; inspect the listed Learning Design Principles toolkit.</p> <ul class="relations" data-astro-cid-5dtft5wh><li data-astro-cid-5dtft5wh><span data-astro-cid-5dtft5wh>informs</span><a href="#term-creation" data-astro-cid-5dtft5wh>Creation</a></li></ul>  <p class="term-source" data-astro-cid-5dtft5wh>Grounding: <a href="https://sagroups.ieee.org/icicle/resources/" data-astro-cid-5dtft5wh>ICICLE resources</a></p> </article><article class="term" id="term-design-method" data-astro-cid-5dtft5wh> <h3 data-astro-cid-5dtft5wh>Design method<a class="permalink" href="#term-design-method" aria-label="Link to Design method" data-astro-cid-5dtft5wh>#</a></h3><p data-astro-cid-5dtft5wh>An approach for developing or revising a solution.</p>    <p class="term-source" data-astro-cid-5dtft5wh>Grounding: <a href="https://sagroups.ieee.org/icicle/learning-engineering-process/" data-astro-cid-5dtft5wh>ICICLE process</a></p> </article><article class="term" id="term-human-centered-design" data-astro-cid-5dtft5wh> <h3 data-astro-cid-5dtft5wh>Human-centered design method<a class="permalink" href="#term-human-centered-design" aria-label="Link to Human-centered design method" data-astro-cid-5dtft5wh>#</a></h3><p data-astro-cid-5dtft5wh>A design method attending to people and their experience.</p>   <p class="term-note" data-astro-cid-5dtft5wh>A kind of <a href="#term-design-method" data-astro-cid-5dtft5wh>Design method</a>.</p> <p class="term-source" data-astro-cid-5dtft5wh>Grounding: <a href="https://sagroups.ieee.org/icicle/learning-engineering-process/" data-astro-cid-5dtft5wh>ICICLE process</a></p> </article><article class="term" id="term-engineering-design" data-astro-cid-5dtft5wh> <h3 data-astro-cid-5dtft5wh>Engineering design method<a class="permalink" href="#term-engineering-design" aria-label="Link to Engineering design method" data-astro-cid-5dtft5wh>#</a></h3><p data-astro-cid-5dtft5wh>A design method for developing solutions against requirements and constraints.</p>   <p class="term-note" data-astro-cid-5dtft5wh>A kind of <a href="#term-design-method" data-astro-cid-5dtft5wh>Design method</a>.</p> <p class="term-source" data-astro-cid-5dtft5wh>Grounding: <a href="https://sagroups.ieee.org/icicle/learning-engineering-process/" data-astro-cid-5dtft5wh>ICICLE process</a></p> </article> </section><section class="module" id="module-solution" aria-labelledby="heading-solution" data-astro-cid-5dtft5wh> <div class="module-heading" data-astro-cid-5dtft5wh><span data-astro-cid-5dtft5wh>05</span><h2 id="heading-solution" data-astro-cid-5dtft5wh>Solutions and learning experiences</h2></div> <article class="term" id="term-solution" data-astro-cid-5dtft5wh> <h3 data-astro-cid-5dtft5wh>Learning solution<a class="permalink" href="#term-solution" aria-label="Link to Learning solution" data-astro-cid-5dtft5wh>#</a></h3><p data-astro-cid-5dtft5wh>An arrangement intended to address a learning challenge.</p> <p class="term-note" data-astro-cid-5dtft5wh>May combine instruction, support, activities, environments, and technology.</p> <ul class="relations" data-astro-cid-5dtft5wh><li data-astro-cid-5dtft5wh><span data-astro-cid-5dtft5wh>addresses</span><a href="#term-challenge" data-astro-cid-5dtft5wh>Learning challenge</a></li><li data-astro-cid-5dtft5wh><span data-astro-cid-5dtft5wh>enables</span><a href="#term-learning-experience" data-astro-cid-5dtft5wh>Learning experience</a></li></ul>  <p class="term-source" data-astro-cid-5dtft5wh>Grounding: <a href="https://sagroups.ieee.org/icicle/learning-engineering-process/" data-astro-cid-5dtft5wh>ICICLE process</a></p> </article><article class="term" id="term-learning-experience" data-astro-cid-5dtft5wh> <h3 data-astro-cid-5dtft5wh>Learning experience<a class="permalink" href="#term-learning-experience" aria-label="Link to Learning experience" data-astro-cid-5dtft5wh>#</a></h3><p data-astro-cid-5dtft5wh>An experience through which a learner engages in learning.</p>    <p class="term-source" data-astro-cid-5dtft5wh>Grounding: <a href="https://sagroups.ieee.org/icicle/learning-engineering-process/" data-astro-cid-5dtft5wh>ICICLE process</a></p> </article><article class="term" id="term-creation" data-astro-cid-5dtft5wh> <h3 data-astro-cid-5dtft5wh>Creation<a class="permalink" href="#term-creation" aria-label="Link to Creation" data-astro-cid-5dtft5wh>#</a></h3><p data-astro-cid-5dtft5wh>Developing a solution, including design and instrumentation.</p>  <ul class="relations" data-astro-cid-5dtft5wh><li data-astro-cid-5dtft5wh><span data-astro-cid-5dtft5wh>develops</span><a href="#term-solution" data-astro-cid-5dtft5wh>Learning solution</a></li><li data-astro-cid-5dtft5wh><span data-astro-cid-5dtft5wh>includes</span><a href="#term-instrumentation" data-astro-cid-5dtft5wh>Instrumentation</a></li></ul>  <p class="term-source" data-astro-cid-5dtft5wh>Grounding: <a href="https://sagroups.ieee.org/icicle/learning-engineering-process/" data-astro-cid-5dtft5wh>ICICLE process</a></p> </article> </section><section class="module" id="module-evidence" aria-labelledby="heading-evidence" data-astro-cid-5dtft5wh> <div class="module-heading" data-astro-cid-5dtft5wh><span data-astro-cid-5dtft5wh>06</span><h2 id="heading-evidence" data-astro-cid-5dtft5wh>Measurement, evidence, and decisions</h2></div> <article class="term" id="term-instrumentation" data-astro-cid-5dtft5wh> <h3 data-astro-cid-5dtft5wh>Instrumentation<a class="permalink" href="#term-instrumentation" aria-label="Link to Instrumentation" data-astro-cid-5dtft5wh>#</a></h3><p data-astro-cid-5dtft5wh>Establishing how observations will be defined and captured.</p>  <ul class="relations" data-astro-cid-5dtft5wh><li data-astro-cid-5dtft5wh><span data-astro-cid-5dtft5wh>specifies procedures for</span><a href="#term-measurement" data-astro-cid-5dtft5wh>Measurement</a></li></ul>  <p class="term-source" data-astro-cid-5dtft5wh>Grounding: <a href="https://sagroups.ieee.org/icicle/learning-engineering-process/" data-astro-cid-5dtft5wh>ICICLE process</a></p> </article><article class="term" id="term-measurement" data-astro-cid-5dtft5wh> <h3 data-astro-cid-5dtft5wh>Measurement<a class="permalink" href="#term-measurement" aria-label="Link to Measurement" data-astro-cid-5dtft5wh>#</a></h3><p data-astro-cid-5dtft5wh>Assigning observations to defined measures using specified procedures.</p> <p class="term-note" data-astro-cid-5dtft5wh>Distinguished from the wider work of instrumentation.</p> <ul class="relations" data-astro-cid-5dtft5wh><li data-astro-cid-5dtft5wh><span data-astro-cid-5dtft5wh>produces</span><a href="#term-data" data-astro-cid-5dtft5wh>Data</a></li></ul>  <p class="term-source" data-astro-cid-5dtft5wh>Grounding: <a href="https://sagroups.ieee.org/icicle/learning-engineering-process/" data-astro-cid-5dtft5wh>ICICLE process</a></p> </article><article class="term" id="term-data" data-astro-cid-5dtft5wh> <h3 data-astro-cid-5dtft5wh>Data<a class="permalink" href="#term-data" aria-label="Link to Data" data-astro-cid-5dtft5wh>#</a></h3><p data-astro-cid-5dtft5wh>Recorded observations available for analysis.</p>    <p class="term-source" data-astro-cid-5dtft5wh>Grounding: <a href="https://sagroups.ieee.org/icicle/learning-engineering-process/" data-astro-cid-5dtft5wh>ICICLE process</a></p> </article><article class="term" id="term-evidence" data-astro-cid-5dtft5wh> <h3 data-astro-cid-5dtft5wh>Evidence<a class="permalink" href="#term-evidence" aria-label="Link to Evidence" data-astro-cid-5dtft5wh>#</a></h3><p data-astro-cid-5dtft5wh>Information interpreted as bearing on a question or claim.</p> <p class="term-note" data-astro-cid-5dtft5wh>Proposed definition; inspect the listed Evidence Decision Tracker materials.</p> <ul class="relations" data-astro-cid-5dtft5wh><li data-astro-cid-5dtft5wh><span data-astro-cid-5dtft5wh>is derived from</span><a href="#term-data" data-astro-cid-5dtft5wh>Data</a></li><li data-astro-cid-5dtft5wh><span data-astro-cid-5dtft5wh>informs</span><a href="#term-decision" data-astro-cid-5dtft5wh>Decision</a></li></ul>  <p class="term-source" data-astro-cid-5dtft5wh>Grounding: <a href="https://sagroups.ieee.org/icicle/resources/" data-astro-cid-5dtft5wh>ICICLE resources</a></p> </article><article class="term" id="term-decision" data-astro-cid-5dtft5wh> <h3 data-astro-cid-5dtft5wh>Decision<a class="permalink" href="#term-decision" aria-label="Link to Decision" data-astro-cid-5dtft5wh>#</a></h3><p data-astro-cid-5dtft5wh>A choice among actions, recorded with its rationale.</p> <p class="term-note" data-astro-cid-5dtft5wh>Proposed definition; inspect the listed decision-tracking materials.</p> <ul class="relations" data-astro-cid-5dtft5wh><li data-astro-cid-5dtft5wh><span data-astro-cid-5dtft5wh>guides</span><a href="#term-iteration" data-astro-cid-5dtft5wh>Iteration</a></li></ul>  <p class="term-source" data-astro-cid-5dtft5wh>Grounding: <a href="https://sagroups.ieee.org/icicle/resources/" data-astro-cid-5dtft5wh>ICICLE resources</a></p> </article> </section><section class="module" id="module-improvement" aria-labelledby="heading-improvement" data-astro-cid-5dtft5wh> <div class="module-heading" data-astro-cid-5dtft5wh><span data-astro-cid-5dtft5wh>07</span><h2 id="heading-improvement" data-astro-cid-5dtft5wh>Implementation, investigation, and iteration</h2></div> <article class="term" id="term-implementation" data-astro-cid-5dtft5wh> <h3 data-astro-cid-5dtft5wh>Implementation<a class="permalink" href="#term-implementation" aria-label="Link to Implementation" data-astro-cid-5dtft5wh>#</a></h3><p data-astro-cid-5dtft5wh>Putting a solution into use in its intended setting.</p>  <ul class="relations" data-astro-cid-5dtft5wh><li data-astro-cid-5dtft5wh><span data-astro-cid-5dtft5wh>puts into use</span><a href="#term-solution" data-astro-cid-5dtft5wh>Learning solution</a></li><li data-astro-cid-5dtft5wh><span data-astro-cid-5dtft5wh>takes place in</span><a href="#term-context" data-astro-cid-5dtft5wh>Learning context</a></li></ul>  <p class="term-source" data-astro-cid-5dtft5wh>Grounding: <a href="https://sagroups.ieee.org/icicle/learning-engineering-process/" data-astro-cid-5dtft5wh>ICICLE process</a></p> </article><article class="term" id="term-investigation" data-astro-cid-5dtft5wh> <h3 data-astro-cid-5dtft5wh>Investigation<a class="permalink" href="#term-investigation" aria-label="Link to Investigation" data-astro-cid-5dtft5wh>#</a></h3><p data-astro-cid-5dtft5wh>Examining data to understand results and inform further action.</p>  <ul class="relations" data-astro-cid-5dtft5wh><li data-astro-cid-5dtft5wh><span data-astro-cid-5dtft5wh>analyzes</span><a href="#term-data" data-astro-cid-5dtft5wh>Data</a></li><li data-astro-cid-5dtft5wh><span data-astro-cid-5dtft5wh>examines</span><a href="#term-observed-outcome" data-astro-cid-5dtft5wh>Observed outcome</a></li><li data-astro-cid-5dtft5wh><span data-astro-cid-5dtft5wh>produces</span><a href="#term-evidence" data-astro-cid-5dtft5wh>Evidence</a></li></ul>  <p class="term-source" data-astro-cid-5dtft5wh>Grounding: <a href="https://sagroups.ieee.org/icicle/learning-engineering-process/" data-astro-cid-5dtft5wh>ICICLE process</a></p> </article><article class="term" id="term-observed-outcome" data-astro-cid-5dtft5wh> <h3 data-astro-cid-5dtft5wh>Observed outcome<a class="permalink" href="#term-observed-outcome" aria-label="Link to Observed outcome" data-astro-cid-5dtft5wh>#</a></h3><p data-astro-cid-5dtft5wh>A result observed during or after use of a solution.</p> <p class="term-note" data-astro-cid-5dtft5wh>An observed result does not by itself establish causation.</p> <ul class="relations" data-astro-cid-5dtft5wh><li data-astro-cid-5dtft5wh><span data-astro-cid-5dtft5wh>is assessed against</span><a href="#term-desired-outcome" data-astro-cid-5dtft5wh>Desired outcome</a></li></ul>  <p class="term-source" data-astro-cid-5dtft5wh>Grounding: <a href="https://sagroups.ieee.org/icicle/learning-engineering-process/" data-astro-cid-5dtft5wh>ICICLE process</a></p> </article><article class="term" id="term-iteration" data-astro-cid-5dtft5wh> <h3 data-astro-cid-5dtft5wh>Iteration<a class="permalink" href="#term-iteration" aria-label="Link to Iteration" data-astro-cid-5dtft5wh>#</a></h3><p data-astro-cid-5dtft5wh>Revisiting work and revising it in light of findings.</p>  <ul class="relations" data-astro-cid-5dtft5wh><li data-astro-cid-5dtft5wh><span data-astro-cid-5dtft5wh>revisits</span><a href="#term-challenge" data-astro-cid-5dtft5wh>Learning challenge</a></li><li data-astro-cid-5dtft5wh><span data-astro-cid-5dtft5wh>revises</span><a href="#term-solution" data-astro-cid-5dtft5wh>Learning solution</a></li><li data-astro-cid-5dtft5wh><span data-astro-cid-5dtft5wh>revises</span><a href="#term-instrumentation" data-astro-cid-5dtft5wh>Instrumentation</a></li></ul>  <p class="term-source" data-astro-cid-5dtft5wh>Grounding: <a href="https://sagroups.ieee.org/icicle/learning-engineering-process/" data-astro-cid-5dtft5wh>ICICLE process</a></p> </article> </section><section class="module" id="module-capacity" aria-labelledby="heading-capacity" data-astro-cid-5dtft5wh> <div class="module-heading" data-astro-cid-5dtft5wh><span data-astro-cid-5dtft5wh>08</span><h2 id="heading-capacity" data-astro-cid-5dtft5wh>Teams and organizational capacity</h2></div> <article class="term" id="term-team" data-astro-cid-5dtft5wh> <h3 data-astro-cid-5dtft5wh>Learning engineering team<a class="permalink" href="#term-team" aria-label="Link to Learning engineering team" data-astro-cid-5dtft5wh>#</a></h3><p data-astro-cid-5dtft5wh>People contributing expertise to a learning engineering effort.</p> <p class="term-note" data-astro-cid-5dtft5wh>An effort may involve one person or several.</p> <ul class="relations" data-astro-cid-5dtft5wh><li data-astro-cid-5dtft5wh><span data-astro-cid-5dtft5wh>contributes to</span><a href="#term-process" data-astro-cid-5dtft5wh>Learning engineering process</a></li><li data-astro-cid-5dtft5wh><span data-astro-cid-5dtft5wh>contributes</span><a href="#term-expertise" data-astro-cid-5dtft5wh>Area of expertise</a></li></ul>  <p class="term-source" data-astro-cid-5dtft5wh>Grounding: <a href="https://sagroups.ieee.org/icicle/learning-engineering-process/" data-astro-cid-5dtft5wh>ICICLE process</a></p> </article><article class="term" id="term-expertise" data-astro-cid-5dtft5wh> <h3 data-astro-cid-5dtft5wh>Area of expertise<a class="permalink" href="#term-expertise" aria-label="Link to Area of expertise" data-astro-cid-5dtft5wh>#</a></h3><p data-astro-cid-5dtft5wh>A domain of knowledge or skill contributed to an effort.</p>    <p class="term-source" data-astro-cid-5dtft5wh>Grounding: <a href="https://sagroups.ieee.org/icicle/learning-engineering-process/" data-astro-cid-5dtft5wh>ICICLE process</a> · <a href="https://sagroups.ieee.org/icicle/resources/" data-astro-cid-5dtft5wh>ICICLE resources</a></p> </article><article class="term" id="term-organizational-maturity" data-astro-cid-5dtft5wh> <h3 data-astro-cid-5dtft5wh>Learning engineering adoption maturity<a class="permalink" href="#term-organizational-maturity" aria-label="Link to Learning engineering adoption maturity" data-astro-cid-5dtft5wh>#</a></h3><p data-astro-cid-5dtft5wh>An organization&#39;s degree of adoption of learning engineering practices.</p> <p class="term-note" data-astro-cid-5dtft5wh>Candidate elaboration; no maturity levels asserted before reviewing the listed model.</p> <ul class="relations" data-astro-cid-5dtft5wh><li data-astro-cid-5dtft5wh><span data-astro-cid-5dtft5wh>characterizes adoption of</span><a href="#term-practice" data-astro-cid-5dtft5wh>Learning engineering practice</a></li></ul>  <p class="term-source" data-astro-cid-5dtft5wh>Grounding: <a href="https://sagroups.ieee.org/icicle/resources/" data-astro-cid-5dtft5wh>ICICLE resources</a></p> </article> </section></div> </div> <section class="extension" id="competencies" aria-labelledby="competencies-heading" data-astro-cid-5dtft5wh><p class="eyebrow" data-astro-cid-5dtft5wh>Proposed next extension</p><h2 id="competencies-heading" data-astro-cid-5dtft5wh>Make competencies useful through evidence.</h2><p data-astro-cid-5dtft5wh>Competencies can connect the work to team development, role design and assessment. This extension is a proposal for review, not part of ICICLE’s published definition.</p><ol class="competency-chain" data-astro-cid-5dtft5wh><li data-astro-cid-5dtft5wh><strong data-astro-cid-5dtft5wh>Role</strong><span data-astro-cid-5dtft5wh>Who contributes?</span></li><li data-astro-cid-5dtft5wh><strong data-astro-cid-5dtft5wh>Competency</strong><span data-astro-cid-5dtft5wh>What should they be able to do?</span></li><li data-astro-cid-5dtft5wh><strong data-astro-cid-5dtft5wh>Task</strong><span data-astro-cid-5dtft5wh>What work demonstrates it?</span></li><li data-astro-cid-5dtft5wh><strong data-astro-cid-5dtft5wh>Evidence</strong><span data-astro-cid-5dtft5wh>What performance was observed?</span></li></ol><p data-astro-cid-5dtft5wh>Attach context, expected proficiency, assessment criteria, support conditions and provenance. Keep <strong data-astro-cid-5dtft5wh>required competency</strong> separate from <strong data-astro-cid-5dtft5wh>demonstrated proficiency</strong>. A role title, course completion or successful model response alone does not establish competence.</p></section> <section class="support" id="questions" data-astro-cid-5dtft5wh><h2 data-astro-cid-5dtft5wh>Questions the ontology should answer</h2><ol data-astro-cid-5dtft5wh><li data-astro-cid-5dtft5wh>Which challenge does an effort address, for which learners, and in which context?</li><li data-astro-cid-5dtft5wh>Which learning-science knowledge and design methods inform the effort?</li><li data-astro-cid-5dtft5wh>Which desired outcomes motivated a solution, and which outcomes were actually observed?</li><li data-astro-cid-5dtft5wh>How were observations captured and interpreted as evidence for a decision?</li><li data-astro-cid-5dtft5wh>What did an iteration change, why, and with whose participation?</li><li data-astro-cid-5dtft5wh>Which expertise contributed to the effort?</li></ol><p class="source-note" data-astro-cid-5dtft5wh>These are questions for checking the model’s coverage; they are distinct from people’s competencies.</p></section> <section class="support" id="case" data-astro-cid-5dtft5wh><p class="eyebrow" data-astro-cid-5dtft5wh>An illustrative case</p><h2 data-astro-cid-5dtft5wh>From a challenge to a revision</h2><p class="source-note" data-astro-cid-5dtft5wh>Invented workplace example. It illustrates the vocabulary and is not empirical evidence.</p><dl class="case-fields" data-astro-cid-5dtft5wh><div data-astro-cid-5dtft5wh><dt data-astro-cid-5dtft5wh>challenge</dt><dd data-astro-cid-5dtft5wh>New employees have difficulty completing a troubleshooting task.</dd></div><div data-astro-cid-5dtft5wh><dt data-astro-cid-5dtft5wh>learner</dt><dd data-astro-cid-5dtft5wh>New employees participating in onboarding.</dd></div><div data-astro-cid-5dtft5wh><dt data-astro-cid-5dtft5wh>context</dt><dd data-astro-cid-5dtft5wh>Workplace onboarding with supervised access to equipment.</dd></div><div data-astro-cid-5dtft5wh><dt data-astro-cid-5dtft5wh>desired Outcome</dt><dd data-astro-cid-5dtft5wh>Employees complete the task independently and correctly.</dd></div><div data-astro-cid-5dtft5wh><dt data-astro-cid-5dtft5wh>solution</dt><dd data-astro-cid-5dtft5wh>A guided simulation followed by supervised practice.</dd></div><div data-astro-cid-5dtft5wh><dt data-astro-cid-5dtft5wh>instrumentation</dt><dd data-astro-cid-5dtft5wh>Define task-success criteria and collect attempts and rubric ratings.</dd></div><div data-astro-cid-5dtft5wh><dt data-astro-cid-5dtft5wh>data</dt><dd data-astro-cid-5dtft5wh>Attempt records and observer ratings.</dd></div><div data-astro-cid-5dtft5wh><dt data-astro-cid-5dtft5wh>observed Outcome</dt><dd data-astro-cid-5dtft5wh>Some participants still omit a diagnostic check.</dd></div><div data-astro-cid-5dtft5wh><dt data-astro-cid-5dtft5wh>evidence</dt><dd data-astro-cid-5dtft5wh>The recurring omission suggests a candidate weakness to investigate; it does not establish its cause.</dd></div><div data-astro-cid-5dtft5wh><dt data-astro-cid-5dtft5wh>decision</dt><dd data-astro-cid-5dtft5wh>Revise the relevant practice activity and examine subsequent performance.</dd></div><div data-astro-cid-5dtft5wh><dt data-astro-cid-5dtft5wh>iteration</dt><dd data-astro-cid-5dtft5wh>Introduce the revised activity while preserving comparable measurement procedures.</dd></div></dl></section> <section class="support" id="sources" data-astro-cid-5dtft5wh><h2 data-astro-cid-5dtft5wh>Sources and modeling choices</h2><div class="source-grid" data-astro-cid-5dtft5wh><article data-astro-cid-5dtft5wh><h3 data-astro-cid-5dtft5wh><a href="https://sagroups.ieee.org/icicle/learning-engineering-process/" data-astro-cid-5dtft5wh>IEEE ICICLE — Learning Engineering Process</a></h3><p data-astro-cid-5dtft5wh>Primary definition and process vocabulary</p><p class="source-note" data-astro-cid-5dtft5wh>Page text reviewed · reviewed 2026-10-02</p><p class="source-note" data-astro-cid-5dtft5wh>Source license: <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" data-astro-cid-5dtft5wh>CC BY-NC-SA 4.0</a>. Definitions here are adapted wording.</p></article><article data-astro-cid-5dtft5wh><h3 data-astro-cid-5dtft5wh><a href="https://sagroups.ieee.org/icicle/resources/" data-astro-cid-5dtft5wh>IEEE ICICLE — Resources</a></h3><p data-astro-cid-5dtft5wh>Vocabulary extension candidates and reading priorities</p><p class="source-note" data-astro-cid-5dtft5wh>Resource index reviewed; linked resources not independently reviewed · reviewed 2026-10-02</p></article></div><details data-astro-cid-5dtft5wh><summary data-astro-cid-5dtft5wh>How to interpret this draft</summary><ul data-astro-cid-5dtft5wh><li data-astro-cid-5dtft5wh>All term definitions and relation labels below are proposed wording. Source references establish grounding, not endorsement.</li><li data-astro-cid-5dtft5wh>Modules organize the vocabulary; they are not mutually exclusive categories or formal superclass axioms.</li><li data-astro-cid-5dtft5wh>A relation describes a possible connection between instances of the named concepts. It is not mandatory for every instance.</li><li data-astro-cid-5dtft5wh>Creation, implementation, investigation, and iteration can overlap. Their listing order does not prescribe a workflow.</li><li data-astro-cid-5dtft5wh>Learning engineering has both process and practice aspects. Their distinction is a modeling choice, not a claim that ICICLE defines two separate entities.</li><li data-astro-cid-5dtft5wh>Data, evidence, and decisions remain distinct. Observations do not automatically establish effectiveness or causation.</li><li data-astro-cid-5dtft5wh>Desired outcomes and observed outcomes remain distinct. Intent does not establish achievement.</li><li data-astro-cid-5dtft5wh>Learner and team-member terms describe participation roles. The same person may participate in several roles.</li><li data-astro-cid-5dtft5wh>This draft specifies conceptual relationships, not formal OWL restrictions, cardinalities, or validation rules.</li></ul></details><details data-astro-cid-5dtft5wh><summary data-astro-cid-5dtft5wh>Resources to examine next</summary><dl class="case-fields" data-astro-cid-5dtft5wh><div data-astro-cid-5dtft5wh><dt data-astro-cid-5dtft5wh>Learning Engineering Toolkit — open-access chapters</dt><dd data-astro-cid-5dtft5wh>Refine process, learning-sciences, and design vocabulary.</dd></div><div data-astro-cid-5dtft5wh><dt data-astro-cid-5dtft5wh>Learning Engineering Case Guide 1.0</dt><dd data-astro-cid-5dtft5wh>Test whether the vocabulary can describe varied cases.</dd></div><div data-astro-cid-5dtft5wh><dt data-astro-cid-5dtft5wh>Learning Engineering Evidence Decision Tracker materials</dt><dd data-astro-cid-5dtft5wh>Refine evidence, decisions, rationales, and iteration history.</dd></div><div data-astro-cid-5dtft5wh><dt data-astro-cid-5dtft5wh>Examples of Roles and Areas of Expertise on a Learning Engineering Team</dt><dd data-astro-cid-5dtft5wh>Refine participant roles and expertise without prescribing a universal team.</dd></div><div data-astro-cid-5dtft5wh><dt data-astro-cid-5dtft5wh>Generalizable Learning Engineering Adoption Maturity Model</dt><dd data-astro-cid-5dtft5wh>Determine whether organizational capacity needs a separate extension.</dd></div></dl></details><details data-astro-cid-5dtft5wh><summary data-astro-cid-5dtft5wh>Open modeling questions</summary><ul data-astro-cid-5dtft5wh><li data-astro-cid-5dtft5wh>Should knowledge, claims, measures, instruments, and decision rationales become separately defined concepts?</li><li data-astro-cid-5dtft5wh>How should an effort represent multiple iterations and changing context over time?</li><li data-astro-cid-5dtft5wh>Which relations need qualifiers for time, uncertainty, evidence quality, or provenance?</li><li data-astro-cid-5dtft5wh>Which extensions are needed for technology standards, accessibility, ethics, and organizational adoption?</li><li data-astro-cid-5dtft5wh>Would the community prefer a controlled vocabulary first, followed by a formally constrained ontology?</li></ul></details></section> <section class="support" id="record" data-astro-cid-5dtft5wh><h2 data-astro-cid-5dtft5wh>The complete record</h2><p data-astro-cid-5dtft5wh>Read the same ontology as expandable fields, or download the original JSON.</p><div class="record-actions" data-astro-cid-5dtft5wh><button id="json-expand" type="button" data-astro-cid-5dtft5wh>Expand fields</button><button id="json-collapse" type="button" data-astro-cid-5dtft5wh>Collapse fields</button><a href="/ontology/learning-engineering-ontology.json" download data-astro-cid-5dtft5wh>Download JSON</a></div><div id="json-tree" class="json-tree" data-astro-cid-5dtft5wh></div><noscript><p data-astro-cid-5dtft5wh><a href="/ontology/learning-engineering-ontology.json" data-astro-cid-5dtft5wh>Open the JSON record</a>.</p></noscript><details class="raw" data-astro-cid-5dtft5wh><summary data-astro-cid-5dtft5wh>Raw JSON, indented</summary><pre data-astro-cid-5dtft5wh><code data-astro-cid-5dtft5wh>{
+  &quot;title&quot;: &quot;Learning Engineering: shared vocabulary and conceptual ontology&quot;,
+  &quot;version&quot;: &quot;0.1.0&quot;,
+  &quot;status&quot;: &quot;Working draft for community review; not an IEEE standard or an ICICLE-endorsed ontology&quot;,
+  &quot;date&quot;: &quot;2026-10-02&quot;,
+  &quot;purpose&quot;: &quot;Help people across education, workplace learning, and other settings describe learning engineering consistently.&quot;,
+  &quot;foundation&quot;: {
+    &quot;authority&quot;: &quot;IEEE ICICLE&quot;,
+    &quot;workingDefinition&quot;: &quot;Applying learning sciences through human-centered and engineering design, using iterative data-informed decisions to support learners and learning.&quot;,
+    &quot;definitionStatus&quot;: &quot;Paraphrase of ICICLE&#39;s published definition, not a quotation&quot;,
+    &quot;source&quot;: &quot;icicle-process&quot;
+  },
+  &quot;modelingConventions&quot;: [
+    &quot;All term definitions and relation labels below are proposed wording. Source references establish grounding, not endorsement.&quot;,
+    &quot;Modules organize the vocabulary; they are not mutually exclusive categories or formal superclass axioms.&quot;,
+    &quot;A relation describes a possible connection between instances of the named concepts. It is not mandatory for every instance.&quot;,
+    &quot;Creation, implementation, investigation, and iteration can overlap. Their listing order does not prescribe a workflow.&quot;,
+    &quot;Learning engineering has both process and practice aspects. Their distinction is a modeling choice, not a claim that ICICLE defines two separate entities.&quot;,
+    &quot;Data, evidence, and decisions remain distinct. Observations do not automatically establish effectiveness or causation.&quot;,
+    &quot;Desired outcomes and observed outcomes remain distinct. Intent does not establish achievement.&quot;,
+    &quot;Learner and team-member terms describe participation roles. The same person may participate in several roles.&quot;,
+    &quot;This draft specifies conceptual relationships, not formal OWL restrictions, cardinalities, or validation rules.&quot;
+  ],
+  &quot;sources&quot;: [
+    {
+      &quot;id&quot;: &quot;icicle-process&quot;,
+      &quot;title&quot;: &quot;IEEE ICICLE — Learning Engineering Process&quot;,
+      &quot;url&quot;: &quot;https://sagroups.ieee.org/icicle/learning-engineering-process/&quot;,
+      &quot;reviewStatus&quot;: &quot;Page text reviewed&quot;,
+      &quot;use&quot;: &quot;Primary definition and process vocabulary&quot;,
+      &quot;retrieved&quot;: &quot;2026-10-02&quot;,
+      &quot;licenseReportedBySource&quot;: &quot;CC BY-NC-SA 4.0&quot;
+    },
+    {
+      &quot;id&quot;: &quot;icicle-resources&quot;,
+      &quot;title&quot;: &quot;IEEE ICICLE — Resources&quot;,
+      &quot;url&quot;: &quot;https://sagroups.ieee.org/icicle/resources/&quot;,
+      &quot;reviewStatus&quot;: &quot;Resource index reviewed; linked resources not independently reviewed&quot;,
+      &quot;use&quot;: &quot;Vocabulary extension candidates and reading priorities&quot;,
+      &quot;retrieved&quot;: &quot;2026-10-02&quot;
+    }
+  ],
+  &quot;modules&quot;: [
+    {
+      &quot;id&quot;: &quot;purpose&quot;,
+      &quot;label&quot;: &quot;Process and practice&quot;
+    },
+    {
+      &quot;id&quot;: &quot;people&quot;,
+      &quot;label&quot;: &quot;Learners, stakeholders, and context&quot;
+    },
+    {
+      &quot;id&quot;: &quot;challenge&quot;,
+      &quot;label&quot;: &quot;Challenges and intended outcomes&quot;
+    },
+    {
+      &quot;id&quot;: &quot;foundations&quot;,
+      &quot;label&quot;: &quot;Scientific foundations and design methods&quot;
+    },
+    {
+      &quot;id&quot;: &quot;solution&quot;,
+      &quot;label&quot;: &quot;Solutions and learning experiences&quot;
+    },
+    {
+      &quot;id&quot;: &quot;evidence&quot;,
+      &quot;label&quot;: &quot;Measurement, evidence, and decisions&quot;
+    },
+    {
+      &quot;id&quot;: &quot;improvement&quot;,
+      &quot;label&quot;: &quot;Implementation, investigation, and iteration&quot;
+    },
+    {
+      &quot;id&quot;: &quot;capacity&quot;,
+      &quot;label&quot;: &quot;Teams and organizational capacity&quot;
+    }
+  ],
+  &quot;terms&quot;: [
+    {
+      &quot;id&quot;: &quot;learning-engineering&quot;,
+      &quot;label&quot;: &quot;Learning engineering&quot;,
+      &quot;module&quot;: &quot;purpose&quot;,
+      &quot;definition&quot;: &quot;The process and practice characterized by the foundation definition above.&quot;,
+      &quot;sources&quot;: [
+        &quot;icicle-process&quot;
+      ]
+    },
+    {
+      &quot;id&quot;: &quot;process&quot;,
+      &quot;label&quot;: &quot;Learning engineering process&quot;,
+      &quot;module&quot;: &quot;purpose&quot;,
+      &quot;definition&quot;: &quot;Connected activities undertaken in a particular learning engineering effort.&quot;,
+      &quot;sources&quot;: [
+        &quot;icicle-process&quot;
+      ]
+    },
+    {
+      &quot;id&quot;: &quot;practice&quot;,
+      &quot;label&quot;: &quot;Learning engineering practice&quot;,
+      &quot;module&quot;: &quot;purpose&quot;,
+      &quot;definition&quot;: &quot;The enacted use of learning engineering approaches across efforts.&quot;,
+      &quot;sources&quot;: [
+        &quot;icicle-process&quot;
+      ]
+    },
+    {
+      &quot;id&quot;: &quot;learner&quot;,
+      &quot;label&quot;: &quot;Learner&quot;,
+      &quot;module&quot;: &quot;people&quot;,
+      &quot;definition&quot;: &quot;A participant whose learning the effort seeks to support.&quot;,
+      &quot;sources&quot;: [
+        &quot;icicle-process&quot;
+      ]
+    },
+    {
+      &quot;id&quot;: &quot;stakeholder&quot;,
+      &quot;label&quot;: &quot;Stakeholder&quot;,
+      &quot;module&quot;: &quot;people&quot;,
+      &quot;definition&quot;: &quot;A person or group with an interest in an effort.&quot;,
+      &quot;sources&quot;: [
+        &quot;icicle-process&quot;
+      ]
+    },
+    {
+      &quot;id&quot;: &quot;context&quot;,
+      &quot;label&quot;: &quot;Learning context&quot;,
+      &quot;module&quot;: &quot;people&quot;,
+      &quot;definition&quot;: &quot;Conditions surrounding learners, the challenge, and the solution.&quot;,
+      &quot;sources&quot;: [
+        &quot;icicle-process&quot;
+      ]
+    },
+    {
+      &quot;id&quot;: &quot;challenge&quot;,
+      &quot;label&quot;: &quot;Learning challenge&quot;,
+      &quot;module&quot;: &quot;challenge&quot;,
+      &quot;definition&quot;: &quot;A problem or opportunity an effort aims to address.&quot;,
+      &quot;sources&quot;: [
+        &quot;icicle-process&quot;
+      ]
+    },
+    {
+      &quot;id&quot;: &quot;desired-outcome&quot;,
+      &quot;label&quot;: &quot;Desired outcome&quot;,
+      &quot;module&quot;: &quot;challenge&quot;,
+      &quot;definition&quot;: &quot;An intended result, distinguished from what actually occurs.&quot;,
+      &quot;sources&quot;: [
+        &quot;icicle-process&quot;
+      ],
+      &quot;note&quot;: &quot;Proposed distinction from observed outcome.&quot;
+    },
+    {
+      &quot;id&quot;: &quot;learning-sciences&quot;,
+      &quot;label&quot;: &quot;Learning sciences&quot;,
+      &quot;module&quot;: &quot;foundations&quot;,
+      &quot;definition&quot;: &quot;Scientific knowledge and inquiry concerning learning.&quot;,
+      &quot;sources&quot;: [
+        &quot;icicle-process&quot;
+      ]
+    },
+    {
+      &quot;id&quot;: &quot;design-principle&quot;,
+      &quot;label&quot;: &quot;Design principle&quot;,
+      &quot;module&quot;: &quot;foundations&quot;,
+      &quot;definition&quot;: &quot;A statement guiding design choices under stated conditions.&quot;,
+      &quot;sources&quot;: [
+        &quot;icicle-resources&quot;
+      ],
+      &quot;note&quot;: &quot;Candidate elaboration; inspect the listed Learning Design Principles toolkit.&quot;
+    },
+    {
+      &quot;id&quot;: &quot;design-method&quot;,
+      &quot;label&quot;: &quot;Design method&quot;,
+      &quot;module&quot;: &quot;foundations&quot;,
+      &quot;definition&quot;: &quot;An approach for developing or revising a solution.&quot;,
+      &quot;sources&quot;: [
+        &quot;icicle-process&quot;
+      ]
+    },
+    {
+      &quot;id&quot;: &quot;human-centered-design&quot;,
+      &quot;label&quot;: &quot;Human-centered design method&quot;,
+      &quot;module&quot;: &quot;foundations&quot;,
+      &quot;definition&quot;: &quot;A design method attending to people and their experience.&quot;,
+      &quot;sources&quot;: [
+        &quot;icicle-process&quot;
+      ]
+    },
+    {
+      &quot;id&quot;: &quot;engineering-design&quot;,
+      &quot;label&quot;: &quot;Engineering design method&quot;,
+      &quot;module&quot;: &quot;foundations&quot;,
+      &quot;definition&quot;: &quot;A design method for developing solutions against requirements and constraints.&quot;,
+      &quot;sources&quot;: [
+        &quot;icicle-process&quot;
+      ]
+    },
+    {
+      &quot;id&quot;: &quot;solution&quot;,
+      &quot;label&quot;: &quot;Learning solution&quot;,
+      &quot;module&quot;: &quot;solution&quot;,
+      &quot;definition&quot;: &quot;An arrangement intended to address a learning challenge.&quot;,
+      &quot;sources&quot;: [
+        &quot;icicle-process&quot;
+      ],
+      &quot;note&quot;: &quot;May combine instruction, support, activities, environments, and technology.&quot;
+    },
+    {
+      &quot;id&quot;: &quot;learning-experience&quot;,
+      &quot;label&quot;: &quot;Learning experience&quot;,
+      &quot;module&quot;: &quot;solution&quot;,
+      &quot;definition&quot;: &quot;An experience through which a learner engages in learning.&quot;,
+      &quot;sources&quot;: [
+        &quot;icicle-process&quot;
+      ]
+    },
+    {
+      &quot;id&quot;: &quot;creation&quot;,
+      &quot;label&quot;: &quot;Creation&quot;,
+      &quot;module&quot;: &quot;solution&quot;,
+      &quot;definition&quot;: &quot;Developing a solution, including design and instrumentation.&quot;,
+      &quot;sources&quot;: [
+        &quot;icicle-process&quot;
+      ]
+    },
+    {
+      &quot;id&quot;: &quot;instrumentation&quot;,
+      &quot;label&quot;: &quot;Instrumentation&quot;,
+      &quot;module&quot;: &quot;evidence&quot;,
+      &quot;definition&quot;: &quot;Establishing how observations will be defined and captured.&quot;,
+      &quot;sources&quot;: [
+        &quot;icicle-process&quot;
+      ]
+    },
+    {
+      &quot;id&quot;: &quot;measurement&quot;,
+      &quot;label&quot;: &quot;Measurement&quot;,
+      &quot;module&quot;: &quot;evidence&quot;,
+      &quot;definition&quot;: &quot;Assigning observations to defined measures using specified procedures.&quot;,
+      &quot;sources&quot;: [
+        &quot;icicle-process&quot;
+      ],
+      &quot;note&quot;: &quot;Distinguished from the wider work of instrumentation.&quot;
+    },
+    {
+      &quot;id&quot;: &quot;data&quot;,
+      &quot;label&quot;: &quot;Data&quot;,
+      &quot;module&quot;: &quot;evidence&quot;,
+      &quot;definition&quot;: &quot;Recorded observations available for analysis.&quot;,
+      &quot;sources&quot;: [
+        &quot;icicle-process&quot;
+      ]
+    },
+    {
+      &quot;id&quot;: &quot;evidence&quot;,
+      &quot;label&quot;: &quot;Evidence&quot;,
+      &quot;module&quot;: &quot;evidence&quot;,
+      &quot;definition&quot;: &quot;Information interpreted as bearing on a question or claim.&quot;,
+      &quot;sources&quot;: [
+        &quot;icicle-resources&quot;
+      ],
+      &quot;note&quot;: &quot;Proposed definition; inspect the listed Evidence Decision Tracker materials.&quot;
+    },
+    {
+      &quot;id&quot;: &quot;decision&quot;,
+      &quot;label&quot;: &quot;Decision&quot;,
+      &quot;module&quot;: &quot;evidence&quot;,
+      &quot;definition&quot;: &quot;A choice among actions, recorded with its rationale.&quot;,
+      &quot;sources&quot;: [
+        &quot;icicle-resources&quot;
+      ],
+      &quot;note&quot;: &quot;Proposed definition; inspect the listed decision-tracking materials.&quot;
+    },
+    {
+      &quot;id&quot;: &quot;implementation&quot;,
+      &quot;label&quot;: &quot;Implementation&quot;,
+      &quot;module&quot;: &quot;improvement&quot;,
+      &quot;definition&quot;: &quot;Putting a solution into use in its intended setting.&quot;,
+      &quot;sources&quot;: [
+        &quot;icicle-process&quot;
+      ]
+    },
+    {
+      &quot;id&quot;: &quot;investigation&quot;,
+      &quot;label&quot;: &quot;Investigation&quot;,
+      &quot;module&quot;: &quot;improvement&quot;,
+      &quot;definition&quot;: &quot;Examining data to understand results and inform further action.&quot;,
+      &quot;sources&quot;: [
+        &quot;icicle-process&quot;
+      ]
+    },
+    {
+      &quot;id&quot;: &quot;observed-outcome&quot;,
+      &quot;label&quot;: &quot;Observed outcome&quot;,
+      &quot;module&quot;: &quot;improvement&quot;,
+      &quot;definition&quot;: &quot;A result observed during or after use of a solution.&quot;,
+      &quot;sources&quot;: [
+        &quot;icicle-process&quot;
+      ],
+      &quot;note&quot;: &quot;An observed result does not by itself establish causation.&quot;
+    },
+    {
+      &quot;id&quot;: &quot;iteration&quot;,
+      &quot;label&quot;: &quot;Iteration&quot;,
+      &quot;module&quot;: &quot;improvement&quot;,
+      &quot;definition&quot;: &quot;Revisiting work and revising it in light of findings.&quot;,
+      &quot;sources&quot;: [
+        &quot;icicle-process&quot;
+      ]
+    },
+    {
+      &quot;id&quot;: &quot;team&quot;,
+      &quot;label&quot;: &quot;Learning engineering team&quot;,
+      &quot;module&quot;: &quot;capacity&quot;,
+      &quot;definition&quot;: &quot;People contributing expertise to a learning engineering effort.&quot;,
+      &quot;sources&quot;: [
+        &quot;icicle-process&quot;
+      ],
+      &quot;note&quot;: &quot;An effort may involve one person or several.&quot;
+    },
+    {
+      &quot;id&quot;: &quot;expertise&quot;,
+      &quot;label&quot;: &quot;Area of expertise&quot;,
+      &quot;module&quot;: &quot;capacity&quot;,
+      &quot;definition&quot;: &quot;A domain of knowledge or skill contributed to an effort.&quot;,
+      &quot;sources&quot;: [
+        &quot;icicle-process&quot;,
+        &quot;icicle-resources&quot;
+      ]
+    },
+    {
+      &quot;id&quot;: &quot;organizational-maturity&quot;,
+      &quot;label&quot;: &quot;Learning engineering adoption maturity&quot;,
+      &quot;module&quot;: &quot;capacity&quot;,
+      &quot;definition&quot;: &quot;An organization&#39;s degree of adoption of learning engineering practices.&quot;,
+      &quot;sources&quot;: [
+        &quot;icicle-resources&quot;
+      ],
+      &quot;note&quot;: &quot;Candidate elaboration; no maturity levels asserted before reviewing the listed model.&quot;
+    }
+  ],
+  &quot;specializations&quot;: [
+    {
+      &quot;specific&quot;: &quot;human-centered-design&quot;,
+      &quot;general&quot;: &quot;design-method&quot;,
+      &quot;status&quot;: &quot;Proposed conceptual specialization&quot;
+    },
+    {
+      &quot;specific&quot;: &quot;engineering-design&quot;,
+      &quot;general&quot;: &quot;design-method&quot;,
+      &quot;status&quot;: &quot;Proposed conceptual specialization&quot;
+    }
+  ],
+  &quot;relations&quot;: [
+    {
+      &quot;from&quot;: &quot;process&quot;,
+      &quot;label&quot;: &quot;includes&quot;,
+      &quot;to&quot;: &quot;creation&quot;
+    },
+    {
+      &quot;from&quot;: &quot;process&quot;,
+      &quot;label&quot;: &quot;includes&quot;,
+      &quot;to&quot;: &quot;implementation&quot;
+    },
+    {
+      &quot;from&quot;: &quot;process&quot;,
+      &quot;label&quot;: &quot;includes&quot;,
+      &quot;to&quot;: &quot;investigation&quot;
+    },
+    {
+      &quot;from&quot;: &quot;process&quot;,
+      &quot;label&quot;: &quot;includes&quot;,
+      &quot;to&quot;: &quot;iteration&quot;
+    },
+    {
+      &quot;from&quot;: &quot;process&quot;,
+      &quot;label&quot;: &quot;addresses&quot;,
+      &quot;to&quot;: &quot;challenge&quot;
+    },
+    {
+      &quot;from&quot;: &quot;challenge&quot;,
+      &quot;label&quot;: &quot;is situated in&quot;,
+      &quot;to&quot;: &quot;context&quot;
+    },
+    {
+      &quot;from&quot;: &quot;challenge&quot;,
+      &quot;label&quot;: &quot;concerns&quot;,
+      &quot;to&quot;: &quot;learner&quot;
+    },
+    {
+      &quot;from&quot;: &quot;challenge&quot;,
+      &quot;label&quot;: &quot;has intended result&quot;,
+      &quot;to&quot;: &quot;desired-outcome&quot;
+    },
+    {
+      &quot;from&quot;: &quot;team&quot;,
+      &quot;label&quot;: &quot;contributes to&quot;,
+      &quot;to&quot;: &quot;process&quot;
+    },
+    {
+      &quot;from&quot;: &quot;team&quot;,
+      &quot;label&quot;: &quot;contributes&quot;,
+      &quot;to&quot;: &quot;expertise&quot;
+    },
+    {
+      &quot;from&quot;: &quot;practice&quot;,
+      &quot;label&quot;: &quot;is enacted through&quot;,
+      &quot;to&quot;: &quot;process&quot;
+    },
+    {
+      &quot;from&quot;: &quot;process&quot;,
+      &quot;label&quot;: &quot;applies knowledge from&quot;,
+      &quot;to&quot;: &quot;learning-sciences&quot;
+    },
+    {
+      &quot;from&quot;: &quot;process&quot;,
+      &quot;label&quot;: &quot;uses&quot;,
+      &quot;to&quot;: &quot;design-method&quot;
+    },
+    {
+      &quot;from&quot;: &quot;creation&quot;,
+      &quot;label&quot;: &quot;develops&quot;,
+      &quot;to&quot;: &quot;solution&quot;
+    },
+    {
+      &quot;from&quot;: &quot;creation&quot;,
+      &quot;label&quot;: &quot;includes&quot;,
+      &quot;to&quot;: &quot;instrumentation&quot;
+    },
+    {
+      &quot;from&quot;: &quot;solution&quot;,
+      &quot;label&quot;: &quot;addresses&quot;,
+      &quot;to&quot;: &quot;challenge&quot;
+    },
+    {
+      &quot;from&quot;: &quot;solution&quot;,
+      &quot;label&quot;: &quot;enables&quot;,
+      &quot;to&quot;: &quot;learning-experience&quot;
+    },
+    {
+      &quot;from&quot;: &quot;learner&quot;,
+      &quot;label&quot;: &quot;participates in&quot;,
+      &quot;to&quot;: &quot;learning-experience&quot;
+    },
+    {
+      &quot;from&quot;: &quot;stakeholder&quot;,
+      &quot;label&quot;: &quot;participates in&quot;,
+      &quot;to&quot;: &quot;creation&quot;
+    },
+    {
+      &quot;from&quot;: &quot;design-principle&quot;,
+      &quot;label&quot;: &quot;informs&quot;,
+      &quot;to&quot;: &quot;creation&quot;
+    },
+    {
+      &quot;from&quot;: &quot;instrumentation&quot;,
+      &quot;label&quot;: &quot;specifies procedures for&quot;,
+      &quot;to&quot;: &quot;measurement&quot;
+    },
+    {
+      &quot;from&quot;: &quot;measurement&quot;,
+      &quot;label&quot;: &quot;produces&quot;,
+      &quot;to&quot;: &quot;data&quot;
+    },
+    {
+      &quot;from&quot;: &quot;implementation&quot;,
+      &quot;label&quot;: &quot;puts into use&quot;,
+      &quot;to&quot;: &quot;solution&quot;
+    },
+    {
+      &quot;from&quot;: &quot;implementation&quot;,
+      &quot;label&quot;: &quot;takes place in&quot;,
+      &quot;to&quot;: &quot;context&quot;
+    },
+    {
+      &quot;from&quot;: &quot;investigation&quot;,
+      &quot;label&quot;: &quot;analyzes&quot;,
+      &quot;to&quot;: &quot;data&quot;
+    },
+    {
+      &quot;from&quot;: &quot;investigation&quot;,
+      &quot;label&quot;: &quot;examines&quot;,
+      &quot;to&quot;: &quot;observed-outcome&quot;
+    },
+    {
+      &quot;from&quot;: &quot;investigation&quot;,
+      &quot;label&quot;: &quot;produces&quot;,
+      &quot;to&quot;: &quot;evidence&quot;
+    },
+    {
+      &quot;from&quot;: &quot;evidence&quot;,
+      &quot;label&quot;: &quot;is derived from&quot;,
+      &quot;to&quot;: &quot;data&quot;
+    },
+    {
+      &quot;from&quot;: &quot;observed-outcome&quot;,
+      &quot;label&quot;: &quot;is assessed against&quot;,
+      &quot;to&quot;: &quot;desired-outcome&quot;
+    },
+    {
+      &quot;from&quot;: &quot;evidence&quot;,
+      &quot;label&quot;: &quot;informs&quot;,
+      &quot;to&quot;: &quot;decision&quot;
+    },
+    {
+      &quot;from&quot;: &quot;decision&quot;,
+      &quot;label&quot;: &quot;guides&quot;,
+      &quot;to&quot;: &quot;iteration&quot;
+    },
+    {
+      &quot;from&quot;: &quot;iteration&quot;,
+      &quot;label&quot;: &quot;revisits&quot;,
+      &quot;to&quot;: &quot;challenge&quot;
+    },
+    {
+      &quot;from&quot;: &quot;iteration&quot;,
+      &quot;label&quot;: &quot;revises&quot;,
+      &quot;to&quot;: &quot;solution&quot;
+    },
+    {
+      &quot;from&quot;: &quot;iteration&quot;,
+      &quot;label&quot;: &quot;revises&quot;,
+      &quot;to&quot;: &quot;instrumentation&quot;
+    },
+    {
+      &quot;from&quot;: &quot;organizational-maturity&quot;,
+      &quot;label&quot;: &quot;characterizes adoption of&quot;,
+      &quot;to&quot;: &quot;practice&quot;
+    }
+  ],
+  &quot;relationStatus&quot;: &quot;All relationships are proposed modeling choices, grounded in the cited vocabulary. They have not been validated as formal axioms.&quot;,
+  &quot;competencyQuestions&quot;: [
+    &quot;Which challenge does an effort address, for which learners, and in which context?&quot;,
+    &quot;Which learning-science knowledge and design methods inform the effort?&quot;,
+    &quot;Which desired outcomes motivated a solution, and which outcomes were actually observed?&quot;,
+    &quot;How were observations captured and interpreted as evidence for a decision?&quot;,
+    &quot;What did an iteration change, why, and with whose participation?&quot;,
+    &quot;Which expertise contributed to the effort?&quot;
+  ],
+  &quot;illustrativeCase&quot;: {
+    &quot;status&quot;: &quot;Invented example, not empirical evidence or an ICICLE case&quot;,
+    &quot;challenge&quot;: &quot;New employees have difficulty completing a troubleshooting task.&quot;,
+    &quot;learner&quot;: &quot;New employees participating in onboarding.&quot;,
+    &quot;context&quot;: &quot;Workplace onboarding with supervised access to equipment.&quot;,
+    &quot;desiredOutcome&quot;: &quot;Employees complete the task independently and correctly.&quot;,
+    &quot;solution&quot;: &quot;A guided simulation followed by supervised practice.&quot;,
+    &quot;instrumentation&quot;: &quot;Define task-success criteria and collect attempts and rubric ratings.&quot;,
+    &quot;data&quot;: &quot;Attempt records and observer ratings.&quot;,
+    &quot;observedOutcome&quot;: &quot;Some participants still omit a diagnostic check.&quot;,
+    &quot;evidence&quot;: &quot;The recurring omission suggests a candidate weakness to investigate; it does not establish its cause.&quot;,
+    &quot;decision&quot;: &quot;Revise the relevant practice activity and examine subsequent performance.&quot;,
+    &quot;iteration&quot;: &quot;Introduce the revised activity while preserving comparable measurement procedures.&quot;
+  },
+  &quot;nextSourceReviews&quot;: [
+    {
+      &quot;resource&quot;: &quot;Learning Engineering Toolkit — open-access chapters&quot;,
+      &quot;listedAt&quot;: &quot;icicle-resources&quot;,
+      &quot;purpose&quot;: &quot;Refine process, learning-sciences, and design vocabulary.&quot;
+    },
+    {
+      &quot;resource&quot;: &quot;Learning Engineering Case Guide 1.0&quot;,
+      &quot;listedAt&quot;: &quot;icicle-resources&quot;,
+      &quot;purpose&quot;: &quot;Test whether the vocabulary can describe varied cases.&quot;
+    },
+    {
+      &quot;resource&quot;: &quot;Learning Engineering Evidence Decision Tracker materials&quot;,
+      &quot;listedAt&quot;: &quot;icicle-resources&quot;,
+      &quot;purpose&quot;: &quot;Refine evidence, decisions, rationales, and iteration history.&quot;
+    },
+    {
+      &quot;resource&quot;: &quot;Examples of Roles and Areas of Expertise on a Learning Engineering Team&quot;,
+      &quot;listedAt&quot;: &quot;icicle-resources&quot;,
+      &quot;purpose&quot;: &quot;Refine participant roles and expertise without prescribing a universal team.&quot;
+    },
+    {
+      &quot;resource&quot;: &quot;Generalizable Learning Engineering Adoption Maturity Model&quot;,
+      &quot;listedAt&quot;: &quot;icicle-resources&quot;,
+      &quot;purpose&quot;: &quot;Determine whether organizational capacity needs a separate extension.&quot;
+    }
+  ],
+  &quot;openModelingQuestions&quot;: [
+    &quot;Should knowledge, claims, measures, instruments, and decision rationales become separately defined concepts?&quot;,
+    &quot;How should an effort represent multiple iterations and changing context over time?&quot;,
+    &quot;Which relations need qualifiers for time, uncertainty, evidence quality, or provenance?&quot;,
+    &quot;Which extensions are needed for technology standards, accessibility, ethics, and organizational adoption?&quot;,
+    &quot;Would the community prefer a controlled vocabulary first, followed by a formally constrained ontology?&quot;
+  ]
+}</code></pre></details></section> <p class="unlisted" data-astro-cid-5dtft5wh>Unlisted working page · available by direct link · excluded from site navigation and search. Unlisted does not mean private.</p> </div> <script type="module">
+    import {renderJson, toggleBranches} from '/ontology/json-view.js';
+    const tree = document.getElementById('json-tree');
+    try {
+      const response = await fetch('/ontology/learning-engineering-ontology.json');
+      if (!response.ok) throw new Error('Record unavailable');
+      renderJson(tree, await response.json());
+      document.getElementById('json-expand').onclick = () => toggleBranches(tree, true);
+      document.getElementById('json-collapse').onclick = () => toggleBranches(tree, false);
+    } catch { tree.textContent = 'The formatted record could not load. Use the indented JSON below.'; }
+  </script>  </main> <footer> <div class="footer-inner"> <div class="footer-brand"> <strong>Learning Engineering Commons</strong> <span class="muted"> · curated resources adapted from IEEE ICICLE and other community sources, with credit. To include, modify, or exclude your content, please <a href="mailto:wgr@jhu.edu">reach out</a>!</span> </div> <nav class="footer-links" aria-label="Footer"> <a href="/about/">About this site</a> <a href="https://wrgr.github.io/lebokai/" target="_blank" rel="noopener">LEBoK</a> <a href="https://sagroups.ieee.org/icicle/" target="_blank" rel="noopener">IEEE ICICLE</a> </nav> </div> <div class="footer-copy">© 2026</div> </footer> </body> </html>
